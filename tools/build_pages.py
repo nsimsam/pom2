@@ -30,7 +30,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
 PILLNAV = ""
 
 FOOTER = ("<footer>\nGrown by Noor &#127793; &middot; "
-          "<a href=\"https://github.com/nsimsam/pom2-portal\" target=\"_blank\" rel=\"noopener noreferrer\">"
+          "<a href=\"https://github.com/nsimsam/pom2\" target=\"_blank\" rel=\"noopener noreferrer\">"
           "Source on GitHub</a>\n</footer>")
 
 # said once here, rendered into every block page

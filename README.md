@@ -12,13 +12,13 @@ It was written for the five blocks of the second Principles of Medicine year at
 Schulich (endocrinology, reproduction, MSK, neurology, psychiatry), but nothing
 about the code knows that. Swap the JSON and it is your course.
 
-Live at **<https://noorsimsam.com/pom2-portal/>**.
+Live at **<https://noorsimsam.com/pom2/>**.
 
 ## Run it yourself
 
 ```bash
-git clone https://github.com/nsimsam/pom2-portal
-cd pom2-portal
+git clone https://github.com/nsimsam/pom2
+cd pom2
 python -m http.server 8000
 ```
 
