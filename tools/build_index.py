@@ -41,57 +41,23 @@ def facts(slug):
     return blurb, hue, len(qs), written, len(lects)
 
 
-def wspan(weeks):
-    """how many weeks a block runs, so the year bar can be drawn to scale"""
-    a, b = weeks.split(u"–")
-    return int(b) - int(a) + 1
-
-
-YEAR_SEG = (u'<a class="yseg" href="%s.html" style="--hue:%s;--w:%d" '
-            u'aria-label="Block %d, %s, weeks %s to %s">%s&ndash;%s</a>')
-
-YEAR = u"""<figure class="year">
-<figcaption>The teaching year, twenty weeks</figcaption>
-<div class="yearbar">
-%s
-</div>
-</figure>"""
-
-ROW = u"""<li class="brow" style="--hue:%s">
-<a href="%s.html">
-<span class="bnum">%02d</span>
-<span class="bhead"><span class="bname">%s</span><span class="bweeks">weeks %s&ndash;%s</span></span>
-<p class="bblurb">%s</p>
-<span class="bstats">
-<span><b>%d</b> of %d notes</span>
-<span><b>%d</b> questions</span>
-</span>
-</a>
-</li>"""
-
-
-def year():
-    """each block's segment is as wide as the number of weeks it runs, so the
-       bar is a drawing of the year rather than five equal tiles"""
-    segs = []
-    for slug, n, name, weeks in BLOCKS:
-        first, last = weeks.split(u"–")
-        _b, hue, _q, _w, _l = facts(slug)
-        segs.append(YEAR_SEG % (slug, hue, wspan(weeks), n, name,
-                                first, last, first, last))
-    return YEAR % chr(10).join(segs)
-
-
-def rows():
-    """both counts get the same weight - the block is notes AND questions, and
-       leading with the question count made it read as a quiz"""
+def cards():
+    """both halves get the same weight on the card - the block is notes AND
+       questions, and leading with the question count made it read as a quiz"""
     out = []
     for slug, n, name, weeks in BLOCKS:
         blurb, hue, q, written, lects = facts(slug)
-        first, last = weeks.split(u"–")
-        out.append(ROW % (hue, slug, n, name, first, last, blurb,
-                          written, lects, q))
-    return chr(10).join(out)
+        notes = "<b>%d</b> of %d lecture notes" % (written, lects)
+        out.append(
+            u'<a class="block-card" href="%s.html" style="--hue:%s">\n'
+            u'<p class="bmeta">Block %d &middot; Weeks %s</p>\n'
+            u'<h2>%s</h2>\n<p>%s</p>\n'
+            u'<span class="tally">\n'
+            u'<span>%s</span>\n'
+            u'<span><b>%d</b> practice questions</span>\n'
+            u'</span>\n'
+            u'</a>' % (slug, hue, n, weeks, name, blurb, notes, q))
+    return "\n".join(out)
 
 
 def totals():
@@ -107,9 +73,8 @@ CF = ""
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-         '<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500'
-         '&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600'
-         '&display=swap" rel="stylesheet">')
+         '<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;'
+         '9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">')
 
 # room for a nav back to whatever site you hang the portal off
 PILLNAV = ""
@@ -139,19 +104,16 @@ TEMPLATE = u"""<!DOCTYPE html>
 {pillnav}
 
 <div class="page-hero">
-<p class="eyebrow">Principles of Medicine 2</p>
-<h1>PoM 2</h1>
+<h1>PoM 2.</h1>
 <p>
 Each block has <strong>notes</strong> and <strong>practice questions</strong>, week by week.
 Notes save to PDF if you would rather annotate them yourself.
 </p>
 </div>
 
-{year}
-
-<ol class="blocks">
-{rows}
-</ol>
+<div class="block-grid">
+{cards}
+</div>
 
 <div class="prose">
 
@@ -247,8 +209,7 @@ Grown by Noor &#127793; &middot; <a href="https://github.com/nsimsam/pom2" targe
 
 def main():
     tq, tw, tl = totals()
-    html = TEMPLATE.format(base_css=ver('base.css'), pom2_css=ver('pom2.css'), fonts=FONTS, cf=CF, year=year(), rows=rows(),
-                           pillnav=PILLNAV)
+    html = TEMPLATE.format(base_css=ver('base.css'), pom2_css=ver('pom2.css'), fonts=FONTS, cf=CF, cards=cards(), pillnav=PILLNAV)
     io.open("index.html", "w", encoding="utf-8", newline="\n").write(html)
     print("index.html: %d/%d lectures written, %d questions" % (tw, tl, tq))
 
