@@ -99,7 +99,9 @@ Notes save to PDF if you would rather annotate them yourself.
 
 <div class="prose">
 
-<h2>Where the practice questions come from</h2>
+<details class="fold">
+<summary>Where the practice questions come from</summary>
+<div class="body">
 
 <ul>
 <li><strong>Course modules.</strong> Elentra knowledge checks, the concept checks in the lecture slides, and the weekly quizzes.</li>
@@ -150,6 +152,44 @@ focusing only on the body system currently being taught. You should be able to
 thrombosis</strong>.
 </p>
 </blockquote>
+
+</div>
+</details>
+
+<details class="fold">
+<summary>Run your own copy</summary>
+<div class="body">
+
+<p>
+The portal is open source at
+<a href="https://github.com/nsimsam/pom2" target="_blank" rel="noopener noreferrer">github.com/nsimsam/pom2</a>.
+It is six HTML files, three scripts and a folder of JSON, with no build step, no server and
+no framework, so a clone runs as it stands.
+</p>
+
+<p>
+<strong>To make it your course</strong>, swap out <code>data/questions/</code> and
+<code>data/notes/</code>. The README documents every field a question carries, the block
+list is one constant at the top of each build script, and the palette is nine custom
+properties at the top of <code>base.css</code>. Nothing in the code knows it is about
+medicine, or about five blocks.
+</p>
+
+<p>
+<strong>It is also worth pointing Claude Code at.</strong> Clone it, open the folder, and
+the JSON is regular enough to build your own study tooling on top of. The obvious one: a
+skill that reads which questions you keep getting wrong and writes Anki cards for exactly
+those gaps, so revision follows the holes rather than the syllabus. Pulling your own
+course material into the question format is the same kind of job.
+</p>
+
+<p>
+The questions in this copy are course material and are <strong>not</strong> licensed for
+redistribution, so they do not come with the fork. Bring your own bank. The code is MIT.
+</p>
+
+</div>
+</details>
 
 </div>
 

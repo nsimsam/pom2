@@ -746,6 +746,58 @@
 
 .prose a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;}
 
+.prose code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.86em;
+    padding:1px 5px;
+    border-radius:4px;
+    background:var(--bg);
+    border:1px solid var(--border);
+    color:var(--text);
+}
+
+/* the landing page's folded sections. Same +/- affordance as .howto, but the
+   summary is carrying the weight of the h2 it replaced, so it is set in the
+   serif at heading size rather than shrunk to a rail note. */
+.fold{border-bottom:1px solid var(--border);}
+.fold:first-of-type{border-top:1px solid var(--border);}
+
+.fold summary{
+    display:flex;
+    align-items:baseline;
+    gap:16px;
+    padding:22px 2px;
+    font-family:var(--serif);
+    font-size:1.35rem;
+    font-weight:600;
+    color:var(--text);
+    cursor:pointer;
+    list-style:none;
+    transition:color .15s;
+}
+
+.fold summary::-webkit-details-marker{display:none;}
+.fold summary:hover{color:var(--accent);}
+
+.fold summary::after{
+    content:"+";
+    margin-left:auto;
+    font-family:var(--sans);
+    font-size:1.15rem;
+    font-weight:400;
+    color:var(--muted);
+}
+
+.fold[open] summary::after{content:"\2212";}
+.fold[open] summary{color:var(--accent);}
+
+.fold .body{padding:2px 2px 30px;}
+.fold .body > :last-child{margin-bottom:0;}
+
+/* the h2 rule above still applies to anything left outside a fold */
+.prose > .fold + .fold{margin-top:0;}
+
+
 /* tabs
 
    the panels are display:grid, and a UA's [hidden]{display:none} loses to any
@@ -1043,7 +1095,7 @@
     font-weight:400;
 }
 
-.howto[open] summary::before{content:"3";}
+.howto[open] summary::before{content:"\2212";}
 
 .howto .body{padding:0 12px 12px;}
 .howto p{margin-bottom:9px;}
