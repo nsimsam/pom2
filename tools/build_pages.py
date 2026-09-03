@@ -7,7 +7,25 @@ Blurbs and accents are read back out of the pages being replaced so nothing
 written by hand is lost.
 """
 
-import io, json, os, re
+import hashlib, io, json, os, re
+
+
+def ver(name):
+    """<name>?v=<hash of its contents>.
+
+    GitHub Pages serves these with Cache-Control: max-age=600, so for ten
+    minutes after a push a browser will happily keep last deploy's stylesheet
+    and paint the new markup with the old rules. Stamping the content hash into
+    the URL means a changed asset is simply a different URL and lands at once.
+    An unchanged one keeps its hash and stays cached.
+
+    The hash is read off the file on disk, so re-run this after editing any of
+    the hand-maintained css or js, or the pages will keep pointing at the
+    previous hash. Harmless when it happens, since the query string is ignored
+    by the server, but it stops busting the cache.
+    """
+    h = hashlib.md5(io.open(name, "rb").read()).hexdigest()[:8]
+    return "%s?v=%s" % (name, h)
 
 BLOCKS = [
     # slug,  n, name,             weeks
@@ -88,8 +106,8 @@ PAGE = u"""<!DOCTYPE html>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2384223b'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>P2</text></svg>">
 
 {fonts}
-<link rel="stylesheet" href="base.css">
-<link rel="stylesheet" href="pom2.css">
+<link rel="stylesheet" href="{base_css}">
+<link rel="stylesheet" href="{pom2_css}">
 <style>
 :root{{{accent}}}
 </style>
@@ -197,9 +215,9 @@ still to write.</p>
 <script>
 window.QUIZ_BLOCK = {{"slug": "{slug}", "n": {n}, "name": "{name}", "weeks": "{weeks}"}};
 </script>
-<script src="quiz.js"></script>
-<script src="notes.js"></script>
-<script src="pom2.js"></script>
+<script src="{quiz_js}"></script>
+<script src="{notes_js}"></script>
+<script src="{pom2_js}"></script>
 
 {footer}
 
@@ -214,7 +232,9 @@ def main():
     for slug, n, name, weeks in BLOCKS:
         lead, desc, accent = existing(slug)
         q, written, lectures = counts(slug)
-        html = PAGE.format(slug=slug, n=n, name=name, weeks=weeks, lead=lead, desc=desc,
+        html = PAGE.format(base_css=ver('base.css'), pom2_css=ver('pom2.css'),
+                           quiz_js=ver('quiz.js'), notes_js=ver('notes.js'),
+                           pom2_js=ver('pom2.js'), slug=slug, n=n, name=name, weeks=weeks, lead=lead, desc=desc,
                            accent=accent, fonts=FONTS, cf=CF, footer=FOOTER,
                            pillnav=PILLNAV, howto=HOWTO,
                            blocknav=blocknav(slug), questions=q,

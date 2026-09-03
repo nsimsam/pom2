@@ -67,7 +67,13 @@ two exceptions are the per-block blurb (`<p class="lead">`) and the accent trio 
 each page's inline `:root`, which are read back out before the page is rewritten.
 
 `base.css`, `pom2.css`, `quiz.js`, `notes.js` and `pom2.js` are hand-maintained and
-never generated.
+never generated. **After editing one of them, re-run `build_pages.py` and
+`build_index.py` anyway.** The pages link these assets as `base.css?v=<hash of its
+contents>`, and the hash is read off the file at build time. GitHub Pages serves
+them with `Cache-Control: max-age=600`, so without a fresh hash a browser will keep
+last deploy's stylesheet for ten minutes and paint the new markup with the old
+rules. Skipping the rebuild is not harmful, since the server ignores the query
+string, but it stops the cache from being busted.
 
 Two constants at the top of `build_pages.py` and `build_index.py` are deliberately
 empty: `CF`, for an analytics snippet, and `PILLNAV`, for a nav bar back to a
