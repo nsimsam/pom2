@@ -1,0 +1,263 @@
+{
+ "block": "psych",
+ "weeks": [
+  {
+   "n": 17,
+   "label": "Week 17 - Mood Disorders, Antidepressants, Suicide & the Mental Status Exam",
+   "lectures": [
+    {
+     "id": "psych-w17-01",
+     "num": "01",
+     "name": "Diagnosis in Psychiatry",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-02",
+     "num": "02",
+     "name": "The Psychiatric Interview",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-03",
+     "num": "03",
+     "name": "Phenomenology and the Mental Status Exam",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-04",
+     "num": "04",
+     "name": "Organ Donation",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-05",
+     "num": "05",
+     "name": "Depressive Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-06",
+     "num": "06",
+     "name": "Pharmacology of Antidepressants",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-07",
+     "num": "07",
+     "name": "Introduction to Psychopharmacology",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-08",
+     "num": "08",
+     "name": "Suicide",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-09",
+     "num": "09",
+     "name": "Bipolar Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-10",
+     "num": "10",
+     "name": "Psychotherapies in Mood and Anxiety Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-11",
+     "num": "11",
+     "name": "Depression and Anxiety in Medical Illnesses",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-12",
+     "num": "12",
+     "name": "Mood Disorders and Reproductive Life Stages",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w17-in-class-mood-disorders",
+     "num": "—",
+     "name": "In-Class - Mood Disorders",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "label": "Week 18 - Anxiety, OCD, Personality Disorders & Neurodevelopment",
+   "lectures": [
+    {
+     "id": "psych-w18-01",
+     "num": "01",
+     "name": "Anxiety Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-02",
+     "num": "02",
+     "name": "Obsessive-Compulsive Disorder",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-03",
+     "num": "03",
+     "name": "Management of Anxiety Disorders and OCD",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-04",
+     "num": "04",
+     "name": "Post-Traumatic Stress Disorder",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-05",
+     "num": "05",
+     "name": "Personality Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-06",
+     "num": "06",
+     "name": "Dissociation and Dissociative Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-07",
+     "num": "07",
+     "name": "Approach to ADHD",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-08",
+     "num": "08",
+     "name": "Speech and Language Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-09",
+     "num": "09",
+     "name": "Autism Spectrum Disorder & Intellectual Disabilities",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w18-10",
+     "num": "10",
+     "name": "Disruptive Behavior Disorders",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "label": "Week 19 - Psychotic Disorders, Eating Disorders & Mental Health Law",
+   "lectures": [
+    {
+     "id": "psych-w19-01",
+     "num": "01",
+     "name": "Eating Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w19-02",
+     "num": "02",
+     "name": "The Child Welfare System",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w19-03",
+     "num": "03",
+     "name": "Psychotic Disorders & Schizophrenia",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w19-04",
+     "num": "04",
+     "name": "Treatment of Psychotic Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w19-05",
+     "num": "05",
+     "name": "Consent, Capacity, and the Mental Health Act",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w19-06",
+     "num": "06",
+     "name": "Substance Use Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w19-07",
+     "num": "07",
+     "name": "Concurrent Mental Health and Substance Use Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w19-in-class-anxiety",
+     "num": "—",
+     "name": "In-Class - Anxiety",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "label": "Week 20 - Sleep, Boundaries, Delirium & Cognitive Disorders",
+   "lectures": [
+    {
+     "id": "psych-w20-01",
+     "num": "01",
+     "name": "Sleep Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w20-02",
+     "num": "02",
+     "name": "Somatic Symptom Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w20-03",
+     "num": "03",
+     "name": "Maintaining Boundaries",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w20-04",
+     "num": "04",
+     "name": "Delirium",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w20-05",
+     "num": "05",
+     "name": "Cognitive Disorders in the Elderly",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w20-06",
+     "num": "06",
+     "name": "Sexual Disorders and Paraphilias",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w20-07",
+     "num": "07",
+     "name": "Management of Cognitive Disorders and Dementia",
+     "hasNote": false
+    },
+    {
+     "id": "psych-w20-08",
+     "num": "08",
+     "name": "Pharmacotherapy of Cognitive Enhancers",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}

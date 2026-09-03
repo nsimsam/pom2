@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reproduction &middot; PoM 2</title>
+<meta name="description" content="Gynecology and contraception, pregnancy and antenatal care, labour, the puerperium and the newborn.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2384223b'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>P2</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="pom2.css">
+<style>
+:root{--q-accent:#8c3566;--q-accent-soft:#f6e6ef;--q-accent-ink:#772b57;}
+</style>
+
+</head>
+<body>
+
+<div class="pom2-page">
+
+
+<nav class="blocknav">
+<a class="home" href="index.html">All blocks</a>
+<a href="endo.html">1 &middot; Endocrinology</a>
+<a href="repro.html" class="here">2 &middot; Reproduction</a>
+<a href="msk.html">3 &middot; Musculoskeletal</a>
+<a href="neuro.html">4 &middot; Neurology</a>
+<a href="psych.html">5 &middot; Psychiatry</a>
+</nav>
+
+<header class="q-masthead">
+<div>
+<p class="eyebrow" id="m-eyebrow"></p>
+<h1>Reproduction</h1>
+<p class="lead">Gynecology and contraception, pregnancy and antenatal care, labour, the puerperium and the newborn.</p>
+</div>
+<div class="scoreboard" id="sb-notes">
+<div class="score"><b><span id="cv-notes">0</span><span class="of" id="cv-of"></span></b><span>Notes written</span></div>
+<div class="score"><b><span id="cv-weeks">0</span><span class="of" id="cv-weeks-of"></span></b><span>Weeks covered</span></div>
+</div>
+<div class="scoreboard" id="sb-questions" hidden>
+<div class="score"><b><span id="sc-done">0</span><span class="of" id="sc-of"></span></b><span>Attempted</span></div>
+<div class="score"><b id="sc-first">&ndash;</b><span>First try</span></div>
+<div class="score is-bad"><b id="sc-wrong">0</b><span>Wrong now</span></div>
+<div class="score is-star"><b id="sc-star">0</b><span>Starred</span></div>
+</div>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Notes or questions">
+<button type="button" id="tab-notes" role="tab" aria-selected="true" aria-controls="panel-notes">Notes <span class="tc" id="tc-notes">0/40</span></button>
+<button type="button" id="tab-questions" role="tab" aria-selected="false" aria-controls="panel-questions">Practice questions <span class="tc">121</span></button>
+</div>
+
+<div class="q-shell" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes">
+<aside class="rail">
+
+<section>
+<p class="panel-h">Coverage</p>
+<div class="chips" id="cov-chips"></div>
+</section>
+
+<section>
+<p class="panel-h">Save as PDF</p>
+<button class="print-cta" id="print-all" type="button" disabled>Save every note as one PDF</button>
+<p class="railnote">Each note has its own <strong>PDF</strong> button, and each week can be
+saved in one go. Print it, annotate it, keep it.</p>
+</section>
+
+<section>
+<p class="panel-h">What these are</p>
+<p class="railnote">One note per lecture, built to tell things apart rather than to cover
+everything. <strong>Bold marks the fact that decides between two answers</strong>.
+Every lecture in the block is listed, so the ones with nothing under them yet are the ones
+still to write.</p>
+</section>
+
+</aside>
+
+<main class="stream" id="note-stream">
+<div class="q-loading">Loading notes&hellip;</div>
+</main>
+</div>
+
+<div class="q-shell" id="panel-questions" role="tabpanel" aria-labelledby="tab-questions" hidden>
+
+<details class="howto">
+<summary>You can save your progress</summary>
+<div class="body">
+<p><strong>On this device, and nowhere else.</strong> What you have answered is written to
+your browser&rsquo;s local storage. It is never sent to this site, never stored in its
+repository, and nobody else can see it, not even me.</p>
+<p>That also means it does not follow you. A different browser, a different laptop, or
+clearing your site data all start from zero.</p>
+<p><strong>To carry it with you:</strong> press <strong>Download my progress</strong> in the
+panel on the left and keep the JSON file it writes. On the other machine, open this same page
+and press <strong>Restore from a file</strong> to pick up where you left off. Doing that now
+and then is also the only backup there is.</p>
+</div>
+</details>
+
+<aside class="rail">
+
+<button class="review-cta" id="review-wrong" type="button" disabled>Review wrong only <span class="n" id="review-n">0</span></button>
+
+<section>
+<p class="panel-h">Question set</p>
+<div class="fams" id="fam-btns"></div>
+</section>
+
+<section>
+<p class="panel-h">Status</p>
+<div class="chips" id="status-chips"></div>
+</section>
+
+<section>
+<p class="panel-h">Progress</p>
+<p class="storenote" id="storenote" hidden></p>
+<div class="resets">
+<button class="backup-btn" id="export-progress" type="button">Download my progress</button>
+<button class="backup-btn" id="import-progress" type="button">Restore from a file</button>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+<button class="danger" id="reset-shown" type="button" disabled>Reset the questions shown (0)</button>
+<button class="danger" id="reset-all" type="button">Reset all progress</button>
+</div>
+</section>
+
+</aside>
+
+<main class="stream" id="stream">
+<div class="q-loading">Loading 121 questions&hellip;</div>
+</main>
+</div>
+
+<script>
+window.QUIZ_BLOCK = {"slug": "repro", "n": 2, "name": "Reproduction", "weeks": "4–6"};
+</script>
+<script src="quiz.js"></script>
+<script src="notes.js"></script>
+<script src="pom2.js"></script>
+
+<footer>
+Grown by Noor &#127793; &middot; <a href="https://github.com/nsimsam/pom2-portal" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+{
+ "block": "repro",
+ "weeks": [
+  {
+   "n": 4,
+   "label": "Week 4 - Gynecology: Contraception, STIs, Pelvic Pain & Menopause",
+   "lectures": [
+    {
+     "id": "repro-w4-01",
+     "num": "01",
+     "name": "Approach to Sexual Health",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-02",
+     "num": "02",
+     "name": "Approach to Sexually Transmitted Infections",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-03",
+     "num": "03",
+     "name": "Public Health and STIs",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-04",
+     "num": "04",
+     "name": "Contraception",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-05",
+     "num": "05",
+     "name": "Abortion",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-06",
+     "num": "06",
+     "name": "Vaginal Discharge",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-07",
+     "num": "07",
+     "name": "Cervical Cancer Screening",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-08",
+     "num": "08",
+     "name": "Approach to and Pathology of a Pelvic Mass",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-09",
+     "num": "09",
+     "name": "Dilation and Curettage",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-10",
+     "num": "10",
+     "name": "PCOS",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-11",
+     "num": "11",
+     "name": "Clinical Approach to Acute Pelvic Pain",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-12",
+     "num": "12",
+     "name": "Clinical Approach to Chronic Pelvic Pain",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-13",
+     "num": "13",
+     "name": "Endometriosis",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-14",
+     "num": "14",
+     "name": "Hysterectomy Approaches",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-15",
+     "num": "15",
+     "name": "Miscarriage & Ectopic Pregnancy",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-16",
+     "num": "16",
+     "name": "Approach to Pathology of AUB & Pelvic Pain",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-17",
+     "num": "17",
+     "name": "Abnormal Uterine Bleeding",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-18",
+     "num": "18",
+     "name": "Clinical Approach to Menopause",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-19",
+     "num": "19",
+     "name": "Post-Menopausal Bleeding",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w4-in-class-amenorrhea",
+     "num": "—",
+     "name": "In-Class - Amenorrhea",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "label": "Week 5 - Pregnancy: Fertility, Genetics, Antenatal Care & Hypertension",
+   "lectures": [
+    {
+     "id": "repro-w5-01",
+     "num": "01",
+     "name": "Fertilization & Infertility",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-02",
+     "num": "02",
+     "name": "Genetic Screening for Pregnancy in Canada",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-03",
+     "num": "03",
+     "name": "Teratogenesis",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-04",
+     "num": "04",
+     "name": "Topics of Antenatal Care",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-05",
+     "num": "05",
+     "name": "OB Care Providers",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-06",
+     "num": "06",
+     "name": "Care for Pregnancy in the First Trimester",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-07",
+     "num": "07",
+     "name": "Approach to First Trimester Bleeding & Ultrasound",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-08",
+     "num": "08",
+     "name": "Pathology of 1st Trimester Bleeding",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-09",
+     "num": "09",
+     "name": "Second Trimester Ultrasound",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-10",
+     "num": "10",
+     "name": "Drugs Used in Gynecology",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-11",
+     "num": "11",
+     "name": "Hypertension in Pregnancy",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "label": "Week 6 - Labour, Delivery, the Puerperium & the Newborn",
+   "lectures": [
+    {
+     "id": "repro-w6-01",
+     "num": "01",
+     "name": "Antepartum Hemorrhage & Abnormal Placentation",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w6-02",
+     "num": "02",
+     "name": "Approach to the Small Fetus",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w6-03",
+     "num": "03",
+     "name": "Approach to Preterm Labor",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w6-04",
+     "num": "04",
+     "name": "Process of Labor and Birth",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w6-05",
+     "num": "05",
+     "name": "Abnormal Labor",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w6-06",
+     "num": "06",
+     "name": "Hemorrhagic Schock",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w6-07",
+     "num": "07",
+     "name": "Approach to Neonatal Care",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w6-08",
+     "num": "08",
+     "name": "Postpartum Care",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w6-09",
+     "num": "09",
+     "name": "Lactation",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}

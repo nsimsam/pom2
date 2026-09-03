@@ -1,0 +1,329 @@
+{
+ "block": "neuro",
+ "weeks": [
+  {
+   "n": 12,
+   "label": "Week 12 - Introduction to Neurology, Neuroanatomy & the Cranial Nerves",
+   "lectures": [
+    {
+     "id": "neuro-w12-01",
+     "num": "01",
+     "name": "Understanding and Managing Chronic Pain",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w12-02",
+     "num": "02",
+     "name": "Psychological Factors in Managing Chronic Pain",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w12-03",
+     "num": "03",
+     "name": "Introduction to Neurology",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w12-04",
+     "num": "04",
+     "name": "Introduction to Neuroanatomy",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w12-05",
+     "num": "05",
+     "name": "Cranial Nerve Anatomy and Function",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w12-06",
+     "num": "06",
+     "name": "Facial Anatomy",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w12-07",
+     "num": "07",
+     "name": "Anatomy of the Cranial Cavity",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w12-08",
+     "num": "08",
+     "name": "Neuroanatomy of the Cortex",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w12-09",
+     "num": "09",
+     "name": "Introduction to Neurophysiology",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "label": "Week 13 - Localization, the Spinal Cord, Vision & Neuroradiology",
+   "lectures": [
+    {
+     "id": "neuro-w13-01",
+     "num": "01",
+     "name": "Orbital Anatomy",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-02",
+     "num": "02",
+     "name": "Neurophysiology of Vision",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-03",
+     "num": "03",
+     "name": "Neuroanatomy of the Brainstem, Basal Ganglia, and Diencephalon",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-04",
+     "num": "04",
+     "name": "Neuroanatomy of the Spinal Tracts and Cerebellum",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-05",
+     "num": "05",
+     "name": "Neurophysiology of Sensation",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-06",
+     "num": "06",
+     "name": "Neurophysiology of the Cerebellum and Basal Ganglia",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-07",
+     "num": "07",
+     "name": "Neurophysiology of Reflexes",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-08",
+     "num": "08",
+     "name": "Spinal Cord",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-09",
+     "num": "09",
+     "name": "Neurophthalmology",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-10",
+     "num": "10",
+     "name": "Cortical Syndromes",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-11",
+     "num": "11",
+     "name": "Approach to Weakness",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-12",
+     "num": "12",
+     "name": "Approach to Localization",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-13",
+     "num": "13",
+     "name": "Neuroembryology",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-14",
+     "num": "14",
+     "name": "Autonomic Nervous System",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w13-15",
+     "num": "15",
+     "name": "Neuroradiology",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "label": "Week 14 - Head Injury, Stroke, Headache, Seizures & Neuroinfections",
+   "lectures": [
+    {
+     "id": "neuro-w14-01",
+     "num": "01",
+     "name": "Approach to Head Injuries",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-02",
+     "num": "02",
+     "name": "Multiple Sclerosis",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-03",
+     "num": "03",
+     "name": "Approach to Stroke",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-04",
+     "num": "04",
+     "name": "Approach to Sensory Symptoms",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-05",
+     "num": "05",
+     "name": "Neuropathic Pain",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-06",
+     "num": "06",
+     "name": "Approach to Headache",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-07",
+     "num": "07",
+     "name": "Approach to Altered Level of Consciousness",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-08",
+     "num": "08",
+     "name": "Approach to Seizures",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-09",
+     "num": "09",
+     "name": "Recovery in the Nervous System",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-10",
+     "num": "10",
+     "name": "Neurosurgical Emergencies",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w14-11",
+     "num": "11",
+     "name": "Neuroinfections",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "label": "Week 15 - Brain Tumours, Movement Disorders, Pediatrics & Ophthalmology",
+   "lectures": [
+    {
+     "id": "neuro-w15-01",
+     "num": "01",
+     "name": "Multidisciplinary Care in ALS",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w15-02",
+     "num": "02",
+     "name": "Brain Tumors",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w15-03",
+     "num": "03",
+     "name": "Pediatric Neurology",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w15-04",
+     "num": "04",
+     "name": "Non-Mendelian Genetics",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w15-05",
+     "num": "05",
+     "name": "Movement Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w15-06",
+     "num": "06",
+     "name": "Monocular Vision Impairment",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w15-07",
+     "num": "07",
+     "name": "Red Eye and Ocular Trauma",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w15-08",
+     "num": "08",
+     "name": "Pediatric Ophthalmology",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w15-in-class-approach-to-seizures",
+     "num": "—",
+     "name": "In-Class - Approach to Seizures",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "label": "Week 16 - Hearing, Vertigo & Neurology in Medical Illness",
+   "lectures": [
+    {
+     "id": "neuro-w16-01",
+     "num": "01",
+     "name": "The Dying Patient and MAiD",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w16-02",
+     "num": "02",
+     "name": "Integration of Medicine and Neurology",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w16-03",
+     "num": "03",
+     "name": "Autopsy Review",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w16-04",
+     "num": "04",
+     "name": "Hearing Loss",
+     "hasNote": false
+    },
+    {
+     "id": "neuro-w16-05",
+     "num": "05",
+     "name": "Vertigo",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}

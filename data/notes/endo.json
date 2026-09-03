@@ -1,0 +1,1924 @@
+{
+ "block": "endo",
+ "weeks": [
+  {
+   "n": 1,
+   "label": "Week 1 - Diabetes, Insulin & Endocrine Principles",
+   "lectures": [
+    {
+     "id": "endo-w1-01",
+     "num": "01",
+     "name": "Intro to Diabetes",
+     "hasNote": true,
+     "title": "Type 1 vs Type 2 Diabetes Mellitus",
+     "framing": "<p>Both types are diagnosed by <strong>the same glucose thresholds</strong> — what separates them is <strong>the mechanism producing the hyperglycemia</strong>: absolute autoimmune insulin deficiency vs. a spectrum of insulin resistance and relative deficiency.</p>",
+     "keypoints": "<p>the <strong>alpha cells are spared in T1DM</strong> — the lesion is beta-cell specific. <strong>Autoantibody count, not presence, is what carries risk</strong> (1 = background risk, 3 = 40% in five years). <strong>GAD is the specific marker.</strong> Monozygotic concordance is <strong>higher in T2DM (90%) than T1DM (50%)</strong> — the counterintuitive fact worth remembering. And the octet explains why T2DM needs <strong>combination therapy</strong>: each drug class corrects a different defect.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">Type 1 DM</span></strong>",
+        "<strong><span class=\"wl\">Type 2 DM</span></strong>"
+       ],
+       "rows": [
+        [
+         "Mechanism",
+         "<strong>Immune-mediated destruction of <span class=\"wl\">islet</span> beta cells</strong> → <strong>absolute</strong> insulin deficiency<br><strong><span class=\"wl\">glucagon</span>-producing alpha cells are SPARED</strong>",
+         "Spectrum: <strong>predominant insulin resistance with relative deficiency</strong> ↔ <strong>predominant secretory defect with resistance</strong><br>By prediabetes, <strong>80% of beta-cell function is already lost</strong>"
+        ],
+        [
+         "Genetics",
+         "<strong>Mostly polygenic</strong>; genes <strong>both within and outside the MHC</strong><br><strong>50%</strong> monozygotic twin · 5% non-MZ sibling · <strong>0.4% no family history</strong>",
+         "Mostly polygenic<br><strong>90%</strong> monozygotic twin · 40% have an affected parent · 5–10% ↑ lifetime risk with a 1st-degree relative"
+        ],
+        [
+         "Autoantibodies",
+         "Present in <strong>up to 85%</strong><br>• insulin/proinsulin (often appears <em>after</em> starting exogenous insulin)<br>• <strong>GAD — most specific marker</strong>, in 70%<br>• IA-2 · ZnT8<br>⚠ <strong>1 antibody alone does NOT ↑ risk above baseline (~0.4%)</strong>; <strong>2 = 25% in 5 yrs, 3 = 40%</strong>",
+         "Not applicable — <strong>no autoimmunity</strong>"
+        ],
+        [
+         "Course",
+         "<strong>Staged, all with beta-cell autoimmunity:</strong><br><strong>Stage 1</strong> normoglycemia, pre-symptomatic<br><strong>Stage 2</strong> <span class=\"wl\">dysglycemia</span>, pre-symptomatic<br><strong>Stage 3</strong> <span class=\"wl\">diabetes</span>, symptomatic",
+         "<strong>Indolent prodrome</strong> of <span class=\"wl\">dysglycemia</span> lasting years; parallels the obesity epidemic (1980 → 2045: 108M → 700M)"
+        ],
+        [
+         "Consequence of ↓ insulin",
+         "① glucose cannot be used → stays in blood<br>② body senses <strong>\"starvation\"</strong> → <strong>glycogenolysis + gluconeogenesis</strong> release <em>more</em> glucose",
+         "Same net hyperglycemia, produced by the <strong>eight defects below</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Diagnostic thresholds</strong> — the same for both types; <strong>prediabetes is the grey zone between them.</strong></p>",
+       "cols": [
+        "Test",
+        "Normal",
+        "<strong>Prediabetes</strong> (<span class=\"wl\">dysglycemia</span>)",
+        "<strong>Diabetes</strong>"
+       ],
+       "rows": [
+        [
+         "<span class=\"wl\">FPG</span>",
+         "< 6.1",
+         "<strong>6.1–6.9</strong> = impaired fasting glucose (IFG)",
+         "<strong>≥ 7.0 mmol/L</strong>"
+        ],
+        [
+         "2h 75 g <span class=\"wl\">OGTT</span>",
+         "< 7.8",
+         "<strong>7.8–11.0</strong> = impaired glucose tolerance (IGT)",
+         "<strong>≥ 11.1 mmol/L</strong>"
+        ],
+        [
+         "<span class=\"wl\">HbA1c</span>",
+         "< 6.0",
+         "<strong>6.0–6.4%</strong>",
+         "<strong>≥ 6.5%</strong> (adults)"
+        ],
+        [
+         "Random plasma glucose",
+         "—",
+         "—",
+         "<strong>≥ 11.1 mmol/L</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>The \"Ominous Octet\"</strong> — eight defects driving T2DM hyperglycemia. Each is a <strong>drug target</strong>, which is why the chart is worth memorising in this direction.</p>",
+       "cols": [
+        "#",
+        "Organ / defect",
+        "What goes wrong",
+        "Drug class that targets it"
+       ],
+       "rows": [
+        [
+         "①",
+         "<strong>Pancreatic beta cell</strong> — ↓ insulin secretion",
+         "<strong>80% of beta-cell function lost by the prediabetes range</strong>",
+         "<span class=\"wl\">SUs</span>, <span class=\"wl\">meglitinides</span>, incretins"
+        ],
+        [
+         "②",
+         "<strong>Pancreatic alpha cell</strong> — ↑ <span class=\"wl\">glucagon</span>",
+         "↓ <span class=\"wl\">GLP-1</span> + liver more sensitive to glucagon → ↑ gluconeogenesis",
+         "<span class=\"wl\">GLP-1RAs</span>, <span class=\"wl\">DPP-4 inhibitors</span>"
+        ],
+        [
+         "③",
+         "<strong>Liver</strong> — ↑ hepatic glucose output",
+         "↑ gluconeogenesis",
+         "<strong><span class=\"wl\">metformin</span></strong>"
+        ],
+        [
+         "④",
+         "<strong>Brain</strong> — neurotransmitter defect",
+         "<span class=\"wl\">incretins</span> normally act on <strong>hypothalamus + mesolimbic reward system</strong> to promote satiety",
+         "<strong><span class=\"wl\">GLP-1RAs</span> — why <span class=\"wl\">semaglutide</span> causes weight loss</strong>"
+        ],
+        [
+         "⑤",
+         "<strong>Kidney</strong> — ↑ glucose reabsorption",
+         "<strong>SGLT2 mRNA expression is itself ↑ by hyperglycemia → potentiates it</strong>",
+         "<strong><span class=\"wl\">SGLT2 inhibitors</span></strong>"
+        ],
+        [
+         "⑥",
+         "<strong>Skeletal muscle</strong> — ↓ glucose uptake",
+         "Insulin resistance, worsened by ↑ free fatty acids in muscle",
+         "<span class=\"wl\">TZDs</span>, <span class=\"wl\">metformin</span>"
+        ],
+        [
+         "⑦",
+         "<strong>Adipose</strong> — ↑ lipolysis",
+         "Fat resistant to insulin's anti-lipolytic effect → <strong>↑ FFAs stimulate gluconeogenesis and ↓ insulin secretion</strong>; once storage capacity is exceeded fat <strong>\"spills\" into muscle, liver and beta cells</strong>",
+         "<span class=\"wl\">TZDs</span>"
+        ],
+        [
+         "⑧",
+         "<strong>Gut</strong> — ↓ incretin effect",
+         "<strong><span class=\"wl\">GIP</span> levels ↑ but insulin response to GIP is ↓</strong>; <strong><span class=\"wl\">GLP-1</span> levels ↓</strong>",
+         "<span class=\"wl\">GLP-1RAs</span>, <span class=\"wl\">DPP-4 inhibitors</span>"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-02",
+     "num": "02",
+     "name": "Diagnosis and Management of Type 1 Diabetes",
+     "hasNote": true,
+     "title": "Approach to New-Onset Type 1 Diabetes",
+     "framing": "<p>The whole diagnosis turns on one question: <strong>are symptoms present?</strong> If yes, <strong>a single abnormal glucose is sufficient</strong> — do not delay treatment for a confirmatory test.</p>",
+     "keypoints": "<p><strong>symptoms present → one abnormal glucose diagnoses diabetes</strong>; no symptoms → two are needed. The DCCT trial logic underlies everything here — <strong>intensive insulin therapy ↓ A1c and ↓ long-term microvascular complications but ↑ hypoglycemia</strong>, a trade-off now partly offset by <strong>pumps and CGM</strong>. <strong>Glucose gel works through buccal mucosa</strong>, so it can be given when swallowing is unsafe.</p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Child with polyuria, polydipsia, weight loss\"] --> B[\"Random plasma glucose<br/>+ urine dipstick for glucose/ketones\"]\n    B --> C{\"Glucose ≥ 11.1 mmol/L?\"}\n    C -->|No| D[\"Consider other causes<br/>Repeat testing if suspicion persists\"]\n    C -->|Yes| E{\"Symptoms present?\"}\n    E -->|\"YES — usual case\"| F[\"DIAGNOSIS MADE<br/>1 abnormal measurement is enough\"]\n    E -->|No| G[\"Requires 2 abnormal measurements\"]\n    F --> H{\"Vomiting, abdominal pain,<br/>hyperventilation, drowsiness?\"}\n    G --> H\n    H -->|Yes| I[\"Suspect DKA<br/>ABG + serum/urine ketones<br/>→ emergent Tx\"]\n    H -->|No| J[\"Medically stable:<br/>multidisciplinary education + insulin\"]"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Workup skeleton</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li><strong>Hx</strong> — the <strong>three classic early symptoms nearly every patient has</strong>: <strong><span class=\"wl\">polyuria</span></strong> (including <strong>nocturia / new bed-wetting</strong>), <strong>excessive thirst</strong>, <strong>weight loss despite unchanged or ↑ appetite</strong>. Then screen for late/severe features: vomiting, abdominal pain, dehydration, hyperventilation, fatigue, ↓ level of consciousness.</li><li><strong>PEx</strong> — hydration status, weight loss, level of consciousness, <strong>Kussmaul breathing</strong>, acetone breath.</li><li><strong>Ix</strong> — <strong>random plasma glucose ≥ 11.1</strong>, <strong><span class=\"wl\">urine dipstick</span> for glucose and ketones</strong>, <strong><span class=\"wl\">serum C-peptide</span></strong> (is she making any insulin?), <strong><span class=\"wl\">ABG</span> if <span class=\"wl\">DKA</span> suspected</strong>. ⚠ <strong>FPG and A1c are usually unnecessary here</strong> — the diagnosis is already clear.</li><li><strong>Tx</strong> — insulin + structured education; treat DKA emergently if present.</li><li><strong>Follow-up</strong> — <strong>annual <span class=\"wl\">urinalysis</span> for albuminuria</strong> (<span class=\"wl\">diabetic nephropathy</span> screening).</li></ul>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Test",
+        "Diagnostic result"
+       ],
+       "rows": [
+        [
+         "<span class=\"wl\">fasting plasma glucose</span>",
+         "≥ 7.0 mmol/L"
+        ],
+        [
+         "2h 75 g <span class=\"wl\">OGTT</span>",
+         "≥ 11.1 mmol/L"
+        ],
+        [
+         "<span class=\"wl\">HbA1c</span>",
+         "≥ 6.5% (adults)"
+        ],
+        [
+         "<strong>Random plasma glucose</strong>",
+         "<strong>≥ 11.1 mmol/L</strong> ← the one that matters acutely"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Management — the four education pillars</strong> (delivered by a <strong>multidisciplinary team</strong>: dietician, social worker, diabetes nurse educator)</p>",
+       "cols": [
+        "Pillar",
+        "Content",
+        "Targets / numbers"
+       ],
+       "rows": [
+        [
+         "<strong>Blood glucose monitoring</strong>",
+         "<strong>4× per day</strong> (before meals + bedtime) · <strong>every 2–3 h during illness</strong> · occasional nocturnal values · <strong>whenever hypoglycemic symptoms occur</strong><br>Method: fingerprick meter or <strong><span class=\"wl\">CGM</span></strong>",
+         "<strong>< 18 yrs T1DM</strong>: FPG <strong>4–8</strong>, post-prandial <strong>5–10</strong>, A1c <strong>< 7.5%</strong><br>Non-diabetic: FPG 3–6, A1c 4–6%<br><em>Targets can be loosened for children who cannot recognise hypoglycemia</em>"
+        ],
+        [
+         "<strong>Insulin administration</strong>",
+         "<strong>Bolus</strong> (short/rapid-acting) + <strong>basal</strong> (intermediate/long-acting); <strong>sliding scale</strong> dosed to blood glucose and carbohydrate load",
+         "<strong>Dose is age-dependent</strong>: onset <strong>< 0.5</strong> · pre-puberty <strong>0.7–1.0</strong> · <strong>puberty 1.0–2.0 units/kg/day</strong>"
+        ],
+        [
+         "<strong>Dietary counselling</strong>",
+         "Carbohydrate counting to match bolus dosing",
+         "—"
+        ],
+        [
+         "<strong>Optimizing metabolic control</strong>",
+         "<strong><span class=\"wl\">Pumps</span></strong>: better control, more reliable absorption, precise dosing, <strong>↓ hypoglycemia risk</strong>, flexibility with food, shift work and time zones",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Acute complication — <span class=\"wl\">hypoglycemia</span>.</strong> Symptoms come in <strong>two waves, and the order is the point</strong>:</p>",
+       "cols": [
+        "",
+        "<strong>Early = adrenergic</strong>",
+        "<strong>Late = neuroglycopenic</strong>"
+       ],
+       "rows": [
+        [
+         "Mechanism",
+         "Counter-regulatory catecholamine surge",
+         "<strong>Brain is not getting enough glucose</strong>"
+        ],
+        [
+         "Features",
+         "<strong>Shakiness, sweating, anxiety, hunger, pallor</strong>",
+         "Hunger, fatigue, <strong>confusion, ↓ level of consciousness, convulsions, coma</strong>"
+        ],
+        [
+         "Action",
+         "<strong>Treat promptly at this stage</strong>",
+         "Assistance required — this is <strong>severe hypoglycemia</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Treatment: give ~15 g of fast-acting sugar</strong> — glucose tablet or juice · <strong>glucose gel (absorbed rapidly across buccal mucosa)</strong> · <strong>glucagon (IM, SC or intranasal)</strong> · <strong>IV dextrose</strong>. <strong>Prevention:</strong> treat early symptoms promptly, monitor regularly, <strong>adjust insulin before and after exercise</strong>, adhere to the meal plan.</p>"
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-03",
+     "num": "03",
+     "name": "Pharmacology of Insulin",
+     "hasNote": true,
+     "title": "Insulin Preparations",
+     "framing": "<p>Choose a preparation based on <strong>what the insulin is covering</strong> — a meal (bolus) or the fasting state (basal). <strong>Onset and duration are set by one thing: how fast monomers dissociate from the hexamer</strong>, since insulin binds its receptor <strong>only as a monomer</strong>. Anything that stabilizes the hexamer (zinc, protamine, self-aggregation, albumin binding) → slower onset, longer duration.</p>",
+     "keypoints": "<p>⭐ <strong>Analogues are NOT more effective at lowering <span class=\"wl\">HbA1c</span> than human insulin — they are safer and more convenient</strong> (faster onset, better postprandial match, lower variability, less nocturnal hypoglycemia). <strong>Only regular insulin can be given IV.</strong> <strong>Basal insulins must never be used in pumps</strong>, and <strong>most basal insulins must not be mixed</strong> with another insulin before injection. <strong>Insulin does not interfere with the absorption or metabolism of other drugs</strong> — but drugs that alter glucose metabolism (e.g. <span class=\"wl\">steroids</span> ↑ hepatic glucose production) change how well it works. Exogenous insulin is imperfect because <strong>physiological secretion is glucose-dependent</strong>, and that fine-tuning is lost.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Insulin",
+        "Modification → why the kinetics change",
+        "Onset",
+        "Peak",
+        "Duration",
+        "Clinical Use / Caution"
+       ],
+       "rows": [
+        [
+         "<u>Bolus — rapid-acting analogues</u><br>Prandial control<br><strong>Approved for <span class=\"wl\">pumps</span></strong>",
+         "<span class=\"wl\">insulin lispro</span>",
+         "<strong>Order of proline and lysine in B chain reversed</strong>",
+         "10–15 min",
+         "1–2 h",
+         "3.5–6 h",
+         "Give <strong>0–15 min before a meal</strong>; <strong>dose can be skipped if the meal is skipped</strong>"
+        ],
+        [
+         "",
+         "<span class=\"wl\">insulin aspart</span>",
+         "<strong>Proline replaced with aspartic acid</strong>",
+         "10–15 min",
+         "<strong>40 min</strong> (fastest peak)",
+         "3–5 h",
+         ""
+        ],
+        [
+         "",
+         "<span class=\"wl\">insulin glulisine</span>",
+         "Asparagine → lysine; lysine → glutamic acid",
+         "<strong>5–15 min</strong>",
+         "1 h",
+         "3–5 h",
+         "⚠ Associated with <strong>more clotting issues in pumps</strong>"
+        ],
+        [
+         "<u>Bolus — fast-acting analogue</u>",
+         "fast-acting insulin aspart",
+         "Standard aspart <strong>+ nicotinamide and arginine</strong> → accelerates onset",
+         "<strong>~2.5 min</strong> (fastest)",
+         "≈ standard aspart",
+         "≈ standard aspart",
+         "Closest match to the post-meal surge"
+        ],
+        [
+         "<u>Bolus — short-acting human</u>",
+         "human <strong>regular</strong> insulin",
+         "Unmodified human insulin",
+         "<strong>30–60 min</strong>",
+         "—",
+         "—",
+         "⭐ <strong>The ONLY insulin that can be given IV</strong> → hyperglycemic crisis (<span class=\"wl\">DKA</span>), <span class=\"wl\">hyperkalemia</span>"
+        ],
+        [
+         "<u>Basal — intermediate human</u>",
+         "human <strong>NPH</strong>",
+         "Complexed with <strong>protamine and zinc</strong>",
+         "3–4 h",
+         "—",
+         "10–16 h",
+         "↑ nocturnal <span class=\"wl\">hypoglycemia</span> vs the basal analogues"
+        ],
+        [
+         "<u>Basal — long-acting analogues</u><br>Fasting control<br><strong>Minimal / flat peak</strong><br><strong>NOT for use in pumps</strong>",
+         "<span class=\"wl\">insulin glargine</span>",
+         "Two extra arginines; asparagine → glycine → <strong>forms microprecipitates at neutral pH</strong>",
+         "2–4 h",
+         "minimal",
+         "<strong>20–24 h</strong>",
+         "<strong>↓ nocturnal <span class=\"wl\">hypoglycemia</span></strong> vs human insulin"
+        ],
+        [
+         "",
+         "<span class=\"wl\">insulin detemir</span>",
+         "<strong>Myristoylated</strong> (fatty acid added) → ↑ self-aggregation (dihexamers) + <strong>albumin binding</strong>",
+         "0.5–1 h",
+         "minimal",
+         "16–24 h",
+         ""
+        ],
+        [
+         "<u>Basal — ultra-long-acting</u>",
+         "<span class=\"wl\">insulin degludec</span>",
+         "<strong>Multi-hexamers form after injection</strong> + albumin binding",
+         "0.5–1.5 h",
+         "minimal",
+         "<strong>> 42 h</strong>",
+         ""
+        ],
+        [
+         "",
+         "insulin <strong>icodec</strong>",
+         "Fatty <strong>diacid</strong> → albumin-bound depot + <strong>↓ receptor affinity</strong> → flat, ultra-long profile",
+         "—",
+         "flat",
+         "<strong>t½ ≈ 196 h</strong>",
+         "<strong>Dosed once WEEKLY</strong>; steady state after <strong>3–4 weekly doses</strong>"
+        ],
+        [
+         "<u>Biphasic (premixed)</u>",
+         "<strong>75%</strong> lispro protamine / <strong>25%</strong> <span class=\"wl\">insulin lispro</span><br><strong>70%</strong> aspart protamine / <strong>30%</strong> <span class=\"wl\">insulin aspart</span>",
+         "Protamine-bound (basal) + free (bolus) component in one pen",
+         "—",
+         "—",
+         "—",
+         "✔ Convenience, fewer injections<br>✘ Less flexibility; <strong>the least physiological regimen</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Mechanism is identical for every preparation</strong> once the active monomer is reached — insulin receptor activation → ↑ translocation of <strong>GLUT-4</strong> to the membrane (glucose uptake), ↑ <strong>glycogen synthase</strong>, ↑ lipogenesis, ↑ cell growth/division. Preparations differ <strong>only in pharmacokinetics, never in mechanism</strong>.</p>",
+       "cols": [
+        "Adverse Effect",
+        "Mechanism",
+        "Note"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">hypoglycemia</span></strong>",
+         "Insulin's action on glucose",
+         "<strong>Most common ADR</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">lipohypertrophy</span></strong>",
+         "Repeated same-site injection",
+         "Makes absorption <strong>slow and unpredictable</strong> → <strong>rotate sites systematically</strong>"
+        ],
+        [
+         "<strong>Weight gain</strong>",
+         "Anabolic actions of insulin",
+         "Common"
+        ],
+        [
+         "Immune / allergic reactions",
+         "Usually to the <strong>additives</strong>, not the insulin",
+         "Rare — try a <strong>different manufacturer</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Causes of hypoglycemia:</strong> missed meal or unusual exercise · <strong>excess basal when prandial was what was needed</strong> · no dose adjustment for activity · <strong>loss of renal function (↓ clearance)</strong> · cognitive impairment or unfamiliar device · interacting drugs (e.g. <span class=\"wl\">steroids</span>).</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Factors affecting absorption:</strong> route · formulation · dose · injection site · <strong>local blood flow (massage, hot tubs)</strong> · <strong>muscle activity (exercise)</strong>.</p>"
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-04",
+     "num": "04",
+     "name": "Clinically Useful Endocrine Principles",
+     "hasNote": true,
+     "framing": "<p>p# Overview chart: <u>Approach to a Suspected Endocrine Problem</u></p>",
+     "keypoints": "<p>the suppression/stimulation pairing is the single most testable idea here — <strong>excess is tested by trying to turn it off, deficiency by trying to turn it on</strong>. <strong><span class=\"wl\">primary adrenal insufficiency</span> loses both cortisol AND aldosterone</strong>, which is what separates it from central causes. A <strong>benign mass can still be clinically important</strong> through pure mass effect. And always ask whether an <strong>exogenous hormone</strong> explains the picture before working up the gland.</p>",
+     "blocks": [
+      {
+       "t": "note",
+       "html": "<p>Every endocrine problem sorts into <strong>structural</strong> (a mass) or <strong>functional</strong> (too much or too little hormone) — <strong>and both can be present at once</strong>. The sorting question determines the entire workup.</p>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Suspected endocrine problem\"] --> B{\"Structural or functional?\"}\n    B -->|\"STRUCTURAL — a mass\"| C{\"Benign or malignant?\"}\n    C --> D{\"Does the enlargement itself<br/>cause clinical effects?\"}\n    D --> E[\"Mass effect:<br/>pituitary → optic chiasm, CN III/IV/VI, V1/V2<br/>thyroid → dysphagia\"]\n    B -->|\"FUNCTIONAL — hormone\"| F{\"Too much or too little?\"}\n    F -->|\"EXCESS\"| G[\"Try to SUPPRESS it<br/>→ suppression test\"]\n    F -->|\"DEFICIENCY\"| H[\"Try to STIMULATE it<br/>→ stimulation test\"]\n    G --> I{\"Primary, secondary/tertiary,<br/>or exogenous source?\"}\n    H --> I"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Four questions to ask of any functional problem:</strong> <em>What does the hormone do?</em> · <em>What feedback loops could be affected?</em> · <strong><em>Is the problem in the gland itself (primary) or somewhere else (secondary / tertiary / central)?</strong></em> · <strong><em>Can this be explained by an exogenous source of hormone?</strong></em></p>",
+       "cols": [
+        "Gland",
+        "<u>Structural</u> — benign",
+        "<u>Structural</u> — malignant",
+        "<u>Functional</u> — deficiency",
+        "<u>Functional</u> — excess"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Adrenal</span></strong>",
+         "Adenoma — <strong>functioning or non-functioning</strong>",
+         "<strong>Metastases to the adrenal</strong> · malignant <span class=\"wl\">pheochromocytoma</span> · <span class=\"wl\">adrenal cortical carcinoma</span>",
+         "<span class=\"wl\">primary adrenal insufficiency</span> (<strong><span class=\"wl\">cortisol</span> AND <span class=\"wl\">aldosterone</span> deficiency</strong>)<br><span class=\"wl\">congenital adrenal hyperplasia</span> (<strong>21-hydroxylase deficiency</strong>)",
+         "<span class=\"wl\">Cushing syndrome</span> (<strong><span class=\"wl\">cortisol</span></strong>)<br><span class=\"wl\">primary aldosteronism</span> (<strong><span class=\"wl\">aldosterone</span></strong>)"
+        ],
+        [
+         "<strong><span class=\"wl\">Thyroid</span></strong>",
+         "—",
+         "<u>Focal enlargement = nodules</u><br><span class=\"wl\">papillary thyroid carcinoma</span> · <span class=\"wl\">follicular thyroid carcinoma</span> · <span class=\"wl\">medullary thyroid carcinoma</span>",
+         "<u>Hypothyroidism</u><br><strong><span class=\"wl\">Hashimoto's thyroiditis</span></strong> · <span class=\"wl\">thyroiditis</span> (hypo stage) · <strong>central</strong> (pituitary/hypothalamic)",
+         "<u>Hyperthyroidism / thyrotoxicosis</u><br><strong><span class=\"wl\">Graves disease</span></strong> · iatrogenic (oral <span class=\"wl\">T4</span>) · <span class=\"wl\">thyroiditis</span> (hyper stage) · <span class=\"wl\">gestational thyrotoxicosis</span> · <span class=\"wl\">TSH-secreting pituitary adenoma</span>"
+        ],
+        [
+         "",
+         "",
+         "<u>Diffuse enlargement = goiters</u><br><span class=\"wl\">Graves disease</span> · <span class=\"wl\">Hashimoto's thyroiditis</span> · <strong><span class=\"wl\">iodine deficiency</span></strong> · <span class=\"wl\">toxic multinodular goiter</span>",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Dynamic testing — the logic is always the mirror of the problem.</strong> Suspect <strong>excess</strong> → <strong>suppress</strong>. Suspect <strong>deficiency</strong> → <strong>stimulate</strong>.</p>",
+       "cols": [
+        "Suspected problem",
+        "Direction",
+        "Test",
+        "Why it works"
+       ],
+       "rows": [
+        [
+         "<span class=\"wl\">adrenal insufficiency</span>",
+         "↓ <span class=\"wl\">cortisol</span>",
+         "⭐ <strong><span class=\"wl\">ACTH stimulation test</span></strong>",
+         "Stimulate a failing gland and watch it fail to respond"
+        ],
+        [
+         "<span class=\"wl\">Cushing syndrome</span>",
+         "↑ <span class=\"wl\">cortisol</span>",
+         "⭐ <strong><span class=\"wl\">dexamethasone suppression test</span></strong>",
+         "Autonomous cortisol will not suppress"
+        ],
+        [
+         "<span class=\"wl\">acromegaly</span>",
+         "↑ <span class=\"wl\">growth hormone</span>",
+         "<strong>75 g <span class=\"wl\">OGTT</span></strong>",
+         "<strong>Oral glucose normally suppresses GH</strong>"
+        ],
+        [
+         "<span class=\"wl\">growth hormone deficiency</span>",
+         "↓ <span class=\"wl\">growth hormone</span>",
+         "Arginine-GHRH stimulation test, or insulin tolerance test",
+         "—"
+        ],
+        [
+         "<span class=\"wl\">central diabetes insipidus</span>",
+         "↓ <span class=\"wl\">ADH</span>",
+         "<strong><span class=\"wl\">fluid deprivation test</span></strong>",
+         "—"
+        ],
+        [
+         "<span class=\"wl\">primary aldosteronism</span>",
+         "↑ <span class=\"wl\">aldosterone</span>",
+         "Saline infusion, or 3-day oral sodium loading",
+         "Volume loading normally suppresses aldosterone"
+        ],
+        [
+         "<span class=\"wl\">insulinoma</span>",
+         "episodic ↑ insulin",
+         "<strong>Observed fasting test</strong>",
+         "<strong>Fasting normally suppresses insulin release</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Orientation:</strong> hormones serve four jobs — <strong>reproduction</strong> (<span class=\"wl\">estradiol</span>, <span class=\"wl\">testosterone</span>, <span class=\"wl\">prolactin</span>) · <strong>growth and development</strong> (<span class=\"wl\">growth hormone</span>, sex steroids) · <strong>maintaining the internal environment</strong> (<span class=\"wl\">triiodothyronine</span>, <span class=\"wl\">ADH</span>, <span class=\"wl\">PTH</span>) · <strong>making, storing and using energy</strong> (<span class=\"wl\">insulin</span>, <span class=\"wl\">glucagon</span>, <span class=\"wl\">cortisol</span>). By distance to target: <em>autocrine</em> = the cell itself · <em>paracrine</em> = a nearby cell · <strong><em>endocrine</em> = distant, reached via the bloodstream</strong>.</p>"
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-05",
+     "num": "05",
+     "name": "Type 2 Diabetes Mellitus - Diagnosis & Epidemiology",
+     "hasNote": true,
+     "title": "Diagnosing T2DM and the Grey Zone",
+     "framing": "<p>T1DM and T2DM share <strong>identical diagnostic thresholds</strong> — so the diagnostic work is (1) crossing the threshold, (2) deciding <strong>how many measurements</strong> you need, and (3) working out <strong>which type</strong> you are looking at.</p>",
+     "keypoints": "<p><strong>symptomatic → one measurement; asymptomatic → two.</strong> <strong>Do not diagnose during acute illness</strong> (MI, sepsis, steroids) — suspect, then confirm on recovery. <strong>C-peptide and anti-GAD move in opposite directions</strong> between the two types: <em>low C-peptide + high anti-GAD = T1DM</em>. <strong>>90% of all diabetes is Type 2</strong>; <strong>589M adults</strong> live with diabetes worldwide (<strong>~1 in 9</strong>), <strong>~43% of them undiagnosed</strong>, and <strong>~30% of Canadians</strong> have diabetes or prediabetes. Finally — <strong>a T2DM diagnosis is not necessarily permanent</strong>: weight loss, activity and diet can return glucose below the diabetic range, though it can recur, so <strong>keep checking a few times a year</strong>.</p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Abnormal glucose measurement\"] --> B{\"Symptoms present?<br/>polydipsia, polyuria, weight loss\"}\n    B -->|Yes| C[\"1 abnormal measurement is sufficient\"]\n    B -->|No| D[\"2 abnormal measurements required\"]\n    C --> E{\"Patient acutely ill?<br/>recent MI, sepsis, steroids\"}\n    D --> E\n    E -->|Yes| F[\"Suspect diabetes, but<br/>CONFIRM once recovered\"]\n    E -->|No| G{\"Which type?\"}\n    G --> H[\"Activity/weight history<br/>C-peptide + anti-GAD\"]\n    H --> I[\"↑ C-peptide, ↓ anti-GAD → T2DM\"]\n    H --> J[\"↓ C-peptide, ↑ anti-GAD → T1DM\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Test",
+        "Normal",
+        "<strong>Grey zone = <span class=\"wl\">prediabetes</span></strong>",
+        "<strong>Diabetes</strong>"
+       ],
+       "rows": [
+        [
+         "<span class=\"wl\">FPG</span>",
+         "< 6.1",
+         "<strong>6.1–6.9 mmol/L = <span class=\"wl\">impaired fasting glucose</span> (IFG)</strong>",
+         "<strong>≥ 7.0 mmol/L</strong>"
+        ],
+        [
+         "2h 75 g <span class=\"wl\">OGTT</span>",
+         "< 7.8",
+         "<strong>7.8–11.0 mmol/L = <span class=\"wl\">impaired glucose tolerance</span> (IGT)</strong>",
+         "<strong>≥ 11.1 mmol/L</strong>"
+        ],
+        [
+         "<span class=\"wl\">HbA1c</span>",
+         "< 6.0",
+         "<strong>6.0–6.4%</strong>",
+         "<strong>≥ 6.5%</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Why these particular numbers?</strong> The cut-points were <strong>not</strong> chosen arbitrarily and they are <strong>not</strong> the level at which cardiovascular risk rises — they mark the glycemic level at which the risk of <strong><span class=\"wl\">diabetic retinopathy</span></strong> rises sharply.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ <strong>The grey zone is the target population for T2DM prevention</strong> — see <span class=\"wl\">12 - Prevention of Type 2 Diabetes</span>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Distinguishing T1DM from T2DM</strong></p>",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">T1DM</span></strong>",
+        "<strong><span class=\"wl\">T2DM</span></strong>"
+       ],
+       "rows": [
+        [
+         "Presentation",
+         "<strong>Acute</strong>; diagnosis made quickly",
+         "<strong>Indolent prodrome</strong> (<span class=\"wl\">IFG</span> / <span class=\"wl\">IGT</span>) lasting <strong>years</strong>"
+        ],
+        [
+         "Confirmatory 2nd test",
+         "<strong>Rarely needed</strong> — symptoms almost always present",
+         "Often needed; <strong>results vary with physical stress, weight, activity</strong>"
+        ],
+        [
+         "History clues",
+         "<strong>Sudden dramatic weight loss</strong> → severe hyperglycemia, incipient T1DM",
+         "<strong>Recent weight gain</strong>, or <strong>being very active then suddenly stopping</strong> (lack of muscle work tips glucose into diabetic range)"
+        ],
+        [
+         "<strong><span class=\"wl\">serum C-peptide</span></strong>",
+         "<strong>↓</strong>",
+         "<strong>↑</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">anti-GAD antibodies</span></strong>",
+         "<strong>↑</strong>",
+         "<strong>↓</strong>"
+        ],
+        [
+         "Associated risk",
+         "—",
+         "<strong>↑ health risks from <span class=\"wl\">metabolic syndrome</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ <em>These tests are often unnecessary — usually <strong>time and the response to medications</strong> reveal the type.</em></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>T2DM is not only a disease of hyperglycemia.</strong> Non-glycemic features: <strong>abnormal lipids</strong> (<span class=\"wl\">hypertriglyceridemia</span>, <strong>low HDL, small dense LDL</strong>) · ↑ systemic and vascular inflammation · ↑ free fatty acids · <span class=\"wl\">hypertension</span> · <span class=\"wl\">sleep apnea</span>.</p>",
+       "cols": [
+        "<strong><span class=\"wl\">metabolic syndrome</span></strong> — some or all of",
+        "Why it matters"
+       ],
+       "rows": [
+        [
+         "<span class=\"wl\">essential hypertension</span> · <strong>low HDL</strong> · <span class=\"wl\">hypertriglyceridemia</span> · <strong>↑ waist-to-hip ratio (visceral fat)</strong> · <span class=\"wl\">dysglycemia</span> or <span class=\"wl\">T2DM</span>",
+         "Flags ↑ risk of CVD and T2DM. <strong>In a patient who already has T2DM, metabolic syndrome raises CV risk further still</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Pathophysiology — two problems, and by diagnosis both are present</strong></p>",
+       "cols": [
+        "",
+        "<strong>Insulin resistance</strong>",
+        "<strong>Insulin deficiency</strong>"
+       ],
+       "rows": [
+        [
+         "Definition",
+         "Needs <strong>more insulin than normal</strong> to move glucose into liver, adipose and skeletal muscle",
+         "<strong>Not enough insulin for the body's needs</strong><br><strong>T1DM = absolute · T2DM = relative</strong>"
+        ],
+        [
+         "Causes",
+         "Genetics · <strong>high fat / refined carb diet</strong> · <strong>lack of muscle activity</strong> · <strong>excess adipose tissue and fatty liver</strong> · systemic inflammation (adipocytokines) · abnormal mitochondria",
+         "Genetics · surgery (<span class=\"wl\">pancreatectomy</span>) · <strong>excess glucose (glucose toxicity feedback loop)</strong> · <strong>excess free fatty acids</strong> from visceral fat lipolysis"
+        ],
+        [
+         "Sequence if primary",
+         "resistance → ↑ demand on pancreas → <strong>pancreas cannot keep up</strong> → diabetic glucose",
+         "deficiency → glucose rises → <strong>glucose toxicity</strong> → further pancreatic stress → diabetic glucose"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Risk factors.</strong> <em>Genetic:</em> mostly polygenic — <strong>90% monozygotic twin concordance</strong>, <strong>40% have an affected parent</strong>, 5–10% ↑ lifetime risk with a 1st-degree relative. <em>Environmental:</em> <strong>obesogenic foods</strong> (low fibre, high fat, high simple sugars), <strong>\"portion creep\"</strong>, inactivity. <strong>Populations at particular risk:</strong> South and East Asian, Hispanic, Indigenous, African American, and <strong>women with previous <span class=\"wl\">gestational diabetes</span></strong>.</p>"
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-06",
+     "num": "06",
+     "name": "Acute and Chronic Complications of Diabetes",
+     "hasNote": true,
+     "title": "Complications of Diabetes",
+     "framing": "<p>The acute emergencies separate on <strong>one variable: is there enough insulin to suppress lipolysis?</strong> Enough → no ketones → <strong>HHS</strong>. Not enough → ketogenesis → <strong>DKA</strong>.</p>",
+     "keypoints": "<p><strong>abdominal pain and vomiting = DKA, not HHS.</strong> <strong>Hours = DKA, days = HHS.</strong> <strong>T1DM = DKA, older T2DM = HHS.</strong> <strong><span class=\"wl\">SGLT2 inhibitors</span> can precipitate DKA</strong> — and appear again in the sick-day rules as a drug to <em>stop</em>. <strong>Potassium falls with treatment, not before it.</strong> <strong>Proprioception goes early</strong> in peripheral neuropathy, and <strong>feet are affected before hands because of nerve length</strong>.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">Diabetic Ketoacidosis (DKA)</span></strong>",
+        "<strong><span class=\"wl\">Hyperosmolar Hyperglycemic State (HHS)</span></strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Causes</strong>",
+         "<strong>Absolute insulin deficiency → <span class=\"wl\">T1DM</span></strong><br><u>Precipitants</u><br><strong>Illness</strong> — anything ① dehydrating or ② physically stressful (<span class=\"wl\">gastroenteritis</span>, <span class=\"wl\">MI</span>, <span class=\"wl\">stroke</span>, <span class=\"wl\">sepsis</span>, <span class=\"wl\">pancreatitis</span>)<br><strong>Lack of insulin</strong> — 1st diagnosis of T1DM, forgetting / withholding / <strong>rationing</strong> insulin, <span class=\"wl\">insulin pump</span> malfunction<br><strong>Medications</strong> — <span class=\"wl\">steroids</span>, <strong><span class=\"wl\">SGLT2 inhibitors</span></strong>, cocaine",
+         "<strong>Relative insulin deficiency → <span class=\"wl\">T2DM</span>, usually older patients</strong><br><u>Precipitants</u><br><strong>Illness</strong> — dehydrating or physically stressful<br><strong>Lack of insulin</strong> — rationing, missed doses<br><strong>Drug effects</strong> — <strong><span class=\"wl\">steroids</span> worsen insulin resistance</strong>"
+        ],
+        [
+         "<strong>Pathology</strong>",
+         "No insulin at all → <strong>unopposed lipolysis → ketone production → <span class=\"wl\">anion gap</span> metabolic <span class=\"wl\">acidosis</span></strong>",
+         "⭐ <strong>Enough insulin to inhibit adipose breakdown into ketones, but not enough to prevent <span class=\"wl\">hyperglycemia</span></strong> → profound hyperglycemia and <strong>hyperosmolality without significant acidosis</strong>"
+        ],
+        [
+         "<strong>Presentation</strong>",
+         "⏰ <strong>Evolves over HOURS</strong><br><span class=\"wl\">polyuria</span>, <span class=\"wl\">polydipsia</span><br>Weight loss, <strong>nausea, VOMITING, ABDOMINAL PAIN</strong><br>Progresses to lethargy and coma if untreated",
+         "⏰ <strong>Evolves over DAYS</strong><br><span class=\"wl\">polyuria</span>, <span class=\"wl\">polydipsia</span><br>Lethargy → <strong>obtundation</strong> (rarely coma)<br>⭐ <strong>NO abdominal pain and NO vomiting</strong>"
+        ],
+        [
+         "<strong>Dx</strong>",
+         "<u>Physical exam</u><br><strong>Toxic appearance</strong>; <span class=\"wl\">hypotension</span> + <span class=\"wl\">tachycardia</span> (shock); dehydration (dry membranes, poor skin turgor); <strong>acetone smell on breath</strong>; <strong><span class=\"wl\">Kussmal's breathing</span></strong><br><u>Investigations</u><br><strong>↑ blood glucose (often > 15)</strong><br><strong>↑ serum and urine ketones</strong><br><strong>↑ <span class=\"wl\">anion gap</span> — follow it during treatment</strong><br><strong>↓ serum pH (<span class=\"wl\">acidosis</span>)</strong>; <strong>↓ <span class=\"wl\">serum bicarbonate</span></strong> (consumed)<br>↑ plasma osmolality<br><strong>Na⁺ ↑ or ↓</strong> — high sugars falsely lower Na⁺, so <strong>correct for glucose</strong><br><strong>K⁺ ↑ or ↓</strong> — total body <strong>K⁺ is depleted</strong> even when serum looks normal<br>↑ <span class=\"wl\">creatinine</span> (dehydration)",
+         "Same biochemical panel, but the discriminating pattern is:<br><strong>very high glucose</strong>, <strong>↑↑ plasma osmolality</strong><br><strong>minimal or absent ketones</strong><br><strong>pH and <span class=\"wl\">serum bicarbonate</span> near normal — no significant anion gap</strong>"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "Both require <strong>emergent</strong> treatment; <strong>fluid deficits are very large</strong><br><strong>① ABCs</strong> — airway, breathing, circulation<br><strong>② Fluids</strong> — <strong><span class=\"wl\">normal saline</span> first</strong>, often <strong>many litres</strong>; <strong>add <span class=\"wl\">dextrose</span> once glucose falls</strong> so the insulin infusion can continue without causing hypoglycemia<br><strong>③ Insulin</strong> — <strong>ALWAYS required in DKA</strong>, almost always in HHS<br><strong>④ Monitoring q1–2h</strong> — level of consciousness · <strong>Na⁺, K⁺, pH</strong> · <strong>glucose hourly on an insulin drip</strong> · volume status (<strong>especially elderly — watch for <span class=\"wl\">heart failure</span></strong>)",
+         "<strong>Same protocol.</strong> The one difference: <strong>insulin is ALWAYS required in DKA, ALMOST always in HHS.</strong> Fluid deficits are typically even larger, and these patients are older — <strong>monitor volume status especially closely</strong>"
+        ],
+        [
+         "<strong>Px / Prevention</strong>",
+         "<strong>Sick-day rules — <span class=\"wl\">T1DM</span>:</strong> ⭐ <strong>continue SOME insulin even when not eating</strong> (lower-dose basal); monitor glucose <strong>and urine ketones</strong> frequently",
+         "<strong>Sick-day rules — <span class=\"wl\">T2DM</span>:</strong> monitor glucose frequently; ⭐ <strong>STOP dehydrating medications during GI upset — <span class=\"wl\">SGLT2 inhibitors</span>, <span class=\"wl\">diuretics</span>, <span class=\"wl\">metformin</span></strong>; the stress of illness raises sugars, so <strong>taking some insulin is appropriate</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>The biochemical line between them — memorize this table.</strong></p>",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">DKA</span></strong>",
+        "<strong><span class=\"wl\">HHS</span></strong>"
+       ],
+       "rows": [
+        [
+         "<strong>pH</strong>",
+         "⭐ <strong>≤ 7.3</strong>",
+         "<strong>> 7.3</strong>"
+        ],
+        [
+         "<strong>Plasma glucose</strong>",
+         "<strong>> 15 mmol/L</strong>",
+         "⭐ <strong>> 30 mmol/L</strong>"
+        ],
+        [
+         "<strong>Serum bicarbonate</strong>",
+         "<strong>< 18 mEq/L</strong>",
+         "<strong>> 15 mEq/L</strong>"
+        ],
+        [
+         "<strong>Plasma / urine ketones</strong>",
+         "⭐ <strong>positive</strong>",
+         "<strong>negative or trace</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Anion gap</span></strong>",
+         "⭐ <strong>> 12</strong>",
+         "<strong>< 12</strong>"
+        ],
+        [
+         "<strong>Serum osmolarity</strong>",
+         "<strong>variable</strong>",
+         "⭐ <strong>> 320 mOsm/kg (HIGH)</strong>"
+        ],
+        [
+         "<strong>Water deficit</strong>",
+         "<strong>~6 L</strong>",
+         "⭐ <strong>~9 L</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "red",
+       "title": "The two traps that kill",
+       "html": "<p><strong>① Potassium.</strong> Total body K⁺ is depleted even when the initial <span class=\"wl\">serum potassium</span> looks normal — in DKA, <strong>low insulin has driven K⁺ extracellularly</strong>. Once you give fluid and insulin, <strong>K⁺ shifts back intracellularly and falls sharply</strong>, causing <strong><span class=\"wl\">arrhythmias</span> and death</strong>. <strong><em>K⁺ replacement is often required during treatment.</strong></em></p><p><strong>② Glucose falling too fast.</strong> IV fluids and insulin will drop glucose. <strong>Add <span class=\"wl\">dextrose</span> to the fluids</strong> so insulin can keep running until the <strong>dehydration — and in DKA the acidosis — is corrected.</strong></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Chronic complications</strong> — never used to frighten patients into compliance; they can occur despite excellent self-management.</p>",
+       "cols": [
+        "",
+        "<strong>Microvascular</strong> (small vessels)",
+        "<strong>Macrovascular</strong> (large vessels)"
+       ],
+       "rows": [
+        [
+         "Conditions",
+         "<strong><span class=\"wl\">diabetic retinopathy</span> — the most common microvascular complication</strong><br><strong><span class=\"wl\">diabetic nephropathy</span> — #1 cause of renal failure in the USA</strong><br><strong><span class=\"wl\">diabetic neuropathy</span></strong>",
+         "<strong><span class=\"wl\">myocardial infarction</span></strong> · <strong><span class=\"wl\">stroke</span></strong> · <strong><span class=\"wl\">PVD</span></strong>"
+        ],
+        [
+         "Mechanism",
+         "Capillary basement membrane thickening; matrix accumulation in the <span class=\"wl\">glomerulus</span> → fibrosis → ↓ filtration surface",
+         "<strong>↑ free fatty acids → <span class=\"wl\">atherosclerosis</span></strong> → plaque in coronary and cranial arteries"
+        ],
+        [
+         "Key numbers / signs",
+         "<strong>Nephropathy = <span class=\"wl\">proteinuria</span> > 500 mg/24 h</strong>, preceded by <strong>microalbuminuria 30–299 mg/24 h</strong><br>Treat with <strong><span class=\"wl\">ACE inhibitors</span> / <span class=\"wl\">ARBs</span> — even in patients WITHOUT hypertension</strong>",
+         "<strong>Always ask about <span class=\"wl\">intermittent claudication</span> and check pulses in both legs</strong> — unchecked PVD leads to amputation"
+        ],
+        [
+         "Neuropathy subtypes",
+         "<strong>Peripheral sensorimotor</strong> — most common, <strong>\"glove and stocking\"</strong>, <strong>feet worse than hands because longer nerves conduct proportionally slower</strong>; <strong>proprioception lost early</strong>; risk of ulcers, infection, amputation, <strong><span class=\"wl\">neuropathic arthropathy</span> (Charcot foot)</strong><br><strong>Autonomic</strong> — <strong><span class=\"wl\">gastroparesis</span> (common in T1DM)</strong>, <span class=\"wl\">erectile dysfunction</span><br><strong>Cranial</strong> — most commonly <strong><span class=\"wl\">third nerve palsy</span></strong>; also <span class=\"wl\">Bell's palsy</span><br><strong><span class=\"wl\">Amyotrophy</span></strong> — wasting of large proximal muscles from <strong><span class=\"wl\">lumbosacral plexus</span></strong> damage, <strong>most common in T2DM</strong>",
+         "Also ↑ risk of <strong><span class=\"wl\">cataracts</span> and <span class=\"wl\">glaucoma</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong><span class=\"wl\">Retinopathy</span> staging — only the third stage threatens vision.</strong></p>",
+       "cols": [
+        "Stage",
+        "Vision-threatening?",
+        "Features"
+       ],
+       "rows": [
+        [
+         "<strong>① <span class=\"wl\">Background</span></strong>",
+         "<strong>No</strong> — <strong>can even improve with good glycemic control</strong>",
+         "<strong>Dot hemorrhages, microaneurysms</strong>"
+        ],
+        [
+         "<strong>② <span class=\"wl\">Pre-proliferative</span></strong>",
+         "<strong>No, but at risk of progressing</strong> — monitor frequently",
+         "<strong>Retinal infarcts (cotton wool spots)</strong>, lipid exudates, <strong>macular edema</strong> (can change vision)"
+        ],
+        [
+         "<strong>③ <span class=\"wl\">Proliferative</span></strong>",
+         "⭐ <strong>YES — must be treated</strong>",
+         "<strong>New fragile vessels</strong>, risk of <strong>bleeding into the vitreous</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Why complications happen at all</strong> — hyperglycemia is <strong>toxic to vessels and nerves</strong> · drives <strong>oxidative stress and free radicals</strong> · <strong>↑ intracellular sorbitol → osmotic swelling</strong> · <strong>↑ VEGF → angiogenesis</strong>. Contributing: hypertension, cholesterol/atherosclerosis, <strong>protein glycation</strong>, inflammation and a <strong>hypercoagulable state</strong> driving thrombosis.</p>"
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-07",
+     "num": "07",
+     "name": "Pharmacology of Glucose-Lowering Drugs",
+     "hasNote": true,
+     "title": "Glucose-Lowering Drugs in T2DM",
+     "framing": "<p>Choose an agent based on <strong>which step of glucose metabolism is being manipulated</strong>, then narrow by hypoglycemia risk, effect on weight, and organ function!</p>",
+     "keypoints": "<p><strong><span class=\"wl\">GLP-1RAs</span> and <span class=\"wl\">SGLT2 inhibitors</span> are the agents with proven cardiovascular benefit</strong> — pick one in a patient with CV disease. Only the <strong>secretagogues (SUs, meglitinides) carry meaningful hypoglycemia risk</strong>, because they release insulin <em>independent</em> of glucose level; the incretins do not, because their secretion is <strong>glucose-dependent</strong>. <strong>Weight gain: TZDs, SUs, meglitinides. Weight loss: GLP-1RAs, SGLT2i, (metformin).</strong> Two classes stop at <strong>eGFR < 30</strong>: <strong><span class=\"wl\">metformin</span></strong> (lactic acidosis) and <strong><span class=\"wl\">SGLT2 inhibitors</span></strong> (no filtered glucose to block).</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Agents",
+        "Mechanism of Action",
+        "Efficacy &amp; Advantages",
+        "Adverse Effects / Contraindications"
+       ],
+       "rows": [
+        [
+         "<strong>Insulin sensitizers</strong><br><br>↑ peripheral utilization of glucose<br><br>(<strong>no</strong> ∆ in insulin release → <strong>low risk of hypoglycemia</strong> as monotherapy)",
+         "<u>Biguanides</u><br><strong><span class=\"wl\">metformin</span></strong> (only one left on market)<br><br><u>Thiazolidinediones (TZDs)</u><br><span class=\"wl\">pioglitazone</span><br><span class=\"wl\">rosiglitazone</span>",
+         "Activates <strong>AMP kinase</strong><br>↓ gluconeogenesis, ↓ glycogenolysis<br>↑ hepatic insulin sensitivity<br>↓ conversion of lactate → glucose<br>Opposes <span class=\"wl\">glucagon</span><br><br>Act on <strong>PPAR-γ receptor</strong><br><strong>adipose</strong>: ↑ adipocyte number/size → ↓ circulating free fatty acids<br><strong>liver</strong>: ↓ glucose output<br><strong>skeletal muscle</strong>: ↑ glucose uptake<br>⚠ Gene transcription → <strong>slow onset (up to 3 months)</strong>",
+         "<strong>First-line for T2DM</strong><br>↓ HbA1c <strong>1.0%</strong> (highest)<br>Very safe, very effective, <strong>low cost ($)</strong><br><strong>Weight neutral</strong>, possible CV benefit<br>Combo-therapy friendly<br><br>↓ HbA1c 0.7–0.9%<br>Stable and efficacious once working<br><strong>No hypoglycemia risk</strong>",
+         "GI disturbance (non-issue if <strong>titrated gradually</strong>)<br>↓ B12 absorption (monitor serum B12 in long-term use)<br><strong><span class=\"wl\">lactic acidosis</span></strong> if ↓ hepatic function<br><strong>Do NOT use if eGFR < 30 mL/min</strong> (renally excreted → drug accumulation)<br><br><strong>Weight gain</strong> (adipose expansion)<br><strong>Edema</strong> (↑ renal Na⁺ channels) → <strong>contraindicated in <span class=\"wl\">heart failure</span></strong><br>Many DDIs (CYP) — not in <span class=\"wl\">liver failure</span><br><strong>↑ fracture risk</strong> (avoid in <span class=\"wl\">osteoporosis</span>)<br><strong>↑ bladder cancer risk</strong>"
+        ],
+        [
+         "<strong>Insulin secretagogues</strong><br><br>↑ insulin secretion from the <span class=\"wl\">pancreas</span><br><br>(<strong>depend on functioning beta cells</strong> → poor choice in advanced disease)",
+         "<u>Sulfonylureas (SUs)</u><br>2nd generation preferred (↑ potency, ↓ toxicity)<br><br><u>Meglitinides (\"glinides\")</u><br><span class=\"wl\">repaglinide</span>",
+         "<strong>Inhibit ATP-sensitive K⁺ channel</strong> (SUR1 + Kir6.2) on beta cells → depolarization → Ca²⁺ influx → insulin exocytosis<br>⚠ Desensitizes over time = <strong>sulfonylurea secondary failure</strong><br><br>Same channel as SUs, different binding → <strong>rapid onset, short duration</strong><br>→ better <strong>post-prandial</strong> control<br>⚠ Mirror image: <strong>diazoxide opens</strong> the channel → ↓ insulin secretion",
+         "↓ HbA1c 0.6–1.2%<br>Great efficacy (<strong>but not durable</strong>)<br>Oral, <strong>low cost ($)</strong><br><br>↓ HbA1c 0.7–1.1%<br><strong>Inactive metabolites</strong> → safer than SUs<br><strong>↓ hypoglycemia risk vs SUs</strong> → better for elderly / living alone<br>Flexible eating schedule",
+         "<strong>Weight gain</strong> (↑ insulin)<br><strong>Hypoglycemia</strong> — do NOT prescribe to ① elderly ② people living alone ③ people who drive for a living<br>Many DDIs incl. <strong>alcohol</strong> (CYP)<br><strong>↑ hypoglycemia in liver/kidney failure</strong><br><br>Weight gain (less than SUs)<br>Moderate hypoglycemia risk<br><strong>t.i.d. dosing</strong> (must be taken with each meal)"
+        ],
+        [
+         "<strong>Incretin agents</strong><br><br>Mimic (<span class=\"wl\">GLP-1RAs</span>) or prolong (<span class=\"wl\">DPP-4 inhibitors</span>) <span class=\"wl\">GLP-1</span>",
+         "<u>GLP-1 receptor agonists</u><br><span class=\"wl\">semaglutide</span> (oral form exists)<br><br><u>DPP-4 inhibitors</u> (\"–gliptins\")<br><br><u>Dual GLP-1 / GIP agonist</u><br><span class=\"wl\">tirzepatide</span>",
+         "⭐ <strong>Promote insulin secretion in a glucose-dependent manner</strong> → insulin released <strong>only</strong> when blood glucose is ↑ → <strong>greatly ↓ hypoglycemia risk</strong><br><br><strong>GLP-1RAs ↑ GLP-1 ×10</strong><br><strong>DPP-4i ↑ GLP-1 ×2–3</strong> only<br><br><strong>Dual activation of GLP-1 AND GIP receptors</strong> (more so GIP)<br><strong>pancreas</strong>: ↑ β-cell function, ↓ <span class=\"wl\">glucagon</span><br><strong>brain</strong>: ↓ appetite, ↓ cravings<br><strong>stomach</strong>: ↓ gastric transit",
+         "↓ HbA1c 0.6–<strong>1.4%</strong> (greatest)<br><strong>Weight loss</strong> (↓ gastric emptying, ↑ satiety)<br><strong>1× per week</strong> dosing<br><strong>CV protection</strong>, ↓ lipids<br><br>↓ HbA1c 0.5–0.7% (modest)<br><strong>Weight neutral</strong>, well tolerated<br><br>Broadest effects: ↓ BP, ↓ liver fat &amp; fibrosis markers, ↓ albuminuria, ↑ insulin sensitivity",
+         "GI side effects (<strong>dose-dependent</strong> for GLP-1RAs; ↓ with DPP-4i — titrate)<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Subcutaneous injection<br>Contraindicated in <strong><span class=\"wl\">pancreatic cancer</span></strong><br><br>DPP-4i specifically: <strong>↑ risk of URTIs</strong>"
+        ],
+        [
+         "<strong>Altered glucose absorption or excretion</strong>",
+         "<u>α-Glucosidase inhibitors</u><br><span class=\"wl\">acarbose</span> (only one in Canada)<br><br><u>SGLT2 inhibitors</u> (\"gliflozins\")",
+         "<strong>Competitive inhibition of α-glucosidase</strong> on intestinal brush border → delays carbohydrate digestion<br>→ blunts <strong>post-prandial glucose peak</strong>; slow rise instead<br>⚠ Competitive → <strong>must be taken with each meal</strong><br><br><strong>Block Na⁺/glucose co-transporter in the <span class=\"wl\">proximal convoluted tubule</span></strong> → ↑ urinary glucose excretion (with Na⁺ and water)<br><strong>Insulin-independent</strong> and <strong>independent of beta-cell function</strong>",
+         "↓ HbA1c 0.7–0.8% (modest)<br><strong>Weight neutral</strong>, <strong>no hypoglycemia risk</strong><br><strong>Cannot be used as monotherapy</strong> — efficacy diet-dependent<br><br>↓ HbA1c 0.5–0.7%<br><strong>Weight loss</strong>, ↓ BP, ↓ lipids<br><strong>CV and renal protection</strong> — delays progression of <span class=\"wl\">diabetic nephropathy</span><br>Low hypoglycemia risk",
+         "GI side effects (<strong>flatulence, constipation</strong>)<br><strong>t.i.d. dosing</strong><br>Contraindicated in <strong><span class=\"wl\">IBS</span>, <span class=\"wl\">IBD</span>, obstruction</strong><br><br><strong>ECF volume contraction</strong> (↑ thirst, <span class=\"wl\">hypovolemia</span>, <span class=\"wl\">hypotension</span>) — caution with other diuretics<br><strong>↑ GU infections</strong> (glucose in urinary tract)<br><strong>↓ bone density → ↑ fracture risk</strong><br><strong>Do NOT use if eGFR < 30 mL/min</strong> or severe hepatic disease"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Choosing a second-line agent</strong> — metformin is always first; add on according to the patient in front of you.</p>",
+       "cols": [
+        "Drug",
+        "↓ HbA1c %",
+        "Hypoglycemia risk",
+        "Weight",
+        "Cost",
+        "↓ liver function",
+        "↓ renal function",
+        "Key contraindication"
+       ],
+       "rows": [
+        [
+         "<span class=\"wl\">metformin</span>",
+         "<strong>1.0</strong>",
+         "none",
+         "neutral / loss",
+         "<strong>$</strong>",
+         "contraindicated",
+         "contraindicated",
+         "<strong>eGFR < 30 mL/min</strong>"
+        ],
+        [
+         "<span class=\"wl\">TZDs</span>",
+         "0.7–0.9",
+         "none",
+         "<strong>gain</strong>",
+         "$$$",
+         "contraindicated",
+         "caution",
+         "<strong><span class=\"wl\">heart failure</span></strong>"
+        ],
+        [
+         "<span class=\"wl\">SUs</span>",
+         "0.6–1.2",
+         "<strong>moderate</strong>",
+         "<strong>gain</strong>",
+         "<strong>$</strong>",
+         "contraindicated",
+         "contraindicated",
+         "↓ liver function"
+        ],
+        [
+         "<span class=\"wl\">meglitinides</span>",
+         "0.7–1.1",
+         "<strong>moderate</strong>",
+         "<strong>gain</strong>",
+         "$$",
+         "contraindicated",
+         "caution",
+         "—"
+        ],
+        [
+         "<span class=\"wl\">GLP-1RAs</span>",
+         "0.6–<strong>1.4</strong>",
+         "none",
+         "<strong>loss</strong>",
+         "<strong>$$$$</strong>",
+         "caution",
+         "caution / contraindicated",
+         "<strong><span class=\"wl\">pancreatic cancer</span></strong>"
+        ],
+        [
+         "<span class=\"wl\">DPP-4 inhibitors</span>",
+         "0.5–0.7",
+         "none",
+         "neutral",
+         "$$$",
+         "caution",
+         "caution",
+         "—"
+        ],
+        [
+         "<span class=\"wl\">acarbose</span>",
+         "0.7–0.8",
+         "none",
+         "neutral",
+         "$$",
+         "caution",
+         "contraindicated",
+         "<strong><span class=\"wl\">IBS</span>, <span class=\"wl\">IBD</span>, obstruction</strong>"
+        ],
+        [
+         "<span class=\"wl\">SGLT2 inhibitors</span>",
+         "0.5–0.7",
+         "none",
+         "<strong>loss</strong>",
+         "$$$",
+         "contraindicated",
+         "contraindicated",
+         "amputation history"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-08",
+     "num": "08",
+     "name": "Glycemic Goals of Care in Adults with Diabetes",
+     "hasNote": true,
+     "title": "Glycemic Goals of Care",
+     "framing": "<p>The target is never a single number — it is <strong>a negotiation between preventing long-term complications and avoiding hypoglycemia now</strong>. Tight control buys <strong>microvascular</strong> benefit; severe hypoglycemia carries <strong>↑ mortality</strong>.</p>",
+     "keypoints": "<p><strong>severity of hypoglycemia is defined by whether the patient can treat it themselves</strong> — not by the glucose number. <strong>A1c is the best-validated marker</strong> of control but <strong>lags</strong>, so it never replaces glucose readings when you are actively changing therapy. <strong>CGM measures interstitial, not blood, glucose.</strong> Tight control helps <strong>microvascular</strong> outcomes most; the macrovascular gain is smaller and slower — and in T2DM, <strong>blood pressure control is what drives CV risk down</strong>.</p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Setting an A1c target\"] --> B{\"Risk of hypoglycemia?\"}\n    B -->|\"LOW risk, wants CV/renal/eye benefit\"| C[\"A1c ≤ 6.5%<br/>selected T2DM\"]\n    B -->|\"Standard\"| D[\"A1c ≤ 7.0%<br/>most T1DM and T2DM\"]\n    B -->|\"HIGH risk or limited benefit\"| E[\"A1c ≤ 8.5%<br/>elderly / frail\"]\n    E --> F[\"Drivers: older/frail, long DM duration,<br/>advanced CAD, prior severe hypoglycemia,<br/>non-adherence, patient preference\"]\n    C --> G[\"Drivers: younger age,<br/>established complications,<br/>patient preference\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Target",
+        "Who",
+        "Why"
+       ],
+       "rows": [
+        [
+         "⭐ <strong><span class=\"wl\">HbA1c</span> ≤ 7.0%</strong>",
+         "<strong>Most people with <span class=\"wl\">T1DM</span> or <span class=\"wl\">T2DM</span></strong>",
+         "The validated default. <strong>> 50% of patients will not reach it — but any reduction is beneficial</strong>"
+        ],
+        [
+         "<strong>A1c ≤ 6.5%</strong>",
+         "🙍‍♂️ <strong>T2DM at low risk of <span class=\"wl\">hypoglycemia</span></strong>",
+         "Further ↓ risk of <strong>CVD, <span class=\"wl\">CKD</span> and retinopathy</strong>"
+        ],
+        [
+         "<strong>A1c ≤ 8.5%</strong>",
+         "👵🏻 <strong>Elderly / frail</strong>",
+         "<strong>Hypoglycemia is more dangerous than hyperglycemia here</strong> (falls)"
+        ],
+        [
+         "Fasting <strong>4.0–7.0 mmol/L</strong> · 2h post-meal <strong>5.0–10.0 mmol/L</strong>",
+         "Self-monitoring targets",
+         "—"
+        ],
+        [
+         "<strong>≤ 130/80 mmHg</strong> BP · <strong>LDL < 2.0</strong>",
+         "Alongside glycemia",
+         "See <span class=\"wl\">10 - Prevention of Complications of Diabetes</span>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Why the target matters at all</strong> — it changes both outcomes <em>and</em> your prescribing.</p>",
+       "cols": [
+        "",
+        "<strong>Short-term (acute metabolic)</strong>",
+        "<strong>Long-term (chronic structural)</strong>"
+       ],
+       "rows": [
+        [
+         "What good control avoids",
+         "Symptomatic <span class=\"wl\">hyperglycemia</span> · <strong><span class=\"wl\">DKA</span> / <span class=\"wl\">HHS</span></strong> · <span class=\"wl\">hypoglycemia</span>",
+         "<strong>Microvascular</strong> — <span class=\"wl\">retinopathy</span>, <span class=\"wl\">nephropathy</span>, <span class=\"wl\">neuropathy</span><br><strong>Macrovascular</strong> — <span class=\"wl\">stroke</span>, <span class=\"wl\">MI</span>, <span class=\"wl\">PVD</span>"
+        ],
+        [
+         "Evidence",
+         "<strong>A1c > 7% is associated with ↑ micro- and macrovascular risk</strong>; <strong>both fasting and post-prandial glucose correlate directly with complication risk</strong>",
+         "<strong>Tight control improves microvascular outcomes across multiple trials</strong>"
+        ],
+        [
+         "Decisions it drives",
+         "Whether to start <span class=\"wl\">glucose-lowering drugs</span> — and <strong>which</strong> (<span class=\"wl\">insulin</span>, orals, or both) · doses and timing · <strong>intensity of monitoring</strong> (<span class=\"wl\">CGM</span> vs. fingerstick)",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>The three monitoring tools — each measures something different.</strong></p>",
+       "cols": [
+        "Tool",
+        "What it measures",
+        "Window",
+        "Pitfalls"
+       ],
+       "rows": [
+        [
+         "<strong>Self-monitoring (fingerstick)</strong>",
+         "<strong>Capillary whole blood glucose</strong>",
+         "This moment",
+         "Frequency must be individualized"
+        ],
+        [
+         "<strong><span class=\"wl\">CGM</span></strong>",
+         "⭐ <strong>Interstitial fluid glucose</strong> — not blood",
+         "Continuous, worn on body",
+         "Gives pre-/post-meal and overnight data unavailable to fingersticks"
+        ],
+        [
+         "⭐ <strong><span class=\"wl\">HbA1c</span></strong>",
+         "<strong>Mean plasma glucose over the past 8–12 weeks</strong>, <strong>~50% of the value from the last 30 days</strong>",
+         "~3 months",
+         "<strong>Lags behind real-time changes</strong>; distorted by the conditions below"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>How often to check</strong> depends on: <strong>type of DM</strong> (T1DM needs <strong>4+/day, before each insulin dose</strong>, and often benefits from CGM) · <strong>type of therapy</strong> (<strong><span class=\"wl\">SUs</span> cause hypoglycemia → check more</strong>) · changes to therapy · adequacy of control · <strong>literacy and numeracy</strong> · <strong>propensity for and awareness of hypoglycemia</strong> · occupational requirements · acute illness.</p>"
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "What falsely distorts an <span class=\"wl\">HbA1c</span>",
+       "html": "<p><strong>Erythropoiesis</strong> · <strong>altered hemoglobin</strong> (<span class=\"wl\">sickle cell disease</span>, <span class=\"wl\">thalassemias</span>) · <strong>altered glycation</strong> (<span class=\"wl\">chronic renal failure</span>) · <strong>erythrocyte destruction</strong> (<span class=\"wl\">splenectomy</span>, splenomegaly) · <strong>assay interference</strong> (<span class=\"wl\">hyperbilirubinemia</span>, <span class=\"wl\">hypertriglyceridemia</span>, alcohol or opiate use) · <strong>transfusions</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Patients can also read their own glucose from symptoms:</strong></p>",
+       "cols": [
+        "<strong><span class=\"wl\">HYPERGLYCEMIA</span></strong>",
+        "<strong><span class=\"wl\">HYPOGLYCEMIA</span></strong>"
+       ],
+       "rows": [
+        [
+         "Glucose in the <strong>\"double digit range\"</strong>",
+         "<strong>Glucose < 4.0 mmol/L</strong>"
+        ],
+        [
+         "<span class=\"wl\">polyuria</span>, <span class=\"wl\">nocturia</span>, <span class=\"wl\">polydipsia</span>",
+         "⚠ <strong>May be asymptomatic — hypoglycemic unawareness in T1DM</strong>"
+        ],
+        [
+         "Weight loss, fatigue",
+         "Hunger, sweating, dizziness, <span class=\"wl\">tachycardia</span>, confusion, seizure, coma"
+        ],
+        [
+         "<strong>Metabolic decompensation → <span class=\"wl\">DKA</span> or <span class=\"wl\">HHS</span></strong>",
+         "<strong>Mild</strong> = autonomic, self-treatable · <strong>Moderate</strong> = autonomic <strong>and</strong> neuroglycopenic, still self-treatable · ⭐ <strong>Severe = ASSISTANCE REQUIRED</strong> (bystander, family, EMS, ED)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-09",
+     "num": "09",
+     "name": "Introduction to Obesity",
+     "hasNote": true,
+     "title": "Obesity — Assessment and Management",
+     "framing": "<p><span class=\"wl\">Obesity</span> is <strong>a complex, progressive, relapsing chronic disease</strong> — abnormal or excessive body fat <strong>that impairs health</strong>. <strong>BMI alone does not predict adiposity-related complications</strong>; stage the <em>impact</em>, not just the number.</p>",
+     "keypoints": "<p><strong><span class=\"wl\">tirzepatide</span> (dual GLP-1/GIP) beats <span class=\"wl\">semaglutide</span> beats <span class=\"wl\">naltrexone-bupropion</span></strong> for weight loss. <strong>The most serious post-bariatric deficiency is <span class=\"wl\">thiamine</span> — give it <em>before</em> any glucose</strong> or you precipitate <span class=\"wl\">Wernicke's encephalopathy</span>. <strong>The BMI cut-off drops to 25 for South and East Asian patients.</strong> <strong>EOSS stages the functional impact</strong>, which is what determines bariatric referral — not BMI alone. <strong>Ghrelin is the only fasting/hunger hormone here; everything else in the list promotes satiety.</strong> The pharmacotherapy <strong>stopping rule is 5% at 12 weeks</strong>. <strong>Gastric banding is explicitly not recommended.</strong> And <strong>20% of Canadians have obesity</strong>, with the socioeconomic gradient running <strong>opposite ways by sex</strong> — ↓ SES means <strong>↑</strong> obesity in women, <strong>↓</strong> in men.</p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"BMI ≥ 30 — or ≥ 25 in South/East Asian patients\"] --> B[\"Add waist circumference<br/>BMI alone is insufficient\"]\n    B --> C[\"ASK permission to discuss weight\"]\n    C --> D[\"ASSESS: EOSS stage + the 4 M's<br/>rule out secondary causes\"]\n    D --> E[\"ADVISE: health and wellness, not a number\"]\n    E --> F[\"AGREE: SMART goals<br/>0.5–1.0 kg/week, 5–10% over 6–12 months\"]\n    F --> G[\"ASSIST: barriers, referrals, follow-up\"]\n    D --> H{\"Eligible for escalation?\"}\n    H -->|\"BMI ≥ 30, or ≥ 27 with complications\"| I[\"Pharmacotherapy\"]\n    H -->|\"BMI ≥ 40, or ≥ 35 with complications,<br/>or ≥ 30 with poorly controlled T2DM\"| J[\"Bariatric surgery\"]"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Defining it — thresholds are ethnicity-specific</strong>, because BMI and waist circumference do not account for <strong>body frame, musculature, or propensity for visceral adiposity</strong>.</p>",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">BMI</span></strong>",
+        "<strong><span class=\"wl\">WC</span> — men</strong>",
+        "<strong><span class=\"wl\">WC</span> — women</strong>"
+       ],
+       "rows": [
+        [
+         "European",
+         "<strong>≥ 30.0 kg/m²</strong>",
+         "< 102 cm",
+         "< 88 cm"
+        ],
+        [
+         "<strong>South Asian</strong>",
+         "⭐ <strong>≥ 25.0 kg/m²</strong>",
+         "<strong>< 90 cm</strong>",
+         "< 80 cm"
+        ],
+        [
+         "<strong>East Asian</strong>",
+         "⭐ <strong>≥ 25.0 kg/m²</strong>",
+         "<strong>< 85 cm</strong>",
+         "< 80 cm"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ <strong>South and East Asian individuals develop visceral adiposity and obesity-related disease at a lower BMI</strong> — this is why the cut-off moves.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Complications — the 4 M's.</strong> Use this as the assessment checklist, not a list to memorise loosely.</p>",
+       "cols": [
+        "<strong>Mental</strong>",
+        "<strong>Mechanical</strong>",
+        "<strong>Metabolic</strong>",
+        "<strong>Monetary</strong>"
+       ],
+       "rows": [
+        [
+         "Cognition · <span class=\"wl\">depression</span> · <span class=\"wl\">ADHD</span> · addiction · <span class=\"wl\">psychosis</span> · <span class=\"wl\">eating disorders</span> · trauma · <span class=\"wl\">insomnia</span>",
+         "<span class=\"wl\">sleep apnea</span> · <span class=\"wl\">osteoarthritis</span> · chronic pain · <span class=\"wl\">GERD</span> · incontinence · <span class=\"wl\">venous thromboembolism</span> · <span class=\"wl\">intertrigo</span> · <span class=\"wl\">plantar fasciitis</span>",
+         "<strong><span class=\"wl\">T2DM</span></strong> · <span class=\"wl\">dyslipidemia</span> · <span class=\"wl\">essential hypertension</span> · <span class=\"wl\">gout</span> · <strong><span class=\"wl\">fatty liver</span></strong> · <span class=\"wl\">gallstones</span> · <span class=\"wl\">PCOS</span> · <strong>cancer</strong>",
+         "Education · employment · <strong>income</strong> · <strong>insurance</strong> · benefits · disability · weight loss programs · bariatric supplies"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Pathophysiology — far more than energy in vs. energy out.</strong> <strong>60–70% of <span class=\"wl\">BMI</span> is genetically determined.</strong> Early-life events matter (<strong>maternal starvation in pregnancy predisposes offspring to obesity</strong>). The <span class=\"wl\">hypothalamus</span> (homeostasis), <strong>mesolimbic system (pleasure)</strong> and <span class=\"wl\">frontal lobe</span> (executive control) jointly drive food-seeking: <strong>dopamine = <em>wanting</em> food, opioids = <em>liking</em> food</strong>.</p>",
+       "cols": [
+        "<strong>FASTING state</strong>",
+        "<strong>FED state — all promote satiety</strong>"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">ghrelin</span></strong> — made in the <strong>stomach</strong>, <strong>↑ hunger</strong> and food intake",
+         "<strong><span class=\"wl\">insulin</span>, <span class=\"wl\">amylin</span></strong> — <span class=\"wl\">pancreas</span><br><strong><span class=\"wl\">GLP-1</span>, <span class=\"wl\">CCK</span>, <span class=\"wl\">peptide YY</span></strong> — intestines<br><strong><span class=\"wl\">leptin</span>, <span class=\"wl\">adiponectin</span></strong> — adipose tissue"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Assessment — the 5 A's</strong></p>",
+       "cols": [
+        "A",
+        "Do",
+        "Detail"
+       ],
+       "rows": [
+        [
+         "<strong>ASK</strong>",
+         "⭐ <strong>Ask permission to discuss weight</strong>",
+         "Be non-judgemental · explore <span class=\"wl\">readiness for change</span> · use <span class=\"wl\">motivational interviewing</span>"
+        ],
+        [
+         "<strong>ASSESS</strong>",
+         "Stage the disease and find root causes",
+         "<strong><span class=\"wl\">EOSS</span></strong> stage · BMI + WC if BMI ≥ 25 · the <strong>4 M's</strong><br><u>Hx</u> weight history, contributors, <strong>rule out <span class=\"wl\">hypothyroidism</span>, <span class=\"wl\">Cushing syndrome</span>, medications, genetic disorders</strong>, cultural and family factors, diet and exercise history<br><u>PEx</u> BMI, WC, <span class=\"wl\">blood pressure</span>, <strong><span class=\"wl\">acanthosis</span>, <span class=\"wl\">hirsutism</span>, Cushingoid features</strong><br><u>Labs</u> <strong><span class=\"wl\">HbA1c</span>, <span class=\"wl\">lipid panel</span>, <span class=\"wl\">serum TSH</span>, <span class=\"wl\">ALT</span></strong>"
+        ],
+        [
+         "<strong>ADVISE</strong>",
+         "Risks, benefits, options",
+         "⭐ <strong>The goal is health and wellness, not a number.</strong> First goal may simply be <strong>stabilising weight</strong>; behavioural change yields <strong>3–5%</strong>"
+        ],
+        [
+         "<strong>AGREE</strong>",
+         "Realistic expectations",
+         "<strong>0.5–1.0 kg (1–2 lb) per week</strong>; <strong>5–10% total loss over 6–12 months</strong>"
+        ],
+        [
+         "<strong>ASSIST</strong>",
+         "Barriers, resources, follow-up",
+         "Referrals (e.g. cardiology before an exercise plan) · contingency plans for travel · <strong>financial reality — dieticians are often out of pocket</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Management — two foundations, three pillars</strong></p>",
+       "cols": [
+        "Foundation / pillar",
+        "Who qualifies",
+        "Detail"
+       ],
+       "rows": [
+        [
+         "<strong>Medical nutrition therapy</strong>",
+         "<strong>All Canadians, regardless of body size</strong>",
+         "Personalized; refer to a <strong>registered dietician</strong>, especially with <span class=\"wl\">celiac disease</span> or <span class=\"wl\">IBD</span>"
+        ],
+        [
+         "<strong>Physical activity</strong>",
+         "All",
+         "<strong>30–60 min most days, moderate–vigorous</strong>. Yields <strong>small</strong> weight/fat loss but <strong>improves cardiometabolic parameters</strong> and is <strong>key to maintaining loss</strong>"
+        ],
+        [
+         "<strong>Psychological</strong>",
+         "As appropriate",
+         "Behaviour modification · <strong>manage sleep, stress, time</strong> · <span class=\"wl\">CBT</span> and/or <span class=\"wl\">ACT</span>"
+        ],
+        [
+         "<strong>Pharmacological</strong>",
+         "<strong>BMI ≥ 30, or ≥ 27 with complications</strong>",
+         "⭐ <strong>Efficacy order: <span class=\"wl\">tirzepatide</span> (GLP-1/GIP) > <span class=\"wl\">semaglutide</span> (GLP-1) > <span class=\"wl\">naltrexone-bupropion</span></strong>; <span class=\"wl\">orlistat</span> rarely used<br>⭐ <strong>Should achieve ≥ 5% weight loss after 12 weeks at maximally tolerated dose — if not, change agent</strong>. Adjunct to lifestyle, but <strong>likely lifelong</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Bariatric surgery</span></strong>",
+         "<strong>BMI ≥ 40</strong>, or <strong>≥ 35 with complications</strong>, or ⭐ <strong>≥ 30 with poorly controlled <span class=\"wl\">T2DM</span></strong>",
+         "<strong>25–30% weight loss</strong>; ↓ long-term mortality. <span class=\"wl\">sleeve gastrectomy</span> · <span class=\"wl\">Roux-en-Y gastric bypass</span> · <span class=\"wl\">biliopancreatic diversion</span> ± duodenal switch · <strong><span class=\"wl\">laparoscopic gastric banding</span> no longer performed</strong><br>⭐ <strong>Post-op: thiamine before glucose — always</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Bias, stigma and the clinic itself",
+       "html": "<p><strong>56% of patients have already attempted weight loss two or more times</strong> — assume effort, not inaction. Chairs, exam tables, bathrooms and scales must accommodate the patient. <strong>Place the scale in a private area, and do not announce weight unless they ask to hear it.</strong></p>"
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-10",
+     "num": "10",
+     "name": "Prevention of Complications of Diabetes",
+     "hasNote": true,
+     "title": "Preventing the Complications of Diabetes",
+     "framing": "<p>Three numbers drive prevention — <strong>A1c, blood pressure, and LDL</strong> — and each has its own first-line drug and its own set of complications it prevents. <strong>Glycemic control alone is not enough: it barely moves macrovascular risk.</strong></p>",
+     "keypoints": "<p>⭐ <strong>Glycemic control prevents microvascular disease; blood pressure control is what prevents macrovascular disease in T2DM.</strong> <strong>ACEi/ARB are given for nephropathy even in patients without hypertension</strong> (see <span class=\"wl\">06 - Acute and Chronic Complications of Diabetes</span>). <strong>Feet are examined daily at home and at every clinic visit</strong> — the monofilament test detects the loss of protective sensation <em>before</em> ulceration. The <strong>> 15 years of diabetes</strong> clause matters: a 35-year-old diagnosed at 18 qualifies for a statin.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Target",
+        "Value",
+        "⭐ First-line drug",
+        "What it prevents"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">HbA1c</span></strong>",
+         "<strong>≤ 7%</strong> (see <span class=\"wl\">08 - Glycemic Goals of Care in Adults with Diabetes</span>)",
+         "<span class=\"wl\">metformin</span> ± others",
+         "<strong>Microvascular only</strong> — <span class=\"wl\">retinopathy</span>, <span class=\"wl\">nephropathy</span>, <span class=\"wl\">neuropathy</span>"
+        ],
+        [
+         "<strong><span class=\"wl\">blood pressure</span></strong>",
+         "⭐ <strong>≤ 130/80 mmHg</strong>",
+         "⭐ <strong><span class=\"wl\">ACE inhibitors</span></strong> (or <strong><span class=\"wl\">ARBs</span></strong>)",
+         "<strong>Cardiovascular outcomes, renal impairment, and retinopathy</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">LDL</span></strong>",
+         "⭐ <strong>< 2.0 mmol/L</strong>",
+         "⭐ <strong><span class=\"wl\">statins</span></strong>",
+         "Cardiovascular outcomes, <strong>possibly retinopathy</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>What the trials actually showed</strong> — <a href=\"https://www.nejm.org/doi/full/10.1056/NEJM199309303291401\" target=\"_blank\" rel=\"noopener noreferrer\">DCCT 1993</a> for T1DM, <a href=\"https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(98)07019-6/abstract\" target=\"_blank\" rel=\"noopener noreferrer\">UKPDS 1998</a> for T2DM. Better glycemic control and more intensive regimens produced:</p>",
+       "cols": [
+        "Outcome",
+        "Effect"
+       ],
+       "rows": [
+        [
+         "<strong>Microvascular complications</strong>",
+         "✅ <strong>↓ risk of developing or worsening</strong>"
+        ],
+        [
+         "<strong>Macrovascular complications</strong>",
+         "⭐ <strong>NO effect from glycemic control</strong> — but <strong>↓ blood pressure ↓ CVD risk in T2DM</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">hypoglycemia</span></strong>",
+         "⚠ <strong>↑ risk</strong> — the cost of intensive control"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Cardiovascular prevention — the age and duration triggers are the testable part.</strong></p>",
+       "cols": [
+        "",
+        "<strong>Primary prevention</strong> (no known <span class=\"wl\">CAD</span>)",
+        "<strong>Secondary prevention</strong> (known CAD)"
+       ],
+       "rows": [
+        [
+         "Statin",
+         "<strong>≥ 30 yrs AND <span class=\"wl\">DM</span> > 15 years → statin</strong><br><strong>≥ 40 yrs → statin</strong>",
+         "⭐ <strong><span class=\"wl\">Statin</span></strong> — LDL target <strong>< 2.0</strong>"
+        ],
+        [
+         "ACEi / ARB",
+         "<strong>> 55 yrs AND other CAD risk factors</strong> (<span class=\"wl\">proteinuria</span>, <span class=\"wl\">retinopathy</span>, <span class=\"wl\">LVH</span>) → <strong>ACEi or ARB IN ADDITION to a statin</strong>",
+         "⭐ <strong><span class=\"wl\">ACEi</span> or <span class=\"wl\">ARB</span></strong> — BP target <strong>< 130/80</strong>"
+        ],
+        [
+         "Antiplatelet",
+         "—",
+         "<strong><span class=\"wl\">ASA</span> 81 mg ± <span class=\"wl\">clopidogrel</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Drug classes with benefit beyond glucose:</strong> <strong><span class=\"wl\">SGLT2 inhibitors</span> → cardiovascular AND renal protection.</strong> <strong><span class=\"wl\">incretin agents</span> → cardiovascular protection.</strong></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Lifestyle and in-clinic monitoring</strong></p>",
+       "cols": [
+        "Where",
+        "What",
+        "Detail"
+       ],
+       "rows": [
+        [
+         "<strong>Home</strong>",
+         "<strong>Home monitoring of glucose AND blood pressure</strong>",
+         "—"
+        ],
+        [
+         "",
+         "⭐ <strong>Smoking cessation</strong>",
+         "↓ risk of <strong><span class=\"wl\">MI</span>, <span class=\"wl\">stroke</span>, <span class=\"wl\">PAD</span></strong>, and possibly <strong>retinopathy</strong>"
+        ],
+        [
+         "",
+         "Activity + weight loss if ↑ BMI",
+         "↓ blood pressure and blood glucose"
+        ],
+        [
+         "",
+         "<strong>Annual ophthalmology screening</strong>",
+         "For <span class=\"wl\">diabetic retinopathy</span>"
+        ],
+        [
+         "",
+         "⭐ <strong>Examine feet DAILY</strong> for open wounds",
+         "If vision impaired — <strong>ask a family member, or refer to chiropody</strong>; ensure comfortable shoes"
+        ],
+        [
+         "<strong>Clinic — foot exam</strong>",
+         "<strong>Inspect for calluses and ulcers · assess pedal pulses · <span class=\"wl\">monofilament exam</span></strong>",
+         "The three components, every visit"
+        ],
+        [
+         "<strong>Clinic — BP</strong>",
+         "Target <strong>≤ 130/80</strong>",
+         "ACEi first line"
+        ],
+        [
+         "<strong>Clinic — LDL</strong>",
+         "Target <strong>< 2.0</strong>",
+         "Statin first line"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>At the moment of diagnosis — refer early.</strong> <strong><em>Dietician</strong></em> (dietary change to ↓ complication risk) · <strong><em>diabetes nurse educator</strong></em> (sugar testing, what to do when low or sick) · <strong><em>optometrist</strong></em> (yearly).</p>",
+       "cols": [
+        "First medication",
+        "When"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Insulin</span></strong>",
+         "<strong>All <span class=\"wl\">T1DM</span></strong>, and <strong><span class=\"wl\">T2DM</span> patients who are very symptomatic</strong> (polydipsia, polyuria, yeast infections, weight loss, malaise)"
+        ],
+        [
+         "⭐ <strong><span class=\"wl\">metformin</span></strong>",
+         "T2DM <strong>without many symptoms</strong> and <strong>no liver or renal concerns</strong>"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-11",
+     "num": "11",
+     "name": "Pregnancy and Diabetes",
+     "hasNote": true,
+     "title": "Diabetes in Pregnancy",
+     "framing": "<p>The single discriminating question is <strong>when the hyperglycemia starts</strong>. <strong>Pre-existing DM is present during organogenesis (weeks 3–16) → congenital malformations.</strong> <strong><span class=\"wl\">GDM</span> appears at 24–28 weeks, after organogenesis → NO congenital malformations</strong>, but the same fetal morbidities.</p>",
+     "keypoints": "<p>⭐ <strong>GDM does not cause congenital malformations; pre-existing DM does</strong> — because of <em>when</em> the hyperglycemia occurs relative to organogenesis. <strong>Insulin needs FALL in trimester 1 and after delivery, and RISE steeply in trimester 3.</strong> <strong>Glyburide crosses the placenta; insulin does not.</strong> <strong>ACEi/ARBs are contraindicated — use beta-blockers or CCBs.</strong> <strong>Retinopathy that worsens in pregnancy usually settles after delivery without permanent damage</strong>, but screen <strong>pre-conception, during, and within the first postpartum year</strong>. <strong>Fetal death risk is low (0.6–4.8%)</strong> — malformation risk is the greater concern.</p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Screen at 24–28 weeks gestation<br/>1h 50g OGTT, non-fasting\"] --> B{\"1-hour glucose?\"}\n    B -->|\"≤ 7.8 mmol/L — NORMAL\"| C[\"No further testing\"]\n    B -->|\"≥ 11.1 mmol/L\"| D[\"GDM DIAGNOSED\"]\n    B -->|\"7.8 – 11.0 mmol/L\"| E[\"Fasting 75g OGTT\"]\n    E --> F{\"Any value above target?\"}\n    F -->|\"Fasting ≥ 5.3<br/>1h ≥ 10.6<br/>2h ≥ 9.0\"| D\n    F -->|\"All below\"| C\n    D --> G[\"Lifestyle first, then insulin if needed\"]\n    G --> H[\"Stop treatment after delivery\"]\n    H --> I[\"Re-screen with 75g OGTT<br/>at 6 weeks – 6 months postpartum\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">Gestational Diabetes (GDM)</span></strong>",
+        "<strong>Pre-existing <span class=\"wl\">T1DM</span> / <span class=\"wl\">T2DM</span></strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Cause</strong>",
+         "⭐ <strong>↑ insulin resistance from weight gain and placental hormones</strong>; the <span class=\"wl\">pancreas</span> can only make so much <span class=\"wl\">insulin</span> → <span class=\"wl\">hyperglycemia</span>.<br><strong>Transient — usually resolves after delivery.</strong> Worldwide prevalence <strong>~17%</strong>",
+         "Pre-conception diabetes, present <strong>throughout organogenesis</strong>"
+        ],
+        [
+         "<strong>Timing</strong>",
+         "<strong>Diagnosed 24–28 weeks</strong> — <strong>after</strong> organogenesis",
+         "Present from conception; <strong>organogenesis runs weeks 3–16+</strong>, often before pregnancy is even known"
+        ],
+        [
+         "<strong>↑ congenital malformations</strong>",
+         "⭐ <strong>NO</strong>",
+         "⭐ <strong>YES — depends on <span class=\"wl\">A1c</span> at conception</strong>. <strong>2–10%</strong> vs. 2–4% background<br><strong>Tight control before conception ↓ anomalies by ~70%</strong>"
+        ],
+        [
+         "<strong>Pre-conception care</strong>",
+         "Not applicable",
+         "<strong>Target A1c ≤ 7%, ideally ≤ 6.5%, BEFORE conception</strong><br><strong>Prescribe <span class=\"wl\">folic acid</span></strong> · <strong>screen for <span class=\"wl\">diabetic retinopathy</span></strong>"
+        ],
+        [
+         "<strong>Dx</strong>",
+         "See pathway above",
+         "Already known; <strong>check A1c pre-conception then monthly</strong>"
+        ],
+        [
+         "<strong>Glucose targets</strong>",
+         "<strong>Fasting < 5.3</strong> · <strong>1h post-meal < 7.8 mmol/L</strong>",
+         "<strong>Fasting < 5.3</strong> · <strong>1h post-meal < 7.8 mmol/L</strong> (identical)"
+        ],
+        [
+         "<strong>A1c monitoring</strong>",
+         "⭐ <strong>Don't check</strong>",
+         "<strong>Pre-conception, then monthly through pregnancy</strong>"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "<u>Lifestyle first</u> ↓ carbohydrate, spread over <strong>3 meals + 3 snacks</strong>, <strong>~45 g/meal and 20 g/snack</strong> (easier for the pancreas to cover than 75 g); <strong>post-meal walking, even 10 min</strong><br><u>Pharmacological</u> ⭐ <strong><span class=\"wl\">Insulin</span> is the gold standard and is safe</strong><br><span class=\"wl\">metformin</span> — safe but <strong>not very powerful</strong><br><strong><span class=\"wl\">glyburide</span> — likely safe BUT crosses the placenta → neonatal <span class=\"wl\">hypoglycemia</span></strong><br><strong>Stop all treatment after delivery</strong>",
+         "Insulin, dose-adjusted by trimester (below)<br><strong>BP meds: ✅ <span class=\"wl\">beta-blockers</span>, <span class=\"wl\">calcium channel blockers</span> · ⛔ <span class=\"wl\">ACEi</span> and <span class=\"wl\">ARBs</span> are CONTRAINDICATED</strong>"
+        ],
+        [
+         "<strong>Maternal risks</strong>",
+         "<strong><span class=\"wl\">hypertensive disorders in pregnancy</span></strong> · early induction · <strong><span class=\"wl\">cesarean section</span></strong> · ⭐ <strong>up to 60% develop <span class=\"wl\">T2DM</span> long-term</strong>",
+         "Hypertensive disorders · <strong>2× risk of <span class=\"wl\">pre-eclampsia</span></strong> · <strong>worsening <span class=\"wl\">diabetic retinopathy</span></strong> · worsening <span class=\"wl\">diabetic nephropathy</span>"
+        ],
+        [
+         "<strong>Px / follow-up</strong>",
+         "⭐ <strong>75 g <span class=\"wl\">OGTT</span> at 6 weeks – 6 months postpartum</strong>. If glucose does <strong>not</strong> normalise, she had <strong>undiagnosed pre-existing T2DM</strong>, not GDM",
+         "Insulin needs <strong>↓ after delivery</strong> (meds decreased); breastfeeding encouraged"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Insulin requirements across pregnancy</strong> — <em>the bigger the placenta, the higher the hormones and the higher the insulin need.</em></p>",
+       "cols": [
+        "Stage",
+        "Direction",
+        "Why / what to warn about"
+       ],
+       "rows": [
+        [
+         "<strong>Trimester 1</strong>",
+         "⭐ <strong>↓ — risk of <span class=\"wl\">hypoglycemia</span></strong>",
+         "<strong>Not</strong> explained by nausea/vomiting"
+        ],
+        [
+         "<strong>Trimester 2</strong>",
+         "↑ slowly",
+         "Placental hormone production rising (<span class=\"wl\">prolactin</span>, <span class=\"wl\">cortisol</span>, <span class=\"wl\">growth hormone</span>)"
+        ],
+        [
+         "<strong>Trimester 3</strong>",
+         "<strong>↑ a great deal</strong>",
+         "<strong>Irrespective of oral intake</strong>; can be <strong>↑↑↑ in T2DM</strong>"
+        ],
+        [
+         "<strong>Post-partum</strong>",
+         "⭐ <strong>↓ remarkably — the placenta is gone</strong>",
+         "Warn mothers: <strong>glucose can drop, especially while breastfeeding</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Congenital malformations (pre-existing DM only)</strong> — grouped by system, which is how they are recalled.</p>",
+       "cols": [
+        "<strong>Neurological</strong>",
+        "<strong>Cardiovascular</strong>",
+        "<strong>Gastrointestinal</strong>",
+        "<strong>Genitourinary</strong>"
+       ],
+       "rows": [
+        [
+         "⭐ <strong><span class=\"wl\">neural tube defects</span></strong> — <strong><span class=\"wl\">spina bifida</span></strong>, <strong><span class=\"wl\">anencephaly</span></strong><br><span class=\"wl\">cauda equina regression</span> (skeletal)",
+         "<span class=\"wl\">transposition of the great vessels</span> · <span class=\"wl\">coarctation of the aorta</span> · <span class=\"wl\">truncus arteriosus</span> · <span class=\"wl\">atrial septal defect</span> · <span class=\"wl\">pulmonary stenosis</span> · <span class=\"wl\">dextrocardia</span>",
+         "<span class=\"wl\">duodenal atresia</span> · <span class=\"wl\">imperforate anus</span> · <span class=\"wl\">anorectal atresia</span> · <span class=\"wl\">situs inversus totalis</span>",
+         "<span class=\"wl\">double ureters</span> · <span class=\"wl\">renal agenesis</span> · <span class=\"wl\">hydronephrosis</span>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Other infant morbidities — these occur in BOTH groups:</strong> <span class=\"wl\">cesarean section</span> (32–45%) · prematurity (15% before wk 34) · fetal distress (9–28%) · <strong><span class=\"wl\">macrosomia</span> > 4 kg (9–28%)</strong> · <strong>small for date (2–8%) if the mother has vascular disease</strong> (inadequate placental flow) · ↓ calcium · <span class=\"wl\">macrocytosis</span> · <span class=\"wl\">hyperbilirubinemia</span> · ⭐ <strong>neonatal <span class=\"wl\">hypoglycemia</span> — the baby made ↑ insulin in utero.</strong></p>"
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-12",
+     "num": "12",
+     "name": "Prevention of Type 2 Diabetes",
+     "hasNote": true,
+     "title": "Preventing Type 2 Diabetes",
+     "framing": "<p>The target population is the <strong>grey zone</strong> — <span class=\"wl\">prediabetes</span>, <span class=\"wl\">IFG</span> and <span class=\"wl\">IGT</span> (see <span class=\"wl\">05 - Type 2 Diabetes Mellitus - Diagnosis &amp; Epidemiology</span>). ⭐ <strong>No medication is approved in Canada for preventing diabetes</strong> — everything below is evidence, not indication.</p>",
+     "keypoints": "<p>⭐ <strong>Lifestyle beats metformin, 58% vs 31%</strong> — the single most testable number in this lecture. <strong>TZDs have the biggest drug effect (~70%) but the side effect profile that stops you using them.</strong> <strong>Acarbose's benefit disappears on discontinuation</strong>, unlike the durable effect of weight loss. <strong>Bariatric surgery is the most effective and still not first line</strong> — effectiveness and appropriateness are different questions. And <strong>nothing here is actually approved for prevention in Canada.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Approach",
+        "Intervention",
+        "<strong>Risk reduction</strong>",
+        "Best in / caveats"
+       ],
+       "rows": [
+        [
+         "<strong>Lifestyle</strong>",
+         "⭐ <strong>Low-fat, low-calorie diet + 150 min activity per week</strong>",
+         "⭐ <strong>58%</strong> — the most effective non-surgical option",
+         "<strong>Even 5% weight loss has benefit</strong>"
+        ],
+        [
+         "",
+         "Healthy dietary patterns — <strong>Mediterranean, DASH, AHEI</strong>",
+         "<strong>~20%</strong>",
+         "Pattern, not a single nutrient"
+        ],
+        [
+         "<strong>Medication</strong>",
+         "<strong><span class=\"wl\">metformin</span></strong>",
+         "<strong>31%</strong> — roughly half the benefit of lifestyle",
+         "⭐ More effective in the <strong>younger (< 60 yrs)</strong>, the <strong>obese (BMI > 35)</strong>, and <strong>women with previous <span class=\"wl\">GDM</span></strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">TZDs</span></strong>",
+         "⭐ <strong>~70%</strong> — the largest drug effect",
+         "⚠ <strong>Limited by adverse effects: <span class=\"wl\">peripheral edema</span>, <span class=\"wl\">heart failure</span>, <span class=\"wl\">osteoporosis</span> and ↑ fractures</strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">acarbose</span></strong>",
+         "<strong>~25–36%</strong> (by <span class=\"wl\">OGTT</span>)",
+         "⚠ ⭐ <strong>Effect did NOT persist after discontinuation</strong>"
+        ],
+        [
+         "",
+         "<strong>Orlistat</strong> (<span class=\"wl\">tetrahydrolipstatin</span>)",
+         "<strong>~37%</strong>",
+         "Assessed within obesity effectiveness studies; <strong>approved for weight loss, not prevention</strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">GLP-1RAs</span></strong>",
+         "Evidence exists",
+         "<strong><span class=\"wl\">liraglutide</span></strong> and <strong><span class=\"wl\">semaglutide</span></strong>"
+        ],
+        [
+         "<strong>Surgical</strong>",
+         "⭐ <strong><span class=\"wl\">Bariatric surgery</span></strong>",
+         "⭐ <strong>Most effective of all approaches</strong>",
+         "⚠ <strong>NOT first line for prevention</strong> — cost and procedural risk"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "endo-w1-13",
+     "num": "13",
+     "name": "Antihyperglycemic Drug Choices for T2DM (CBL)",
+     "hasNote": true,
+     "title": "Choosing an Antihyperglycemic — Case Analysis",
+     "framing": "<p>Every case runs the <strong>same four-part analysis</strong>: <strong>effectiveness → safety → additional benefits → suitability</strong>. The drug is chosen by the <em>patient's</em> characteristics, not the A1c alone.</p>",
+     "keypoints": "<p>⭐ <strong>Sulfonylurea secondary failure means the next drug must not be another secretagogue.</strong> <strong>Linagliptin is the DPP-4 inhibitor that needs no renal adjustment.</strong> <strong>SGLT2 inhibitors cause GU infections and volume depletion — and cause DKA at normal glucose.</strong> <strong>AGIs are contraindicated in <span class=\"wl\">IBS</span> and <span class=\"wl\">IBD</span>.</strong> When insulin requirements exceed anything plausible, <strong>stop escalating and look for a receptor-level cause.</strong></p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"T2DM inadequately controlled on metformin\"] --> B{\"Established ASCVD, HF, or CKD?\"}\n    B -->|Yes| C[\"SGLT2 inhibitor or GLP-1 RA<br/>cardiorenal benefit\"]\n    B -->|No| D{\"Hypoglycemia a major concern?<br/>lives alone, drives, eats irregularly\"}\n    D -->|Yes| E[\"AVOID sulfonylureas and meglitinides<br/>→ DPP-4i, GLP-1 RA, SGLT2i\"]\n    D -->|No| F{\"Weight a priority?\"}\n    F -->|\"Needs to lose\"| G[\"GLP-1 RA or SGLT2 inhibitor\"]\n    F -->|\"Cachectic / underweight\"| H[\"Avoid weight-losing agents\"]\n    E --> I{\"Cost / oral only / adherence?\"}\n    G --> I\n    I --> J[\"Weigh dosing frequency,<br/>injection vs oral, price\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Consider",
+        "Ask",
+        "The answer"
+       ],
+       "rows": [
+        [
+         "<strong>Efficacy</strong> at lowering <span class=\"wl\">HbA1c</span>",
+         "How much do I need to drop?",
+         "<strong>High</strong>: insulin, <strong><span class=\"wl\">metformin</span></strong>, GLP-1 analogues, <strong><span class=\"wl\">SUs</span></strong>, <span class=\"wl\">TZDs</span><br><strong>Moderate</strong>: <span class=\"wl\">DPP-4 inhibitors</span>, <span class=\"wl\">SGLT2 inhibitors</span>, <span class=\"wl\">AGIs</span>"
+        ],
+        [
+         "<strong>Effect on weight</strong>",
+         "Does the patient need to lose weight — <strong>or are they already cachectic?</strong>",
+         "Loss: GLP-1 RA, SGLT2i · Gain: SU, TZD, insulin"
+        ],
+        [
+         "<strong>Risk of <span class=\"wl\">hypoglycemia</span></strong>",
+         "⭐ <strong>Do they live alone, drive, eat irregularly, or fear hypos?</strong>",
+         "Only the <strong>secretagogues</strong> carry real risk"
+        ],
+        [
+         "<strong>Cardiovascular / renal benefit</strong>",
+         "Established <strong>ASCVD</strong>, <strong><span class=\"wl\">HF</span></strong>, or <strong><span class=\"wl\">CKD</span></strong>?",
+         "<strong><span class=\"wl\">SGLT2 inhibitors</span></strong> and <strong><span class=\"wl\">GLP-1RAs</span></strong>"
+        ],
+        [
+         "<strong>Special populations</strong>",
+         "Renal or hepatic impairment?",
+         "See dose-adjustment principles below"
+        ],
+        [
+         "<strong>Practical factors</strong>",
+         "Cost · injection vs oral · <strong>dosing frequency</strong> · adherence",
+         "Often the deciding factor"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>The four cases — each teaches one mechanism.</strong></p>",
+       "cols": [
+        "Case",
+        "Key patient factors",
+        "The mechanism being tested",
+        "What to do"
+       ],
+       "rows": [
+        [
+         "<strong>1 — Hyperglycemia refractory to insulin</strong><br>46 F, BMI 45.6 → <strong>16.9</strong>, A1c 14%, <strong>insulin > 50 units/kg/day</strong>",
+         "<strong>Cachexia with extreme insulin requirement</strong>; <strong>acromegaly-like facies, extensive <span class=\"wl\">acanthosis nigricans</span>, skin tags, vitiligo</strong>; UTI on empagliflozin; <em>H. pylori</em> triple therapy",
+         "<strong>Severe insulin resistance syndrome</strong> — when escalating insulin fails, the problem is at the <strong>receptor</strong>, not the dose",
+         "Ask what explains resistance <em>this</em> extreme; note <strong><span class=\"wl\">SGLT2 inhibitors</span> → glucosuria → GU infection</strong>, and that <strong>SU + TZD + insulin stack weight gain and hypoglycemia</strong>"
+        ],
+        [
+         "<strong>2 — Samuel</strong>, 47 M, A1c 8.3%<br>dyslipidemia, <strong>+12 lb</strong>, <strong>forgets BID <span class=\"wl\">metformin</span></strong>, travels constantly, <strong><span class=\"wl\">IBS</span></strong>",
+         "<strong>Poor adherence to twice-daily dosing</strong> · needs weight loss · eats at consistent times",
+         "Matching <strong>dosing frequency to lifestyle</strong>",
+         "Favour <strong>once-weekly <span class=\"wl\">GLP-1RAs</span></strong> or once-daily agents with <strong>weight loss</strong>; ⛔ <strong><span class=\"wl\">AGIs</span> are contraindicated in IBS</strong> and are t.i.d."
+        ],
+        [
+         "<strong>3 — Nancy</strong>, 62 F, A1c 7.1% → <strong>7.9% on max metformin + gliclazide</strong>, +5 lb, <strong>unemployed</strong>, <strong>refuses needles</strong>, <strong>fears hypoglycemia</strong>, eats irregularly",
+         "Wants: <strong>glycemic control · weight loss · low hypoglycemia risk · affordable · oral</strong>",
+         "⭐ <strong><span class=\"wl\">Sulfonylurea</span> secondary failure</strong> — the K⁺/ATP channel mechanism <strong>desensitizes over time</strong>",
+         "Do <strong>not</strong> swap to another secretagogue (glyburide or <span class=\"wl\">repaglinide</span> share the mechanism); needs an agent with <strong>no hypoglycemia risk</strong>, oral, affordable"
+        ],
+        [
+         "<strong>4 — Albert</strong>, 72 M, ICU with <strong><span class=\"wl\">AKI</span> and shock</strong><br>on <strong>canagliflozin + hydrochlorothiazide + valsartan</strong>; <strong>18 months of falls from postural hypotension</strong>",
+         "Triple volume-depleting combination; foot swelling, ↓ urine output, nausea, dyspnea",
+         "<strong>SGLT2i → glucosuria → osmotic diuresis → volume depletion → prerenal AKI</strong>; plus ⭐ <strong>euglycemic DKA</strong>",
+         "Recognise that <strong>the falls were the warning sign</strong>; hold the SGLT2 inhibitor and diuretic; <strong>check ketones regardless of glucose</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "red",
+       "title": "Euglycemic DKA — the SGLT2 inhibitor trap",
+       "html": "<p><strong><span class=\"wl\">DKA</span> can occur with a near-normal blood glucose</strong>, because urinary glucose loss blunts the hyperglycemia you would normally use as your trigger to test. ⭐ <strong>Suspect it in any unwell patient on an <span class=\"wl\">SGLT2 inhibitor</span> and check ketones regardless of the glucose reading.</strong></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Antihyperglycemics and renal function</strong> <em>(Shah BR et al. Can J Diabetes 2024;48:415-424)</em> — principles, not numbers:</p>",
+       "cols": [
+        "Drug class",
+        "Principle as eGFR falls"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">metformin</span></strong>",
+         "<strong>Stepwise dose reduction</strong>, then <strong>avoid at the lowest ranges</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">SUs</span></strong>",
+         "⭐ <strong>Glyburide is avoided relatively early</strong>; <strong>gliclazide, glimepiride and <span class=\"wl\">repaglinide</span> tolerate moderate impairment better</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">DPP-4 inhibitors</span></strong>",
+         "Most need dose reduction — ⭐ <strong>EXCEPT linagliptin, which needs none (non-renal clearance)</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">SGLT2 inhibitors</span></strong>",
+         "Typically <strong>\"do not initiate, but may continue\"</strong> below a threshold"
+        ],
+        [
+         "<strong>All</strong>",
+         "⭐ <strong>Cardiorenal benefits persist even where glucose-lowering efficacy falls off</strong> — which is why an SGLT2 inhibitor may be <strong>continued in CKD for reasons other than glycemic control</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Verify the numbers",
+       "html": "<p>Exact eGFR cut-offs and maximum daily doses were transcribed from a slide image and have <strong>not</strong> been verified against the source table. Check them against Shah et al. before relying on specific values.</p>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "label": "Week 2 - Thyroid, Parathyroid, Bone & Ovarian Function",
+   "lectures": [
+    {
+     "id": "endo-w2-01",
+     "num": "01",
+     "name": "Thyroid and Parathyroid Gland Physiology",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-02",
+     "num": "02",
+     "name": "Drugs Affecting Calcium Homeostasis",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-03",
+     "num": "03",
+     "name": "Clinical Presentation and Evaluation of Hypothyroidism and Thyrotoxicosis",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-04",
+     "num": "04",
+     "name": "Clinical Presentation and Evaluation of Hyperparathyroidism and Hypoparathyroidism",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-05",
+     "num": "05",
+     "name": "Pathology of Thyroid Masses",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-06",
+     "num": "06",
+     "name": "Clinical Presentation and Evaluation of Osteoporosis",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-07",
+     "num": "07",
+     "name": "Overview of Metabolic Bone Disease",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-08",
+     "num": "08",
+     "name": "Embryology & Histology",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-09",
+     "num": "09",
+     "name": "Hypothalamic-Pituitary-Gonadal Axis",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-10",
+     "num": "10",
+     "name": "Approach to the Menstrual Cycle",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w2-11",
+     "num": "11",
+     "name": "Testicular and Ovarian Function",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "label": "Week 3 - Adrenal, Pituitary, Puberty & Growth",
+   "lectures": [
+    {
+     "id": "endo-w3-01",
+     "num": "01",
+     "name": "Clinical Presentation and Evaluation of Adrenal Gland Disease",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-02",
+     "num": "02",
+     "name": "Clinical Presentation and Evaluation of Pituitary Gland Disease",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-03",
+     "num": "03",
+     "name": "Physiologic Changes that Lead to Puberty",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-04",
+     "num": "04",
+     "name": "Disorders of Puberty",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-05",
+     "num": "05",
+     "name": "Disorders of Growth",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-06",
+     "num": "06",
+     "name": "Anatomy of the Female Pelvis, Perineum, & Sexual Function",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-07",
+     "num": "07",
+     "name": "Development of the Female Reproductive System",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-08",
+     "num": "08",
+     "name": "Introduction to Transgender Medicine",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-09",
+     "num": "09",
+     "name": "Disorders of Sexual Differentiation",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-10",
+     "num": "10",
+     "name": "Breast Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "endo-w3-11",
+     "num": "11",
+     "name": "Approach to Common Breast Problems",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}

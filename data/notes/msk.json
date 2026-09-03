@@ -1,0 +1,365 @@
+{
+ "block": "msk",
+ "weeks": [
+  {
+   "n": 7,
+   "label": "Week 7 - Approach to MSK, the Spine & the Shoulder Girdle",
+   "lectures": [
+    {
+     "id": "msk-w7-01",
+     "num": "01",
+     "name": "Introduction to MSK Anatomy",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w7-02.1",
+     "num": "02.1",
+     "name": "Anatomy of the Back & Neck",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w7-02.2",
+     "num": "02.2",
+     "name": "Clinical Approach to Mechanical Back & Neck Pain",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w7-03.1",
+     "num": "03.1",
+     "name": "Anatomy of the Back & Spinal Cord",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w7-03.2",
+     "num": "03.2",
+     "name": "Clinical Approach to Non-Mechanical Back & Neck Pain",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w7-04",
+     "num": "04",
+     "name": "Axial Spine Radiology",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w7-05.1",
+     "num": "05.1",
+     "name": "Anatomy of the Proximal Upper Extremity",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w7-05.2",
+     "num": "05.2",
+     "name": "Clinical Approach to Osteology and Joints of the Proximal Upper Extremity",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "label": "Week 8 - Brachial Plexus, Rotator Cuff & the Distal Upper Limb",
+   "lectures": [
+    {
+     "id": "msk-w8-01",
+     "num": "01",
+     "name": "Anatomy of the Brachial Plexus",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-02.1",
+     "num": "02.1",
+     "name": "Anatomy of the Muscles of the Shoulder",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-02.2",
+     "num": "02.2",
+     "name": "Clinical Approach to the Muscles of the Shoulder",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-03.1",
+     "num": "03.1",
+     "name": "Anatomy of the Muscles of the Arm",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-03.2",
+     "num": "03.2",
+     "name": "Clinical Approach to the Muscles of the Arm",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-04",
+     "num": "04",
+     "name": "Neurovascular Supply of the Proximal Upper Extremity",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-05.1",
+     "num": "05.1",
+     "name": "Osteology of the Distal Upper Extremity",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-05.2",
+     "num": "05.2",
+     "name": "Clinical Approach to the Elbow",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-06.1",
+     "num": "06.1",
+     "name": "Anatomy of the Muscles of the Distal Upper Extremity",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-06.2",
+     "num": "06.2",
+     "name": "Clinical Approach to the Muscles of the Distal Upper Extremity",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-07.1",
+     "num": "07.1",
+     "name": "Anatomy of the Neurovascular Supply of the Distal Upper Extremity",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-07.2",
+     "num": "07.2",
+     "name": "Clinical Approach to the Neurovascular Supply of the Distal Upper Extremity",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-08.1",
+     "num": "08.1",
+     "name": "Anatomy of the Wrist and Hand - PART 1",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w8-08.2",
+     "num": "08.2",
+     "name": "Clinical Approach to the Wrist and Hand - PART 1",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "label": "Week 9 - Wrist & Hand, Hip & Knee",
+   "lectures": [
+    {
+     "id": "msk-w9-01.1",
+     "num": "01.1",
+     "name": "Anatomy of the Wrist and Hand - PART 2",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-01.2",
+     "num": "01.2",
+     "name": "Clinical Approach to the Wrist and Hand - PART 2",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-02",
+     "num": "02",
+     "name": "Upper Extremity Radiology",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-03.1",
+     "num": "03.1",
+     "name": "Anatomy of the Hip Joint",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-03.2",
+     "num": "03.2",
+     "name": "Clinical Approach to the Hip Joint",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-04",
+     "num": "04",
+     "name": "Anatomy of the Gluteal Region & Thigh",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-05",
+     "num": "05",
+     "name": "Clinical Approach to Hip Pain",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-06.1",
+     "num": "06.1",
+     "name": "Anatomy of the Knee - PART 1",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-06.2",
+     "num": "06.2",
+     "name": "Clinical Approach to the Knee - PART 1",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-07.1",
+     "num": "07.1",
+     "name": "Anatomy of the Knee - PART 2",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-07.2",
+     "num": "07.2",
+     "name": "Clinical Approach to the Knee - PART 2",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w9-08",
+     "num": "08",
+     "name": "Anatomy of the Leg",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "label": "Week 10 - Ankle & Foot, Nerve Injury, Arthritis & Pain",
+   "lectures": [
+    {
+     "id": "msk-w10-01.1",
+     "num": "01.1",
+     "name": "Anatomy of the Ankle and Foot",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-01.2",
+     "num": "01.2",
+     "name": "Clinical Approach to the Ankle and Foot",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-02",
+     "num": "02",
+     "name": "Lower Extremity Radiology",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-03",
+     "num": "03",
+     "name": "Nerve Injury",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-04",
+     "num": "04",
+     "name": "Acute Monoarthritis",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-05",
+     "num": "05",
+     "name": "MSK Infections",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-06",
+     "num": "06",
+     "name": "Osteoarthritis",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-07",
+     "num": "07",
+     "name": "Approach to Polyarthritis",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-08",
+     "num": "08",
+     "name": "Juvenile Idiopathic Arthritis",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-09",
+     "num": "09",
+     "name": "Connective Tissue Disorders",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-10",
+     "num": "10",
+     "name": "Seronegative Arthridites",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w10-11",
+     "num": "11",
+     "name": "Body Pain",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "label": "Week 11 - Fractures, Rheumatology Treatment & Pediatric Orthopedics",
+   "lectures": [
+    {
+     "id": "msk-w11-01",
+     "num": "01",
+     "name": "Vasculitis",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w11-02",
+     "num": "02",
+     "name": "Rheumatology Investigations",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w11-03",
+     "num": "03",
+     "name": "Rheumatology Treatments",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w11-04",
+     "num": "04",
+     "name": "Pediatric Orthopedics",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w11-05",
+     "num": "05",
+     "name": "Fracture Radiology",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w11-06",
+     "num": "06",
+     "name": "MSK Oncology",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w11-07",
+     "num": "07",
+     "name": "Fracture Management",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w11-08",
+     "num": "08",
+     "name": "Physical Activity Prescription",
+     "hasNote": false
+    },
+    {
+     "id": "msk-w11-09",
+     "num": "09",
+     "name": "Child with a Limp",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}
