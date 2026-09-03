@@ -140,36 +140,23 @@ thrombosis</strong>.
 </details>
 
 <details class="fold">
-<summary>Run your own copy</summary>
+<summary>Customize it to your own learning</summary>
 <div class="body">
 
 <p>
 The portal is open source at
 <a href="https://github.com/nsimsam/pom2" target="_blank" rel="noopener noreferrer">github.com/nsimsam/pom2</a>.
-It is six HTML files, three scripts and a folder of JSON, with no build step, no server and
-no framework, so a clone runs as it stands.
 </p>
 
 <p>
-<strong>To make it your course</strong>, swap out <code>data/questions/</code> and
-<code>data/notes/</code>. The README documents every field a question carries, the block
-list is one constant at the top of each build script, and the palette is nine custom
-properties at the top of <code>base.css</code>. Nothing in the code knows it is about
-medicine, or about five blocks.
-</p>
-
-<p>
-<strong>It is also worth pointing Claude Code at.</strong> Clone it, open the folder, and
-the JSON is regular enough to build your own study tooling on top of. The obvious one: a
-skill that reads which questions you keep getting wrong and writes Anki cards for exactly
-those gaps, so revision follows the holes rather than the syllabus. Pulling your own
-course material into the question format is the same kind of job.
-</p>
-
-<p>
-<strong>The questions come with it.</strong> They are a shared student resource, handed
-down between years and added to along the way, and putting them somewhere public is the
-point of the repository rather than a side effect. Take them, use them, pass them on.
+<strong>It is worth pointing Claude Code at.</strong> Clone it, open the folder, and the
+JSON is regular enough to build your own study tooling on top of. Anki is the obvious one.
+A deck handed down from upper years is a record of somebody else&rsquo;s gaps, which is the
+one thing an Anki deck should never be, because the whole method rests on drilling what
+<em>you</em> keep forgetting. This portal already knows that about you, since it tracks
+every question you have got wrong. A skill that turns exactly those into cards, and only
+those, gives you the deck a handed-down one cannot. Pulling your own course material into
+the question format is the same kind of job.
 </p>
 
 </div>
