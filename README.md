@@ -108,14 +108,15 @@ the reason the table is there.
 
 The code is MIT, see [LICENSE](LICENSE).
 
-The study content under `data/` is a different matter, and the licence does not
-cover it. The lecture notes are the author's own. The 634 practice questions came
-out of course material: a student-written workbook handed down through the
-Schulich classes of 2015 to 2025, Elentra module knowledge checks, weekly quizzes,
-slide concept checks and case sessions. That material belongs to its authors and
-to the school.
+The study content under `data/` has its own history. The lecture notes are the
+author's own. The 634 practice questions came out of shared course material: a
+student-written workbook handed down through the Schulich classes of 2015 to 2025,
+Elentra module knowledge checks, weekly quizzes, slide concept checks and questions
+written from the case sessions.
 
-It is here because it is what the portal was built to hold, and it is shared with
-classmates in that spirit. It is **not** licensed for redistribution, and forking
-this repository does not make it yours to relicense. If you are adapting the
-portal for a different course, replace `data/questions/` with your own.
+**They are here on purpose.** These are resources students already pass between
+years, and putting them somewhere public is the reason this
+repository exists, not an accident of packaging. Use them, fork them, correct them,
+add to them. Where a question came out of a peer-written bank its errors are flagged
+on the question itself rather than quietly patched, so you can see what you are
+trusting before you trust it.

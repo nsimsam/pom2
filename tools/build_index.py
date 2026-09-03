@@ -184,8 +184,9 @@ course material into the question format is the same kind of job.
 </p>
 
 <p>
-The questions in this copy are course material and are <strong>not</strong> licensed for
-redistribution, so they do not come with the fork. Bring your own bank. The code is MIT.
+<strong>The questions come with it.</strong> They are a shared student resource, handed
+down between years and added to along the way, and putting them somewhere public is the
+point of the repository rather than a side effect. Take them, use them, pass them on.
 </p>
 
 </div>
