@@ -166,14 +166,11 @@ The portal is open source at
 </p>
 
 <p>
-<strong>It is worth pointing Claude Code at.</strong> Clone it, open the folder, and the
-JSON is regular enough to build your own study tooling on top of. Anki is the obvious one.
-A deck handed down from upper years is a record of somebody else&rsquo;s gaps, which is the
-one thing an Anki deck should never be, because the whole method rests on drilling what
-<em>you</em> keep forgetting. This portal already knows that about you, since it tracks
-every question you have got wrong. A skill that turns exactly those into cards, and only
-those, gives you the deck a handed-down one cannot. Pulling your own course material into
-the question format is the same kind of job.
+Clone it and point Claude Code at the folder. The JSON is structured enough to build study
+tooling on. Anki is one use: the portal records which questions you got wrong, so a skill
+can generate cards from those alone, rather than from an inherited deck built around
+someone else&rsquo;s gaps. Importing your own course material into the question format is a
+similar job.
 </p>
 
 </div>
