@@ -23,8 +23,9 @@ CF = ""
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-         '<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;'
-         '9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">')
+         '<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500'
+         '&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600'
+         '&display=swap" rel="stylesheet">')
 
 # room for a nav back to whatever site you hang the portal off
 PILLNAV = ""

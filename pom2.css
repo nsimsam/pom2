@@ -662,60 +662,154 @@
 .q-loading{padding:60px 20px;text-align:center;color:var(--muted);font-size:.9rem;}
 
 /* the block index */
-.block-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
-    gap:20px;
-    margin-bottom:56px;
+/* The teaching year, drawn to scale.
+
+   Twenty weeks split 3/3/5/5/4 between the blocks, so each segment's width is
+   the number of weeks that block actually runs. It is a diagram of the year
+   rather than five equal tiles, which is the one thing a grid of cards could
+   never say. */
+.year{
+    margin:0 0 44px;
 }
 
-.block-card{
-    display:block;
-    padding:24px;
-    background:var(--card-bg);
-    border:1px solid var(--border);
-    border-radius:8px;
-    border-top:3px solid var(--hue);
-    transition:border-color .18s,transform .18s;
-}
-
-.block-card:hover{transform:translateY(-2px);border-color:var(--hue);}
-
-.block-card .bmeta{
-    font-size:.72rem;
-    font-weight:600;
-    letter-spacing:.08em;
+.year figcaption{
+    font-family:var(--mono);
+    font-size:.68rem;
+    font-weight:500;
+    letter-spacing:.13em;
     text-transform:uppercase;
-    color:var(--hue);
-    margin-bottom:10px;
-}
-
-.block-card h2{
-    font-family:var(--serif);
-    font-size:1.3rem;
-    font-weight:600;
-    margin-bottom:8px;
-}
-
-.block-card p{color:var(--muted);font-size:.88rem;line-height:1.55;}
-
-/* both halves carry the same weight - a block is notes and questions, and
-   leading with one count made the page read as a quiz */
-.tally{
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px 20px;
-    margin-top:16px;
-    padding-top:14px;
-    border-top:1px solid var(--border);
-    font-size:.82rem;
     color:var(--muted);
+    margin-bottom:11px;
 }
 
-.tally b{color:var(--text);font-weight:600;}
+.yearbar{
+    display:flex;
+    gap:2px;
+    overflow:hidden;
+    border-radius:2px;
+}
+
+.yseg{
+    flex:var(--w);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:38px;
+    background:var(--hue);
+    color:#fff;
+    font-family:var(--mono);
+    font-size:.72rem;
+    font-weight:500;
+    letter-spacing:.03em;
+    font-variant-numeric:tabular-nums;
+    transition:opacity .15s;
+}
+
+.yseg:hover{opacity:.82;}
+
+/* the blocks as a numbered sequence, because they are one: block 1 runs into
+   block 2 and the week numbers keep counting */
+.blocks{
+    list-style:none;
+    margin:0 0 52px;
+    border-top:1px solid var(--border);
+}
+
+.brow{
+    border-bottom:1px solid var(--border);
+}
+
+.brow > a{
+    display:grid;
+    grid-template-columns:2.6rem minmax(0,1fr) minmax(0,10.5rem);
+    column-gap:26px;
+    row-gap:5px;
+    align-items:baseline;
+    padding:22px 4px;
+    transition:background .15s;
+}
+
+.brow > a:hover{
+    background:var(--card-bg);
+}
+
+.bnum{
+    grid-row:span 2;
+    font-family:var(--mono);
+    font-size:.82rem;
+    font-weight:500;
+    color:var(--hue);
+    font-variant-numeric:tabular-nums;
+}
+
+.bhead{
+    display:flex;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:4px 12px;
+}
+
+.bname{
+    font-family:var(--serif);
+    font-size:1.32rem;
+    font-weight:600;
+    letter-spacing:-.01em;
+}
+
+.brow > a:hover .bname{color:var(--hue);}
+
+.bweeks{
+    font-family:var(--mono);
+    font-size:.72rem;
+    color:var(--muted);
+    font-variant-numeric:tabular-nums;
+}
+
+.bblurb{
+    grid-column:2;
+    color:var(--muted);
+    font-size:.88rem;
+    line-height:1.55;
+}
+
+/* both counts get the same weight - a block is notes and questions, and
+   leading with one of them made the page read as a quiz */
+.bstats{
+    grid-column:3;
+    grid-row:span 2;
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    font-family:var(--mono);
+    font-size:.75rem;
+    color:var(--muted);
+    font-variant-numeric:tabular-nums;
+    text-align:right;
+}
+
+.bstats b{
+    color:var(--text);
+    font-weight:500;
+}
+
+@media (max-width:720px){
+    .yseg{font-size:0;height:26px;}
+    .brow > a{
+        grid-template-columns:2.2rem minmax(0,1fr);
+        column-gap:16px;
+    }
+    .bstats{
+        grid-column:2;
+        grid-row:auto;
+        flex-direction:row;
+        gap:16px;
+        text-align:left;
+        margin-top:4px;
+    }
+}
 
 
-.prose{max-width:680px;}
+.prose{max-width:none;}
 .prose h2{
     font-family:var(--serif);
     font-size:1.6rem;
@@ -791,7 +885,7 @@
 .fold[open] summary::after{content:"\2212";}
 .fold[open] summary{color:var(--accent);}
 
-.fold .body{padding:2px 2px 30px;}
+.fold .body{max-width:68ch;padding:2px 2px 30px;}
 .fold .body > :last-child{margin-bottom:0;}
 
 /* the h2 rule above still applies to anything left outside a fold */
