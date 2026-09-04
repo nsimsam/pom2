@@ -1046,19 +1046,19 @@
    }
   ],
   "correct": [
-   "C"
+   "A"
   ],
   "multi": false,
   "free": false,
   "unscorable": false,
   "keyed": true,
   "answerTitle": "Answer",
-  "answer": "<p><strong>The module keys this as C (CBC).</strong></p>",
+  "answer": "<p><strong>The correct answer is A</strong>, venous blood gas and serum ketones (beta-hydroxybutyrate).</p>\n<p>The lecture slides key this <strong>A</strong> and give their own rationale: <em>\"This a young patient with no history of diabetes presenting with hyperglycemia, hyponatremia and hypokalemia - likely new presentation of Type 1 DM with <span class=\"wl\">DKA</span> - Venous blood gas and ketones will help arrive at the diagnosis.\"</em> It is also the only option that matches the stem's anion-gap picture.</p>",
   "flags": [
    {
     "type": "bug",
-    "title": "The module's answer key looks wrong",
-    "html": "<p>A CBC does not confirm DKA - the confirmatory tests are the venous blood gas and serum ketones (beta-hydroxybutyrate), i.e. <strong>option A</strong>, which is also the only option that matches the stem's anion-gap picture. The <code>correct</code> flag on option C comes from the module's own data, so this is an authoring error at the source, not a transcription slip. Worth confirming with the lecturer.</p>"
+    "title": "The Elentra module keys this wrong",
+    "html": "<p>The module flags <strong>C (CBC)</strong> as correct, and a CBC does not confirm DKA. The <strong>slides are the reference and they key A</strong>, which is the answer used here. The <code>correct</code> flag on option C comes from the module's own data, so this is an authoring error at the source, not a transcription slip.</p>"
    }
   ]
  },
@@ -1087,19 +1087,19 @@
    }
   ],
   "correct": [
-   "B"
+   "A"
   ],
   "multi": false,
   "free": false,
   "unscorable": false,
   "keyed": true,
   "answerTitle": "Answer",
-  "answer": "<p><strong>The module keys this as B (False).</strong></p>",
+  "answer": "<p><strong>The correct answer is A, true.</strong></p>\n<p>The lecture slides key this <strong>True</strong> and point back to their own <span class=\"wl\">HHS</span> slides, which say it twice over: HHS <em>\"tends to happen to older people with Type 2 DM\"</em>, and its clinical presentation is listed as <strong>\"No abdominal pain OR vomiting\"</strong>. Abdominal pain and vomiting belong to <span class=\"wl\">DKA</span>, where the acidosis drives them.</p>",
   "flags": [
    {
     "type": "bug",
-    "title": "The module's answer key looks questionable",
-    "html": "<p>As written, the statement is generally <strong>true</strong>: HHS typically presents in older patients, and abdominal pain and vomiting are more characteristic of DKA. The module flags \"False\" as correct. Possibly the stem was reworded after the key was set. Check this one against the lecture.</p>"
+    "title": "The Elentra module keys this wrong",
+    "html": "<p>The module flags <strong>B (False)</strong> as correct. The <strong>slides are the reference and they key True</strong>, which is the answer used here.</p>"
    }
   ]
  },
@@ -10838,7 +10838,7 @@
   "answer": "<p><strong>The correct answer is B.</strong> <strong>DKA at presentation favours <span class=\"wl\">T1D</span></strong>; <strong><span class=\"wl\">acanthosis</span> favours <span class=\"wl\">T2D</span></strong>.</p>\n<p>The other features available from history and exam: <strong>ethnicity</strong> (T2D more common in First Nations, African American, Asian and Hispanic populations), <strong>family history</strong> (stronger in T2D - identical-twin concordance ~100%, and ≥half of T2D patients have a close relative with diabetes, versus only ~15% of new-onset T1D having a first- or second-degree relative with T1D), <strong>past GDM</strong> (favours T2D), <strong>older age</strong> (favours T2D), and <strong>obesity</strong> (favours T2D).</p>",
   "flags": [
    {
-    "type": "warning",
+    "type": "note",
     "title": "No single factor is decisive",
     "html": "<p>T1D has been described in patients in their 80s, being overweight does not protect against immune-mediated beta-cell loss, and DKA can occur in T2D. The features are combined, not applied individually.</p>"
    }
