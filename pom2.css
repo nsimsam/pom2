@@ -755,6 +755,21 @@
     color:var(--text);
 }
 
+/* a prompt to copy whole into Claude Code. Monospace so it reads as something
+   to paste rather than something to skim. */
+.prose .prompt{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.82rem;
+    line-height:1.65;
+    color:var(--text);
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-left:2px solid var(--q-accent-soft);
+    border-radius:6px;
+    padding:13px 15px;
+    margin:0 0 18px;
+}
+
 /* the landing page's folded sections. Same +/- affordance as .howto, but the
    summary is carrying the weight of the h2 it replaced, so it is set in the
    serif at heading size rather than shrunk to a rail note. */
