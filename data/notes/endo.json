@@ -1454,7 +1454,7 @@
      "blocks": [
       {
        "t": "pathway",
-       "mermaid": "flowchart TD\n    A[\"Screen at 24–28 weeks gestation<br/>1h 50g OGTT, non-fasting\"] --> B{\"1-hour glucose?\"}\n    B -->|\"≤ 7.8 mmol/L — NORMAL\"| C[\"No further testing\"]\n    B -->|\"≥ 11.1 mmol/L\"| D[\"GDM DIAGNOSED\"]\n    B -->|\"7.8 – 11.0 mmol/L\"| E[\"Fasting 75g OGTT\"]\n    E --> F{\"Any value above target?\"}\n    F -->|\"Fasting ≥ 5.3<br/>1h ≥ 10.6<br/>2h ≥ 9.0\"| D\n    F -->|\"All below\"| C\n    D --> G[\"Lifestyle first, then insulin if needed\"]\n    G --> H[\"Stop treatment after delivery\"]\n    H --> I[\"Re-screen with 75g OGTT<br/>at 6 weeks – 6 months postpartum\"]"
+       "mermaid": "flowchart TD\n    A[\"Screen at 24–28 weeks gestation<br/>1h 50g OGTT, non-fasting\"] --> B{\"1-hour glucose?\"}\n    B -->|\"< 7.8 mmol/L — NORMAL\"| C[\"No further testing\"]\n    B -->|\"≥ 11.1 mmol/L\"| D[\"GDM DIAGNOSED\"]\n    B -->|\"7.8 – 11.0 mmol/L\"| E[\"Fasting 75g OGTT\"]\n    E --> F{\"Any ONE value at or above<br/>fasting 5.3 · 1h 10.6 · 2h 9.0 mmol/L?\"}\n    F -->|\"Yes — one is enough\"| D\n    F -->|\"No — all three below\"| C\n    D --> G[\"Lifestyle first, then insulin if needed\"]\n    G --> H[\"Stop treatment after delivery\"]\n    H --> I[\"Re-screen with 75g OGTT<br/>at 6 weeks – 6 months postpartum\"]"
       },
       {
        "t": "table",
@@ -1778,7 +1778,7 @@
   },
   {
    "n": 2,
-   "label": "Week 2 - Thyroid, Parathyroid, Bone & Ovarian Function",
+   "label": "Week 2 - Thyroid, Parathyroid, Bone & Reproductive Physiology",
    "lectures": [
     {
      "id": "endo-w2-01",
