@@ -35,6 +35,38 @@ a{
     text-decoration:none;
 }
 
+/* the nav back to the site the portal hangs off, ported from noorsimsam.com
+   so the two read as one site. Tokens are shared, so it needs no colours of
+   its own. Hidden in print with the rest of the chrome, see pom2.css. */
+.pill-nav{
+    display:inline-flex;
+    gap:2px;
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:6px;
+    margin-bottom:28px;
+}
+
+.pill-nav a{
+    padding:8px 18px;
+    border-radius:4px;
+    font-size:.85rem;
+    font-weight:500;
+    color:var(--muted);
+    transition:color .15s,background .15s;
+}
+
+.pill-nav a:hover{
+    color:var(--text);
+}
+
+.pill-nav a.active{
+    background:var(--accent-soft);
+    color:var(--text);
+    font-weight:600;
+}
+
 /* the landing page masthead */
 .page-hero{
     margin-bottom:56px;
@@ -70,6 +102,10 @@ footer a{
 }
 
 @media (max-width:800px){
+    .pill-nav{
+        flex-wrap:wrap;
+    }
+
     .page-hero{
         margin-bottom:40px;
     }

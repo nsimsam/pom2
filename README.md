@@ -102,7 +102,9 @@ the reason the table is there.
   content="noindex, nofollow">`, because the original is meant to be unlisted.
   Delete that line if you want yours found.
 - **Analytics and a parent nav.** `CF` and `PILLNAV` in `build_pages.py` and
-  `build_index.py` are empty constants sitting in the right spot in the template.
+  `build_index.py` sit in the right spot in the template. `CF` is empty.
+  `PILLNAV` holds the nav bar of the site this copy hangs off, styled by
+  `.pill-nav` in `base.css`; blank it and the pages lose the bar cleanly.
 
 ## Licence and content
 

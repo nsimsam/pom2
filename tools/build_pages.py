@@ -45,7 +45,11 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
          '9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">')
 
 # room for a nav back to whatever site you hang the portal off
-PILLNAV = ""
+PILLNAV = """<nav class="pill-nav">
+<a href="https://noorsimsam.com/#top">Noor</a>
+<a href="https://noorsimsam.com/writing.html">Writing</a>
+<a href="https://noorsimsam.com/#projects">Projects</a>
+</nav>"""
 
 FOOTER = ("<footer>\nGrown by Noor &#127793; &middot; "
           "<a href=\"https://github.com/nsimsam/pom2\" target=\"_blank\" rel=\"noopener noreferrer\">"
