@@ -129,11 +129,6 @@ Notes save to PDF if you would rather annotate them yourself.
 </ul>
 
 <p>
-Anything without a real answer key says so on its face, and the handful of questions that
-cannot be scored are marked <em>not scored</em> rather than given an invented letter.
-</p>
-
-<p>
 What they are written to, from the syllabus:
 </p>
 
