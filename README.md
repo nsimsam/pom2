@@ -109,10 +109,10 @@ the reason the table is there.
 The code is MIT, see [LICENSE](LICENSE).
 
 The study content under `data/` has its own history. The lecture notes are the
-author's own. The 634 practice questions came out of shared course material: a
+author's own. The 692 practice questions came out of shared course material: a
 student-written workbook handed down through the Schulich classes of 2015 to 2025,
 Elentra module knowledge checks, weekly quizzes, slide concept checks and questions
-written from the case sessions.
+written from the case and small-group sessions.
 
 **They are here on purpose.** These are resources students already pass between
 years, and putting them somewhere public is the reason this
