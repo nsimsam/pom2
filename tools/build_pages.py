@@ -133,8 +133,8 @@ PAGE = u"""<!DOCTYPE html>
 </div>
 <div class="scoreboard" id="sb-questions" hidden>
 <div class="score"><b><span id="sc-done">0</span><span class="of" id="sc-of"></span></b><span>Attempted</span></div>
-<div class="score"><b id="sc-first">&ndash;</b><span>First try</span></div>
-<div class="score is-bad"><b id="sc-wrong">0</b><span>Wrong now</span></div>
+<div class="score"><b id="sc-first">&ndash;</b><span>Correct</span></div>
+<div class="score is-bad"><b id="sc-wrong">0</b><span>Wrong</span></div>
 <div class="score is-star"><b id="sc-star">0</b><span>Starred</span></div>
 </div>
 </header>

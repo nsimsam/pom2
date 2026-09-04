@@ -111,7 +111,6 @@
   function stateOf(qid) {
     var r = rec(qid);
     if (!r || (r.status !== "correct" && r.status !== "wrong")) return "unseen";
-    if (r.status === "correct" && r.firstTryCorrect === false) return "shaky";
     return r.status;
   }
 
@@ -382,8 +381,7 @@
     switch (filters.status) {
       case "unseen":  return st === "unseen";
       case "wrong":   return st === "wrong";
-      case "correct": return st === "correct" || st === "shaky";
-      case "shaky":   return st === "shaky";
+      case "correct": return st === "correct";
       case "starred": return isStarred(qid);
       default:        return true;
     }
@@ -438,18 +436,16 @@
     { k: "all", label: "All" },
     { k: "unseen", label: "Unseen" },
     { k: "wrong", label: "Wrong", cls: "wrongish" },
-    { k: "shaky", label: "Shaky" },
     { k: "correct", label: "Correct" },
     { k: "starred", label: "Starred", cls: "starish" }
   ];
 
   function counts() {
-    var c = { all: QUESTIONS.length, unseen: 0, wrong: 0, correct: 0, shaky: 0, starred: 0 };
+    var c = { all: QUESTIONS.length, unseen: 0, wrong: 0, correct: 0, starred: 0 };
     QUESTIONS.forEach(function (q) {
       var st = stateOf(q.qid);
       if (st === "unseen") c.unseen++;
       else if (st === "wrong") c.wrong++;
-      else if (st === "shaky") { c.shaky++; c.correct++; }
       else c.correct++;
       if (isStarred(q.qid)) c.starred++;
     });
@@ -472,19 +468,17 @@
   }
 
   function paintStats() {
-    var attempted = 0, wrong = 0, starred = 0, firstOk = 0;
+    var attempted = 0, wrong = 0, starred = 0, ok = 0;
     QUESTIONS.forEach(function (q) {
       var st = stateOf(q.qid);
       if (st !== "unseen") {
         attempted++;
-        if (st === "wrong") wrong++;
-        var r = rec(q.qid);
-        if (r && r.firstTryCorrect === true) firstOk++;
+        if (st === "wrong") wrong++; else ok++;
       }
       if (isStarred(q.qid)) starred++;
     });
     byId("sc-done").textContent = attempted;
-    byId("sc-first").textContent = attempted ? Math.round(firstOk / attempted * 100) + "%" : "–";
+    byId("sc-first").textContent = attempted ? Math.round(ok / attempted * 100) + "%" : "–";
     byId("sc-wrong").textContent = wrong;
     byId("sc-star").textContent = starred;
     paintChips();

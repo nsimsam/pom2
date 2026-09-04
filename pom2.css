@@ -399,7 +399,6 @@
 
 .q[data-state="correct"]::before{background:var(--q-ok);}
 .q[data-state="wrong"]::before{background:var(--q-bad);}
-.q[data-state="shaky"]::before{background:var(--q-star);}
 .q[data-kind="broken"]::before{background:var(--muted);}
 
 .qhead{
