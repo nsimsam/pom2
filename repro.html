@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base.css?v=d5ac7952">
-<link rel="stylesheet" href="pom2.css?v=e22e334e">
+<link rel="stylesheet" href="pom2.css?v=2edd3314">
 <style>
 :root{--q-accent:#8c3566;--q-accent-soft:#f6e6ef;--q-accent-ink:#772b57;}
 </style>
@@ -99,10 +99,12 @@ your browser&rsquo;s local storage. It is never sent to this site, never stored 
 repository, and nobody else can see it, not even me.</p>
 <p>That also means it does not follow you. A different browser, a different laptop, or
 clearing your site data all start from zero.</p>
-<p><strong>To carry it with you:</strong> press <strong>Download my progress</strong> in the
-panel on the left and keep the JSON file it writes. On the other machine, open this same page
-and press <strong>Restore from a file</strong> to pick up where you left off. Doing that now
-and then is also the only backup there is.</p>
+<p><strong>To carry it with you:</strong> press <strong>Download all my progress</strong> in
+the panel on the left and keep the JSON file it writes. One file holds every block, not only
+this one, and it can be pressed from any of them. On the other machine, open any block and
+press <strong>Restore from a file</strong> to put all of it back at once. A restore only ever
+adds and updates, so an out of date file cannot wipe out newer answers. Doing that now and
+then is also the only backup there is.</p>
 </div>
 </details>
 
@@ -118,13 +120,16 @@ and then is also the only backup there is.</p>
 <section>
 <p class="panel-h">Status</p>
 <div class="chips" id="status-chips"></div>
+<p class="railnote">The bar at the bottom of the screen says where you are and gets you back
+to the question you left. <strong>j</strong> and <strong>k</strong> step between questions,
+<strong>b</strong> jumps back to your spot.</p>
 </section>
 
 <section>
 <p class="panel-h">Progress</p>
 <p class="storenote" id="storenote" hidden></p>
 <div class="resets">
-<button class="backup-btn" id="export-progress" type="button">Download my progress</button>
+<button class="backup-btn" id="export-progress" type="button">Download all my progress</button>
 <button class="backup-btn" id="import-progress" type="button">Restore from a file</button>
 <input type="file" id="import-file" accept="application/json,.json" hidden>
 <button class="danger" id="reset-shown" type="button" disabled>Reset the questions shown (0)</button>
@@ -137,12 +142,22 @@ and then is also the only backup there is.</p>
 <main class="stream" id="stream">
 <div class="q-loading">Loading 121 questions&hellip;</div>
 </main>
+
+<div class="posbar" id="posbar" hidden>
+<span class="pb-where" id="pb-where"></span>
+<span class="pb-count" id="pb-count"></span>
+<span class="pb-steps">
+<button class="pb-step" id="pb-prev" type="button" title="Previous question (k)" aria-label="Previous question">&uarr;</button>
+<button class="pb-step" id="pb-next" type="button" title="Next question (j)" aria-label="Next question">&darr;</button>
+</span>
+<button class="pb-mark" id="pb-mark" type="button" hidden></button>
+</div>
 </div>
 
 <script>
 window.QUIZ_BLOCK = {"slug": "repro", "n": 2, "name": "Reproduction", "weeks": "4–6"};
 </script>
-<script src="quiz.js?v=77b2740c"></script>
+<script src="quiz.js?v=7673b3f5"></script>
 <script src="notes.js?v=9042b26a"></script>
 <script src="pom2.js?v=5d6e99e0"></script>
 

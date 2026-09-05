@@ -1130,6 +1130,86 @@
 .note.is-gap h4{font-size:1rem;font-weight:500;color:var(--muted);}
 .note.is-gap .gapnote{margin-left:auto;font-size:.78rem;color:var(--muted);flex-shrink:0;}
 
+/* where you are in the stream
+
+   The only thing on the portal that floats over content, and so the only fixed
+   position in the file: it is the one control that has to stay put while
+   several hundred questions scroll past it. Flat like everything else, a solid
+   card and a 1px border, no shadow to set it apart. */
+/* the last question would otherwise end its scroll underneath the bar */
+#panel-questions{padding-bottom:56px;}
+
+.posbar{
+    position:fixed;
+    left:50%;
+    bottom:18px;
+    transform:translateX(-50%);
+    z-index:20;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    width:max-content;
+    max-width:min(760px,92vw);
+    padding:8px 8px 8px 16px;
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:999px;
+}
+
+/* the lecture name is the part that gives, since the count and the way back
+   are the parts you cannot guess from the page behind the bar */
+.pb-where{
+    flex:1;
+    min-width:0;
+    font-size:.82rem;
+    color:var(--text);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.pb-count{
+    flex-shrink:0;
+    font-size:.75rem;
+    font-variant-numeric:tabular-nums;
+    color:var(--muted);
+    white-space:nowrap;
+}
+
+.pb-steps{display:flex;gap:4px;flex-shrink:0;}
+
+.pb-step{
+    width:28px;
+    height:28px;
+    font:inherit;
+    font-size:.8rem;
+    line-height:1;
+    color:var(--muted);
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:999px;
+    cursor:pointer;
+    transition:border-color .15s,color .15s;
+}
+
+.pb-step:hover:not(:disabled){color:var(--q-accent);border-color:var(--q-accent);}
+.pb-step:disabled{opacity:.4;cursor:default;}
+
+/* the one filled control on the bar - it is the whole reason the bar is here */
+.pb-mark{
+    flex-shrink:0;
+    padding:7px 14px;
+    font:inherit;
+    font-size:.8rem;
+    font-weight:600;
+    white-space:nowrap;
+    color:var(--on-q-accent);
+    background:var(--q-accent);
+    border:1px solid var(--q-accent);
+    border-radius:999px;
+    cursor:pointer;
+}
+
 @media (max-width:960px){
     .q-shell{grid-template-columns:1fr;gap:32px;}
     .rail{position:static;}
@@ -1141,6 +1221,9 @@
 
 @media (max-width:560px){
     .score b{font-size:1.4rem;}
+    /* no room for the lecture name; the count and the way back still fit */
+    .pb-where{display:none;}
+    .posbar{gap:10px;padding:8px;}
     .q{padding:16px 16px 12px 20px;}
     .note{padding:16px 16px 14px;}
 }
@@ -1152,7 +1235,7 @@
 /* a note is a one-pager by design, so printing gives one per sheet and drops
    every control - the gaps go too, they are screen bookkeeping */
 @media print{
-    .pill-nav,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn{display:none !important;}
+    .pill-nav,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.posbar{display:none !important;}
 
     /* one note, one week, or the lot: whatever was marked survives the print
        and everything else steps out of the way */

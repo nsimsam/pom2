@@ -8,7 +8,8 @@
   "use strict";
 
   var BLOCK = window.QUIZ_BLOCK;
-  var STORE_KEY = "nsq.v1." + BLOCK.slug;
+  var STORE_PREFIX = "nsq.v1.";
+  var STORE_KEY = STORE_PREFIX + BLOCK.slug;
 
   /* the source families are the same in every block, empty ones included:
      an empty family is a visible gap in coverage, which is the point. Schulich
@@ -150,6 +151,7 @@
     save();
     paintQuestion(qid);
     paintStats();
+    setAnchor(qid);
   }
 
   function forget(qid) {
@@ -157,6 +159,7 @@
     save();
     paintQuestion(qid);
     paintStats();
+    if (ANCHOR === qid) { ANCHOR = null; RESUMING = false; paintPos(); }
   }
 
   /* ---------- build one question ---------- */
@@ -425,10 +428,205 @@
       f.hidden = !f.querySelector(".q:not([hidden])");
     });
     byId("empty").hidden = shown > 0;
+    indexVisible();
+    paintPos();
     paintChips();
   }
 
   function setStatus(s) { filters.status = s; applyFilters(); }
+
+  /* ---------- where you are in the stream ---------- */
+
+  /* The stream runs from the first question to the last in one scroll - 279 of
+     them in endo - so the bar pinned to the bottom of the viewport is the only
+     thing that says where you are, and the only way back to the question you
+     were on before you scrolled off to check something.
+
+     Position is read from an IntersectionObserver rather than measured on
+     scroll. Asking this many nodes where they are on every scroll event costs
+     frames, and a hidden question is not rendered and so never intersects,
+     which means the filters fall out of it for free. */
+
+  var VISIBLE = [];                  // qids passing the filters, in stream order
+  var VINDEX = Object.create(null);  // qid -> its place in VISIBLE
+  var inView = Object.create(null);  // qids currently crossing the sight line
+  var CURRENT = null;                // the question at the top of the viewport
+  var ANCHOR = null;                 // the question to offer a way back to
+  var RESUMING = false;              // showing the reopen offer, not the marker
+  var posReady = false;
+  var scrollQueued = false;
+
+  /* read off the DOM, not off QUESTIONS: the stream is built family by family,
+     so its order is not the order the JSON happens to arrive in */
+  function indexVisible() {
+    VISIBLE = [];
+    VINDEX = Object.create(null);
+    [].forEach.call(document.querySelectorAll("#stream .q"), function (art) {
+      if (art.hidden) return;
+      VINDEX[art.dataset.qid] = VISIBLE.length;
+      VISIBLE.push(art.dataset.qid);
+    });
+  }
+
+  function topmostInView() {
+    var best = null, bestAt = Infinity;
+    Object.keys(inView).forEach(function (qid) {
+      var i = VINDEX[qid];
+      if (i !== undefined && i < bestAt) { bestAt = i; best = qid; }
+    });
+    return best;
+  }
+
+  function onIntersect(entries) {
+    entries.forEach(function (e) {
+      var qid = e.target.dataset.qid;
+      if (e.isIntersecting) inView[qid] = true;
+      else delete inView[qid];
+    });
+    var top = topmostInView();
+    if (top) CURRENT = top;   // between two questions, the last one still holds
+    paintPos();
+  }
+
+  function goTo(qid) {
+    var art = byId("q-" + qid);
+    if (!art) return;
+    var top = art.getBoundingClientRect().top + window.pageYOffset - 16;
+    var still = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    try { window.scrollTo({ top: top, behavior: still ? "auto" : "smooth" }); }
+    catch (e) { window.scrollTo(0, top); }
+    CURRENT = qid;
+    paintPos();
+  }
+
+  function step(delta) {
+    if (!VISIBLE.length) return;
+    var i = (CURRENT && VINDEX[CURRENT] !== undefined) ? VINDEX[CURRENT] : 0;
+    var j = i + delta;
+    if (j < 0 || j >= VISIBLE.length) return;
+    goTo(VISIBLE[j]);
+  }
+
+  function setAnchor(qid) {
+    ANCHOR = qid;
+    RESUMING = false;
+    paintPos();
+  }
+
+  /* lastTs has been written on every answer all along and read by nothing, so
+     the question you last touched costs no new storage and already rides along
+     in the JSON backup */
+  function resumePoint() {
+    var best = null, bestTs = 0;
+    Object.keys(progress).forEach(function (qid) {
+      if (QMAP[qid] && progress[qid].lastTs > bestTs) {
+        bestTs = progress[qid].lastTs;
+        best = qid;
+      }
+    });
+    return best;
+  }
+
+  function paintMark(at) {
+    var mk = byId("pb-mark");
+    if (RESUMING && ANCHOR && QMAP[ANCHOR]) {
+      mk.hidden = false;
+      mk.textContent = "Resume at Q" + QMAP[ANCHOR].num +
+                       " \u00b7 " + QMAP[ANCHOR].lecture;
+      return;
+    }
+    // no anchor, filtered away, or near enough that a button would be noise
+    if (!ANCHOR || VINDEX[ANCHOR] === undefined || at === null) {
+      mk.hidden = true;
+      return;
+    }
+    var away = VINDEX[ANCHOR] - at;
+    if (Math.abs(away) < 2) { mk.hidden = true; return; }
+    mk.hidden = false;
+    mk.textContent = (away < 0 ? "\u2191" : "\u2193") +
+                     " back to Q" + QMAP[ANCHOR].num;
+  }
+
+  function paintPos() {
+    if (!posReady) return;
+    var bar = byId("posbar");
+    /* out of the way until you are actually into the stream, except when there
+       is a spot to reopen at - that offer has to be visible from the top */
+    if (!VISIBLE.length || !(RESUMING || window.pageYOffset > 400)) {
+      bar.hidden = true;
+      return;
+    }
+    bar.hidden = false;
+
+    if (!CURRENT || VINDEX[CURRENT] === undefined) {
+      CURRENT = topmostInView() || VISIBLE[0];
+    }
+    var at = VINDEX[CURRENT] === undefined ? null : VINDEX[CURRENT];
+    var q = QMAP[CURRENT];
+
+    byId("pb-where").textContent = q ? (q.weekLabel + " \u00b7 " + q.lecture) : "";
+    byId("pb-count").textContent = (at === null ? "\u2013" : String(at + 1)) +
+      " / " + VISIBLE.length +
+      ((filters.status !== "all" || filters.family) ? " shown" : "");
+    byId("pb-prev").disabled = at === null || at === 0;
+    byId("pb-next").disabled = at === null || at === VISIBLE.length - 1;
+    paintMark(at);
+  }
+
+  function onScroll() {
+    if (scrollQueued) return;
+    scrollQueued = true;
+    window.requestAnimationFrame(function () {
+      scrollQueued = false;
+      // scrolling in is answer enough: the offer gives way to the live marker
+      if (RESUMING && window.pageYOffset > 240) RESUMING = false;
+      paintPos();
+    });
+  }
+
+  function onKey(e) {
+    if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) return;
+    if (byId("panel-questions").hidden) return;
+    var t = e.target;
+    if (t && (t.isContentEditable ||
+              /^(input|textarea|select)$/i.test(t.tagName || ""))) return;
+    if (e.key === "j") { e.preventDefault(); step(1); }
+    else if (e.key === "k") { e.preventDefault(); step(-1); }
+    else if (e.key === "b" && ANCHOR) {
+      e.preventDefault();
+      RESUMING = false;
+      goTo(ANCHOR);
+    }
+  }
+
+  /* a browser without IntersectionObserver gets the stream exactly as it was,
+     which is better than a bar that cannot say where it is */
+  function initPos() {
+    if (!window.IntersectionObserver) return;
+    posReady = true;
+
+    // the sight line is the top fifth of the viewport
+    var obs = new window.IntersectionObserver(onIntersect,
+      { rootMargin: "0px 0px -80% 0px" });
+    [].forEach.call(document.querySelectorAll("#stream .q"), function (art) {
+      obs.observe(art);
+    });
+
+    byId("pb-prev").addEventListener("click", function () { step(-1); });
+    byId("pb-next").addEventListener("click", function () { step(1); });
+    byId("pb-mark").addEventListener("click", function () {
+      if (!ANCHOR) return;
+      RESUMING = false;
+      goTo(ANCHOR);
+    });
+    window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("keydown", onKey);
+
+    var r = resumePoint();
+    if (r && matches(r)) { ANCHOR = r; RESUMING = true; }
+    paintPos();
+  }
 
   /* ---------- rail ---------- */
 
@@ -577,21 +775,64 @@
   }
 
   /* localStorage is per-browser and the browser can clear it, so the progress
-     has to be liftable out of here by hand */
+     has to be liftable out of here by hand. One file carries every block: the
+     browser keeps all of them under the same key prefix, and a page that can
+     read its own key can read its neighbours' just as well. */
+
+  var SLUG_OK = /^[a-z0-9][a-z0-9_-]*$/i;
+
+  function readStored(slug) {
+    var raw = null;
+    try { raw = window.localStorage.getItem(STORE_PREFIX + slug); }
+    catch (e) { return null; }
+    if (!raw) return null;
+    var parsed;
+    try { parsed = JSON.parse(raw); }
+    catch (e) { return null; }
+    return (parsed && typeof parsed === "object") ? parsed : null;
+  }
+
+  /* every block this browser has answered anything in, read off the keys rather
+     than a list - the block list stays in tools/, and five stays unspecial */
+  function everyBlock() {
+    var out = {}, i, key, slug, data;
+    try {
+      for (i = 0; i < window.localStorage.length; i++) {
+        key = window.localStorage.key(i);
+        if (!key || key.indexOf(STORE_PREFIX) !== 0) continue;
+        slug = key.slice(STORE_PREFIX.length);
+        data = readStored(slug);
+        if (data) out[slug] = data;
+      }
+    } catch (e) { /* the scan was refused; the open block still lands below */ }
+    out[BLOCK.slug] = progress;   // what is in memory is at least as new
+    return out;
+  }
+
+  /* a restore adds and advances, it never erases: a record older than the one
+     already here loses. That is what makes restoring a stale file safe, and
+     what makes it safe to restore onto a machine already part way through. */
+  function newer(have, inc) {
+    var a = (have && typeof have.lastTs === "number") ? have.lastTs : -1;
+    var b = (inc && typeof inc.lastTs === "number") ? inc.lastTs : 0;
+    return b > a;
+  }
+
   function buildBackup() {
     byId("export-progress").addEventListener("click", function () {
       var payload = {
         store: "nsq",
-        version: 1,
-        block: BLOCK.slug,
+        version: 2,
         exported: new Date().toISOString(),
-        progress: progress
+        blocks: everyBlock()
       };
       var url = URL.createObjectURL(
         new Blob([JSON.stringify(payload, null, 1)], { type: "application/json" }));
       var a = document.createElement("a");
       a.href = url;
-      a.download = "pom2-" + BLOCK.slug + "-progress.json";
+      /* dated, because the browser otherwise stacks these up as (1), (2) and
+         there is no telling them apart from the outside */
+      a.download = "pom2-progress-" + new Date().toISOString().slice(0, 10) + ".json";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -604,27 +845,80 @@
       var f = file.files && file.files[0];
       if (!f) return;
       var reader = new FileReader();
-      reader.onload = function () {
-        var parsed;
-        try { parsed = JSON.parse(String(reader.result)); }
-        catch (e) { note("That file is not valid JSON, so nothing was imported."); return; }
-        var incoming = (parsed && parsed.progress && typeof parsed.progress === "object")
-          ? parsed.progress : null;
-        if (!incoming) { note("No progress records found in that file."); return; }
-        var n = 0;
-        Object.keys(incoming).forEach(function (qid) {
-          var r = sanitize(qid, incoming[qid]);
-          if (r) { progress[qid] = r; n++; }
-        });
-        save();
-        QUESTIONS.forEach(function (q) { paintQuestion(q.qid); });
-        paintStats();
-        applyFilters();
-        note(n + " question" + (n === 1 ? "" : "s") + " restored from that file.");
-      };
+      reader.onload = function () { restore(String(reader.result)); };
       reader.readAsText(f);
       file.value = "";
     });
+  }
+
+  /* a v2 file holds every block at once. A v1 file held one, named beside it -
+     those still restore, they just restore the one. */
+  function blocksInFile(parsed) {
+    if (!parsed || typeof parsed !== "object") return null;
+    if (parsed.blocks && typeof parsed.blocks === "object") return parsed.blocks;
+    if (parsed.progress && typeof parsed.progress === "object") {
+      var one = {};
+      one[typeof parsed.block === "string" ? parsed.block : BLOCK.slug] = parsed.progress;
+      return one;
+    }
+    return null;
+  }
+
+  function restore(text) {
+    var parsed;
+    try { parsed = JSON.parse(text); }
+    catch (e) { note("That file is not valid JSON, so nothing was imported."); return; }
+
+    var incoming = blocksInFile(parsed);
+    if (!incoming) { note("No progress records found in that file."); return; }
+
+    var here = 0, away = 0, elsewhere = [];
+
+    Object.keys(incoming).forEach(function (slug) {
+      var set = incoming[slug];
+      if (!SLUG_OK.test(slug) || !set || typeof set !== "object") return;
+
+      if (slug === BLOCK.slug) {
+        Object.keys(set).forEach(function (qid) {
+          var r = sanitize(qid, set[qid]);
+          if (r && newer(progress[qid], r)) { progress[qid] = r; here++; }
+        });
+        return;
+      }
+
+      /* another block's records go to storage unchecked. Its own page sanitizes
+         everything it loads against its own question list, so nothing
+         unrecognised can reach the screen, and this page has no list to check
+         them against without fetching a second question file. */
+      var store = readStored(slug) || {}, n = 0;
+      Object.keys(set).forEach(function (qid) {
+        var inc = set[qid];
+        if (!inc || typeof inc !== "object") return;
+        if (newer(store[qid], inc)) { store[qid] = inc; n++; }
+      });
+      if (!n) return;
+      try { window.localStorage.setItem(STORE_PREFIX + slug, JSON.stringify(store)); }
+      catch (e) { return; }
+      away += n;
+      elsewhere.push(slug);
+    });
+
+    if (!here && !away) {
+      note("Nothing in that file was newer than what is already here, so nothing changed.");
+      return;
+    }
+
+    save();
+    QUESTIONS.forEach(function (q) { paintQuestion(q.qid); });
+    paintStats();
+    applyFilters();
+
+    var msg = here + " question" + (here === 1 ? "" : "s") + " restored in " + BLOCK.name + ".";
+    if (away) {
+      msg += " Another " + away + " in " + elsewhere.join(", ") +
+             ", which appear when you open those blocks.";
+    }
+    note(msg);
   }
 
   function buildStream() {
@@ -685,6 +979,7 @@
     paintStats();
     applyFilters();
     QUESTIONS.forEach(function (q) { paintQuestion(q.qid); });
+    initPos();
     if (!storeWritable) {
       note("This browser will not let the page use local storage, so answers cannot be saved. Every question still works.");
     }

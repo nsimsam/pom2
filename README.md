@@ -49,8 +49,10 @@ are hand-writing the JSON, ignore the whole folder.
 Answers, stars and per-lecture accuracy are written to the browser's
 `localStorage`. Nothing is sent anywhere, there is no backend, and nobody running
 a copy of this can see anyone else's progress. The flip side is that it does not
-follow you between browsers or machines, so the questions tab has **Download my
-progress** and **Restore from a file** buttons that move a JSON file by hand.
+follow you between browsers or machines, so the questions tab has **Download all my
+progress** and **Restore from a file** buttons that move a JSON file by hand. One file holds
+every block and can be written or read from any of them, and a restore only adds and updates,
+so an out of date file cannot overwrite newer answers.
 
 ## Bringing your own content
 
@@ -110,11 +112,11 @@ the reason the table is there.
 
 The code is MIT, see [LICENSE](LICENSE).
 
-The study content under `data/` has its own history. The lecture notes are the
-author's own. The 700 practice questions came out of shared course material: a
-student-written workbook handed down through the Schulich classes of 2015 to 2025,
-Elentra module knowledge checks, weekly quizzes, slide concept checks and questions
-written from the case and small-group sessions.
+The study content under `data/` has its own history. The 700 practice questions
+came out of shared course material: a student-written workbook handed down through
+the Schulich classes of 2015 to 2025, Elentra module knowledge checks, weekly
+quizzes, slide concept checks and questions written from the case and small-group
+sessions.
 
 **They are here on purpose.** These are resources students already pass between
 years, and putting them somewhere public is the reason this

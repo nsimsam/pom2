@@ -122,6 +122,31 @@ Notes save to PDF if you would rather annotate them yourself.
 <div class="prose">
 
 <details class="fold">
+<summary>Where the notes come from</summary>
+<div class="body">
+
+<p>
+They started as <strong>Maggie&rsquo;s notes</strong>, then were updated against the
+<strong>official slides</strong> so they say what is actually being taught this year rather
+than what was taught last year.
+</p>
+
+<p>
+From there they were rewritten in <strong>Nicole&rsquo;s notes style</strong>: one note per
+lecture, built to tell things apart rather than to cover everything, with
+<strong>bolded keywords</strong> marking the fact that decides between two answers.
+</p>
+
+<p>
+Every lecture in a block is listed whether or not it has a note yet, so the notes tab reads as
+a coverage map rather than a list of what happens to be done. The ones with nothing under them
+are the ones still to write.
+</p>
+
+</div>
+</details>
+
+<details class="fold">
 <summary>Where the practice questions come from</summary>
 <div class="body">
 
@@ -180,8 +205,8 @@ thrombosis</strong>.
 <p>
 The portal is open source at
 <a href="https://github.com/nsimsam/pom2" target="_blank" rel="noopener noreferrer">github.com/nsimsam/pom2</a>.
-The beauty of open source is crowdsourced expertise: an iteratively improved, user-vetted
-product.
+The beauty of open-source is anyone can access the work, improve it or customize it to their
+needs. It&rsquo;s crowdsourced expertise that creates user-vetted products.
 </p>
 
 <p>
@@ -193,12 +218,18 @@ Claude Code:
 <p class="prompt">Clone https://github.com/nsimsam/pom2 and read the README so you understand how the portal is built. I want to make it mine: [what you want changed, for example: cut it down to the blocks I am on, import my own lecture notes and questions, restyle the pages, or build an Anki deck from only the questions I got wrong]. Work out which files that touches, make the change, and rebuild the pages with the scripts in tools/.</p>
 
 <p>
+You can also just take the material out. The questions and the notes are both plain JSON under
+<code>data/</code>, so you can extract either one into whatever you already study from. Keep in
+mind they are being updated week by week, so what you pull is a snapshot of that week.
+</p>
+
+<p>
 <strong>To improve it.</strong> Suggest a feature, fix an answer you think is wrong, or send
 in questions of your own. You need a GitHub account; Claude Code can do the rest. Paste
 this into it:
 </p>
 
-<p class="prompt">Clone https://github.com/nsimsam/pom2 and read the README so you understand how the portal is built. I want to contribute: [what you are adding, for example: the questions from the week 4 renal module, a correction to an answer, or a feature]. Match the format the existing files use, rebuild the pages with the scripts in tools/, then create a branch, commit, and open a pull request against nsimsam/pom2 explaining what changed and why.</p>
+<p class="prompt">Clone https://github.com/nsimsam/pom2 and read the README so you understand how the portal is built. I want to contribute: [what you are adding, for example: the questions from the week 8 MSK module, a correction to an answer, or a feature]. Match the format the existing files use, rebuild the pages with the scripts in tools/, then create a branch, commit, and open a pull request against nsimsam/pom2 explaining what changed and why.</p>
 
 <p>
 Corrections and questions are the two most useful things to send.
