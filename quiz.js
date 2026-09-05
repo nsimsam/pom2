@@ -488,6 +488,15 @@
     paintPos();
   }
 
+  /* the stream runs to hundreds of questions, so the bar owes you the way
+     out of it as well as the way around it. It hides itself once you land. */
+  function toTop() {
+    var still = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    try { window.scrollTo({ top: 0, behavior: still ? "auto" : "smooth" }); }
+    catch (e) { window.scrollTo(0, 0); }
+  }
+
   function goTo(qid) {
     var art = byId("q-" + qid);
     if (!art) return;
@@ -613,6 +622,7 @@
       obs.observe(art);
     });
 
+    byId("pb-top").addEventListener("click", toTop);
     byId("pb-prev").addEventListener("click", function () { step(-1); });
     byId("pb-next").addEventListener("click", function () { step(1); });
     byId("pb-mark").addEventListener("click", function () {

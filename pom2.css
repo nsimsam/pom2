@@ -1195,6 +1195,13 @@
 .pb-step:hover:not(:disabled){color:var(--q-accent);border-color:var(--q-accent);}
 .pb-step:disabled{opacity:.4;cursor:default;}
 
+/* the way back to the top, on both tabs. Wider than the arrows because it
+   carries a word - "top" is not a direction anyone should have to infer */
+.pb-top{width:auto;padding:0 11px;}
+
+/* the notes tab runs the same pill with that one control on it */
+.notebar{padding:8px;gap:0;}
+
 /* the one filled control on the bar - it is the whole reason the bar is here */
 .pb-mark{
     flex-shrink:0;

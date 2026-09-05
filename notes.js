@@ -351,6 +351,30 @@
     stream.appendChild(frag);
   }
 
+  /* the notes are long enough that scrolling back by hand is a chore, so the
+     tab carries the same pill the questions tab does, with only the way to the
+     top on it. It is inside the notes panel, so switching tabs takes it away. */
+  function initTop() {
+    var bar = byId("notebar");
+    if (!bar) return;
+    var queued = false;
+
+    byId("nb-top").addEventListener("click", function () {
+      var still = window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      try { window.scrollTo({ top: 0, behavior: still ? "auto" : "smooth" }); }
+      catch (e) { window.scrollTo(0, 0); }
+    });
+
+    function paint() { bar.hidden = window.pageYOffset <= 400; }
+    window.addEventListener("scroll", function () {
+      if (queued) return;
+      queued = true;
+      window.requestAnimationFrame(function () { queued = false; paint(); });
+    }, { passive: true });
+    paint();
+  }
+
   function start(data) {
     WEEKS = (data && data.weeks) || [];
     buildRail();
@@ -358,6 +382,7 @@
     paintCoverage();
     applyFilter();
     drawPathways();
+    initTop();
   }
 
   window.POM2_NOTES = {

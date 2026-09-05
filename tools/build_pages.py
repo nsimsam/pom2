@@ -178,6 +178,10 @@ still to write.</p>
 <main class="stream" id="note-stream">
 <div class="q-loading">Loading notes&hellip;</div>
 </main>
+
+<div class="posbar notebar" id="notebar" hidden>
+<button class="pb-step pb-top" id="nb-top" type="button" title="Back to the top" aria-label="Back to the top">Top</button>
+</div>
 </div>
 
 <div class="q-shell" id="panel-questions" role="tabpanel" aria-labelledby="tab-questions" hidden>
@@ -223,6 +227,7 @@ to the question you left. <strong>j</strong> and <strong>k</strong> step between
 <span class="pb-where" id="pb-where"></span>
 <span class="pb-count" id="pb-count"></span>
 <span class="pb-steps">
+<button class="pb-step pb-top" id="pb-top" type="button" title="Back to the top" aria-label="Back to the top">Top</button>
 <button class="pb-step" id="pb-prev" type="button" title="Previous question (k)" aria-label="Previous question">&uarr;</button>
 <button class="pb-step" id="pb-next" type="button" title="Next question (j)" aria-label="Next question">&darr;</button>
 </span>
