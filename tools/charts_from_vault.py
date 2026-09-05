@@ -47,10 +47,31 @@ def inline(s):
                r'<a href="\2" target="_blank" rel="noopener noreferrer">\1</a>', s)
 
     s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
-    s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s, flags=re.S)
-    s = re.sub(r"==(.+?)==", r"<mark>\1</mark>", s, flags=re.S)
-    # single * for emphasis, but never the leftovers of a ** pair
-    s = re.sub(r"(?<![\*\w])\*([^\*\n]+)\*(?!\*)", r"<em>\1</em>", s)
+
+    # ** has to be read before *, but a lazy ** pass swallows the opening star
+    # of an inner pair: **a *b*** came out as <strong>a <em>b</strong></em>.
+    # Park each strong run instead, emphasise its contents and the rest of the
+    # line alike, then put the tags back.
+    strong = []
+
+    def park(m):
+        strong.append(m.group(1))
+        return u"\x01%d\x02" % (len(strong) - 1)
+
+    # the lookahead keeps the closing run of **a *b*** intact: without it the
+    # pass stops at the first two of those three stars and strands the third
+    s = re.sub(r"\*\*(.+?)\*\*(?!\*)", park, s, flags=re.S)
+
+    def emphasise(t):
+        t = re.sub(r"==(.+?)==", r"<mark>\1</mark>", t, flags=re.S)
+        # intraword emphasis is real in these notes - ego*dystonic* is one word
+        # on the page - so only a neighbouring star disqualifies a pair, not a
+        # neighbouring letter
+        return re.sub(r"(?<!\*)\*([^\*\n]+)\*(?!\*)", r"<em>\1</em>", t)
+
+    s = emphasise(s)
+    for i, inner in enumerate(strong):
+        s = s.replace(u"\x01%d\x02" % i, u"<strong>%s</strong>" % emphasise(inner))
     return s.strip()
 
 

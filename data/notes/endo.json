@@ -437,7 +437,7 @@
       },
       {
        "t": "table",
-       "lead": "<p><strong>Four questions to ask of any functional problem:</strong> <em>What does the hormone do?</em> · <em>What feedback loops could be affected?</em> · <strong><em>Is the problem in the gland itself (primary) or somewhere else (secondary / tertiary / central)?</strong></em> · <strong><em>Can this be explained by an exogenous source of hormone?</strong></em></p>",
+       "lead": "<p><strong>Four questions to ask of any functional problem:</strong> <em>What does the hormone do?</em> · <em>What feedback loops could be affected?</em> · <strong><em>Is the problem in the gland itself (primary) or somewhere else (secondary / tertiary / central)?</em></strong> · <strong><em>Can this be explained by an exogenous source of hormone?</em></strong></p>",
        "cols": [
         "Gland",
         "<u>Structural</u> — benign",
@@ -769,7 +769,7 @@
        "t": "callout",
        "kind": "red",
        "title": "The two traps that kill",
-       "html": "<p><strong>① Potassium.</strong> Total body K⁺ is depleted even when the initial <span class=\"wl\">serum potassium</span> looks normal — in DKA, <strong>low insulin has driven K⁺ extracellularly</strong>. Once you give fluid and insulin, <strong>K⁺ shifts back intracellularly and falls sharply</strong>, causing <strong><span class=\"wl\">arrhythmias</span> and death</strong>. <strong><em>K⁺ replacement is often required during treatment.</strong></em></p><p><strong>② Glucose falling too fast.</strong> IV fluids and insulin will drop glucose. <strong>Add <span class=\"wl\">dextrose</span> to the fluids</strong> so insulin can keep running until the <strong>dehydration — and in DKA the acidosis — is corrected.</strong></p>"
+       "html": "<p><strong>① Potassium.</strong> Total body K⁺ is depleted even when the initial <span class=\"wl\">serum potassium</span> looks normal — in DKA, <strong>low insulin has driven K⁺ extracellularly</strong>. Once you give fluid and insulin, <strong>K⁺ shifts back intracellularly and falls sharply</strong>, causing <strong><span class=\"wl\">arrhythmias</span> and death</strong>. <strong><em>K⁺ replacement is often required during treatment.</em></strong></p><p><strong>② Glucose falling too fast.</strong> IV fluids and insulin will drop glucose. <strong>Add <span class=\"wl\">dextrose</span> to the fluids</strong> so insulin can keep running until the <strong>dehydration — and in DKA the acidosis — is corrected.</strong></p>"
       },
       {
        "t": "table",
@@ -1425,7 +1425,7 @@
       },
       {
        "t": "table",
-       "lead": "<p><strong>At the moment of diagnosis — refer early.</strong> <strong><em>Dietician</strong></em> (dietary change to ↓ complication risk) · <strong><em>diabetes nurse educator</strong></em> (sugar testing, what to do when low or sick) · <strong><em>optometrist</strong></em> (yearly).</p>",
+       "lead": "<p><strong>At the moment of diagnosis — refer early.</strong> <strong><em>Dietician</em></strong> (dietary change to ↓ complication risk) · <strong><em>diabetes nurse educator</em></strong> (sugar testing, what to do when low or sick) · <strong><em>optometrist</em></strong> (yearly).</p>",
        "cols": [
         "First medication",
         "When"
