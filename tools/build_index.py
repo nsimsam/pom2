@@ -111,7 +111,7 @@ TEMPLATE = u"""<!DOCTYPE html>
 <h1>PoM 2.</h1>
 <p>
 Each block has <strong>notes</strong> and <strong>practice questions</strong>, week by week.
-Notes save to PDF if you would rather annotate them yourself.
+Notes save to PDF if you would rather annotate them yourself, and practice question progress can be saved.
 </p>
 </div>
 
@@ -126,8 +126,8 @@ Notes save to PDF if you would rather annotate them yourself.
 <div class="body">
 
 <p>
-<strong>Maggie&rsquo;s notes</strong> + <strong>up-to-date lecture slides</strong> +
-<strong>transcriptions</strong> = <strong>Nicole&rsquo;s-style notes</strong>.
+<strong>Lecture slides</strong> + <strong>transcription</strong> +
+<strong>Maggie&rsquo;s notes</strong> = <strong>Nicole&rsquo;s-style notes</strong>.
 </p>
 
 </div>
@@ -192,6 +192,9 @@ thrombosis</strong>.
 <p>
 The portal is open source at
 <a href="https://github.com/nsimsam/pom2" target="_blank" rel="noopener noreferrer">github.com/nsimsam/pom2</a>.
+</p>
+
+<p>
 The beauty of open-source is anyone can access the work, improve it or customize it to their
 needs. It&rsquo;s crowdsourced expertise that creates user-vetted products.
 </p>
