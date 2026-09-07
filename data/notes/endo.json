@@ -841,7 +841,7 @@
      "hasNote": true,
      "title": "Glucose-Lowering Drugs in T2DM",
      "framing": "<p>Choose an agent based on <strong>which step of glucose metabolism is being manipulated</strong>, then narrow by hypoglycemia risk, effect on weight, and organ function!</p>",
-     "keypoints": "<p><strong><span class=\"wl\">GLP-1RAs</span> and <span class=\"wl\">SGLT2 inhibitors</span> are the agents with proven cardiovascular benefit</strong> — pick one in a patient with CV disease. Only the <strong>secretagogues (SUs, meglitinides) carry meaningful hypoglycemia risk</strong>, because they release insulin <em>independent</em> of glucose level; the incretins do not, because their secretion is <strong>glucose-dependent</strong>. <strong>Weight gain: TZDs, SUs, meglitinides. Weight loss: GLP-1RAs, SGLT2i, (metformin).</strong> Two classes stop at <strong>eGFR < 30</strong>: <strong><span class=\"wl\">metformin</span></strong> (lactic acidosis) and <strong><span class=\"wl\">SGLT2 inhibitors</span></strong> (no filtered glucose to block).</p>",
+     "keypoints": "<p><strong><span class=\"wl\">GLP-1RAs</span> and <span class=\"wl\">SGLT2 inhibitors</span> are the agents with proven cardiovascular benefit</strong> — pick one in a patient with CV disease. The incretin agents are secretagogues too, but only the <strong>glucose-independent secretagogues (SUs, meglitinides) carry meaningful hypoglycemia risk</strong>, because they release insulin <em>independent</em> of glucose level; the incretins do not, because their secretion is <strong>glucose-dependent</strong>. <strong>Weight gain: TZDs, SUs, meglitinides. Weight loss: GLP-1RAs, SGLT2i, (metformin).</strong> Two classes stop at <strong>eGFR < 30</strong>: <strong><span class=\"wl\">metformin</span></strong> (lactic acidosis) and <strong><span class=\"wl\">SGLT2 inhibitors</span></strong> (no filtered glucose to block).</p>",
      "blocks": [
       {
        "t": "table",
@@ -854,32 +854,67 @@
        ],
        "rows": [
         [
-         "<strong>Insulin sensitizers</strong><br><br>↑ peripheral utilization of glucose<br><br>(<strong>no</strong> ∆ in insulin release → <strong>low risk of hypoglycemia</strong> as monotherapy)",
-         "<u>Biguanides</u><br><strong><span class=\"wl\">metformin</span></strong> (only one left on market)<br><br><u>Thiazolidinediones (TZDs)</u><br><span class=\"wl\">pioglitazone</span><br><span class=\"wl\">rosiglitazone</span>",
-         "Activates <strong>AMP kinase</strong><br>↓ gluconeogenesis, ↓ glycogenolysis<br>↑ hepatic insulin sensitivity<br>↓ conversion of lactate → glucose<br>Opposes <span class=\"wl\">glucagon</span><br><br>Act on <strong>PPAR-γ receptor</strong><br><strong>adipose</strong>: ↑ adipocyte number/size → ↓ circulating free fatty acids<br><strong>liver</strong>: ↓ glucose output<br><strong>skeletal muscle</strong>: ↑ glucose uptake<br>⚠ Gene transcription → <strong>slow onset (up to 3 months)</strong>",
-         "<strong>First-line for T2DM</strong><br>↓ HbA1c <strong>1.0%</strong> (highest)<br>Very safe, very effective, <strong>low cost ($)</strong><br><strong>Weight neutral</strong>, possible CV benefit<br>Combo-therapy friendly<br><br>↓ HbA1c 0.7–0.9%<br>Stable and efficacious once working<br><strong>No hypoglycemia risk</strong>",
-         "GI disturbance (non-issue if <strong>titrated gradually</strong>)<br>↓ B12 absorption (monitor serum B12 in long-term use)<br><strong><span class=\"wl\">lactic acidosis</span></strong> if ↓ hepatic function<br><strong>Do NOT use if eGFR < 30 mL/min</strong> (renally excreted → drug accumulation)<br><br><strong>Weight gain</strong> (adipose expansion)<br><strong>Edema</strong> (↑ renal Na⁺ channels) → <strong>contraindicated in <span class=\"wl\">heart failure</span></strong><br>Many DDIs (CYP) — not in <span class=\"wl\">liver failure</span><br><strong>↑ fracture risk</strong> (avoid in <span class=\"wl\">osteoporosis</span>)<br><strong>↑ bladder cancer risk</strong>"
+         "<u>Biguanides</u><br><em>insulin sensitizer</em><br><br>↑ peripheral utilization of glucose<br>(<strong>no</strong> ∆ in insulin release → <strong>low risk of hypoglycemia</strong> as monotherapy)",
+         "<strong><span class=\"wl\">metformin</span></strong> (only one left on market)",
+         "Activates <strong>AMP kinase</strong><br>↓ gluconeogenesis, ↓ glycogenolysis<br>↑ hepatic insulin sensitivity<br>↓ conversion of lactate → glucose<br>Opposes <span class=\"wl\">glucagon</span>",
+         "<strong>First-line for T2DM</strong><br>↓ HbA1c <strong>1.0%</strong> (highest)<br>Very safe, very effective, <strong>low cost ($)</strong><br><strong>Weight neutral</strong>, possible CV benefit<br>Combo-therapy friendly",
+         "GI disturbance (non-issue if <strong>titrated gradually</strong>)<br>↓ B12 absorption (monitor serum B12 in long-term use)<br><strong><span class=\"wl\">lactic acidosis</span></strong> if ↓ hepatic function<br><strong>Do NOT use if eGFR < 30 mL/min</strong> (renally excreted → drug accumulation)"
         ],
         [
-         "<strong>Insulin secretagogues</strong><br><br>↑ insulin secretion from the <span class=\"wl\">pancreas</span><br><br>(<strong>depend on functioning beta cells</strong> → poor choice in advanced disease)",
-         "<u>Sulfonylureas (SUs)</u><br>2nd generation preferred (↑ potency, ↓ toxicity)<br><br><u>Meglitinides (\"glinides\")</u><br><span class=\"wl\">repaglinide</span>",
-         "<strong>Inhibit ATP-sensitive K⁺ channel</strong> (SUR1 + Kir6.2) on beta cells → depolarization → Ca²⁺ influx → insulin exocytosis<br>⚠ Desensitizes over time = <strong>sulfonylurea secondary failure</strong><br><br>Same channel as SUs, different binding → <strong>rapid onset, short duration</strong><br>→ better <strong>post-prandial</strong> control<br>⚠ Mirror image: <strong>diazoxide opens</strong> the channel → ↓ insulin secretion",
-         "↓ HbA1c 0.6–1.2%<br>Great efficacy (<strong>but not durable</strong>)<br>Oral, <strong>low cost ($)</strong><br><br>↓ HbA1c 0.7–1.1%<br><strong>Inactive metabolites</strong> → safer than SUs<br><strong>↓ hypoglycemia risk vs SUs</strong> → better for elderly / living alone<br>Flexible eating schedule",
-         "<strong>Weight gain</strong> (↑ insulin)<br><strong>Hypoglycemia</strong> — do NOT prescribe to ① elderly ② people living alone ③ people who drive for a living<br>Many DDIs incl. <strong>alcohol</strong> (CYP)<br><strong>↑ hypoglycemia in liver/kidney failure</strong><br><br>Weight gain (less than SUs)<br>Moderate hypoglycemia risk<br><strong>t.i.d. dosing</strong> (must be taken with each meal)"
+         "<u>Thiazolidinediones (TZDs)</u><br><em>insulin sensitizer</em><br><br>↑ peripheral utilization of glucose<br>(<strong>no</strong> ∆ in insulin release → <strong>low risk of hypoglycemia</strong> as monotherapy)",
+         "<span class=\"wl\">pioglitazone</span><br><span class=\"wl\">rosiglitazone</span>",
+         "Act on <strong>PPAR-γ receptor</strong><br><strong>adipose</strong>: ↑ adipocyte number/size → ↓ circulating free fatty acids<br><strong>liver</strong>: ↓ glucose output<br><strong>skeletal muscle</strong>: ↑ glucose uptake<br>⚠ Gene transcription → <strong>slow onset (up to 3 months)</strong>",
+         "↓ HbA1c 0.7–0.9%<br>Stable and efficacious once working<br><strong>No hypoglycemia risk</strong>",
+         "<strong>Weight gain</strong> (adipose expansion)<br><strong>Edema</strong> (↑ renal Na⁺ channels) → <strong>contraindicated in <span class=\"wl\">heart failure</span></strong><br>Many DDIs (CYP) — not in <span class=\"wl\">liver failure</span><br><strong>↑ fracture risk</strong> (avoid in <span class=\"wl\">osteoporosis</span>)<br><strong>↑ bladder cancer risk</strong>"
         ],
         [
-         "<strong>Incretin agents</strong><br><br>Mimic (<span class=\"wl\">GLP-1RAs</span>) or prolong (<span class=\"wl\">DPP-4 inhibitors</span>) <span class=\"wl\">GLP-1</span>",
-         "<u>GLP-1 receptor agonists</u><br><span class=\"wl\">semaglutide</span> (oral form exists)<br><br><u>DPP-4 inhibitors</u> (\"–gliptins\")<br><br><u>Dual GLP-1 / GIP agonist</u><br><span class=\"wl\">tirzepatide</span>",
-         "⭐ <strong>Promote insulin secretion in a glucose-dependent manner</strong> → insulin released <strong>only</strong> when blood glucose is ↑ → <strong>greatly ↓ hypoglycemia risk</strong><br><br><strong>GLP-1RAs ↑ GLP-1 ×10</strong><br><strong>DPP-4i ↑ GLP-1 ×2–3</strong> only<br><br><strong>Dual activation of GLP-1 AND GIP receptors</strong> (more so GIP)<br><strong>pancreas</strong>: ↑ β-cell function, ↓ <span class=\"wl\">glucagon</span><br><strong>brain</strong>: ↓ appetite, ↓ cravings<br><strong>stomach</strong>: ↓ gastric transit",
-         "↓ HbA1c 0.6–<strong>1.4%</strong> (greatest)<br><strong>Weight loss</strong> (↓ gastric emptying, ↑ satiety)<br><strong>1× per week</strong> dosing<br><strong>CV protection</strong>, ↓ lipids<br><br>↓ HbA1c 0.5–0.7% (modest)<br><strong>Weight neutral</strong>, well tolerated<br><br>Broadest effects: ↓ BP, ↓ liver fat &amp; fibrosis markers, ↓ albuminuria, ↑ insulin sensitivity",
-         "GI side effects (<strong>dose-dependent</strong> for GLP-1RAs; ↓ with DPP-4i — titrate)<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Subcutaneous injection<br>Contraindicated in <strong><span class=\"wl\">pancreatic cancer</span></strong><br><br>DPP-4i specifically: <strong>↑ risk of URTIs</strong>"
+         "<u>Sulfonylureas (SUs)</u><br><em>insulin secretagogue</em>, <strong>glucose-independent</strong><br><br>↑ insulin secretion from the <span class=\"wl\">pancreas</span><br>(<strong>depend on functioning beta cells</strong> → poor choice in advanced disease)",
+         "2nd generation preferred (↑ potency, ↓ toxicity)",
+         "<strong>Inhibit ATP-sensitive K⁺ channel</strong> (SUR1 + Kir6.2) on beta cells → depolarization → Ca²⁺ influx → insulin exocytosis<br>⚠ Desensitizes over time = <strong>sulfonylurea secondary failure</strong><br>⚠ Mirror image: <strong>diazoxide opens</strong> the channel → ↓ insulin secretion",
+         "↓ HbA1c 0.6–1.2%<br>Great efficacy (<strong>but not durable</strong>)<br>Oral, <strong>low cost ($)</strong>",
+         "<strong>Weight gain</strong> (↑ insulin)<br><strong>Hypoglycemia</strong> — do NOT prescribe to ① elderly ② people living alone ③ people who drive for a living<br>Many DDIs incl. <strong>alcohol</strong> (CYP)<br><strong>↑ hypoglycemia in liver/kidney failure</strong>"
         ],
         [
-         "<strong>Altered glucose absorption or excretion</strong>",
-         "<u>α-Glucosidase inhibitors</u><br><span class=\"wl\">acarbose</span> (only one in Canada)<br><br><u>SGLT2 inhibitors</u> (\"gliflozins\")",
-         "<strong>Competitive inhibition of α-glucosidase</strong> on intestinal brush border → delays carbohydrate digestion<br>→ blunts <strong>post-prandial glucose peak</strong>; slow rise instead<br>⚠ Competitive → <strong>must be taken with each meal</strong><br><br><strong>Block Na⁺/glucose co-transporter in the <span class=\"wl\">proximal convoluted tubule</span></strong> → ↑ urinary glucose excretion (with Na⁺ and water)<br><strong>Insulin-independent</strong> and <strong>independent of beta-cell function</strong>",
-         "↓ HbA1c 0.7–0.8% (modest)<br><strong>Weight neutral</strong>, <strong>no hypoglycemia risk</strong><br><strong>Cannot be used as monotherapy</strong> — efficacy diet-dependent<br><br>↓ HbA1c 0.5–0.7%<br><strong>Weight loss</strong>, ↓ BP, ↓ lipids<br><strong>CV and renal protection</strong> — delays progression of <span class=\"wl\">diabetic nephropathy</span><br>Low hypoglycemia risk",
-         "GI side effects (<strong>flatulence, constipation</strong>)<br><strong>t.i.d. dosing</strong><br>Contraindicated in <strong><span class=\"wl\">IBS</span>, <span class=\"wl\">IBD</span>, obstruction</strong><br><br><strong>ECF volume contraction</strong> (↑ thirst, <span class=\"wl\">hypovolemia</span>, <span class=\"wl\">hypotension</span>) — caution with other diuretics<br><strong>↑ GU infections</strong> (glucose in urinary tract)<br><strong>↓ bone density → ↑ fracture risk</strong><br><strong>Do NOT use if eGFR < 30 mL/min</strong> or severe hepatic disease"
+         "<u>Meglitinides (\"glinides\")</u><br><em>insulin secretagogue</em>, <strong>glucose-independent</strong><br><br>↑ insulin secretion from the <span class=\"wl\">pancreas</span><br>(<strong>depend on functioning beta cells</strong>)",
+         "<span class=\"wl\">repaglinide</span>",
+         "Same channel as SUs, different binding → <strong>rapid onset, short duration</strong><br>→ better <strong>post-prandial</strong> control",
+         "↓ HbA1c 0.7–1.1%<br><strong>Inactive metabolites</strong> → safer than SUs<br><strong>↓ hypoglycemia risk vs SUs</strong> → better for elderly / living alone<br>Flexible eating schedule",
+         "Weight gain (less than SUs)<br>Moderate hypoglycemia risk<br><strong>t.i.d. dosing</strong> (must be taken with each meal)"
+        ],
+        [
+         "<u>GLP-1 receptor agonists</u><br><em>incretin agent = insulin secretagogue</em>, <strong>glucose-dependent</strong><br><br>Mimic <span class=\"wl\">GLP-1</span>",
+         "<span class=\"wl\">semaglutide</span> (oral form exists)",
+         "⭐ <strong>Promote insulin secretion in a glucose-dependent manner</strong> → insulin released <strong>only</strong> when blood glucose is ↑ → <strong>greatly ↓ hypoglycemia risk</strong><br><strong>↑ GLP-1 ×10</strong>",
+         "↓ HbA1c 0.6–<strong>1.4%</strong> (greatest)<br><strong>Weight loss</strong> (↓ gastric emptying, ↑ satiety)<br><strong>1× per week</strong> dosing<br><strong>CV protection</strong>, ↓ lipids",
+         "GI side effects (<strong>dose-dependent</strong>, titrate)<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Subcutaneous injection<br>Contraindicated in <strong><span class=\"wl\">pancreatic cancer</span></strong>"
+        ],
+        [
+         "<u>DPP-4 inhibitors</u><br><em>incretin agent = insulin secretagogue</em>, <strong>glucose-dependent</strong><br><br>Prolong endogenous <span class=\"wl\">GLP-1</span>",
+         "\"–gliptins\"",
+         "⭐ Same <strong>glucose-dependent</strong> secretion → <strong>greatly ↓ hypoglycemia risk</strong><br>Block the enzyme that degrades GLP-1 → <strong>↑ GLP-1 ×2–3</strong> only",
+         "↓ HbA1c 0.5–0.7% (modest)<br><strong>Weight neutral</strong>, well tolerated<br>Potentially ↓ lipids",
+         "GI side effects (↓ compared with GLP-1RAs)<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br>DPP-4i specifically: <strong>↑ risk of URTIs</strong>"
+        ],
+        [
+         "<u>Dual GLP-1 / GIP agonist</u><br><em>incretin agent = insulin secretagogue</em>, <strong>glucose-dependent</strong>",
+         "<span class=\"wl\">tirzepatide</span>",
+         "<strong>Dual activation of GLP-1 AND GIP receptors</strong> (more so GIP)<br><strong>pancreas</strong>: ↑ β-cell function, ↓ <span class=\"wl\">glucagon</span><br><strong>brain</strong>: ↓ appetite, ↓ cravings<br><strong>stomach</strong>: ↓ gastric transit",
+         "Broadest effects: ↓ BP, ↓ liver fat &amp; fibrosis markers, ↓ albuminuria, ↑ insulin sensitivity<br><strong>Weight loss</strong> (↓ visceral and subcutaneous fat)",
+         "GI side effects<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Subcutaneous injection"
+        ],
+        [
+         "<u>α-Glucosidase inhibitors</u><br><em>altered glucose absorption</em>",
+         "<span class=\"wl\">acarbose</span> (only one in Canada)",
+         "<strong>Competitive inhibition of α-glucosidase</strong> on intestinal brush border → delays carbohydrate digestion<br>→ blunts <strong>post-prandial glucose peak</strong>; slow rise instead<br>⚠ Competitive → <strong>must be taken with each meal</strong>",
+         "↓ HbA1c 0.7–0.8% (modest)<br><strong>Weight neutral</strong>, <strong>no hypoglycemia risk</strong><br><strong>Cannot be used as monotherapy</strong> — efficacy diet-dependent",
+         "GI side effects (<strong>flatulence, constipation</strong>)<br><strong>t.i.d. dosing</strong><br>Contraindicated in <strong><span class=\"wl\">IBS</span>, <span class=\"wl\">IBD</span>, obstruction</strong>"
+        ],
+        [
+         "<u>SGLT2 inhibitors</u><br><em>altered glucose excretion</em>",
+         "\"gliflozins\"",
+         "<strong>Block Na⁺/glucose co-transporter in the <span class=\"wl\">proximal convoluted tubule</span></strong> → ↑ urinary glucose excretion (with Na⁺ and water)<br><strong>Insulin-independent</strong> and <strong>independent of beta-cell function</strong>",
+         "↓ HbA1c 0.5–0.7%<br><strong>Weight loss</strong>, ↓ BP, ↓ lipids<br><strong>CV and renal protection</strong> — delays progression of <span class=\"wl\">diabetic nephropathy</span><br>Low hypoglycemia risk",
+         "<strong>ECF volume contraction</strong> (↑ thirst, <span class=\"wl\">hypovolemia</span>, <span class=\"wl\">hypotension</span>) — caution with other diuretics<br><strong>↑ GU infections</strong> (glucose in urinary tract)<br><strong>↓ bone density → ↑ fracture risk</strong><br><strong>Do NOT use if eGFR < 30 mL/min</strong> or severe hepatic disease"
         ]
        ]
       },
