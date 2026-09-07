@@ -20,7 +20,6 @@
 
   var WEEKS = [];
   var WK = Object.create(null);   // lecture id -> week key
-  var cov = "all";
   var week = "all";
   var booted = false;
 
@@ -251,12 +250,6 @@
 
   /* ---------- filter ---------- */
 
-  var COV_DEFS = [
-    { k: "all", label: "All" },
-    { k: "written", label: "Written" },
-    { k: "gap", label: "Not yet" }
-  ];
-
   /* Week numbers run across the whole year, not from 1 inside each block - msk
      starts at 7 - so the chip is labelled with the number the roster carries.
      The number, not w.label: those are long enough to be headings, not chips. */
@@ -276,10 +269,7 @@
   }
 
   function matches(lec) {
-    if (week !== "all" && WK[lec.id] !== week) return false;
-    if (cov === "written") return lec.hasNote === true;
-    if (cov === "gap") return lec.hasNote !== true;
-    return true;
+    return week === "all" || WK[lec.id] === week;
   }
 
   function applyFilter() {
@@ -309,15 +299,10 @@
   function counts() {
     var all = lectures();
     var written = all.filter(function (l) { return l.hasNote === true; }).length;
-    return { all: all.length, written: written, gap: all.length - written };
+    return { all: all.length, written: written };
   }
 
   function paintChips() {
-    var c = counts();
-    [].forEach.call(document.querySelectorAll("#cov-chips .chip"), function (b) {
-      b.setAttribute("aria-pressed", cov === b.dataset.k ? "true" : "false");
-      b.querySelector(".n").textContent = c[b.dataset.k];
-    });
     [].forEach.call(document.querySelectorAll("#note-week-chips .chip"), function (b) {
       b.setAttribute("aria-pressed", week === b.dataset.k ? "true" : "false");
     });
@@ -342,30 +327,21 @@
 
   /* ---------- boot ---------- */
 
-  function chip(d, pressed, onClick) {
-    var b = el("button", "chip");
-    b.type = "button";
-    b.dataset.k = d.k;
-    b.setAttribute("aria-pressed", pressed ? "true" : "false");
-    b.appendChild(document.createTextNode(d.label));
-    b.appendChild(el("span", "n", d.n == null ? "0" : String(d.n)));
-    b.addEventListener("click", onClick);
-    return b;
-  }
-
   function buildRail() {
     /* a page cached from before the week filter shipped still has to work */
-    var wc = byId("note-week-chips");
-    if (wc) {
+    var box = byId("note-week-chips");
+    if (box) {
       weekDefs().forEach(function (d) {
-        wc.appendChild(chip(d, d.k === "all", function () { week = d.k; applyFilter(); }));
+        var b = el("button", "chip");
+        b.type = "button";
+        b.dataset.k = d.k;
+        b.setAttribute("aria-pressed", d.k === "all" ? "true" : "false");
+        b.appendChild(document.createTextNode(d.label));
+        b.appendChild(el("span", "n", String(d.n)));
+        b.addEventListener("click", function () { week = d.k; applyFilter(); });
+        box.appendChild(b);
       });
     }
-
-    var box = byId("cov-chips");
-    COV_DEFS.forEach(function (d) {
-      box.appendChild(chip(d, d.k === "all", function () { cov = d.k; applyFilter(); }));
-    });
 
     byId("print-all").addEventListener("click", printAll);
   }
