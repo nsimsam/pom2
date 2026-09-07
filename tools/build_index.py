@@ -137,6 +137,11 @@ Notes save to PDF if you would rather annotate them yourself, and practice quest
 <summary>Where the practice questions come from</summary>
 <div class="body">
 
+<p>
+No AI-generated trivia questions. Every question traces back to a source in our
+curriculum.
+</p>
+
 <ul>
 <li><strong>Course modules.</strong> Elentra knowledge checks, the concept checks in the lecture slides, and the weekly quizzes.</li>
 <li><strong>Pre-Clerkship Workbook.</strong> The 2023 student bank handed down through the Schulich classes of 2015&ndash;2025. Peer-written, so its errors are flagged on the question.</li>
