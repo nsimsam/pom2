@@ -154,6 +154,11 @@ PAGE = u"""<!DOCTYPE html>
 <aside class="rail">
 
 <section>
+<p class="panel-h">Week</p>
+<div class="chips" id="note-week-chips"></div>
+</section>
+
+<section>
 <p class="panel-h">Coverage</p>
 <div class="chips" id="cov-chips"></div>
 </section>

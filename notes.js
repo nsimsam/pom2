@@ -19,7 +19,9 @@
   var MERMAID_SRC = "https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js";
 
   var WEEKS = [];
+  var WK = Object.create(null);   // lecture id -> week key
   var cov = "all";
+  var week = "all";
   var booted = false;
 
   function byId(id) { return document.getElementById(id); }
@@ -255,7 +257,26 @@
     { k: "gap", label: "Not yet" }
   ];
 
+  /* Week numbers run across the whole year, not from 1 inside each block - msk
+     starts at 7 - so the chip is labelled with the number the roster carries.
+     The number, not w.label: those are long enough to be headings, not chips. */
+  function weekKey(w) { return (w && w.n != null) ? String(w.n) : "off"; }
+
+  function weekDefs() {
+    var defs = [{ k: "all", label: "All", n: lectures().length }];
+    WEEKS.forEach(function (w) {
+      var k = weekKey(w);
+      defs.push({
+        k: k,
+        label: k === "off" ? "Unscheduled" : "Week " + k,
+        n: (w.lectures || []).length
+      });
+    });
+    return defs;
+  }
+
   function matches(lec) {
+    if (week !== "all" && WK[lec.id] !== week) return false;
     if (cov === "written") return lec.hasNote === true;
     if (cov === "gap") return lec.hasNote !== true;
     return true;
@@ -297,6 +318,9 @@
       b.setAttribute("aria-pressed", cov === b.dataset.k ? "true" : "false");
       b.querySelector(".n").textContent = c[b.dataset.k];
     });
+    [].forEach.call(document.querySelectorAll("#note-week-chips .chip"), function (b) {
+      b.setAttribute("aria-pressed", week === b.dataset.k ? "true" : "false");
+    });
   }
 
   function paintCoverage() {
@@ -318,17 +342,29 @@
 
   /* ---------- boot ---------- */
 
+  function chip(d, pressed, onClick) {
+    var b = el("button", "chip");
+    b.type = "button";
+    b.dataset.k = d.k;
+    b.setAttribute("aria-pressed", pressed ? "true" : "false");
+    b.appendChild(document.createTextNode(d.label));
+    b.appendChild(el("span", "n", d.n == null ? "0" : String(d.n)));
+    b.addEventListener("click", onClick);
+    return b;
+  }
+
   function buildRail() {
+    /* a page cached from before the week filter shipped still has to work */
+    var wc = byId("note-week-chips");
+    if (wc) {
+      weekDefs().forEach(function (d) {
+        wc.appendChild(chip(d, d.k === "all", function () { week = d.k; applyFilter(); }));
+      });
+    }
+
     var box = byId("cov-chips");
     COV_DEFS.forEach(function (d) {
-      var b = el("button", "chip");
-      b.type = "button";
-      b.dataset.k = d.k;
-      b.setAttribute("aria-pressed", d.k === "all" ? "true" : "false");
-      b.appendChild(document.createTextNode(d.label));
-      b.appendChild(el("span", "n", "0"));
-      b.addEventListener("click", function () { cov = d.k; applyFilter(); });
-      box.appendChild(b);
+      box.appendChild(chip(d, d.k === "all", function () { cov = d.k; applyFilter(); }));
     });
 
     byId("print-all").addEventListener("click", printAll);
@@ -386,6 +422,9 @@
 
   function start(data) {
     WEEKS = (data && data.weeks) || [];
+    WEEKS.forEach(function (w) {
+      (w.lectures || []).forEach(function (l) { WK[l.id] = weekKey(w); });
+    });
     buildRail();
     buildStream();
     paintCoverage();
