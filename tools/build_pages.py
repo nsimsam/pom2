@@ -198,6 +198,11 @@ still to write.</p>
 </section>
 
 <section>
+<p class="panel-h">Week</p>
+<div class="chips" id="week-chips"></div>
+</section>
+
+<section>
 <p class="panel-h">Status</p>
 <div class="chips" id="status-chips"></div>
 </section>

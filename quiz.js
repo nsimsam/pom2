@@ -41,7 +41,7 @@
   var QUESTIONS = [];
   var QMAP = Object.create(null);
   var progress = Object.create(null);
-  var filters = { status: "all", family: null };
+  var filters = { status: "all", family: null, week: "all" };
   var RESET_SHOWN_IDLE = null;
   var storeWritable = true;
 
@@ -380,6 +380,7 @@
   function matches(qid) {
     var q = QMAP[qid];
     if (filters.family && q.family !== filters.family) return false;
+    if (filters.week !== "all" && weekKey(q) !== filters.week) return false;
     var st = stateOf(qid);
     switch (filters.status) {
       case "unseen":  return st === "unseen";
@@ -421,7 +422,7 @@
       h.hidden = !any;
     });
 
-    var narrowed = filters.status !== "all";
+    var narrowed = filters.status !== "all" || filters.week !== "all";
     [].forEach.call(document.querySelectorAll(".family"), function (f) {
       if (filters.family && f.dataset.family !== filters.family) { f.hidden = true; return; }
       if (f.dataset.count === "0") { f.hidden = !!narrowed; return; }
@@ -434,6 +435,7 @@
   }
 
   function setStatus(s) { filters.status = s; applyFilters(); }
+  function setWeek(w) { filters.week = w; applyFilters(); }
 
   /* ---------- where you are in the stream ---------- */
 
@@ -577,7 +579,8 @@
     byId("pb-where").textContent = q ? (q.weekLabel + " \u00b7 " + q.lecture) : "";
     byId("pb-count").textContent = (at === null ? "\u2013" : String(at + 1)) +
       " / " + VISIBLE.length +
-      ((filters.status !== "all" || filters.family) ? " shown" : "");
+      ((filters.status !== "all" || filters.family ||
+         filters.week !== "all") ? " shown" : "");
     byId("pb-prev").disabled = at === null || at === 0;
     byId("pb-next").disabled = at === null || at === VISIBLE.length - 1;
     paintMark(at);
@@ -648,6 +651,31 @@
     { k: "starred", label: "Starred", cls: "starish" }
   ];
 
+  /* Weeks come off the questions rather than off BLOCK.weeks: that is a
+     display string ("1–3"), and a block can carry off-curriculum questions
+     that belong to no week at all. Numbers, not labels - the same week is
+     labelled differently by each family, so the labels would split it. */
+  function weekKey(q) { return q.week === null ? "off" : String(q.week); }
+
+  function weekDefs() {
+    var n = Object.create(null), order = [];
+    QUESTIONS.forEach(function (q) {
+      var k = weekKey(q);
+      if (n[k] === undefined) { n[k] = 0; order.push(k); }
+      n[k]++;
+    });
+    order.sort(function (a, b) {
+      if (a === "off") return 1;
+      if (b === "off") return -1;
+      return Number(a) - Number(b);
+    });
+    var defs = [{ k: "all", label: "All", n: QUESTIONS.length }];
+    order.forEach(function (k) {
+      defs.push({ k: k, label: k === "off" ? "Off-curriculum" : "Week " + k, n: n[k] });
+    });
+    return defs;
+  }
+
   function counts() {
     var c = { all: QUESTIONS.length, unseen: 0, wrong: 0, correct: 0, starred: 0 };
     QUESTIONS.forEach(function (q) {
@@ -665,6 +693,9 @@
     [].forEach.call(document.querySelectorAll("#status-chips .chip"), function (b) {
       b.setAttribute("aria-pressed", filters.status === b.dataset.k ? "true" : "false");
       b.querySelector(".n").textContent = c[b.dataset.k];
+    });
+    [].forEach.call(document.querySelectorAll("#week-chips .chip"), function (b) {
+      b.setAttribute("aria-pressed", filters.week === b.dataset.k ? "true" : "false");
     });
     [].forEach.call(document.querySelectorAll("#fam-btns .fam-btn"), function (b) {
       var k = b.dataset.k || null;
@@ -723,6 +754,21 @@
       });
       fb.appendChild(b);
     });
+
+    /* a page cached from before the week filter shipped still has to work */
+    var wc = byId("week-chips");
+    if (wc) {
+      weekDefs().forEach(function (d) {
+        var b = el("button", "chip");
+        b.type = "button";
+        b.dataset.k = d.k;
+        b.setAttribute("aria-pressed", d.k === "all" ? "true" : "false");
+        b.appendChild(document.createTextNode(d.label));
+        b.appendChild(el("span", "n", String(d.n)));
+        b.addEventListener("click", function () { setWeek(d.k); });
+        wc.appendChild(b);
+      });
+    }
 
     var sc = byId("status-chips");
     STATUS_DEFS.forEach(function (d) {
