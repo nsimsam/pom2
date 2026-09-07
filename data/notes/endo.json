@@ -1829,67 +1829,2424 @@
      "id": "endo-w2-01",
      "num": "01",
      "name": "Thyroid and Parathyroid Gland Physiology",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Thyroid Hormone Synthesis & Calcium Homeostasis",
+     "framing": "<p>Two axes, one shape: a gland reacting to a single sensed variable. For the thyroid the sensed variable is <strong>circulating T3/T4, read by the hypothalamus and pituitary</strong>, and the step the exam turns on is that <strong>iodination comes FIRST, then coupling</strong>. For the parathyroid the sensed variable is <strong>ionized Ca2+, read directly by the chief cell's CaSR</strong>, and the step it turns on is that ⭐ <strong>there is no PTH receptor in the gut</strong> — PTH raises absorbed calcium only <em>indirectly</em>, through <span class=\"wl\">calcitriol</span>.</p>",
+     "keypoints": "<p>⭐ <strong>Iodination precedes coupling</strong>, and iodide entry is <strong>active transport (NIS, then pendrin), never passive diffusion</strong>. ⭐ <strong>The goitre of <span class=\"wl\">iodine deficiency</span> is not the gland \"trying harder\" — it is loss of negative feedback → sustained TSH-receptor drive → follicular hypertrophy and hyperplasia</strong>, and maternal deficiency is the <strong>#1 cause of preventable <span class=\"wl\">intellectual disability</span> worldwide</strong>. ⭐ <strong><span class=\"wl\">somatostatin</span> inhibits TSH ONLY, not PTH.</strong> <strong>Calcium is the single discriminator between primary and secondary hyperparathyroidism</strong>, and <strong>hypocalciuria</strong> is what separates FHH from primary. <strong><span class=\"wl\">Hashimoto's thyroiditis</span> is anti-TPO</strong>, blocking iodination of thyroglobulin, treated with <span class=\"wl\">levothyroxine</span>; <strong><span class=\"wl\">Graves disease</span> is an <em>activating</em> anti-TSH-receptor antibody</strong> with <strong><span class=\"wl\">exophthalmos</span></strong>. <strong>99% of body calcium sits in bone as calcium phosphate</strong>, and of the 1% in blood <strong>50% is free/ionized</strong> — that is the only fraction the CaSR reads and the only fraction that acts.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Step",
+        "Where",
+        "Player",
+        "What <span class=\"wl\">TSH</span> does"
+       ],
+       "rows": [
+        [
+         "① I<sup>-</sup> into the cell",
+         "<strong>basolateral</strong> membrane",
+         "<strong>NIS</strong> (Na+/I<sup>-</sup> symporter) — <strong>active, against the gradient</strong>, not diffusion",
+         "<strong>↑ NIS activity</strong>"
+        ],
+        [
+         "② I<sup>-</sup> into the colloid",
+         "<strong>apical</strong> membrane",
+         "<strong>pendrin</strong>",
+         "—"
+        ],
+        [
+         "③ Iodination",
+         "colloid, on <strong>~330 tyrosine residues</strong> of <strong>thyroglobulin</strong> (660 kD, glycosylated, 2 subunits)",
+         "<strong>TPO</strong> → <strong>MIT</strong> (1 iodine) or <strong>DIT</strong> (2 iodines)",
+         "<strong>↑ thyroglobulin production</strong>"
+        ],
+        [
+         "④ Coupling",
+         "colloid",
+         "<strong>TPO</strong>: <strong>MIT + DIT → T3</strong>; <strong>DIT + DIT → T4</strong>",
+         "<strong>↑ TPO activity</strong>"
+        ],
+        [
+         "⑤ Release",
+         "apical → cytoplasm → basolateral",
+         "crosses <strong>bound to thyroglobulin</strong>, then <strong>freed by proteases inside the cell</strong>",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Serum profile",
+        "<span class=\"wl\">T3</span>",
+        "<span class=\"wl\">T4</span>"
+       ],
+       "rows": [
+        [
+         "% secreted",
+         "10%",
+         "<strong>90%</strong>"
+        ],
+        [
+         "% free in plasma",
+         "<strong>1%</strong>",
+         "0.1%"
+        ],
+        [
+         "Relative potency",
+         "<strong>10×</strong>",
+         "1"
+        ],
+        [
+         "Half-life",
+         "1 day",
+         "<strong>7 days</strong>"
+        ],
+        [
+         "Role",
+         "<strong>the active hormone</strong>",
+         "a long-lived <strong>prohormone reservoir</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Most T3 acting on a cell is made inside that cell</strong>: T4 is taken up from serum → converted in the cytoplasm → T3 binds <strong>TR, a <em>nuclear</em> receptor</strong>, and the complex acts as a transcription factor at thyroid response elements. So <strong>the deiodinase ratio in the target tissue, not the serum level, sets local activity.</strong></p>",
+       "cols": [
+        "Deiodinase",
+        "Reaction",
+        "Product"
+       ],
+       "rows": [
+        [
+         "<strong>D2</strong>",
+         "<strong>T4 → T3</strong>",
+         "<strong>active</strong>, more potent"
+        ],
+        [
+         "<strong>D3</strong>",
+         "<strong>T4 → rT3</strong>",
+         "<strong>inactive</strong>"
+        ],
+        [
+         "<strong>D3</strong>",
+         "T3 → T2",
+         "weaker — ⚠ <strong>D3 cannot make T2 out of T4; D2 must make T3 first</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Binding protein",
+        "Carries",
+        "Affinity note"
+       ],
+       "rows": [
+        [
+         "<strong>TBG</strong> (thyroxine binding globulin)",
+         "<strong>75% of both T3 and T4</strong>",
+         "⭐ binds <strong>T3 and T4 with <em>equal</em> affinity</strong>"
+        ],
+        [
+         "<strong>transthyretin (TTR)</strong>",
+         "20% of T4, 5% of T3",
+         "<strong>lower affinity than TBG</strong> (55 kD tetramer)"
+        ],
+        [
+         "<strong>serum albumin</strong>",
+         "5% of T4, <strong>20% of T3</strong>",
+         "<strong>low affinity</strong> (66.5 kD monomer) — but carries <strong>20% of T3</strong> because plasma holds so much of it"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ T3/T4 need carriers because they are <strong>amino acid derivatives with an aromatic structure</strong> — <strong>they are NOT steroid hormones</strong>. Unbound, their half-life falls.</p>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Serum ionized Ca2+ FALLS\"] --> B[\"CaSR on the parathyroid chief cell goes quiet\"]\n    B --> C[\"PTH released<br/>84 aa peptide, full activity in the 1-34 fragment\"]\n    C --> D[\"BONE - DIRECT<br/>up osteoclast resorption<br/>down osteoblast formation\"]\n    C --> E[\"KIDNEY DCT - DIRECT<br/>up ACTIVE Ca2+ reabsorption\"]\n    C --> F[\"KIDNEY - 1-alpha-hydroxylase<br/>the PTH-regulated rate-limiting step\"]\n    F --> G[\"Calcitriol\"]\n    G --> H[\"GI TRACT - INDIRECT ONLY<br/>up Ca2+ absorption from food<br/>NO PTH receptor here\"]\n    D --> I[\"Serum Ca2+ restored, CaSR reactivates, PTH shuts off\"]\n    E --> I\n    H --> I"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Organ",
+        "PTH's route",
+        "Effect"
+       ],
+       "rows": [
+        [
+         "<strong>Bone</strong>",
+         "<strong>direct</strong> (PTHR <strong>highly expressed</strong>)",
+         "<strong>↑ </strong>osteoclast<strong> resorption</strong>, <strong>↓ osteoblast formation</strong>"
+        ],
+        [
+         "<strong>Kidney — <span class=\"wl\">DCT</span></strong>",
+         "<strong>direct</strong>",
+         "<strong>↑ ACTIVE Ca2+ reabsorption</strong> — ⚠ the <strong><span class=\"wl\">loop of Henle</span> is PASSIVE and not PTH-controlled</strong>"
+        ],
+        [
+         "<strong>Kidney — 1α-hydroxylase</strong>",
+         "<strong>direct</strong>",
+         "↑ <span class=\"wl\">calcitriol</span> synthesis"
+        ],
+        [
+         "<strong>GI tract</strong>",
+         "⭐ <strong>INDIRECT only, via <span class=\"wl\">calcitriol</span></strong>",
+         "↑ Ca2+ absorption from food"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>PTHR is a GPCR signalling down two arms, both converging on ↑ Ca2+:</strong> <strong>Gsα</strong> → cAMP → PKA · <strong>Gq11α</strong> → PLCβ → DAG/IP3. It is <strong>promiscuous</strong> — it also binds <strong>PTHrP</strong>, a growth factor normally made in the <em>prostate</em>, which is why a PTHrP-secreting tumour produces <strong>humoral hypercalcemia of malignancy</strong>.</p>",
+       "cols": [
+        "Vitamin D step",
+        "Site",
+        "Enzyme",
+        "Product"
+       ],
+       "rows": [
+        [
+         "Precursor",
+         "<strong>skin (sun)</strong> or diet (fortified milk)",
+         "—",
+         "⚠ sunlight makes <strong><span class=\"wl\">cholecalciferol</span></strong>, <em>not</em> 25-OH-D"
+        ],
+        [
+         "25-hydroxylation",
+         "<strong>liver</strong>",
+         "<strong>25-hydroxylase</strong>",
+         "<strong><span class=\"wl\">calcifediol</span></strong> — the <strong>major circulating form</strong>"
+        ],
+        [
+         "<strong>1α-hydroxylation</strong>",
+         "<strong>kidney</strong>",
+         "<strong>1α-hydroxylase</strong> — <strong>rate-limiting and PTH-regulated</strong>",
+         "<strong><span class=\"wl\">calcitriol</span></strong>, <strong>~1000× more active</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Vitamin D's bone effect flips with the calcium level:</strong> Ca2+ <strong>LOW</strong> → <strong>resorption</strong> by <strong>osteoclasts</strong> · Ca2+ <strong>HIGH</strong> → <strong>mineralization</strong> by osteoblasts.</p>",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">Primary hyperPTH</span></strong>",
+        "<strong><span class=\"wl\">Secondary hyperPTH</span></strong>",
+        "<strong><span class=\"wl\">FHH</span></strong>",
+        "<strong><span class=\"wl\">hypoparathyroidism</span></strong>"
+       ],
+       "rows": [
+        [
+         "PTH",
+         "↑",
+         "↑",
+         "↑ or inappropriately normal",
+         "<strong>↓</strong>"
+        ],
+        [
+         "<strong>Serum Ca2+</strong>",
+         "⭐ <strong>↑ (hypercalcemia)</strong>",
+         "⭐ <strong>low-normal — NO hypercalcemia</strong>",
+         "<strong>↑</strong>",
+         "<strong>↓</strong>"
+        ],
+        [
+         "<strong>Urine Ca2+</strong>",
+         "↑",
+         "—",
+         "⭐ <strong>LOW (hypocalciuria)</strong> — the discriminator from primary",
+         "—"
+        ],
+        [
+         "Lesion",
+         "<strong>80% single-gland adenoma</strong>, clonal and benign; else 4-gland hyperplasia, rarely carcinoma",
+         "gland reacting <strong>appropriately</strong> to <span class=\"wl\">chronic kidney disease</span> (↓ 1α-hydroxylation), <span class=\"wl\">vitamin D deficiency</span>, or PTH / vitamin D resistance",
+         "<strong>inactivating CaSR</strong> → curve shifts <strong>RIGHT</strong>, gland needs a <em>higher</em> Ca2+ to switch off",
+         "usually <strong>iatrogenic, post-<span class=\"wl\">total thyroidectomy</span></strong> (the glands sit on the back of the thyroid); rarely autoimmune"
+        ],
+        [
+         "Bone",
+         "<strong><span class=\"wl\">osteopenia</span></strong>, <strong><span class=\"wl\">osteitis fibrosa cystica</span></strong> (soft bone)",
+         "<strong>high turnover bone disease</strong>",
+         "—",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Primary hyperPTH is chronic hypercalcemia plus chronic resorption:</strong> ↑ BP · <strong><span class=\"wl\">pancreatitis</span></strong> and stomach ulcers · <strong><span class=\"wl\">kidney stones</span></strong> · soft bone · <strong><span class=\"wl\">depression</span> and <span class=\"wl\">psychosis</span></strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Hypoparathyroidism is the syndrome of <span class=\"wl\">hypocalcemia</span>:</strong> <strong>perioral numbness</strong> · <strong>carpopedal spasm</strong> · convulsions and <strong><span class=\"wl\">tetany</span></strong> · impaired memory and personality change.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Non-parathyroid <span class=\"wl\">hypercalcemia</span>:</strong> <strong>HHM</strong> (PTHrP from <strong>lung and kidney</strong> carcinomas) · <strong><span class=\"wl\">vitamin D toxicity</span></strong> · <strong><span class=\"wl\">sarcoidosis</span></strong> (granulomatous vitamin D activation) · <strong><span class=\"wl\">milk-alkali syndrome</span></strong>, a <strong><span class=\"wl\">metabolic alkalosis</span></strong> with back pain and <span class=\"wl\">polyuria</span>.</p>",
+       "cols": [
+        "PTH-machinery mutation",
+        "Direction",
+        "Result"
+       ],
+       "rows": [
+        [
+         "<strong>PTH receptor</strong>",
+         "⭐ <strong>activating</strong>",
+         "<strong><span class=\"wl\">Jansen's metaphyseal chondrodysplasia</span></strong> — short-limbed dwarfism"
+        ],
+        [
+         "<strong>PTH receptor</strong>",
+         "<strong>inactivating</strong>",
+         "<strong><span class=\"wl\">Blomstrand's chondroplasia</span></strong> — early death, defective bone maturation"
+        ],
+        [
+         "<strong>CaSR</strong>",
+         "inactivating",
+         "<strong>FHH</strong> — hypercalcemia in blood <strong>but not urine</strong>"
+        ],
+        [
+         "<strong>TBG</strong>",
+         "—",
+         "abnormal <strong>TOTAL</strong> T3/T4 with <strong>normal FREE</strong> hormone → the patient is <strong>euthyroid</strong>"
+        ],
+        [
+         "<strong>TSH-R</strong>",
+         "activating / inactivating",
+         "<span class=\"wl\">hyperthyroidism</span> or toxic nodule / TSH resistance and <span class=\"wl\">hypothyroidism</span>"
+        ],
+        [
+         "<strong>TRβ</strong>",
+         "—",
+         "<strong>thyroid hormone resistance</strong> — high T3/T4 with a <strong>non-suppressed TSH</strong>"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "endo-w2-02",
      "num": "02",
      "name": "Drugs Affecting Calcium Homeostasis",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Drugs Affecting Calcium & Bone Mineral Homeostasis",
+     "framing": "<p>Choosing between these turns on three questions, and each one maps onto a column below: <strong>are you stopping bone loss (antiresorptive) or building bone (anabolic)?</strong> · <strong>what is the eGFR</strong>, since <strong><span class=\"wl\">bisphosphonates</span> and <span class=\"wl\">teriparatide</span> are both out below 30 mL/min while <span class=\"wl\">denosumab</span> is not</strong> · and <strong>which way does the drug push serum calcium</strong>, because ⭐ <strong>every antiresorptive causes <span class=\"wl\">hypocalcemia</span> and the one anabolic PTH drug causes <span class=\"wl\">hypercalcemia</span></strong>.</p>",
+     "keypoints": "<p>⭐ <strong><span class=\"wl\">denosumab</span> is the drug of choice when renal function is poor</strong> — it does not depend on the kidney for elimination, unlike the bisphosphonates, which are <strong>excreted unchanged and accumulate</strong>. ⭐ <strong>Denosumab's effects on bone turnover and BMD are <em>reversible</em>; bisphosphonates stay bound in bone</strong>, so their benefit <em>and</em> their ONJ risk persist long after stopping — denosumab carries the <strong>higher</strong> ONJ risk but that risk <strong>falls when the drug stops</strong>, and the BP risk does not. ⭐ <strong><span class=\"wl\">teriparatide</span> is not associated with ONJ and may even treat it.</strong> <strong>Every antiresorptive drives calcium down, so every patient on one needs adequate dietary <span class=\"wl\">calcium</span> and <span class=\"wl\">vitamin D</span>.</strong> <strong><span class=\"wl\">romosozumab</span> is the one drug in both classes at once</strong>, and the one whose contraindication list is short but whose CV signal is the reason to hesitate.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Drug",
+        "Mechanism of Action",
+        "Route / dosing",
+        "Adverse Effects",
+        "Contraindications"
+       ],
+       "rows": [
+        [
+         "<u>Antiresorptive — <span class=\"wl\">bisphosphonates</span></u><br><strong>Target: the </strong>osteoclast****",
+         "<span class=\"wl\">alendronate</span> (2nd gen)<br><span class=\"wl\">zoledronate</span> (3rd gen)",
+         "<strong>Bind hydroxyapatite</strong> → taken up by the osteoclast resorbing that surface → <strong>inhibit the mevalonate pathway</strong> → <strong>osteoclast apoptosis</strong>",
+         "<strong>oral once daily</strong> (<span class=\"wl\">alendronate</span>)<br><strong>IV once yearly</strong> (<span class=\"wl\">zoledronate</span>)<br>⚠ <strong>empty stomach with water</strong> (poor oral absorption, many interactions)<br>⚠ <strong>sit or stand upright 30 min after the pill</strong>",
+         "<strong>Esophageal / gastric irritation</strong> · <strong><span class=\"wl\">hypocalcemia</span></strong> · bone and joint pain · flu-like symptoms and <strong>nephrotoxicity</strong> <strong>with IV preparations</strong> (the flu-like symptoms are temporary) · <strong><span class=\"wl\">osteonecrosis of the jaw</span></strong> — high-dose <strong>3rd generation</strong>, <strong>IV > oral</strong>, risk ↑ after dental extraction · <strong><span class=\"wl\">atypical femoral fracture</span></strong> (rare, catastrophic)",
+         "<strong><span class=\"wl\">eGFR</span> < 30 mL/min</strong> · <strong><span class=\"wl\">esophageal disease</span></strong> · established or predisposed <strong><span class=\"wl\">hypocalcemia</span></strong>"
+        ],
+        [
+         "<u>Antiresorptive — <span class=\"wl\">RANKL inhibitors</span></u>",
+         "<strong><span class=\"wl\">denosumab</span></strong> — the only one in Canada, and a <strong>HUMAN</strong> monoclonal antibody (⚠ <em>not</em> humanized like <span class=\"wl\">romosozumab</span>)",
+         "<strong>RANKL</strong> is released by <strong>**osteoblasts</strong> and osteocytes<strong> and activates receptors </strong>on osteoclasts<strong> → activation, differentiation, survival. Denosumab </strong>blocks all three**",
+         "<strong>subcutaneous, twice yearly</strong>",
+         "GI (N/V, diarrhea, flatulence) · back / limb / MSK pain · <strong><span class=\"wl\">hypocalcemia</span></strong> · ⭐ <strong>↑ risk of infection</strong> (cough, nasopharyngitis, <span class=\"wl\">upper respiratory tract infection</span>) · <strong>ONJ</strong> · <strong>AFF</strong>",
+         "⭐ <strong>immunosuppression</strong> · established or predisposed <strong><span class=\"wl\">hypocalcemia</span></strong>"
+        ],
+        [
+         "<u>Anabolic — rhPTH</u>",
+         "<strong><span class=\"wl\">teriparatide</span></strong>",
+         "Recombinant <strong>1–34 amino-terminal fragment of human PTH</strong> — the fragment carrying full activity. ⭐ <strong>Intermittent spikes build bone; sustained exposure resorbs it</strong>",
+         "<strong>subcutaneous, DAILY</strong><br>metabolized by <strong>liver</strong>, excreted in <strong>urine</strong>",
+         "GI (N/V, gastritis) · hypotension, dizziness, headache, leg cramps — <strong>short-lived, hours after the injection</strong> · ⭐ <strong><span class=\"wl\">hypercalcemia</span> and <span class=\"wl\">hypercalciuria</span> — the opposite of the antiresorptives</strong> · <strong><span class=\"wl\">osteosarcoma</span> in <em>rats</em></strong> (historically capped therapy at 2 years; <strong>the FDA has since removed the boxed warning</strong>)",
+         "<strong><span class=\"wl\">hypercalcemia</span></strong> · <strong>eGFR < 30 mL/min</strong> · metabolic bone disease"
+        ],
+        [
+         "<u>Anabolic — sclerostin inhibitor</u>",
+         "<strong><span class=\"wl\">romosozumab</span></strong> (Canada, 2019)",
+         "<strong>Humanized monoclonal antibody</strong> against <strong>sclerostin</strong>. Sclerostin <strong>inhibits formation AND promotes resorption</strong>, so blocking it does <strong>both at once</strong> → ⭐ <strong>antiresorptive <em>and</em> anabolic</strong>",
+         "<strong>subcutaneous, MONTHLY</strong>",
+         "<strong><span class=\"wl\">arthralgia</span></strong> · <strong><span class=\"wl\">hypocalcemia</span></strong> · ONJ, AFF · ⭐ <strong>CV events (<span class=\"wl\">MI</span>, <span class=\"wl\">stroke</span>, death)</strong>",
+         "<strong><span class=\"wl\">hypocalcemia</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>The other arms of the loop the lecture names but does not develop:</strong> parathyroid <strong>CaSR → calcimimetics (<span class=\"wl\">cinacalcet</span>)</strong> · vitamin D axis → <strong><span class=\"wl\">vitamin D</span> and analogues</strong> · kidney → <strong>thiazide-like diuretics (↑ Ca2+ reabsorption)</strong> · osteoclast → also <strong><span class=\"wl\">SERMs</span></strong>, <strong><span class=\"wl\">HRT</span></strong>, <strong><span class=\"wl\">calcitonin</span></strong> · osteoblast → also <strong>fluoride</strong>.</p>",
+       "cols": [
+        "Preparation",
+        "Metabolism still required",
+        "Half-life / speed",
+        "Indication that picks it"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">ergocalciferol</span> (D2)</strong> — plant sources, <strong>stored in liver, adipose, muscle</strong>",
+         "<strong>hepatic + renal</strong>",
+         "—",
+         "the <strong>vegan</strong> alternative; <strong>not bioequivalent to D3</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">cholecalciferol</span> (D3)</strong> — sun on 7-dehydrocholesterol, animal sources, fortified food, <strong>stored in liver, adipose, muscle</strong>",
+         "<strong>hepatic + renal</strong>",
+         "—",
+         "most commercial supplements · <strong>breast-fed babies</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">calcifediol</span></strong> (25-OH-D)",
+         "<strong>renal only</strong>",
+         "<strong>t½ ≈ 19 days</strong>",
+         "<strong><span class=\"wl\">secondary hyperparathyroidism</span> in stage 3–4 <span class=\"wl\">CKD</span> with a LOW serum 25-OH-D</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">calcitriol</span></strong> (1,25-(OH)2-D)",
+         "<strong>none — already active</strong>",
+         "<strong>fast-acting, and fast to clear</strong>",
+         "when you need <strong>PTH shut off fast</strong>; ⭐ <strong>works independently of renal function</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Vitamin D is a hormone acting on VDRs</strong>, and ⭐ <strong>VDRs sit on many cells with nothing to do with calcium — macrophages included</strong>, which is why granulomatous disease such as <strong><span class=\"wl\">sarcoidosis</span> activates vitamin D and causes <span class=\"wl\">hypercalcemia</span></strong>.</p>",
+       "cols": [
+        "Site",
+        "Vitamin D",
+        "<span class=\"wl\">PTH</span>"
+       ],
+       "rows": [
+        [
+         "GI tract",
+         "<strong>↑ absorption of <span class=\"wl\">calcium</span> AND <span class=\"wl\">phosphate</span></strong>",
+         "⚠ <strong>no receptors here at all</strong> — its gut effect is <strong>entirely indirect via <span class=\"wl\">calcitriol</span></strong>"
+        ],
+        [
+         "Kidney",
+         "<strong>↑ reabsorption of calcium AND phosphate</strong>",
+         "↑ calcium reabsorption but ⭐ <strong>↑ phosphate EXCRETION (phosphaturic)</strong>"
+        ],
+        [
+         "Bone",
+         "<strong>resorption when Ca2+ is LOW, mineralization when Ca2+ is HIGH</strong>",
+         "↑ resorption, ↓ formation"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Phosphate is the discriminator between vitamin D and PTH at the kidney</strong> — vitamin D retains it, PTH dumps it. <span class=\"wl\">teriparatide</span> inherits that: it raises renal calcium reabsorption but is <strong>phosphaturic</strong> like native PTH, and it also ↑ <span class=\"wl\">calcitriol</span> production and ↑ <strong>osteoblast survival</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Therapeutic uses of vitamin D:</strong> prophylaxis and cure of <strong>nutritional <span class=\"wl\">rickets</span></strong> · metabolic <span class=\"wl\">rickets</span> and <span class=\"wl\">osteomalacia</span> · <strong><span class=\"wl\">hypoparathyroidism</span></strong> (a <span class=\"wl\">calcitriol</span> analogue, because it acts fast) · <strong><span class=\"wl\">secondary hyperparathyroidism</span></strong> (shuts PTH off) · <strong><span class=\"wl\">osteoporosis</span></strong> — the most common use, but ⚠ <strong>vitamin D alone does not raise bone mineral density enough</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Hypervitaminosis D is simply the profile of <span class=\"wl\">hypercalcemia</span>, split by time course:</strong> <strong>acute</strong> — N/V, <span class=\"wl\">anorexia</span>, fatigue, weakness · <strong>chronic</strong> — <strong>renal impairment</strong>, <strong>soft-tissue calcification</strong> (kidneys, heart, vessels, skin), <strong><span class=\"wl\">hypertension</span></strong>, possibly <strong><span class=\"wl\">arrhythmias</span></strong>.</p>"
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Source error, flagged not corrected",
+       "html": "<p>The module video says sclerostin <strong>inhibits both formation and resorption</strong>. Dr. Crowley posted an erratum: <strong>sclerostin inhibits <em>formation</em> but PROMOTES <em>resorption</em>.</strong> The corrected version is what the chart above uses, and it is the reason blocking sclerostin raises formation <em>and</em> lowers resorption.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w2-03",
      "num": "03",
      "name": "Clinical Presentation and Evaluation of Hypothyroidism and Thyrotoxicosis",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Approach to Hypothyroidism and Thyrotoxicosis",
+     "framing": "<p>The whole evaluation runs on one test in one direction: ⭐ <strong><span class=\"wl\">serum TSH</span> to case-find, free hormone only to confirm and grade.</strong> TSH works because <strong>primary disease, at the gland, is by far the most common kind</strong>, and there TSH moves <em>opposite</em> to the hormone. ⚠ <strong>That logic inverts in central disease</strong>, where pituitary TSH is the broken part and moves <em>with</em> the hormone. Then one further question splits thyrotoxicosis into its causes: <strong>is the gland making hormone, or leaking it?</strong> — which is what <strong><span class=\"wl\">radioactive iodine uptake</span></strong> answers.</p>",
+     "keypoints": "<p>⭐ <strong>TSH case-finds, free hormone confirms</strong> — and the only reason to break that order is <strong>suspected central disease</strong>, where TSH and FT4 go together and <strong>TSH moves WITH the hormone</strong>. ⭐ <strong>RAI uptake answers <em>why</em>, not <em>whether</em>.</strong> <strong>High uptake = the gland is synthesizing; low uptake = hormone is leaking out of it or coming from a bottle</strong>, and low-uptake disease is treated <strong>supportively while you watch for the hypothyroid phase</strong>. ⭐ <strong>Goiter symmetry is a free discriminator: symmetric points to Graves, asymmetric to nodular disease, and thyroiditis can have no goiter at all.</strong> ⭐ <strong>Methimazole is first line for Graves and RAI is first line for nodular disease</strong>, because only Graves remits. <strong>Levothyroxine's 1-week half-life is why TSH is rechecked at 4 to 6 weeks and not sooner.</strong> <strong>anti-TPO, anti-thyroglobulin, and ultrasound are the tests to leave alone</strong> in straightforward hypothyroidism.</p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Thyroid dysfunction suspected<br/>history, physical, associated condition, high risk\"] --> B[\"TSH\"]\n    B --> C{\"TSH result?\"}\n    C -->|\"NORMAL\"| D[\"STOP*<br/>*unless central disease is suspected\"]\n    C -->|\"HIGH\"| E[\"Query HYPO - order FT4\"]\n    C -->|\"LOW\"| F[\"Query HYPER - order FT4 + FT3\"]\n    E --> G{\"FT4?\"}\n    G -->|\"LOW\"| H[\"PRIMARY HYPOTHYROIDISM\"]\n    G -->|\"Normal\"| I[\"SUBCLINICAL HYPOTHYROIDISM\"]\n    F --> J{\"FT4 / FT3?\"}\n    J -->|\"HIGH\"| K[\"THYROTOXICOSIS\"]\n    J -->|\"Normal\"| L[\"SUBCLINICAL HYPERTHYROIDISM\"]\n    K --> M[\"Etiology - clinical +/- TRAb, vs RAI uptake and scan\"]\n    M -->|\"HIGH uptake\"| N[\"INCREASED SYNTHESIS<br/>Graves, hCG-related, TMNG, toxic adenoma\"]\n    M -->|\"LOW uptake\"| O[\"LEAKAGE or EXOGENOUS<br/>thyroiditis, overtreatment, factitious\"]\n    D --> P[\"If pituitary deficiencies or a known pituitary mass:<br/>order TSH AND FT4 together\"]\n    P --> Q[\"CENTRAL HYPO - TSH normal or LOW with FT4/FT3 LOW\"]\n    P --> R[\"CENTRAL HYPER - TSH normal or HIGH with FT4/FT3 HIGH\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Pattern",
+        "<strong>TSH</strong>",
+        "<strong>FT4 / FT3</strong>"
+       ],
+       "rows": [
+        [
+         "Normal",
+         "↔",
+         "↔"
+        ],
+        [
+         "<strong>Primary hypothyroidism</strong>",
+         "<strong>↑</strong>",
+         "<strong>↓</strong>"
+        ],
+        [
+         "<strong>Subclinical hypothyroidism</strong>",
+         "<strong>↑</strong>",
+         "↔"
+        ],
+        [
+         "<strong>Thyrotoxicosis (~hyperthyroid)</strong>",
+         "<strong>↓</strong>",
+         "<strong>↑</strong>"
+        ],
+        [
+         "<strong>Subclinical hyperthyroidism</strong>",
+         "<strong>↓</strong>",
+         "↔"
+        ],
+        [
+         "⭐ <strong>Central hypothyroidism</strong>",
+         "⚠ <strong>↔ or ↓</strong>",
+         "<strong>↓</strong>"
+        ],
+        [
+         "⭐ <strong>Central hyperthyroidism</strong>",
+         "⚠ <strong>↔ or ↑</strong>",
+         "<strong>↑</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The central patterns are the trap: TSH moves the same way as the hormone, or not at all.</strong> A normal TSH is only reassuring when the pituitary is presumed intact, which is why the one exception to \"stop at a normal TSH\" is <strong>known pituitary deficiency or a known pituitary mass</strong> — there you order <strong>TSH and FT4 together</strong> from the start.</p>",
+       "cols": [
+        "Presentation frame",
+        "Splits into"
+       ],
+       "rows": [
+        [
+         "<strong>Structure</strong>",
+         "benign vs malignant · functional vs non-functional"
+        ],
+        [
+         "<strong>Function</strong>",
+         "<strong>hyperthyroid</strong> vs <strong>hypothyroid</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">hypothyroidism</span></strong>",
+        "<strong><span class=\"wl\">thyrotoxicosis</span> / <span class=\"wl\">hyperthyroidism</span></strong>"
+       ],
+       "rows": [
+        [
+         "Definition",
+         "too little thyroid hormone",
+         "<strong>thyrotoxicosis = too much TH from any cause</strong>; <strong>hyperthyroidism = thyrotoxicosis from TH <em>production</em></strong>"
+        ],
+        [
+         "Prevalence",
+         "<strong>up to 2%</strong> (subclinical up to <strong>10%</strong>)",
+         "<strong>up to 1.5%</strong>"
+        ],
+        [
+         "Sex ratio",
+         "<strong>5–8 : 1 female</strong>",
+         "<strong>5 : 1 female</strong>"
+        ],
+        [
+         "Temperature",
+         "<strong>cold intolerance</strong>",
+         "<strong>heat intolerance</strong>, ↑ sweating"
+        ],
+        [
+         "Weight / appetite",
+         "⭐ <strong>weight GAIN despite DECREASED appetite</strong>",
+         "⭐ <strong>weight LOSS despite INCREASED appetite</strong>"
+        ],
+        [
+         "Energy / mentation",
+         "fatigue, <strong>slow mentation</strong>, apathy, <strong><span class=\"wl\">depression</span></strong>",
+         "<strong>hyperactivity</strong>, insomnia, <strong>emotional lability / <span class=\"wl\">anxiety</span></strong>"
+        ],
+        [
+         "Cardiac",
+         "<strong><span class=\"wl\">bradycardia</span></strong>, ⭐ <strong>diastolic <span class=\"wl\">hypertension</span> with a NARROW pulse pressure</strong>, <strong>↓ cardiac output</strong>",
+         "<strong><span class=\"wl\">tachycardia</span></strong>, ⭐ <strong>WIDE pulse pressure</strong>, <strong>↑ cardiac output</strong>, palpitations"
+        ],
+        [
+         "Both can do",
+         "<strong>shortness of breath</strong> · <strong><span class=\"wl\">heart failure</span></strong>",
+         "<strong><span class=\"wl\">heart failure</span></strong> (edema, orthopnea, PND)"
+        ],
+        [
+         "GI",
+         "<strong>constipation</strong>",
+         "<strong>↑ motility / hyperdefecation</strong> (patients call it diarrhea)"
+        ],
+        [
+         "Skin",
+         "<strong>cool, pale skin</strong>",
+         "<strong>soft, warm skin</strong>"
+        ],
+        [
+         "Reflexes",
+         "⭐ <strong>slow relaxation phase of deep tendon reflexes</strong> (<span class=\"wl\">Woltman sign</span>)",
+         "<strong><span class=\"wl\">tremor</span></strong>"
+        ],
+        [
+         "<strong>TSH</strong>",
+         "<strong>HIGH</strong>",
+         "<strong>LOW</strong>"
+        ],
+        [
+         "<strong>Confirm with</strong>",
+         "<strong>repeat ↑TSH + ↓FT4</strong> (free T3 not needed)",
+         "<strong>repeat ↓TSH + ↑FT4 + ↑FT3</strong>"
+        ],
+        [
+         "<strong>Urgent form</strong>",
+         "<strong><span class=\"wl\">myxedema coma</span></strong>, very rare: <strong>obtundation</strong> and <strong><span class=\"wl\">hypothermia</span></strong>, with <strong>hypotension, bradycardia, <span class=\"wl\">hyponatremia</span>, hypoglycemia, hypoventilation</strong>. Precipitated by a stressor (<span class=\"wl\">MI</span>, cold, <strong>stopping <span class=\"wl\">levothyroxine</span></strong>)",
+         "<strong>hemodynamic instability / <span class=\"wl\">thyroid storm</span></strong> (Graves) · <strong>high-output <span class=\"wl\">heart failure</span></strong> · ⭐ <strong>visual loss from <span class=\"wl\">Graves orbitopathy</span></strong> · <strong>mental health crisis</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Some labs add FT4 (and FT3) reflexively when TSH comes back abnormal</strong>, so the confirmatory step may already be done for you.</p>",
+       "cols": [
+        "Cause",
+        "Risk factors",
+        "Symptoms",
+        "⭐ Goiter"
+       ],
+       "rows": [
+        [
+         "⭐ <strong><span class=\"wl\">Graves disease</span></strong> (most common)",
+         "<strong>female</strong>, <strong>age ~30–50</strong>, <strong>family history of autoimmune disease</strong> (especially thyroid), <strong>iodine load</strong>",
+         "<strong>acute or subacute</strong>, thyrotoxic, <strong>new neck mass</strong>, <strong>orbitopathy</strong>",
+         "<strong>SYMMETRIC</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Toxic adenoma</span> / <span class=\"wl\">TMNG</span></strong>",
+         "⭐ <strong>iodine deficiency moving to sufficiency, or an iodine load</strong>",
+         "<strong>gradually progressive</strong>, <strong>MILDLY</strong> thyrotoxic, neck mass or masses",
+         "<strong>ASYMMETRIC</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">thyroiditis</span></strong>",
+         "<strong>recent URTI</strong> (subacute) · <strong>post-partum / autoimmune</strong>",
+         "⭐ <strong>tenderness, pain, and odynophagia</strong> (subacute); thyrotoxic in all",
+         "<strong>asymmetric, symmetric, or NONE</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Hashimoto's thyroiditis</span></strong> (hypo)",
+         "<strong>female</strong>, family history of autoimmune disease, iodine load",
+         "<strong>same as hypothyroidism generally: highly variable and non-specific</strong>",
+         "goiter, but ⚠ <strong>signs are not sensitive</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Eye findings",
+        "Which disease"
+       ],
+       "rows": [
+        [
+         "<strong>Stare (decreased blink)</strong>, <strong>lid retraction</strong>, <strong>lid lag</strong>",
+         "<strong>any thyrotoxicosis</strong> — these are adrenergic, not autoimmune"
+        ],
+        [
+         "⭐ <strong>Proptosis</strong>, <strong>periorbital edema</strong>, <strong>inflammation</strong>, <strong>diplopia</strong>, <strong>visual loss</strong>",
+         "⭐ <strong><span class=\"wl\">Graves orbitopathy</span> specifically</strong> — and <strong>visual loss is an OCULAR EMERGENCY</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong><span class=\"wl\">Graves orbitopathy</span> mechanism:</strong> <strong>increased volume of the retro-orbital connective tissue and extraocular muscles</strong>, from <strong>inflammation, edema, accumulation of extracellular glycosaminoglycans, and increased adipocytes</strong>. ⭐ <strong>The major risk factor is SMOKING</strong>, which also predicts worsening after radioactive iodine. <strong><span class=\"wl\">Graves dermopathy</span></strong> is the skin counterpart.</p>",
+       "cols": [
+        "Test",
+        "What it is worth"
+       ],
+       "rows": [
+        [
+         "<strong>TSH</strong>",
+         "<strong>case-finding / screening</strong>"
+        ],
+        [
+         "<strong>FT4 (+ FT3)</strong>",
+         "<strong>confirmation</strong>, and FT3 grades severity"
+        ],
+        [
+         "<strong><span class=\"wl\">TSH receptor antibody (TRAb)</span></strong>",
+         "<strong>sensitive AND specific for Graves</strong>, a simple blood test, but ⚠ <strong>not covered by OHIP</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">RAI uptake and scan</span></strong>",
+         "⭐ <strong>best single test for the ETIOLOGY of thyrotoxicosis</strong>. ⚠ <strong>relatively expensive</strong>, <strong>a 2-day test</strong>, <strong>contraindicated in <span class=\"wl\">pregnancy</span></strong>"
+        ],
+        [
+         "<strong>anti-TPO / anti-thyroglobulin</strong>",
+         "⚠ <strong>not needed</strong> — sensitive for Hashimoto's, less specific, and <strong>almost never influence clinical decisions in hypothyroidism</strong>"
+        ],
+        [
+         "<strong>Ultrasound</strong>",
+         "⚠ <strong>not needed</strong> — Hashimoto's has characteristic features but US is <strong>not sensitive, not specific, and not required</strong>. Only for a <strong>coincident nodule found on exam</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Workup skeleton</strong></p><p>- <strong>Hx</strong> — thyrotoxic or hypothyroid <strong>symptoms plus severity</strong>, associated features and severity, <strong>risk factors</strong>, and for hypothyroidism <strong>ask about past thyroid treatments</strong>.</p><p>- <strong>Screen <span class=\"wl\">serum TSH</span> when:</strong> compatible symptoms · <strong><span class=\"wl\">dyslipidemia</span></strong> · <strong><span class=\"wl\">anemia</span></strong> · <strong><span class=\"wl\">hyponatremia</span></strong> · personal or family autoimmune history · <strong><span class=\"wl\">Down syndrome</span> or <span class=\"wl\">Turner syndrome</span></strong> · previous thyroid disease or therapy · <strong>drugs</strong> · <strong><span class=\"wl\">pregnancy</span></strong> · <strong>suspected pituitary/hypothalamic disease — add FT4</strong>.</p><p>- <strong>PEx</strong> — <strong>signs, severity, and complications</strong>: pulse and <strong>pulse pressure</strong>, <strong>goiter and its symmetry</strong>, <strong>tenderness</strong>, eye signs, <strong>relaxation phase of the reflexes</strong>, skin.</p><p>- <strong>Ix</strong> — ⭐ <strong>limit investigations based on the history and physical</strong>. TSH → FT4/FT3 → etiology clinically, ± TRAb, vs RAI. For hypothyroid etiology: <strong>if there is no treatment history and no pituitary risk, you may simply assume Hashimoto's</strong>.</p><p>- <strong>Tx</strong> — see below. <strong>Supportive care is worth considering in everyone</strong>; lowering hormone production is a <strong>risks, benefits, and patient-preference</strong> conversation.</p><p>- <strong>Follow-up</strong> — <strong><span class=\"wl\">serum TSH</span> every 4–6 weeks until normal</strong>. ⚠ <strong>Do not monitor FT4/FT3 once you are the one replacing them.</strong></p>",
+       "cols": [
+        "Aim",
+        "Treatment",
+        "Detail that decides it"
+       ],
+       "rows": [
+        [
+         "<strong>Thyrotoxicosis — supportive</strong>",
+         "<strong><span class=\"wl\">beta-blockers</span></strong>",
+         "<strong>palpitations, tachycardia, tremor</strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">NSAIDs</span></strong>, then <strong><span class=\"wl\">steroids</span></strong>",
+         "<strong>pain of subacute thyroiditis</strong>"
+        ],
+        [
+         "<strong>Leakage / exogenous causes</strong>",
+         "⭐ <strong>supportive only, plus monitoring for the HYPOTHYROID phase</strong>",
+         "<strong>thyroiditis burns out</strong>; for exogenous disease, <strong>remove the excess</strong>"
+        ],
+        [
+         "<strong>↓ production — drugs</strong>",
+         "<strong><span class=\"wl\">thionamides</span></strong>: ⭐ <strong><span class=\"wl\">methimazole</span> favoured over <span class=\"wl\">PTU</span></strong>",
+         "⭐ <strong>often 1st line for <span class=\"wl\">Graves disease</span></strong>, because Graves is the one that can <strong>remit</strong>. <strong>~4–6 weeks to euthyroidism.</strong> Rare but serious: ⭐ <strong>agranulocytosis</strong>, <strong>liver dysfunction</strong>, <strong>drug-induced <span class=\"wl\">SLE</span></strong>. ⚠ <strong>can cause birth defects</strong>"
+        ],
+        [
+         "<strong>↓ production — RAI</strong>",
+         "<strong><span class=\"wl\">radioactive iodine ablation</span></strong>",
+         "⭐ <strong>often 1st line for toxic adenoma or <span class=\"wl\">TMNG</span></strong>; used in Graves <strong>if no remission</strong>. <strong>Permanent cure</strong>, but ⭐ <strong>high risk of permanent <span class=\"wl\">hypothyroidism</span></strong>. <strong>Takes ~6–12 weeks</strong>, and <strong>~10% need a 2nd treatment</strong>. ⚠ <strong>may worsen Graves eye disease, especially in smokers</strong>; ⛔ <strong>cannot be used in <span class=\"wl\">pregnancy</span></strong>"
+        ],
+        [
+         "<strong>↓ production — surgery</strong>",
+         "<strong><span class=\"wl\">total thyroidectomy</span></strong> (Graves, TMNG) · <strong><span class=\"wl\">hemithyroidectomy</span></strong> (adenoma)",
+         "⭐ <strong>rarely used.</strong> Reserved for a <strong>large symptomatic goiter</strong>, <strong>suspected coincident malignancy</strong>, <strong>intolerance of antithyroid drugs in pregnancy</strong>, or <strong>life-threatening thyroid storm refractory to medical treatment</strong>"
+        ],
+        [
+         "<strong>Hypothyroidism</strong>",
+         "<strong>oral <span class=\"wl\">levothyroxine</span> (L-T4) once daily, ~1.5 mcg/kg/day, titrated to a normal TSH</strong>",
+         "⭐ <strong>t½ = 1 week</strong>, which is why you <strong>wait 4–6 weeks between dose changes</strong>. <strong>Start low and titrate up if elderly or with heart disease.</strong> <strong>≥ 1 h before and ≥ 2 h after eating</strong>; <strong>4 h away from calcium, iron, magnesium, or a multivitamin</strong>; <strong>any convenient time of day they will actually remember, such as bedtime</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Subclinical disease",
+        "Pattern",
+        "Treat when"
+       ],
+       "rows": [
+        [
+         "<strong>Subclinical <span class=\"wl\">hypothyroidism</span></strong>",
+         "<strong>TSH ↑</strong> (usually <strong>< 10–20</strong>), FT4 and FT3 normal. <strong>May resolve spontaneously</strong>, especially <strong>TSH < 10 in the elderly</strong>",
+         "⭐ <strong>No evidence of benefit, except <span class=\"wl\">pregnancy</span>.</strong> Consider if <strong>TSH > 10</strong> or <strong>anti-TPO positive</strong> (both raise progression risk), or as a <strong>therapeutic trial</strong> for possible symptoms"
+        ],
+        [
+         "<strong>Subclinical <span class=\"wl\">hyperthyroidism</span></strong>",
+         "<strong>TSH ↓</strong>, FT4 and FT3 normal. Same causes as overt hyperthyroidism",
+         "Linked to <strong>bone loss and <span class=\"wl\">atrial fibrillation</span></strong>. <strong>Treat if older and/or TSH lower</strong>; <strong>monitor if younger and/or TSH borderline low</strong>. ⚠ Rarely <strong>assay interference</strong> — look up interfering substances and repeat"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Differential template — VITAMIN C &amp; D:</strong> <strong>V</strong>ascular · <strong>I</strong>nfection, Inflammation · <strong>T</strong>rauma · <strong>A</strong>utoimmune, Acquired, Allergic · <strong>M</strong>etabolic, Mental health · <strong>I</strong>atrogenic <em>(thyroid surgery or radiation; drugs)</em> · <strong>N</strong>eoplasm <em>(central, via pituitary tumour)</em> · <strong>C</strong>ongenital, Cyst · <strong>D</strong>egenerative.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Choosing Wisely, the six things to question:</strong> least invasive test first · <strong>only order tests that will change management</strong> · discuss with the patient whether a test is necessary · seek clarification about an unnecessary order · <strong>do not order tests for the learning experience</strong> · do not order tests in anticipation of preceptor preference.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w2-04",
      "num": "04",
      "name": "Clinical Presentation and Evaluation of Hyperparathyroidism and Hypoparathyroidism",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Hyperparathyroidism, Hypoparathyroidism & the Calcium Panel",
+     "framing": "<p>You do not diagnose these from the calcium. You diagnose them from <strong>the pattern across four analytes at once: PTH, calcium, phosphate, vitamin D</strong>. ⭐ <strong>Always send a <span class=\"wl\">PTH</span> with any abnormal calcium</strong>, because PTH is the branch point: <strong>high or inappropriately normal means the parathyroid is driving it; suppressed means something else is.</strong> ⭐ <strong>In hypocalcemia, phosphate is the branch point instead.</strong> And before any of it, <strong>correct for albumin</strong> — an uncorrected number sends you down the wrong branch.</p>",
+     "keypoints": "<p>⭐ <strong>Correct for albumin, then always send PTH</strong> — those two steps decide the whole workup, and the deck's own worked example (Ca 2.6 with albumin 20) corrects to <strong>3.0</strong>, straight past the admission threshold. ⭐ <strong>Fractional excretion of calcium separates FHH from primary hyperPTH: under 0.01 is FHH, over 0.02 is primary</strong> — but <strong>20% of FHH lands in the 0.01–0.02 overlap</strong>, and the result is only interpretable <strong>off thiazides for 3 months, with a normal magnesium and a 25-OH-D above 50</strong>. ⭐ <strong>In hypocalcemia, phosphate is the discriminator: high phosphate is a PTH problem, low phosphate is vitamin D</strong> — and vitamin D deficiency is the commoner of the two. <strong>Age cuts both ways in hyperPTH: under 50 is a reason to operate, over 50 and asymptomatic is a reason not to.</strong> ⭐ <strong>Loop diuretics treat hypercalcemia and thiazides cause it, but thiazides are the right drug in chronic hypocalcemia.</strong> <strong>Hypocalcemia will not correct while magnesium is low</strong>, and <strong>magnesium at either extreme can cause hypoparathyroidism</strong>.</p>",
+     "blocks": [
+      {
+       "t": "note",
+       "html": "<p>$$\\huge corrected\\ calcium = measured\\ calcium + 0.02(40 - measured\\ albumin) $$</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Normal <span class=\"wl\">serum calcium</span> 2.15–2.55 mmol/L</strong>, of which ⭐ <strong>the ionized fraction is 1.1–1.3 mmol/L (50%)</strong> and is the only part that acts; protein-bound is 0.9–1.1 (40%) and complexed 0.18 (10%). Every 1 g/L of albumin away from <strong>40</strong> shifts calcium by <strong>0.02</strong>. <strong><span class=\"wl\">hypercalcemia</span> is corrected Ca > 2.55</strong>; <strong><span class=\"wl\">hypocalcemia</span> is < 2.1</strong>. ⚠ <strong>Symptoms track both the absolute value and its RATE OF RISE</strong>, which is why a slowly climbing calcium is often silent.</p>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Corrected calcium is HIGH\"] --> B[\"Serum PTH - ALWAYS\"]\n    B --> C{\"PTH high or inappropriately normal?\"}\n    C -->|\"YES - PTH-mediated\"| D[\"24-hour urine Ca + creatinine<br/>fractional excretion of calcium\"]\n    D -->|\"FECa over 0.02\"| E[\"PRIMARY hyperparathyroidism<br/>80% a single adenoma\"]\n    D -->|\"FECa under 0.01\"| F[\"FHH - inactivating CaSR mutation\"]\n    D -->|\"FECa 0.01 to 0.02\"| G[\"OVERLAP ZONE<br/>20% of FHH sits here<br/>recheck off thiazides, normal Mg, 25-OH-D over 50\"]\n    C -->|\"YES, with known CKD\"| H[\"TERTIARY hyperparathyroidism<br/>secretes DESPITE hypercalcemia\"]\n    C -->|\"NO - PTH suppressed\"| I[\"PTH-INDEPENDENT\"]\n    I --> J[\"MAJOR - malignancy<br/>MINOR - vitamin D, immobilization,<br/>thiazides, milk-alkali, endocrine\"]"
+      },
+      {
+       "t": "note",
+       "html": "<p>$$\\huge FE_{Ca} = \\frac{Urine\\ Ca \\times (Serum\\ Cr / 1000)}{Serum\\ Ca \\times Urine\\ Cr}$$</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Over 90% of all hypercalcemia is hyperparathyroidism or malignancy.</strong> Everything else is the minor list you reach for once PTH has told you which side you are on.</p>",
+       "cols": [
+        "Condition",
+        "<strong><span class=\"wl\">PTH</span></strong>",
+        "<strong>Ca2+</strong>",
+        "<strong><span class=\"wl\">Phosphate</span></strong>",
+        "<strong>Vitamin D</strong>",
+        "What produces it"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Primary hyperPTH</span></strong>",
+         "<strong>↑ or inappropriately normal</strong>",
+         "<strong>↑</strong>",
+         "<strong>↓</strong>",
+         "<strong>↑</strong>",
+         "⭐ <strong>80% <span class=\"wl\">parathyroid adenoma</span></strong>; also hyperplasia, carcinoma, and <strong>familial syndromes</strong> — familial isolated hyperPTH, <strong>hyperparathyroidism-jaw tumour syndrome</strong>, <strong><span class=\"wl\">MEN</span></strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Secondary hyperPTH</span></strong>",
+         "↑",
+         "⭐ <strong>normal</strong>",
+         "↑ <strong>or</strong> ↓",
+         "<strong>↓</strong>",
+         "⭐ <strong><span class=\"wl\">chronic kidney disease</span></strong> — the kidney cannot make vitamin D, so PTH rises to compensate"
+        ],
+        [
+         "<strong><span class=\"wl\">Tertiary hyperPTH</span></strong>",
+         "<strong>↑↑</strong>",
+         "<strong>↑</strong>",
+         "<strong>↑</strong>",
+         "↓",
+         "⭐ <strong>Secondary hyperPTH gone autonomous</strong> — the gland <strong>keeps secreting despite hypercalcemia</strong>. Almost always <span class=\"wl\">CKD</span>"
+        ],
+        [
+         "<strong><span class=\"wl\">Primary hypoparathyroidism</span></strong>",
+         "<strong>↓</strong>",
+         "↓",
+         "<strong>↑</strong>",
+         "↓",
+         "⭐ <strong>post-<span class=\"wl\">parathyroidectomy</span> (75%)</strong>; <strong>non-surgical 25%</strong> — autoimmune, infiltrative, post-radiation, metastatic, genetic, or <strong>functional from magnesium insufficiency <em>or</em> excess</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Phosphate separates primary from tertiary when calcium cannot:</strong> both run a high calcium, but <strong>primary drops phosphate (PTH is phosphaturic) while tertiary raises it (the failing kidney cannot excrete it)</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Diagnosing hypoparathyroidism:</strong> persistent <strong><span class=\"wl\">hypocalcemia</span> with a LOW or inappropriately normal PTH</strong>, and ⭐ <strong>it must persist 6 months post-surgery before you call it permanent</strong>.</p>",
+       "cols": [
+        "Hypercalcemia, PTH-independent",
+        "Mechanism"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Malignancy</strong> (major)",
+         "<strong>metastases</strong> — <strong>breast</strong> · ⭐ <strong>humoral PTHrP</strong> — <strong>solid tumours (lung, kidney), adult T-cell leukemia</strong> · <strong>lymphokinins</strong> — <strong><span class=\"wl\">myeloma</span></strong> · <strong>prostaglandins</strong> · <strong>vitamin D-like steroids</strong> — <strong><span class=\"wl\">lymphoma</span></strong>"
+        ],
+        [
+         "<strong>Vitamin D related</strong>",
+         "<strong>exogenous ingestion</strong> · <strong>granulomatous disease: <span class=\"wl\">sarcoid</span> and <span class=\"wl\">TB</span></strong>"
+        ],
+        [
+         "⭐ <strong>Immobilization</strong>",
+         "on a background of <strong><span class=\"wl\">Paget's</span></strong>, <strong><span class=\"wl\">thyrotoxicosis</span></strong>, or <strong><span class=\"wl\">adrenal insufficiency</span></strong>"
+        ],
+        [
+         "<strong>Medications</strong>",
+         "<strong><span class=\"wl\">thiazides</span></strong> — ⚠ <strong>not merely hemoconcentration, and usually transient</strong>"
+        ],
+        [
+         "<strong>Miscellaneous endocrine</strong>",
+         "<span class=\"wl\">hyperthyroidism</span> · <span class=\"wl\">acromegaly</span> · <span class=\"wl\">pheochromocytoma</span> · <span class=\"wl\">adrenal insufficiency</span> · <span class=\"wl\">parenteral nutrition</span> · <strong><span class=\"wl\">milk-alkali syndrome</span></strong> (a <strong><span class=\"wl\">metabolic alkalosis</span></strong>, worse when absorbable antacids treated <span class=\"wl\">PUD</span>)"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Hypocalcemia group",
+        "Ca2+",
+        "<strong>Phosphate</strong>",
+        "PTH",
+        "Cause"
+       ],
+       "rows": [
+        [
+         "<strong>PTH deficient</strong>",
+         "↓",
+         "⭐ <strong>HIGH</strong>",
+         "<strong>low</strong>",
+         "<strong>failure to SECRETE</strong> — <span class=\"wl\">hypoparathyroidism</span>"
+        ],
+        [
+         "<strong>PTH resistant</strong>",
+         "↓",
+         "⭐ <strong>HIGH</strong>",
+         "<strong>high</strong>",
+         "<strong>failure to RESPOND</strong> — <span class=\"wl\">pseudohypoparathyroidism</span>"
+        ],
+        [
+         "<strong>Vitamin D deficient</strong>",
+         "↓",
+         "⭐ <strong>LOW</strong>",
+         "high",
+         "⭐ <strong>more common than the PTH disorders</strong>: <strong>malabsorption</strong> (fat-soluble), <strong>renal or liver failure</strong>, <strong>drugs (<span class=\"wl\">phenytoin</span>)</strong>, diet (rare), <strong>no sun</strong> → <span class=\"wl\">rickets</span> / <span class=\"wl\">osteomalacia</span>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>The five failures behind any hypocalcemia:</strong> failure to <strong>secrete</strong> PTH · failure to <strong>respond</strong> to PTH · <strong>deficiency</strong> of vitamin D · failure to <strong>respond</strong> to vitamin D · rarely, <strong>acute complexation</strong> of calcium.</p><p><strong>Minor causes:</strong> <span class=\"wl\">hypoalbuminemia</span> · <strong><span class=\"wl\">hypomagnesemia</span></strong> (alcohol, malabsorption) · <strong><span class=\"wl\">pancreatitis</span></strong> · <strong><span class=\"wl\">tumour lysis</span>, <span class=\"wl\">rhabdomyolysis</span>, <span class=\"wl\">sepsis</span></strong> · <strong>massive <span class=\"wl\">blood transfusion</span></strong>.</p>",
+       "cols": [
+        "Condition",
+        "PTH",
+        "Ca2+",
+        "Phosphate",
+        "<strong>Appearance</strong>"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">Primary hypoparathyroidism</span></strong>",
+         "<strong>↓</strong>",
+         "↓",
+         "↑",
+         "normal"
+        ],
+        [
+         "<strong><span class=\"wl\">PHP type 1A</span></strong>",
+         "<strong>↑</strong>",
+         "↓",
+         "↑",
+         "⭐ <strong><span class=\"wl\">Albright's hereditary osteodystrophy</span>: round facies, short stature, short metacarpals and metatarsals</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">PHP type 1B</span></strong> / <strong><span class=\"wl\">type 2</span></strong>",
+         "<strong>↑</strong>",
+         "↓",
+         "↑",
+         "normal"
+        ],
+        [
+         "<strong><span class=\"wl\">PPHP</span></strong>",
+         "normal",
+         "<strong>normal</strong>",
+         "<strong>normal</strong>",
+         "⭐ <strong>the SAME phenotype as 1A, with NO PTH insensitivity</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>PTH direction separates true hypoparathyroidism from the pseudo forms</strong>, and ⭐ <strong>PPHP is the trap: Albright's phenotype with a completely normal panel.</strong> Phenotype alone cannot separate PPHP from PHP 1A; only the labs can.</p>",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">hypercalcemia</span></strong>",
+        "<strong><span class=\"wl\">hypocalcemia</span></strong>"
+       ],
+       "rows": [
+        [
+         "Mnemonic",
+         "<strong><span class=\"wl\">Stones, Bones, Groans, Moans, Thrones, Muscle Tone, and Psychiatric Overtones</span></strong>",
+         "<strong><span class=\"wl\">CATS go Numb</span></strong>"
+        ],
+        [
+         "Mechanism of the neuro signs",
+         "↓ excitability",
+         "⭐ <strong>↓ Ca2+ interaction with Na+ channels → cells depolarize MORE easily</strong>"
+        ],
+        [
+         "Neuro / MSK",
+         "⭐ <strong>weakness and <span class=\"wl\">hyporeflexia</span></strong> · bone pain and tenderness · <strong>cystic bone lesions</strong>, <strong>skeletal demineralization</strong>, <strong>spontaneous fractures</strong>",
+         "<strong>Convulsions</strong> · <strong>Tetany: <span class=\"wl\">Trousseau's sign</span> (⭐ more specific) and <span class=\"wl\">Chvostek's sign</span></strong>, which appear in <strong>MILD</strong> disease · <strong>perioral paresthesias</strong>, <strong>carpopedal spasm</strong>, <strong>laryngeal spasm</strong>, <strong>palpitations</strong> in <strong>SEVERE</strong> disease"
+        ],
+        [
+         "Cardiac / ECG",
+         "<strong>short QT</strong>, <strong>Osborn wave</strong>, <span class=\"wl\">bradycardia</span>, <strong><span class=\"wl\">AV block</span></strong>",
+         "⭐ <strong>QT PROLONGATION → <span class=\"wl\">torsades de pointes</span></strong>"
+        ],
+        [
+         "Renal / GI",
+         "<strong><span class=\"wl\">nephrolithiasis</span></strong>, <strong><span class=\"wl\">gallstones</span></strong> · <strong><span class=\"wl\">pancreatitis</span> acute AND chronic</strong>, <strong>pancreatic calcifications</strong>, vomiting, <span class=\"wl\">anorexia</span>, constipation · <strong><span class=\"wl\">polyuria</span> via <span class=\"wl\">nephrogenic diabetes insipidus</span></strong> · <strong>acute and chronic renal insufficiency</strong>",
+         "—"
+        ],
+        [
+         "Psych",
+         "<strong>confusion, personality change, <span class=\"wl\">depression</span> and apathy</strong>, delirium → coma",
+         "<strong>emotional instability</strong>, <span class=\"wl\">anxiety</span>, ⭐ <strong>\"brain fog\"</strong>, paresthesia"
+        ],
+        [
+         "Chronic",
+         "↑ BP, fever, fatigue, malaise",
+         "<strong><span class=\"wl\">cataracts</span></strong>, <strong>dry skin</strong>, <strong>brittle nails</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Treatment of <span class=\"wl\">hypercalcemia</span></strong> — admit if corrected Ca <strong>> 3 mmol/L</strong>.</p><p>1. <strong>Volume repletion</strong> — assume a <strong>4–6 L deficit</strong>, replace with <strong><span class=\"wl\">normal saline</span></strong>.</p><p>2. <strong>Forced diuresis</strong> — <strong>4–10 L of NS plus <span class=\"wl\">furosemide</span> plus K+</strong>, ⚠ <strong>only once well hydrated</strong>. ⭐ <strong>LOOP diuretics only, NEVER <span class=\"wl\">thiazides</span></strong> — thiazides <em>cause</em> hypercalcemia.</p><p>3. <strong><span class=\"wl\">bisphosphonates</span></strong> — <strong>IV <span class=\"wl\">zoledronate</span></strong>.</p><p>4. <strong><span class=\"wl\">calcitonin</span></strong> — ⚠ <strong><span class=\"wl\">tachyphylaxis</span> at 24–48 h, so it is a bridge, not a treatment</strong>.</p><p>5. <strong><span class=\"wl\">prednisone</span> 40–60 mg/day then taper</strong> — because <strong>steroids ↓ activation of vitamin D</strong>: for <strong><span class=\"wl\">myeloma</span></strong>, <strong><span class=\"wl\">lymphoma</span></strong>, <strong><span class=\"wl\">sarcoidosis</span></strong>, <strong><span class=\"wl\">vitamin D toxicity</span></strong>. <strong><span class=\"wl\">Dialysis</span></strong> is the last resort.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Treatment of primary hyperPTH:</strong> <strong>asymptomatic and over 50 → no treatment</strong>. Drugs for bone protection: <strong><span class=\"wl\">bisphosphonates</span></strong>, <strong><span class=\"wl\">denosumab</span></strong>, <strong>estrogen / <span class=\"wl\">HRT</span></strong>, <strong><span class=\"wl\">cinacalcet</span></strong>. ⭐ <strong>Keep them well hydrated and avoid <span class=\"wl\">thiazides</span> and <span class=\"wl\">lithium</span>.</strong> <strong>Symptomatic → surgery.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong><span class=\"wl\">parathyroidectomy</span> is indicated when any one of these holds:</strong> <strong>Ca > 0.25 mmol/L above the upper limit</strong> · <strong><span class=\"wl\">bone mineral density</span> T-score < −2.5</strong> at lumbar spine, femoral neck, total hip, or ⅓ radius · <strong>vertebral fracture</strong> · <strong><span class=\"wl\">creatinine clearance</span> < 60 mL/min</strong> · <strong>24-hour urine calcium > 10 mmol/day with ↑ stone risk</strong> · <strong><span class=\"wl\">nephrolithiasis</span> or nephrocalcinosis</strong> · ⭐ <strong>age < 50</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Treatment of <span class=\"wl\">hypocalcemia</span></strong> — reserved for corrected Ca <strong>< 1.9 mmol/L</strong> <em>plus</em> <strong>neurological</strong> (tetany, seizure, carpopedal spasm) <strong>or cardiac</strong> (<strong>prolonged QT</strong>) symptoms.</p><p>- <strong>Acute:</strong> <strong>1–2 g of 10% <span class=\"wl\">calcium gluconate</span> in 50 mL of 5% dextrose over 15–20 min</strong> → <strong>1–3 mg/kg/h elemental calcium</strong> → <strong>cardiac monitoring and admission</strong> → ⭐ <strong>treat coexisting <span class=\"wl\">hypomagnesemia</span></strong>, because <strong>the calcium will not correct until the magnesium does</strong>.</p><p>- <strong>Chronic (same as treating <span class=\"wl\">hypoparathyroidism</span>):</strong> <strong><span class=\"wl\">calcitriol</span> 0.25 mcg b.i.d.</strong>, monitoring calcium <em>and</em> phosphate, keeping <strong><span class=\"wl\">25-OH-D</span> > 75 nmol/L</strong> · <strong>1–2 g elemental calcium in divided doses</strong> · ⭐ <strong><span class=\"wl\">thiazides</span> here, to ↓ calcium excretion and lower stone risk</strong> · <strong>recombinant human PTH (rhPTH)</strong>, approved in the <strong>US and Europe</strong>.</p><p>- ⚠ <strong>Aim for the LOW-normal range</strong> and monitor for ectopic calcification: <strong>renal ultrasound</strong> for nephrocalcinosis, <strong>head MRI</strong> for <strong><span class=\"wl\">basal ganglia</span> calcification</strong>, and keep the <strong>calcium-phosphate product under 4.4 mmol²/L²</strong>.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w2-05",
      "num": "05",
      "name": "Pathology of Thyroid Masses",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Thyroid Masses: Clinical Evaluation and Pathology",
+     "framing": "<p><strong>Most thyroid nodules are benign</strong> (0.1% annual incidence, <strong>10% lifetime probability</strong>), so the job is not to find cancer in every nodule but to <strong>stratify which nodule earns a biopsy and which biopsy earns an operation</strong>. ⭐ <strong>Four inputs stack into one decision: clinical risk, biochemistry, imaging, and FNAB — together they give risk-adapted management</strong>, and none of them is read alone. The order is fixed: <strong>TSH first, because a low TSH sends you to a radioactive iodine scan instead of an ultrasound.</strong></p>",
+     "keypoints": "<p>⭐ <strong>TSH is the first test, because a low TSH diverts you to an RAI scan and a hot nodule is benign</strong>; a normal or high TSH goes to <strong>ultrasound and TI-RADS</strong>. ⭐ <strong>FNA cannot tell a follicular adenoma from a follicular carcinoma</strong> (identical nuclei, and only invasion separates them), but ⭐ <strong>it diagnoses papillary carcinoma outright</strong>, because in PTC the nuclei <em>are</em> the diagnosis. ⭐ <strong>Graves makes papillary projections without atypia</strong> — architecture alone does not mean papillary carcinoma. ⭐ <strong>Amyloid in a thyroid tumour is calcitonin, and means medullary carcinoma</strong>, which is <strong>RET point mutation</strong> while PTC is <strong>RET-PTC translocation</strong>. ⭐ <strong>Anaplastic carcinoma is what a well-differentiated cancer becomes</strong>, and it is the one that will not take up iodine. <strong>Needle core biopsy is the wrong instrument for the neck</strong>, and <strong>punch biopsy is for skin</strong>. <strong>Child, male, first-degree family history, and neck radiation are the clinical risk factors that raise the pre-test probability before any imaging.</strong></p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Thyroid nodule\"] --> B[\"Biochemistry - TSH<br/>microbiology and hematology have NO role\"]\n    B --> C{\"TSH?\"}\n    C -->|\"LOW\"| D[\"Radioactive iodine scan\"]\n    D --> E[\"HOT nodule = BENIGN<br/>address the hyperthyroidism\"]\n    D --> F[\"COLD nodule = INDETERMINATE\"]\n    C -->|\"NORMAL or HIGH\"| G[\"Ultrasound + TI-RADS score\"]\n    G -->|\"LOW risk - TR3\"| H[\"No follow-up needed\"]\n    G -->|\"INDETERMINATE - TR4\"| I[\"FNAB or monitor\"]\n    G -->|\"HIGH risk - TR5\"| J[\"FNAB\"]\n    F --> J\n    I --> K[\"Bethesda category\"]\n    J --> K\n    K --> L[\"RISK-ADAPTED MANAGEMENT\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Bethesda category",
+        "Risk level",
+        "<strong>Risk of malignancy</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>I. Non-diagnostic</strong>",
+         "indeterminate",
+         "<strong>5–20%</strong>"
+        ],
+        [
+         "<strong>II. Benign</strong>",
+         "<strong>LOW</strong>",
+         "<strong>2–7%</strong>"
+        ],
+        [
+         "<strong>III. Atypia of Undetermined Significance (AUS)</strong>",
+         "indeterminate",
+         "<strong>12–30%</strong>"
+        ],
+        [
+         "<strong>IV. Follicular Neoplasm</strong>",
+         "indeterminate",
+         "<strong>23–34%</strong>"
+        ],
+        [
+         "<strong>V. Suspicious for malignancy</strong>",
+         "<strong>HIGH</strong>",
+         "<strong>67–83%</strong>"
+        ],
+        [
+         "<strong>VI. Malignant</strong>",
+         "<strong>HIGH</strong>",
+         "<strong>97–100%</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Risk-adapted management",
+        "When"
+       ],
+       "rows": [
+        [
+         "<strong>Clinical follow-up</strong>",
+         "<strong>low-risk US (TR3) + benign cytology</strong>"
+        ],
+        [
+         "<strong>Ultrasound surveillance ± repeat biopsy</strong>",
+         "<strong>moderate-risk US (TR4) + benign cytology</strong>"
+        ],
+        [
+         "<strong>Repeat biopsy</strong>",
+         "<strong>insufficient or some indeterminate cytology</strong> · <strong>benign cytology but high-risk US (TR5)</strong>"
+        ],
+        [
+         "<strong>Surgery</strong>",
+         "<strong>malignancy</strong> · <strong>some indeterminate cytology</strong> · <strong>benign but symptomatic</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>A benign cytology does not end the conversation if the ultrasound is TR5</strong> — the discordance is what triggers the repeat biopsy.</p>",
+       "cols": [
+        "Urgent presentation",
+        "Points to"
+       ],
+       "rows": [
+        [
+         "<strong>Rapid growth</strong>",
+         "<strong>malignancy</strong>, cyst"
+        ],
+        [
+         "<strong>Progressive (severe) dysphagia</strong>",
+         "<strong>malignancy</strong> > progressive goiter"
+        ],
+        [
+         "<strong>Stridor</strong>",
+         "<strong>malignancy</strong> > progressive goiter"
+        ],
+        [
+         "<strong>Large, solid, fixed, firm mass</strong>",
+         "⭐ <strong>malignancy</strong>"
+        ],
+        [
+         "<strong>Diffuse thyroid enlargement</strong>",
+         "<strong><span class=\"wl\">Graves disease</span></strong> > toxic <span class=\"wl\">MNG</span>"
+        ],
+        [
+         "<strong>Plus thyrotoxicosis</strong>",
+         "urgency is about <strong>the hyperthyroidism itself</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Risk factors for cancer in a patient with a nodule:</strong> ⭐ <strong>child</strong> · ⭐ <strong>male</strong> · <strong>family history in a 1st-degree relative</strong> · <strong>neck exposure to radiation</strong>. <strong>Symptoms:</strong> dysphagia, hoarseness, stridor, growth. <strong>Signs:</strong> <strong>firm and/or fixed mass</strong>, <strong>suspicious lymph nodes</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⚠ <strong>Do not forget the anatomy: a mass in the thyroid area is not always thyroid.</strong> Also consider <strong>parathyroid</strong>, <strong>lymph node</strong>, <strong>skin</strong>, and <strong>soft tissue</strong>.</p>",
+       "cols": [
+        "Origin",
+        "Neoplasm",
+        "Share",
+        "Prevalence / demographics",
+        "Key histology",
+        "Molecular",
+        "Prognosis"
+       ],
+       "rows": [
+        [
+         "<u><strong>Follicular cell</strong></u><br><strong>the great majority</strong>",
+         "<strong><span class=\"wl\">follicular adenoma</span></strong>",
+         "<strong>benign</strong>",
+         "<strong>3–5%</strong>, <strong>F:M 5:1</strong>, <strong>40s–50s</strong>",
+         "<strong>Encapsulated, well-circumscribed, PUSHING border</strong>; microfollicles; ⭐ <strong>NO capsular invasion, NO lymphovascular invasion, NO nuclear atypia</strong>",
+         "<strong>frequent RAS</strong>",
+         "⭐ <strong>cured by hemithyroidectomy, no recurrence</strong>"
+        ],
+        [
+         "",
+         "⭐ <strong><span class=\"wl\">papillary carcinoma</span></strong>",
+         "⭐ <strong>85–90%, the most common</strong>",
+         "<strong>F:M 3:1</strong>, <strong>40–60 yo</strong>",
+         "⭐ <strong>Diagnosis is by NUCLEAR features</strong>: enlarged, elongated, <strong>irregular contours</strong>, <strong>grooves</strong>, <strong>clearing</strong>, <strong>inclusions</strong>. Classic type adds <strong>papillary architecture on fibrovascular cores</strong>. <strong>Often multifocal</strong>",
+         "<strong>BRAF mutation</strong>, <strong>RET-PTC translocation</strong>",
+         "⭐ <strong>good: 93% at 10 years</strong>. Spreads via <strong>lymphatics to locoregional nodes</strong>, which may be the <strong>initial presentation</strong>"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">follicular carcinoma</span></strong>",
+         "<strong>5–10%</strong>",
+         "—",
+         "<strong>Like an adenoma, but with INVASION</strong>: growth into adjacent normal thyroid (focal or diffuse) <strong>and/or lymphatic or angioinvasion</strong>. ⭐ <strong>Lacks nuclear atypia</strong>",
+         "<strong>frequent RAS</strong>, suggesting it <strong>derives from adenomas</strong>",
+         "<strong>hematogenous</strong> spread"
+        ],
+        [
+         "",
+         "<strong>poorly differentiated carcinoma</strong>",
+         "<strong>< 5%</strong>",
+         "—",
+         "between differentiated and anaplastic",
+         "—",
+         "increasingly aggressive"
+        ],
+        [
+         "",
+         "<strong><span class=\"wl\">anaplastic (undifferentiated)</span></strong>",
+         "<strong>< 5%</strong>",
+         "<strong>older individuals</strong>",
+         "<strong>Sheets of malignant cells, NO follicle formation</strong>, angioinvasion, <strong>extrathyroidal extension into neck soft tissue</strong>",
+         "<strong>BRAF testing matters</strong> — a <strong>BRAF inhibitor</strong> may be tried",
+         "⭐ <strong>very aggressive, often lethal.</strong> <strong>Rapidly expanding neck mass</strong>; ⭐ <strong>arises by progression OF a well-differentiated carcinoma</strong>; infiltration often <strong>prevents adequate surgical removal</strong>, and ⚠ <strong>it does not respond to RAI</strong> so <strong>external beam</strong> is used"
+        ],
+        [
+         "<u><strong>C-cell (parafollicular)</strong></u>",
+         "<strong><span class=\"wl\">medullary carcinoma</span></strong>",
+         "<strong>2%</strong>",
+         "⭐ <strong>sporadic 75%</strong>, <strong><span class=\"wl\">MEN</span> 2A/2B 25%</strong>",
+         "Infiltrative; <strong>nests, cords, trabeculae — NOT papillae</strong>; ⭐ <strong>amyloid deposition, which IS calcitonin</strong>; ⚠ <strong>negative for thyroid markers</strong>",
+         "⭐ <strong>RET POINT mutations</strong> (⚠ <em>not</em> a translocation, unlike PTC)",
+         "<strong>frequent metastasis, poorer prognosis</strong>. ⭐ <strong>Monitor serum <span class=\"wl\">calcitonin</span> for recurrence</strong>"
+        ],
+        [
+         "<u><strong>Rare</strong></u>",
+         "<strong><span class=\"wl\">lymphoma</span></strong>, soft-tissue tumours",
+         "rare",
+         "—",
+         "—",
+         "—",
+         "<strong>lymphoma counts as URGENT</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The single most testable limitation of FNA: a follicular adenoma and a follicular carcinoma have identical nuclei, so FNA cannot separate them.</strong> The distinction is <strong>invasion</strong>, which needs the resected specimen. ⭐ <strong>The opposite is true of papillary carcinoma, whose nuclear features are diagnostic and are readily seen on FNA.</strong></p>",
+       "cols": [
+        "Benign nodule",
+        "Prevalence",
+        "Mechanism",
+        "Histology"
+       ],
+       "rows": [
+        [
+         "<strong>Multinodular hyperplasia / <span class=\"wl\">multinodular goitre</span></strong>",
+         "<strong>6–23% F, 1.5–5% M</strong>",
+         "<strong>sporadic or endemic</strong> (iodine-deficient regions)",
+         "<strong>Nodules of varying size, hyperplastic follicular cells at different functional levels</strong> — some more, some less, so ⭐ <strong>the net result is usually EUTHYROID</strong>. <strong>No atypia.</strong> Enlarged, colloid-rich follicles, uniform nuclei. <strong>Degenerative changes are common: cystic change, hemorrhage, fibrosis, calcification</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Graves disease</span> (diffuse toxic hyperplasia)</strong>",
+         "<strong>1% of population</strong>, <strong>F:M 8:1</strong>",
+         "<strong>autoimmune</strong>: antibodies bind <strong>TSH receptors on ALL follicle cells</strong>, driving both <strong>hormone production and follicle-cell PROLIFERATION</strong>",
+         "<strong>Diffusely enlarged, cellular, hyperplastic; NO atypia</strong> ± chronic inflammation. ⚠ ⭐ <strong>Hyperplastic follicle cells form PAPILLARY PROJECTIONS with no atypia</strong> — the trap against papillary carcinoma. Extrathyroidal: <strong>ophthalmopathy 25–50%</strong>, <strong>pretibial myxedema 0.5–4%</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Hashimoto thyroiditis</span> (chronic lymphocytic thyroiditis)</strong>",
+         "<strong>1–2% of population</strong>, <strong>F:M 4:1</strong>",
+         "<strong>autoimmune destruction</strong>",
+         "<strong>Diffuse chronic inflammation, fibrosis, and ⭐ HURTHLE CELLS</strong> — follicle cells that acquire <strong>abundant pink cytoplasm and larger nuclei</strong>, the <strong>same cell looking different (metaplasia)</strong>. ⭐ <strong>Early on, released stored colloid can cause THYROTOXIC symptoms</strong>; the gland may be enlarged or nodular, then <strong>becomes fibrotic and small</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Sampling method",
+        "Where it belongs"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Fine needle aspiration biopsy (FNAB)</strong> — <strong>22 G or smaller</strong>",
+         "⭐ <strong>The neck, and the thyroid especially</strong>: <strong>safer, and no tumour seeding</strong>. Minimally invasive, quick, <strong>inexpensive</strong>, safe, well tolerated, preserves quality of life. ⚠ <strong>needs expertise</strong>. Also the choice in a <strong>very ill</strong> patient"
+        ],
+        [
+         "<strong>Needle core biopsy</strong> — <strong>21 G or larger</strong>",
+         "<strong>minimal use in the neck</strong> (large bore → <strong>tumour seeding and hematoma</strong>). Preferred for <strong>breast cancer</strong>, to see invasion, and <strong>may be preferred for lymphoma</strong>"
+        ],
+        [
+         "<strong>Punch biopsy</strong>",
+         "<strong>skin lesions only</strong>"
+        ],
+        [
+         "<strong>Incisional / excisional biopsy</strong>",
+         "more morbidity and pain, <strong>needs an operating room</strong>. ⚠ <strong>not done for the thyroid</strong>, because it is vascular — surgery there means <strong>lobectomy or thyroidectomy</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Reading an FNAB report — three parts.</strong> <strong>Adequacy</strong> (\"satisfactory for evaluation\" means it is a good aspirate) · <strong>Diagnosis</strong> (e.g. <em>benign follicular nodule</em>, ROM 0–3%, or <em>positive for malignancy, papillary carcinoma</em>, ROM 97–99%) · <strong>Observations</strong> (what is actually under the microscope: colloid and sheets of follicular cells, or <strong>powdery chromatin, nuclear grooves, pseudoinclusions, micronucleoli, crowding</strong>). ⭐ <strong>Then correlate it with the clinical picture and the ultrasound TI-RADS risk</strong> — the report is one of four inputs, not the answer.</p>",
+       "cols": [
+        "Treatment",
+        "Indication"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">hemithyroidectomy</span></strong>",
+         "<strong>low-risk</strong> established (<strong>FNA-positive</strong>) or suspected cancer <strong>> 1 cm</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">total thyroidectomy</span></strong>",
+         "<strong>high-risk</strong> cases"
+        ],
+        [
+         "<strong>Lymph node dissection</strong>",
+         "<strong>evidence of nodal disease</strong>"
+        ],
+        [
+         "<strong>Post-op <span class=\"wl\">radioactive iodine ablation</span> (I-131)</strong>",
+         "⭐ <strong>well-differentiated carcinoma with high recurrence risk</strong> — ⚠ <strong>useless in poorly differentiated disease, which does not take up iodine</strong>"
+        ],
+        [
+         "<strong>External beam radiotherapy</strong>",
+         "<strong>extensive extrathyroidal extension</strong>, and <strong>anaplastic carcinoma</strong>"
+        ],
+        [
+         "<strong>Chemotherapy / <span class=\"wl\">tyrosine kinase inhibitors</span></strong>",
+         "some <strong>advanced</strong> cancers"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The surgical pathology report is what closes the case.</strong> Its elements decide the next step: <strong>tumour type</strong> · <strong>unifocal or multifocal</strong> · <strong>size</strong> · <strong>encapsulated or not</strong> · <strong>capsular invasion, focal or extensive</strong> · <strong>lymphatic invasion</strong> · <strong>angioinvasion</strong> · <strong>extrathyroidal extension</strong> · <strong>lymph node metastasis, with the size of the largest and whether there is extranodal extension</strong> · <strong>margin status</strong>. Together they determine <strong>the need for additional surgery, RAI, external beam radiation, and chemotherapy</strong>, plus <strong>local recurrence risk and prognosis</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Staging turns on age 55</strong> in differentiated thyroid cancer. <strong>10-year disease-specific survival: stage I 98–100%, stage II 85–90%, and in the ≥55 group stage III 60–70%, stage IV under 50%.</strong></p>"
+      }
+     ]
     },
     {
      "id": "endo-w2-06",
      "num": "06",
      "name": "Clinical Presentation and Evaluation of Osteoporosis",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Osteoporosis: Diagnosis, Risk and Treatment",
+     "framing": "<p>⭐ <strong>You can diagnose osteoporosis three ways, and only one of them involves a bone density scan.</strong> A <strong><span class=\"wl\">fragility fracture</span></strong> alone is enough, whatever the BMD says. That is the whole point of the treatment gap: a fracture <em>is</em> the diagnosis, and ⭐ <strong>only 15% of patients are treated after a fragility fracture, against 80% who get a beta blocker after a heart attack.</strong> Once diagnosed, treatment choice turns on <strong>which fracture site you need to prevent</strong> and <strong>whether the patient has already failed or been harmed by an antiresorptive</strong>.</p>",
+     "keypoints": "<p>⭐ <strong>A fragility fracture diagnoses osteoporosis on its own</strong> — but <strong>skull, hands, feet and ankles do not count</strong>, and neither does a genuinely traumatic fracture. ⭐ <strong>T-score compares to a young adult, Z-score to age-matched peers</strong>; only the T-score diagnoses. ⭐ <strong><span class=\"wl\">raloxifene</span> and <span class=\"wl\">teriparatide</span> have no hip fracture data</strong> — reach for a bisphosphonate, <span class=\"wl\">denosumab</span>, or estrogen when the hip is the concern. ⭐ <strong>Every anabolic course must be followed by an antiresorptive</strong>, at 1 year for romosozumab and 2 for teriparatide. <strong>ONJ has a definition with a clock in it: exposed bone unhealed at 8 weeks</strong>, and <strong>dental work goes first</strong>. <strong>Groin or thigh pain in a patient on a bisphosphonate is an impending atypical femoral fracture</strong>, not arthritis.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Diagnose osteoporosis if any ONE holds",
+        "Detail"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>A <span class=\"wl\">fragility fracture</span></strong>",
+         "irrespective of any other measure. ⚠ <strong>EXCLUDING fractures of the skull, hands, feet and ankles, and any fracture with real trauma</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">bone mineral density</span> T-score ≤ −2.5</strong>",
+         "—"
+        ],
+        [
+         "<strong>10-year fracture risk > 20%</strong>",
+         "in the <strong>absence</strong> of a fragility fracture and with a T-score <strong>above</strong> −2.5"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Osteoporosis is a silent disease.</strong> The large majority are <strong>asymptomatic</strong>, and symptoms come from fractures. ⚠ ⭐ <strong>The exception is the spine: up to two thirds of vertebral fractures are asymptomatic</strong>, found incidentally on x-ray. They are graded on <strong>vertebral height loss</strong>, with <strong>≥ 25% loss considered significant</strong>, and over time produce <strong><span class=\"wl\">kyphosis</span></strong>.</p>",
+       "cols": [
+        "BMD concept",
+        "What it actually is"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">bone mineral density</span></strong>",
+         "⚠ <strong>a misnomer</strong>: bone mineral <strong>content divided by AREA</strong>, not volume. It is a <strong>surrogate measure for fracture</strong>"
+        ],
+        [
+         "⭐ <strong>T-score</strong>",
+         "the patient's BMD against <strong>a young healthy adult</strong> — the score that diagnoses"
+        ],
+        [
+         "⭐ <strong>Z-score</strong>",
+         "the patient's BMD against <strong>an age-matched population</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "10-year absolute fracture risk",
+        "Band"
+       ],
+       "rows": [
+        [
+         "<strong>< 10%</strong>",
+         "<strong>low risk</strong>"
+        ],
+        [
+         "<strong>10–20%</strong>",
+         "<strong>moderate risk</strong>"
+        ],
+        [
+         "<strong>> 20%</strong>",
+         "<strong>high risk</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Risk comes from the femoral neck T-score combined with age</strong> (<strong>FRAX Canada 2020 preferred</strong>, or <span class=\"wl\">CAROC</span>), then modified:</p><p>- <strong>lumbar spine or total hip T-score ≤ −2.5</strong> → consider the patient <strong>at least moderate risk</strong></p><p>- <strong>prolonged corticosteroid therapy</strong> → <strong>up one risk category</strong></p><p>- <strong>prior fragility fracture after age 40</strong> → <strong>up one risk category</strong></p><p>- ⭐ <strong>prior hip or vertebral fracture, or more than one non-vertebral fragility fracture</strong> → <strong>high risk</strong></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Strong recommendation to treat:</strong> <strong>hip, vertebral, or more than 2 osteoporosis-related fractures</strong>, with ⭐ <strong>greater consideration when the fracture was within the last 2 years</strong>.</p>",
+       "cols": [
+        "Fracture site prevented",
+        "<strong><span class=\"wl\">alendronate</span></strong>",
+        "<strong>risedronate</strong>",
+        "<strong><span class=\"wl\">zoledronic acid</span></strong>",
+        "<strong><span class=\"wl\">denosumab</span></strong>",
+        "<strong><span class=\"wl\">raloxifene</span></strong>",
+        "<strong>estrogen / <span class=\"wl\">HT</span></strong>",
+        "<strong><span class=\"wl\">teriparatide</span></strong>",
+        "<strong><span class=\"wl\">romosozumab</span></strong>"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">vertebral</span></strong>",
+         "✓",
+         "✓",
+         "✓",
+         "✓",
+         "✓",
+         "✓",
+         "✓",
+         "✓"
+        ],
+        [
+         "<strong><span class=\"wl\">hip</span></strong>",
+         "✓",
+         "✓",
+         "✓",
+         "✓",
+         "⚠ <strong>—</strong>",
+         "✓",
+         "⚠ <strong>—</strong>",
+         "—<sup>*</sup> / ✓<sup>#</sup>"
+        ],
+        [
+         "<strong>non-vertebral</strong>",
+         "✓",
+         "✓",
+         "✓",
+         "✓",
+         "⚠ <strong>—</strong>",
+         "✓",
+         "✓",
+         "—<sup>*</sup> / ✓<sup>#</sup>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><sup>*</sup>versus placebo · <sup>#</sup>versus <span class=\"wl\">alendronate</span></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong><span class=\"wl\">raloxifene</span> covers the spine only</strong>, which is what makes it the wrong answer whenever hip protection is the goal. ⭐ <strong><span class=\"wl\">teriparatide</span> has no hip data either</strong>, despite being anabolic.</p>",
+       "cols": [
+        "Bone-forming therapy",
+        "Rule"
+       ],
+       "rows": [
+        [
+         "<strong>Indications</strong>",
+         "<strong>recent severe <span class=\"wl\">vertebral compression fracture</span></strong> · <strong>more than 2 vertebral fractures with a T-score < −2.5</strong> · <strong>failure of antiresorptive therapy</strong>"
+        ],
+        [
+         "⭐ <strong>Sequencing</strong>",
+         "⚠ <strong>anabolic therapy MUST be followed by an antiresorptive</strong>: after <strong>1 year for <span class=\"wl\">romosozumab</span></strong>, after <strong>2 years for <span class=\"wl\">teriparatide</span></strong>. The bone you build is lost again if nothing holds it"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Rare adverse effect",
+        "Definition and detail"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">ONJ</span></strong>",
+         "rare with <strong><span class=\"wl\">bisphosphonates</span> and <span class=\"wl\">denosumab</span></strong>. ⭐ <strong>A lesion in the oral cavity with exposed bone where mucosa should be, not healed after appropriate care by 8 weeks</strong>, with <strong>no prior head, face, or mouth radiation</strong>. Risk factors: <strong>cancer, obesity, diabetes, oral infection, dental extractions</strong>, comorbidities. <strong>Between 1 in 10,000 and 1 in 100,000 patient-treatment years.</strong> ⭐ <strong>Complete dental work BEFORE starting therapy</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">AFF</span></strong>",
+         "rare with <strong>bisphosphonates and denosumab</strong>. ⭐ <strong>Warning sign: dull or aching pain in the groin or thigh, present in 70% of patients</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Lifestyle treatment:</strong> <strong><span class=\"wl\">calcium</span></strong> and <strong><span class=\"wl\">vitamin D</span></strong> (⚠ <strong>not enough on their own to raise BMD</strong>) · <strong>weight-bearing exercise</strong> · <strong>fall prevention</strong> — <strong>grab bar in the shower</strong>, <strong>get rid of loose rugs and uneven steps</strong>, <strong>avoid lifting heavy objects</strong>, <strong>no standing on chairs</strong>.</p>",
+       "cols": [
+        "Supplement",
+        "Dose"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">vitamin D</span></strong>",
+         "<strong>600 IU daily</strong>, adults <strong>51–70</strong> · <strong>800 IU daily</strong>, adults <strong>> 70</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">calcium</span></strong> (diet and supplements combined)",
+         "<strong>1200 mg/day</strong> (about <strong>4 servings of dairy</strong>) · <strong>1000 mg/day</strong> for <strong>men 50–70</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Blood tests in the workup:</strong> <strong><span class=\"wl\">serum calcium</span> corrected for <span class=\"wl\">serum albumin</span></strong> · <strong><span class=\"wl\">CBC</span></strong> · <strong><span class=\"wl\">creatinine</span></strong> (many of these drugs are renally cleared) · <strong><span class=\"wl\">alkaline phosphatase</span></strong> (bone turnover) · <strong><span class=\"wl\">serum TSH</span></strong> (<span class=\"wl\">hypothyroidism</span> causes bone loss) · <strong><span class=\"wl\">25-OH-D</span></strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Physical signs that prompt vertebral fracture imaging:</strong> <strong>prospective height loss > 2 cm</strong> · <strong>historical height loss > 6 cm</strong> · <strong>rib-to-pelvis distance ≤ 2 finger-breadths</strong> in the midaxillary line · <strong>occiput-to-wall distance > 5 cm</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Why the treatment gap matters:</strong> lifetime risk of <span class=\"wl\">hip fracture</span> over age 50 is <strong>12.1%</strong>. One year after a hip fracture, <strong>80% cannot carry out more than one IADL</strong>, <strong>40% cannot walk independently</strong>, and ⭐ <strong>29% are dead</strong>. Five-year mortality is <strong>23.5% after hip fracture</strong> and <strong>15.7% after vertebral fracture</strong>. Osteoporotic fractures cause <strong>153,400 events a year in Canadian women</strong> — more than <strong>heart attack (49,220)</strong>, <strong>stroke (22,700)</strong> and <strong>breast cancer</strong> combined.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w2-07",
      "num": "07",
      "name": "Overview of Metabolic Bone Disease",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Metabolic Bone Disease: Osteomalacia, Paget's & Osteogenesis Imperfecta",
+     "framing": "<p>Three diseases of bone that are <strong>not</strong> osteoporosis, and ⭐ <strong>the lab panel separates all three before any imaging</strong>. Osteomalacia is <strong>a mineralization defect from <span class=\"wl\">vitamin D deficiency</span></strong>, so calcium and phosphate fall and <strong>ALP rises</strong>. Paget's is <strong>disordered remodelling</strong>, so calcium and phosphate stay <strong>normal</strong> while ALP goes <strong>very</strong> high. Osteogenesis imperfecta is <strong>a collagen gene defect</strong>, so the panel is <strong>normal</strong> and the diagnosis is clinical. ⚠ <strong>Osteomalacia is routinely mistaken for osteoporosis</strong>, and the tell is that <strong>osteomalacia has overt symptoms while osteoporosis is indolent</strong>.</p>",
+     "keypoints": "<p>⭐ <strong>ALP is the thread through all three: very high in Paget's, high in osteomalacia, normal in OI.</strong> ⭐ <strong>Calcium and phosphate are BOTH low in osteomalacia and BOTH normal in Paget's</strong> — that pair alone separates them. ⭐ <strong>Urine calcium is LOW in osteomalacia</strong>, which is the opposite of what a stone-former's panel looks like. ⭐ <strong>Proximal myopathy is the osteomalacia feature that osteoporosis never has</strong>, and it is what causes the falls. ⭐ <strong>Bone-forming drugs are contraindicated in Paget's</strong> — you do not encourage a formation process that is already disordered, which makes <strong><span class=\"wl\">zoledronate</span></strong> the answer and <strong><span class=\"wl\">teriparatide</span></strong> the trap. ⭐ <strong>Increased hat size and warmth over a bone are Paget's</strong>, and <strong>blue sclerae with fractures from birth are OI</strong>. <strong>A young adult with <span class=\"wl\">celiac disease</span>, falls, weakness and pseudofractures has osteomalacia, not osteoporosis.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong><span class=\"wl\">Osteomalacia</span></strong> (adult) / <strong><span class=\"wl\">rickets</span></strong> (child)",
+        "<strong><span class=\"wl\">Paget's disease</span></strong>",
+        "<strong><span class=\"wl\">osteogenesis imperfecta</span></strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Mechanism</strong>",
+         "⭐ <strong>defect in bone matrix MINERALIZATION</strong>, from <span class=\"wl\">vitamin D deficiency</span>",
+         "⭐ <strong>localized disorder of bone REMODELLING</strong>: ↑ osteoclastic resorption, then <strong>osteoblasts respond by making new bone that is structurally abnormal and fragile</strong>",
+         "⭐ <strong>a lack of, or poorly formed, TYPE I COLLAGEN</strong>"
+        ],
+        [
+         "<strong>Genetics / cause</strong>",
+         "acquired — see the vitamin D list below",
+         "—",
+         "<strong>mutations in </strong>type I collagen<strong>: COL1A1 and COL1A2, 85–90% of cases</strong>. <strong>16 subtypes and growing</strong>"
+        ],
+        [
+         "<strong>Epidemiology</strong>",
+         "malabsorption is a common cause, especially <strong><span class=\"wl\">celiac disease</span></strong>",
+         "⭐ <strong>5% of the population</strong>, and <strong>10% of those over 80</strong>",
+         "<strong>among the more common of the rare bone disorders</strong>: <strong>1 in 15,000–20,000 live births</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Ca2+</span></strong>",
+         "<strong>↓</strong>",
+         "<strong>normal</strong> (↑ <strong>only with immobility</strong>)",
+         "normal"
+        ],
+        [
+         "<strong><span class=\"wl\">Phosphate</span></strong>",
+         "<strong>↓</strong>",
+         "<strong>normal</strong>",
+         "normal"
+        ],
+        [
+         "<strong><span class=\"wl\">ALP</span></strong>",
+         "<strong>↑</strong>",
+         "⭐ <strong>VERY high</strong> — and it is <strong>how the disease is monitored on treatment</strong>",
+         "normal"
+        ],
+        [
+         "<strong>Other labs</strong>",
+         "<strong>↓ <span class=\"wl\">25-OH-D</span></strong>, <strong>↑ <span class=\"wl\">PTH</span></strong>, ⭐ <strong>↓ URINE calcium</strong>",
+         "<strong>↑ urinary hydroxyproline</strong>",
+         "—"
+        ],
+        [
+         "<strong>Presentation</strong>",
+         "weak bones that fracture · bone and joint pain · ⭐ <strong>PROXIMAL muscle weakness (myopathy), which can be severe and cause falls</strong> · bowed legs, <span class=\"wl\">lordosis</span>, large forehead in children · positive <span class=\"wl\">Chvostek's sign</span> / <span class=\"wl\">Trousseau's sign</span>",
+         "⭐ <strong>usually ASYMPTOMATIC, found on a routine x-ray or an elevated ALP</strong> · <strong>severe bone pain: pelvis, femur, tibia</strong> · deformity: <strong>bowed tibia</strong>, <strong><span class=\"wl\">kyphosis</span></strong>, frequent fractures · <strong>skull: headaches, ⭐ increased HAT SIZE, deafness</strong> · ⭐ <strong>increased WARMTH over the bone, from increased vascularity</strong>",
+         "<strong>fragility fractures from minimal trauma, starting in utero or at birth</strong> · <strong>short stature</strong> · <strong>bowing of long bones</strong> · <strong>basilar skull deformities</strong> · ⭐ <strong>blue sclerae</strong> · joint hypermobility · <strong>hearing loss</strong> · <strong><span class=\"wl\">dentinogenesis imperfecta</span></strong> · <strong>aortic root dilatation and valvular insufficiency</strong> · <strong>Wormian bones</strong> · pectus excavatum or carinatum · scoliosis"
+        ],
+        [
+         "<strong>Imaging</strong>",
+         "⭐ <strong>pseudofractures (healed microfractures)</strong>",
+         "<strong>bone scan for extent</strong>; the <strong>initial lesion may be destructive and radiolucent</strong>; involved bones <strong>expanded and denser than normal</strong>; <strong>multiple fissure fractures</strong>. Signs: <strong><span class=\"wl\">cotton wool appearance</span></strong>, <strong><span class=\"wl\">Tam o' Shanter sign</span></strong>, <strong><span class=\"wl\">blade of grass sign</span></strong>, <strong><span class=\"wl\">banana fracture</span></strong>, picture-frame vertebra",
+         "skeletal x-rays"
+        ],
+        [
+         "<strong>Biopsy</strong>",
+         "<strong>usually not necessary, but is the gold standard</strong>",
+         "—",
+         "—"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "<strong>treat the underlying cause</strong>: <strong><span class=\"wl\">vitamin D</span> supplementation</strong>, plus <strong><span class=\"wl\">phosphate</span> and <span class=\"wl\">calcium</span> if low</strong>",
+         "<strong>analgesia</strong> · ⭐ <strong><span class=\"wl\">bisphosphonates</span>, and IV <span class=\"wl\">zoledronate</span> beats oral</strong> · <strong><span class=\"wl\">calcitonin</span></strong>, which loses effect after a few treatments so is only useful early. ⚠ <strong>bone-forming agents are CONTRAINDICATED</strong> — the disease is already abnormal formation. <strong><span class=\"wl\">denosumab</span> has not been studied</strong>",
+         "⭐ <strong>IV <span class=\"wl\">bisphosphonates</span> (<span class=\"wl\">zoledronate</span>) are the mainstay.</strong> <strong>Optimal duration has not been studied</strong>"
+        ],
+        [
+         "<strong>Prognosis</strong>",
+         "corrects with replacement",
+         "complications below",
+         "⭐ <strong>highly variable: type 1 has a normal lifespan, type 2 is lethal in the perinatal period</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Vitamin D supplementation in osteomalacia, dosed off the initial <span class=\"wl\">25-OH-D</span>:</strong></p><p>- <strong>< 30 nmol/L</strong> → <strong>50,000 IU of <span class=\"wl\">ergocalciferol</span> weekly for 12 weeks</strong>, then <strong>800–2,000 IU</strong></p><p>- <strong>30–75 nmol/L</strong> → <strong>800–2,000 IU daily</strong></p><p>- ⭐ <strong>repeat the level in 3 months</strong>, aiming for <strong>75–150 nmol/L</strong></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Why vitamin D sits at the centre of it:</strong> <strong>vitamin D is essential for calcium absorption</strong>, and ⭐ <strong>adequate calcium absorption is what prevents <span class=\"wl\">secondary hyperparathyroidism</span> and limits bone resorption</strong>. Take vitamin D away and you get both a mineralization defect <em>and</em> a secondary drive to resorb bone.</p>",
+       "cols": [
+        "Etiology of osteomalacia",
+        "Detail"
+       ],
+       "rows": [
+        [
+         "<strong>↓ availability of vitamin D</strong>",
+         "<strong>insufficient sunlight</strong> · <strong>nutritional deficiency</strong> · <strong>malabsorption</strong> (e.g. <strong><span class=\"wl\">celiac disease</span></strong>, <span class=\"wl\">bariatric surgery</span>) · <strong>hydroxylation defects</strong> · <strong><span class=\"wl\">nephrotic syndrome</span></strong> (lost with protein in the urine)"
+        ],
+        [
+         "<strong>Liver disease</strong>",
+         "the liver makes <strong><span class=\"wl\">calcifediol</span></strong> (25-OH-D) — so <strong><span class=\"wl\">chronic liver failure</span></strong>"
+        ],
+        [
+         "<strong>Kidney disease</strong>",
+         "the kidney makes <strong><span class=\"wl\">calcitriol</span></strong> (1,25-OH-D) — so <strong><span class=\"wl\">chronic renal failure</span></strong>, stages 3, 4, and dialysis"
+        ],
+        [
+         "<strong>Anticonvulsant therapy</strong>",
+         "⭐ <strong>these drugs ↑ vitamin D catabolism</strong>: <strong><span class=\"wl\">phenytoin</span></strong>, <span class=\"wl\">phenobarbital</span>, <span class=\"wl\">carbamazepine</span>, <span class=\"wl\">oxcarbazepine</span>, <span class=\"wl\">isoniazid</span>, <span class=\"wl\">theophylline</span>, <span class=\"wl\">rifampin</span>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ <strong>The elderly are set up for it four ways at once:</strong> vitamin D <strong>formation and processing may be impaired</strong> · <strong>sunlight exposure is limited</strong> · <strong>dietary sources provide little</strong> · <strong>adherence to supplements is inconsistent</strong>. And the amounts in ordinary products are small and variable: a multivitamin has <strong>200–1000 IU</strong>, a calcium tablet with D <strong>120–1000 IU</strong>, fortified milk <strong>111–150 IU per cup</strong> and fluctuating, with supplements at <strong>400 and 1000 IU</strong> per tablet. ⭐ <strong>The main source is still sunlight.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Complications of Paget's disease:</strong> <strong>fractures</strong> · <strong><span class=\"wl\">hypercalcemia</span> with immobility</strong> · <strong>cranial nerve compression → deafness</strong> · <strong>spinal cord compression</strong> · ⭐ <strong><span class=\"wl\">osteosarcoma</span> in 1–3%, signalled by marked bone pain, a new lytic lesion, and a rising ALP</strong> · ⭐ <strong>high-output <span class=\"wl\">congestive heart failure</span> from increased vascularity</strong> · <strong><span class=\"wl\">osteoarthritis</span></strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>When to treat Paget's, even in an asymptomatic patient</strong>, given active disease (<strong>↑ ALP</strong> or <strong>scintigraphy showing active lesions</strong>): <strong>disease in the skull, long bones, spine, or bone abutting a joint</strong> · ⭐ <strong>a surgical procedure planned in a pagetic site</strong>, because the lesions are vascular and can hemorrhage · ⭐ <strong>coexisting congestive heart failure</strong>, which Paget's vascularity can worsen.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Lifelong monitoring in osteogenesis imperfecta:</strong> <strong>growth and head circumference</strong> and <strong>yearly <span class=\"wl\">spirometry</span></strong> (restrictive lung disease from the skeletal deformity) · <strong>hearing test, <span class=\"wl\">BMD</span>, <span class=\"wl\">ECG</span> and <span class=\"wl\">echocardiogram</span> every 2 years</strong> · <strong>skeletal radiographs every 1–2 years</strong> · <strong>neurologic and cranial assessment as symptoms indicate</strong>. <strong>Treat the bone disease when there are long bone deformities, <span class=\"wl\">vertebral compression fracture</span>s, or more than 3 fractures per year.</strong></p>"
+      }
+     ]
     },
     {
      "id": "endo-w2-08",
      "num": "08",
      "name": "Embryology & Histology",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Female Genital Histology & Early Embryogenesis",
+     "framing": "<p>Two halves that share one idea: ⭐ <strong>structure tells you what can go wrong there.</strong> In the histology half, <strong>the epithelium at each site predicts its disease</strong> — keratinized skin gets skin cancers, and <strong>the one place two epithelia meet is the one place cervical cancer starts</strong>. In the embryology half, ⭐ <strong>the same teratogen does something completely different depending on the week it arrives</strong>, so <strong>timing, not the agent, is what the question is really testing</strong>.</p>",
+     "keypoints": "<p>⭐ <strong>Keratin and adnexa separate labia majora from minora</strong>, and that is the whole histological question. ⭐ <strong>The transformation zone is where two epithelia meet, which is why it is where cervical cancer arises</strong> and why the cancer can be of either type. ⭐ <strong>Tubular glands mean proliferative and oestrogen; tortuous secretory glands mean luteal and progesterone.</strong> ⭐ <strong>The functionalis sheds and the basalis rebuilds it.</strong> ⭐ <strong>Fertilization happens in the ampulla, and the ampulla is also where an ectopic most often implants</strong> — same widest segment, same reason. ⭐ <strong>The zona pellucida must degenerate before implantation can happen.</strong> ⭐ <strong>Syncytiotrophoblast makes hCG; hCG maintains the corpus luteum until the placenta takes over at week 8.</strong> ⭐ <strong>Every germ layer descends from the epiblast</strong>, and the hypoblast only ever makes the yolk sac lining. ⭐ <strong>Weeks 3 to 8 is the critical period</strong> — before it, all or nothing; after it, minor anomalies only.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Site",
+        "Epithelium",
+        "Why it matters"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">labia majora</span></strong>",
+         "⭐ <strong>KERATINIZED stratified squamous</strong> with <strong>hair follicles and eccrine, apocrine, sebaceous glands</strong> — i.e. skin",
+         "susceptible to <strong><span class=\"wl\">cutaneous squamous cell carcinoma</span></strong> and <strong><span class=\"wl\">lichen sclerosus</span></strong> (the equivalent of <strong>BXO</strong> on the penis)"
+        ],
+        [
+         "<strong><span class=\"wl\">labia minora</span></strong>",
+         "⭐ <strong>NON-keratinized stratified squamous</strong>, and ⭐ <strong>usually NO adnexal structures</strong> (no hair, no glands)",
+         "the keratin and the adnexa are the whole discriminator from labia majora"
+        ],
+        [
+         "<strong><span class=\"wl\">Bartholin's glands</span></strong>",
+         "<strong>branching mucus-secreting glands</strong>, lined by <strong>transitional epithelium and/or squamous metaplasia</strong>",
+         "sit <strong>posterolateral to the <span class=\"wl\">vaginal opening</span></strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Skene's glands</span></strong>",
+         "—",
+         "<strong>peri-urethral</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">vagina</span></strong>",
+         "<strong>non-keratinizing squamous</strong> (mucosa, barrier) → <strong>thick smooth muscle</strong> muscularis → <strong>adventitia</strong> of loose connective tissue with elastic fibres",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">ectocervix</span></strong>",
+         "<strong>non-keratinizing squamous</strong> (faces the vagina)",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">endocervix</span></strong>",
+         "<strong>mucus-secreting GLANDULAR</strong> (lines the canal)",
+         "—"
+        ],
+        [
+         "⭐ <strong>transformation zone</strong>",
+         "<strong>squamous metaplasia</strong> where squamous meets glandular",
+         "⭐ <strong>the most common site of <span class=\"wl\">cervical cancer</span></strong>, and it can be <strong>either squamous cell carcinoma or adenocarcinoma</strong> because both epithelia are present"
+        ],
+        [
+         "<strong><span class=\"wl\">uterus</span></strong>",
+         "<strong>endometrium</strong> (glands + stroma) → <strong>myometrium</strong> (thick smooth muscle, contracts in labour) → <strong>serosa</strong> (peritoneal)",
+         "⭐ <strong>functionalis is shed; basalis is NOT, and regenerates the functionalis</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">Fallopian tube</span></strong>",
+         "<strong>ciliated and secretory</strong> mucosa → <strong>smooth muscle</strong> muscularis (<strong>peristalsis moves ovum and sperm</strong>) → serosa",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">ovary</span></strong>",
+         "<strong>low cuboidal surface epithelium</strong> → <strong>cortex</strong> (stromal cells, germ cells, and the specialized <strong>granulosa</strong> and <strong>theca</strong> cells) → <strong>medulla</strong> (stroma, vessels, nerves) → <strong>hilum</strong> (where vessels and nerves enter)",
+         "<strong>granulosa cells make the steroid hormones</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Fallopian segment",
+        "Position",
+        "Note"
+       ],
+       "rows": [
+        [
+         "<strong>intramural</strong>",
+         "within the uterus",
+         "—"
+        ],
+        [
+         "<strong><span class=\"wl\">isthmus</span></strong>",
+         "—",
+         "⭐ <strong>thinnest, narrowest</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">ampulla</span></strong>",
+         "most central, <strong>widest</strong>",
+         "⭐ <strong>where fertilization usually occurs</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">infundibulum</span></strong>",
+         "closest to the ovary",
+         "funnel-shaped, with <strong>fimbriae</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Endometrial phase",
+        "Cycle phase",
+        "Hormones",
+        "⭐ Glands under the microscope"
+       ],
+       "rows": [
+        [
+         "<strong>Proliferative</strong>",
+         "<strong>follicular</strong>",
+         "<strong>↑ <span class=\"wl\">estrogen</span></strong>",
+         "⭐ <strong>TUBULAR glands</strong>, endometrium thickening"
+        ],
+        [
+         "<strong>Secretory</strong>",
+         "<strong>luteal</strong>",
+         "<strong>↓ estrogen, ↑ <span class=\"wl\">progesterone</span></strong>",
+         "⭐ <strong>TORTUOUS glands with luminal secretions</strong>, primed for implantation"
+        ],
+        [
+         "<strong>Menstrual</strong>",
+         "<strong>menstruation</strong>",
+         "<strong>both ↓</strong>",
+         "<strong>vessels contract → ischemia → the functionalis sheds</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Follicular development, in order:</strong> <strong>oocyte → primordial follicle → primary follicle → secondary follicle → mature (Graafian) follicle</strong>. After ovulation the <strong><span class=\"wl\">corpus luteum</span></strong> remains and <strong>makes <span class=\"wl\">progesterone</span></strong>; with no fertilization it degenerates into a <strong><span class=\"wl\">corpus albicans</span></strong>, a scar.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong><span class=\"wl\">endometrial biopsy</span> is indicated for:</strong> infertility · abnormal uterine bleeding · <strong>post-menopausal bleeding, to rule out malignancy</strong> · <strong>endometrial cells on a pap smear in a woman over 45</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ <strong>Pap test versus cervical biopsy:</strong> a <strong>pap gives cells with NO information about architecture</strong>; a <strong>biopsy gives tissue, so architecture can be assessed.</strong></p>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"WEEK 1 - Fertilization in the ampulla<br/>acrosomal enzymes cross corona radiata and zona pellucida<br/>ZONAL REACTION blocks polyspermy\"] --> B[\"Zygote, 44 + XX or XY\"]\n    B --> C[\"Cleavage - division with NO growth<br/>blastomeres get smaller<br/>MORULA, same size as the zygote\"]\n    C --> D[\"Blastulation, day 4<br/>EMBRYOBLAST inner mass to embryo proper<br/>TROPHOBLAST outer mass to placenta<br/>reaches the uterus\"]\n    D --> E[\"Implantation, day 5<br/>blastocyst hatches from the zona pellucida<br/>THE ZONA MUST DEGENERATE FIRST\"]\n    E --> F[\"WEEK 2 - the twos<br/>embryoblast splits into hypoblast and epiblast, the BILAMINAR DISC<br/>trophoblast splits into cyto- and syncytiotrophoblast\"]\n    F --> G[\"WEEK 3 - primitive streak, then GASTRULATION<br/>bilaminar disc becomes TRILAMINAR<br/>notochord induces the neural tube\"]\n    G --> H[\"WEEK 4 - neural tube closes, embryo folds<br/>cranial neuropore day 24, caudal day 26<br/>HEART is the first organ to function\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Week 2 layer",
+        "Becomes / does"
+       ],
+       "rows": [
+        [
+         "<strong>hypoblast</strong>",
+         "encloses the <strong>yolk sac</strong> — ⭐ <strong>future ENDODERM</strong>"
+        ],
+        [
+         "<strong>epiblast</strong>",
+         "forms the <strong>amniotic cavity</strong> — ⭐ <strong>future ECTODERM</strong>, and ⭐ <strong>all three germ layers come from the epiblast</strong>"
+        ],
+        [
+         "<strong>cytotrophoblast</strong>",
+         "<strong>surrounds the growing embryo</strong>"
+        ],
+        [
+         "<strong>syncytiotrophoblast</strong>",
+         "⭐ <strong>secretes <span class=\"wl\">hCG</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>hCG keeps the <span class=\"wl\">corpus luteum</span> making progesterone until week 8, when the <span class=\"wl\">placenta</span> takes over.</strong> <strong><span class=\"wl\">beta hCG</span></strong> is what a pregnancy test detects, and ⚠ <strong>a LOW hCG suggests <span class=\"wl\">ectopic pregnancy</span></strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Ectopic implantation sites:</strong> ⭐ <strong><span class=\"wl\">Fallopian tube</span> 96–98%</strong> · <span class=\"wl\">ovary</span> 4% · abdominal cavity 1% · internal cervical os 1% · endocervical canal 1%.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Gastrulation in three steps:</strong> ① <strong>epiblast cells invade the hypoblast and replace it → ENDODERM</strong> · ② <strong>epiblast cells migrate laterally and cranially between endoderm and epiblast → intraembryonic MESODERM</strong> · ③ <strong>the epiblast cells left behind → ECTODERM</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Mesoderm then differentiates into</strong> <strong>paraxial</strong>, <strong>intermediate</strong>, and <strong>lateral plate</strong> (which splits into <strong>dorsal somatic</strong> and <strong>splanchnic</strong>, with the <strong>intraembryonic coelom</strong> between them). The <strong>notochord induces the overlying ectoderm to form the neural tube</strong>.</p>",
+       "cols": [
+        "Neuropore",
+        "Closes",
+        "⭐ Failure gives"
+       ],
+       "rows": [
+        [
+         "<strong>cranial</strong>",
+         "<strong>day 24</strong>",
+         "<strong><span class=\"wl\">anencephaly</span></strong>"
+        ],
+        [
+         "<strong>caudal</strong>",
+         "<strong>day 26</strong>",
+         "<strong><span class=\"wl\">spina bifida</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Embryonic folding</strong> divides the intraembryonic cavity into <strong>pericardial</strong> (heart), <strong>pleural</strong> (lungs), and <strong>peritoneal</strong> (abdominal organs) cavities, and reduces the <strong>yolk sac to the vitelline duct</strong>. ⭐ <strong>The heart is the FIRST organ to function, audible by week 4; the lungs are the LAST, only at birth.</strong></p>",
+       "cols": [
+        "⭐ Teratogen window",
+        "Period",
+        "What a teratogen does"
+       ],
+       "rows": [
+        [
+         "<strong>Weeks 1–2</strong>",
+         "conceptus",
+         "⭐ <strong>\"ALL OR NOTHING\"</strong> — it either <strong>kills the embryo or does nothing at all</strong>"
+        ],
+        [
+         "<strong>Weeks 3–8</strong>",
+         "embryonic",
+         "⭐ <strong>THE CRITICAL PERIOD.</strong> Cell division, differentiation, organogenesis and morphogenesis all peak → <strong>MAJOR congenital anomalies</strong>"
+        ],
+        [
+         "<strong>Weeks 9+</strong>",
+         "fetal",
+         "morphological and functional development peaks → ⭐ <strong>MINOR morphologic anomalies</strong> (e.g. a malformed external ear) and functional defects"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "endo-w2-09",
      "num": "09",
      "name": "Hypothalamic-Pituitary-Gonadal Axis",
-     "hasNote": false
+     "hasNote": true,
+     "title": "The Hypothalamic-Pituitary-Gonadal Axis",
+     "framing": "<p>The axis is three tissues and one non-negotiable requirement: ⭐ <strong>GnRH must arrive in PULSES.</strong> A continuous GnRH signal does not amplify the axis, it <strong>shuts it down</strong>, which is exactly how a GnRH <em>agonist</em> becomes a chemical castration. Everything else follows from two anatomical facts: ⭐ <strong>the median eminence has no blood-brain barrier</strong>, so hypothalamic peptides can leave the brain, and ⭐ <strong>parvicellular neurons feed the ANTERIOR pituitary through a portal system while magnocellular neurons bypass it into the POSTERIOR pituitary.</strong></p>",
+     "keypoints": "<p>⭐ <strong>Pulsatility is the whole axis.</strong> Continuous GnRH suppresses, which is why an <strong>agonist ends up doing the same job as an antagonist but with a dangerous surge first</strong>. ⭐ <strong>**kisspeptin</strong> is the strongest positive input to the pulse generator<strong>, and ⭐ </strong>steroids never touch the GnRH neuron directly<strong> — they work through interneurons. ⭐ </strong>LH → theca and Leydig; FSH → granulosa and Sertoli<strong>, and </strong>inhibin brakes FSH alone<strong>. ⭐ </strong>The shared α subunit is why the β subunit is what gets measured.<strong> ⭐ </strong>Cholesterol to pregnenolone, in the mitochondrion, is the rate-limiting step.<strong> ⭐ </strong>Estradiol and progesterone act without further metabolism; testosterone usually does not.<strong> ⭐ </strong>Estradiol induces the progesterone receptor**, so the order of the cycle is built into the receptors themselves.</p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Level",
+        "Product",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">hypothalamus</span></strong>",
+         "<strong><span class=\"wl\">GnRH</span></strong>",
+         "Made by <strong>endocrine <em>and</em> non-endocrine cells</strong>, with <strong>endocrine, paracrine, autocrine and juxtacrine</strong> effects. <strong>GnRH-I</strong> is the mammalian form; <strong>GnRH-II</strong>, first found in chicken hypothalamus, is <strong>also present in humans</strong> and differs by <strong>three amino acid shifts at positions 5, 7 and 8</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">anterior pituitary</span></strong>",
+         "<strong><span class=\"wl\">LH</span></strong> and <strong><span class=\"wl\">FSH</span></strong>",
+         "Both named for their action in the ovary"
+        ],
+        [
+         "<strong><span class=\"wl\">gonads</span></strong>",
+         "<strong><span class=\"wl\">estrogen</span></strong>, <strong><span class=\"wl\">progesterone</span></strong>, <strong><span class=\"wl\">testosterone</span></strong>, plus <strong>activin</strong> and <strong><span class=\"wl\">inhibin</span></strong>",
+         "inhibin and activin are the FSH-specific feedback arm"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Neuron type",
+        "Axon goes",
+        "Releases into",
+        "Hormones"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Magnocellular</strong> (neurohypophyseal)",
+         "<strong>across the median eminence into the POSTERIOR pituitary</strong> via the pituitary stalk",
+         "<strong>directly into the general circulation</strong>",
+         "<strong><span class=\"wl\">oxytocin</span></strong> and <strong><span class=\"wl\">vasopressin</span></strong>"
+        ],
+        [
+         "⭐ <strong>Parvicellular</strong> (hypophysiotrophic)",
+         "<strong>into the median eminence</strong> only",
+         "<strong>the portal circulation to the ANTERIOR pituitary</strong>",
+         "<strong>GnRH</strong>, <strong>CRH</strong>, <strong>TRH</strong>, <strong>GHRH</strong>, <strong><span class=\"wl\">somatostatin</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The hypophysial portal route, in order:</strong> peptides released into the <strong>median eminence</strong> → <strong>primary plexus</strong> capillaries (fed by the <strong>carotid artery</strong>) → <strong>hypophysial portal veins</strong> in the pituitary stalk, which are ⭐ <strong>long parallel veins connecting two capillary beds</strong> → <strong>secondary plexus</strong> supplying the anterior pituitary → hormones act on receptors there (e.g. GnRH-R) → <strong>LH and FSH enter the same capillaries</strong> into the general circulation.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The median eminence is one of only seven brain regions without a blood-brain barrier</strong>, and it is where both halves of the hypothalamus are joined. The hypothalamus itself also regulates <strong>food energy expenditure, body weight, fluid intake and balance, blood pressure, thirst, temperature and the sleep cycle</strong>, and is organised into <strong>nuclei from the preoptic area to the mammillary nucleus</strong>.</p>",
+       "cols": [
+        "The GnRH pulse generator",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Behaviour</strong>",
+         "GnRH neurons <strong>spontaneously depolarize in a coordinated fashion</strong>, releasing GnRH <strong>pulsatile</strong>ly, which drives <strong>pulsatile LH and FSH</strong>"
+        ],
+        [
+         "⭐ <strong>The capacity is INTRINSIC</strong>",
+         "<strong>cultured GnRH neurons show the same coordinated release in vitro</strong>, so the rhythm is not imposed from outside"
+        ],
+        [
+         "<strong>Positive regulators</strong>",
+         "<strong><span class=\"wl\">glutamate</span></strong>, <strong><span class=\"wl\">NPY</span></strong>, <strong><span class=\"wl\">norepinephrine</span></strong> — and ⭐ <strong>**kisspeptin</strong> is the STRONGEST positive regulator**"
+        ],
+        [
+         "<strong>Negative regulators</strong>",
+         "<strong><span class=\"wl\">GABA</span></strong> and <strong>endogenous opioid peptides</strong>"
+        ],
+        [
+         "⭐ <strong>Steroids act INDIRECTLY</strong>",
+         "<strong><span class=\"wl\">estradiol</span></strong> and <strong><span class=\"wl\">progesterone</span></strong> ⚠ <strong>do NOT act on the GnRH neuron itself</strong> — they change the activity of <strong>other neurons that synapse onto it</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>GnRH agonists</strong>",
+        "<strong>GnRH antagonists</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Onset</strong>",
+         "⚠ <strong>initial STIMULATION of the axis → a surge in steroids</strong>, then <strong>receptor desensitization</strong> shuts production down",
+         "⭐ <strong>immediate</strong>, with <strong>NO initial surge</strong>"
+        ],
+        [
+         "<strong>Mechanism</strong>",
+         "sustained receptor occupancy → <strong>desensitization and internalization</strong>",
+         "<strong>competitive and reversible</strong> block of the pituitary GnRH receptor → no LH or FSH release"
+        ],
+        [
+         "<strong>Effect</strong>",
+         "eventual shutdown",
+         "<strong>men: ↓ LH → rapid ↓ <span class=\"wl\">testosterone</span> from the testes</strong> · <strong>women: ↓ LH → ↓ <span class=\"wl\">estradiol</span> from the ovaries</strong>"
+        ],
+        [
+         "<strong>Agents</strong>",
+         "<strong><span class=\"wl\">leuprolide</span> (Lupron)</strong>, <strong>nafarelin (Synarel)</strong>, <strong>goserelin (Zoladex)</strong>",
+         "<strong><span class=\"wl\">degarelix</span> (Firmagon)</strong>, <strong><span class=\"wl\">ganirelix</span> (Antagon)</strong>, <strong><span class=\"wl\">cetrorelix</span> (Cetrotide)</strong>, abarelix (Plenaxis)"
+        ],
+        [
+         "<strong>Clinical use</strong>",
+         "—",
+         "⭐ <strong>prostate cancer</strong>: fast testosterone suppression <strong>with no surge, so no antiandrogen is needed</strong> — a T surge can <strong>flare tumour growth</strong>. ⭐ <strong>IVF</strong>: <strong><span class=\"wl\">cetrorelix</span> and <span class=\"wl\">ganirelix</span> prevent a premature LH surge and endogenous ovulation</strong> during FSH stimulation"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The agonist-versus-antagonist contrast is the highest-yield pharmacology in this lecture</strong>, and the reason is entirely kinetic: the agonist has to pass <em>through</em> stimulation to reach suppression, and in prostate cancer that transit is dangerous.</p>",
+       "cols": [
+        "Gonadotropin",
+        "Acts on",
+        "Result"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">LH</span></strong>",
+         "⭐ <strong>ovarian THECA cells</strong> and <strong>testicular LEYDIG cells</strong>",
+         "<strong>cholesterol side-chain cleavage</strong> — the first step of steroid synthesis"
+        ],
+        [
+         "<strong><span class=\"wl\">FSH</span></strong>",
+         "⭐ <strong>ovarian GRANULOSA cells</strong> and <strong>testicular SERTOLI cells</strong>",
+         "<strong>androgen binding protein</strong> in the testis, and <strong><span class=\"wl\">inhibin</span></strong> from both gonads"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Both are glycoproteins of two subunits</strong> that ⭐ <strong>share the same α subunit</strong>, so ⭐ <strong>the β subunit determines biologic activity</strong> and is what an assay must measure (the α is shared with <strong><span class=\"wl\">hCG</span></strong> too). Both <strong>bind GPCRs</strong>, which <strong>activate adenylyl cyclase → ↑ cAMP</strong>. ⭐ <strong><span class=\"wl\">inhibin</span> feeds back specifically to the FSH-producing cells, reducing their responsiveness to GnRH</strong> — a selective brake on FSH rather than on the whole axis.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Steroids are terpenoid lipids</strong>: a carbon skeleton of <strong>four fused rings in a 6-6-6-5 arrangement</strong>, differing only by <strong>the functional groups attached and the oxidation state of the rings</strong>. ⭐ <strong>The rate-limiting step is the conversion of cholesterol to pregnenolone, inside the mitochondria.</strong></p>",
+       "cols": [
+        "Steroid",
+        "Carried by",
+        "Needs further metabolism?"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">estradiol</span></strong>",
+         "<strong>SHBG</strong>, and also <strong><span class=\"wl\">albumin</span></strong>",
+         "⭐ <strong>no</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">progesterone</span></strong>",
+         "<strong><span class=\"wl\">albumin</span></strong> and <strong>cortisol binding globulin (CBG)</strong>",
+         "⭐ <strong>no</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">testosterone</span></strong>",
+         "<strong>SHBG</strong>, androgen-binding protein, albumin",
+         "⚠ ⭐ <strong>YES — conversion to <span class=\"wl\">DHT</span> or <span class=\"wl\">estradiol</span> is often required</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Neither progesterone nor estradiol is stored</strong> in the follicle or corpus luteum: both are <strong>secreted rapidly into the blood and bound to plasma proteins</strong>. And ⭐ <strong>estradiol is required to induce progesterone receptors</strong> — progesterone cannot act on a tissue oestrogen has not primed first, which is the molecular reason the luteal phase must follow the follicular one.</p>",
+       "cols": [
+        "Steroid receptor pathway",
+        "Speed",
+        "Mechanism"
+       ],
+       "rows": [
+        [
+         "<strong>Classical (genomic)</strong>",
+         "⭐ <strong>slow, 12–24 h</strong>",
+         "steroid crosses the membrane → binds a ⭐ <strong>CYTOPLASMIC receptor</strong> → complex <strong>moves into the nucleus</strong> → binds specific DNA sequences → <strong>transcription</strong>. Slow because new mRNA and protein must be made"
+        ],
+        [
+         "<strong>Non-genomic</strong>",
+         "⭐ <strong>very rapid</strong>",
+         "binds a <strong>plasma membrane</strong> receptor → intracellular signalling, <strong>with no change in gene expression</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The axis is modulated by:</strong> aging · <strong>acute and chronic stress</strong> · high-fat diets · pro-inflammatory cytokines · <strong>energy status</strong>.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w2-10",
      "num": "10",
      "name": "Approach to the Menstrual Cycle",
-     "hasNote": false
+     "hasNote": true,
+     "title": "The Menstrual Cycle",
+     "framing": "<p>One hormone does something no other hormone in the body does: ⭐ <strong><span class=\"wl\">estradiol</span> switches its own feedback from negative to positive.</strong> Below threshold it suppresses FSH; <strong>held above 300–500 pg/mL for about 48 hours it flips to feed-forward and triggers the LH surge.</strong> That single switch divides the cycle in two, and everything else is bookkeeping around it: <strong>the follicular phase is built by FSH and dismantled by the estradiol it produces; the luteal phase runs on progesterone and lasts a fixed two weeks unless an embryo arrives.</strong></p>",
+     "keypoints": "<p>⭐ <strong>Estradiol is the only hormone here that reverses the sign of its own feedback</strong>, and it needs <strong>both a level (300–500 pg/mL) and a duration (~48 h)</strong> to do it. Getting one of those two right and the other wrong is the classic distractor. ⭐ <strong>FSH falls during the follicular phase</strong> — counter-intuitively, because the follicle it grew is now making the oestrogen that suppresses it. ⭐ <strong>The luteal phase is the fixed half of the cycle</strong>; when a cycle is short or long, it is the follicular phase that varies. ⭐ <strong>The corpus luteum regresses after two weeks unless an embryo rescues it</strong>, and that regression <em>is</em> menstruation. ⭐ <strong>Aromatization happens in the granulosa cell, on an androgen the theca cell made</strong> — remember which receptor sits on which cell and the rest follows.</p>",
+     "blocks": [
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"FOLLICULAR PHASE<br/>day 1 of the period to ovulation\"] --> B[\"FSH drives antral follicle growth\"]\n    B --> C[\"Two-cell mechanism<br/>LH on THECA makes androgen<br/>FSH on GRANULOSA aromatizes it to estradiol\"]\n    C --> D[\"Estradiol RISES\"]\n    D --> E{\"E2 above 300-500 pg/mL<br/>for about 48 hours?\"}\n    E -->|\"NO - below threshold\"| F[\"NEGATIVE feedback<br/>FSH falls as E2 climbs\"]\n    F --> D\n    E -->|\"YES\"| G[\"FEED-FORWARD SWITCH<br/>more E2 now means MORE GnRH\"]\n    G --> H[\"Mid-cycle LH and FSH SURGE\"]\n    H --> I[\"OVULATION\"]\n    I --> J[\"LUTEAL PHASE<br/>follicular remnants form the corpus luteum\"]\n    J --> K[\"Progesterone rises fast, then estradiol rises too\"]\n    K --> L{\"Fertilized embryo present?\"}\n    L -->|\"NO\"| M[\"Corpus luteum regresses after 2 WEEKS<br/>steroids fall, menstruation, cycle resets\"]\n    L -->|\"YES\"| N[\"hCG rescues the corpus luteum\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>Follicular phase</strong>",
+        "<strong>Luteal phase</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Runs from</strong>",
+         "<strong>day 1 of the period</strong> to <strong>ovulation</strong>",
+         "<strong>ovulation</strong> to <strong>day 1 of the next period</strong>"
+        ],
+        [
+         "<strong>Duration</strong>",
+         "variable",
+         "⭐ <strong>fixed at ~2 weeks</strong> unless an embryo is present"
+        ],
+        [
+         "<strong>Dominant hormone</strong>",
+         "<strong><span class=\"wl\">E2</span></strong>",
+         "<strong><span class=\"wl\">progesterone</span></strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">FSH</span></strong>",
+         "⭐ <strong>FALLS as E2 rises</strong>, by negative feedback",
+         "low"
+        ],
+        [
+         "<strong><span class=\"wl\">LH</span></strong>",
+         "low, then ⭐ <strong>mid-cycle SURGE</strong>",
+         "low"
+        ],
+        [
+         "<strong>Structure</strong>",
+         "<strong>antral follicle growth</strong>",
+         "<strong><span class=\"wl\">corpus luteum</span></strong>, formed from the <strong>post-ovulatory follicular remnants</strong>"
+        ],
+        [
+         "<strong>Endometrium</strong>",
+         "<strong>proliferative</strong> — tubular glands",
+         "<strong>secretory</strong> — tortuous glands, thickened for implantation"
+        ],
+        [
+         "<strong>Ends because</strong>",
+         "<strong>E2 crosses threshold and flips the feedback</strong>",
+         "⭐ <strong>the corpus luteum regresses on its own schedule</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ The two-cell mechanism",
+        "Cell",
+        "Hormone acting",
+        "What it makes"
+       ],
+       "rows": [
+        [
+         "step 1",
+         "<strong>theca cell</strong>",
+         "<strong>LH</strong>",
+         "<strong>androgen</strong> (testosterone)"
+        ],
+        [
+         "step 2",
+         "<strong>granulosa cell</strong>",
+         "<strong>FSH</strong>",
+         "⭐ <strong>estradiol, by AROMATIZATION of that testosterone</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Neither cell can make estradiol alone.</strong> The theca has the LH receptor and makes the substrate; the granulosa has the FSH receptor and the aromatase. This is why <strong>FSH-driven follicular growth and LH-driven oestrogen production are the same process described from two sides</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The evidence that each piece is necessary, from the deck's two experiments:</strong></p><p>- ⭐ <strong>GnRH pulses are sufficient to start a cycle.</strong> A <strong>24-year-old with <span class=\"wl\">Kallmann syndrome</span></strong> — who makes no GnRH — had a <strong>spontaneous ovulatory menstrual cycle initiated by an invariant intermittent subcutaneous GnRH infusion, 25 ng/kg every 2 hours for 27 days</strong>. <strong>Invariant</strong> is the point: the pituitary and ovary generate the cycle's shape, given only a steady pulse train.</p><p>- ⭐ <strong>The ovary carries the cycle, not the brain's anatomy.</strong> <strong>Ovarian tissue transplanted subcutaneously to the abdomen of a castrated male rhesus monkey</strong> showed <strong>repetitive ovulatory cycles averaging 28 days</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>What really happens: follicular waves.</strong> ⭐ <strong>Women usually have either 2 or 3 waves of follicular development per cycle</strong>, not the single tidy recruitment the classic diagram implies. There is <strong>intrinsic regulatory control of follicular development exerted by the ovary itself</strong>.</p>",
+       "cols": [
+        "Hormone",
+        "Role at the endometrium"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">estrogen</span></strong>",
+         "<strong>proliferation and thickening</strong> — and ⭐ <strong>it induces the progesterone receptors</strong> that make the next phase possible"
+        ],
+        [
+         "<strong><span class=\"wl\">progesterone</span></strong>",
+         "<strong>thickens and primes</strong> the endometrium, secreting glycogen and glycoproteins"
+        ],
+        [
+         "<strong>both fall</strong>",
+         "<strong>vessels contract → ischemia → the functionalis sheds</strong>"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "endo-w2-11",
      "num": "11",
      "name": "Testicular and Ovarian Function",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Testicular and Ovarian Function",
+     "framing": "<p>⭐ <strong>The two gonads are the same machine with different settings.</strong> In both, <strong>LH acts on the steroid-making cell (Leydig, theca) and FSH acts on the nurse cell (Sertoli, granulosa)</strong>, and in both the nurse cell <strong>makes <span class=\"wl\">inhibin</span></strong> to brake FSH. What differs is the output: ⭐ <strong>spermatogenesis makes 4 haploid gametes continuously from a self-renewing stem cell; oogenesis makes 1 from a reservoir that was finished before birth.</strong> That single asymmetry explains menopause, polar bodies, and why the two arrest points exist at all.</p>",
+     "keypoints": "<p>⭐ <strong>Map the four cells onto two hormones and you have the lecture: LH → Leydig and theca (androgen); FSH → Sertoli and granulosa (inhibin, and aromatase in the ovary).</strong> ⭐ <strong>4 gametes from spermatogenesis, 1 from oogenesis</strong>, and the female reservoir is fixed before birth. ⭐ <strong>The oocyte is arrested twice: prophase I until recruitment, meiosis II until fertilization</strong> — fertilization is a trigger, not just a fusion. ⭐ <strong>The blood-testis barrier exists because sperm are genetically foreign to their own host.</strong> ⭐ <strong>Most FSH receptors wins the dominant-follicle competition, and ART simply removes the competition by flooding the system.</strong> ⭐ <strong>The granulosa cell trades FSH receptors for LH receptors as ovulation approaches</strong> — the same cell, answering to a different hormone. ⭐ <strong>5-α reductase makes DHT for hair, glands and external genitalia; aromatase makes estradiol and closes the growth plates.</strong> ⭐ <strong>Only 5% of testosterone is free, and only that 5% works.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>Testis</strong>",
+        "<strong>Ovary</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>Steroid cell, driven by <span class=\"wl\">LH</span></strong>",
+         "⭐ <strong>Leydig cell</strong> — <strong>in the space BETWEEN the seminiferous tubules</strong>; makes <strong><span class=\"wl\">testosterone</span></strong>",
+         "⭐ <strong>Theca cell</strong> — <strong>converts cholesterol to androgens</strong>"
+        ],
+        [
+         "<strong>Nurse cell, driven by <span class=\"wl\">FSH</span></strong>",
+         "⭐ <strong>Sertoli (sustentacular) cell</strong> — <strong>supports and regulates spermatogenesis</strong>, forms the <strong>blood-testis barrier</strong>, carries <strong>FSH receptors</strong>, <strong>produces <span class=\"wl\">inhibin</span></strong> and <strong>androgen binding protein</strong>",
+         "⭐ <strong>Granulosa cell</strong> — ⭐ <strong>aromatizes the theca's testosterone into <span class=\"wl\">estrogen</span></strong>; produces <strong>inhibin</strong>"
+        ],
+        [
+         "<strong>Germ cell</strong>",
+         "<strong>spermatocytes</strong>: adult <strong>stem cell</strong> plus developing sperm",
+         "<strong>oocyte</strong>, from a fixed reservoir"
+        ],
+        [
+         "<strong>Gametes per meiosis</strong>",
+         "⭐ <strong>4 haploid</strong>",
+         "⭐ <strong>1 haploid</strong>, plus <strong>polar bodies</strong>"
+        ],
+        [
+         "<strong>Supply</strong>",
+         "⭐ <strong>continuously renewed</strong>",
+         "⭐ <strong>finite; depletion IS menopause</strong>"
+        ],
+        [
+         "<strong>FSH requirement</strong>",
+         "⚠ ⭐ <strong>required for puberty, but NOT perpetually required for Sertoli cell function</strong>",
+         "required throughout the cycle"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>The <span class=\"wl\">seminiferous tubules</span></strong> are the site of spermatogenesis and are <strong>1600 metres long stretched out</strong>, which is how the surface area for continuous production is achieved. Spermatogonia sit at the <strong>interstitial</strong> side and spermatozoa end up in the <strong>lumen</strong>.</p>",
+       "cols": [
+        "⭐ Blood-testis barrier",
+        "Why it matters"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>prevents immune attack on new sperm</strong>",
+         "meiosis gives them <strong>different genetic material</strong> from the host, so without the barrier the person would be <strong>infertile</strong>"
+        ],
+        [
+         "<strong>prevents passage of cytotoxic agents</strong>",
+         "into the seminiferous tubules"
+        ],
+        [
+         "<strong>establishes an osmotic gradient</strong>",
+         "which moves fluid into the tubule"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<strong>Spermatogenesis</strong>",
+        "<strong>Spermiogenesis</strong>"
+       ],
+       "rows": [
+        [
+         "<strong>What it is</strong>",
+         "<strong>generation</strong> of new sperm cells",
+         "<strong>maturation</strong> of them"
+        ],
+        [
+         "<strong>Steps</strong>",
+         "<strong>spermatogonia replace themselves AND make a primary spermatocyte by MITOSIS</strong> → <strong>meiotic division</strong> → <strong>early spermatids</strong>",
+         "<strong>late spermatids lose cytoplasm</strong> (discarded as <strong>residual bodies</strong>) → <strong>flagellum develops</strong> → ⭐ <strong>acrosome forms on the head</strong>, which is what breaks through the cumulus-oocyte complex"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Oogenesis arrest point",
+        "When",
+        "Released by"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Prophase I</strong>",
+         "begins <strong>during gestation</strong>; dormant until puberty, and possibly ⭐ <strong>for 50–55 years</strong>",
+         "<strong>recruitment during a menstrual cycle</strong>"
+        ],
+        [
+         "⭐ <strong>Meiosis II</strong>",
+         "after maturation",
+         "⭐ <strong>FERTILIZATION</strong>, which resumes meiosis II and makes a second polar body"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>The reservoir:</strong> oocytes form <strong>during embryogenesis</strong>, so ⭐ <strong>the oocyte you came from was made while your mother was inside your grandmother</strong> (about 5 months' gestation). <strong>1–2 million at birth</strong>, down to <strong>300,000 by puberty</strong>. Meiosis in the oocyte is <strong>asymmetric</strong>: at telophase I it splits unequally into the <strong>oocyte</strong> and a <strong>polar body</strong> (a little cytoplasm, the unneeded chromosomes, <strong>cannot be fertilized</strong>).</p>",
+       "cols": [
+        "Follicle stage",
+        "Defining feature"
+       ],
+       "rows": [
+        [
+         "<strong>Primordial</strong>",
+         "immature and dormant, <strong>what is present at birth</strong>. At puberty, monthly ovarian factors recruit <strong>30–50</strong> into primary follicles"
+        ],
+        [
+         "<strong>Primary</strong>",
+         "develops <strong>one layer of granulosa cells</strong>"
+        ],
+        [
+         "<strong>Secondary</strong>",
+         "granulosa cells proliferate into <strong>another layer</strong>"
+        ],
+        [
+         "<strong>Tertiary</strong>",
+         "⭐ three features: <strong>a DOUBLE layer of theca cells outside</strong>, a <strong>fluid-filled ANTRUM</strong>, and a <strong>thickened granulosa layer</strong> over the oocyte and lining the antrum"
+        ],
+        [
+         "<strong>Dominant (Graafian)</strong>",
+         "takes ⭐ <strong>6–8 months</strong> to get here; fully developed, secreting hormones, ready to ovulate"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The follicle with the MOST FSH receptors becomes the dominant follicle</strong>, because there is only so much FSH to go around. ⭐ <strong>This is exactly what </strong>ART<strong> defeats</strong>: injecting <strong>supraphysiological FSH</strong> overrides dominant-follicle selection, so <strong>several follicles get enough FSH and multiple mature at once</strong> for harvest.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Near ovulation the granulosa cell switches receptors:</strong> ⭐ <strong>it begins expressing LH receptors and loses its FSH receptors.</strong> After ovulation, ⭐ <strong>both granulosa and theca cells convert into <span class=\"wl\">corpus luteum</span> cells expressing LH receptors</strong>, and LH is what then drives <strong><span class=\"wl\">progesterone</span></strong> production. If implantation succeeds the corpus luteum is <strong>\"rescued\"</strong>; if not it becomes a <strong><span class=\"wl\">corpus albicans</span></strong>, a scar, and they accumulate with each ovulation.</p>",
+       "cols": [
+        "<span class=\"wl\">testosterone</span> handling",
+        "Detail"
+       ],
+       "rows": [
+        [
+         "<strong>Storage</strong>",
+         "⚠ ⭐ <strong>NOT stored</strong> — synthesized in the testis and <strong>diffuses straight down its gradient into blood</strong>"
+        ],
+        [
+         "<strong>Binding</strong>",
+         "<strong>95% protein bound</strong>: ~<strong>50% <span class=\"wl\">albumin</span></strong>, <strong>45% SHBG</strong>. ⭐ <strong>The free 5% is the biologically active fraction</strong>"
+        ],
+        [
+         "<strong>Why bind it</strong>",
+         "<strong>solubilizes</strong> the hydrophobic steroid · <strong>protects from catabolism and excretion</strong> · acts as <strong>storage</strong>"
+        ],
+        [
+         "<strong>Rhythm</strong>",
+         "GnRH, LH and testosterone cycle over ⭐ <strong>~6 weeks</strong>, but <strong>far less dramatically than the menstrual cycle</strong>"
+        ],
+        [
+         "<strong>Inactivation</strong>",
+         "<strong>liver</strong> adds organic acids to the steroid ring (more water soluble) → <strong>filtered and excreted by the kidney</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Conversion",
+        "Enzyme",
+        "Product and site"
+       ],
+       "rows": [
+        [
+         "<strong>testosterone → <span class=\"wl\">DHT</span></strong>",
+         "⭐ <strong>5-α reductase</strong>",
+         "<strong>DHT is 10× more potent</strong>, with receptors in ⭐ <strong>hair follicles, accessory sex glands, and external genitalia</strong>"
+        ],
+        [
+         "<strong>testosterone → <span class=\"wl\">E2</span></strong>",
+         "⭐ <strong>aromatase</strong>",
+         "in the <strong><span class=\"wl\">CNS</span></strong> and <strong>adipose tissue</strong>. ⭐ <strong>Once E2 reaches adult levels in males, long bones stop growing</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Hormone",
+        "Non-reproductive tissue",
+        "Secondary sex characteristics",
+        "Reproductive tract"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">testosterone</span></strong>",
+         "<strong>muscle</strong>: builds it · <strong>bone</strong>: <strong>chondrocyte proliferation in the epiphyseal plate, then its closure</strong> · <strong>skin</strong>: <strong>activates sebaceous glands</strong>",
+         "alters <strong>body hair distribution</strong> (which is why ↓ testosterone causes baldness) · <strong>broadens shoulders</strong> · <strong>relaxes the <span class=\"wl\">larynx</span></strong>, deepening the voice · behavioural change",
+         "required for <strong>differentiation of the <span class=\"wl\">epididymis</span>, vas deferens, <span class=\"wl\">prostate</span>, <span class=\"wl\">seminal vesicles</span>, <span class=\"wl\">penis</span>, <span class=\"wl\">scrotum</span></strong> · maintains the <strong>seminal vesicles and prostate</strong>, which supply <strong>fructose, salts and peptides</strong> · ⭐ <strong>required for spermatogenesis</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">estrogen</span></strong>",
+         "<strong>bone</strong>: ⭐ <strong>accelerates linear growth AND closes the epiphyseal plates</strong>; in adults <strong>supports osteoblast and osteocyte activity and prevents resorption</strong> · <strong>liver</strong>: ⭐ <strong>stimulates hepatic protein synthesis, especially SHBG, CBG and thyroid-binding globulin</strong>",
+         "<strong>fat deposition</strong> · ⭐ <strong>growth of the DUCT systems of the breast</strong>",
+         "<strong>stimulates ovulation</strong>, <strong>regulates the cycle</strong>, and acts on the <strong>uterine tubes, uterus, cervix and vagina</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">progesterone</span></strong>",
+         "⭐ <strong>raises body temperature</strong> — mechanism unclear, ⭐ <strong>possibly by interacting with thyroid hormones</strong>",
+         "⭐ <strong>develops the LOBULES and ALVEOLI of the mammary glands</strong>",
+         "with estradiol, acts on the <strong><span class=\"wl\">endometrium</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Breast development splits cleanly between the two hormones: estrogen builds the DUCTS, progesterone builds the LOBULES and ALVEOLI.</strong> ⭐ <strong>And estrogen does both things to bone: it drives the growth spurt and then ends it</strong> by closing the plates, which is also why aromatized oestrogen stops long bone growth in males.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Cyclic changes in the ovary can be read off the histology of the endometrium</strong>, and ⚠ ⭐ <strong>menstruation itself is limited to humans and some primates</strong>.</p>"
+      }
+     ]
     }
    ]
   },
