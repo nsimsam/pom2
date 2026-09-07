@@ -109,9 +109,18 @@
       t.appendChild(thead);
     }
     var tb = el("tbody");
+    /* a blank first cell means the row belongs to the group named above it, so
+       that label spans down the group instead of repeating. First column only:
+       anywhere else a blank cell is just a blank cell. */
+    var label = null;
     (spec.rows || []).forEach(function (row) {
       var r = el("tr");
-      row.forEach(function (cell) { r.appendChild(html("td", null, cell)); });
+      row.forEach(function (cell, i) {
+        if (i !== 0) { r.appendChild(html("td", null, cell)); return; }
+        if (label && !cell.trim()) { label.rowSpan += 1; return; }
+        label = html("td", "rowlab", cell);
+        r.appendChild(label);
+      });
       tb.appendChild(r);
     });
     t.appendChild(tb);

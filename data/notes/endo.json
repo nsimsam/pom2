@@ -863,7 +863,7 @@
          "GI disturbance (non-issue if <strong>titrated gradually</strong>)<br>↓ B12 absorption (monitor serum B12 in long-term use)<br><strong><span class=\"wl\">lactic acidosis</span></strong> if ↓ hepatic function<br><strong>Do NOT use if eGFR < 30 mL/min</strong> (renally excreted → drug accumulation)"
         ],
         [
-         "<strong>Insulin sensitizers</strong>",
+         "",
          "<u>Thiazolidinediones (TZDs)</u>",
          "<span class=\"wl\">pioglitazone</span><br><span class=\"wl\">rosiglitazone</span>",
          "Act on <strong>PPAR-γ receptor</strong><br><strong>adipose</strong>: ↑ adipocyte number/size → ↓ circulating free fatty acids<br><strong>liver</strong>: ↓ glucose output<br><strong>skeletal muscle</strong>: ↑ glucose uptake<br>⚠ Gene transcription → <strong>slow onset (up to 3 months)</strong>",
@@ -879,7 +879,7 @@
          "<strong>Weight gain</strong> (↑ insulin)<br><strong>Hypoglycemia</strong> — do NOT prescribe to ① elderly ② people living alone ③ people who drive for a living<br>Many DDIs incl. <strong>alcohol</strong> (CYP)<br><strong>↑ hypoglycemia in liver/kidney failure</strong>"
         ],
         [
-         "<strong>Insulin secretagogues</strong>",
+         "",
          "<u>Meglitinides (\"glinides\")</u><br><strong>glucose-independent</strong> release",
          "<span class=\"wl\">repaglinide</span>",
          "Same channel as SUs, different binding → <strong>rapid onset, short duration</strong><br>→ better <strong>post-prandial</strong> control",
@@ -887,7 +887,7 @@
          "Weight gain (less than SUs)<br>Moderate hypoglycemia risk<br><strong>t.i.d. dosing</strong> (must be taken with each meal)"
         ],
         [
-         "<strong>Insulin secretagogues</strong>",
+         "",
          "<u>GLP-1 receptor agonists</u><br><em>incretin</em>, <strong>glucose-dependent</strong> release<br>Mimic <span class=\"wl\">GLP-1</span>",
          "<span class=\"wl\">semaglutide</span> (oral form exists)",
          "⭐ <strong>Promote insulin secretion in a glucose-dependent manner</strong> → insulin released <strong>only</strong> when blood glucose is ↑ → <strong>greatly ↓ hypoglycemia risk</strong><br><strong>↑ GLP-1 ×10</strong>",
@@ -895,7 +895,7 @@
          "GI side effects (<strong>dose-dependent</strong>, titrate)<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br><strong>Incredibly expensive ($$$$)</strong><br>Subcutaneous injection<br>Contraindicated in <strong><span class=\"wl\">pancreatic cancer</span></strong>"
         ],
         [
-         "<strong>Insulin secretagogues</strong>",
+         "",
          "<u>DPP-4 inhibitors</u><br><em>incretin</em>, <strong>glucose-dependent</strong> release<br>Prolong endogenous <span class=\"wl\">GLP-1</span>",
          "\"–gliptins\"",
          "⭐ Same <strong>glucose-dependent</strong> secretion → <strong>greatly ↓ hypoglycemia risk</strong><br>Block the enzyme that degrades GLP-1 → <strong>↑ GLP-1 ×2–3</strong> only",
@@ -903,7 +903,7 @@
          "GI side effects (↓ compared with GLP-1RAs)<br><strong>↑ risk of <span class=\"wl\">pancreatitis</span></strong> (mechanism unknown)<br>DPP-4i specifically: <strong>↑ risk of URTIs</strong>"
         ],
         [
-         "<strong>Insulin secretagogues</strong>",
+         "",
          "<u>Dual GLP-1 / GIP agonist</u><br><em>incretin</em>, <strong>glucose-dependent</strong> release",
          "<span class=\"wl\">tirzepatide</span>",
          "<strong>Dual activation of GLP-1 AND GIP receptors</strong> (more so GIP)<br><strong>pancreas</strong>: ↑ β-cell function, ↓ <span class=\"wl\">glucagon</span><br><strong>brain</strong>: ↓ appetite, ↓ cravings<br><strong>stomach</strong>: ↓ gastric transit",
@@ -919,7 +919,7 @@
          "GI side effects (<strong>flatulence, constipation</strong>)<br><strong>t.i.d. dosing</strong><br>Contraindicated in <strong><span class=\"wl\">IBS</span>, <span class=\"wl\">IBD</span>, obstruction</strong>"
         ],
         [
-         "<strong>Altered glucose absorption or excretion</strong>",
+         "",
          "<u>SGLT2 inhibitors</u>",
          "\"gliflozins\"",
          "<strong>Block Na⁺/glucose co-transporter in the <span class=\"wl\">proximal convoluted tubule</span></strong> → ↑ urinary glucose excretion (with Na⁺ and water)<br><strong>Insulin-independent</strong> and <strong>independent of beta-cell function</strong>",
