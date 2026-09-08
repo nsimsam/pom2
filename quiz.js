@@ -19,7 +19,12 @@
     {
       key: "module",
       name: "Course modules",
-      blurb: "The module lectures and the weekly Elentra quizzes."
+      blurb: "The Elentra module knowledge checks and the concept checks on the lecture slides. Cases live under Meds 2029 instead, wherever they came from."
+    },
+    {
+      key: "weekly",
+      name: "Weekly quizzes",
+      blurb: "The weekly quizzes, both the Microsoft Forms ones and the ones sat in Elentra. Kept whole as their own set, so a week's quiz can be drilled the way it was written."
     },
     {
       key: "workbook",
