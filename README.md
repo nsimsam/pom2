@@ -124,3 +124,10 @@ repository exists, not an accident of packaging. Use them, fork them, correct th
 add to them. Where a question came out of a peer-written bank its errors are flagged
 on the question itself rather than quietly patched, so you can see what you are
 trusting before you trust it.
+
+A handful of questions carry a picture, embedded in the question itself. Those come
+from the teaching material the question came from: course illustrations, radiology
+and endoscopy stills, gross pathology specimens and clinical photographs of the kind
+that circulate in every medical curriculum. Cadaveric images from the anatomy modules
+are covered by a separate protocol and are **not** included, so a question that
+needed one says on its face that its picture is missing.

@@ -3,3 +3,7 @@ Thumbs.db
 __pycache__/
 *.pyc
 build/
+
+# Claude Code skills. Kept local: they carry vault paths, OneNote ids and an
+# upper year's name, none of which belong in a public repo.
+skills/

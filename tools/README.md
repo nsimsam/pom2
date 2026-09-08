@@ -137,6 +137,26 @@ marked every option correct on all ten questions. The signals are what turned th
 into a one-line fix. `--inspect` prints them. A page that parses to nothing has its
 whole body kept in the file for the same reason.
 
+**`tools/embed_image.py`** resolves a vault image, re-compresses it and prints the
+`<img>` tag to paste into a question. Pictures ship *inside* the question as a
+`data:` URI in the stem HTML. There is no image field and no assets directory,
+because `quiz.js` renders the stem as HTML and the browser does the rest.
+
+```bash
+python tools/embed_image.py '![[incretin effect - oral vs IV glucose.png|600]]'
+# incretin effect - oral vs IV glucose.png -> 78.1 KB encoded, 900px wide, q75
+# <img loading="lazy" src="data:image/jpeg;base64,...">
+```
+
+It takes a bare filename, a whole `![[embed|600]]`, or a path, and looks in the
+vault's `Attachments/` (override with `POM2_ATTACHMENTS`). It spends JPEG quality
+before it drops pixels, since a keyed radiology or anatomy image is often keyed on
+detail, and it walks both down until the encoded bytes fit `--max-kb` (100 by
+default). A picture that will not fit warns rather than shipping quietly: the
+question's stem still reads as though the image were there, so a picture too big is
+the one failure that hides itself. Unlike the four rebuild scripts this one needs
+**Pillow**.
+
 **`tools/elentra_quiz.py`** turns that JSON into house-format markdown in
 `build/`: a `#### <lecture>` group of `# N` questions with their answer callouts,
 sized and numbered to drop into the week's section of
