@@ -47,6 +47,14 @@
   var QMAP = Object.create(null);
   var progress = Object.create(null);
   var filters = { status: "all", family: null, week: "all" };
+
+  /* label and total lookups, filled in by buildRail: the applied-filter line
+     needs a filter's human name, and a family's block total is what tells an
+     empty coverage gap ("none") apart from one the filters emptied ("0"). */
+  var FAM_TOTAL = Object.create(null);
+  var FAM_NAME = Object.create(null);
+  var WEEK_LABEL = Object.create(null);
+  var STATUS_LABEL = Object.create(null);
   var RESET_SHOWN_IDLE = null;
   var storeWritable = true;
 
@@ -382,18 +390,27 @@
 
   /* ---------- filters ---------- */
 
-  function matches(qid) {
-    var q = QMAP[qid];
-    if (filters.family && q.family !== filters.family) return false;
-    if (filters.week !== "all" && weekKey(q) !== filters.week) return false;
-    var st = stateOf(qid);
+  /* One predicate per filter group rather than one combined test: a facet's
+     own count has to honour the other two groups and ignore itself, which is
+     what makes "Week 3" read as "3 of the questions you are looking at". */
+  function famOk(q) { return !filters.family || q.family === filters.family; }
+
+  function weekOk(q) { return filters.week === "all" || weekKey(q) === filters.week; }
+
+  function statusOk(q) {
+    var st = stateOf(q.qid);
     switch (filters.status) {
       case "unseen":  return st === "unseen";
       case "wrong":   return st === "wrong";
       case "correct": return st === "correct";
-      case "starred": return isStarred(qid);
+      case "starred": return isStarred(q.qid);
       default:        return true;
     }
+  }
+
+  function matches(qid) {
+    var q = QMAP[qid];
+    return famOk(q) && weekOk(q) && statusOk(q);
   }
 
   // qids currently passing the filters that actually have something to clear
@@ -681,33 +698,142 @@
     return defs;
   }
 
-  function counts() {
-    var c = { all: QUESTIONS.length, unseen: 0, wrong: 0, correct: 0, starred: 0 };
+  /* Every tally below skips its own group and applies the other two, in one
+     pass. Before this, the numbers went wrong the moment a second filter was
+     on: picking Wrong still offered "Week 1 195" when only a handful of those
+     were wrong, and the week counts were written once at build and never
+     repainted at all. */
+  function facetCounts() {
+    var fam = Object.create(null), week = Object.create(null);
+    var status = { all: 0, unseen: 0, wrong: 0, correct: 0, starred: 0 };
+    var famAll = 0, weekAll = 0, shown = 0;
     QUESTIONS.forEach(function (q) {
-      var st = stateOf(q.qid);
-      if (st === "unseen") c.unseen++;
-      else if (st === "wrong") c.wrong++;
-      else c.correct++;
-      if (isStarred(q.qid)) c.starred++;
+      var f = famOk(q), w = weekOk(q), sOk = statusOk(q), wk, st;
+      if (w && sOk) {
+        fam[q.family] = (fam[q.family] || 0) + 1;
+        famAll++;
+      }
+      if (f && sOk) {
+        wk = weekKey(q);
+        week[wk] = (week[wk] || 0) + 1;
+        weekAll++;
+      }
+      if (f && w) {
+        st = stateOf(q.qid);
+        status.all++;
+        if (st === "unseen") status.unseen++;
+        else if (st === "wrong") status.wrong++;
+        else status.correct++;
+        if (isStarred(q.qid)) status.starred++;
+      }
+      if (f && w && sOk) shown++;
     });
-    return c;
+    return {
+      fam: fam, famAll: famAll,
+      week: week, weekAll: weekAll,
+      status: status, shown: shown
+    };
   }
 
+  /* Three independent filters and, without this, nothing anywhere saying which
+     of them emptied the stream - the answer had to be hunted across all three
+     groups. Sits above the groups so it survives the rail folding up on a
+     phone: a filtered view must never look unfiltered. */
+  function paintApplied(shown) {
+    var box = byId("applied");
+    if (!box) return;          // a page cached from before this shipped
+
+    var live = [];
+    if (filters.family) {
+      live.push({
+        label: FAM_NAME[filters.family] || filters.family,
+        clear: function () { filters.family = null; }
+      });
+    }
+    if (filters.week !== "all") {
+      live.push({
+        label: WEEK_LABEL[filters.week] || ("Week " + filters.week),
+        clear: function () { filters.week = "all"; }
+      });
+    }
+    if (filters.status !== "all") {
+      live.push({
+        label: STATUS_LABEL[filters.status] || filters.status,
+        clear: function () { filters.status = "all"; }
+      });
+    }
+
+    var badge = byId("filter-badge");
+    if (badge) {
+      badge.textContent = String(live.length);
+      badge.hidden = live.length === 0;
+    }
+
+    box.hidden = live.length === 0;
+    box.textContent = "";
+    if (!live.length) return;
+
+    var head = el("div", "applied-h");
+    head.appendChild(el("span", null, "Active filters"));
+    head.appendChild(el("span", "res", shown + (shown === 1 ? " question" : " questions")));
+    box.appendChild(head);
+
+    var list = el("div", "applied-list");
+    live.forEach(function (item) {
+      var b = el("button", "fchip");
+      b.type = "button";
+      b.setAttribute("aria-label", "Remove the " + item.label + " filter");
+      b.appendChild(el("span", null, item.label));
+      b.appendChild(el("span", "x", "\u00d7"));
+      b.addEventListener("click", function () { item.clear(); applyFilters(); });
+      list.appendChild(b);
+    });
+
+    var ca = el("button", "clear-all", "Clear all");
+    ca.type = "button";
+    ca.addEventListener("click", function () {
+      filters.family = null;
+      filters.week = "all";
+      filters.status = "all";
+      applyFilters();
+    });
+    list.appendChild(ca);
+
+    box.appendChild(list);
+  }
+
+  /* An option worth zero is disabled rather than left live, which is what the
+     family rows have always done and the chips never did. The one exception is
+     the option currently selected: disabling that would trap you in it. */
   function paintChips() {
-    var c = counts();
+    var c = facetCounts();
+
     [].forEach.call(document.querySelectorAll("#status-chips .chip"), function (b) {
-      b.setAttribute("aria-pressed", filters.status === b.dataset.k ? "true" : "false");
-      b.querySelector(".n").textContent = c[b.dataset.k];
+      var k = b.dataset.k, n = c.status[k];
+      b.setAttribute("aria-pressed", filters.status === k ? "true" : "false");
+      b.querySelector(".n").textContent = n;
+      b.disabled = k !== "all" && n === 0 && filters.status !== k;
     });
+
     [].forEach.call(document.querySelectorAll("#week-chips .chip"), function (b) {
-      b.setAttribute("aria-pressed", filters.week === b.dataset.k ? "true" : "false");
+      var k = b.dataset.k, n = (k === "all") ? c.weekAll : (c.week[k] || 0);
+      b.setAttribute("aria-pressed", filters.week === k ? "true" : "false");
+      b.querySelector(".n").textContent = n;
+      b.disabled = k !== "all" && n === 0 && filters.week !== k;
     });
+
     [].forEach.call(document.querySelectorAll("#fam-btns .fam-btn"), function (b) {
       var k = b.dataset.k || null;
+      var n = (k === null) ? c.famAll : (c.fam[k] || 0);
       b.setAttribute("aria-pressed", filters.family === k ? "true" : "false");
+      /* a family the block has none of says "none" for good - that is the
+         coverage gap the row exists to show. One the filters emptied says 0. */
+      b.querySelector(".fc").textContent =
+        (k !== null && FAM_TOTAL[k] === 0) ? "none" : String(n);
+      b.disabled = k !== null && n === 0 && filters.family !== k;
     });
-    byId("review-wrong").disabled = c.wrong === 0;
-    byId("review-n").textContent = c.wrong;
+
+    paintApplied(c.shown);
     if (RESET_SHOWN_IDLE) RESET_SHOWN_IDLE();
   }
 
@@ -725,6 +851,8 @@
     byId("sc-first").textContent = attempted ? Math.round(ok / attempted * 100) + "%" : "–";
     byId("sc-wrong").textContent = wrong;
     byId("sc-star").textContent = starred;
+    byId("review-wrong").disabled = wrong === 0;
+    byId("review-n").textContent = wrong;
     paintChips();
   }
 
@@ -743,13 +871,15 @@
     var fb = byId("fam-btns");
     var rows = [{ key: null, name: "All question sets", n: QUESTIONS.length, all: true }];
     FAMILIES.forEach(function (f) {
+      FAM_TOTAL[f.key] = famCount[f.key] || 0;
+      FAM_NAME[f.key] = f.name;
       rows.push({ key: f.key, name: f.name, n: famCount[f.key] || 0 });
     });
+    STATUS_DEFS.forEach(function (d) { STATUS_LABEL[d.k] = d.label; });
     rows.forEach(function (r) {
       var b = el("button", "fam-btn" + (r.all ? " is-all" : ""));
       b.type = "button";
       if (r.key) b.dataset.k = r.key;
-      b.disabled = r.n === 0;
       b.setAttribute("aria-pressed", r.key === null ? "true" : "false");
       b.appendChild(el("span", "fn", r.name));
       b.appendChild(el("span", "fc", r.n ? String(r.n) : "none"));
@@ -764,6 +894,7 @@
     var wc = byId("week-chips");
     if (wc) {
       weekDefs().forEach(function (d) {
+        WEEK_LABEL[d.k] = d.label;
         var b = el("button", "chip");
         b.type = "button";
         b.dataset.k = d.k;
@@ -787,7 +918,25 @@
       sc.appendChild(b);
     });
 
-    byId("review-wrong").addEventListener("click", function () { setStatus("wrong"); });
+    /* "wrong only" means every wrong answer in the block, so it clears what
+       else is narrowing the stream rather than handing back an empty list */
+    byId("review-wrong").addEventListener("click", function () {
+      filters.family = null;
+      filters.week = "all";
+      setStatus("wrong");
+    });
+
+    /* Below 960px the rail loses its sticky position and sits on top of the
+       stream - sixteen controls before the first question. One button folds
+       it away; the CSS only honours the state at that width. */
+    var ft = byId("filter-toggle"), rail = byId("q-rail");
+    if (ft && rail) {
+      ft.addEventListener("click", function () {
+        var open = rail.dataset.filterOpen === "true";
+        rail.dataset.filterOpen = open ? "false" : "true";
+        ft.setAttribute("aria-expanded", open ? "false" : "true");
+      });
+    }
 
     // reset only what is on screen right now
     var rs = byId("reset-shown"), rsArmed = false, rsTimer = null;

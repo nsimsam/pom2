@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base.css?v=d5ac7952">
-<link rel="stylesheet" href="pom2.css?v=f7d9840d">
+<link rel="stylesheet" href="pom2.css?v=b8409035">
 <style>
 :root{--q-accent:#175f6e;--q-accent-soft:#e0eff1;--q-accent-ink:#124d59;}
 </style>
@@ -112,7 +112,18 @@ then is also the only backup there is.</p>
 </div>
 </details>
 
-<aside class="rail">
+<aside class="rail" id="q-rail" data-filter-open="false">
+
+<button class="mfilter" id="filter-toggle" type="button" aria-expanded="false" aria-controls="filter-groups">
+<svg class="mfilter-glyph" viewBox="0 0 14 14" aria-hidden="true"><line x1="2" x2="12" y1="3.5" y2="3.5"></line><line x1="3.5" x2="10.5" y1="7" y2="7"></line><line x1="5.5" x2="8.5" y1="10.5" y2="10.5"></line></svg>
+<span class="mfilter-label">Filter</span>
+<span class="mfilter-badge" id="filter-badge" hidden>0</span>
+<svg class="mfilter-chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5 L6 8.5 L10 4.5"></path></svg>
+</button>
+
+<div class="applied" id="applied" hidden></div>
+
+<div class="rail-groups" id="filter-groups">
 
 <button class="review-cta" id="review-wrong" type="button" disabled>Review wrong only <span class="n" id="review-n">0</span></button>
 
@@ -143,6 +154,8 @@ then is also the only backup there is.</p>
 </div>
 </section>
 
+</div>
+
 </aside>
 
 <main class="stream" id="stream">
@@ -164,7 +177,7 @@ then is also the only backup there is.</p>
 <script>
 window.QUIZ_BLOCK = {"slug": "psych", "n": 5, "name": "Psychiatry", "weeks": "17–20"};
 </script>
-<script src="quiz.js?v=86ea4224"></script>
+<script src="quiz.js?v=7dfa7a84"></script>
 <script src="notes.js?v=c9b126b0"></script>
 <script src="pom2.js?v=5d6e99e0"></script>
 

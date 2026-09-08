@@ -188,7 +188,18 @@ still to write.</p>
 
 {howto}
 
-<aside class="rail">
+<aside class="rail" id="q-rail" data-filter-open="false">
+
+<button class="mfilter" id="filter-toggle" type="button" aria-expanded="false" aria-controls="filter-groups">
+<svg class="mfilter-glyph" viewBox="0 0 14 14" aria-hidden="true"><line x1="2" x2="12" y1="3.5" y2="3.5"></line><line x1="3.5" x2="10.5" y1="7" y2="7"></line><line x1="5.5" x2="8.5" y1="10.5" y2="10.5"></line></svg>
+<span class="mfilter-label">Filter</span>
+<span class="mfilter-badge" id="filter-badge" hidden>0</span>
+<svg class="mfilter-chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5 L6 8.5 L10 4.5"></path></svg>
+</button>
+
+<div class="applied" id="applied" hidden></div>
+
+<div class="rail-groups" id="filter-groups">
 
 <button class="review-cta" id="review-wrong" type="button" disabled>Review wrong only <span class="n" id="review-n">0</span></button>
 
@@ -218,6 +229,8 @@ still to write.</p>
 <button class="danger" id="reset-all" type="button">Reset all progress</button>
 </div>
 </section>
+
+</div>
 
 </aside>
 

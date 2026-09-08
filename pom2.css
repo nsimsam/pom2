@@ -262,9 +262,94 @@
     font-weight:600;
 }
 
-.chip .n{font-size:.72rem;opacity:.75;}
+.chip .n{font-size:.72rem;opacity:.75;font-variant-numeric:tabular-nums;}
 .chip.wrongish[aria-pressed="true"]{background:var(--q-bad-soft);border-color:var(--q-bad);color:var(--q-bad);}
 .chip.starish[aria-pressed="true"]{background:var(--q-star-soft);border-color:var(--q-star);color:var(--q-star);}
+
+/* the family rows have always greyed out at zero; the chips never did, so
+   "Wrong 0" was a live button to an empty page */
+.chip:disabled{color:#c3b7b9;border-color:#f4ebec;cursor:default;}
+.chip:disabled .n{opacity:.6;}
+
+/* the three filters are independent, and until this line existed nothing in
+   the rail said which of them had emptied the stream */
+.rail-groups{display:grid;gap:26px;}
+
+.applied{
+    display:grid;
+    gap:8px;
+    padding-bottom:16px;
+    border-bottom:1px solid var(--border);
+}
+
+/* a grid display would beat the UA's [hidden] rule on its own */
+.applied[hidden]{display:none;}
+
+.applied-h{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:8px;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+}
+
+.applied-h .res{
+    letter-spacing:0;
+    text-transform:none;
+    color:var(--text);
+    font-variant-numeric:tabular-nums;
+}
+
+.applied-list{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+
+.fchip{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    padding:4px 6px 4px 10px;
+    font:inherit;
+    font-size:.76rem;
+    font-weight:600;
+    color:var(--q-accent-ink);
+    background:var(--q-accent-soft);
+    border:1px solid var(--q-accent);
+    border-radius:999px;
+    cursor:pointer;
+}
+
+.fchip .x{
+    display:grid;
+    place-items:center;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:color-mix(in srgb,var(--q-accent) 16%,transparent);
+    font-size:.72rem;
+    line-height:1;
+}
+
+.fchip:hover .x{background:color-mix(in srgb,var(--q-accent) 34%,transparent);}
+
+.clear-all{
+    font:inherit;
+    font-size:.76rem;
+    color:var(--muted);
+    background:none;
+    border:0;
+    padding:4px 2px;
+    cursor:pointer;
+    text-decoration:underline;
+    text-underline-offset:2px;
+}
+
+.clear-all:hover{color:var(--q-bad);}
+
+/* the rail only collapses where collapsing helps - see the 960px query */
+.mfilter{display:none;}
 
 .resets{display:grid;gap:6px;}
 
@@ -1224,6 +1309,60 @@
     .scoreboard{gap:22px;flex-wrap:wrap;}
     .tabs{width:100%;}
     .tabs button{flex:1;justify-content:center;}
+
+    /* the rail stops following the scroll here and starts sitting on top of
+       the stream, so it folds behind one button and the first question is on
+       screen. The active-filter line stays outside the fold: a filtered view
+       must never look unfiltered just because the rail is shut. */
+    .mfilter{
+        display:flex;
+        align-items:center;
+        gap:9px;
+        width:100%;
+        padding:11px 13px;
+        font:inherit;
+        font-size:.85rem;
+        font-weight:600;
+        text-align:left;
+        color:var(--text);
+        background:var(--card-bg);
+        border:1px solid var(--border);
+        border-radius:6px;
+        cursor:pointer;
+    }
+
+    .mfilter-label{margin-right:auto;}
+
+    .mfilter-glyph,.mfilter-chev{flex-shrink:0;fill:none;stroke:currentColor;stroke-linecap:round;}
+    .mfilter-glyph{width:13px;height:13px;stroke-width:1.5;}
+
+    .mfilter-chev{
+        width:11px;
+        height:11px;
+        stroke-width:1.6;
+        stroke-linejoin:round;
+        color:var(--muted);
+        transition:transform .18s;
+    }
+
+    .mfilter-badge{
+        display:grid;
+        place-items:center;
+        min-width:18px;
+        height:18px;
+        padding:0 5px;
+        font-size:.68rem;
+        font-weight:600;
+        color:var(--on-q-accent);
+        background:var(--q-accent);
+        border-radius:999px;
+        font-variant-numeric:tabular-nums;
+    }
+
+    .mfilter-badge[hidden]{display:none;}
+
+    .rail[data-filter-open="true"] .mfilter-chev{transform:rotate(180deg);}
+    .rail[data-filter-open="false"] .rail-groups{display:none;}
 }
 
 @media (max-width:560px){
