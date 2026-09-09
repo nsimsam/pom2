@@ -1014,6 +1014,10 @@
 
 .wl{color:var(--q-accent-ink);border-bottom:1px dotted var(--border);}
 
+/* An answer choice is never a link. A wikilink carried in from the vault note
+   would tint one option and leave the rest plain, which reads as the key. */
+.opt .wl{color:inherit;border-bottom:0;}
+
 /* the grid, and the smaller companion tables under it */
 .ct-wrap{overflow-x:auto;margin-bottom:18px;}
 
