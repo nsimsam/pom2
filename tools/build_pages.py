@@ -170,14 +170,6 @@ PAGE = u"""<!DOCTYPE html>
 saved in one go. Print it, annotate it, keep it.</p>
 </section>
 
-<section>
-<p class="panel-h">What these are</p>
-<p class="railnote">One note per lecture, built to tell things apart rather than to cover
-everything. <strong>Bold marks the fact that decides between two answers</strong>.
-Every lecture in the block is listed, so the ones with nothing under them yet are the ones
-still to write.</p>
-</section>
-
 </aside>
 
 <main class="stream" id="note-stream">

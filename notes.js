@@ -285,7 +285,10 @@
       "*{margin:0;padding:0;box-sizing:border-box}",
       "body{background:#faf7f7;color:#27060f;",
       "font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,sans-serif;",
-      "padding:22px clamp(16px,4vw,40px) 40px}",
+      /* the diagram fills the width and scrolls, which is how a flowchart is
+         read anyway and keeps the labels as large as they can be - but not
+         past a comfortable measure on a very wide screen */
+      "max-width:1500px;margin:auto;padding:22px clamp(16px,4vw,40px) 40px}",
       "p.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.08em;",
       "text-transform:uppercase;color:#8a7a7d;margin-bottom:6px}",
       "h1{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.9rem);",
@@ -638,6 +641,19 @@
 
   function buildStream() {
     var stream = byId("note-stream"), frag = document.createDocumentFragment();
+
+    /* the same head the questions tab gives each source family, so the notes
+       open by saying what they are rather than dropping straight into week 1 */
+    var c = counts();
+    var head = el("div", "fam-head");
+    head.appendChild(el("p", "fam-meta",
+      c.written ? c.written + " of " + c.all + " lectures" : "nothing written yet"));
+    head.appendChild(el("h2", null, "Lecture notes"));
+    head.appendChild(el("p", null,
+      "One note per lecture, built to tell things apart rather than to cover everything. " +
+      "Bold and gold stars mark what came up in the modules, the in-class sessions " +
+      "and the Qbank alike, the facts that decide between two answers."));
+    frag.appendChild(head);
 
     WEEKS.forEach(function (w) {
       var wb = el("div", "weekbar");
