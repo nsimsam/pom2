@@ -4455,6 +4455,14 @@
      "keypoints": "<p>gonadotropins split every hypogonadism — high means the gonad failed, low means the brain did. ⭐ <strong>In a virilised boy, bilaterally enlarged testes mean central and small testes mean peripheral, because only LH grows the testis.</strong> Turner is short with streak ovaries; Klinefelter is tall with dysgenic tubules. Kallmann is hypogonadotropic hypogonadism plus anosmia. A single random LH is pulsatile and insensitive — the GnRH stimulation test is the gold standard.</p>",
      "blocks": [
       {
+       "t": "figure",
+       "src": "assets/figures/1aa4bedb306a.jpg",
+       "alt": "hypothalamic-pituitary-gonadal axis - primary secondary.jpg",
+       "w": 900,
+       "h": 1012,
+       "cap": "The hypothalamic-pituitary-gonadal axis"
+      },
+      {
        "t": "pathway",
        "mermaid": "flowchart TD\n    A[\"Abnormal pubertal timing\"] --> B{\"Early or late?\"}\n    B -->|\"EARLY - girls under 8, boys under 9\"| C{\"Normal variant?\"}\n    C -->|\"breast only, no growth spurt,<br/>no bone age advance\"| D[\"Premature THELARCHE - benign\"]\n    C -->|\"pubic hair only, age 6-8\"| E[\"Premature PUBARCHE - adrenal<br/>linked to insulin resistance and PMOS\"]\n    C -->|\"true precocity\"| F{\"Random LH?\"}\n    F -->|\"over 0.3, or GnRH stim peak over 5\"| G[\"CENTRAL - CPP<br/>LH HIGH, steroids HIGH\"]\n    F -->|\"low\"| H[\"PERIPHERAL - PPP<br/>LH LOW, steroids HIGH\"]\n    G --> I[\"Girls: mostly IDIOPATHIC<br/>Boys: under 50% idiopathic - IMAGE THE CNS\"]\n    I --> J[\"Treat with LHRH analogue<br/>continuous dosing down-regulates the receptor\"]\n    H --> K[\"Gonadal: cysts, granulosa or Leydig tumour,<br/>McCune-Albright, testotoxicosis\"]\n    H --> L[\"Adrenal: CAH, virilising tumour, Cushing\"]\n    H --> M[\"Iatrogenic: exogenous hormones\"]\n    G --> N[\"Boy: testes BILATERALLY ENLARGED over 4mL\"]\n    H --> O[\"Boy: virilised but testes SMALL under 3mL\"]\n    B -->|\"LATE - no signs by 13 girls, 14 boys\"| P{\"LH and FSH?\"}\n    P -->|\"HIGH - hypergonadotropic\"| Q[\"PRIMARY hypogonadism<br/>Turner, Klinefelter, chemo, radiation\"]\n    P -->|\"LOW - hypogonadotropic\"| R[\"SECONDARY - think brain<br/>Kallmann with anosmia, tumour, prolactin,<br/>eating disorder, chronic illness\"]\n    P -->|\"low but delayed bone age,<br/>family history, normal velocity\"| S[\"CDGP - normal variant<br/>commonest cause, especially boys\"]"
       },
