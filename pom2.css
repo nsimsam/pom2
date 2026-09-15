@@ -143,12 +143,24 @@
    index would stretch the whole rail past its 250px track and slide it under
    the stream. Both the rail and the panels inside it have to be allowed to be
    narrower than their content before text-overflow can clip anything. */
+/* A sticky rail is pinned to the viewport, so anything past the bottom of the
+   screen is simply unreachable: the page scroll moves the stream underneath it
+   and never moves the rail's own content. On a laptop the rail runs past the
+   fold, which put Week, Status and the save-progress buttons somewhere you
+   could only get to by zooming out. Cap it at the viewport and let it scroll
+   itself. On a screen tall enough to fit it, nothing changes. */
 .rail{
     position:sticky;
     top:24px;
+    max-height:calc(100vh - 48px);
+    overflow-y:auto;
+    scrollbar-gutter:stable;
     display:grid;
     gap:26px;
     min-width:0;
+    /* grid rows are stretch by default, which would spread the sections down a
+       rail that is now a fixed height instead of letting it scroll */
+    align-content:start;
 }
 .rail > section{min-width:0;}
 
@@ -1427,7 +1439,8 @@
 
 @media (max-width:960px){
     .q-shell{grid-template-columns:1fr;gap:32px;}
-    .rail{position:static;}
+    /* not sticky any more, so it scrolls with the page and must not be capped */
+    .rail{position:static;max-height:none;overflow:visible;}
 
     /* the rail now sits on top of the stream instead of following it, so the
        index is capped harder - about eight lectures, then it scrolls */
