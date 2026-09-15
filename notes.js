@@ -650,9 +650,7 @@
       c.written ? c.written + " of " + c.all + " lectures" : "nothing written yet"));
     head.appendChild(el("h2", null, "Lecture notes"));
     head.appendChild(el("p", null,
-      "One note per lecture, built to tell things apart rather than to cover everything. " +
-      "Bold and gold stars mark what came up in the modules, the in-class sessions " +
-      "and the Qbank alike, the facts that decide between two answers."));
+      "Bolded + gold star = high-yield = showed up in modules, in-class, and Qbank"));
     frag.appendChild(head);
 
     WEEKS.forEach(function (w) {

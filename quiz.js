@@ -1164,7 +1164,11 @@
           lastLecture = q.lecture;
           var lb = el("div", "lecbar");
           lb.appendChild(el("h4", null, q.lecture));
-          if (q.lectureMeta) lb.appendChild(el("p", null, q.lectureMeta.replace(/\[\[|\]\]/g, "")));
+          /* lectureMeta is provenance - which deck, which pages, keyed or
+             reasoned - and it stays in the bank and in the vault note. It is
+             not shown here: on the page it sat between the lecture name and
+             the first question as a paragraph of housekeeping, which is not
+             what you are there to read. */
           sec.appendChild(lb);
         }
         sec.appendChild(buildQuestion(q));
