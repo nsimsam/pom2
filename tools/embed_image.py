@@ -112,12 +112,18 @@ def resolve(name: str) -> Path:
     )
 
 
-def encode(path: Path, max_kb: int, max_width: int) -> tuple:
-    """Re-compress to the smallest JPEG that still looks right, under max_kb.
+def compress(path: Path, max_width: int, fits) -> tuple:
+    """Re-compress to the smallest JPEG that still looks right and passes fits().
 
-    Returns (base64 string, encoded byte count, width used, quality used).
+    Returns (jpeg bytes, width used, quality used, ok) where ok says whether
+    fits() was ever satisfied; when it was not, the smallest attempt is
+    returned so the caller can decide between warning and failing.
+
     Quality is spent first because dropping pixels is what actually loses
     detail, and a keyed anatomy or radiology image is often keyed on detail.
+
+    Shared with figures.py, which budgets the file on disk rather than the
+    base64 string, so the test is a callback rather than a byte count.
     """
     src = Image.open(path)
     if src.mode not in ("RGB", "L"):
@@ -126,7 +132,6 @@ def encode(path: Path, max_kb: int, max_width: int) -> tuple:
         flat.paste(src, mask=src.split()[-1] if "A" in src.mode else None)
         src = flat
 
-    budget = max_kb * 1024
     widths = [w for w in WIDTH_STEPS if w <= max_width] or [max_width]
     best = None
 
@@ -139,16 +144,26 @@ def encode(path: Path, max_kb: int, max_width: int) -> tuple:
             buf = io.BytesIO()
             scaled.save(buf, format="JPEG", quality=quality, optimize=True, progressive=True)
             raw = buf.getvalue()
-            encoded = base64.b64encode(raw).decode("ascii")
             if best is None:
-                best = (encoded, len(encoded), scaled.width, quality)
-            if len(encoded) <= budget:
-                return encoded, len(encoded), scaled.width, quality
+                best = (raw, scaled.width, quality, False)
+            if fits(raw):
+                return raw, scaled.width, quality, True
 
-    LOG.warning(
-        "%s will not fit under %d KB; smallest was %.1f KB at %dpx q%d",
-        path.name, max_kb, best[1] / 1024.0, best[2], best[3])
     return best
+
+
+def encode(path: Path, max_kb: int, max_width: int) -> tuple:
+    """The base64 a question stem ships. Returns (b64, its length, width, quality)."""
+    budget = max_kb * 1024
+    raw, width, quality, ok = compress(
+        path, max_width, lambda b: len(base64.b64encode(b)) <= budget)
+    encoded = base64.b64encode(raw).decode("ascii")
+
+    if not ok:
+        LOG.warning(
+            "%s will not fit under %d KB; smallest was %.1f KB at %dpx q%d",
+            path.name, max_kb, len(encoded) / 1024.0, width, quality)
+    return encoded, len(encoded), width, quality
 
 
 def main() -> int:

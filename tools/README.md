@@ -12,6 +12,16 @@ python tools/build_index.py           # the landing page and its counts
 The first two read an Obsidian vault of lecture notes. The last two read only
 `data/` and the pages already in the repo, so they run anywhere.
 
+If any chart embeds a figure, `figures.py` goes between the first two:
+
+```bash
+python tools/figures.py               # encodes chart figures into assets/figures/
+```
+
+It is separate because it needs Pillow, and keeping it out of the four above is
+what lets them stay dependency-free. It is also skippable: a chart with no
+`![[picture.png]]` in it needs nothing from it.
+
 **After writing a new note, run the first two and then the last two.** The block
 pages and the index both print counts, so they go stale otherwise.
 
@@ -50,6 +60,22 @@ the roster. It keeps the parts in source order in a `blocks` array, because the
 sentence above a table is the reason the table is there. Markdown becomes inline
 HTML: `**bold**`, `<u>`, `<br>`, `[[wikilinks]]` as `<span class="wl">`,
 `[text](url)` as a real link, and mermaid fences as `{"t": "pathway"}`.
+
+An Obsidian embed **alone on its line** becomes `{"t": "figure"}`; one with prose
+around it is left as text, because that is a sentence mentioning a picture rather
+than a block. The pipe is read the way the vault already writes it: a number is a
+width (`![[adrenal crisis card.png|300]]`), anything else is a caption
+(`![[hpg axis.png|The hypothalamic-pituitary-gonadal axis]]`). A figure whose file
+`figures.py` has not encoded is reported by name and skipped, so a missing picture
+is a line on stderr rather than a silent hole in the page.
+
+**`figures.py`** reads the same chart regions, resolves each embed against the
+vault's `Attachments`, re-compresses it to a JPEG under 220 KB and at most 900px
+wide (the note's column width), and writes it to `assets/figures/<hash>.jpg` plus
+the `data/figures.json` manifest that `charts_from_vault.py` reads. Naming a file
+after its own bytes means re-runs are free and duplicates collapse. It prints
+every newly-encoded picture, because a new image should never be added unseen -
+it cannot tell a cadaveric image from a clinical photograph and does not try.
 
 **`build_pages.py`** regenerates the five block pages. Only the name, blurb, accent
 and two counts differ between them, so they are generated rather than copied. The

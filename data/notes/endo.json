@@ -2274,6 +2274,14 @@
      "keypoints": "<p><strong>TSH case-finds, free hormone confirms</strong> — and the only reason to break that order is <strong>suspected central disease</strong>, where TSH and FT4 go together and <strong>TSH moves WITH the hormone</strong>. <strong>RAI uptake answers <em>why</em>, not <em>whether</em>.</strong> <strong>High uptake = the gland is synthesizing; low uptake = hormone is leaking out of it or coming from a bottle</strong>, and low-uptake disease is treated <strong>supportively while you watch for the hypothyroid phase</strong>. <strong>Goiter symmetry is a free discriminator: symmetric points to Graves, asymmetric to nodular disease, and thyroiditis can have no goiter at all.</strong> <strong>Methimazole is first line for Graves and RAI is first line for nodular disease</strong>, because only Graves remits. <strong>Levothyroxine's 1-week half-life is why TSH is rechecked at 4 to 6 weeks and not sooner.</strong> <strong>anti-TPO, anti-thyroglobulin, and ultrasound are the tests to leave alone</strong> in straightforward hypothyroidism.</p>",
      "blocks": [
       {
+       "t": "figure",
+       "src": "assets/figures/6fe1006d4626.jpg",
+       "alt": "hypothalamic-pituitary-thyroid axis - primary secondary tertiary.png",
+       "w": 900,
+       "h": 376,
+       "cap": "The hypothalamic-pituitary-thyroid axis"
+      },
+      {
        "t": "pathway",
        "mermaid": "flowchart TD\n A[\"Thyroid dysfunction suspected<br/>history, physical, associated condition, high risk\"] --> B[\"TSH\"]\n B --> C{\"TSH result?\"}\n C -->|\"NORMAL\"| D[\"STOP*<br/>*unless central disease is suspected\"]\n C -->|\"HIGH\"| E[\"Query HYPO - order FT4\"]\n C -->|\"LOW\"| F[\"Query HYPER - order FT4 + FT3\"]\n E --> G{\"FT4?\"}\n G -->|\"LOW\"| H[\"PRIMARY HYPOTHYROIDISM\"]\n G -->|\"Normal\"| I[\"SUBCLINICAL HYPOTHYROIDISM\"]\n F --> J{\"FT4 / FT3?\"}\n J -->|\"HIGH\"| K[\"THYROTOXICOSIS\"]\n J -->|\"Normal\"| L[\"SUBCLINICAL HYPERTHYROIDISM\"]\n K --> M[\"Etiology - clinical +/- TRAb, vs RAI uptake and scan\"]\n M -->|\"HIGH uptake\"| N[\"INCREASED SYNTHESIS<br/>Graves, hCG-related, TMNG, toxic adenoma\"]\n M -->|\"LOW uptake\"| O[\"LEAKAGE or EXOGENOUS<br/>thyroiditis, overtreatment, factitious\"]\n D --> P[\"If pituitary deficiencies or a known pituitary mass:<br/>order TSH AND FT4 together\"]\n P --> Q[\"CENTRAL HYPO - TSH normal or LOW with FT4/FT3 LOW\"]\n P --> R[\"CENTRAL HYPER - TSH normal or HIGH with FT4/FT3 HIGH\"]"
       },
@@ -3596,6 +3604,14 @@
      "keypoints": "<p><strong>Pulsatility is the whole axis.</strong> Continuous GnRH suppresses, which is why an <strong>agonist ends up doing the same job as an antagonist but with a dangerous surge first</strong>. <strong>**kisspeptin</strong> is the strongest positive input to the pulse generator<strong>, and </strong>steroids never touch the GnRH neuron directly<strong> — they work through interneurons. </strong>LH → theca and Leydig; FSH → granulosa and Sertoli<strong>, and </strong>inhibin brakes FSH alone<strong>. </strong>The shared α subunit is why the β subunit is what gets measured.<strong> </strong>Cholesterol to pregnenolone, in the mitochondrion, is the rate-limiting step.<strong> </strong>Estradiol and progesterone act without further metabolism; testosterone usually does not.<strong> </strong>Estradiol induces the progesterone receptor**, so the order of the cycle is built into the receptors themselves.</p>",
      "blocks": [
       {
+       "t": "figure",
+       "src": "assets/figures/1aa4bedb306a.jpg",
+       "alt": "hypothalamic-pituitary-gonadal axis - primary secondary.jpg",
+       "w": 900,
+       "h": 1012,
+       "cap": "The hypothalamic-pituitary-gonadal axis"
+      },
+      {
        "t": "table",
        "cols": [
         "Level",
@@ -4157,6 +4173,14 @@
      "framing": "<p>Every adrenal problem is <strong>one zone making too much, or the whole cortex making too little</strong> — and each product has exactly <strong>one screening test</strong>, which is what turns the incidentaloma workup into a fixed list of three.</p>",
      "keypoints": "<p>four products, four screening tests — and an incidentaloma gets three of them. Weight gain is the <strong>weakest</strong> Cushing sign; bruising, fracture and proximal weakness the strongest. Cushing needs <strong>two</strong> positive screens before the ACTH question is asked at all. ⭐ <strong>Primary insufficiency loses aldosterone as well as cortisol — so K⁺ is high, ACTH is high, and fludrocortisone is required; secondary spares all three.</strong> Alpha before beta, always. Cut-offs vary between labs: know the principle, not the number.</p>",
      "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/5b81bc5b0983.jpg",
+       "alt": "hypothalamic-pituitary-adrenal axis - primary secondary tertiary.png",
+       "w": 900,
+       "h": 532,
+       "cap": "The hypothalamic-pituitary-adrenal axis"
+      },
       {
        "t": "pathway",
        "mermaid": "flowchart TD\n    A[\"Adrenal disease suspected\"] --> B{\"Too much, or too little?\"}\n    B -->|\"TOO MUCH\"| C{\"Which zone?\"}\n    C -->|\"Glomerulosa - aldosterone\"| D[\"Resistant HTN +/- low K+<br/>SCREEN: aldosterone / renin ratio\"]\n    C -->|\"Fasciculata - cortisol\"| E[\"Bruising, fracture, proximal weakness<br/>SCREEN: 1mg overnight dexamethasone,<br/>24h urine cortisol, late-night salivary\"]\n    C -->|\"Medulla - catecholamines\"| F[\"Spells: headache, palpitations, sweating<br/>SCREEN: fractionated plasma free metanephrines\"]\n    D --> G[\"CONFIRM non-suppressibility<br/>saline infusion / fludrocortisone / high salt\"]\n    G --> H[\"LOCALISE: CT +/- adrenal vein sampling<br/>unilateral - adrenalectomy\"]\n    E --> I[\"TWO positive screens required\"]\n    I --> J{\"ACTH?\"}\n    J -->|\"HIGH - dependent\"| K[\"Pituitary, ectopic ACTH or CRH\"]\n    J -->|\"LOW - independent\"| L[\"Adrenal adenoma, hyperplasia, carcinoma\"]\n    F --> M[\"Do NOT biopsy until pheo excluded<br/>ALPHA block first, THEN beta\"]\n    B -->|\"TOO LITTLE\"| N[\"AM cortisol 6-9am + paired ACTH\"]\n    N --> O{\"Cortisol?\"}\n    O -->|\"greater than 450\"| P[\"Ruled out\"]\n    O -->|\"less than 80\"| Q{\"ACTH?\"}\n    O -->|\"80-450\"| R[\"ACTH stimulation test\"]\n    Q -->|\"HIGH\"| S[\"PRIMARY - Addison<br/>K+ high, aldosterone low<br/>needs fludrocortisone\"]\n    Q -->|\"LOW or normal\"| T[\"SECONDARY - central<br/>K+ normal<br/>often no fludrocortisone\"]\n    A --> U[\"Incidentaloma found?\"]\n    U --> V[\"Screen ALL THREE: cortisol, aldosterone, catecholamines\"]\n    W[\"CRISIS: shock, hypotension resistant to fluids\"] --> X[\"TREAT NOW - fluids + hydrocortisone 100mg IV<br/>do NOT wait for results\"]"

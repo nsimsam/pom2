@@ -1213,6 +1213,64 @@
 
 .pathway svg{max-width:100%;height:auto;}
 
+/* a figure, on the same terms as a pathway
+
+   The axis diagrams are the shared mental model the grid below then
+   subdivides, so a figure sits in the note like any other block: framed,
+   inset against --bg, and with the same way out to a tab of its own. */
+.figblock{
+    position:relative;
+    margin:0 0 18px;
+}
+
+.fig{
+    margin:0;
+    padding:16px;
+    text-align:center;
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:6px;
+}
+
+/* height:auto overrides the intrinsic height attribute, which is there to
+   reserve the space before the file arrives, not to fix the drawn size */
+.fig img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
+.figblock.is-openable .fig img{cursor:zoom-in;}
+
+.fig figcaption{
+    margin-top:10px;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+}
+
+.fig-open{
+    position:absolute;
+    right:8px;
+    bottom:8px;
+    padding:4px 10px;
+    font:inherit;
+    font-size:.72rem;
+    color:var(--muted);
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:999px;
+    cursor:pointer;
+    opacity:.75;
+    transition:opacity .15s,color .15s,border-color .15s;
+}
+
+.figblock:hover .fig-open{opacity:1;}
+.fig-open:hover{color:var(--q-accent);border-color:var(--q-accent);}
+
 .workup{
     font-size:.88rem;
     line-height:1.6;
@@ -1521,7 +1579,7 @@
 /* a note is a one-pager by design, so printing gives one per sheet and drops
    every control - the gaps go too, they are screen bookkeeping */
 @media print{
-    .pill-nav,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.posbar{display:none !important;}
+    .pill-nav,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar{display:none !important;}
 
     /* one note, one week, or the lot: whatever was marked survives the print
        and everything else steps out of the way */
@@ -1537,5 +1595,9 @@
     .ct-wrap{overflow:visible;}
     .ct{font-size:8.5pt;}
     .pathway{border:none;background:none;padding:0;}
+    .fig{border:none;background:none;padding:0;}
+    /* a note prints one to a sheet, so a tall figure must not push the
+       chart under it onto a second page */
+    .fig img{max-height:9cm;width:auto;}
     a{color:inherit;text-decoration:none;}
 }

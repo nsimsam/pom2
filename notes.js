@@ -183,6 +183,39 @@
 
       return box;
     }
+    if (b.t === "figure") {
+      // openable the moment it is built, unlike a pathway, which has to wait
+      // for mermaid to draw before there is anything to open
+      var fbox = el("div", "figblock is-openable");
+      var fig = el("figure", "fig");
+
+      var img = el("img");
+      // properties, never markup: a filename is not HTML and must not be parsed
+      img.src = b.src;
+      img.alt = b.alt || "";
+      img.loading = "lazy";
+      img.decoding = "async";
+      /* the intrinsic size reserves the space, so a figure arriving late does
+         not shunt the chart down the page under someone already reading it */
+      if (b.w) img.width = b.w;
+      if (b.h) img.height = b.h;
+      if (b.width) img.style.maxWidth = b.width + "px";
+      fig.appendChild(img);
+
+      if (b.cap) fig.appendChild(html("figcaption", null, b.cap));
+      fbox.appendChild(fig);
+
+      var fopen = el("button", "fig-open", "Open full size");
+      fopen.type = "button";
+      fopen.title = "Open this figure in its own tab, big enough to read";
+      fopen.addEventListener("click", function () { openFigure(b, lec); });
+      fbox.appendChild(fopen);
+
+      // the picture is the obvious thing to click, so let it be
+      img.addEventListener("click", function () { openFigure(b, lec); });
+
+      return fbox;
+    }
     if (b.t === "table") {
       var box = el("div", "tblock");
       if (b.lead) box.appendChild(html("div", "tlead", b.lead));
@@ -309,6 +342,75 @@
       "</body></html>"
     ].join(""));
     w.document.close();
+  }
+
+  /* ---------- a figure, big enough to read ---------- */
+
+  /* The pathway's problem, and the same answer: inside the stream a figure is
+     capped at the note's column, and the labels printed inside an axis diagram
+     go down with it. This hands it a tab of its own.
+
+     The picture is a file, not an inline SVG, so the new document just points
+     at the same asset the browser has already cached - nothing is re-encoded
+     and nothing is copied across.
+
+     The img is built with DOM calls after the write rather than concatenated
+     into the markup, because esc() escapes &<> but NOT quotes, and a src is an
+     attribute. Nothing here would break on the hashed filenames we generate;
+     building it this way means nothing later can. */
+  function openFigure(b, lec) {
+    var w = window.open("", "_blank");
+    if (!w) return;                       // a blocked popup is not worth a dialog
+
+    var title = (lec && lec.name) || "Figure";
+    var block = (BLOCK && BLOCK.name) || "PoM 2";
+    var num = (lec && lec.num) ? lec.num + " · " : "";
+
+    w.document.open();
+    w.document.write([
+      "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<title>", esc(num + title), " · ", esc(block), "</title>",
+      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?",
+      "family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap\">",
+      "<style>",
+      "*{margin:0;padding:0;box-sizing:border-box}",
+      "body{background:#faf7f7;color:#27060f;",
+      "font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,sans-serif;",
+      "max-width:1500px;margin:auto;padding:22px clamp(16px,4vw,40px) 40px}",
+      "p.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.08em;",
+      "text-transform:uppercase;color:#8a7a7d;margin-bottom:6px}",
+      "h1{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.9rem);",
+      "font-weight:600;line-height:1.2;text-wrap:balance;margin-bottom:18px}",
+      "figure{background:#fff;border:1px solid #ecdfe1;border-radius:8px;",
+      "padding:clamp(14px,3vw,30px)}",
+      "img{width:100%;height:auto;display:block;margin:auto}",
+      "figcaption{margin-top:12px;font-size:.8rem;color:#8a7a7d;text-align:center}",
+      "footer{margin-top:16px;font-size:.8rem;color:#8a7a7d}",
+      "@media print{body{padding:0;background:#fff}",
+      "figure{border:0;padding:0}footer{display:none}}",
+      "</style></head><body>",
+      "<p class=\"eyebrow\">", esc(block), "</p>",
+      "<h1>", esc(num + title), "</h1>",
+      "<figure id=\"fig\"></figure>",
+      "<footer>Zoom with your browser, or print this page to keep it.</footer>",
+      "</body></html>"
+    ].join(""));
+    w.document.close();
+
+    var host = w.document.getElementById("fig");
+    if (!host) return;
+    var big = w.document.createElement("img");
+    big.src = new URL(b.src, location.href).href;   // the popup has no base url
+    big.alt = b.alt || "";
+    host.appendChild(big);
+    if (b.cap) {
+      var cap = w.document.createElement("figcaption");
+      cap.innerHTML = b.cap;
+      host.appendChild(cap);
+    }
   }
 
   /* One diagram failing to parse should not take the others' buttons with it, so

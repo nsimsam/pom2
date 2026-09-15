@@ -23,6 +23,16 @@ BLOCK_FOLDER = {
 
 PIPE = u"\x00"   # stands in for an escaped \| while a table row is split
 
+# An Obsidian embed alone on its line is a figure. Alone is the whole test: an
+# embed with prose around it is a sentence that mentions a picture, not a block.
+IMG_EXT = u"png|jpe?g|gif|webp"
+FIG_LINE = re.compile(
+    r"^\s*!\[\[\s*([^\]\|]+?\.(?:%s))\s*(?:\|\s*([^\]]*?)\s*)?\]\]\s*$" % IMG_EXT, re.I)
+
+# written by tools/figures.py, which owns Pillow so the rebuild scripts do not
+FIGURES_PATH = "data/figures.json"
+FIGURES = {}
+
 
 # ---------- inline markdown -> html ----------
 
@@ -33,10 +43,13 @@ def inline(s):
     s = re.sub(r"&(?!#?\w+;)", "&amp;", s)
 
     # [[target|alias]] and [[target]] - styled, not linked; there is nothing
-    # on the public site for a vault wikilink to point at
-    s = re.sub(r"\[\[([^\]\|]+)\|([^\]]+)\]\]",
+    # on the public site for a vault wikilink to point at.
+    # The lookbehind leaves ![[embeds]] alone: an image is a block, handled by
+    # scan(), and without this the alias rule ate ![[x.png|600]] down to !600 -
+    # the width hint kept as the visible text and the filename thrown away.
+    s = re.sub(r"(?<!!)\[\[([^\]\|]+)\|([^\]]+)\]\]",
                lambda m: u'<span class="wl">%s</span>' % m.group(2).strip(), s)
-    s = re.sub(r"\[\[([^\]\|]+)\]\]",
+    s = re.sub(r"(?<!!)\[\[([^\]\|]+)\]\]",
                lambda m: u'<span class="wl">%s</span>' % m.group(1).strip(), s)
 
     # [text](url) - the charts cite trials and guidelines and those should stay
@@ -117,6 +130,10 @@ def scan(region):
             out.append(("callout", lines[i:j]))
             i = j
             continue
+        if FIG_LINE.match(ln):
+            out.append(("figure", [ln]))
+            i += 1
+            continue
         if not ln.strip():
             i += 1
             continue
@@ -125,9 +142,40 @@ def scan(region):
             t = lines[j]
             if not t.strip() or t.lstrip()[:1] in ("|", ">") or t.strip().startswith("```"):
                 break
+            if FIG_LINE.match(t) and j > i:
+                break                     # a figure ends the paragraph above it
             j += 1
         out.append(("text", lines[i:j]))
         i = j
+    return out
+
+
+def parse_figure(line):
+    """![[name.png]], ![[name.png|520]] or ![[name.png|a caption]].
+
+    The vault already overloads the pipe both ways - "adrenal crisis card.png|300"
+    is a width, "pheochromocytoma locations.png|areas in red indicate ..." is a
+    caption - so the number decides which it is. That is her existing habit, not
+    a new convention.
+    """
+    m = FIG_LINE.match(line)
+    if not m:
+        return None
+    name = m.group(1).strip()
+    hint = (m.group(2) or u"").strip()
+
+    fig = FIGURES.get(name)
+    if not fig:
+        sys.stderr.write(
+            "no figure asset for %r - run tools/figures.py\n" % name)
+        return None
+
+    out = {"t": "figure", "src": fig["src"], "alt": name,
+           "w": fig["w"], "h": fig["h"]}
+    if hint.isdigit():
+        out["width"] = int(hint)
+    elif hint:
+        out["cap"] = inline(hint)
     return out
 
 
@@ -162,12 +210,18 @@ def parse_callout(lines):
 
 # ---------- one note ----------
 
-def chart_of(path):
-    src = io.open(path, encoding="utf-8").read()
+def chart_region(src):
+    """Everything between the frontmatter and the first closing ---, or None."""
     parts = src.split("\n---")
     if len(parts) < 2 or "# Overview chart" not in parts[1]:
         return None
-    region = parts[1]
+    return parts[1]
+
+
+def chart_of(path):
+    region = chart_region(io.open(path, encoding="utf-8").read())
+    if region is None:
+        return None
 
     blocks = scan(region)
 
@@ -200,7 +254,9 @@ def chart_of(path):
                 kp = kp.replace("<p><strong>High-yield discriminators:</strong>", "<p>", 1)
                 out["keypoints"] = kp.strip()
                 continue
-            if "framing" not in out and not body:
+            # a figure above the framing line is still "on top of the chart",
+            # so it must not cost the paragraph its framing slot
+            if "framing" not in out and not [b for b in body if b["t"] != "figure"]:
                 out["framing"] = para(lines)
                 continue
             flush()
@@ -226,6 +282,11 @@ def chart_of(path):
             continue
 
         flush(); pending = None
+        if kind == "figure":
+            fig = parse_figure(lines[0])
+            if fig:
+                body.append(fig)
+            continue
         if kind == "fence":
             inner = [l for l in lines[1:-1]]
             if lines[0].strip().lower().startswith("```mermaid"):
@@ -243,7 +304,15 @@ def chart_of(path):
 
 # ---------- fold into the roster ----------
 
+def load_figures():
+    """The figure manifest, or nothing - a chart with no pictures needs none."""
+    if not os.path.exists(FIGURES_PATH):
+        return {}
+    return json.load(io.open(FIGURES_PATH, encoding="utf-8"))
+
+
 def main(slugs):
+    FIGURES.update(load_figures())
     for slug in slugs:
         p = "data/notes/%s.json" % slug
         doc = json.load(io.open(p, encoding="utf-8"))

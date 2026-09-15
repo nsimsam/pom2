@@ -129,9 +129,18 @@ and leaves it out of the score.
 `lectures`. A lecture with `hasNote: false` still renders, greyed, so the tab
 reads as a coverage map rather than a list of what happens to be done. A lecture
 with a note adds `title`, `framing`, `keypoints` and `blocks`, where `blocks` is
-an ordered list of `{"t": "table" | "note" | "callout" | "list" | "pathway"}`
-parts. Order is preserved on purpose, since the sentence above a table is usually
-the reason the table is there.
+an ordered list of
+`{"t": "table" | "note" | "callout" | "list" | "pathway" | "figure"}` parts.
+Order is preserved on purpose, since the sentence above a table is usually the
+reason the table is there.
+
+A `figure` block carries `src`, `alt`, the intrinsic `w`/`h`, and an optional
+`cap`. Unlike a question's picture, which is inlined as a `data:` URI, a figure
+points at a real file under `assets/figures/` named after the hash of its own
+bytes. The notes JSON is fetched whole when the tab opens and is regenerated on
+every rebuild, so inlining it there would cost every reader on every load and
+defeat git's delta compression besides; hashing the name means two lectures
+embedding the same picture share one file.
 
 ## Making it yours
 
