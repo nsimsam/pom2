@@ -4258,55 +4258,2809 @@
      "id": "endo-w3-01",
      "num": "01",
      "name": "Clinical Presentation and Evaluation of Adrenal Gland Disease",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical Presentation and Evaluation of Adrenal Gland Disease",
+     "framing": "<p>⭐ <strong>One gland, three cortical zones, and the zone tells you the syndrome.</strong> Everything in this lecture hangs off ⭐ <strong>glomerulosa → aldosterone, fasciculata → cortisol, reticularis → androgens</strong>, plus the <strong>medulla → catecholamines</strong>. ⭐ <strong>Each of the four has exactly one screening test, and knowing which test goes with which is what the module tests twice.</strong></p>",
+     "keypoints": "<p>⭐ <strong>Four products, four screening tests: ARR for aldosterone, overnight dexamethasone for cortisol, metanephrines for catecholamines - and an incidentaloma gets all three.</strong> ⭐ <strong>Weight gain is the weakest Cushing sign; bruising, fracture and proximal weakness are the strong ones.</strong> ⭐ <strong>Cushing's needs TWO positive screens, then the ACTH-dependent vs independent split.</strong> ⭐ <strong>Plasma free metanephrines, 99% sensitive, because metabolites survive between spells.</strong> ⭐ <strong>Alpha block before beta block, always.</strong> ⭐ <strong>No biopsy until pheo is excluded - 70% complications.</strong> ⭐ <strong>Primary insufficiency loses aldosterone too, so K⁺ is high and ACTH is high; secondary keeps both near normal and needs no fludrocortisone.</strong> ⭐ <strong>Cortisol >450 rules out, <80 rules in; in crisis, draw it whenever and treat immediately.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Zone / region",
+        "Product",
+        "Overproduction",
+        "⭐ Screening test"
+       ],
+       "rows": [
+        [
+         "<strong>Zona glomerulosa</strong>",
+         "<strong>aldosterone</strong>",
+         "⭐ <strong>primary hyperaldosteronism (Conn)</strong>",
+         "⭐ <strong>plasma aldosterone / renin ratio</strong>"
+        ],
+        [
+         "<strong>Zona fasciculata</strong>",
+         "<strong>cortisol</strong>",
+         "⭐ <strong><span class=\"wl\">Cushing syndrome</span></strong>",
+         "⭐ <strong>1 mg overnight <span class=\"wl\">dexamethasone</span> suppression</strong> · 24-h urine free cortisol · late-night salivary cortisol"
+        ],
+        [
+         "<strong>Zona reticularis</strong>",
+         "<strong>androgens</strong>",
+         "virilisation",
+         "—"
+        ],
+        [
+         "⭐ <strong>Medulla</strong>",
+         "<strong>catecholamines</strong>",
+         "⭐ <strong><span class=\"wl\">pheochromocytoma</span></strong>",
+         "⭐ <strong>fractionated metanephrines</strong>, urine or plasma"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>That table IS the adrenal incidentaloma workup.</strong> An incidentally found mass must be screened for <strong>cortisol, aldosterone and catecholamine</strong> excess - the same three, in that order.</p>",
+       "cols": [
+        "Primary hyperaldosteronism",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Frequency</strong>",
+         "⭐ <strong>5-10% of all hypertension</strong>; about <strong>1%</strong> of incidentalomas"
+        ],
+        [
+         "⭐ <strong>When to consider</strong>",
+         "<strong>severe or treatment-resistant HTN (>3 drugs)</strong> · ⭐ <strong>low K⁺</strong> (spontaneous or thiazide-induced, with inappropriately high urinary K⁺ loss) · HTN <strong>plus</strong> an adrenal incidentaloma · ⚠ <strong>no edema</strong>"
+        ],
+        [
+         "⚠ <strong>The trap</strong>",
+         "<strong>hypokalemia is \"often, not always\"</strong> - a normal K⁺ does <strong>not</strong> exclude it"
+        ],
+        [
+         "<strong>Sequence</strong>",
+         "1. screen (<strong>ARR</strong>) → 2. ⭐ <strong>confirm non-suppressibility</strong> (saline infusion, fludrocortisone, high-salt) → 3. <strong>localise</strong> (CT ± <strong>adrenal vein sampling</strong>)"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "⭐ <strong>unilateral adrenalectomy if the overproduction is one-sided</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Why the ratio and not the aldosterone alone:</strong> a raised ARR says the aldosterone is ⭐ <strong>no longer renin-dependent</strong> - the gland has stopped listening to the axis above it. ⚠ <strong>The deck says three times over: \"know principle, not all details\"</strong> about the units, the cut-offs and the drug interferences.</p>",
+       "cols": [
+        "<span class=\"wl\">Cushing syndrome</span>",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>What it is</strong>",
+         "<strong>overexposure to glucocorticoids</strong>"
+        ],
+        [
+         "<strong>Three biochemical features</strong>",
+         "⭐ <strong>increased cortisol production</strong> · ⭐ <strong>loss of diurnal rhythm</strong> · ⭐ <strong>loss of suppressibility after dexamethasone</strong>"
+        ],
+        [
+         "⭐ <strong>Diagnosis requires</strong>",
+         "⭐ <strong>TWO positive screening tests</strong> - not one"
+        ],
+        [
+         "<strong>Then the second question</strong>",
+         "⭐ <strong>ACTH-dependent</strong> (pituitary, ectopic ACTH, ectopic CRH) <strong>vs ACTH-independent</strong> (adrenal adenoma, hyperplasia, carcinoma)"
+        ],
+        [
+         "⚠ <strong>Outcome language</strong>",
+         "⭐ <strong>\"Cushing is not cured, but in remission\"</strong> - recurrence is possible <strong>even after 10 years</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Sign, by likelihood ratio",
+        "LR"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Ecchymoses</strong>",
+         "<strong>10 - 11.3</strong>"
+        ],
+        [
+         "⭐ <strong>Osteopenia or fracture</strong>",
+         "<strong>8 - 13.8</strong>"
+        ],
+        [
+         "⭐ <strong>Proximal muscle weakness</strong>",
+         "<strong>8 - 12.6</strong>"
+        ],
+        [
+         "<strong>Hypertension</strong>",
+         "4.35 - 5.29"
+        ],
+        [
+         "Edema",
+         "2.82 - 3.88"
+        ],
+        [
+         "<strong>Purple striae (> 1 cm)</strong>",
+         "2.72 - 2.91"
+        ],
+        [
+         "Plethora · hirsutism",
+         "2.21 - 3.03"
+        ],
+        [
+         "⚠ <strong>General obesity / weight gain</strong>",
+         "⚠ <strong>1.75 - 3.10</strong>"
+        ],
+        [
+         "Headache",
+         "1.27 - 1.57"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The ranking is the examinable part, and it is counter-intuitive: weight gain is the WORST discriminator on the list and the first thing everyone thinks of.</strong> ⭐ <strong>Easy bruising, fragility fracture and proximal weakness are the findings that actually move the probability</strong> - they are what separate Cushing's from ordinary obesity with hypertension and diabetes. The module asks exactly this, ranking ⭐ <strong>proximal muscle weakness > hypertension > striae > weight gain</strong>.</p>",
+       "cols": [
+        "<span class=\"wl\">pheochromocytoma</span>",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Origin</strong>",
+         "adrenal <strong>medulla</strong>, or sympathetic ganglia (⭐ <strong>paraganglioma</strong>)"
+        ],
+        [
+         "<strong>Frequency</strong>",
+         "⭐ <strong>rare - 1 per 100,000/year, < 0.2% of hypertension</strong>; but <strong>~5%</strong> of incidentalomas"
+        ],
+        [
+         "⭐ <strong>Classic triad, spell-related</strong>",
+         "⭐ <strong>headache · palpitations · sweating</strong>, with pallor, anxiety, dyspnea, nausea, BP↑"
+        ],
+        [
+         "<strong>Chronic</strong>",
+         "sustained hypertension, fatigue, cold hands, orthostatic hypotension, fever"
+        ],
+        [
+         "⭐ <strong>Best screening test</strong>",
+         "⭐ <strong>fractionated plasma free metanephrines - sensitivity 99%</strong>, specificity 89%"
+        ],
+        [
+         "<strong>The rule of 10s (30-40% familial)</strong>",
+         "<strong>10% extra-adrenal · 10% bilateral · 10% malignant</strong> (likely fewer). ⭐ <strong>Genetic testing is offered to ALL diagnosed patients</strong> - MEN 2A/2B, von Hippel-Lindau, neurofibromatosis, SDH mutations"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Test",
+        "Sens",
+        "Spec"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Fractionated plasma free metanephrines</strong>",
+         "⭐ <strong>99%</strong>",
+         "89%"
+        ],
+        [
+         "Urinary fractionated metanephrines",
+         "97%",
+         "69%"
+        ],
+        [
+         "Urinary catecholamines",
+         "86%",
+         "88%"
+        ],
+        [
+         "Plasma catecholamines",
+         "84%",
+         "81%"
+        ],
+        [
+         "Urinary VMA",
+         "⚠ <strong>64%</strong>",
+         "95%"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Metanephrines beat catecholamines because they are the METABOLITES</strong> - secretion is episodic, so the parent catecholamine may be normal between spells while the metabolite is not. ⚠ <strong>VMA has the worst sensitivity on the list and is the historical test.</strong></p>"
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "Two things that will hurt the patient if you get them backwards",
+       "html": "<p>⭐ <strong>Alpha blockade ALWAYS before beta blockade.</strong> Phenoxybenzamine, prazosin or doxazosin first; propranolol added later. ⚠ <strong>Beta-blocking first leaves alpha-mediated vasoconstriction unopposed and can precipitate a hypertensive crisis.</strong></p><p>⭐ <strong>Never biopsy an enlarged adrenal gland until pheochromocytoma is excluded.</strong> In a series of 20 biopsied patients, ⚠ <strong>14 (70%) had a biopsy-related complication</strong> - severe hypertension, haematoma, conversion to open surgery, delayed surgery.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Adrenal insufficiency",
+        "Primary (Addison's)",
+        "Secondary (central)"
+       ],
+       "rows": [
+        [
+         "<strong>Defect</strong>",
+         "⭐ <strong>the adrenal cortex itself</strong>",
+         "pituitary / hypothalamic ACTH or CRH"
+        ],
+        [
+         "<strong>Hormones lost</strong>",
+         "⭐ <strong>cortisol AND aldosterone</strong>",
+         "⭐ <strong>cortisol only</strong>"
+        ],
+        [
+         "⭐ <strong>ACTH</strong>",
+         "⭐ <strong>HIGH</strong>",
+         "⭐ <strong>normal or LOW</strong>"
+        ],
+        [
+         "<strong>Aldosterone</strong>",
+         "⭐ <strong>LOW</strong>",
+         "normal or high"
+        ],
+        [
+         "<strong>Na⁺</strong>",
+         "↓",
+         "normal or ↓"
+        ],
+        [
+         "⭐ <strong>K⁺</strong>",
+         "⭐ <strong>HIGH</strong>",
+         "⚠ <strong>usually normal</strong>"
+        ],
+        [
+         "<strong>Other</strong>",
+         "HCO₃⁻↓, pH↓, renal insufficiency, <strong>Ca↑</strong>",
+         "HCO₃⁻↓"
+        ],
+        [
+         "<strong>Commonest cause</strong>",
+         "⭐ <strong>autoimmune, 80-90% in the West</strong>",
+         "⭐ <strong>exogenous steroid use</strong>"
+        ],
+        [
+         "<strong>Peak age</strong>",
+         "30-50",
+         "50-59"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The potassium is the cleanest bedside discriminator</strong>: only the primary form loses aldosterone, so only the primary form runs hyperkalaemic. ⭐ <strong>A low sodium with a NORMAL potassium points central.</strong></p>",
+       "cols": [
+        "Diagnosis of insufficiency",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>AM serum cortisol, 6-9 AM</strong>",
+         "⭐ <strong>ruled out if > 450 nmol/L · diagnostic if < 80 nmol/L</strong>"
+        ],
+        [
+         "<strong>Paired ACTH</strong>",
+         "⭐ <strong>high ACTH = primary</strong>"
+        ],
+        [
+         "<strong>Cosyntropin (ACTH) stimulation</strong>",
+         "rise <strong>over 450</strong> is normal. ⭐ <strong>Sens 97%, spec 95% for PRIMARY; less good for secondary</strong>"
+        ],
+        [
+         "⚠ <strong>In suspected crisis</strong>",
+         "⭐ <strong>draw the cortisol at ANY time of day</strong> - the diurnal rule is suspended"
+        ],
+        [
+         "⚠ <strong>Estrogen</strong>",
+         "<strong>stop ≥ 6 weeks before testing</strong> - it raises CBG and causes <strong>false negatives</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "condition",
+       "title": "Treatment",
+       "html": "<p>⭐ <strong>Acute (crisis): ABCs · electrolytes and glucose · 2-3 L normal saline/dextrose fast through two large-bore IVs · hydrocortisone 100 mg IV bolus, then 50-100 mg Q6-8h.</strong> ⭐ <strong>Do not delay treatment waiting for test results.</strong> Subacute: taper fluids and steroid, <strong>start mineralocorticoid</strong>, find the cause.</p><p><strong>Chronic maintenance:</strong> <strong>hydrocortisone 10-20 mg AM + 5 mg PM</strong>, or <strong>prednisone 5-7.5 mg AM</strong>; plus ⭐ <strong>fludrocortisone (Florinef) 0.05-0.1 mg OD</strong>, which is ⭐ <strong>often not required in SECONDARY insufficiency</strong> - because the aldosterone axis was never lost.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-02",
      "num": "02",
      "name": "Clinical Presentation and Evaluation of Pituitary Gland Disease",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Clinical Presentation and Evaluation of Pituitary Gland Disease",
+     "framing": "<p>⭐ <strong>Every pituitary problem is asked in two halves, and the lecture is built on the split: what is the mass DOING (mass effect), and what is the gland MAKING - too much, or too little.</strong> ⭐ <strong>A macroadenoma does both at once</strong>, which is why the workup always tests for overproduction <em>and</em> insufficiency rather than choosing.</p>",
+     "keypoints": "<p>⭐ <strong>Mass effect and hormone status are two separate questions and a macroadenoma answers both.</strong> ⭐ <strong>Bitemporal hemianopia, because the chiasm carries the crossing nasal fibres.</strong> ⭐ <strong>TSH is unreliable in secondary hypothyroidism — an \"inappropriately normal\" TSH with a low free T4 is the pituitary.</strong> ⭐ <strong>Cortisol <80-100 rules in, >450 rules out, and a mid-range value still fails under stress.</strong> ⭐ <strong>Only cortisol and GH need stimulation testing, and one hypoglycaemic stress tests both.</strong> ⭐ <strong>Steroid before thyroxine, always.</strong> ⭐ <strong>Dopamine INHIBITS prolactin, so antagonists raise it.</strong> ⭐ <strong>A prolactinoma with a field defect is treated medically, not surgically — the one adenoma you do not send to theatre.</strong> ⭐ <strong>IGF-1 screens acromegaly, OGTT confirms by failure to suppress below 1.</strong> ⭐ <strong>Acromegaly does not make you taller.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Mass effect",
+        "Hormonal problem"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>visual field defect</strong> · <strong>diplopia</strong> · <strong>headaches</strong> · ⭐ <strong>pituitary apoplexy (bleed)</strong>",
+         "<strong>over</strong>production of one hormone, and/or <strong>insufficiency</strong> of the others from compression"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The classic field defect is BITEMPORAL hemianopia</strong>, and the reason is anatomical: the <strong>nasal fibres of each optic nerve cross at the chiasm</strong>, the chiasm sits directly above the gland, so a lesion growing upward hits the crossing fibres and knocks out ⭐ <strong>both temporal fields</strong>. The module asks for this by name.</p>",
+       "cols": [
+        "Axis to check, in this order",
+        "Deficiency looks like",
+        "⭐ Screening"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>1. Pituitary-adrenal</strong>",
+         "lassitude, weight loss, fatigue, anorexia, <strong>hypoglycaemia</strong>, ↓libido, <strong>hypotension</strong>",
+         "⭐ <strong>AM cortisol</strong> (8-9 AM, fasting)"
+        ],
+        [
+         "⭐ <strong>2. Thyroid</strong>",
+         "fatigue, <strong>cold intolerance</strong>, ↓appetite, constipation, dry skin, bradycardia",
+         "⭐ <strong>free T4 — NOT TSH</strong>"
+        ],
+        [
+         "<strong>3. Gonadal</strong>",
+         "<strong>men</strong>: infertility, ↓energy, ↓libido, hot flushes, ⭐ <strong>↓BMD</strong> · <strong>women</strong>: oligo/amenorrhoea, hot flushes, vaginal atrophy",
+         "LH, FSH + <strong>testosterone / estradiol</strong>"
+        ],
+        [
+         "<strong>4. Prolactin</strong> (deficiency)",
+         "rarely matters",
+         "prolactin"
+        ],
+        [
+         "<strong>5. Growth hormone</strong>",
+         "↑fat mass, ↓lean mass, ↓exercise capacity, impaired psychological function, ↑mortality",
+         "<strong>IGF-1</strong>"
+        ],
+        [
+         "<strong>6. Posterior: AVP deficiency</strong> (was diabetes insipidus)",
+         "polyuria, polydipsia",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "⭐ The single most examinable trap: TSH is useless for secondary hypothyroidism",
+       "html": "<p>In the deck's case the <strong>TSH is 4.11 with a reference range of 0.27-4.2</strong> — technically normal — while the <strong>free T4 is 5 against a range of 10-24</strong>. The slide's own words: ⭐ <strong>\"TSH is inappropriately normal!\"</strong></p><p>⭐ <strong>TSH is an excellent screening test for PRIMARY thyroid disease and unreliable for SECONDARY.</strong> In primary hypothyroidism the failing thyroid lets TSH rise; in secondary it is the <strong>pituitary that has failed</strong>, so it cannot mount the rise. ⚠ <strong>A normal TSH beside a low free T4 is a pituitary result, not a reassuring one.</strong> Free T4 also has to be converted to free T3, the active hormone — and that conversion needs TSH.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Interpreting the screening cortisol",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>< 80-100 nmol/L</strong>",
+         "⭐ <strong>confirmed insufficiency</strong>"
+        ],
+        [
+         "⭐ <strong>> 450 nmol/L</strong>",
+         "⭐ <strong>confirmed sufficient</strong>"
+        ],
+        [
+         "<strong>in between</strong> (e.g. 219)",
+         "⚠ ⭐ <strong>a \"normal\" baseline does NOT mean an adequate response to stress</strong> — needs a stimulation test"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Stimulation test needed?",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Cortisol</strong>",
+         "⭐ <strong>yes</strong> — insulin tolerance test, ACTH test, CRH test"
+        ],
+        [
+         "⭐ <strong>Growth hormone</strong>",
+         "⭐ <strong>yes</strong> — insulin tolerance test, glucagon"
+        ],
+        [
+         "<strong>Thyroid · gonadal · prolactin</strong>",
+         "⭐ <strong>no — not required</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The insulin tolerance test works by making the patient hypoglycaemic on purpose</strong> — glucose must fall <strong>below 2.4 mmol/L</strong>, which is why it is called a <em>stress</em> test. ⭐ <strong>Cortisol and GH should both rise.</strong> That the same test serves both is not a coincidence: they are the two stress hormones.</p>"
+      },
+      {
+       "t": "callout",
+       "kind": "condition",
+       "title": "⭐ Treat adrenal insufficiency BEFORE hypothyroidism",
+       "html": "<p>Stated outright on the treatment slide. ⭐ <strong>Giving levothyroxine first raises the metabolic rate and can precipitate an adrenal crisis in someone who cannot mount a cortisol response.</strong> Cortisol first, thyroxine second. Also: ⭐ <strong>treat hypothyroidism on the FREE hormone levels, not the TSH</strong>, for the reason above — and <strong>educate the patient on stress dosing</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Overproduction</p>",
+       "cols": [
+        "Hormone",
+        "Syndrome",
+        "⭐ Screening test"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Prolactin</strong>",
+         "prolactinoma / hyperprolactinaemia",
+         "⭐ <strong>serum prolactin</strong>"
+        ],
+        [
+         "⭐ <strong>Growth hormone</strong>",
+         "⭐ <strong><span class=\"wl\">acromegaly</span></strong>",
+         "⭐ <strong>IGF-1</strong>, then <strong>OGTT</strong> for confirmation"
+        ],
+        [
+         "⭐ <strong>ACTH</strong>",
+         "⭐ <strong><span class=\"wl\">Cushing syndrome</span></strong> (pituitary = Cushing <em>disease</em>)",
+         "overnight dexamethasone · 24-h urine cortisol · late-night salivary"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Prolactin",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Normal</strong>",
+         "<strong>< 25 µg/L</strong> in adults, ⭐ <strong>usually < 15 in men</strong>"
+        ],
+        [
+         "⭐ <strong>Control is INHIBITORY</strong>",
+         "⭐ <strong>dopamine tonically suppresses prolactin</strong> via D2 — which is why a <strong>stalk section</strong>, or any <strong>dopamine antagonist</strong>, raises it"
+        ],
+        [
+         "<strong>Sex distribution</strong>",
+         "commonest in women, peak in childbearing years. ⭐ <strong>In women 95% are microadenomas; macroadenomas are commoner in men</strong>"
+        ],
+        [
+         "⭐ <strong>Level maps to severity</strong>",
+         "<strong>20-50</strong>: ↓progesterone, short luteal phase · <strong>50-100</strong>: oligo/amenorrhoea · ⭐ <strong>> 100: overt hypogonadism</strong>"
+        ],
+        [
+         "<strong>Mechanism</strong>",
+         "⭐ <strong>inhibits GnRH → inhibits LH (and FSH)</strong>, giving <strong>low/normal LH-FSH with low estradiol or testosterone — i.e. SECONDARY hypogonadism</strong>"
+        ],
+        [
+         "<strong>In men</strong>",
+         "↓libido, erectile dysfunction, infertility, gynaecomastia, galactorrhoea (rare), ⭐ <strong>osteopenia in 16/20 (80%)</strong>"
+        ],
+        [
+         "<strong>In women</strong>",
+         "oligo/amenorrhoea, <strong>galactorrhoea 30-70%</strong>, infertility. ⭐ <strong>10-20% of amenorrhoea</strong> (pregnancy excluded) and <strong>14% of nipple discharge</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Causes to exclude before calling it a prolactinoma:</strong> <strong>pregnancy · stress · nipple stimulation · primary hypothyroidism · chronic renal failure · cirrhosis · drugs</strong> (⭐ <strong>dopamine-receptor antagonists — chlorpromazine, haloperidol, metoclopramide, domperidone</strong>; also methyldopa, verapamil, estrogens, cimetidine) · <strong>macroprolactin</strong>, which is a lab artefact of no clinical relevance.</p>"
+      },
+      {
+       "t": "callout",
+       "kind": "drugs",
+       "title": "⭐ The prolactinoma is the pituitary tumour you do NOT operate on first",
+       "html": "<p>⭐ <strong>Dopamine agonists are first choice: bromocriptine, cabergoline, quinagolide.</strong> Surgery is second line.</p><p>⭐ <strong>This is exactly what the module's hardest question tests.</strong> A 38-year-old with an adenoma and <strong>bitemporal field defects</strong> is being sent for surgery; you are asked which lab result would make you <strong>NOT</strong> refer him. ⭐ <strong>A prolactin of 800 (normal <23) is the answer</strong> — that tumour shrinks on a tablet, and the field defect lifts with it. ⚠ <strong>A raised cortisol, a raised IGF-1 or a TSH-secreting picture would all still go to theatre.</strong></p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ <span class=\"wl\">acromegaly</span>",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>What it is</strong>",
+         "persistent <strong>GH hypersecretion</strong>, usually a <strong>pituitary adenoma</strong>"
+        ],
+        [
+         "<strong>Features</strong>",
+         "⭐ <strong>acral overgrowth, enlarged hands and feet, coarse facial features, frontal bossing, large jaw, gapped teeth, macroglossia</strong> · skin thickening, oily sweaty skin · <strong>carpal tunnel</strong> · <strong>OSA</strong> · <strong>hypertension 43%</strong> · <strong>DM 10-15%, IGT a further 50%</strong> · <strong>colonic polyps and colon cancer risk</strong> · ⭐ <strong>arthropathy, disabling</strong> · ⭐ <strong>SMR 1.72 if untreated</strong>"
+        ],
+        [
+         "⚠ ⭐ <strong>NOT a feature</strong>",
+         "⭐ <strong>increased height</strong> — the epiphyses are already fused in an adult. <strong>GH excess before fusion is gigantism; after fusion it is acromegaly.</strong> The module asks precisely this"
+        ],
+        [
+         "⭐ <strong>Diagnosis, 3 steps</strong>",
+         "<strong>1. IGF-1</strong> (screen) → <strong>2. OGTT</strong>, GH every 30 min for 2 h after 75 g glucose, ⭐ <strong>normal is suppression below 1 µg/L</strong> → <strong>3. MRI pituitary</strong> to localise"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "⭐ <strong>transsphenoidal surgery</strong> · somatostatin analogues · <strong>pegvisomant</strong> (GH receptor antagonist) · radiotherapy"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Mean delay between first symptom and diagnosis is 12 years</strong>, because the change is slow and the patient stops noticing. ⭐ <strong>The deck's case makes the diagnostic move explicit: old photographs, glove size, shoe size (11 → 14), rings.</strong> ⚠ <strong>His new hypertension and new type 2 diabetes were the acromegaly, not two coincidences.</strong></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Why IGF-1 screens and GH does not:</strong> GH is <strong>pulsatile</strong>, so one level proves nothing; <strong>IGF-1 is liver-made in response to GH with a long half-life</strong>, so it integrates exposure over days. ⭐ <strong>And the confirmation is a SUPPRESSION test</strong> — for excess you try to switch it off and show you cannot.</p>",
+       "cols": [
+        "<span class=\"wl\">Cushing syndrome</span> from the pituitary",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Pathophysiology</strong>",
+         "⭐ <strong>cortisol overproduction · reduced sensitivity to feedback inhibition · loss of the normal diurnal rhythm</strong>"
+        ],
+        [
+         "⭐ <strong>Top likelihood ratios</strong>",
+         "⭐ <strong>ecchymoses 10-11.3 · osteopenia/fracture 8-13.8 · proximal muscle weakness 8-12.6</strong>"
+        ],
+        [
+         "<strong>Middle</strong>",
+         "hypertension 4.35-5.29 · edema 2.8-3.9 · <strong>purple striae >1 cm 2.7-2.9</strong>"
+        ],
+        [
+         "⚠ <strong>Weak</strong>",
+         "⚠ <strong>general obesity/weight gain 1.75-3.10</strong>, headache 1.27-1.57"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Same ranking as the adrenal lecture, and the same lesson: the findings everyone reaches for (weight, obesity) discriminate worst, and bruising, fragility fracture and proximal weakness discriminate best.</strong> The deck's case fails the <strong>squatting test</strong> — that is the proximal weakness being demonstrated, not described.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-03",
      "num": "03",
      "name": "Physiologic Changes that Lead to Puberty",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Physiologic Changes that Lead to Puberty",
+     "framing": "<p>⭐ <strong>Puberty is not something that switches ON. The HPO axis is already built and running before birth, gets SUPPRESSED in infancy, and puberty is that suppression being lifted.</strong> ⭐ <strong>The lift is a shift from GABA inhibition to glutamate stimulation of pulsatile GnRH, and the trigger that flips it is kisspeptin acting on GPR54.</strong></p>",
+     "keypoints": "<p>⭐ <strong>Puberty is disinhibition, not activation — GABA gives way to glutamate.</strong> ⭐ <strong>Kisspeptin on GPR54 is the trigger, proved by GPR54 mutations causing hypogonadotropic hypogonadism.</strong> ⭐ <strong>The first measurable change is NOCTURNAL LH.</strong> ⭐ <strong>Adrenarche is adrenal and separate from gonadarche.</strong> ⭐ <strong>Irregular anovulatory cycles are normal for 2+ years after menarche.</strong> ⭐ <strong>Boys are taller because they start later, not because they grow faster.</strong> ⭐ <strong>Most FSH receptors wins the dominant follicle.</strong> ⭐ <strong>Ovulation is 36 hours after the LH surge.</strong> ⭐ <strong>The follicular phase varies; the luteal phase does not.</strong> ⭐ <strong>Prostaglandins → contraction → ischaemia → pain, which is why NSAIDs are the analgesic of choice.</strong> ⭐ <strong>Menopause is 12 months of amenorrhoea or FSH > 30, mean age 53.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Gonadotropins across a lifetime",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Fetal / neonatal</strong>",
+         "LH and FSH <strong>surge</strong>, high for the first months"
+        ],
+        [
+         "⭐ <strong>~6 months → puberty</strong>",
+         "⭐ <strong>suppressed</strong>"
+        ],
+        [
+         "<strong>Puberty</strong>",
+         "⭐ <strong>pulsatile GnRH restarts</strong>, and LH/FSH with it"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ The diurnal pattern is the earliest physiological sign",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Before puberty</strong>",
+         "LH secretion is ⭐ <strong>fairly constant over 24 hours</strong>"
+        ],
+        [
+         "⭐ <strong>Early-to-mid puberty</strong>",
+         "⭐ <strong>a NOCTURNAL rise in LH</strong> — puberty literally begins during sleep"
+        ],
+        [
+         "<strong>Late puberty</strong>",
+         "the increase occurs <strong>both asleep and awake</strong> — the adult pattern"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Controlling GnRH",
+        "⭐ Direction"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Kisspeptin</strong> (KiSS-1, via <strong>GPR54</strong>)",
+         "⭐ <strong>STIMULATES — the primary trigger</strong>"
+        ],
+        [
+         "<strong>Glutamate</strong>",
+         "stimulates"
+        ],
+        [
+         "<strong>Leptin</strong>",
+         "⭐ <strong>\"permissive\"</strong> — from adipose tissue, links body mass to the axis"
+        ],
+        [
+         "<strong>Neurokinin B</strong>",
+         "stimulates"
+        ],
+        [
+         "⭐ <strong>GABA</strong>",
+         "⭐ <strong>INHIBITS — dominant before puberty</strong>"
+        ],
+        [
+         "<strong>NPY, endogenous opioids</strong>",
+         "inhibit"
+        ],
+        [
+         "<strong>MKRN3</strong>",
+         "inhibits"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The prepubertal state is GABA winning.</strong> Glutamate is present and active all along but ⭐ <strong>cannot overcome the GABA brake on its own</strong> — which is the question the kisspeptin story answers.</p>"
+      },
+      {
+       "t": "callout",
+       "kind": "example",
+       "title": "⭐ How kisspeptin was proved to be the trigger",
+       "html": "<p><strong>1996</strong> — <em>Kiss1</em> identified as a <strong>metastasis suppressor gene</strong> in melanoma and breast carcinoma. <strong>1999</strong> — GPR54 found as an orphan receptor. <strong>2001</strong> — kisspeptin identified as its ligand. ⭐ <strong>2003 — inactivating mutations of GPR54 were linked to failure to progress through puberty and hypogonadotropic hypogonadism in humans</strong>, then confirmed in GPR54-knockout mice whose <strong>single major phenotype was reproductive dysfunction</strong>.</p><p>⭐ <strong>KiSS-1 neurons in the arcuate and AVPV nuclei synapse directly onto GnRH neurons in the preoptic area.</strong> ⭐ <strong>KNDy neurons — Kisspeptin, Neurokinin B, Dynorphin — regulate kisspeptin release.</strong></p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ The vocabulary, which is examinable because the words are not interchangeable",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Gonadarche</strong>",
+         "activation of the <strong>gonads</strong> by pituitary LH and FSH"
+        ],
+        [
+         "⭐ <strong>Adrenarche</strong>",
+         "rise in <strong>adrenal cortex androgens</strong> — ⭐ <strong>independent of gonadal development</strong>"
+        ],
+        [
+         "⭐ <strong>Thelarche</strong>",
+         "breast tissue, from <strong>ovarian estradiol</strong>"
+        ],
+        [
+         "⭐ <strong>Pubarche</strong>",
+         "pubic hair, from <strong>adrenal androgens</strong>; then axillary hair, apocrine body odour, acne"
+        ],
+        [
+         "⭐ <strong>Menarche</strong>",
+         "first menstrual bleed"
+        ],
+        [
+         "⭐ <strong>Spermarche</strong>",
+         "first appearance of sperm, in ejaculate or urine"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Adrenarche and gonadarche are two separate events on two separate axes</strong>, which is why pubic hair can appear without any gonadal activity at all. ⭐ <strong>Sequence in girls: adrenarche → gonadarche → thelarche → growth spurt → menarche, over 4-5 years.</strong></p>",
+       "cols": [
+        "⭐ Menarche",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Mean age</strong>",
+         "⭐ <strong>12.7 yrs</strong>"
+        ],
+        [
+         "⚠ ⭐ <strong>The axis stays immature for > 2 years afterwards</strong>",
+         "⭐ <strong>irregular, anovulatory cycles are NORMAL in that window</strong> — do not assume full reproductive capacity"
+        ],
+        [
+         "<strong>Abnormal</strong>",
+         "precocious <strong>< 7</strong> · delayed <strong>> 16</strong> (this deck's numbers)"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>There is no clean male counterpart.</strong> First ejaculation is hard to date and ⭐ <strong>may be azoospermic</strong>, so spermarche is the analogous marker rather than a single event.</p>",
+       "cols": [
+        "Growth",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Highest growth rate of life is the FIRST YEAR</strong>; puberty is the <strong>second</strong> largest",
+         ""
+        ],
+        [
+         "⭐ <strong>Peak height velocity and total centimetres gained are similar in boys and girls</strong>",
+         ""
+        ],
+        [
+         "⭐ <strong>Boys end up taller because they are OLDER AND ALREADY TALLER when their spurt begins</strong> — not because they grow faster",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "condition",
+       "title": "⭐ The critical-weight hypothesis, and why the deck hedges it",
+       "html": "<p>Age at menarche has fallen steadily for 100 years — ⭐ <strong>the average age of voice change in J.S. Bach's Leipzig choir was 17; it is now 13.5.</strong> The proposed explanation is that a ⭐ <strong>critical metabolic mass</strong> must be reached, and better nutrition reaches it sooner. Supporting it: <strong>moderately obese girls have early menarche, malnutrition delays it</strong>, and leptin is the plausible signal.</p><p>⚠ ⭐ <strong>The deck explicitly flags the controversy</strong>: it <strong>assumes</strong> a causal relationship, and ⭐ <strong>you cannot predict an individual's age of menarche from her weight and weight gain.</strong> ⭐ <strong>Genetics accounts for 50-75% of the variation in normal pubertal timing.</strong></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## The menstrual cycle that follows</p>",
+       "cols": [
+        "Ovarian events",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Follicular</strong>",
+         "a small <strong>FSH</strong> rise recruits the next cohort. ⭐ <strong>The dominant follicle is the one with the MOST FSH RECEPTORS.</strong> Granulosa cells hypertrophy, <strong>aromatase</strong> makes estradiol, and <strong>inhibin A</strong> rises"
+        ],
+        [
+         "<strong>Feedback flips</strong>",
+         "estradiol first <strong>suppresses</strong> FSH/LH; then ⭐ <strong>a peak about one day before ovulation switches negative to POSITIVE feedback — the mid-cycle surge, a 10-fold rise in LH</strong>"
+        ],
+        [
+         "⭐ <strong>Ovulation</strong>",
+         "⭐ <strong>~36 hours after the LH surge.</strong> The oocyte completes <strong>meiosis I</strong>; granulosa cells begin luteinising and making <strong>progesterone even before release</strong>"
+        ],
+        [
+         "<strong>Luteal</strong>",
+         "progesterone from the corpus luteum <strong>slows LH pulses</strong>; inhibin A peaks mid-luteal"
+        ],
+        [
+         "<strong>Menstruation</strong>",
+         "no implantation → corpus luteum degenerates → estrogen and progesterone fall → ⭐ <strong>the FUNCTIONAL layer sloughs while the BASAL layer stays intact</strong> to regenerate"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Normal patterns",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Cycle</strong>",
+         "⭐ <strong>21-35 days</strong> — ⚠ <strong>only 15% of women have a 28-day cycle</strong>"
+        ],
+        [
+         "<strong>Menses</strong>",
+         "<strong>3-10 days</strong>, mean <strong>5.2</strong>"
+        ],
+        [
+         "<strong>Blood loss</strong>",
+         "⭐ <strong>up to 80 mL per cycle</strong>"
+        ],
+        [
+         "⭐ <strong>What varies</strong>",
+         "⭐ <strong>the FOLLICULAR phase, and it is primarily genetic. The interval from ovulation to menstruation is CONSTANT</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Dysmenorrhoea has a mechanism worth knowing:</strong> ⭐ <strong>prostaglandins released by endometrial sloughing drive contractions → intrauterine pressure can exceed 400 mmHg → when it exceeds ARTERIAL pressure the uterus becomes ischaemic → anaerobic metabolites stimulate type C pain fibres.</strong> ⭐ <strong>That is why NSAIDs work — they block the prostaglandins at the start of the chain.</strong> ⭐ <strong>Tranexamic acid, a lysine analogue and antifibrinolytic, treats heavy ovulatory bleeding instead.</strong></p>",
+       "cols": [
+        "PMS / PMDD",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>PMS</strong>",
+         "affective, physical and behavioural symptoms <strong>in the LUTEAL phase</strong>, resolving within days of menses. ⭐ <strong>30-40% of women</strong>"
+        ],
+        [
+         "⭐ <strong>PMDD</strong>",
+         "severe and disabling. ⭐ <strong>3-8%</strong>"
+        ],
+        [
+         "<strong>Etiology</strong>",
+         "largely unknown — possibly ⭐ <strong>enhanced responsiveness to NORMAL fluctuating hormone levels</strong>, with serotonin and GABA involvement"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "ovulatory suppression (OCP), <strong>SSRIs</strong>, light therapy"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Menopause",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Definition</strong>",
+         "⭐ <strong>12 consecutive months of amenorrhoea and/or FSH consistently over 30</strong>"
+        ],
+        [
+         "<strong>Mean age</strong>",
+         "⭐ <strong>53</strong> in North America"
+        ],
+        [
+         "<strong>Why</strong>",
+         "⭐ <strong>pre-determined by the number of follicles at birth</strong> — they deplete, estrogen and progesterone fall, and ⭐ <strong>FSH rises because the pituitary is \"screaming\" at an ovary that cannot answer</strong>"
+        ],
+        [
+         "<strong>Genetics</strong>",
+         "women tend to reach it around the same age as their mothers"
+        ]
+       ]
+      }
+     ]
     },
     {
      "id": "endo-w3-04",
      "num": "04",
      "name": "Disorders of Puberty",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Disorders of Puberty",
+     "framing": "<p>⭐ <strong>Every pubertal disorder is placed with two numbers: the AGE it happened, and the LH.</strong> ⭐ <strong>Age sets normal vs early vs late; LH says whether the hypothalamic-pituitary axis is driving it (central) or something downstream is (peripheral).</strong> Get those two and the whole differential falls out.</p>",
+     "keypoints": "<p>⭐ <strong>8-13 girls, 9-14 boys; delayed is 13 and 14, precocious is 8 and 9.</strong> ⭐ <strong>First sign: thelarche in girls, testicular volume >3 mL in boys.</strong> ⭐ <strong>Girls spurt at Tanner 2-3, boys at 3-4 — which is why boys end up taller.</strong> ⭐ <strong>Pubarche is adrenal and does not mark puberty.</strong> ⭐ <strong>Gonadotropins split every hypogonadism: high = gonadal failure, low = brain.</strong> ⭐ <strong>Turner short with streak ovaries; Klinefelter tall with dysgenic tubules.</strong> ⭐ <strong>Kallmann = hypogonadotropic hypogonadism plus anosmia.</strong> ⭐ <strong>CPP has high LH; PPP has low LH with high steroids.</strong> ⭐ <strong>In a virilised boy, big testes mean central and small testes mean peripheral.</strong> ⭐ <strong>Premature thelarche is benign precisely because there is no growth spurt and no bone-age advance.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "⭐ Girls",
+        "⭐ Boys"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Normal onset</strong>",
+         "⭐ <strong>8-13 yrs</strong>",
+         "⭐ <strong>9-14 yrs</strong>"
+        ],
+        [
+         "⭐ <strong>First sign</strong>",
+         "⭐ <strong>thelarche</strong> (breast bud)",
+         "⭐ <strong>testicular volume > 3 mL</strong>"
+        ],
+        [
+         "⭐ <strong>Precocious</strong>",
+         "⭐ <strong>before 8</strong>",
+         "⭐ <strong>before 9</strong>"
+        ],
+        [
+         "⭐ <strong>Delayed</strong>",
+         "⭐ <strong>no signs by 13</strong>",
+         "⭐ <strong>no signs by 14</strong>"
+        ],
+        [
+         "⭐ <strong>Growth spurt</strong>",
+         "⭐ <strong>EARLY — Tanner 2-3</strong>",
+         "⭐ <strong>LATE — Tanner 3-4</strong>, around testicular volume 10-12 mL"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Boys start later and spurt later, which is exactly why they end up taller.</strong> The deck states both halves: <em>\"boys start puberty later = taller final height; girls start puberty earlier = shorter final height.\"</em></p>",
+       "cols": [
+        "Sequence in girls",
+        "Sequence in boys"
+       ],
+       "rows": [
+        [
+         "1. ⭐ <strong>thelarche</strong> · 2. <strong>growth spurt</strong> · 3. pubarche (⚠ <strong>15% of girls have pubarche first</strong>) · 4. ⭐ <strong>menarche — about 2.5 yrs after thelarche</strong>",
+         "1. ⭐ <strong>testicular enlargement > 3 mL</strong> · 2. penile growth · 3. pubarche · 4. <strong>growth spurt</strong> · 5. voice · 6. muscle bulk · 7. facial hair"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Average ages, girls",
+        ""
+       ],
+       "rows": [
+        [
+         "Breast Tanner 2",
+         "<strong>10.3 ± 1.0 yrs</strong>"
+        ],
+        [
+         "Pubic hair",
+         "<strong>11.2 ± 1.1 yrs</strong>"
+        ],
+        [
+         "⭐ <strong>Menarche</strong>",
+         "⭐ <strong>12.7 ± 1.0 yrs</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "⭐ Pubarche is NOT a marker for the onset of puberty",
+       "html": "<p>Pubic and axillary hair are described in the Tanner stages, but they are ⭐ <strong>driven by the ADRENAL axis, not the gonadal one.</strong> ⭐ <strong>A child can have pubic hair with no gonadal activity at all</strong> — which is why Turner girls have <strong>100% pubarche and 1% menarche</strong>, and why isolated premature pubarche is a normal variant rather than precocious puberty.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Which hormone does what",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Estrogen</strong>",
+         "<strong>thelarche</strong> · increased growth rate · <strong>menses</strong> · vaginal discharge · mood swings"
+        ],
+        [
+         "⭐ <strong>Androgen</strong>",
+         "⭐ <strong>pubarche</strong>, axillary hair · acne, oily skin, <strong>body odour</strong> · enlargement of penis/clitoris · <strong>deepening of voice</strong> · increased growth rate"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Upstream control of GnRH:</strong> ⭐ <strong>kisspeptin (KiSS-1) stimulates</strong> · <strong>leptin</strong> targets KiSS neurons (the link between body fat and puberty) · ⭐ <strong>MKRN3 inhibits</strong> · <strong>glutamate excitatory, GABA/NPY inhibitory</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Delayed puberty</p>",
+       "cols": [
+        "Cause",
+        "⭐ LH / FSH",
+        "Sex steroids"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>CDGP</strong> (normal variant)",
+         "low-normal (just not started)",
+         "low for age"
+        ],
+        [
+         "⭐ <strong>Primary hypogonadism</strong> = hyper<strong>gonadotropic</strong>",
+         "⭐ <strong>HIGH</strong>",
+         "LOW"
+        ],
+        [
+         "⭐ <strong>Secondary hypogonadism</strong> = hypo<strong>gonadotropic</strong>, central",
+         "⭐ <strong>LOW</strong>",
+         "LOW"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Both hypogonadisms give a LOW estradiol or testosterone — the gonadotropins are what separate them.</strong> ⭐ <strong>High LH/FSH means the gonad has failed and the pituitary is shouting; low LH/FSH means the brain never sent the signal.</strong></p>",
+       "cols": [
+        "⭐ Constitutional delay (CDGP)",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>The commonest cause of delayed puberty, especially in boys</strong> — and a <strong>normal variation</strong>",
+         ""
+        ],
+        [
+         "Height at or below 3rd percentile, ⭐ <strong>NORMAL growth rate</strong>",
+         ""
+        ],
+        [
+         "⭐ <strong>Delayed bone age</strong> · puberty typically starts <strong>14-18 yrs</strong> · ⭐ <strong>strong family history</strong>",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Primary hypogonadism",
+        "Girls",
+        "Boys"
+       ],
+       "rows": [
+        [
+         "<strong>Genetic</strong>",
+         "⭐ <strong>Turner syndrome</strong>",
+         "⭐ <strong>Klinefelter syndrome</strong>"
+        ],
+        [
+         "<strong>Acquired</strong>",
+         "autoimmune, radiation, ⭐ <strong>chemotherapy (cyclophosphamide)</strong>, surgery, trauma",
+         "gonadal disease/infection, radiation, chemotherapy, surgery/trauma, <strong>congenital anorchia</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Turner",
+        "⭐ Klinefelter"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>45,X in 60%</strong>; mosaic 15%; partial X loss 10%. ⚠ <strong>10-12% harbour Y material</strong>",
+         "⭐ <strong>47,XXY in 80%</strong>; 46,XY/47,XXY mosaic 20%"
+        ],
+        [
+         "<strong>1 in 2,000-2,500</strong> girls",
+         "⭐ <strong>~1 in 650 boys — the commonest cause of testicular failure</strong>"
+        ],
+        [
+         "⭐ <strong>SHORT stature (95-100%, the commonest feature)</strong>, final height ~144 cm",
+         "⭐ <strong>TALL stature</strong>"
+        ],
+        [
+         "⭐ <strong>Streak ovaries, gonadal failure 90%</strong> · thelarche 10-15% · ⭐ <strong>menarche 1%</strong> · infertility >99% · ⭐ <strong>pubarche 100%</strong>",
+         "⭐ <strong>small testes and penis</strong>, delayed puberty · <strong>seminiferous tubular dysgenesis → absent spermatogenesis</strong> · ⭐ <strong>variable Leydig function, so variable testosterone</strong>"
+        ],
+        [
+         "Webbed neck, <strong>short 4th metacarpals</strong>, <strong>cubitus valgus</strong>, nail dysplasia",
+         "hypotonia, coordination problems, <strong>learning difficulties</strong>, emotional immaturity, ADHD"
+        ],
+        [
+         "⭐ <strong>Screen for: congenital heart disease · renal anomalies (horseshoe kidney) · autoimmune thyroid, celiac, T1DM · hearing · metabolic syndrome</strong>",
+         "more X and Y chromosomes → more intellectual impairment"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Turner is short with failed ovaries; Klinefelter is tall with failed tubules.</strong> ⭐ <strong>Both are PRIMARY, so both run high LH and FSH.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Secondary hypogonadism — \"think about brain problems\":</strong> CNS trauma, infection, radiation, tumour · congenital pituitary defects · ⭐ <strong>Kallmann syndrome — isolated gonadotropin deficiency WITH anosmia</strong> · Prader-Willi, Laurence-Moon-Biedl · ⭐ <strong>functional: chronic systemic disease, eating disorder or excessive exercise (hypothalamic amenorrhoea)</strong> · ⭐ <strong>hyperprolactinaemia</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Precocious puberty</p>",
+       "cols": [
+        "⭐ Normal variants",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Isolated premature thelarche</strong>",
+         "breast only, ⭐ <strong>common 6 months - 2 yrs</strong>. ⭐ <strong>NO growth spurt, NO bone age advancement</strong> — that absence is what makes it benign. Usually regresses"
+        ],
+        [
+         "⭐ <strong>Isolated premature pubarche</strong>",
+         "pubic hair ± mild acne, axillary hair, body odour, ⭐ <strong>ages 6-8, commoner in girls</strong>, from a physiological rise in <strong>adrenal</strong> hormones. Normal final height, no breast development, no growth spurt. ⚠ ⭐ <strong>Associated with insulin resistance and later <span class=\"wl\">PCOS/PMOS</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "⭐ Central (CPP), GnRH-dependent",
+        "⭐ Peripheral (PPP), GnRH-independent"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>LH / FSH</strong>",
+         "⭐ <strong>HIGH</strong>",
+         "⭐ <strong>LOW</strong>"
+        ],
+        [
+         "<strong>Sex steroids</strong>",
+         "HIGH",
+         "HIGH"
+        ],
+        [
+         "⭐ <strong>Random LH</strong>",
+         "⭐ <strong>> 0.3 mIU/L confirms central activation</strong>",
+         "low LH suggests peripheral"
+        ],
+        [
+         "⭐ <strong>Gold standard</strong>",
+         "⭐ <strong>GnRH stimulation test — peak LH > 5 mIU/L confirms CPP</strong>",
+         "—"
+        ],
+        [
+         "⭐ <strong>In boys</strong>",
+         "⭐ <strong>bilaterally enlarged testes ≥ 4 mL</strong> — LH is driving the Leydig cells",
+         "⭐ <strong>virilisation with SMALL testes (< 3 mL)</strong> — the androgen is coming from elsewhere"
+        ],
+        [
+         "<strong>Commonest</strong>",
+         "⭐ <strong>girls: mostly IDIOPATHIC</strong>",
+         "gonadal, adrenal or iatrogenic"
+        ],
+        [
+         "",
+         "⭐ <strong>boys: mostly NOT idiopathic — under 50%, so image the CNS</strong>",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Testicular volume is the cleanest discriminator in a virilised boy, and it is examinable.</strong> ⭐ <strong>Big testes = the pituitary is driving it (central). Small testes with virilisation = adrenal or tumour (peripheral)</strong> — because only LH grows the testis, and adrenal androgens do not.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Why a random LH can mislead:</strong> LH is <strong>pulsatile</strong>, so an undetectable value has <strong>low sensitivity</strong> — hence the GnRH stimulation test. ⭐ <strong>Physiology behind it: LH/FSH surge at birth, suppressed from ~6 months until puberty, then pulsatile release restarts.</strong></p>",
+       "cols": [
+        "Peripheral causes",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Gonadal</strong>",
+         "ovarian cysts, granulosa cell tumours · ⭐ <strong>testicular Leydig cell tumour (testicular ASYMMETRY)</strong> · testotoxicosis · ⭐ <strong>McCune-Albright</strong>"
+        ],
+        [
+         "<strong>Adrenal</strong>",
+         "⭐ <strong><span class=\"wl\">congenital adrenal hyperplasia</span></strong> — autosomal recessive, <strong>excess sex steroids with deficient cortisol</strong>, ± salt wasting · virilising or feminising tumours · Cushing's"
+        ],
+        [
+         "<strong>Iatrogenic</strong>",
+         "exogenous sex hormones"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>McCune-Albright triad:</strong> ⭐ <strong>peripheral precocious puberty (multiple follicular cysts) · polyostotic fibrous dysplasia · irregular café-au-lait, \"Coast of Maine\" borders.</strong> Somatic activating mutation in <strong>GNAS1</strong> (Gα subunit) → constitutive cAMP activation.</p>",
+       "cols": [
+        "Investigations",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Random LH</strong> (>0.3 suggests CPP) · estradiol/testosterone · ⭐ <strong>bone age, X-ray of the hand</strong> · TSH",
+         ""
+        ],
+        [
+         "<strong>Then:</strong> karyotype (⭐ <strong>Turner/Klinefelter in DELAYED puberty</strong>) · pelvic US · ⭐ <strong>LHRH stimulation test</strong> · <strong>MRI head</strong> if CNS suspected",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "condition",
+       "title": "Treatment of CPP",
+       "html": "<p>⭐ <strong>LHRH analogues.</strong> The mechanism is the counter-intuitive part: ⭐ <strong>continuous exposure DOWN-regulates the pituitary LHRH receptors, removing the pulsatile pattern and stopping puberty.</strong> ⚠ <strong>Untreated idiopathic CPP costs an average 5-6 cm of adult height</strong> plus the psychosocial cost of early menses.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-05",
      "num": "05",
      "name": "Disorders of Growth",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Disorders of Growth",
+     "framing": "<p>⭐ <strong>The single discriminator that organises this whole lecture is the relationship between weight and height.</strong> ⭐ <strong>Chronic illness and undernutrition drop the WEIGHT first and the height follows; endocrine causes make the child SHORT AND RELATIVELY CHUBBY.</strong> Read that off the growth chart and you have already split the differential in two.</p>",
+     "keypoints": "<p>⭐ <strong>Weight falls before height in illness; height falls before weight in endocrine disease.</strong> ⭐ <strong>Mid-parental height: +13 for a boy, −13 for a girl.</strong> ⭐ <strong>Bone age separates familial (on time) from constitutional delay (behind).</strong> ⭐ <strong>Velocity < 4.5 cm/yr, or crossing percentiles after 18 months, is the trigger.</strong> ⭐ <strong>Short stature = below the 3rd percentile.</strong> ⭐ <strong>Disproportionate short stature means skeletal dysplasia.</strong> ⭐ <strong>A random GH is worthless — IGF-1 plus two provocative tests.</strong> ⭐ <strong>Congenital GH deficiency has a NORMAL birth size, then neonatal hypoglycaemia.</strong> ⭐ <strong>Turner's commonest feature is short stature, and pubarche is 100% while menarche is 1% — adrenals work, ovaries do not.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "⭐ Chronic illness / undernutrition",
+        "⭐ Endocrine cause"
+       ],
+       "rows": [
+        [
+         "<strong>Order</strong>",
+         "⭐ <strong>weight loss or failure to gain PRECEDES the change in linear growth</strong>",
+         "⭐ <strong>weight > height — relatively \"chubby\" for height</strong>"
+        ],
+        [
+         "<strong>Tempo</strong>",
+         "more <strong>gradual</strong> drop off the curve",
+         "usually <strong>\"acute\" growth failure</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ The four questions asked of any growth concern",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Genetic potential?</strong>",
+         "⭐ <strong>mid-parental height</strong>: boys <strong>(mother + father + 13) / 2</strong> · girls <strong>(mother + father − 13) / 2</strong>"
+        ],
+        [
+         "⭐ <strong>Height-age?</strong>",
+         "⭐ <strong>the age at which the child's height would be the 50th percentile.</strong> Shorter child → <strong>younger</strong> height-age; taller child → <strong>older</strong> height-age"
+        ],
+        [
+         "⭐ <strong>Growth velocity?</strong>",
+         "accurate measurements <strong>1 year apart</strong>, plotted on the right chart"
+        ],
+        [
+         "⭐ <strong>Growth potential?</strong>",
+         "⭐ <strong>bone age — a single X-ray of the LEFT wrist</strong>. Normal is usually ±1 yr"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⚠ <strong>Worked example the module tests:</strong> mother 160 cm, father 180 cm, girl → <strong>(160 + 180 − 13) / 2 = 163.5 cm</strong>. Get the sign wrong and you get the boy's answer.</p>",
+       "cols": [
+        "⭐ When to be concerned",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Low growth velocity</strong>",
+         "⭐ <strong>< 4.5 cm/yr between age 4 and puberty</strong>"
+        ],
+        [
+         "<strong>Crossing percentiles</strong>",
+         "⭐ <strong>after 18 months and before puberty</strong> — before 18 months, crossing is normal"
+        ],
+        [
+         "<strong>Below genetic potential</strong>",
+         "⭐ <strong>> 2 SD below mid-parental height</strong>"
+        ],
+        [
+         "⭐ <strong>Short stature (the definition)</strong>",
+         "⭐ <strong>height ≥ 2 SD below the mean, i.e. below the 3rd percentile</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Phase",
+        "Growth rate",
+        "⭐ Main driver"
+       ],
+       "rows": [
+        [
+         "<strong>Infant</strong>",
+         "rapid",
+         "<strong>nutrition</strong>, plus thyroid function and bone metabolism"
+        ],
+        [
+         "⭐ <strong>Childhood</strong>",
+         "⭐ <strong>slowest but LONGEST — ~5-6 cm/yr</strong>",
+         "⭐ <strong>growth hormone</strong> (thyroid hormone and nutrition also matter)"
+        ],
+        [
+         "<strong>Pubertal</strong>",
+         "spurt",
+         "<strong>sex steroids + increased frequency and amplitude of GH pulses</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The childhood phase is the one that decides adult height, because it is the long one</strong> — the deck says it plainly: <em>\"the longer this phase, the greater the final height.\"</em></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Classifying short stature — split first on growth velocity</p>",
+       "cols": [
+        "⭐ NORMAL growth velocity (the two normal variants)",
+        "",
+        ""
+       ],
+       "rows": [
+        [
+         "",
+         "⭐ <strong>Familial short stature</strong>",
+         "⭐ <strong>Constitutional delay (CDGP)</strong>"
+        ],
+        [
+         "<strong>Height</strong>",
+         "at or below 3rd percentile",
+         "at or below 3rd percentile (<strong>and weight</strong>)"
+        ],
+        [
+         "<strong>Velocity</strong>",
+         "low-normal",
+         "low-normal"
+        ],
+        [
+         "⭐ <strong>Bone age</strong>",
+         "⭐ <strong>consistent with chronological age</strong>",
+         "⭐ <strong>DELAYED</strong> (tracks height-age)"
+        ],
+        [
+         "⭐ <strong>Puberty</strong>",
+         "⭐ <strong>at the normal age</strong>",
+         "⭐ <strong>delayed</strong>"
+        ],
+        [
+         "<strong>Parents</strong>",
+         "⭐ <strong>parental target is low</strong>",
+         "⭐ <strong>positive family history</strong> (of late blooming)"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Bone age is what separates the two, and it is the highest-yield line in the lecture.</strong> ⭐ <strong>Familial = short parents, short child, on time — the bone age matches the birthday.</strong> ⭐ <strong>Constitutional = a late bloomer whose skeleton is running behind the calendar, so there is growth left and the final height is normal.</strong></p>",
+       "cols": [
+        "⭐ ABNORMAL growth velocity",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "<strong>Intrauterine (SGA)</strong>",
+         "maternal infection, smoking, alcohol; fetal malnutrition, placental insufficiency. ⭐ <strong>Most catch up by 2 years; the 10% who do NOT are pathological</strong>"
+        ],
+        [
+         "<strong>Undernutrition</strong>",
+         "inadequate intake (cleft palate, psychosocial deprivation, eating disorders) · <strong>malabsorption</strong>: celiac, Crohn's, liver/pancreatic disease, lactose intolerance"
+        ],
+        [
+         "<strong>Systemic / chronic</strong>",
+         "chronic renal failure, rheumatologic, cyanotic CHD, cystic fibrosis, asthma, malignancy, immunologic"
+        ],
+        [
+         "<strong>Genetic</strong>",
+         "Down · <strong>Prader-Willi</strong> (chr 15 microdeletion; hypotonia and FTT in infancy → <strong>hyperphagia and severe obesity</strong> later) · <strong>Noonan</strong> (short, <strong>pulmonary stenosis</strong>) · <strong>Silver-Russell</strong> (severe IUGR, triangular face, prominent forehead) · ⭐ <strong>SHOX mutations</strong> (short forearms and lower legs, <strong>Madelung deformity</strong>) · ⭐ <strong>Turner</strong>"
+        ],
+        [
+         "⭐ <strong>Skeletal dysplasia</strong>",
+         "⭐ <strong>DISPROPORTIONATE short stature</strong> — achondroplasia and hypochondroplasia, ⭐ <strong>FGFR3</strong> · <strong>osteogenesis imperfecta</strong> (fragile bones, <strong>blue sclerae</strong>, easy bruising, deafness; <strong>COL1A1/COL1A2</strong>)"
+        ],
+        [
+         "<strong>Endocrine</strong>",
+         "see below"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Proportionate vs disproportionate is the first thing to look at on examination</strong> — a skeletal dysplasia is short in the limbs, not short all over.</p>",
+       "cols": [
+        "Endocrine causes",
+        "⭐ The giveaway"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>GH deficiency</strong>",
+         "⭐ <strong>the commonest endocrine cause, ~1 in 3,500-4,000.</strong> Congenital: <strong>normal birth weight and length</strong>, then ⭐ <strong>severe post-natal growth restriction</strong>, ⭐ <strong>neonatal hypoglycaemia</strong>, <strong>prolonged jaundice</strong>, midline defects, delayed fontanelle closure, high-pitched voice, ⭐ <strong>micropenis</strong> if gonadotropins also deficient"
+        ],
+        [
+         "<strong><span class=\"wl\">hypothyroidism</span></strong>",
+         "slow growth <strong>with weight gain</strong>, puffy features, goitre, cold intolerance, constipation, dry skin, brittle hair, ⭐ <strong>delayed bone age</strong>"
+        ],
+        [
+         "<strong>Glucocorticoid excess</strong>",
+         "⭐ <strong>growth retardation PLUS weight gain</strong>, central obesity, buffalo hump, striae, hirsutism. <strong>Steroid therapy is far commoner than Cushing's in children</strong>"
+        ],
+        [
+         "<strong>Metabolic bone disease</strong>",
+         "<strong>rickets</strong> (bowing legs) · ⭐ <strong>pseudohypoparathyroidism</strong> — PTH resistance, short + obese, round face, ⭐ <strong>shortened 4th metacarpals, \"knuckle-knuckle-dimple-dimple\", Archibald's sign</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "⭐ A random GH level is of NO value",
+       "html": "<p>GH is released in <strong>pulses</strong>, so a single measurement means nothing. Assess instead with ⭐ <strong>serum IGF-1 / IGFBP-3</strong>, and confirm with ⭐ <strong>provocative tests — arginine, clonidine, glucagon</strong>, or the insulin tolerance test in adults.</p><p>⭐ <strong>Diagnostic criteria for GH deficiency, all four:</strong> height <strong>< 3rd percentile</strong> · growth velocity <strong>< 25th percentile</strong> · ⭐ <strong>bone age delayed > 2 SD below chronological age</strong> · ⭐ <strong>inadequate GH response to TWO provocative tests (currently < 8 µg/L)</strong> — two, not one, for the same pulsatility reason.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Turner syndrome",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Cause</strong>",
+         "absence of all or part of an X. ⭐ <strong>45,X in 60%</strong>; mosaic 15%; structural abnormality 10%"
+        ],
+        [
+         "<strong>Frequency</strong>",
+         "<strong>1 in 2,000-2,500</strong> newborn girls"
+        ],
+        [
+         "⭐ <strong>Most common feature</strong>",
+         "⭐ <strong>SHORT STATURE — 95-100%.</strong> Abnormal growth in almost 100%"
+        ],
+        [
+         "<strong>Why short</strong>",
+         "some make <strong>normal GH</strong> but have ⭐ <strong>abnormal response at the bone (skeletal dysplasia)</strong>; others combine GH deficiency with bone resistance. Also <strong>reduced GH pulse amplitude and frequency</strong>"
+        ],
+        [
+         "<strong>Final height</strong>",
+         "⭐ <strong>~20 cm shorter</strong> than background; mean <strong>144 cm</strong> (range 132-154)"
+        ],
+        [
+         "⭐ <strong>Gonads</strong>",
+         "⭐ <strong>complete gonadal failure in 90% — \"streak ovaries\"</strong>. Thelarche 10-15%, ⭐ <strong>menarche only 1%</strong> (usually mosaic), <strong>infertility > 99%</strong>"
+        ],
+        [
+         "⚠ ⭐ <strong>Pubarche 100%</strong>",
+         "⚠ ⭐ <strong>because the ADRENAL glands are normal</strong> — pubic hair is adrenal, breast development is ovarian. <strong>That dissociation is the classic exam point</strong>"
+        ],
+        [
+         "<strong>Dysmorphism</strong>",
+         "<strong>neck webbing</strong> · ⭐ <strong>short 4th metacarpals</strong> · ⭐ <strong>cubitus valgus (increased carrying angle)</strong> · nail dysplasia"
+        ],
+        [
+         "<strong>Treatment</strong>",
+         "⭐ <strong>GH from the first evidence of growth failure, often 4-6 yrs</strong> — mean gain <strong>5-7 cm over 8 years</strong>; dose <strong>0.35-0.375 mg/kg/wk</strong>. ⭐ <strong>Most need estrogen replacement to enter puberty at all</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>GH therapy generally:</strong> recombinant, <strong>SC injection 6-7×/week until growth is complete</strong>, ⚠ <strong>US$10,000-30,000 a year</strong>, and the dose differs by indication — ⭐ <strong>the Turner dose is not the GH-deficiency dose.</strong></p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-06",
      "num": "06",
      "name": "Anatomy of the Female Pelvis, Perineum, & Sexual Function",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Anatomy of the Female Pelvis, Perineum, & Sexual Function",
+     "framing": "<p>⭐ <strong>One line decides most of the clinical questions in this lecture: the PELVIC PAIN LINE.</strong> ⭐ <strong>Structures ABOVE it refer pain to T11/12-L2 (mid-trunk, back, flank) along sympathetics; structures BELOW it refer to S2-S4 (gluteal region, thigh, leg) along parasympathetics.</strong> ⭐ <strong>Every anaesthetic choice in labour is a decision about which side of that line you need to block.</strong></p>",
+     "keypoints": "<p>⭐ <strong>Pelvic pain line: fundus/tubes/ovaries above → T11-L2 flank and back; cervix/vagina below → S2-S4 buttock and thigh.</strong> ⭐ <strong>Saddle block spares the fundus; pudendal block spares the superior birth canal.</strong> ⭐ <strong>Contractions are hormonal, so blocks do not stop labour.</strong> ⭐ <strong>Water under the bridge — ureter beneath the uterine artery in the cardinal ligament.</strong> ⭐ <strong>Ovarian artery from the aorta, uterine from the internal iliac, and the anastomosis is what saves the ovaries at hysterectomy.</strong> ⭐ <strong>Fundus → para-aortic; cervix → iliac; skin → superficial inguinal; clitoris → deep inguinal.</strong> ⭐ <strong>Rectouterine pouch is the lowest point, reached through the posterior fornix.</strong> ⭐ <strong>Cardinal carries the uterine vessels; suspensory carries the ovarian.</strong> ⭐ <strong>Body:cervix is 1:1 before puberty and after menopause, 2:1 in between.</strong> ⭐ <strong>Fertilization in the ampulla; ectopic there too.</strong> ⭐ <strong>Extravasated urine cannot reach thigh or anal triangle, so it climbs the abdominal wall.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Pelvic pain line",
+        "Structures",
+        "Pathway",
+        "⭐ Referred to"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>ABOVE</strong>",
+         "⭐ <strong>uterine fundus and body, uterine tubes, ovaries</strong>",
+         "retrograde with ⭐ <strong>SYMPATHETICS</strong> to T11/12-L2 DRG",
+         "⭐ <strong>T11/12-L2 dermatomes — mid-trunk, back, flank</strong>"
+        ],
+        [
+         "⭐ <strong>BELOW</strong>",
+         "⭐ <strong>cervix and vagina</strong>",
+         "retrograde with ⭐ <strong>PARASYMPATHETICS</strong> to S2-S4 DRG",
+         "⭐ <strong>S2-S4 dermatomes — gluteal region, thigh, leg</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Autonomic supply",
+        "Origin",
+        "Route",
+        "Effect"
+       ],
+       "rows": [
+        [
+         "<strong>Sympathetic</strong>",
+         "⭐ <strong>IML horns T11/12-L2</strong>",
+         "lumbar splanchnics → prevertebral ganglia and ⭐ <strong>superior/inferior hypogastric plexuses</strong>",
+         "uterine contraction, vasoconstriction"
+        ],
+        [
+         "<strong>Parasympathetic</strong>",
+         "⭐ <strong>S2-S4</strong>",
+         "⭐ <strong>pelvic splanchnic nerves</strong> → inferior hypogastric/pelvic plexuses",
+         "uterine inhibition, vasodilation"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "⭐ Uterine contractions are HORMONAL, not neural",
+       "html": "<p>⭐ <strong>Contractions during menses and childbirth are hormonally stimulated, not the result of nerve stimulation.</strong> That is why a block can remove the <em>pain</em> of labour without stopping labour — and why the saddle block below still lets a mother feel her contractions.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Anaesthesia in childbirth",
+        "Level",
+        "⭐ What it does — and does NOT — block"
+       ],
+       "rows": [
+        [
+         "<strong>Lumbar epidural / low spinal</strong>",
+         "<strong>L3/4</strong>",
+         "⭐ <strong>everything from the waist down</strong>"
+        ],
+        [
+         "⭐ <strong>Caudal (saddle) epidural</strong>",
+         "catheter in the <strong>sacral canal</strong>",
+         "⭐ <strong>S2-S4 only — pudendal and pelvic splanchnic territory.</strong> ⚠ ⭐ <strong>Does NOT block the uterine fundus</strong>, so the mother still feels contractions and knows when to bear down (chosen for participatory childbirth)"
+        ],
+        [
+         "⭐ <strong>Pudendal nerve block</strong>",
+         "at the ⭐ <strong>ischial spine</strong>, through skin or vagina",
+         "most of the perineum and the ⭐ <strong>inferior quarter of the vagina</strong>. ⚠ ⭐ <strong>Does NOT block the superior birth canal</strong> (cervix and superior vagina)"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The ischial spine is the landmark for the pudendal block and is palpable vaginally</strong> — one of several things the thin vaginal wall lets you feel, along with the <strong>cervix, sacral promontory, uterine artery pulsation and ovarian irregularities</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Uterus</p>",
+       "cols": [
+        "Part",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Body (upper 2/3)</strong>",
+         "<strong>fundus</strong> (above the tubes) · <strong>body</strong> · ⭐ <strong>isthmus</strong> (constricted, above the cervix)"
+        ],
+        [
+         "⭐ <strong>Cervix (lower 1/3)</strong>",
+         "protrudes into the upper vagina at the ⭐ <strong>external os</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Wall layer",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Perimetrium</strong>",
+         "outer serous coat"
+        ],
+        [
+         "⭐ <strong>Myometrium</strong>",
+         "smooth muscle, ⭐ <strong>contains the neurovasculature</strong>; hormones drive its contraction"
+        ],
+        [
+         "⭐ <strong>Endometrium</strong>",
+         "inner mucosa — ⭐ <strong>shed at menstruation; the blastocyst implants here</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Position",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>AnteVERTED</strong>",
+         "the <strong>body is tipped anteriorly relative to the axis of the VAGINA</strong> (reversed = retroverted)"
+        ],
+        [
+         "⭐ <strong>AnteFLEXED</strong>",
+         "the <strong>body is bent anteriorly relative to the CERVIX</strong> (straight or backward = retroflexed)"
+        ],
+        [
+         "⚠ <strong>Consequence</strong>",
+         "the body lies horizontally <strong>on top of the empty bladder</strong>; ⭐ <strong>a filling bladder temporarily retroverts it</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Body : cervix ratio — a favourite discriminator",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Neonatal</strong>",
+         "⭐ <strong>2:1</strong> — maternal hormones give adult proportions"
+        ],
+        [
+         "⭐ <strong>Childhood</strong>",
+         "⭐ <strong>1:1</strong> — no hormones, immature proportions"
+        ],
+        [
+         "⭐ <strong>Post-pubertal nulliparous</strong>",
+         "⭐ <strong>2:1</strong>"
+        ],
+        [
+         "<strong>Multiparous</strong>",
+         "⭐ <strong>3:1</strong> — never shrinks fully back"
+        ],
+        [
+         "⭐ <strong>Postmenopausal</strong>",
+         "⭐ <strong>1:1</strong> — returns to immature proportions"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The ratio tracks hormone exposure, not age</strong> — which is why the newborn and the young adult look alike, and the child and the postmenopausal woman look alike.</p>",
+       "cols": [
+        "Uterine tube, 4 parts (medial → lateral)",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Uterine part</strong>",
+         "short segment through the uterine wall"
+        ],
+        [
+         "⭐ <strong>Isthmus</strong>",
+         "thick-walled, ⭐ <strong>narrowest</strong> part, enters the uterine horn"
+        ],
+        [
+         "⭐ <strong>Ampulla</strong>",
+         "⭐ <strong>widest and longest — WHERE FERTILIZATION USUALLY OCCURS</strong>"
+        ],
+        [
+         "⭐ <strong>Infundibulum</strong>",
+         "funnel opening into the peritoneal cavity; ⭐ <strong>fimbriae</strong> spread over the ovary to catch the oocyte"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ ⭐ <strong>The uterine tube is the commonest site of ectopic pregnancy</strong>, and rupture causes life-threatening intraperitoneal haemorrhage. <strong>Tubal blockage is a major cause of infertility; patency is tested by hysterosalpingography (HSG)</strong> — contrast should spill into the peritoneal cavity.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Support — dynamic vs passive</p>",
+       "cols": [
+        "⭐ Dynamic",
+        "⭐ Passive"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>the pelvic diaphragm and pelvic floor muscles</strong>, whose tone and active contraction transmit through the <strong>endopelvic fascia</strong>",
+         "⭐ <strong>the anteverted/anteflexed position over the bladder</strong> — raised intra-abdominal pressure presses the uterus <strong>against</strong> the bladder — plus the ligaments"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The cervix is the least mobile part of the uterus</strong>, because condensations of endopelvic fascia anchor it:</p>",
+       "cols": [
+        "Ligament",
+        "⭐ What it does / carries"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Cardinal (transverse cervical)</strong>",
+         "base of the broad ligament, cervix and vagina → lateral pelvic wall. ⭐ <strong>CONTAINS THE UTERINE VESSELS</strong>"
+        ],
+        [
+         "⭐ <strong>Uterosacral</strong>",
+         "cervix → mid-sacrum. ⭐ <strong>Prevents prolapse into the vagina</strong>"
+        ],
+        [
+         "<strong>Broad ligament</strong>",
+         "double peritoneal fold; three parts — ⭐ <strong>mesometrium</strong> (largest, covers uterus) · ⭐ <strong>mesosalpinx</strong> (tubes) · ⭐ <strong>mesovarium</strong> (ovaries)"
+        ],
+        [
+         "⭐ <strong>Round ligament</strong>",
+         "uterotubal junction → ⭐ <strong>deep inguinal ring → labium majus.</strong> Homologous to the <strong>gubernaculum</strong>"
+        ],
+        [
+         "⭐ <strong>Suspensory ligament of the ovary</strong>",
+         "ovary → lateral pelvic wall; ⭐ <strong>CARRIES THE OVARIAN VESSELS</strong>"
+        ],
+        [
+         "⭐ <strong>Ligament of the ovary</strong>",
+         "ovary → lateral edge of uterus, below the tube (cranial gubernaculum)"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Two ligaments carry vessels and they are the two that matter surgically: the CARDINAL carries the uterine artery, the SUSPENSORY carries the ovarian.</strong></p>",
+       "cols": [
+        "Peritoneal recess",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Vesicouterine pouch</strong>",
+         "uterus → bladder"
+        ],
+        [
+         "⭐ <strong>Rectouterine pouch (of Douglas)</strong>",
+         "uterus → rectum. ⭐ <strong>The lowest point of the female pelvic cavity when upright</strong> — so free fluid and blood collect here"
+        ],
+        [
+         "⭐ <strong>Access</strong>",
+         "⭐ <strong>via the POSTERIOR FORNIX</strong>, the deepest fornix and the point of minimal tissue between the peritoneal cavity and outside — used for <strong>culdocentesis and culdoscopy</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Vessels — and the one relationship you must not get wrong</p>",
+       "cols": [
+        "Artery",
+        "Source",
+        "Supplies"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Uterine</strong>",
+         "⭐ <strong>internal iliac</strong>",
+         "runs in the ⭐ <strong>cardinal ligament</strong>, ⭐ <strong>passes SUPERIOR to the ureter</strong> near the lateral fornix"
+        ],
+        [
+         "⭐ <strong>Ovarian</strong>",
+         "⭐ <strong>abdominal AORTA</strong>",
+         "through the <strong>suspensory ligament</strong>"
+        ],
+        [
+         "<strong>Vaginal</strong>",
+         "internal iliac (homolog of inferior vesical)",
+         "middle vagina"
+        ],
+        [
+         "<strong>Internal pudendal</strong>",
+         "internal iliac",
+         "inferior vagina and perineum; ⭐ <strong>exits via greater sciatic foramen, behind the sacrospinous ligament, re-enters via lesser sciatic foramen</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "⭐ \"Water under the bridge\"",
+       "html": "<p>⭐ <strong>The URETER (water) passes UNDER the uterine artery (the bridge)</strong>, near the lateral vaginal fornix. ⭐ <strong>During hysterectomy the ureters must be positively identified and excluded from the ligature</strong> — this is the classic surgical injury. ⚠ <strong>Note the ovarian artery comes off the AORTA, not the internal iliac</strong>, which is why ⭐ <strong>collateral anastomosis between the tubal and ovarian branches lets the ovaries be left in place when the uterine artery is ligated</strong>, sparing the patient estrogen therapy.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Lymphatic drainage — the question is always \"where has it spread?\"",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Lumbar (pre-aortic)</strong>",
+         "⭐ <strong>ovary, uterine tubes, FUNDUS</strong> — reflecting the posterior abdominal origin"
+        ],
+        [
+         "⭐ <strong>Internal iliac</strong>",
+         "middle and upper vagina, cervix, <strong>body</strong> of uterus"
+        ],
+        [
+         "<strong>External iliac</strong>",
+         "upper vagina, cervix, lower body of uterus"
+        ],
+        [
+         "<strong>Sacral</strong>",
+         "⭐ <strong>inferior vagina</strong>"
+        ],
+        [
+         "⭐ <strong>Superficial inguinal</strong>",
+         "⭐ <strong>SKIN — labia, scrotum, penis, prepuce</strong>"
+        ],
+        [
+         "⭐ <strong>Deep inguinal</strong>",
+         "⭐ <strong>clitoris, vestibular bulb, anterior labia minora, glans</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The fundus drains to para-aortic nodes while the cervix drains to iliac nodes</strong> — the same organ, two different nodal basins, because the ovary and fundus remember where they came from.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>## Perineum</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Diamond-shaped, inferior to the pelvic diaphragm.</strong> ⭐ <strong>A transverse line between the ISCHIAL TUBEROSITIES divides it into the UROGENITAL triangle (anterior, nearly horizontal) and the ANAL triangle (posterior, angled).</strong> Bony boundaries: coccyx, ischial tuberosities with sacrotuberous ligaments, ischiopubic rami, pubic symphysis.</p>",
+       "cols": [
+        "Pelvic diaphragm",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Levator ani</strong>",
+         "⭐ <strong>puborectalis (medial) · pubococcygeus (intermediate) · iliococcygeus (posterolateral)</strong>"
+        ],
+        [
+         "<strong>Coccygeus</strong>",
+         "ischial spine → inferior sacrum and coccyx"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Perineal body",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Central point of the perineum, midway between the ischial tuberosities</strong>",
+         ""
+        ],
+        [
+         "⭐ <strong>The FINAL support of the pelvic viscera</strong>, linking the muscles across the pelvic outlet",
+         ""
+        ],
+        [
+         "⚠ <strong>Torn or stretched in childbirth → loss of pelvic floor support → PROLAPSE</strong>",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Episiotomy:</strong> a ⭐ <strong>MEDIAN</strong> incision cuts the perineal body — ⚠ ⭐ <strong>if tearing then occurs it is directed toward the anus</strong>, with more severe lacerations, long-term incontinence, prolapse and anovaginal fistulae. ⭐ <strong>MEDIOLATERAL has fewer severe lacerations and less anal sphincter damage.</strong></p>",
+       "cols": [
+        "⭐ Perineal fascia",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Superficial fatty</strong>",
+         "continuous with ⭐ <strong>Camper's</strong>; in females ⭐ <strong>forms the substance of the labia majora and mons pubis</strong>"
+        ],
+        [
+         "⭐ <strong>Deep membranous (Colles)</strong>",
+         "continuation of ⭐ <strong>Scarpa's</strong>; ⚠ ⭐ <strong>limited to the UG triangle — does NOT enter the anal triangle</strong>; attached laterally to the <strong>fascia lata</strong>"
+        ],
+        [
+         "<strong>Deep (Gallaudet)</strong>",
+         "invests ischiocavernosus, bulbospongiosus, superficial transverse perineal"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "condition",
+       "title": "⭐ Where extravasated urine goes — the straddle injury question",
+       "html": "<p>A ruptured urethra (straddle injury, bad catheterisation) fills the ⭐ <strong>SUPERFICIAL PERINEAL POUCH</strong> — between <strong>Colles fascia and the perineal membrane</strong>, bounded laterally by the ischiopubic rami.</p><p>⭐ <strong>The attachments dictate the spread exactly:</strong> ⚠ ⭐ <strong>it CANNOT reach the thigh</strong> (Colles is bound to the fascia lata) ⚠ ⭐ <strong>and CANNOT reach the anal triangle</strong> (Colles stops at the UG triangle). ⭐ <strong>So it tracks UPWARD onto the anterior abdominal wall, deep to Camper's and Scarpa's but superficial to the external oblique.</strong></p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Pouch",
+        "Boundaries",
+        "Contents"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Superficial</strong>",
+         "<strong>Colles fascia ↔ perineal membrane</strong>",
+         "erectile bodies and muscles, ⭐ <strong>pudendal nerve and internal pudendal vessels</strong>"
+        ],
+        [
+         "⭐ <strong>Deep</strong>",
+         "<strong>perineal membrane (floor) ↔ inferior fascia of pelvic diaphragm (roof)</strong>",
+         "the <strong>urogenital diaphragm</strong>; ⭐ <strong>external urethral sphincter — VOLUNTARY, somatic.</strong> In females ⭐ <strong>both the vagina AND urethra pass through it</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Erectile tissue",
+        "Female",
+        "Male"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Corpora cavernosa</strong>",
+         "paired, lateral; <strong>crura</strong> on the ischiopubic ramus, covered by ⭐ <strong>ischiocavernosus</strong>",
+         "same, plus fused body"
+        ],
+        [
+         "⭐ <strong>Bulb</strong>",
+         "⭐ <strong>bulb of the VESTIBULE — paired, lateral to the vestibule</strong>",
+         "⭐ <strong>bulb of the penis — SINGLE</strong>, corpus spongiosum around the urethra, covered by <strong>bulbospongiosus</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The homology is exact except for the bulb: single and urethra-surrounding in the male, paired and split around the vestibule in the female</strong> — because the vagina comes through the middle.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Erection:</strong> the ⭐ <strong>deep (central) artery of the clitoris/penis, a terminal branch of the internal pudendal</strong>, supplies the corpora cavernosa and gives off the ⭐ <strong>helicine arteries</strong> — it is the artery primarily responsible for erection. ⭐ <strong>The dorsal nerve of the clitoris/penis, the terminal branch of the PUDENDAL (S2-S4), is the primary sensory nerve.</strong></p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-07",
      "num": "07",
      "name": "Development of the Female Reproductive System",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Development of the Female Reproductive System",
+     "framing": "<p>⭐ <strong>Female is the DEFAULT.</strong> ⭐ <strong>Every embryo is identical until the primordial germ cells arrive, and both duct systems are laid down in both sexes.</strong> ⭐ <strong>The female tract is what happens when two signals are ABSENT: no TDF, so the ovary forms; no AMH, so the paramesonephric ducts survive.</strong> Nothing has to be added.</p>",
+     "keypoints": "<p>⭐ <strong>Female is the default: no TDF, no AMH, no testosterone, no DHT.</strong> ⭐ <strong>Wolffian and Müllerian are reciprocal — one survives in each sex.</strong> ⭐ <strong>No germ-cell migration, no gonad.</strong> ⭐ <strong>Primary oocytes arrest in prophase I; no oogonia after birth; ~400,000 at birth.</strong> ⭐ <strong>Gartner's duct cyst sits in the lateral vaginal wall.</strong> ⭐ <strong>Upper 1/3 of the vagina from the fused ducts, lower 2/3 from the sinovaginal bulbs.</strong> ⭐ <strong>Didelphys and bicornuate = failed fusion; septate = failed resorption; unicornuate = one duct never developed.</strong> ⭐ <strong>Absent vagina usually means absent uterus, because the uterus induces the bulbs.</strong> ⭐ <strong>The gubernaculum becomes the ovarian ligament plus the round ligament, and the ovary never enters the inguinal canal.</strong> ⭐ <strong>Urinary and genital anomalies co-occur because both come from intermediate mesoderm.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "⭐ The two absences that build the female tract",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>No TDF</strong> (no <strong>SRY</strong>, short arm of Y)",
+         "primitive sex cords degenerate → ⭐ <strong>ovary</strong>"
+        ],
+        [
+         "⭐ <strong>No AMH</strong>",
+         "⭐ <strong>paramesonephric (Müllerian) ducts DEVELOP</strong>"
+        ],
+        [
+         "⭐ <strong>No testosterone</strong>",
+         "⭐ <strong>mesonephric (Wolffian) ducts DEGENERATE</strong>"
+        ],
+        [
+         "⭐ <strong>No DHT</strong>, plus estrogens",
+         "female <strong>external</strong> genitalia"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ The two duct systems — reciprocal, and the highest-yield table here",
+        "⭐ Male",
+        "⭐ Female"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Mesonephric (Wolffian)</strong> — part of the mesonephric kidney",
+         "⭐ <strong>becomes the genital tract</strong>",
+         "⭐ <strong>DEGENERATES</strong>"
+        ],
+        [
+         "⭐ <strong>Paramesonephric (Müllerian)</strong> — epithelial invagination whose edges fuse into a tube",
+         "⭐ <strong>degenerates</strong>",
+         "⭐ <strong>BECOMES THE GENITAL TRACT</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Timeline",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Week 3</strong>",
+         "primordial germ cells reach the <strong>yolk sac wall</strong> near the allantois (they originate in the <strong>epiblast</strong>)"
+        ],
+        [
+         "⭐ <strong>Weeks 4-6</strong>",
+         "⭐ <strong>PGCs migrate</strong> from the yolk sac neck along the hindgut mesentery (~<strong>T10</strong>) to the gonadal ridges"
+        ],
+        [
+         "<strong>Week 5</strong>",
+         "<strong>gonadal ridge</strong> forms on the <strong>medial side of the mesonephros</strong>"
+        ],
+        [
+         "⭐ <strong>Weeks 4-7</strong>",
+         "⭐ <strong>indifferent stage</strong> — sexes identical"
+        ],
+        [
+         "<strong>Week 7</strong>",
+         "cortical cords develop; urogenital membrane breaks down"
+        ],
+        [
+         "⭐ <strong>Week 12</strong>",
+         "⭐ <strong>sexually distinct</strong>; definitive kidneys have ascended and are functional"
+        ],
+        [
+         "<strong>Weeks 16-20</strong>",
+         "ultrasound can detect phenotypic sex"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "⭐ No migration = no gonads",
+       "html": "<p>⭐ <strong>If the primordial germ cells do not reach the gonadal ridges, the gonad does not develop at all.</strong> They carry an <strong>inductive influence</strong> — the ridge alone is not enough.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Tissue of origin",
+        "Gives rise to"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Intermediate mesoderm</strong>",
+         "⭐ <strong>most of the genitourinary system</strong> — urogenital ridge → <strong>nephrogenic cord</strong> (urinary) + <strong>gonadal ridge</strong> (genital)"
+        ],
+        [
+         "⚠ <strong>Endoderm of the hindgut</strong>",
+         "⭐ <strong>the urogenital sinus</strong>"
+        ],
+        [
+         "⚠ <strong>Lateral plate mesoderm</strong>",
+         "<strong>genital tubercle</strong>, lower body wall, urorectal septum"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Why urinary and genital defects travel together, which the deck asks outright:</strong> ⭐ <strong>both derive from the same intermediate mesoderm, and urinary development PRECEDES genital by about 10 days.</strong> A disturbance hits both.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>## Ovary</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Primitive (primary) sex cords DEGENERATE</strong> → surface epithelium proliferates again as ⭐ <strong>CORTICAL (secondary) sex cords</strong> → germ cells become <strong>oogonia</strong>, which undergo <strong>active mitosis in the fetal period</strong> → oogonia enlarge into <strong>primary oocytes</strong> → cortical cord cells surround them as <strong>follicular cells</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Primary oocyte + follicular cells = PRIMORDIAL FOLLICLE.</strong></p>",
+       "cols": [
+        "⭐ Two facts that are always tested",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Primary oocytes are arrested in PROPHASE OF MEIOSIS I</strong> until shortly before ovulation",
+         ""
+        ],
+        [
+         "⭐ <strong>No oogonia form postnatally</strong> — at birth the ovaries hold ⭐ <strong>~400,000 follicles</strong>, all arrested",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Mesonephric remnants — all three live in the broad ligament</p>",
+       "cols": [
+        "Remnant",
+        "Male homologue",
+        "⭐ Location"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Epoöphoron</strong>",
+         "efferent ductules + duct of epididymis",
+         "in the <strong>mesovarium</strong>"
+        ],
+        [
+         "<strong>Paroöphoron</strong>",
+         "rudimentary mesonephric tubules",
+         "closer to the <strong>uterus</strong>"
+        ],
+        [
+         "⭐ <strong>Gartner's duct</strong>",
+         "⭐ <strong>ductus deferens + ejaculatory duct</strong>",
+         "⭐ <strong>lateral wall of the uterus, in the broad ligament and the VAGINAL WALL</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ ⭐ <strong>Clinically these accumulate fluid and become cystic — a Gartner's duct cyst in the lateral vaginal wall is the one you will meet.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>## Uterus and vagina — the part that generates the anomalies</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The sequence, and every anomaly is a failure of one step in it:</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>1. ⭐ <strong>Paramesonephric ducts open CRANIALLY into the abdominal cavity</strong> with a funnel end → ⭐ <strong>uterine tubes and fimbriae</strong></p><p>2. ⭐ <strong>Caudally they FUSE in the midline</strong> → ⭐ <strong>uterovaginal primordium</strong> → ⭐ <strong>uterus, cervix, and SUPERIOR 1/3 of the vagina</strong></p><p>3. The primordium contacts the <strong>urogenital sinus</strong>, inducing ⭐ <strong>sinovaginal bulbs</strong> (paired <strong>endodermal</strong> outgrowths)</p><p>4. The bulbs fuse into the solid ⭐ <strong>vaginal plate</strong>, which <strong>canalises</strong> → ⭐ <strong>INFERIOR 2/3 of the vagina</strong></p><p>5. The ⭐ <strong>hymen</strong> separates the vaginal lumen from the UG sinus and ruptures perinatally</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The vagina has TWO origins and the junction is at the upper 1/3 – lower 2/3 boundary</strong> — upper third from the fused ducts, lower two-thirds from the sinovaginal bulbs.</p>",
+       "cols": [
+        "⭐ Anomaly",
+        "⭐ The failed step"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Uterus didelphys (double uterus)</strong>",
+         "⭐ <strong>failure of FUSION of the inferior parts of the paramesonephric ducts.</strong> May have a double or single vagina"
+        ],
+        [
+         "⭐ <strong>Septate uterus</strong>",
+         "⭐ <strong>failure of RESORPTION of the uterovaginal septum AFTER fusion</strong> — partial or complete"
+        ],
+        [
+         "⭐ <strong>Bicornuate uterus</strong>",
+         "⭐ <strong>failure of the ducts forming the SUPERIOR part of the uterine body to fuse</strong>"
+        ],
+        [
+         "⭐ <strong>Unicornuate uterus</strong>",
+         "⭐ <strong>failure of ONE paramesonephric duct to develop</strong> — one horn, one tube"
+        ],
+        [
+         "⭐ <strong>Absent vagina (1:5000)</strong>",
+         "⭐ <strong>failure of the sinovaginal bulbs to form the vaginal plate.</strong> ⚠ <strong>The uterus is usually absent too</strong>, because the uterovaginal primordium is what induces the bulbs"
+        ],
+        [
+         "<strong>Vaginal atresia</strong>",
+         "⭐ <strong>failure of CANALISATION of the vaginal plate</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Fusion failure vs resorption failure is the discriminator across the whole set</strong>: <strong>didelphys and bicornuate are FUSION failures</strong> (they never joined), <strong>septate is a RESORPTION failure</strong> (they joined but the wall stayed). ⭐ <strong>Unicornuate is a development failure — one duct never formed at all.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ ⭐ <strong>Many of these women are fertile, but with an increased incidence of premature delivery.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>## Descent of the ovaries</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The gubernaculum tethers the ovary as the embryo lengthens</strong>, so the ovary descends <strong>retroperitoneally</strong> from the lumbar posterior abdominal wall into the pelvis — ⚠ ⭐ <strong>but does NOT enter the inguinal canal</strong>, unlike the testis.</p>",
+       "cols": [
+        "Gubernaculum portion",
+        "⭐ Becomes"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Cranial</strong>",
+         "⭐ <strong>ligament of the ovary</strong> — uterus to ovary"
+        ],
+        [
+         "⭐ <strong>Caudal</strong>",
+         "⭐ <strong>round ligament of the uterus</strong> — uterus to <strong>labia majora</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Innervation, blood supply and lymphatic drainage all reflect the POSTERIOR ABDOMINAL origin</strong>, not the pelvic destination — which is why ovarian pain refers to the flank and ovarian cancer spreads to para-aortic nodes.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>## External genitalia</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Indifferent from weeks 4-7; distinct by week 12. Female differentiation runs 9-14 weeks, driven by ESTROGENS and the ABSENCE of DHT.</strong></p>",
+       "cols": [
+        "Indifferent structure",
+        "⭐ Female",
+        "Male"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Genital tubercle</strong>",
+         "⭐ <strong>clitoris</strong>",
+         "phallus/penis"
+        ],
+        [
+         "⭐ <strong>Urethral (urogenital) folds</strong>",
+         "⭐ <strong>labia minora — remain SEPARATED</strong>",
+         "fuse into the penile urethra"
+        ],
+        [
+         "⭐ <strong>Labioscrotal swellings</strong>",
+         "⭐ <strong>labia majora — remain SEPARATED</strong>",
+         "fuse into the scrotum"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Female external development is defined by structures NOT fusing.</strong> Same principle as the internal tract, and it is why androgen exposure in a 46,XX fetus produces fusion — the <span class=\"wl\">congenital adrenal hyperplasia</span> picture in <span class=\"wl\">09 - Disorders of Sexual Differentiation</span>.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-08",
      "num": "08",
      "name": "Introduction to Transgender Medicine",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Introduction to Transgender Medicine",
+     "framing": "<p>⭐ <strong>Four words that are not synonyms, and the lecture opens by separating them.</strong> ⭐ <strong>Sex is biology; gender is psychological; gender identity is the person's own articulation of it; sexual orientation is a different axis entirely.</strong> Confusing any two of these is the commonest error.</p>",
+     "keypoints": "<p>⭐ <strong>Sex, gender, gender identity and sexual orientation are four separate things.</strong> ⭐ <strong>Dysphoria is the distress, not the incongruence.</strong> ⭐ <strong>Insistence, persistence, consistence.</strong> ⭐ <strong>1 in 300 adults; prevalence rising, not falling.</strong> ⭐ <strong>Pre-pubertal children mostly do not persist; adolescents mostly do.</strong> ⭐ <strong>Blockers fully reversible, hormones partially, surgery not — and hormones wait until puberty has started.</strong> ⭐ <strong>Fertility must be discussed before hormones.</strong> ⭐ <strong>Mental health concerns need to be reasonably well-controlled, not cured.</strong> ⭐ <strong>Family support moves suicide attempt risk from 60% to 4%.</strong> ⭐ <strong>Injected testosterone is monitored halfway between doses; oral cannot be monitored at all.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Term",
+        "⭐ Definition"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Sex</strong>",
+         "⭐ <strong>biological status</strong> — chromosomes, gonads, internal and external genitalia. Male, female, <strong>DSD</strong>"
+        ],
+        [
+         "⭐ <strong>Gender</strong>",
+         "⭐ <strong>psychological status</strong> — attitudes, feelings, behaviours"
+        ],
+        [
+         "⭐ <strong>Gender identity</strong>",
+         "⭐ <strong>the individual's own articulation of their gender</strong> — cis-gender, trans-gender, gender non-conforming"
+        ],
+        [
+         "⚠ ⭐ <strong>Sexual orientation</strong>",
+         "⭐ <strong>a separate axis — who one is attracted to.</strong> Hetero, gay/lesbian, bisexual, pansexual"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Gender dysphoria</strong> is the <strong>distress</strong>: discontent related to social stigmatisation, isolation and rejection, in the context of a body or assigned gender <strong>incongruent with the gender identity</strong>. ⚠ ⭐ <strong>The incongruence is not the disorder; the distress is.</strong></p>",
+       "cols": [
+        "⭐ Diagnostic features",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>marked and persistent incongruence</strong> between perceived gender and assigned sex",
+         ""
+        ],
+        [
+         "a <strong>desire to transition</strong> and be accepted as the experienced gender",
+         ""
+        ],
+        [
+         "⭐ <strong>a strong dislike of one's sexual anatomy, or of anticipated pubertal changes</strong>",
+         ""
+        ],
+        [
+         "a strong desire for sexual characteristics matching the experienced gender",
+         ""
+        ],
+        [
+         "make-believe, toys, activities and playmates typical of the experienced gender",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The three words that summarise the assessment: INSISTENCE · PERSISTENCE · CONSISTENCE.</strong></p>",
+       "cols": [
+        "Epidemiology",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>Canadian census 2022</strong>",
+         "⭐ <strong>1 in 300 people aged 15+ identify as transgender or non-binary</strong>; ⭐ <strong>two-thirds are under 35</strong>"
+        ],
+        [
+         "<strong>Adolescents</strong> (international high-school surveys)",
+         "⭐ <strong>1.2 - 4.1%</strong> report a gender identity different from that assigned at birth"
+        ],
+        [
+         "⚠ <strong>Trend</strong>",
+         "⭐ <strong>prevalence is INCREASING, not decreasing</strong> — the module keys this as a false statement"
+        ],
+        [
+         "⭐ <strong>Persistence</strong>",
+         "⭐ <strong>most PRE-PUBERTAL children who identify as transgender do NOT persist into adulthood</strong> — ⚠ <strong>but most ADOLESCENTS DO.</strong> The module tests exactly this distinction"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Puberty is the dividing line for persistence, and that is why the treatment ladder is built around it.</strong></p>",
+       "cols": [
+        "⭐ Two guideline sources",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>WPATH</strong> — World Professional Association for Transgender Health, <strong>Standards of Care v8, 2022</strong>",
+         ""
+        ],
+        [
+         "⭐ <strong>Endocrine Society Clinical Practice Guideline</strong>, <em>J Clin Endocrinol Metab</em>, <strong>2017</strong>",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "⭐ Mental health outcomes, and what changes them",
+       "html": "<p>⭐ <strong>Suicidality is 2-3× more frequent.</strong> ⭐ <strong>47% of trans youth in Ontario had thought about suicide; 19% attempted.</strong></p><p>⭐ <strong>The single largest modifier is family support: 4% risk with a supportive family, 60% without.</strong> ⭐ <strong>Youth treated with hormonal therapy, surgery where indicated, and managed by a multidisciplinary team including mental health clinicians had mental health outcomes SIMILAR TO THE GENERAL POPULATION.</strong></p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## The treatment ladder, ordered by reversibility</p>",
+       "cols": [
+        "Stage",
+        "Intervention",
+        "⭐ Reversibility"
+       ],
+       "rows": [
+        [
+         "<strong>1</strong>",
+         "⭐ <strong>Puberty blockers</strong> — \"hits the pause button\"",
+         "⭐ <strong>FULLY REVERSIBLE</strong>"
+        ],
+        [
+         "<strong>2</strong>",
+         "⭐ <strong>Gender-affirming hormones</strong> — testosterone or estrogen",
+         "⭐ <strong>PARTIALLY reversible</strong>"
+        ],
+        [
+         "<strong>3</strong>",
+         "<strong>Gender re-assignment surgery</strong>",
+         "⭐ <strong>IRREVERSIBLE</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ ⭐ <strong>Hormonal therapy should NOT take place until the child has STARTED puberty.</strong> ⭐ <strong>That is why blockers come first and are not a lesser version of hormones — they buy time in a fully reversible way while persistence declares itself.</strong></p>"
+      },
+      {
+       "t": "callout",
+       "kind": "drugs",
+       "title": "⭐ What the module keys, and the three distractors it kills",
+       "html": "<p>⭐ <strong>TRUE:</strong> ⭐ <strong>puberty blockers can be given first line to quickly reduce the effect of physiological hormone action</strong> · ⭐ <strong>fertility preservation must be discussed BEFORE initiating hormone therapy</strong>.</p><p>⚠ <strong>FALSE:</strong> ⚠ <strong>testosterone effects are NOT fully reversible</strong> (voice deepening and hair growth persist) · ⚠ <strong>hormone therapy does NOT require all mental health conditions to be treated first</strong> — the criterion is that significant concerns are <strong>\"reasonably well-controlled\"</strong> · ⚠ <strong>surgery is NOT categorically contraindicated before 18</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ WPATH criteria for hormone therapy — all four",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>1.</strong> ⭐ <strong>persistent, well-documented gender dysphoria</strong>",
+         ""
+        ],
+        [
+         "<strong>2.</strong> ⭐ <strong>capacity to make a fully informed decision and consent</strong>",
+         ""
+        ],
+        [
+         "<strong>3.</strong> <strong>age of majority</strong> (if younger, the adolescent Standards of Care apply)",
+         ""
+        ],
+        [
+         "<strong>4.</strong> ⭐ <strong>significant medical or mental health concerns REASONABLY WELL-CONTROLLED</strong> — not resolved",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Hormone initiation requires a psychosocial assessment, informed consent, and a referral from the mental health professional who performed it</strong> — unless the hormone provider is themselves qualified in that area.</p>",
+       "cols": [
+        "⭐ Before starting hormones, six steps",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>1.</strong> initial evaluation: <strong>physical transition goals</strong>, health history, examination, risk assessment, labs",
+         ""
+        ],
+        [
+         "<strong>2.</strong> ⭐ <strong>discuss expected effects AND adverse effects — including REDUCED FERTILITY, so reproductive options must be discussed first</strong>",
+         ""
+        ],
+        [
+         "<strong>3.</strong> confirm capacity to understand risks and benefits",
+         ""
+        ],
+        [
+         "<strong>4.</strong> ⭐ <strong>ongoing medical monitoring</strong> of effectiveness and side effects",
+         ""
+        ],
+        [
+         "<strong>5.</strong> communicate with primary care, mental health, and surgeon",
+         ""
+        ],
+        [
+         "<strong>6.</strong> provide a <strong>written statement</strong> of medical supervision if needed",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ The two goals of hormone therapy",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>1.</strong> ⭐ <strong>reduce endogenous sex hormone levels</strong>, and so the secondary sex characteristics of the designated gender",
+         ""
+        ],
+        [
+         "<strong>2.</strong> ⭐ <strong>replace sex hormones consistent with the gender identity, using the principles of hormone replacement in HYPOGONADAL patients</strong>",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>That second framing is the endocrinologist's whole approach: this is hypogonadal replacement, a problem the specialty already knows how to do.</strong></p>",
+       "cols": [
+        "Testosterone delivery",
+        "Frequency",
+        "⭐ Specific issue",
+        "⭐ Monitoring"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Injection</strong>",
+         "Q2-4 weeks",
+         "⭐ <strong>fluctuating levels — the \"roller coaster\"</strong>",
+         "⭐ <strong>halfway between injections</strong>"
+        ],
+        [
+         "<strong>Transdermal</strong>",
+         "daily",
+         "patch irritation · ⭐ <strong>contamination of others</strong> · sweating",
+         "any time"
+        ],
+        [
+         "<strong>Oral</strong>",
+         "2-3×/day",
+         "⭐ <strong>requires fatty food</strong>",
+         "⚠ ⭐ <strong>not possible</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Measuring testosterone:</strong> <strong>total T</strong> = SHBG-bound + albumin-bound + free. ⭐ <strong>Bioavailable = free + albumin-bound.</strong> ⚠ ⭐ <strong>SHBG falls in obesity</strong>, which distorts the total. <strong>Free androgen index = testosterone / SHBG.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Referral for surgery</strong> requires <strong>one or two referrals from a qualified mental health professional</strong>, depending on the procedure, documenting personal and treatment history, progress and eligibility. ⭐ <strong>In Ontario, two health care providers must support the referral.</strong> ⚠ <strong>Mental health professionals who recommend surgery share the ethical and legal responsibility with the surgeon.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The endocrinologist's role is bounded</strong>: initial treatment considerations, advice when issues arise, ⚠ <strong>and explicitly \"not necessarily diagnostic\"</strong> — they cannot see every patient long-term, so this is shared care by design.</p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-09",
      "num": "09",
      "name": "Disorders of Sexual Differentiation",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Disorders of Sexual Differentiation",
+     "framing": "<p>⭐ <strong>A DSD is a discrepancy between four things that normally agree: karyotype, gonadal histology, internal genitalia and external genitalia.</strong> ⭐ <strong>The karyotype is therefore the first investigation, because it tells you which half of the differential you are in — an under-virilised XY, or an over-virilised XX.</strong></p>",
+     "keypoints": "<p>⭐ <strong>Karyotype first — it splits under-virilised XY from virilised XX.</strong> ⭐ <strong>5α-reductase deficiency virilises at puberty; androgen insensitivity cannot and gives gynaecomastia instead.</strong> ⭐ <strong>T:DHT after hCG for the enzyme; DNA for the receptor.</strong> ⭐ <strong>DHT builds the external genitalia, testosterone the internal ducts.</strong> ⭐ <strong>21-hydroxylase is 95% of CAH; 17-OHP is the diagnostic marker.</strong> ⭐ <strong>Cortisol down → ACTH up → hyperplasia → androgen shunt, and aldosterone is lost too in 75%.</strong> ⭐ <strong>The XX baby looks ambiguous and is caught; the XY baby looks normal and crashes at 1-3 weeks.</strong> ⭐ <strong>Neutral language, no name, no birth registration, no rushed surgery.</strong> ⭐ <strong>5α-reductase deficiency is the diagnosis where a female assignment most often turns out wrong.</strong></p>",
+     "blocks": [
+      {
+       "t": "callout",
+       "kind": "warning",
+       "title": "What this lecture is explicitly NOT about",
+       "html": "<p>⚠ ⭐ <strong>Gender identity, gender expression and sexual orientation are stated on their own slide as out of scope.</strong> A DSD is an anatomical and biochemical finding. ⚠ <strong>DSDs are not always associated with ambiguous genitalia</strong> — some present instead as <strong>abnormal pubertal development</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "⭐ Frequency"
+       ],
+       "rows": [
+        [
+         "Genital abnormalities warranting endocrine and genetic evaluation",
+         "⭐ <strong>1 in 4,500 births</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">congenital adrenal hyperplasia</span></strong>",
+         "⭐ <strong>1 in 10,000 births</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Category",
+        "Chromosomes",
+        "Gonads",
+        "External genitalia"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>46,XY DSD</strong>",
+         "46,XY",
+         "<strong>testes</strong>",
+         "⭐ <strong>incompletely virilised</strong>"
+        ],
+        [
+         "⭐ <strong>46,XX DSD</strong>",
+         "46,XX",
+         "<strong>ovaries</strong>",
+         "⭐ <strong>virilised</strong>"
+        ],
+        [
+         "<strong>Ovotesticular DSD</strong>",
+         "variable",
+         "<strong>mixed</strong>",
+         "—"
+        ],
+        [
+         "<strong>Mixed gonadal dysgenesis</strong>",
+         "⭐ <strong>45,X / 46,XY</strong>",
+         "—",
+         "—"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>## 46,XY DSD — causes of INCOMPLETE virilisation</p>",
+       "cols": [
+        "Mechanism",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "<strong>Disorders of testicular development</strong>",
+         "complete or partial gonadal dysgenesis · testicular regression"
+        ],
+        [
+         "<strong>Disorders of androgen synthesis</strong>",
+         "<strong>Leydig cell hypoplasia</strong> (LH deficiency / receptor defect) · testosterone biosynthesis defects (non-virilising CAH, 3β-HSD, 17,20-lyase, 17β-HSD) · ⭐ <strong>5α-reductase deficiency</strong>"
+        ],
+        [
+         "<strong>Deficient AMH</strong>",
+         "synthesis or action"
+        ],
+        [
+         "<strong>End-organ unresponsiveness</strong>",
+         "⭐ <strong>androgen insensitivity, complete or incomplete</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "⭐ 5α-reductase deficiency",
+        "⭐ Incomplete androgen insensitivity"
+       ],
+       "rows": [
+        [
+         "<strong>Defect</strong>",
+         "⭐ <strong>cannot convert testosterone → DHT</strong>",
+         "⭐ <strong>partial androgen RECEPTOR defect</strong>"
+        ],
+        [
+         "<strong>Inheritance</strong>",
+         "⭐ <strong>autosomal recessive</strong>",
+         "⭐ <strong>X-linked recessive</strong>"
+        ],
+        [
+         "⭐ <strong>Diagnosis</strong>",
+         "⭐ <strong>elevated T:DHT ratio after hCG stimulation</strong>",
+         "⭐ <strong>DNA analysis</strong>"
+        ],
+        [
+         "<strong>Internal</strong>",
+         "testes — abdominal, inguinal or labioscrotal",
+         "testes"
+        ],
+        [
+         "<strong>External</strong>",
+         "ambiguous",
+         "ambiguous, micropenis, or normal male"
+        ],
+        [
+         "⭐ <strong>At puberty</strong>",
+         "⭐ <strong>VIRILISES</strong> — though incompletely; sparse facial and pubic hair, ⚠ <strong>no temporal recession or acne</strong>",
+         "⭐ <strong>incomplete virilisation, GYNAECOMASTIA, azoospermia</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>The puberty column is the discriminator.</strong> ⭐ <strong>5α-reductase deficiency virilises at puberty because testosterone itself is normal and the pubertal surge partly overcomes the missing DHT. Androgen insensitivity cannot virilise at all, because the receptor is broken — so it feminises instead, with gynaecomastia.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Why DHT specifically:</strong> the module's case — <strong>2 cm phallus, fused labioscrotal folds, single urogenital opening, no palpable gonads, karyotype 46,XY</strong> — is <strong>5α-reductase deficiency</strong>, because ⭐ <strong>DHT is what builds the EXTERNAL male genitalia</strong> while testosterone builds the internal Wolffian structures.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>## 46,XX DSD — causes of virilisation</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>All of them are \"increased fetal androgen\", and you work through where the androgen came from:</strong></p>"
+      },
+      {
+       "t": "list",
+       "html": "<ul><li>⭐ <strong>CAH — 21-hydroxylase deficiency</strong> (by far the commonest)</li><li><strong>androgen-secreting tumour</strong> of ovary or adrenal</li><li>⭐ <strong>transplacental maternal androgen</strong> — a maternal virilising tumour, or androgenic drugs</li></ul>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## Congenital adrenal hyperplasia</p>",
+       "cols": [
+        "<strong>What</strong>",
+        "disorders of adrenal steroid biosynthesis, ⭐ <strong>autosomal recessive</strong>"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Enzyme split</strong>",
+         "⭐ <strong>21-hydroxylase ≈ 95%</strong> · 11β-hydroxylase <strong>5%</strong> · 3β-HSD <strong>1%</strong>"
+        ],
+        [
+         "<strong>Gene</strong>",
+         "⭐ <strong>CYP21A2 on chromosome 6</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The mechanism in one chain:</strong> ⭐ <strong>21-hydroxylase blocked → CORTISOL deficiency → ACTH rises → adrenal cortex HYPERPLASIA (hence the name) → the blocked precursors are shunted into the ANDROGEN pathway → virilisation.</strong> ⭐ <strong>And because the same enzyme sits on the mineralocorticoid limb, ALDOSTERONE is also deficient — salt wasting in 75%.</strong></p>",
+       "cols": [
+        "⭐ Severity spectrum, set by residual enzyme activity",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Salt wasting</strong> — most severe",
+         "<strong>two severe mutations</strong>, ⭐ <strong>< 1% activity.</strong> Glucocorticoid + mineralocorticoid deficiency + androgen excess. ⭐ <strong>75% of 21-OHD</strong>"
+        ],
+        [
+         "<strong>Simple virilising</strong>",
+         "one mutation milder, ⭐ <strong>1-5% activity.</strong> Cortisol deficiency + androgen excess; ⚠ <strong>no significant salt loss, though renin may be raised</strong>"
+        ],
+        [
+         "⭐ <strong>Non-classic / late onset</strong>",
+         "mild mutation. ⭐ <strong>Prepubertal: premature pubarche. Pubertal: hirsutism, acne, oligomenorrhoea</strong> — i.e. it presents looking like <span class=\"wl\">PCOS/PMOS</span>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Diagnosis of 21-OHD",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>HIGH serum 17-hydroxyprogesterone</strong> — the substrate piling up behind the block (the case: ⭐ <strong>400, normal < 10</strong>)",
+         ""
+        ],
+        [
+         "<strong>Low plasma sodium</strong> · ⭐ <strong>high plasma potassium</strong> · <strong>metabolic acidosis</strong> · <strong>hypoglycaemia</strong> in a salt-losing crisis",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Neonatal presentation",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Female</strong>",
+         "⭐ <strong>virilised external genitalia — clitoral hypertrophy, variable labial fusion; most severe is a SINGLE urogenital opening</strong>"
+        ],
+        [
+         "⚠ ⭐ <strong>Male</strong>",
+         "⭐ <strong>enlargement of the penis and scrotal pigmentation</strong> — ⚠ <strong>no ambiguity, so the diagnosis is easily MISSED</strong>"
+        ],
+        [
+         "⭐ <strong>Salt-losing crisis</strong>",
+         "⭐ <strong>at 1-3 weeks of age</strong>"
+        ],
+        [
+         "⚠ <strong>If unrecognised</strong>",
+         "⭐ <strong>neonatal death</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>That asymmetry is the highest-yield point in the lecture: the XX infant is picked up because she looks ambiguous; the XY infant looks normal and presents in crisis two weeks later.</strong></p>"
+      },
+      {
+       "t": "callout",
+       "kind": "drugs",
+       "title": "Long-term management of CAH",
+       "html": "<p>⭐ <strong>Steroid replacement for LIFE.</strong> <strong>Glucocorticoid:</strong> replacement is based on a normal cortisol secretion rate of <strong>12.5 ± 3 mg/m²/day</strong>, given as ⭐ <strong>hydrocortisone 10-15 mg/m²/day bid-tid</strong> (prednisone or dexamethasone in older adolescents). ⭐ <strong>Increase during illness or stress to prevent a salt-losing crisis.</strong> <strong>Mineralocorticoid:</strong> ⭐ <strong>fludrocortisone 0.05-0.20 mg daily</strong>, with ⭐ <strong>additional oral saline in infants</strong>. Plus prevention of adrenal crisis, genital surgery, education and surveillance.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p>## The newborn with ambiguous genitalia</p>",
+       "cols": [
+        "Assessment",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>History</strong>",
+         "family history of ambiguous genitalia or virilisation · <strong>pregnancy — maternal medications and health</strong> · neonatal crises"
+        ],
+        [
+         "<strong>Physical</strong>",
+         "general exam, dysmorphic features, ⭐ <strong>palpation of gonads</strong>, and a ⭐ <strong>description AND DIAGRAM</strong> of the labioscrotal folds, phallus, and the number/position/size of urogenital openings"
+        ],
+        [
+         "<strong>Investigations</strong>",
+         "⭐ <strong>karyotype · pelvic/abdominal ultrasound · labs directed by the differential</strong> (e.g. 17-OHP)"
+        ]
+       ]
+      },
+      {
+       "t": "callout",
+       "kind": "condition",
+       "title": "⭐ What to do, and what to say",
+       "html": "<p>⭐ <strong>Refer to a tertiary centre</strong> — endocrinology, neonatology, genetics, gynaecology, urology, social work/psychology. ⭐ <strong>Delay assignment of sex of rearing until all investigations are complete. Do not assign a name. Do not register the birth.</strong></p><p>⭐ <strong>Use neutral terms with the parents: \"gonads\", \"phallus\", \"labio-scrotal folds\"</strong> — never \"boy\" or \"girl\" before you know.</p><p>⭐ <strong>What the module keys as right to discuss:</strong> ⭐ <strong>gender-neutral terms until a diagnosis is established</strong> · ⭐ <strong>reassurance that other organ systems are likely unaffected</strong> · ⭐ <strong>that a final diagnosis may take several weeks.</strong> ⚠ <strong>What it keys as WRONG: stressing rapid surgical intervention.</strong> The ESPE/LWPES consensus says ⭐ <strong>\"sex assignment does not inevitably mean surgical intervention\"</strong>, that ⚠ <strong>evidence justifying treatment methods is lacking</strong>, and that only expert surgeons aware of long-term outcomes should be involved.</p>"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "⭐ Gender identity outcomes by diagnosis",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>46,XX CAH</strong>",
+         "⭐ <strong>90% assigned female in infancy identify as female</strong> — evidence supports raising markedly virilised 46,XX CAH infants as female"
+        ],
+        [
+         "<strong>Complete androgen insensitivity</strong>",
+         "⭐ <strong>100%</strong> assigned female identify as female"
+        ],
+        [
+         "⭐ <strong>5α-reductase deficiency</strong>",
+         "⚠ ⭐ <strong>60% assigned female identify as MALE</strong> (and 100% of those assigned male do) — <strong>they virilise at puberty</strong>"
+        ],
+        [
+         "<strong>Incomplete AIS, biosynthetic defects, gonadal dysgenesis</strong>",
+         "⚠ ⭐ <strong>25% have gender dissatisfaction whichever sex was assigned</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Factors in the assignment discussion:</strong> underlying diagnosis · genital appearance and surgical options · need for lifelong replacement · ⭐ <strong>potential for fertility</strong> · the family's views and sometimes cultural circumstances. ⭐ <strong>Initial uncertainty is extremely unsettling for families, and multidisciplinary psychology/social work involvement is essential.</strong></p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-10",
