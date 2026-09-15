@@ -159,6 +159,11 @@ PAGE = u"""<!DOCTYPE html>
 </section>
 
 <section>
+<p class="panel-h">Lectures</p>
+<nav class="lecindex" id="note-index" aria-label="Jump to a lecture"></nav>
+</section>
+
+<section>
 <p class="panel-h">Save as PDF</p>
 <button class="print-cta" id="print-all" type="button" disabled>Save every note as one PDF</button>
 <p class="railnote">Each note has its own <strong>PDF</strong> button, and each week can be

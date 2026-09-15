@@ -6,11 +6,18 @@
    what is still left to write - the same reasoning that keeps an empty question
    set visible on the other tab.
 
+   The rail carries an index of every lecture in the block. A block runs to 36
+   notes of a page or more each, so the week chips narrow the stream but cannot
+   get you to a named lecture; the index is the way in, and it marks the note
+   you are reading as you scroll.
+
    Any note can be sent to PDF on its own, or a whole week at once, so it can be
    annotated by hand afterwards. That runs through the browser's own print
    dialogue: the page marks what should survive, prints, and unmarks.
 
-   Mermaid is only fetched if some lecture in this block actually has a pathway. */
+   Mermaid is only fetched if some lecture in this block actually has a pathway,
+   and any pathway can be opened full size in its own tab - inside the stream a
+   wide diagram is squeezed into the column and its labels shrink with it. */
 
 (function () {
   "use strict";
@@ -22,6 +29,11 @@
   var WK = Object.create(null);   // lecture id -> week key
   var week = "all";
   var booted = false;
+
+  var IDX = Object.create(null);  // lecture id -> its row in the index
+  var AT = Object.create(null);   // lecture id -> its place in the stream
+  var CURRENT = null;             // the note the index is pointing at
+  var PENDING = null;             // a clicked note whose scroll is still running
 
   function byId(id) { return document.getElementById(id); }
 
@@ -44,6 +56,22 @@
       (w.lectures || []).forEach(function (l) { out.push(l); });
     });
     return out;
+  }
+
+  /* Two lectures in a roster can carry the same id - endo week 3 has such a
+     pair - and a repeated element id makes the second note unreachable: the
+     index, the filter and getElementById all find the first one. The roster is
+     the thing to fix, but the page must not mis-navigate while it is wrong, so
+     every lecture gets a key that is unique on this page and the rest of the
+     file addresses notes by that. */
+  function assignKeys() {
+    var used = Object.create(null);
+    lectures().forEach(function (lec) {
+      var base = lec.id || "lec", k = base, n = 2;
+      while (used[k]) { k = base + "--" + (n++); }
+      used[k] = true;
+      lec.key = k;
+    });
   }
 
   /* ---------- printing ---------- */
@@ -132,12 +160,28 @@
   /* the parts arrive in the order they were written, because the sentence above
      a table is the reason the table is there - splitting them into separate
      fields would have shuffled the argument */
-  function buildBlock(b) {
+  function buildBlock(b, lec) {
     if (b.t === "pathway") {
+      var box = el("div", "pwblock");
       var p = el("div", "pathway");
       // mermaid parses the element's own text, so this must not be innerHTML
       p.textContent = b.mermaid;
-      return p;
+      box.appendChild(p);
+
+      /* the button sits outside .pathway: mermaid reads that element's text and
+         would swallow anything else put inside it */
+      var open = el("button", "pw-open", "Open full size");
+      open.type = "button";
+      // nothing to open until mermaid has drawn; revealed in drawPathways
+      open.hidden = true;
+      open.title = "Open this pathway in its own tab, big enough to read";
+      open.addEventListener("click", function () { openPathway(p, lec); });
+      box.appendChild(open);
+
+      // the diagram is the obvious thing to click, so let it be
+      p.addEventListener("click", function () { openPathway(p, lec); });
+
+      return box;
     }
     if (b.t === "table") {
       var box = el("div", "tblock");
@@ -157,8 +201,8 @@
 
   function buildNote(lec) {
     var art = el("article", "note");
-    art.id = "n-" + lec.id;
-    art.dataset.id = lec.id;
+    art.id = "n-" + lec.key;
+    art.dataset.id = lec.key;
 
     var head = el("div", "note-head");
     head.appendChild(el("span", "note-num", lec.num));
@@ -171,7 +215,7 @@
     if (lec.title) art.appendChild(el("p", "note-title", lec.title));
     if (lec.framing) art.appendChild(html("div", "framing", lec.framing));
 
-    (lec.blocks || []).forEach(function (b) { art.appendChild(buildBlock(b)); });
+    (lec.blocks || []).forEach(function (b) { art.appendChild(buildBlock(b, lec)); });
 
     if (lec.keypoints) {
       var kp = el("div", "keypoints");
@@ -185,14 +229,98 @@
 
   function buildGap(lec) {
     var art = el("article", "note is-gap");
-    art.id = "n-" + lec.id;
-    art.dataset.id = lec.id;
+    art.id = "n-" + lec.key;
+    art.dataset.id = lec.key;
     var head = el("div", "note-head");
     head.appendChild(el("span", "note-num", lec.num));
     head.appendChild(el("h4", null, lec.name));
     art.appendChild(head);
     art.appendChild(el("span", "gapnote", "no note yet"));
     return art;
+  }
+
+  /* ---------- a pathway, big enough to read ---------- */
+
+  /* Inside the stream a pathway is capped at the column width, so a wide one is
+     scaled down and its labels go with it. This hands the diagram to a tab of
+     its own, where it has the whole window.
+
+     It goes as SVG, which is what mermaid has already drawn: it stays sharp at
+     any zoom the browser offers, costs the repo no image files and no build
+     step, and works offline. A PNG would be a fixed grid of pixels and would
+     blur at exactly the moment you leaned in, which is the problem being fixed.
+
+     document.write into a blank tab rather than a blob URL: blobs inherit an
+     opaque origin that some browsers refuse to render as a document, and this
+     page has no server to fetch a real one from. */
+  function openPathway(host, lec) {
+    var svg = host.querySelector("svg");
+    if (!svg) return;            // mermaid never drew it; the source is on screen
+
+    var copy = svg.cloneNode(true);
+    copy.removeAttribute("style");        // mermaid pins a max-width here
+    copy.setAttribute("width", "100%");
+    copy.removeAttribute("height");
+    if (!copy.getAttribute("xmlns")) {
+      copy.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    }
+
+    var w = window.open("", "_blank");
+    if (!w) return;                       // a blocked popup is not worth a dialog
+
+    var title = (lec && lec.name) || "Pathway";
+    var block = (BLOCK && BLOCK.name) || "PoM 2";
+    var num = (lec && lec.num) ? lec.num + " \u00b7 " : "";
+
+    w.document.open();
+    w.document.write([
+      "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<title>", esc(num + title), " \u00b7 ", esc(block), "</title>",
+      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?",
+      "family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap\">",
+      "<style>",
+      "*{margin:0;padding:0;box-sizing:border-box}",
+      "body{background:#faf7f7;color:#27060f;",
+      "font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,sans-serif;",
+      "padding:22px clamp(16px,4vw,40px) 40px}",
+      "p.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.08em;",
+      "text-transform:uppercase;color:#8a7a7d;margin-bottom:6px}",
+      "h1{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.9rem);",
+      "font-weight:600;line-height:1.2;text-wrap:balance;margin-bottom:18px}",
+      /* the whole point: the diagram gets the window, not a 900px column */
+      "figure{background:#fff;border:1px solid #ecdfe1;border-radius:8px;",
+      "padding:clamp(14px,3vw,30px);overflow-x:auto}",
+      "svg{width:100%;height:auto;display:block}",
+      "footer{margin-top:16px;font-size:.8rem;color:#8a7a7d}",
+      "@media print{body{padding:0;background:#fff}",
+      "figure{border:0;padding:0}footer{display:none}}",
+      "</style></head><body>",
+      "<p class=\"eyebrow\">", esc(block), "</p>",
+      "<h1>", esc(num + title), "</h1>",
+      "<figure>", new XMLSerializer().serializeToString(copy), "</figure>",
+      "<footer>Zoom with your browser, or print this page to keep it. ",
+      "The diagram is drawn, not photographed, so it stays sharp at any size.</footer>",
+      "</body></html>"
+    ].join(""));
+    w.document.close();
+  }
+
+  /* One diagram failing to parse should not take the others' buttons with it, so
+     this asks each block on its own whether it has a drawing to show. */
+  function revealOpen() {
+    [].forEach.call(document.querySelectorAll("#note-stream .pwblock"), function (box) {
+      var drawn = !!box.querySelector(".pathway svg");
+      box.classList.toggle("is-openable", drawn);
+      var btn = box.querySelector(".pw-open");
+      if (btn) btn.hidden = !drawn;
+    });
+  }
+
+  function esc(t) {
+    return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
   /* ---------- mermaid, only if this block needs it ---------- */
@@ -233,10 +361,13 @@
         flowchart: { htmlLabels: true, useMaxWidth: true }
       });
       try {
-        window.mermaid.run({ nodes: nodes });
+        var run = window.mermaid.run({ nodes: nodes });
+        if (run && run.then) run.then(revealOpen, revealOpen);
+        else revealOpen();
       } catch (e) {
         // a diagram that will not parse should cost the page nothing; the
         // source text stays on screen and the rest of the note is unaffected
+        revealOpen();
       }
     };
     s.onerror = function () {
@@ -246,6 +377,139 @@
       });
     };
     document.head.appendChild(s);
+  }
+
+  /* ---------- the lecture index ---------- */
+
+  function buildIndex() {
+    var box = byId("note-index");
+    /* a page cached from before the index shipped still has to work */
+    if (!box) return;
+    var frag = document.createDocumentFragment();
+
+    WEEKS.forEach(function (w) {
+      var k = weekKey(w);
+      var g = el("p", "lecgroup", k === "off" ? "Unscheduled" : "Week " + k);
+      g.dataset.k = k;
+      frag.appendChild(g);
+
+      (w.lectures || []).forEach(function (lec) {
+        var row = el("button", "lecrow" + (lec.hasNote === true ? "" : " is-gap"));
+        row.type = "button";
+        row.dataset.id = lec.key;
+        row.dataset.k = k;
+        row.setAttribute("aria-current", "false");
+        row.appendChild(el("span", "ln", lec.num));
+        row.appendChild(el("span", "lt", lec.name));
+        // the row clips, so the whole name has to be reachable some other way
+        row.title = lec.num + " \u00b7 " + lec.name;
+        row.addEventListener("click", function () { goTo(lec.key); });
+        IDX[lec.key] = row;
+        frag.appendChild(row);
+      });
+    });
+
+    box.appendChild(frag);
+  }
+
+  /* the same scroll the questions tab does, so a jump from the rail and a jump
+     from the position bar put a note in the same place */
+  function goTo(id) {
+    var art = byId("n-" + id);
+    if (!art) return;
+    PENDING = id;
+    mark(id);
+    var top = art.getBoundingClientRect().top + window.pageYOffset - 16;
+    var still = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    try { window.scrollTo({ top: top, behavior: still ? "auto" : "smooth" }); }
+    catch (e) { window.scrollTo(0, top); }
+  }
+
+  function mark(id) {
+    if (CURRENT === id) return;
+    if (CURRENT && IDX[CURRENT]) IDX[CURRENT].setAttribute("aria-current", "false");
+    CURRENT = id;
+
+    var row = IDX[id], box = byId("note-index");
+    if (!row || !box) return;
+    row.setAttribute("aria-current", "true");
+
+    /* the index scrolls in its own right once it outgrows the rail, so the
+       marked row has to be brought back into view - scrollIntoView would take
+       the page with it, which is the one thing it must not do here */
+    var top = row.offsetTop, bot = top + row.offsetHeight;
+    if (top < box.scrollTop) box.scrollTop = top - 4;
+    else if (bot > box.scrollTop + box.clientHeight) {
+      box.scrollTop = bot - box.clientHeight + 4;
+    }
+  }
+
+  /* Position is read from an IntersectionObserver for the reasons the questions
+     tab gives: asking every note where it is on each scroll event costs frames,
+     and a hidden note never intersects, so the week filter falls out of it for
+     free. The sight line is the top fifth of the viewport.
+
+     A browser without IntersectionObserver keeps a working index - you can
+     still jump from it, it just does not follow you. */
+  function initSpy() {
+    if (!window.IntersectionObserver) return;
+    var inView = Object.create(null);
+    var notes = [].slice.call(document.querySelectorAll("#note-stream .note"));
+
+    AT = Object.create(null);
+    notes.forEach(function (a, i) { AT[a.dataset.id] = i; });
+
+    var obs = new window.IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var id = e.target.dataset.id;
+        if (e.isIntersecting) inView[id] = true;
+        else delete inView[id];
+      });
+
+      /* At the top of the page the answer is always the first lecture listed,
+         so it is not worth asking. Worth saying out loud, because the observer
+         delivers its first batch before the web fonts and any diagrams have
+         settled - at that moment the masthead has no height and half the block
+         is briefly up at the sight line, which is enough to mark a lecture two
+         weeks away and leave it there. */
+      if (window.pageYOffset < 8) {
+        var top = document.querySelector("#note-index .lecrow:not([hidden])");
+        if (top) mark(top.dataset.id);
+        return;
+      }
+
+      /* The questions tab takes the FIRST note crossing the line, because a
+         question is a paragraph and the one above you is the one you are on.
+         A note is pages long, so the same rule marks the lecture you have just
+         left: if the next heading has reached the top of the screen, you have
+         arrived at it. Hence the last one crossing, not the first. */
+      var best = null, bestAt = -1;
+      Object.keys(inView).forEach(function (id) {
+        if (AT[id] !== undefined && AT[id] > bestAt) { bestAt = AT[id]; best = id; }
+      });
+      if (!best) return;
+
+      /* A click owns the mark until its scroll actually arrives, or the index
+         strobes through every note the page travels past on the way. Waiting
+         for the arrival rather than running a timer matters here: the stream is
+         90,000 pixels tall, and a smooth scroll across two weeks takes longer
+         than any interval worth guessing at. */
+      if (PENDING) {
+        if (best !== PENDING) return;
+        PENDING = null;
+      }
+      mark(best);
+    }, { rootMargin: "0px 0px -80% 0px" });
+
+    notes.forEach(function (a) { obs.observe(a); });
+
+    /* ...unless the reader takes the wheel before it gets there, in which case
+       they have changed their mind and the index should follow them, not the
+       jump they walked away from */
+    ["wheel", "touchstart", "keydown"].forEach(function (ev) {
+      window.addEventListener(ev, function () { PENDING = null; }, { passive: true });
+    });
   }
 
   /* ---------- filter ---------- */
@@ -269,13 +533,13 @@
   }
 
   function matches(lec) {
-    return week === "all" || WK[lec.id] === week;
+    return week === "all" || WK[lec.key] === week;
   }
 
   function applyFilter() {
     var shown = 0;
     lectures().forEach(function (lec) {
-      var art = byId("n-" + lec.id);
+      var art = byId("n-" + lec.key);
       if (!art) return;
       var ok = matches(lec);
       art.hidden = !ok;
@@ -291,6 +555,31 @@
       }
       h.hidden = !any;
     });
+
+    /* the index carries the same filter as the stream, read off the rows rather
+       than from a lookup, so a roster that repeats an id cannot leave a row
+       behind that never hides */
+    [].forEach.call(document.querySelectorAll("#note-index .lecrow"), function (row) {
+      row.hidden = !(week === "all" || row.dataset.k === week);
+    });
+
+    /* the week headings inside the index earn their line only on All, where the
+       numbering restarts at 01 once per week and would otherwise be unreadable */
+    [].forEach.call(document.querySelectorAll("#note-index .lecgroup"), function (g) {
+      g.hidden = week !== "all";
+    });
+
+    /* Nothing is marked before the first scroll, because at the top of the page
+       no note has reached the sight line yet - and the note the index was
+       pointing at may have just been filtered away. Either way, fall back to the
+       first lecture still listed; the observer corrects it to wherever the
+       reader actually is as soon as one fires. */
+    if (!CURRENT || (IDX[CURRENT] && IDX[CURRENT].hidden)) {
+      if (CURRENT && IDX[CURRENT]) IDX[CURRENT].setAttribute("aria-current", "false");
+      CURRENT = null;
+      var first = document.querySelector("#note-index .lecrow:not([hidden])");
+      if (first) mark(first.dataset.id);
+    }
 
     byId("note-empty").hidden = shown > 0;
     paintChips();
@@ -343,6 +632,7 @@
       });
     }
 
+    buildIndex();
     byId("print-all").addEventListener("click", printAll);
   }
 
@@ -398,13 +688,15 @@
 
   function start(data) {
     WEEKS = (data && data.weeks) || [];
+    assignKeys();
     WEEKS.forEach(function (w) {
-      (w.lectures || []).forEach(function (l) { WK[l.id] = weekKey(w); });
+      (w.lectures || []).forEach(function (l) { WK[l.key] = weekKey(w); });
     });
     buildRail();
     buildStream();
     paintCoverage();
     applyFilter();
+    initSpy();
     drawPathways();
     initTop();
   }

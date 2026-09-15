@@ -703,7 +703,7 @@
          "⏰ <strong>Evolves over DAYS</strong><br><span class=\"wl\">polyuria</span>, <span class=\"wl\">polydipsia</span><br>Lethargy → <strong>obtundation</strong> (rarely coma)<br><strong>NO abdominal pain and NO vomiting</strong>"
         ],
         [
-         "<strong>Dx</strong>",
+         "<strong>Ix</strong>",
          "<u>Physical exam</u><br><strong>Toxic appearance</strong>; <span class=\"wl\">hypotension</span> + <span class=\"wl\">tachycardia</span> (shock); dehydration (dry membranes, poor skin turgor); <strong>acetone smell on breath</strong>; <strong><span class=\"wl\">Kussmal's breathing</span></strong><br><u>Investigations</u><br><strong>↑ blood glucose (often > 15)</strong><br><strong>↑ serum and urine ketones</strong><br><strong>↑ <span class=\"wl\">anion gap</span> — follow it during treatment</strong><br><strong>↓ serum pH (<span class=\"wl\">acidosis</span>)</strong>; <strong>↓ <span class=\"wl\">serum bicarbonate</span></strong> (consumed)<br>↑ plasma osmolality<br><strong>Na⁺ ↑ or ↓</strong> — high sugars falsely lower Na⁺, so <strong>correct for glucose</strong><br><strong>K⁺ ↑ or ↓</strong> — total body <strong>K⁺ is depleted</strong> even when serum looks normal<br>↑ <span class=\"wl\">creatinine</span> (dehydration)",
          "Same biochemical panel, but the discriminating pattern is:<br><strong>very high glucose</strong>, <strong>↑↑ plasma osmolality</strong><br><strong>minimal or absent ketones</strong><br><strong>pH and <span class=\"wl\">serum bicarbonate</span> near normal — no significant anion gap</strong>"
         ],
@@ -1530,7 +1530,7 @@
          "<strong>Target A1c ≤ 7%, ideally ≤ 6.5%, BEFORE conception</strong><br><strong>Prescribe <span class=\"wl\">folic acid</span></strong> · <strong>screen for <span class=\"wl\">diabetic retinopathy</span></strong>"
         ],
         [
-         "<strong>Dx</strong>",
+         "<strong>Ix</strong>",
          "See pathway above",
          "Already known; <strong>check A1c pre-conception then monthly</strong>"
         ],
@@ -2669,12 +2669,12 @@
          "As hypoparathyroidism, plus in <strong>type 1A</strong> the <strong><span class=\"wl\">Albright's hereditary osteodystrophy</span></strong> phenotype: round facies, short stature, <strong>short metacarpals and metatarsals</strong>"
         ],
         [
-         "<strong>Dx</strong>",
-         "<strong>24-h urine Ca + creatinine → FE_Ca</strong><br><strong>>0.02 = primary; <0.01 = FHH</strong>; 0.01-0.02 is the overlap zone, recheck off thiazides with normal Mg",
-         "PTH raised with a <strong>normal</strong> calcium",
-         "<strong>High PTH with high calcium and high phosphate</strong>",
-         "Low PTH with low calcium; <strong>must persist 6 months post-surgery before calling it permanent</strong>",
-         "<strong>High PTH with low calcium</strong> — the receptor, not the gland<br><strong>PPHP has the same phenotype with a normal panel</strong>"
+         "<strong>Ix</strong>",
+         "<strong>1. Corrected calcium</strong>, then ⭐ <strong>PTH — always, and it is what decides the whole workup</strong><br><strong>2. 24-h urine Ca + creatinine → FE_Ca</strong>, which separates it from FHH: <strong>>0.02 primary, <0.01 FHH</strong>; 0.01-0.02 overlap, recheck off thiazides with normal Mg and 25-OH-D >50<br><strong>3.</strong> DEXA, renal ultrasound, vitamin D",
+         "PTH raised with a <strong>normal</strong> calcium<br>⭐ <strong>eGFR and creatinine</strong> identify the CKD driving it<br>Phosphate, 25-OH-D",
+         "⭐ <strong>High PTH with HIGH calcium and HIGH phosphate</strong> on a CKD background<br>Parathyroid imaging before surgery",
+         "⭐ <strong>Low PTH with low calcium</strong><br>Phosphate high; check magnesium<br>⚠ <strong>Must persist 6 months post-surgery before calling it permanent</strong>",
+         "⭐ <strong>High PTH with low calcium</strong> — the receptor, not the gland<br>Phosphate high<br>⚠ <strong>PPHP has the same phenotype with a completely normal panel</strong>"
         ],
         [
          "<strong>Tx</strong>",
@@ -4205,12 +4205,12 @@
          "As primary, but <strong>no pigmentation</strong> and <strong>no salt craving</strong>"
         ],
         [
-         "<strong>Dx</strong>",
-         "<strong>Aldosterone/renin ratio</strong><br>Confirm non-suppressibility: saline, fludrocortisone, high salt<br>Localise: CT ± <strong>adrenal vein sampling</strong>",
-         "<strong>TWO positive screens</strong> — 1 mg overnight <span class=\"wl\">dexamethasone</span>, 24-h urine free cortisol, late-night salivary<br>Then <strong>ACTH</strong>: dependent vs independent",
-         "<strong>Fractionated plasma free metanephrines — 99% sens</strong><br>Then CT or ⁶⁸Ga-DOTATATE",
-         "<strong>AM cortisol <80 rules in, >450 rules out</strong> with <strong>ACTH HIGH</strong><br><strong>Na↓ K↑ HCO₃↓ Ca↑</strong>, eosinophilia<br>Cosyntropin 97% sens, 95% spec",
-         "AM cortisol low with <strong>ACTH low or inappropriately normal</strong><br><strong>K⁺ normal</strong><br>Cosyntropin less reliable here"
+         "<strong>Ix</strong>",
+         "<strong>1.</strong> BP and <strong>electrolytes</strong> — low K⁺, spontaneous or thiazide-induced<br><strong>2. Screen: plasma aldosterone/renin ratio</strong><br><strong>3. Confirm</strong> non-suppressibility — saline infusion, fludrocortisone, or high-salt<br><strong>4. Localise</strong> — CT abdomen ± ⭐ <strong>adrenal vein sampling, the gold standard for lateralisation</strong>",
+         "<strong>1.</strong> ⭐ <strong>Screen — TWO positive tests are required to diagnose</strong> from: 1 mg overnight <span class=\"wl\">dexamethasone</span> · 24-h urine free cortisol · late-night salivary cortisol<br><strong>2.</strong> Then <strong>ACTH</strong> — dependent vs independent<br><strong>3. Localise</strong> — MRI pituitary, CT adrenal, or CT chest/abdomen for ectopic ACTH",
+         "<strong>1.</strong> ⭐ <strong>Screen: fractionated plasma free metanephrines — 99% sens, 89% spec, the best single test</strong><br>Alternatives: urinary fractionated metanephrines 97% · urinary catecholamines 86% · ⚠ urinary VMA only 64%<br><strong>2. Localise</strong> — CT abdomen, or <strong>⁶⁸Ga-DOTATATE PET</strong><br><strong>3. Genetic testing is offered to every diagnosed patient</strong>",
+         "<strong>1. AM cortisol 6-9 am — <80 rules in, >450 rules out</strong><br><strong>2. Paired ACTH — HIGH</strong><br><strong>3. Electrolytes: Na↓ K↑ HCO₃↓ pH↓ Ca↑</strong>, renal insufficiency, eosinophilia<br><strong>4.</strong> ⭐ <strong>Cosyntropin stimulation — the confirmatory test</strong>; a rise over 450 is normal, 97% sens and 95% spec for primary<br><strong>5.</strong> Aldosterone ↓, renin ↑; adrenal antibodies and CT for the cause<br>⚠ Stop estrogen ≥6 weeks before testing",
+         "<strong>1. AM cortisol low</strong> with <strong>ACTH low or inappropriately normal</strong><br><strong>2. K⁺ normal</strong>, aldosterone normal or high<br><strong>3.</strong> Cosyntropin <strong>less reliable</strong> here — ⭐ <strong>insulin tolerance test is the gold standard</strong>, or CRH<br><strong>4.</strong> <strong>MRI pituitary</strong> and screen the other anterior axes<br><strong>5.</strong> Ask about <strong>exogenous steroid</strong>, the commonest cause"
         ],
         [
          "<strong>Tx</strong>",
@@ -4297,12 +4297,12 @@
          "Axis by axis: fatigue and hypotension · <strong>cold intolerance</strong> · ↓libido, ↓shaving · ↑fat, ↓lean mass"
         ],
         [
-         "<strong>Dx</strong>",
-         "<strong>Serum prolactin</strong> (normal <25, <strong><15 in men</strong>)<br>Exclude drugs, pregnancy, hypothyroidism, macroprolactin",
-         "<strong>IGF-1 screens</strong> (GH is pulsatile)<br><strong>OGTT confirms: GH fails to suppress below 1 µg/L</strong><br>Then MRI",
-         "Two positive screens, then <strong>ACTH</strong>",
-         "MRI; <strong>formal visual fields</strong>",
-         "<strong>AM cortisol <80-100 in, >450 out</strong> · <strong>free T4, NOT TSH</strong> · LH/FSH + testosterone or estradiol · IGF-1<br><strong>Only cortisol and GH need stimulation</strong>"
+         "<strong>Ix</strong>",
+         "<strong>1. Serum prolactin</strong> — normal <25 µg/L, <strong><15 in men</strong><br><strong>2. Exclude</strong> pregnancy, dopamine antagonists, primary hypothyroidism, renal failure, cirrhosis, macroprolactin<br><strong>3.</strong> ⭐ <strong>MRI pituitary — the definitive test</strong><br><strong>4.</strong> Assess the mass effect — <strong>formal visual fields</strong><br><strong>5.</strong> Screen for compression of the other axes",
+         "<strong>1. IGF-1 screens</strong> — GH is pulsatile, so a random GH is useless<br><strong>2.</strong> ⭐ <strong>OGTT is the confirmatory test</strong> — 75 g, GH every 30 min × 2 h; <strong>failure to suppress below 1 µg/L</strong><br><strong>3. MRI pituitary</strong> to localise<br><strong>4.</strong> Complications: glucose, BP, echocardiogram, sleep study, colonoscopy",
+         "<strong>1. TWO positive screens</strong> — dexamethasone, 24-h urine cortisol, late-night salivary<br><strong>2. ACTH</strong> — dependent vs independent<br><strong>3. MRI pituitary</strong>; ⭐ <strong>inferior petrosal sinus sampling is the gold standard</strong> when imaging is equivocal",
+         "<strong>1.</strong> ⭐ <strong>MRI pituitary — the definitive test</strong><br><strong>2. Formal visual fields</strong><br><strong>3.</strong> Screen <strong>every</strong> anterior axis for compression — it secretes nothing, so insufficiency is the only hormonal finding",
+         "<strong>8-9 AM fasting panel, all axes at once:</strong><br><strong>cortisol</strong> — <80-100 rules in, >450 rules out<br><strong>TSH AND free T4</strong> — ⚠ free T4, never TSH alone<br><strong>LH, FSH + testosterone or estradiol</strong><br><strong>prolactin</strong><br><strong>GH and IGF-1</strong><br>Then: <strong>stimulation for cortisol and GH only</strong> — ⭐ <strong>the insulin tolerance test is the gold standard</strong>, with ACTH, CRH and glucagon as alternatives, and <strong>MRI pituitary</strong> for the cause"
         ],
         [
          "<strong>Tx</strong>",
@@ -4478,12 +4478,12 @@
          "Virilisation or feminisation out of order<br><strong>Boy: testes <3 mL despite virilisation</strong><br>Asymmetric testis = Leydig tumour"
         ],
         [
-         "<strong>Dx</strong>",
-         "<strong>Delayed bone age</strong>; low-normal LH/FSH",
-         "<strong>LH and FSH HIGH</strong>, sex steroid low<br><strong>Karyotype</strong>",
-         "<strong>LH and FSH LOW</strong>, sex steroid low<br>MRI head; prolactin",
-         "<strong>Random LH >0.3</strong>; <strong>GnRH stim peak LH >5</strong><br>Bone age advanced<br><strong>MRI head mandatory in boys</strong>",
-         "<strong>LH and FSH LOW</strong>, sex steroid HIGH<br>Adrenal steroids, imaging of gonad/adrenal"
+         "<strong>Ix</strong>",
+         "⭐ <strong>Bone age — delayed, and it is what makes the diagnosis</strong>; low-normal LH/FSH",
+         "<strong>LH and FSH HIGH</strong>, sex steroid low<br>⭐ <strong>Karyotype is diagnostic</strong>",
+         "<strong>LH and FSH LOW</strong>, sex steroid low<br>⭐ <strong>MRI head — to find the lesion</strong>; prolactin, and smell testing if Kallmann is suspected",
+         "<strong>Random LH >0.3</strong> screens<br>⭐ <strong>GnRH stimulation test is the gold standard — peak LH >5 confirms</strong><br>Bone age advanced<br><strong>MRI head mandatory in boys</strong>",
+         "<strong>LH and FSH LOW</strong>, sex steroid HIGH<br>17-OHP and adrenal steroids<br>⭐ <strong>Imaging of the gonad or adrenal locates the source</strong>"
         ],
         [
          "<strong>Tx</strong>",
@@ -4574,13 +4574,13 @@
          "<strong>DISPROPORTIONATE</strong> — short limbs<br>OI: <strong>blue sclerae</strong>, fractures, deafness"
         ],
         [
-         "<strong>Dx</strong>",
-         "<strong>Bone age = chronological age</strong>",
-         "<strong>Bone age DELAYED</strong>, tracks height-age",
-         "<strong>Random GH is worthless</strong><br>IGF-1/IGFBP-3 + <strong>inadequate response to TWO provocative tests (<8 µg/L)</strong><br>Bone age >2 SD delayed",
-         "TSH, free T4<br><strong>Delayed bone age</strong>",
-         "<strong>Karyotype every short girl</strong>",
-         "Skeletal survey; genetics"
+         "<strong>Ix</strong>",
+         "⭐ <strong>Bone age, which matches chronological age</strong>",
+         "⭐ <strong>Bone age, which is DELAYED</strong> and tracks height-age",
+         "⚠ <strong>Random GH is worthless</strong> — GH is pulsatile<br>IGF-1/IGFBP-3 screens<br>⭐ <strong>Two provocative tests are the gold standard — inadequate response, <8 µg/L</strong><br>Bone age >2 SD delayed",
+         "⭐ <strong>TSH — and it is the test that must not be missed in any short child</strong>; free T4<br><strong>Delayed bone age</strong>",
+         "⭐ <strong>Karyotype — and it is done in every short girl</strong>",
+         "⭐ <strong>Skeletal survey</strong>; genetic testing for FGFR3 or COL1A1/2"
         ],
         [
          "<strong>Tx</strong>",
@@ -4769,13 +4769,13 @@
          "<strong>Primary amenorrhoea with cyclical pain</strong> — obstructed outflow"
         ],
         [
-         "<strong>Dx</strong>",
-         "Pelvic US then <strong>MRI</strong>",
-         "US then MRI",
-         "<strong>MRI distinguishes it from bicornuate</strong> — this is the distinction that matters",
-         "US then MRI",
-         "Examination; MRI; <strong>karyotype</strong>",
-         "Examination; MRI"
+         "<strong>Ix</strong>",
+         "Pelvic US, then ⭐ <strong>MRI</strong><br>⚠ <strong>Renal tract imaging in every case</strong>",
+         "Pelvic US, then ⭐ <strong>MRI</strong><br>⚠ <strong>Renal tract imaging</strong>",
+         "⭐ <strong>MRI — it is what distinguishes septate from bicornuate, and that is the distinction that changes management</strong><br>Hysteroscopy",
+         "Pelvic US, then ⭐ <strong>MRI</strong><br>⚠ <strong>Renal tract imaging</strong>",
+         "Examination · ⭐ <strong>MRI</strong> · <strong>karyotype</strong> · hormones to confirm ovarian function<br>⚠ <strong>Renal tract imaging</strong>",
+         "Examination · ⭐ <strong>MRI</strong>"
         ],
         [
          "<strong>Tx</strong>",
@@ -4973,11 +4973,11 @@
          "<strong>Girls: virilised — clitoral hypertrophy, labial fusion, single urogenital opening</strong><br><strong>Boys: LOOK NORMAL</strong> — penile enlargement, scrotal pigmentation"
         ],
         [
-         "<strong>Dx</strong>",
-         "<strong>Raised T:DHT ratio after hCG stimulation</strong>",
-         "<strong>DNA analysis</strong>; testosterone and DHT both high",
-         "Karyotype; <strong>LH and FSH high</strong>",
-         "<strong>17-hydroxyprogesterone markedly raised</strong> (case: 400, normal <10)<br><strong>Na↓ K↑</strong>, acidosis, hypoglycaemia"
+         "<strong>Ix</strong>",
+         "⭐ <strong>Raised T:DHT ratio after hCG stimulation — the diagnostic test</strong>",
+         "⭐ <strong>DNA analysis of the androgen receptor</strong>; testosterone and DHT both high",
+         "⭐ <strong>Karyotype</strong>; <strong>LH and FSH high</strong>",
+         "⭐ <strong>17-hydroxyprogesterone markedly raised — the diagnostic marker</strong> (case: 400, normal <10)<br><strong>Na↓ K↑</strong>, acidosis, hypoglycaemia<br><strong>Karyotype</strong> and <strong>pelvic ultrasound</strong> in every case"
         ],
         [
          "<strong>Puberty</strong>",
@@ -5075,12 +5075,12 @@
          "Cold or heat intolerance, weight change"
         ],
         [
-         "<strong>Dx</strong>",
-         "<strong>Triad: hyperandrogenism + ovulatory dysfunction + exclusion</strong><br><strong>Testosterone ~2.1-2.5 nmol/L</strong><br><strong>No ultrasound required</strong>",
-         "<strong>Testosterone ~10 nmol/L — markedly raised</strong>; imaging",
-         "Two positive cortisol screens",
-         "<strong>Prolactin raised</strong>; MRI",
-         "TSH, free T4"
+         "<strong>Ix</strong>",
+         "<strong>1. Exclusion panel first: beta-hCG · <span class=\"wl\">prolactin</span> · TSH · total <span class=\"wl\">testosterone</span></strong><br><strong>2. Testosterone ~2.1-2.5 nmol/L</strong> fits<br><strong>3. Metabolic screen</strong> — fasting glucose or A1c, lipid panel, BP, BMI<br><strong>4.</strong> ⚠ ⭐ <strong>There is no gold-standard test — the diagnosis IS the clinical triad</strong>, and no ultrasound is required<br><strong>5.</strong> Endometrial surveillance ultrasound if bleeds are infrequent",
+         "<strong>Testosterone ~10 nmol/L — markedly raised</strong><br>DHEAS for an adrenal source<br>⭐ <strong>CT adrenal or pelvic ultrasound localises it</strong>",
+         "⭐ <strong>TWO positive cortisol screens are required</strong> — dexamethasone, 24-h urine, late-night salivary<br>Then ACTH",
+         "<strong>Prolactin raised</strong><br>⭐ <strong>MRI pituitary</strong><br>Exclude drugs and primary hypothyroidism first",
+         "⭐ <strong>TSH</strong>, then <strong>free T4</strong> if abnormal"
         ],
         [
          "<strong>Tx</strong>",

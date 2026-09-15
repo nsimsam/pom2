@@ -139,12 +139,18 @@
     align-items:start;
 }
 
+/* A grid item is min-width:auto by default, so one long lecture name in the
+   index would stretch the whole rail past its 250px track and slide it under
+   the stream. Both the rail and the panels inside it have to be allowed to be
+   narrower than their content before text-overflow can clip anything. */
 .rail{
     position:sticky;
     top:24px;
     display:grid;
     gap:26px;
+    min-width:0;
 }
+.rail > section{min-width:0;}
 
 .panel-h{
     font-size:.72rem;
@@ -270,6 +276,89 @@
    "Wrong 0" was a live button to an empty page */
 .chip:disabled{color:#c3b7b9;border-color:#f4ebec;cursor:default;}
 .chip:disabled .n{opacity:.6;}
+
+/* the lecture index
+
+   The week chips narrow the stream but cannot get you to a named lecture, and
+   a block runs to 36 notes of a page or more each. The index is the way in.
+
+   It is deliberately the quietest thing in the rail: no box, no rule and no
+   count per row, just a line of text, because at 36 rows anything more reads
+   as clutter. The note you are on is the only row carrying colour or weight. */
+.lecindex{
+    /* the rows' offsetTop is read to keep the marked one in view, and that is
+       measured against the nearest positioned ancestor - without this it lands
+       on the sticky rail on a laptop and on the page itself once the rail goes
+       static, which scrolls this panel to a meaningless place */
+    position:relative;
+    max-height:min(44vh,400px);
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    margin-left:-9px;
+    padding-right:2px;
+}
+
+.lecrow{
+    display:flex;
+    gap:9px;
+    width:100%;
+    max-width:100%;
+    padding:5px 8px 5px 7px;
+    font:inherit;
+    font-size:.8rem;
+    line-height:1.45;
+    text-align:left;
+    color:var(--muted);
+    background:none;
+    border:0;
+    border-left:2px solid transparent;
+    border-radius:0 4px 4px 0;
+    cursor:pointer;
+    transition:color .12s,background .12s;
+}
+
+.lecrow:hover{color:var(--text);background:var(--card-bg);}
+
+.lecrow .ln{
+    flex-shrink:0;
+    padding-top:1px;
+    font-size:.7rem;
+    font-weight:600;
+    letter-spacing:.04em;
+    font-variant-numeric:tabular-nums;
+}
+
+/* one line each, clipped - the full name is on the row's title attribute, and
+   the note itself is one click away, so nothing is actually lost */
+.lecrow .lt{
+    min-width:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.lecrow[aria-current="true"]{
+    color:var(--q-accent-ink);
+    background:var(--q-accent-soft);
+    border-left-color:var(--q-accent);
+    font-weight:600;
+}
+
+/* a lecture with no note yet is listed, but not pretending to be one */
+.lecrow.is-gap{opacity:.55;}
+.lecrow.is-gap .lt{font-style:italic;}
+
+/* the week heading inside the index earns its line only on All, where the
+   numbering restarts at 01 once per week and would otherwise be unreadable */
+.lecgroup{
+    padding:12px 8px 4px 7px;
+    font-size:.68rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+}
+.lecgroup:first-child{padding-top:2px;}
 
 /* the three filters are independent, and until this line existed nothing in
    the rail said which of them had emptied the stream */
@@ -1070,8 +1159,38 @@
 }
 
 /* mermaid draws into here once the library has loaded */
-.pathway{
+/* a pathway, and the way out of the column
+
+   The diagram is capped at the column width, which is what makes a wide one
+   unreadable, so the block carries a button that hands it a whole tab. */
+.pwblock{
+    position:relative;
     margin:0 0 18px;
+}
+
+.pwblock.is-openable .pathway{cursor:zoom-in;}
+
+.pw-open{
+    position:absolute;
+    right:8px;
+    bottom:8px;
+    padding:4px 10px;
+    font:inherit;
+    font-size:.72rem;
+    color:var(--muted);
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:999px;
+    cursor:pointer;
+    opacity:.75;
+    transition:opacity .15s,color .15s,border-color .15s;
+}
+
+.pwblock:hover .pw-open{opacity:1;}
+.pw-open:hover{color:var(--q-accent);border-color:var(--q-accent);}
+
+.pathway{
+    margin:0;
     padding:16px;
     overflow-x:auto;
     text-align:center;
@@ -1309,6 +1428,10 @@
 @media (max-width:960px){
     .q-shell{grid-template-columns:1fr;gap:32px;}
     .rail{position:static;}
+
+    /* the rail now sits on top of the stream instead of following it, so the
+       index is capped harder - about eight lectures, then it scrolls */
+    .lecindex{max-height:230px;}
     .q-masthead{align-items:flex-start;gap:24px;}
     .scoreboard{gap:22px;flex-wrap:wrap;}
     .tabs{width:100%;}
@@ -1385,7 +1508,7 @@
 /* a note is a one-pager by design, so printing gives one per sheet and drops
    every control - the gaps go too, they are screen bookkeeping */
 @media print{
-    .pill-nav,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.posbar{display:none !important;}
+    .pill-nav,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.posbar{display:none !important;}
 
     /* one note, one week, or the lot: whatever was marked survives the print
        and everything else steps out of the way */
