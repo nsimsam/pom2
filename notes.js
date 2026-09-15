@@ -719,7 +719,12 @@
     boot: function () {
       if (booted) return;
       booted = true;
-      fetch("data/notes/" + BLOCK.slug + ".json")
+      fetch("data/notes/" + BLOCK.slug + ".json" +
+            /* build_pages.py stamps the file's content hash here. Without it this
+               one fetch was the only thing on the page with no cache busting, so a
+               browser could keep serving the previous deploy's bank however hard
+               you refreshed. Older pages carry no hash and simply go without. */
+            (BLOCK.nv ? "?v=" + BLOCK.nv : ""))
         .then(function (r) {
           if (!r.ok) throw new Error("HTTP " + r.status);
           return r.json();

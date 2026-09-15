@@ -24,8 +24,20 @@ def ver(name):
     previous hash. Harmless when it happens, since the query string is ignored
     by the server, but it stops busting the cache.
     """
-    h = hashlib.md5(io.open(name, "rb").read()).hexdigest()[:8]
-    return "%s?v=%s" % (name, h)
+    return "%s?v=%s" % (name, digest(name))
+
+
+def digest(name):
+    """The content hash alone, for a URL this file does not build itself.
+
+    data/questions/<slug>.json and data/notes/<slug>.json are fetched by
+    quiz.js and notes.js at a bare path, so they were the one pair of files
+    the cache-busting above never covered: a browser that had the old copy
+    kept serving it, and a hard refresh on the page did not touch it, because
+    the page is not what went stale. Stamping the hash into window.QUIZ_BLOCK
+    lets those two fetches carry the same treatment as the assets.
+    """
+    return hashlib.md5(io.open(name, "rb").read()).hexdigest()[:8]
 
 BLOCKS = [
     # slug,  n, name,             weeks
@@ -248,7 +260,7 @@ saved in one go. Print it, annotate it, keep it.</p>
 </div>
 
 <script>
-window.QUIZ_BLOCK = {{"slug": "{slug}", "n": {n}, "name": "{name}", "weeks": "{weeks}"}};
+window.QUIZ_BLOCK = {{"slug": "{slug}", "n": {n}, "name": "{name}", "weeks": "{weeks}", "qv": "{qv}", "nv": "{nv}"}};
 </script>
 <script src="{quiz_js}"></script>
 <script src="{notes_js}"></script>
@@ -270,6 +282,8 @@ def main():
         html = PAGE.format(base_css=ver('base.css'), pom2_css=ver('pom2.css'),
                            quiz_js=ver('quiz.js'), notes_js=ver('notes.js'),
                            pom2_js=ver('pom2.js'), slug=slug, n=n, name=name, weeks=weeks, lead=lead, desc=desc,
+                           qv=digest("data/questions/%s.json" % slug),
+                           nv=digest("data/notes/%s.json" % slug),
                            accent=accent, fonts=FONTS, cf=CF, footer=FOOTER,
                            pillnav=PILLNAV, howto=HOWTO,
                            blocknav=blocknav(slug), questions=q,
