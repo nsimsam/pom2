@@ -4318,7 +4318,194 @@
      "id": "endo-w3-10",
      "num": "10",
      "name": "Polyendocrine Metabolic Ovarian Syndrome (PMOS)",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Polyendocrine Metabolic Ovarian Syndrome (PMOS)",
+     "framing": "<p>⭐ <strong>The rename is the lecture.</strong> <strong><em>PCOS → PMOS</em></strong> because both halves of the old name were wrong: the \"cysts\" are ⭐ <strong>arrested antral follicles, not cysts</strong>, and the ovary is ⭐ <strong>a target, not the source</strong> — the disorder runs across the HPO axis, insulin signalling, adrenal androgens and adipose tissue at once. ⭐ <strong>Diagnosis is a triad and needs no ultrasound; treatment follows the symptom of distress, not the diagnosis.</strong></p>",
+     "keypoints": "<p>⭐ <strong>No ultrasound is required to diagnose PMOS.</strong> ⭐ <strong>Testosterone ~2 fits, 10 does not.</strong> ⭐ <strong>Acanthosis is the insulin sign; striae would mean Cushing's.</strong> ⭐ <strong>Lower-arm and upper-lip hair is not keyed as hirsutism.</strong> ⭐ <strong>Adrenal hypertrophy is not associated.</strong> ⭐ <strong>Only topical testosterone is the wrong treatment.</strong> ⭐ <strong>Four withdrawal bleeds a year prevents the carcinoma.</strong> ⭐ <strong>She can conceive, and she can lose weight.</strong></p>",
+     "blocks": [
+      {
+       "t": "table",
+       "cols": [
+        "Current diagnostic triad",
+        "What satisfies it"
+       ],
+       "rows": [
+        [
+         "⭐ <strong>Hyperandrogenism</strong>",
+         "clinical exam <strong>or</strong> labs (↑ <span class=\"wl\">testosterone</span>)"
+        ],
+        [
+         "⭐ <strong>Ovulatory dysfunction</strong>",
+         "⭐ <strong><span class=\"wl\">oligomenorrhea</span> OR cystic ovaries on US</strong> — the scan is an <em>alternative route into this limb</em>, not a criterion of its own"
+        ],
+        [
+         "⭐ <strong>Exclusion of other disorders</strong>",
+         "beta-hCG, <span class=\"wl\">prolactin</span>, TSH, testosterone level"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>Because ultrasound sits inside the second limb, hyperandrogenism + oligomenorrhea + clean exclusions is diagnostic without a scan.</strong> The case makes the point out loud: <em>\"No, you fulfill the diagnostic criteria without one.\"</em> ⚠ <strong>Insulin resistance sits beside the triad as an associated feature, not a fourth criterion.</strong></p>",
+       "cols": [
+        "Scheme",
+        "Threshold",
+        ""
+       ],
+       "rows": [
+        [
+         "<strong>2003 Rotterdam</strong>",
+         "<strong>2 of 3</strong>",
+         "hyperandrogenism · oligo/anovulation · polycystic ovaries on US"
+        ],
+        [
+         "<strong>2008 AE-PMOS Society</strong>",
+         "<strong>3 of 3</strong>",
+         "hyperandrogenism · oligo/anovulation and/or PCO on US · exclusion"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Exclusion test",
+        "Rules out",
+        "⭐ The discriminator"
+       ],
+       "rows": [
+        [
+         "<strong>Beta-hCG</strong>",
+         "pregnancy",
+         "⚠ <strong>an elevated beta-hCG is never consistent with PMOS</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">prolactin</span></strong>",
+         "prolactinoma",
+         "a normal level (≈10) is consistent"
+        ],
+        [
+         "<strong>TSH</strong>",
+         "thyroid disease",
+         ""
+        ],
+        [
+         "<strong><span class=\"wl\">testosterone</span></strong>",
+         "androgen-secreting tumour",
+         "⭐ <strong>~2.1–2.5 nmol/L fits PMOS; 10 nmol/L is markedly elevated and suggests tumour</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Physical manifestation",
+        "⭐ Keyed?"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">acanthosis</span></strong> — dark skin over the back of the neck",
+         "⭐ <strong>yes</strong> — the insulin-resistance sign"
+        ],
+        [
+         "<strong>Visceral adiposity</strong> / central adipose distribution",
+         "⭐ <strong>yes</strong>"
+        ],
+        [
+         "<strong>Cystic acne</strong>",
+         "⭐ <strong>yes</strong>"
+        ],
+        [
+         "Hair on the <strong>lower arms and upper lip</strong>",
+         "⚠ ⭐ <strong>NO</strong> — <em>\"can be normal hair growth\"</em>. The hirsutism that counts is <strong>terminal, male-pattern</strong>: sides of face, chin, chest, upper arms"
+        ],
+        [
+         "<strong>Striae</strong>",
+         "⚠ absent in the case — their presence would point at <span class=\"wl\">Cushing syndrome</span> instead"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "More common in PMOS",
+        ""
+       ],
+       "rows": [
+        [
+         "⭐ <strong><span class=\"wl\">endometrial carcinoma</span></strong> · ⭐ <strong><span class=\"wl\">gestational diabetes</span></strong> · ⭐ <strong>central adipose distribution</strong> · ⭐ <strong>frontal alopecia</strong>",
+         "all keyed"
+        ],
+        [
+         "⚠ <strong>Adrenal hypertrophy</strong>",
+         "⭐ <strong>NOT</strong> — the distractor"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Complaint",
+        "Treatment"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">oligomenorrhea</span></strong>",
+         "birth control pill · cyclical <span class=\"wl\">progesterone</span>"
+        ],
+        [
+         "<strong>Subfertility</strong>",
+         "lifestyle · ⭐ <strong><span class=\"wl\">aromatase inhibitors</span></strong> to induce ovulation · surgical ovarian reduction (⚠ rare now) · early miscarriage: (arguably) <span class=\"wl\">metformin</span>"
+        ],
+        [
+         "<strong><span class=\"wl\">hirsutism</span></strong>",
+         "surface therapies · antiandrogens (<span class=\"wl\">spironolactone</span>, cyproterone) · BCP · ⭐ <strong><span class=\"wl\">eflornithine</span> (Vaniqa)</strong>"
+        ],
+        [
+         "<strong>Alopecia</strong>",
+         "⭐ <strong><span class=\"wl\">minoxidil</span> 5%</strong> · antiandrogens · BCP · hair transplant"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p>⭐ <strong>The BCP appears under three of the four complaints</strong>, which is why it is the default first drug for anyone not currently seeking pregnancy. ⚠ ⭐ <strong>Of the five treatments offered, only topical testosterone is wrong</strong> — it adds to the androgen excess. <strong>Thermal ablation is rare but still counted as of potential use.</strong></p>",
+       "cols": [
+        "Risk to manage",
+        "⭐ The number"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">metabolic syndrome</span></strong>",
+         "monitor for DM, HTN, CVD · ⭐ <strong>150 min planned vigorous exercise weekly</strong> · consider <span class=\"wl\">bariatric surgery</span>, <em>\"quite effective for restoring menstrual cycles and fertility\"</em>"
+        ],
+        [
+         "<strong><span class=\"wl\">endometrial carcinoma</span></strong>",
+         "⭐ <strong>induce withdrawal bleeds at least 4× a year</strong> (OCP or cyclical progesterone) · US surveillance for endometrial hypertrophy"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Myth",
+        ""
+       ],
+       "rows": [
+        [
+         "Subfertility and early miscarriage · metabolic syndrome correlates · endometrial cancer · mood disorders",
+         "✅ <strong>TRUE</strong>"
+        ],
+        [
+         "Cannot lose weight · constantly hungry · organic/vegan diet helps · <strong>cannot conceive</strong>",
+         "❌ <strong>FALSE</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⭐ <strong>Every false myth blames the patient; every true one is a real clinical risk.</strong> That is the discrimination being trained. ⭐ <strong>The counselling consequence is the counter-intuitive one: she can conceive spontaneously, so she is told that AND advised to use effective contraception in the same breath.</strong></p>"
+      }
+     ]
     },
     {
      "id": "endo-w3-11",
