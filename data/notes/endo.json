@@ -2589,240 +2589,134 @@
      "name": "Clinical Presentation and Evaluation of Hyperparathyroidism and Hypoparathyroidism",
      "hasNote": true,
      "title": "Hyperparathyroidism, Hypoparathyroidism & the Calcium Panel",
-     "framing": "<p>You do not diagnose these from the calcium. You diagnose them from <strong>the pattern across four analytes at once: PTH, calcium, phosphate, vitamin D</strong>. ⭐ <strong>Always send a <span class=\"wl\">PTH</span> with any abnormal calcium</strong>, because PTH is the branch point: <strong>high or inappropriately normal means the parathyroid is driving it; suppressed means something else is.</strong> <strong>In hypocalcemia, phosphate is the branch point instead.</strong> And before any of it, <strong>correct for albumin</strong> — an uncorrected number sends you down the wrong branch.</p>",
-     "keypoints": "<p><strong>Correct for albumin, then always send PTH</strong> — those two steps decide the whole workup, and the deck's own worked example (Ca 2.6 with albumin 20) corrects to <strong>3.0</strong>, straight past the admission threshold. <strong>Fractional excretion of calcium separates FHH from primary hyperPTH: under 0.01 is FHH, over 0.02 is primary</strong> — but <strong>20% of FHH lands in the 0.01–0.02 overlap</strong>, and the result is only interpretable <strong>off thiazides for 3 months, with a normal magnesium and a 25-OH-D above 50</strong>. <strong>In hypocalcemia, phosphate is the discriminator: high phosphate is a PTH problem, low phosphate is vitamin D</strong> — and vitamin D deficiency is the commoner of the two. <strong>Age cuts both ways in hyperPTH: under 50 is a reason to operate, over 50 and asymptomatic is a reason not to.</strong> <strong>Loop diuretics treat hypercalcemia and thiazides cause it, but thiazides are the right drug in chronic hypocalcemia.</strong> <strong>Hypocalcemia will not correct while magnesium is low</strong>, and <strong>magnesium at either extreme can cause hypoparathyroidism</strong>.</p>",
+     "framing": "<p>You do not diagnose these from the calcium. You diagnose them from <strong>the pattern across four analytes at once — PTH, calcium, phosphate, vitamin D</strong>. ⭐ <strong>Correct for albumin, then always send a PTH: those two steps decide the entire workup.</strong></p>",
+     "keypoints": "<p>correct for albumin, then always send PTH. <strong>Phosphate separates primary from tertiary when calcium cannot</strong> — primary drops it because PTH is phosphaturic, tertiary raises it because the failing kidney cannot excrete. <strong>PTH direction separates true hypoparathyroidism from the pseudo forms</strong>, and <strong>PPHP is the trap: Albright's phenotype with a completely normal panel</strong>. Vitamin D deficiency is the commonest cause of hypocalcaemia, and it is the one where <strong>phosphate is LOW</strong> rather than high.</p>",
      "blocks": [
       {
        "t": "note",
        "html": "<p>$$\\huge corrected\\ calcium = measured\\ calcium + 0.02(40 - measured\\ albumin) $$</p>"
       },
       {
-       "t": "note",
-       "html": "<p><strong>Normal <span class=\"wl\">serum calcium</span> 2.15–2.55 mmol/L</strong>, of which <strong>the ionized fraction is 1.1–1.3 mmol/L (50%)</strong> and is the only part that acts; protein-bound is 0.9–1.1 (40%) and complexed 0.18 (10%). Every 1 g/L of albumin away from <strong>40</strong> shifts calcium by <strong>0.02</strong>. <strong><span class=\"wl\">hypercalcemia</span> is corrected Ca > 2.55</strong>; <strong><span class=\"wl\">hypocalcemia</span> is < 2.1</strong>. ⚠ <strong>Symptoms track both the absolute value and its RATE OF RISE</strong>, which is why a slowly climbing calcium is often silent.</p>"
-      },
-      {
        "t": "pathway",
        "mermaid": "flowchart TD\n A[\"Corrected calcium is HIGH\"] --> B[\"Serum PTH - ALWAYS\"]\n B --> C{\"PTH high or inappropriately normal?\"}\n C -->|\"YES - PTH-mediated\"| D[\"24-hour urine Ca + creatinine<br/>fractional excretion of calcium\"]\n D -->|\"FECa over 0.02\"| E[\"PRIMARY hyperparathyroidism<br/>80% a single adenoma\"]\n D -->|\"FECa under 0.01\"| F[\"FHH - inactivating CaSR mutation\"]\n D -->|\"FECa 0.01 to 0.02\"| G[\"OVERLAP ZONE<br/>20% of FHH sits here<br/>recheck off thiazides, normal Mg, 25-OH-D over 50\"]\n C -->|\"YES, with known CKD\"| H[\"TERTIARY hyperparathyroidism<br/>secretes DESPITE hypercalcemia\"]\n C -->|\"NO - PTH suppressed\"| I[\"PTH-INDEPENDENT\"]\n I --> J[\"MAJOR - malignancy<br/>MINOR - vitamin D, immobilization,<br/>thiazides, milk-alkali, endocrine\"]"
       },
       {
-       "t": "note",
-       "html": "<p>$$\\huge FE_{Ca} = \\frac{Urine\\ Ca \\times (Serum\\ Cr / 1000)}{Serum\\ Ca \\times Urine\\ Cr}$$</p>"
-      },
-      {
        "t": "table",
-       "lead": "<p><strong>Over 90% of all hypercalcemia is hyperparathyroidism or malignancy.</strong> Everything else is the minor list you reach for once PTH has told you which side you are on.</p>",
-       "cols": [
-        "Condition",
-        "<strong><span class=\"wl\">PTH</span></strong>",
-        "<strong>Ca2+</strong>",
-        "<strong><span class=\"wl\">Phosphate</span></strong>",
-        "<strong>Vitamin D</strong>",
-        "What produces it"
-       ],
-       "rows": [
-        [
-         "<strong><span class=\"wl\">Primary hyperPTH</span></strong>",
-         "<strong>↑ or inappropriately normal</strong>",
-         "<strong>↑</strong>",
-         "<strong>↓</strong>",
-         "<strong>↑</strong>",
-         "<strong>80% <span class=\"wl\">parathyroid adenoma</span></strong>; also hyperplasia, carcinoma, and <strong>familial syndromes</strong> — familial isolated hyperPTH, <strong>hyperparathyroidism-jaw tumour syndrome</strong>, <strong><span class=\"wl\">MEN</span></strong>"
-        ],
-        [
-         "<strong><span class=\"wl\">Secondary hyperPTH</span></strong>",
-         "↑",
-         "<strong>normal</strong>",
-         "↑ <strong>or</strong> ↓",
-         "<strong>↓</strong>",
-         "<strong><span class=\"wl\">chronic kidney disease</span></strong> — the kidney cannot make vitamin D, so PTH rises to compensate"
-        ],
-        [
-         "<strong><span class=\"wl\">Tertiary hyperPTH</span></strong>",
-         "<strong>↑↑</strong>",
-         "<strong>↑</strong>",
-         "<strong>↑</strong>",
-         "↓",
-         "<strong>Secondary hyperPTH gone autonomous</strong> — the gland <strong>keeps secreting despite hypercalcemia</strong>. Almost always <span class=\"wl\">CKD</span>"
-        ],
-        [
-         "<strong><span class=\"wl\">Primary hypoparathyroidism</span></strong>",
-         "<strong>↓</strong>",
-         "↓",
-         "<strong>↑</strong>",
-         "↓",
-         "<strong>post-<span class=\"wl\">parathyroidectomy</span> (75%)</strong>; <strong>non-surgical 25%</strong> — autoimmune, infiltrative, post-radiation, metastatic, genetic, or <strong>functional from magnesium insufficiency <em>or</em> excess</strong>"
-        ]
-       ]
-      },
-      {
-       "t": "note",
-       "html": "<p><strong>Phosphate separates primary from tertiary when calcium cannot:</strong> both run a high calcium, but <strong>primary drops phosphate (PTH is phosphaturic) while tertiary raises it (the failing kidney cannot excrete it)</strong>.</p>"
-      },
-      {
-       "t": "table",
-       "lead": "<p><strong>Diagnosing hypoparathyroidism:</strong> persistent <strong><span class=\"wl\">hypocalcemia</span> with a LOW or inappropriately normal PTH</strong>, and <strong>it must persist 6 months post-surgery before you call it permanent</strong>.</p>",
-       "cols": [
-        "Hypercalcemia, PTH-independent",
-        "Mechanism"
-       ],
-       "rows": [
-        [
-         "<strong>Malignancy</strong> (major)",
-         "<strong>metastases</strong> — <strong>breast</strong> · <strong>humoral PTHrP</strong> — <strong>solid tumours (lung, kidney), adult T-cell leukemia</strong> · <strong>lymphokinins</strong> — <strong><span class=\"wl\">myeloma</span></strong> · <strong>prostaglandins</strong> · <strong>vitamin D-like steroids</strong> — <strong><span class=\"wl\">lymphoma</span></strong>"
-        ],
-        [
-         "<strong>Vitamin D related</strong>",
-         "<strong>exogenous ingestion</strong> · <strong>granulomatous disease: <span class=\"wl\">sarcoid</span> and <span class=\"wl\">TB</span></strong>"
-        ],
-        [
-         "<strong>Immobilization</strong>",
-         "on a background of <strong><span class=\"wl\">Paget's</span></strong>, <strong><span class=\"wl\">thyrotoxicosis</span></strong>, or <strong><span class=\"wl\">adrenal insufficiency</span></strong>"
-        ],
-        [
-         "<strong>Medications</strong>",
-         "<strong><span class=\"wl\">thiazides</span></strong> — <strong>not merely hemoconcentration, and usually transient</strong>"
-        ],
-        [
-         "<strong>Miscellaneous endocrine</strong>",
-         "<span class=\"wl\">hyperthyroidism</span> · <span class=\"wl\">acromegaly</span> · <span class=\"wl\">pheochromocytoma</span> · <span class=\"wl\">adrenal insufficiency</span> · <span class=\"wl\">parenteral nutrition</span> · <strong><span class=\"wl\">milk-alkali syndrome</span></strong> (a <strong><span class=\"wl\">metabolic alkalosis</span></strong>, worse when absorbable antacids treated <span class=\"wl\">PUD</span>)"
-        ]
-       ]
-      },
-      {
-       "t": "table",
-       "cols": [
-        "Hypocalcemia group",
-        "Ca2+",
-        "<strong>Phosphate</strong>",
-        "PTH",
-        "Cause"
-       ],
-       "rows": [
-        [
-         "<strong>PTH deficient</strong>",
-         "↓",
-         "<strong>HIGH</strong>",
-         "<strong>low</strong>",
-         "<strong>failure to SECRETE</strong> — <span class=\"wl\">hypoparathyroidism</span>"
-        ],
-        [
-         "<strong>PTH resistant</strong>",
-         "↓",
-         "<strong>HIGH</strong>",
-         "<strong>high</strong>",
-         "<strong>failure to RESPOND</strong> — <span class=\"wl\">pseudohypoparathyroidism</span>"
-        ],
-        [
-         "<strong>Vitamin D deficient</strong>",
-         "↓",
-         "<strong>LOW</strong>",
-         "high",
-         "<strong>more common than the PTH disorders</strong>: <strong>malabsorption</strong> (fat-soluble), <strong>renal or liver failure</strong>, <strong>drugs (<span class=\"wl\">phenytoin</span>)</strong>, diet (rare), <strong>no sun</strong> → <span class=\"wl\">rickets</span> / <span class=\"wl\">osteomalacia</span>"
-        ]
-       ]
-      },
-      {
-       "t": "table",
-       "lead": "<p><strong>The five failures behind any hypocalcemia:</strong> failure to <strong>secrete</strong> PTH · failure to <strong>respond</strong> to PTH · <strong>deficiency</strong> of vitamin D · failure to <strong>respond</strong> to vitamin D · rarely, <strong>acute complexation</strong> of calcium.</p><p><strong>Minor causes:</strong> <span class=\"wl\">hypoalbuminemia</span> · <strong><span class=\"wl\">hypomagnesemia</span></strong> (alcohol, malabsorption) · <strong><span class=\"wl\">pancreatitis</span></strong> · <strong><span class=\"wl\">tumour lysis</span>, <span class=\"wl\">rhabdomyolysis</span>, <span class=\"wl\">sepsis</span></strong> · <strong>massive <span class=\"wl\">blood transfusion</span></strong>.</p>",
-       "cols": [
-        "Condition",
-        "PTH",
-        "Ca2+",
-        "Phosphate",
-        "<strong>Appearance</strong>"
-       ],
-       "rows": [
-        [
-         "<strong><span class=\"wl\">Primary hypoparathyroidism</span></strong>",
-         "<strong>↓</strong>",
-         "↓",
-         "↑",
-         "normal"
-        ],
-        [
-         "<strong><span class=\"wl\">PHP type 1A</span></strong>",
-         "<strong>↑</strong>",
-         "↓",
-         "↑",
-         "<strong><span class=\"wl\">Albright's hereditary osteodystrophy</span>: round facies, short stature, short metacarpals and metatarsals</strong>"
-        ],
-        [
-         "<strong><span class=\"wl\">PHP type 1B</span></strong> / <strong><span class=\"wl\">type 2</span></strong>",
-         "<strong>↑</strong>",
-         "↓",
-         "↑",
-         "normal"
-        ],
-        [
-         "<strong><span class=\"wl\">PPHP</span></strong>",
-         "normal",
-         "<strong>normal</strong>",
-         "<strong>normal</strong>",
-         "<strong>the SAME phenotype as 1A, with NO PTH insensitivity</strong>"
-        ]
-       ]
-      },
-      {
-       "t": "table",
-       "lead": "<p><strong>PTH direction separates true hypoparathyroidism from the pseudo forms</strong>, and <strong>PPHP is the trap: Albright's phenotype with a completely normal panel.</strong> Phenotype alone cannot separate PPHP from PHP 1A; only the labs can.</p>",
+       "lead": "<p>$$\\huge FE_{Ca} = \\frac{Urine\\ Ca \\times (Serum\\ Cr / 1000)}{Serum\\ Ca \\times Urine\\ Cr}$$</p>",
        "cols": [
         "",
-        "<strong><span class=\"wl\">hypercalcemia</span></strong>",
-        "<strong><span class=\"wl\">hypocalcemia</span></strong>"
+        "<strong>Primary hyperPTH</strong>",
+        "<strong>Secondary hyperPTH</strong>",
+        "<strong>Tertiary hyperPTH</strong>",
+        "<strong>Hypoparathyroidism</strong>",
+        "<strong>Pseudohypoparathyroidism</strong>"
        ],
        "rows": [
         [
-         "Mnemonic",
-         "<strong><span class=\"wl\">Stones, Bones, Groans, Moans, Thrones, Muscle Tone, and Psychiatric Overtones</span></strong>",
-         "<strong><span class=\"wl\">CATS go Numb</span></strong>"
+         "<strong>Causes</strong>",
+         "<strong>80% <span class=\"wl\">parathyroid adenoma</span></strong>; also hyperplasia, carcinoma, familial",
+         "<strong><span class=\"wl\">chronic kidney disease</span></strong> — the kidney cannot make vitamin D, so PTH rises to compensate",
+         "<strong>Secondary gone autonomous</strong> — almost always long-standing CKD",
+         "<strong>Post-<span class=\"wl\">parathyroidectomy</span> 75%</strong><br>Non-surgical 25%: autoimmune, infiltrative, post-radiation, metastatic",
+         "Genetic <strong>resistance</strong> to PTH, not deficiency"
         ],
         [
-         "Mechanism of the neuro signs",
-         "↓ excitability",
-         "<strong>↓ Ca2+ interaction with Na+ channels → cells depolarize MORE easily</strong>"
+         "<strong>Pathology</strong>",
+         "Autonomous secretion",
+         "Appropriate compensation",
+         "<strong>Keeps secreting despite hypercalcaemia</strong>",
+         "<strong>Failure to SECRETE</strong>",
+         "<strong>Failure to RESPOND</strong>"
         ],
         [
-         "Neuro / MSK",
-         "<strong>weakness and <span class=\"wl\">hyporeflexia</span></strong> · bone pain and tenderness · <strong>cystic bone lesions</strong>, <strong>skeletal demineralization</strong>, <strong>spontaneous fractures</strong>",
-         "<strong>Convulsions</strong> · <strong>Tetany: <span class=\"wl\">Trousseau's sign</span> (more specific) and <span class=\"wl\">Chvostek's sign</span></strong>, which appear in <strong>MILD</strong> disease · <strong>perioral paresthesias</strong>, <strong>carpopedal spasm</strong>, <strong>laryngeal spasm</strong>, <strong>palpitations</strong> in <strong>SEVERE</strong> disease"
+         "<strong><span class=\"wl\">PTH</span></strong>",
+         "<strong>↑ or inappropriately normal</strong>",
+         "↑",
+         "<strong>↑↑</strong>",
+         "<strong>↓</strong>",
+         "<strong>↑</strong>"
         ],
         [
-         "Cardiac / ECG",
-         "<strong>short QT</strong>, <strong>Osborn wave</strong>, <span class=\"wl\">bradycardia</span>, <strong><span class=\"wl\">AV block</span></strong>",
-         "<strong>QT PROLONGATION → <span class=\"wl\">torsades de pointes</span></strong>"
+         "<strong>Ca²⁺</strong>",
+         "<strong>↑</strong>",
+         "<strong>normal</strong>",
+         "<strong>↑</strong>",
+         "↓",
+         "↓"
         ],
         [
-         "Renal / GI",
-         "<strong><span class=\"wl\">nephrolithiasis</span></strong>, <strong><span class=\"wl\">gallstones</span></strong> · <strong><span class=\"wl\">pancreatitis</span> acute AND chronic</strong>, <strong>pancreatic calcifications</strong>, vomiting, <span class=\"wl\">anorexia</span>, constipation · <strong><span class=\"wl\">polyuria</span> via <span class=\"wl\">nephrogenic diabetes insipidus</span></strong> · <strong>acute and chronic renal insufficiency</strong>",
+         "<strong><span class=\"wl\">Phosphate</span></strong>",
+         "<strong>↓</strong>",
+         "↑ or ↓",
+         "<strong>↑</strong>",
+         "<strong>↑</strong>",
+         "<strong>↑</strong>"
+        ],
+        [
+         "<strong>Vitamin D</strong>",
+         "↑",
+         "<strong>↓</strong>",
+         "↓",
+         "↓",
          "—"
         ],
         [
-         "Psych",
-         "<strong>confusion, personality change, <span class=\"wl\">depression</span> and apathy</strong>, delirium → coma",
-         "<strong>emotional instability</strong>, <span class=\"wl\">anxiety</span>, <strong>\"brain fog\"</strong>, paresthesia"
+         "<strong>Presentation</strong>",
+         "<strong>Stones, bones, groans, moans, thrones, muscle tone, psychiatric overtones</strong><br>Often asymptomatic, found on a routine panel",
+         "Usually the CKD dominates",
+         "As primary, on a CKD background",
+         "<strong>CATS go numb</strong> — convulsions, arrhythmia, tetany, spasm, numbness<br><strong>Chvostek's and Trousseau's</strong>",
+         "As hypoparathyroidism, plus in <strong>type 1A</strong> the <strong><span class=\"wl\">Albright's hereditary osteodystrophy</span></strong> phenotype: round facies, short stature, <strong>short metacarpals and metatarsals</strong>"
         ],
         [
-         "Chronic",
-         "↑ BP, fever, fatigue, malaise",
-         "<strong><span class=\"wl\">cataracts</span></strong>, <strong>dry skin</strong>, <strong>brittle nails</strong>"
+         "<strong>Dx</strong>",
+         "<strong>24-h urine Ca + creatinine → FE_Ca</strong><br><strong>>0.02 = primary; <0.01 = FHH</strong>; 0.01-0.02 is the overlap zone, recheck off thiazides with normal Mg",
+         "PTH raised with a <strong>normal</strong> calcium",
+         "<strong>High PTH with high calcium and high phosphate</strong>",
+         "Low PTH with low calcium; <strong>must persist 6 months post-surgery before calling it permanent</strong>",
+         "<strong>High PTH with low calcium</strong> — the receptor, not the gland<br><strong>PPHP has the same phenotype with a normal panel</strong>"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "<strong>Asymptomatic and over 50 → no treatment</strong><br>Bone protection: <span class=\"wl\">bisphosphonates</span>, <span class=\"wl\">denosumab</span>, HRT",
+         "Treat the CKD; phosphate binders, activated vitamin D",
+         "Parathyroidectomy",
+         "<strong><span class=\"wl\">calcitriol</span> 0.25 mcg b.i.d.</strong>, keep 25-OH-D >75, aim <strong>LOW-normal</strong> calcium",
+         "As hypoparathyroidism"
+        ],
+        [
+         "<strong>Px</strong>",
+         "Cured by <strong><span class=\"wl\">parathyroidectomy</span></strong> when indicated",
+         "Resolves if the kidney is fixed",
+         "Needs surgery",
+         "Lifelong; <strong>monitor for ectopic calcification</strong>",
+         "Lifelong"
         ]
        ]
       },
       {
        "t": "note",
-       "html": "<p><strong>Treatment of <span class=\"wl\">hypercalcemia</span></strong> — admit if corrected Ca <strong>> 3 mmol/L</strong>.</p><p>1. <strong>Volume repletion</strong> — assume a <strong>4–6 L deficit</strong>, replace with <strong><span class=\"wl\">normal saline</span></strong>.</p><p>2. <strong>Forced diuresis</strong> — <strong>4–10 L of NS plus <span class=\"wl\">furosemide</span> plus K+</strong>, ⚠ <strong>only once well hydrated</strong>. <strong>LOOP diuretics only, NEVER <span class=\"wl\">thiazides</span></strong> — thiazides <em>cause</em> hypercalcemia.</p><p>3. <strong><span class=\"wl\">bisphosphonates</span></strong> — <strong>IV <span class=\"wl\">zoledronate</span></strong>.</p><p>4. <strong><span class=\"wl\">calcitonin</span></strong> — ⚠ <strong><span class=\"wl\">tachyphylaxis</span> at 24–48 h, so it is a bridge, not a treatment</strong>.</p><p>5. <strong><span class=\"wl\">prednisone</span> 40–60 mg/day then taper</strong> — because <strong>steroids ↓ activation of vitamin D</strong>: for <strong><span class=\"wl\">myeloma</span></strong>, <strong><span class=\"wl\">lymphoma</span></strong>, <strong><span class=\"wl\">sarcoidosis</span></strong>, <strong><span class=\"wl\">vitamin D toxicity</span></strong>. <strong><span class=\"wl\">Dialysis</span></strong> is the last resort.</p>"
+       "html": "<p><strong>Parathyroidectomy in primary hyperPTH — any ONE of:</strong> <strong>Ca >0.25 mmol/L above the upper limit</strong> · <strong><span class=\"wl\">bone mineral density</span> T-score < −2.5</strong> at lumbar spine, femoral neck, total hip or distal radius · <strong>age under 50</strong> · <strong>creatinine clearance reduced</strong> · <strong>24-h urine calcium raised</strong> · symptomatic disease.</p>"
       },
       {
        "t": "note",
-       "html": "<p><strong>Treatment of primary hyperPTH:</strong> <strong>asymptomatic and over 50 → no treatment</strong>. Drugs for bone protection: <strong><span class=\"wl\">bisphosphonates</span></strong>, <strong><span class=\"wl\">denosumab</span></strong>, <strong>estrogen / <span class=\"wl\">HRT</span></strong>, <strong><span class=\"wl\">cinacalcet</span></strong>. <strong>Keep them well hydrated and avoid <span class=\"wl\">thiazides</span> and <span class=\"wl\">lithium</span>.</strong> <strong>Symptomatic → surgery.</strong></p>"
+       "html": "<p><strong>PTH-independent hypercalcaemia</strong> — <strong>over 90% of all hypercalcaemia is hyperparathyroidism or malignancy</strong>, so once PTH is suppressed the list is: <strong>malignancy</strong> (metastases — breast · humoral <strong>PTHrP</strong> — lung, kidney, adult T-cell leukaemia · lymphokines — <strong><span class=\"wl\">myeloma</span></strong>) · <strong>vitamin D related</strong> (exogenous, or granulomatous <strong><span class=\"wl\">sarcoid</span></strong> and TB) · <strong>immobilisation</strong> on a background of Paget's, thyrotoxicosis or adrenal insufficiency · <strong><span class=\"wl\">thiazides</span></strong> · <strong><span class=\"wl\">milk-alkali syndrome</span></strong>, acromegaly, phaeochromocytoma, parenteral nutrition.</p>"
       },
       {
        "t": "note",
-       "html": "<p><strong><span class=\"wl\">parathyroidectomy</span> is indicated when any one of these holds:</strong> <strong>Ca > 0.25 mmol/L above the upper limit</strong> · <strong><span class=\"wl\">bone mineral density</span> T-score < −2.5</strong> at lumbar spine, femoral neck, total hip, or ⅓ radius · <strong>vertebral fracture</strong> · <strong><span class=\"wl\">creatinine clearance</span> < 60 mL/min</strong> · <strong>24-hour urine calcium > 10 mmol/day with ↑ stone risk</strong> · <strong><span class=\"wl\">nephrolithiasis</span> or nephrocalcinosis</strong> · <strong>age < 50</strong>.</p>"
+       "html": "<p><strong>Hypocalcaemia by phosphate</strong> — <strong>PTH deficient</strong>: Ca↓, <strong>phosphate HIGH</strong>, PTH low · <strong>PTH resistant</strong>: Ca↓, <strong>phosphate HIGH</strong>, PTH high · <strong>vitamin D deficient</strong>: Ca↓, <strong>phosphate LOW</strong>, PTH high — <strong>and this is the commonest of the three</strong>. Minor causes: hypoalbuminaemia, <strong><span class=\"wl\">hypomagnesemia</span></strong>, pancreatitis, tumour lysis, rhabdomyolysis, sepsis.</p>"
       },
       {
        "t": "note",
-       "html": "<p><strong>Treatment of <span class=\"wl\">hypocalcemia</span></strong> — reserved for corrected Ca <strong>< 1.9 mmol/L</strong> <em>plus</em> <strong>neurological</strong> (tetany, seizure, carpopedal spasm) <strong>or cardiac</strong> (<strong>prolonged QT</strong>) symptoms.</p><p>- <strong>Acute:</strong> <strong>1–2 g of 10% <span class=\"wl\">calcium gluconate</span> in 50 mL of 5% dextrose over 15–20 min</strong> → <strong>1–3 mg/kg/h elemental calcium</strong> → <strong>cardiac monitoring and admission</strong> → <strong>treat coexisting <span class=\"wl\">hypomagnesemia</span></strong>, because <strong>the calcium will not correct until the magnesium does</strong>.</p><p>- <strong>Chronic (same as treating <span class=\"wl\">hypoparathyroidism</span>):</strong> <strong><span class=\"wl\">calcitriol</span> 0.25 mcg b.i.d.</strong>, monitoring calcium <em>and</em> phosphate, keeping <strong><span class=\"wl\">25-OH-D</span> > 75 nmol/L</strong> · <strong>1–2 g elemental calcium in divided doses</strong> · <strong><span class=\"wl\">thiazides</span> here, to ↓ calcium excretion and lower stone risk</strong> · <strong>recombinant human PTH (rhPTH)</strong>, approved in the <strong>US and Europe</strong>.</p><p>- ⚠ <strong>Aim for the LOW-normal range</strong> and monitor for ectopic calcification: <strong>renal ultrasound</strong> for nephrocalcinosis, <strong>head MRI</strong> for <strong><span class=\"wl\">basal ganglia</span> calcification</strong>, and keep the <strong>calcium-phosphate product under 4.4 mmol²/L²</strong>.</p>"
+       "html": "<p><strong>Treating hypercalcaemia</strong> — admit if corrected Ca <strong>>3 mmol/L</strong>. <strong>1.</strong> Volume repletion, assume a <strong>4-6 L deficit</strong>, <span class=\"wl\">normal saline</span>. <strong>2.</strong> Forced diuresis, <strong>4-10 L NS + <span class=\"wl\">furosemide</span> + K⁺</strong>, only once well hydrated — <strong>LOOP diuretics only, NEVER <span class=\"wl\">thiazides</span></strong>, which cause hypercalcaemia. <strong>3.</strong> IV <strong><span class=\"wl\">zoledronate</span></strong>. <strong>4.</strong> <strong><span class=\"wl\">calcitonin</span></strong> — <strong>tachyphylaxis at 24-48 h, a bridge not a treatment</strong>. <strong>5.</strong> <strong><span class=\"wl\">prednisone</span> 40-60 mg/day</strong> where steroids reduce vitamin D activation: myeloma, lymphoma, sarcoidosis, vitamin D toxicity.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Treating hypocalcaemia</strong> — only for corrected Ca <strong><1.9 mmol/L</strong> <em>with</em> neurological (tetany, seizure, carpopedal spasm) or cardiac (<strong>prolonged QT</strong>) signs: <strong>1-2 g of 10% <span class=\"wl\">calcium gluconate</span> in 50 mL D5W over 15-20 min</strong>, then 1-3 mg/kg/h, cardiac monitoring, and <strong>correct the magnesium</strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>ECG and symptom split</strong> — <strong>hypercalcaemia: short QT</strong>, Osborn wave, bradycardia, AV block, weakness and hyporeflexia, nephrolithiasis, pancreatitis, confusion and apathy. <strong>Hypocalcaemia: QT PROLONGATION → <span class=\"wl\">torsades de pointes</span></strong>, tetany, paraesthesia, brain fog, and chronically <strong>cataracts, dry skin, brittle nails</strong>. The mechanism of the neuro signs is that <strong>low calcium lets sodium channels depolarise more easily</strong>.</p>"
       }
      ]
     },
