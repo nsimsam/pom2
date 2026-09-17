@@ -5064,9 +5064,17 @@
      "name": "Polyendocrine Metabolic Ovarian Syndrome (PMOS)",
      "hasNote": true,
      "title": "Polyendocrine Metabolic Ovarian Syndrome (PMOS)",
-     "framing": "<p>Renamed from <strong>PCOS</strong> in 2026 because both halves of the old name were wrong. The diagnosis is a <strong>triad that needs no ultrasound</strong>, and it is made by telling PMOS apart from the four things that mimic it.</p>",
-     "keypoints": "<p>the follicles are arrested antral follicles and the ovary is a target, not the source — which is why the name changed. ⭐ <strong>Hyperandrogenism plus oligomenorrhoea plus clean exclusions is diagnostic without ever scanning her; ultrasound is an alternative route into the second limb, not a criterion of its own.</strong> Testosterone ~2 fits, 10 means a tumour. Acanthosis is the insulin sign; striae would mean Cushing's. Of the five treatments offered, only <strong>topical testosterone</strong> is wrong. Reassure that she can conceive — and advise contraception in the same breath.</p>",
+     "framing": "<p>Renamed from <strong>PCOS</strong> in 2026 because both halves of the old name were wrong. The diagnosis is a <strong>triad that needs no ultrasound</strong>, and it is made by telling PMOS apart from the six things that mimic it.</p>",
+     "keypoints": "<p>the follicles are arrested antral follicles and the ovary is a target, not the source — which is why the name changed. ⭐ <strong>Hyperandrogenism plus oligomenorrhoea plus clean exclusions is diagnostic without ever scanning her; ultrasound is an alternative route into the second limb, not a criterion of its own.</strong> Testosterone ~2 fits, 10 means a tumour, and <strong>17-hydroxyprogesterone is what separates non-classic CAH from PMOS</strong> when the picture is otherwise identical. Acanthosis is the insulin sign; striae would mean Cushing's. ⚠ <strong>Hirsutism is defined by distress, not by a score</strong> — the modified Ferriman-Gallwey grades it but ignores ethnicity and hair removal. Of the five treatments offered, only <strong>topical testosterone</strong> is wrong. Reassure that she can conceive — and advise contraception in the same breath.</p>",
      "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/7020d1020992.jpg",
+       "alt": "polycystic and normal ovary.png",
+       "w": 425,
+       "h": 277,
+       "cap": "The polycystic ovary beside a normal one"
+      },
       {
        "t": "pathway",
        "mermaid": "flowchart TD\n    A[\"Oligomenorrhoea and/or hyperandrogenism\"] --> B[\"EXCLUDE other causes\"]\n    B --> C[\"beta-hCG - pregnancy\"]\n    B --> D[\"Prolactin - prolactinoma\"]\n    B --> E[\"TSH - thyroid disease\"]\n    B --> F{\"Testosterone?\"}\n    F -->|\"~2.1-2.5 nmol/L - mildly raised\"| G[\"Consistent with PMOS\"]\n    F -->|\"10 nmol/L - markedly raised\"| H[\"Suggests androgen-secreting TUMOUR\"]\n    G --> I{\"Diagnostic triad met?\"}\n    I --> J[\"1 HYPERANDROGENISM - exam or labs\"]\n    I --> K[\"2 OVULATORY DYSFUNCTION<br/>oligomenorrhoea OR cystic ovaries on US\"]\n    I --> L[\"3 EXCLUSION of other disorders\"]\n    J --> M[\"PMOS - NO ULTRASOUND REQUIRED\"]\n    K --> M\n    L --> M\n    M --> N{\"Treat the symptom of distress\"}\n    N -->|\"Oligomenorrhoea\"| O[\"BCP or cyclical progesterone\"]\n    N -->|\"Subfertility\"| P[\"Lifestyle, aromatase inhibitors,<br/>metformin for early miscarriage\"]\n    N -->|\"Hirsutism\"| Q[\"Surface therapy, antiandrogens,<br/>BCP, eflornithine\"]\n    N -->|\"Alopecia\"| R[\"Minoxidil 5%, antiandrogens, BCP\"]\n    M --> S[\"MANAGE RISK\"]\n    S --> T[\"Metabolic: monitor DM, HTN, CVD<br/>150 min exercise weekly\"]\n    S --> U[\"Endometrial cancer:<br/>WITHDRAWAL BLEEDS 4x A YEAR\"]"
@@ -5077,7 +5085,7 @@
       },
       {
        "t": "list",
-       "html": "<ul><li><strong>Hx</strong> — age at menarche and <strong>cycle frequency since</strong> · <strong>onset and progression of hirsutism</strong> and what she does about it · weight trajectory · <strong>fertility intentions and current contraception</strong> · family history of <strong>GDM and type 2 diabetes</strong> · mood · medications.</li><li><strong>PEx</strong> — BP, <strong>BMI and fat distribution</strong> · ⭐ <strong>acanthosis nigricans over the back of the neck — the insulin-resistance sign</strong> · terminal hair in a male pattern (face, chin, chest, upper arms), acne, <strong>frontal alopecia</strong> · ⚠ <strong>striae are NOT expected — violaceous striae point at Cushing's instead</strong>.</li><li><strong>Ix</strong> — the exclusion panel first: <strong>beta-hCG · prolactin · TSH · total testosterone</strong>. ⚠ <strong>A testosterone around 2.1-2.5 nmol/L fits PMOS; 10 nmol/L suggests an androgen-secreting tumour.</strong> Then metabolic screening: <strong>fasting glucose or A1c, lipid panel</strong>. ⚠ <strong>Pelvic ultrasound is NOT required</strong> — hyperandrogenism plus oligomenorrhoea plus clean exclusions is already diagnostic.</li><li><strong>Tx</strong> — <strong>treat the symptom of distress</strong>: BCP or cyclical progesterone for oligomenorrhoea · <strong>aromatase inhibitors</strong> to induce ovulation, metformin arguably for early miscarriage · antiandrogens and <strong>eflornithine</strong> for hirsutism · <strong>minoxidil 5%</strong> for alopecia. Lifestyle throughout: high fibre, low fat, <strong>~30 min planned exercise daily, modest weight loss</strong> — ⚠ <strong>\"no body shaming\"</strong>. Only <strong>topical testosterone</strong> is the wrong answer.</li><li><strong>Follow-up</strong> — ⚠ <strong>induce withdrawal bleeds at least 4× a year</strong> and image for endometrial hypertrophy (carcinoma risk) · monitor for <strong>DM, HTN and cardiovascular disease</strong>, <strong>150 min vigorous exercise weekly</strong> · counsel that <strong>she can conceive spontaneously</strong>, so contraception is still needed.</li></ul>"
+       "html": "<ul><li><strong>Hx (hirsutism)</strong> — <strong>location, timing of onset and rate of onset</strong> · location and timing of <strong>acne</strong> · presence and timing of <strong>alopecia</strong> · family history of hirsutism · ⚠ <strong>rate of onset, ethnicity and parental appearance must all be weighed before calling hair growth abnormal</strong> · ⚠ <strong>a rapid onset is the tumour question</strong>, not a PMOS one.</li><li><strong>Hx (oligomenorrhoea)</strong> — age at menarche and <strong>how often periods came initially, in the later teens, and after age 20</strong> · <strong>oral contraceptive use</strong> · family history of <strong>irregular menses and infertility</strong> · weight trajectory · <strong>fertility intentions and current contraception</strong> · family history of <strong>GDM and type 2 diabetes</strong> · mood · medications. ⚠ <strong>If menses became irregular on stopping an OCP, the OCP did not cause it — it masked oligomenorrhoea she already had.</strong></li><li><strong>PEx</strong> — BP, <strong>BMI and fat distribution</strong> · ⭐ <strong>acanthosis nigricans over the back of the neck — the insulin-resistance sign</strong> · terminal hair in a male pattern (face, chin, chest, upper arms), acne, <strong>frontal alopecia</strong> · score the hair with the <strong>modified Ferriman-Gallwey system — 9 sites, each graded 1-4</strong> · ⚠ <strong>striae are NOT expected — violaceous striae point at Cushing's instead</strong>.</li><li><strong>Ix</strong> — the exclusion panel first: <strong>beta-hCG · prolactin · TSH · total testosterone</strong>. ⚠ <strong>A testosterone around 2.1-2.5 nmol/L fits PMOS; 10 nmol/L suggests an androgen-secreting tumour.</strong> <strong>17-hydroxyprogesterone</strong> where non-classic CAH is in question. Then metabolic screening: <strong>fasting glucose or A1c, lipid panel</strong>. ⚠ <strong>Pelvic ultrasound is NOT required</strong> — hyperandrogenism plus oligomenorrhoea plus clean exclusions is already diagnostic.</li><li><strong>Tx</strong> — <strong>treat the symptom of distress</strong>: BCP or cyclical progesterone for oligomenorrhoea · <strong>aromatase inhibitors</strong> to induce ovulation, metformin arguably for early miscarriage · antiandrogens and <strong>eflornithine</strong> for hirsutism · <strong>minoxidil 5%</strong> for alopecia. Lifestyle throughout: high fibre, low fat, <strong>~30 min planned exercise daily, modest weight loss</strong> — ⚠ <strong>\"no body shaming\"</strong>. Only <strong>topical testosterone</strong> is the wrong answer.</li><li><strong>Follow-up</strong> — ⚠ <strong>induce withdrawal bleeds at least 4× a year</strong> and image for endometrial hypertrophy (carcinoma risk) · monitor for <strong>DM, HTN and cardiovascular disease</strong>, <strong>150 min vigorous exercise weekly</strong> · counsel that <strong>she can conceive spontaneously</strong>, so contraception is still needed.</li></ul>"
       },
       {
        "t": "table",
@@ -5085,6 +5093,7 @@
         "",
         "<strong>PMOS</strong>",
         "<strong>Androgen-secreting tumour</strong>",
+        "<strong>Non-classic CAH</strong>",
         "<strong>Cushing syndrome</strong>",
         "<strong>Hyperprolactinaemia</strong>",
         "<strong>Thyroid disease</strong>"
@@ -5094,6 +5103,7 @@
          "<strong>Causes</strong>",
          "Multisystem; <strong>no single cause identified</strong><br><strong>>170 million women, up to 20% of reproductive age</strong>",
          "Ovarian or adrenal tumour",
+         "<strong>Mild (non-classic) 21-hydroxylase deficiency</strong>; autosomal recessive",
          "Adrenal or pituitary; <strong>exogenous steroid commonest</strong>",
          "Prolactinoma, dopamine antagonists, primary hypothyroidism, stalk lesion",
          "Hypo- or hyperthyroidism"
@@ -5102,6 +5112,7 @@
          "<strong>Pathology</strong>",
          "HPO dysregulation + <strong>LH↑ FSH↓</strong> + insulin resistance + <strong>adipose converts adrenal androgen to testosterone</strong><br>Follicles are <strong>arrested antral follicles, not cysts</strong>",
          "Autonomous androgen output",
+         "Enzyme block diverts steroid precursors into <strong>adrenal androgens</strong>",
          "Cortisol excess",
          "Prolactin <strong>inhibits GnRH</strong> → secondary hypogonadism",
          "Alters SHBG and the cycle"
@@ -5110,6 +5121,7 @@
          "<strong>Presentation</strong>",
          "<strong>Oligomenorrhoea</strong> + <strong>terminal male-pattern hirsutism</strong> (face, chin, chest, upper arms)<br><strong>Acanthosis nigricans</strong>, central adiposity, cystic acne, frontal alopecia",
          "<strong>Rapid-onset, severe virilisation</strong>; clitoromegaly, voice deepening",
+         "Hirsutism and oligomenorrhoea <strong>indistinguishable from PMOS</strong> on their own; often peripubertal onset",
          "<strong>Purple striae, easy bruising, proximal weakness</strong>",
          "<strong>Galactorrhoea</strong>, amenorrhoea, visual field defect",
          "Cold or heat intolerance, weight change"
@@ -5118,6 +5130,7 @@
          "<strong>Ix</strong>",
          "<strong>1. Exclusion panel first: beta-hCG · <span class=\"wl\">prolactin</span> · TSH · total <span class=\"wl\">testosterone</span></strong><br><strong>2. Testosterone ~2.1-2.5 nmol/L</strong> fits<br><strong>3. Metabolic screen</strong> — fasting glucose or A1c, lipid panel, BP, BMI<br><strong>4.</strong> ⚠ ⭐ <strong>There is no gold-standard test — the diagnosis IS the clinical triad</strong>, and no ultrasound is required<br><strong>5.</strong> Endometrial surveillance ultrasound if bleeds are infrequent",
          "<strong>Testosterone ~10 nmol/L — markedly raised</strong><br>DHEAS for an adrenal source<br>⭐ <strong>CT adrenal or pelvic ultrasound localises it</strong>",
+         "<strong>↑ 17-hydroxyprogesterone</strong> is the discriminating test",
          "⭐ <strong>TWO positive cortisol screens are required</strong> — dexamethasone, 24-h urine, late-night salivary<br>Then ACTH",
          "<strong>Prolactin raised</strong><br>⭐ <strong>MRI pituitary</strong><br>Exclude drugs and primary hypothyroidism first",
          "⭐ <strong>TSH</strong>, then <strong>free T4</strong> if abnormal"
@@ -5126,6 +5139,7 @@
          "<strong>Tx</strong>",
          "<strong>By the symptom of distress</strong> — BCP or cyclical progesterone; <strong>aromatase inhibitors</strong> for ovulation; antiandrogens and <strong>eflornithine</strong> for hirsutism; <strong>minoxidil 5%</strong> for alopecia",
          "Resect",
+         "<strong>Glucocorticoid</strong> to suppress the ACTH drive",
          "Treat the source",
          "<strong>Dopamine agonist</strong>",
          "Replace or suppress"
@@ -5134,11 +5148,16 @@
          "<strong>Px</strong>",
          "<strong>Fertile — she can conceive spontaneously</strong>; lifelong metabolic and endometrial risk",
          "Reverses with resection",
+         "Lifelong; fertility usually preserved",
          "Remission, not cure",
          "Reverses on treatment",
          "Reverses on treatment"
         ]
        ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The sixth mimic has no column because it has no pathology</strong> — <strong>exogenous androgen</strong>. Taking testosterone, or <strong>skin contact with a partner's topical testosterone</strong>, reproduces the picture entirely, and <strong>a thorough medication and social history is the only thing that finds it</strong>. <strong>Rate of onset is the other history discriminator</strong>: PMOS hirsutism creeps over years, a tumour's arrives fast.</p>"
       },
       {
        "t": "note",
