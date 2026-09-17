@@ -46,7 +46,7 @@
   var QUESTIONS = [];
   var QMAP = Object.create(null);
   var progress = Object.create(null);
-  var filters = { status: "all", family: null, week: "all" };
+  var filters = { status: "all", family: null, week: "all", tag: "all" };
 
   /* label and total lookups, filled in by buildRail: the applied-filter line
      needs a filter's human name, and a family's block total is what tells an
@@ -54,6 +54,7 @@
   var FAM_TOTAL = Object.create(null);
   var FAM_NAME = Object.create(null);
   var WEEK_LABEL = Object.create(null);
+  var TAG_LABEL = Object.create(null);
   var STATUS_LABEL = Object.create(null);
   var RESET_SHOWN_IDLE = null;
   var storeWritable = true;
@@ -397,6 +398,16 @@
 
   function weekOk(q) { return filters.week === "all" || weekKey(q) === filters.week; }
 
+  /* Tags cut across the other three: the anatomy strand is taught in one block
+     but its questions arrive as modules and as workbook chapters, so neither
+     the family row nor the week chip can gather them. A question carries none
+     unless it was tagged, and most carry none. */
+  function tagsOf(q) { return Array.isArray(q.tags) ? q.tags : []; }
+
+  function tagOk(q) {
+    return filters.tag === "all" || tagsOf(q).indexOf(filters.tag) !== -1;
+  }
+
   function statusOk(q) {
     var st = stateOf(q.qid);
     switch (filters.status) {
@@ -410,7 +421,7 @@
 
   function matches(qid) {
     var q = QMAP[qid];
-    return famOk(q) && weekOk(q) && statusOk(q);
+    return famOk(q) && weekOk(q) && tagOk(q) && statusOk(q);
   }
 
   // qids currently passing the filters that actually have something to clear
@@ -444,7 +455,8 @@
       h.hidden = !any;
     });
 
-    var narrowed = filters.status !== "all" || filters.week !== "all";
+    var narrowed = filters.status !== "all" || filters.week !== "all" ||
+                   filters.tag !== "all";
     [].forEach.call(document.querySelectorAll(".family"), function (f) {
       if (filters.family && f.dataset.family !== filters.family) { f.hidden = true; return; }
       if (f.dataset.count === "0") { f.hidden = !!narrowed; return; }
@@ -458,6 +470,7 @@
 
   function setStatus(s) { filters.status = s; applyFilters(); }
   function setWeek(w) { filters.week = w; applyFilters(); }
+  function setTag(t) { filters.tag = t; applyFilters(); }
 
   /* ---------- where you are in the stream ---------- */
 
@@ -602,7 +615,7 @@
     byId("pb-count").textContent = (at === null ? "\u2013" : String(at + 1)) +
       " / " + VISIBLE.length +
       ((filters.status !== "all" || filters.family ||
-         filters.week !== "all") ? " shown" : "");
+         filters.week !== "all" || filters.tag !== "all") ? " shown" : "");
     byId("pb-prev").disabled = at === null || at === 0;
     byId("pb-next").disabled = at === null || at === VISIBLE.length - 1;
     paintMark(at);
@@ -698,27 +711,61 @@
     return defs;
   }
 
-  /* Every tally below skips its own group and applies the other two, in one
+  /* Spelled out here rather than derived from the tag, so a chip can read as
+     "Anatomy lectures" without that wording having to live in every question
+     that carries the tag. An unknown tag still renders, capitalised. */
+  var TAG_NAMES = { anatomy: "Anatomy lectures" };
+
+  function tagTitle(k) {
+    return TAG_NAMES[k] || (k.charAt(0).toUpperCase() + k.slice(1));
+  }
+
+  /* Empty for a block with nothing tagged, which is what hides the group:
+     endo has the anatomy strand, the other four have nothing yet. */
+  function tagDefs() {
+    var n = Object.create(null), order = [];
+    QUESTIONS.forEach(function (q) {
+      tagsOf(q).forEach(function (k) {
+        if (n[k] === undefined) { n[k] = 0; order.push(k); }
+        n[k]++;
+      });
+    });
+    if (!order.length) return [];
+    order.sort();
+    var defs = [{ k: "all", label: "All", n: QUESTIONS.length }];
+    order.forEach(function (k) { defs.push({ k: k, label: tagTitle(k), n: n[k] }); });
+    return defs;
+  }
+
+  /* Every tally below skips its own group and applies the other three, in one
      pass. Before this, the numbers went wrong the moment a second filter was
      on: picking Wrong still offered "Week 1 195" when only a handful of those
      were wrong, and the week counts were written once at build and never
      repainted at all. */
   function facetCounts() {
     var fam = Object.create(null), week = Object.create(null);
+    var tag = Object.create(null);
     var status = { all: 0, unseen: 0, wrong: 0, correct: 0, starred: 0 };
-    var famAll = 0, weekAll = 0, shown = 0;
+    var famAll = 0, weekAll = 0, tagAll = 0, shown = 0;
     QUESTIONS.forEach(function (q) {
-      var f = famOk(q), w = weekOk(q), sOk = statusOk(q), wk, st;
-      if (w && sOk) {
+      var f = famOk(q), w = weekOk(q), t = tagOk(q), sOk = statusOk(q), wk, st;
+      if (w && t && sOk) {
         fam[q.family] = (fam[q.family] || 0) + 1;
         famAll++;
       }
-      if (f && sOk) {
+      if (f && t && sOk) {
         wk = weekKey(q);
         week[wk] = (week[wk] || 0) + 1;
         weekAll++;
       }
-      if (f && w) {
+      if (f && w && sOk) {
+        /* a question with two tags counts under each, so these never sum to
+           tagAll - the same way the week chips are a partition and these are
+           not */
+        tagsOf(q).forEach(function (k) { tag[k] = (tag[k] || 0) + 1; });
+        tagAll++;
+      }
+      if (f && w && t) {
         st = stateOf(q.qid);
         status.all++;
         if (st === "unseen") status.unseen++;
@@ -726,11 +773,12 @@
         else status.correct++;
         if (isStarred(q.qid)) status.starred++;
       }
-      if (f && w && sOk) shown++;
+      if (f && w && t && sOk) shown++;
     });
     return {
       fam: fam, famAll: famAll,
       week: week, weekAll: weekAll,
+      tag: tag, tagAll: tagAll,
       status: status, shown: shown
     };
   }
@@ -754,6 +802,12 @@
       live.push({
         label: WEEK_LABEL[filters.week] || ("Week " + filters.week),
         clear: function () { filters.week = "all"; }
+      });
+    }
+    if (filters.tag !== "all") {
+      live.push({
+        label: TAG_LABEL[filters.tag] || filters.tag,
+        clear: function () { filters.tag = "all"; }
       });
     }
     if (filters.status !== "all") {
@@ -794,6 +848,7 @@
     ca.addEventListener("click", function () {
       filters.family = null;
       filters.week = "all";
+      filters.tag = "all";
       filters.status = "all";
       applyFilters();
     });
@@ -820,6 +875,13 @@
       b.setAttribute("aria-pressed", filters.week === k ? "true" : "false");
       b.querySelector(".n").textContent = n;
       b.disabled = k !== "all" && n === 0 && filters.week !== k;
+    });
+
+    [].forEach.call(document.querySelectorAll("#tag-chips .chip"), function (b) {
+      var k = b.dataset.k, n = (k === "all") ? c.tagAll : (c.tag[k] || 0);
+      b.setAttribute("aria-pressed", filters.tag === k ? "true" : "false");
+      b.querySelector(".n").textContent = n;
+      b.disabled = k !== "all" && n === 0 && filters.tag !== k;
     });
 
     [].forEach.call(document.querySelectorAll("#fam-btns .fam-btn"), function (b) {
@@ -906,6 +968,24 @@
       });
     }
 
+    /* The group only earns its space where something is tagged, so it ships
+       hidden and the block's own data is what reveals it. */
+    var tc = byId("tag-chips"), tagRows = tagDefs();
+    if (tc && tagRows.length) {
+      tagRows.forEach(function (d) {
+        TAG_LABEL[d.k] = d.label;
+        var b = el("button", "chip");
+        b.type = "button";
+        b.dataset.k = d.k;
+        b.setAttribute("aria-pressed", d.k === "all" ? "true" : "false");
+        b.appendChild(document.createTextNode(d.label));
+        b.appendChild(el("span", "n", String(d.n)));
+        b.addEventListener("click", function () { setTag(d.k); });
+        tc.appendChild(b);
+      });
+      if (byId("tag-section")) byId("tag-section").hidden = false;
+    }
+
     var sc = byId("status-chips");
     STATUS_DEFS.forEach(function (d) {
       var b = el("button", "chip" + (d.cls ? " " + d.cls : ""));
@@ -923,6 +1003,7 @@
     byId("review-wrong").addEventListener("click", function () {
       filters.family = null;
       filters.week = "all";
+      filters.tag = "all";
       setStatus("wrong");
     });
 

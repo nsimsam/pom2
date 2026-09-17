@@ -222,6 +222,11 @@ saved in one go. Print it, annotate it, keep it.</p>
 <div class="chips" id="week-chips"></div>
 </section>
 
+<section id="tag-section" hidden>
+<p class="panel-h">Topic</p>
+<div class="chips" id="tag-chips"></div>
+</section>
+
 <section>
 <p class="panel-h">Status</p>
 <div class="chips" id="status-chips"></div>
