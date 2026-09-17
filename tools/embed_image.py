@@ -128,6 +128,12 @@ def compress(path: Path, max_width: int, fits) -> tuple:
     src = Image.open(path)
     if src.mode not in ("RGB", "L"):
         # JPEG has no alpha; flatten onto white rather than letting it go black.
+        # A palette image keeps its transparency in the palette rather than in a
+        # band, so "A" in src.mode is False, the paste runs with no mask, and the
+        # transparent area comes out as whatever colour palette entry 0 happens
+        # to be - slate blue on the Rise uterus diagrams. Convert first.
+        if src.mode in ("P", "PA"):
+            src = src.convert("RGBA")
         flat = Image.new("RGB", src.size, (255, 255, 255))
         flat.paste(src, mask=src.split()[-1] if "A" in src.mode else None)
         src = flat
