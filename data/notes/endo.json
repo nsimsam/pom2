@@ -3934,6 +3934,14 @@
      "keypoints": "<p><strong>Map the four cells onto two hormones and you have the lecture: LH → Leydig and theca (androgen); FSH → Sertoli and granulosa (inhibin, and aromatase in the ovary).</strong> <strong>4 gametes from spermatogenesis, 1 from oogenesis</strong>, and the female reservoir is fixed before birth. <strong>The oocyte is arrested twice: prophase I until recruitment, meiosis II until fertilization</strong> — fertilization is a trigger, not just a fusion. <strong>The blood-testis barrier exists because sperm are genetically foreign to their own host.</strong> <strong>Most FSH receptors wins the dominant-follicle competition, and ART simply removes the competition by flooding the system.</strong> <strong>The granulosa cell trades FSH receptors for LH receptors as ovulation approaches</strong> — the same cell, answering to a different hormone. <strong>5-α reductase makes DHT for hair, glands and external genitalia; aromatase makes estradiol and closes the growth plates.</strong> <strong>Only 5% of testosterone is free, and only that 5% works.</strong></p>",
      "blocks": [
       {
+       "t": "figure",
+       "src": "assets/figures/0d59f7ef62b1.jpg",
+       "alt": "hypothalamic-pituitary-gonadal axis - female and male.jpg",
+       "w": 900,
+       "h": 611,
+       "cap": "The HPG axis in both sexes: LH drives the steroid cell, FSH drives the nurse cell"
+      },
+      {
        "t": "table",
        "cols": [
         "",
