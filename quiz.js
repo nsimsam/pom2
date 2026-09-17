@@ -711,10 +711,10 @@
     return defs;
   }
 
-  /* Spelled out here rather than derived from the tag, so a chip can read as
-     "Anatomy lectures" without that wording having to live in every question
-     that carries the tag. An unknown tag still renders, capitalised. */
-  var TAG_NAMES = { anatomy: "Anatomy lectures" };
+  /* Spelled out here rather than derived from the tag, so a chip can be worded
+     independently of the tag every question carries. An unknown tag still
+     renders, capitalised. */
+  var TAG_NAMES = { anatomy: "Anatomy" };
 
   function tagTitle(k) {
     return TAG_NAMES[k] || (k.charAt(0).toUpperCase() + k.slice(1));
