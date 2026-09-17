@@ -773,9 +773,11 @@
 .ans-body p:last-child{margin-bottom:0;}
 .ans-body ul,.ans-body ol{margin:0 0 10px 20px;}
 .ans-body li{margin-bottom:5px;}
-.ans-body table{border-collapse:collapse;width:100%;font-size:.86rem;margin-bottom:10px;}
-.ans-body th,.ans-body td{border:1px solid var(--border);padding:6px 9px;text-align:left;vertical-align:top;}
-.ans-body th{background:var(--bg);font-weight:600;}
+/* a matching question puts its two columns in the stem, so the stem needs the
+   same table the answer body already had */
+.ans-body table,.stem table{border-collapse:collapse;width:100%;font-size:.86rem;margin-bottom:10px;}
+.ans-body th,.ans-body td,.stem th,.stem td{border:1px solid var(--border);padding:6px 9px;text-align:left;vertical-align:top;}
+.ans-body th,.stem th{background:var(--bg);font-weight:600;}
 .ans-body img{border:1px solid var(--border);border-radius:6px;}
 
 .callout{
