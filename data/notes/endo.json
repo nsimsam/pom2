@@ -424,13 +424,10 @@
      "num": "04",
      "name": "Clinically Useful Endocrine Principles",
      "hasNote": true,
-     "framing": "<p>p# Overview chart: <u>Approach to a Suspected Endocrine Problem</u></p>",
+     "title": "Approach to a Suspected Endocrine Problem",
+     "framing": "<p>Every endocrine problem sorts into <strong>structural</strong> (a mass) or <strong>functional</strong> (too much or too little hormone) — <strong>and both can be present at once</strong>. The sorting question determines the entire workup.</p>",
      "keypoints": "<p>the suppression/stimulation pairing is the single most testable idea here — <strong>excess is tested by trying to turn it off, deficiency by trying to turn it on</strong>. <strong><span class=\"wl\">primary adrenal insufficiency</span> loses both cortisol AND aldosterone</strong>, which is what separates it from central causes. A <strong>benign mass can still be clinically important</strong> through pure mass effect. And always ask whether an <strong>exogenous hormone</strong> explains the picture before working up the gland.</p>",
      "blocks": [
-      {
-       "t": "note",
-       "html": "<p>Every endocrine problem sorts into <strong>structural</strong> (a mass) or <strong>functional</strong> (too much or too little hormone) — <strong>and both can be present at once</strong>. The sorting question determines the entire workup.</p>"
-      },
       {
        "t": "pathway",
        "mermaid": "flowchart TD\n A[\"Suspected endocrine problem\"] --> B{\"Structural or functional?\"}\n B -->|\"STRUCTURAL — a mass\"| C{\"Benign or malignant?\"}\n C --> D{\"Does the enlargement itself<br/>cause clinical effects?\"}\n D --> E[\"Mass effect:<br/>pituitary → optic chiasm, CN III/IV/VI, V1/V2<br/>thyroid → dysphagia\"]\n B -->|\"FUNCTIONAL — hormone\"| F{\"Too much or too little?\"}\n F -->|\"EXCESS\"| G[\"Try to SUPPRESS it<br/>→ suppression test\"]\n F -->|\"DEFICIENCY\"| H[\"Try to STIMULATE it<br/>→ stimulation test\"]\n G --> I{\"Primary, secondary/tertiary,<br/>or exogenous source?\"}\n H --> I"
