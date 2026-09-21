@@ -8,61 +8,273 @@
     {
      "id": "repro-w4-01",
      "num": "01",
-     "name": "Approach to Sexual Health",
+     "name": "Abortion in Canada",
      "hasNote": false
     },
     {
      "id": "repro-w4-02",
      "num": "02",
-     "name": "Approach to Sexually Transmitted Infections",
+     "name": "Fertilization & Infertility",
      "hasNote": false
     },
     {
      "id": "repro-w4-03",
      "num": "03",
-     "name": "Public Health and STIs",
+     "name": "Contraception",
      "hasNote": false
     },
     {
      "id": "repro-w4-04",
      "num": "04",
-     "name": "Contraception",
-     "hasNote": false
+     "name": "Drugs Used in Gynecology",
+     "hasNote": true,
+     "title": "Drugs Used in Gynecology",
+     "framing": "<p>Every agent here does one of three things: <strong>disrupt the HPO axis</strong>, <strong>block the overgrowth of a sex-hormone-dependent tissue</strong>, or <strong>replace a hormone that is absent</strong>. Work out which, and the indications and adverse effects follow from it.</p>",
+     "keypoints": "<p>⭐ <strong>The POC's primary mechanism is local, not central</strong> — that is the single most-tested fact here, and it is what makes adherence matter so much more for the mini-pill. <strong>Hypertension is relative; an active thromboembolic event is absolute, and it is absolute for combined methods only.</strong> <strong>Drospirenone is the anti-androgenic progestin</strong> (spironolactone-derived) — the one to reach for in hormonal acne, and the one that risks <strong>hyperkalemia</strong>; estranes and gonanes are androgenic instead. <strong>UPA beats LNG at every interval, including inside 72 hours</strong> ⚠ — an Elentra module question keys this the other way, and the lecture's own meta-analysis slide is the one to trust. <strong>GnRH agonists flare before they suppress; antagonists never flare.</strong> <strong>Finasteride lowers DHT, it does not block the androgen receptor</strong> — which is why it shrinks a prostate and thins body hair without touching muscle mass. ⚠ <strong>No emergency contraceptive works once implantation has happened</strong> — only <span class=\"wl\">mifepristone</span> acts on an established pregnancy.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/aa44b3c3588f.jpg",
+       "alt": "drugs used in gynecology.png",
+       "w": 900,
+       "h": 542,
+       "cap": "The three hormone axes, and where each drug class sits on them"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "Class",
+        "Examples",
+        "Mechanism of Action",
+        "Indications",
+        "Adverse Effects / Contraindications"
+       ],
+       "rows": [
+        [
+         "<u>Combined hormonal contraceptives (CHC)</u><br><br>estrogen <strong>+</strong> progestin",
+         "Estrogen component: <strong>ethinyl estradiol or mestranol, 10-50 mcg</strong><br><br>Pill · <span class=\"wl\">patch</span> (weekly) · <span class=\"wl\">ring</span> (monthly)",
+         "<strong>Primarily central: suppress <span class=\"wl\">GnRH</span> → ↓ LH/FSH → no ovulation</strong><br>Plus the same local actions as below",
+         "Contraception · <span class=\"wl\">dysmenorrhea</span> · <span class=\"wl\">acne</span> · cycle control",
+         "<strong>↑ VTE risk</strong> (estrogen ↑ factors <strong>VII, VIII, IX, X</strong>, ↓ anticoagulant factors)<br>Nausea, bloating, breast tenderness, headache<br>Hepatic metabolism → <strong>CYP interactions</strong> (<span class=\"wl\">antiepileptics</span>, <span class=\"wl\">antibiotics</span>, aprepitant)"
+        ],
+        [
+         "<u>Progestin-only contraceptives (POC)</u><br><br>progestin alone",
+         "<strong><span class=\"wl\">Norethindrone mini-pill</span></strong> · <strong><span class=\"wl\">LNG-IUS</span></strong> · <strong><span class=\"wl\">DMPA injection</span></strong> (q3mo) · <strong><span class=\"wl\">etonogestrel implant</span></strong>",
+         "⭐ <strong>Primarily LOCAL, not central</strong> — thickened cervical mucus, altered tubal peristalsis, non-receptive endometrium.<br><strong>Ovulation is suppressed in only ~50% of cycles</strong>; the <strong>DMPA injection is the exception</strong> and suppresses it consistently",
+         "Contraception where estrogen is contraindicated · heavy bleeding (IUS)",
+         "<strong>No ↑ VTE risk</strong> <em>except</em> the injection, and except drospirenone/cyproterone preparations<br>Injection <strong>and</strong> implant share: weight gain, <strong>may contribute to bone loss</strong>, irregular bleeding, painful, <span class=\"wl\">acne</span><br>Mini-pill: <strong>missed by >3 h = backup needed</strong>"
+        ],
+        [
+         "<u>SERMs</u>",
+         "<strong><span class=\"wl\">tamoxifen</span></strong><br><strong><span class=\"wl\">raloxifene</span></strong>",
+         "<strong>Agonist in some tissues, antagonist in others</strong> — set by ligand selectivity, receptor conformation, and local co-activators/co-repressors<br>Tamoxifen: breast <strong>–</strong>, endometrium <strong>+</strong>, bone <strong>+</strong><br>Raloxifene: breast <strong>–</strong>, endometrium <strong>–</strong>, bone <strong>++</strong>",
+         "Tamoxifen: <strong>estrogen-dependent tumours</strong><br>Raloxifene: <strong>prevention and treatment of <span class=\"wl\">osteoporosis</span> in postmenopausal women</strong>",
+         "<strong>Both ↑ VTE</strong><br><strong>Tamoxifen alone ↑ <span class=\"wl\">endometrial cancer</span></strong> (endometrial agonist); raloxifene does not<br>Tamoxifen efficacy ↓ by <span class=\"wl\">paroxetine</span>"
+        ],
+        [
+         "<u>Clomiphene</u>",
+         "<span class=\"wl\">clomiphene</span>",
+         "<strong>ER antagonist at <span class=\"wl\">hypothalamus</span> + <span class=\"wl\">anterior pituitary</span></strong>, partial agonist at the ovary → removes negative feedback → <strong>↑ GnRH and gonadotropins</strong>",
+         "⭐ <strong>Ovulation induction in <span class=\"wl\">infertility</span></strong>",
+         "—"
+        ],
+        [
+         "<u>Pure ER antagonist</u>",
+         "<span class=\"wl\">fulvestrant</span>",
+         "Full antagonism, no partial agonism",
+         "<strong>Advanced <span class=\"wl\">breast cancer</span></strong>",
+         "—"
+        ],
+        [
+         "<u>Aromatase inhibitors</u>",
+         "exemestane, formestane, anastrozole, letrozole",
+         "<strong>Block conversion of androgens → estrogens</strong>",
+         "<span class=\"wl\">breast cancer</span> and other ER-positive tumours",
+         "—"
+        ],
+        [
+         "<u>SPRMs</u>",
+         "<strong><span class=\"wl\">ulipristal</span></strong> (partial)<br><strong><span class=\"wl\">mifepristone</span></strong> (antagonist)",
+         "Spectrum from agonist to antagonist. Three sites: <strong>fibroids</strong> (↓ size by inhibiting proliferation + inducing apoptosis) · <strong>endometrium</strong> (stops bleeding; <strong>PAEC</strong> changes) · <strong>pituitary</strong> (amenorrhea)",
+         "Ulipristal: <strong>emergency contraception</strong>, <span class=\"wl\">endometriosis</span>, <span class=\"wl\">uterine fibroids</span><br>Mifepristone: <strong>termination of pregnancy</strong>, <span class=\"wl\">Cushing syndrome</span> (anti-glucocorticoid)",
+         "—"
+        ],
+        [
+         "<u>Androgen agonists</u>",
+         "<strong>testosterone esters</strong>",
+         "Replacement",
+         "<strong>Male <span class=\"wl\">hypogonadism</span></strong> (FDA) · female-to-male transition (<strong>non-FDA</strong>)",
+         "<strong>↓ libido, <span class=\"wl\">erectile dysfunction</span></strong>"
+        ],
+        [
+         "<u>Androgen receptor antagonists</u>",
+         "<strong>flutamide</strong>, bicalutamide, nilutamide, enzalutamide, <span class=\"wl\">spironolactone</span>",
+         "Block the androgen receptor",
+         "<strong>Metastatic <span class=\"wl\">prostate cancer</span></strong> (FDA) · <span class=\"wl\">hirsutism</span> (<strong>non-FDA</strong>)",
+         "as above"
+        ],
+        [
+         "<u>5α-reductase inhibitors</u>",
+         "<strong>finasteride</strong>, dutasteride",
+         "⭐ <strong>↓ conversion of testosterone → <span class=\"wl\">DHT</span></strong> — does <em>not</em> block the receptor and does <em>not</em> ↓ testosterone",
+         "<strong><span class=\"wl\">BPH</span></strong> (FDA) · alopecia (<strong>non-FDA</strong>)",
+         "as above"
+        ],
+        [
+         "<u>GnRH agonists</u>",
+         "leuprolide, goserelin, nafarelin, buserelin, triptorelin",
+         "<strong>Pulsatile → stimulates</strong> ovulation.<br><strong>Continuous → initial gonadotropin FLARE, then receptor desensitization → suppression</strong>",
+         "<span class=\"wl\">endometriosis</span> · <span class=\"wl\">uterine fibroids</span> · hormone-responsive cancers · <span class=\"wl\">infertility</span> (pulsatile)",
+         "<strong>Hypoestrogenic state</strong>: bone loss, hot flashes, night sweats, vaginal dryness, mood and sleep change<br>⚠ the <strong>flare</strong> can transiently worsen a hormone-driven tumour"
+        ],
+        [
+         "<u>GnRH antagonists</u>",
+         "cetrorelix, ganirelix, degarelix",
+         "<strong>Immediate receptor blockade — faster onset and NO flare</strong>, because no downregulation is required",
+         "Same, plus <strong>controlled ovarian stimulation in ART</strong>",
+         "Same hypoestrogenic/hypoandrogenic profile"
+        ],
+        [
+         "<u>NSAIDs</u>",
+         "<strong>diclofenac, ibuprofen, naproxen</strong> (non-selective)",
+         "<strong>↓ prostaglandin synthesis</strong> via non-selective COX inhibition → ↓ uterine cramping",
+         "<strong><span class=\"wl\">dysmenorrhea</span></strong>, and ↓ heavy bleeding",
+         "GI disturbance, renal damage<br>CI: severe <span class=\"wl\">kidney disease</span>, <span class=\"wl\">gastritis</span>/<span class=\"wl\">peptic ulcer</span>, <span class=\"wl\">coagulopathies</span>"
+        ],
+        [
+         "<u>Tranexamic acid</u>",
+         "<span class=\"wl\">TXA</span>",
+         "<strong>Antifibrinolytic</strong> — blocks the plasminogen lysine-binding site → no plasmin → clot not degraded. <strong>Symptomatic only</strong>",
+         "<strong><span class=\"wl\">menorrhagia</span></strong>",
+         "Headache, backache, cramps, GI distress<br>CI: <strong>history of <span class=\"wl\">VTE</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The whole hormone story in one line:</strong> estrogen and progestin are <strong>opposing on the endometrium</strong> — estrogen proliferates (↑ endometrial cancer), progestin opposes it (protective), which is the <em>only</em> reason a progestin is added to an estrogen — but they are <strong>synergic on the breast</strong>, both driving proliferation, which is why adding a progestin does not fix the breast-cancer risk.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Combined vs progestin-only — the contrast almost every question turns on</strong></p>",
+       "cols": [
+        "",
+        "Combined (CHC)",
+        "Progestin-only (POC)"
+       ],
+       "rows": [
+        [
+         "Main mechanism",
+         "<strong>central — suppress ovulation</strong>",
+         "⭐ <strong>local — mucus, tubal peristalsis, endometrium</strong>"
+        ],
+        [
+         "Ovulation blocked",
+         "reliably",
+         "<strong>~50% of cycles</strong> (DMPA injection excepted)"
+        ],
+        [
+         "Delivery",
+         "<strong>pill · patch · ring</strong>",
+         "<strong>mini-pill · IUS · injection · implant</strong>"
+        ],
+        [
+         "VTE risk",
+         "<strong>↑</strong>",
+         "<strong>not ↑</strong> (except injection; except drospirenone/cyproterone)"
+        ],
+        [
+         "Absolute CI",
+         "+ <strong>active thromboembolic disease</strong>",
+         "breast cancer · undiagnosed bleeding · severe liver failure"
+        ],
+        [
+         "Adherence",
+         "forgiving",
+         "<strong>unforgiving — mini-pill fails at >3 h late</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Emergency contraception</strong> — acts <em>before</em> implantation, by delaying ovulation and inhibiting follicular rupture.</p>",
+       "cols": [
+        "",
+        "<span class=\"wl\">LNG</span>",
+        "<span class=\"wl\">Ulipristal (UPA)</span>",
+        "<span class=\"wl\">Cu-IUD</span>"
+       ],
+       "rows": [
+        [
+         "Window",
+         "<strong>≤ 72 h</strong>",
+         "<strong>≤ 120 h (5 days)</strong>",
+         "—"
+        ],
+        [
+         "Class",
+         "progesterone receptor agonist",
+         "<strong>SPRM</strong>",
+         "non-hormonal"
+        ],
+        [
+         "Pregnancy rate 0-24 h",
+         "2.5%",
+         "<strong>0.9%</strong> (OR 0.35, <em>p</em> = 0.035)",
+         "most effective of the three"
+        ],
+        [
+         "Mechanism",
+         "suppress the LH surge",
+         "suppress the LH surge <strong>+ direct ovarian action preventing follicle rupture</strong>",
+         "inflammatory uterine environment; copper toxic to sperm and blastocyst"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Benefits of hormonal contraception</strong> — ↓ ovarian cysts · ↓ <strong>ovarian and endometrial cancer</strong> · ↓ PID · ↓ dysmenorrhea · ↓ endometriosis · lighter, predictable periods · improved acne and PMS. Weigh these against the risks of pregnancy itself, not against zero.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Contraindications to hormonal contraception</strong> — breast or reproductive-tract cancer · history of stroke/thromboembolic disease/MI/CAD · severe cirrhosis or liver tumour · <strong>undiagnosed abnormal bleeding</strong> · ⚠ <strong>hypertension is the only RELATIVE one on the list</strong> · caution if smoker <strong>>35 years</strong>.</p>"
+      }
+     ]
     },
     {
      "id": "repro-w4-05",
      "num": "05",
-     "name": "Abortion",
+     "name": "Vaginal Discharge",
      "hasNote": false
     },
     {
      "id": "repro-w4-06",
      "num": "06",
-     "name": "Vaginal Discharge",
+     "name": "Cervical Cancer Screening",
      "hasNote": false
     },
     {
      "id": "repro-w4-07",
      "num": "07",
-     "name": "Cervical Cancer Screening",
+     "name": "Public Health and STIs",
      "hasNote": false
     },
     {
      "id": "repro-w4-08",
      "num": "08",
-     "name": "Approach to and Pathology of a Pelvic Mass",
+     "name": "Approach to Sexually Transmitted Infections",
      "hasNote": false
     },
     {
      "id": "repro-w4-09",
      "num": "09",
-     "name": "Dilation and Curettage",
+     "name": "Early Pregnancy Complications - Spontaneous Abortion and Ectopic",
      "hasNote": false
     },
     {
      "id": "repro-w4-10",
      "num": "10",
-     "name": "PCOS",
+     "name": "Endometriosis",
      "hasNote": false
     },
     {
@@ -80,43 +292,25 @@
     {
      "id": "repro-w4-13",
      "num": "13",
-     "name": "Endometriosis",
+     "name": "Approach to Pathology of AUB & Pelvic Pain",
      "hasNote": false
     },
     {
      "id": "repro-w4-14",
      "num": "14",
-     "name": "Hysterectomy Approaches",
+     "name": "Vulvar Lesions and Vulvar Cancer",
      "hasNote": false
     },
     {
      "id": "repro-w4-15",
      "num": "15",
-     "name": "Miscarriage & Ectopic Pregnancy",
+     "name": "Abnormal Uterine Bleeding",
      "hasNote": false
     },
     {
      "id": "repro-w4-16",
      "num": "16",
-     "name": "Approach to Pathology of AUB & Pelvic Pain",
-     "hasNote": false
-    },
-    {
-     "id": "repro-w4-17",
-     "num": "17",
-     "name": "Abnormal Uterine Bleeding",
-     "hasNote": false
-    },
-    {
-     "id": "repro-w4-18",
-     "num": "18",
-     "name": "Clinical Approach to Menopause",
-     "hasNote": false
-    },
-    {
-     "id": "repro-w4-19",
-     "num": "19",
-     "name": "Post-Menopausal Bleeding",
+     "name": "Genetic Screening for Pregnancy in Canada",
      "hasNote": false
     },
     {
@@ -134,67 +328,97 @@
     {
      "id": "repro-w5-01",
      "num": "01",
-     "name": "Fertilization & Infertility",
+     "name": "Hysterectomy Approaches",
      "hasNote": false
     },
     {
      "id": "repro-w5-02",
      "num": "02",
-     "name": "Genetic Screening for Pregnancy in Canada",
+     "name": "Dilation and Curettage",
      "hasNote": false
     },
     {
      "id": "repro-w5-03",
      "num": "03",
-     "name": "Teratogenesis",
+     "name": "Clinical Approach to Menopause",
      "hasNote": false
     },
     {
      "id": "repro-w5-04",
      "num": "04",
-     "name": "Topics of Antenatal Care",
+     "name": "Approach to and Pathology of a Pelvic Mass",
      "hasNote": false
     },
     {
      "id": "repro-w5-05",
      "num": "05",
-     "name": "OB Care Providers",
+     "name": "Post-menopausal Woman Presenting with Bleeding",
      "hasNote": false
     },
     {
      "id": "repro-w5-06",
      "num": "06",
-     "name": "Care for Pregnancy in the First Trimester",
+     "name": "Pathology of the Breast",
      "hasNote": false
     },
     {
      "id": "repro-w5-07",
      "num": "07",
-     "name": "Approach to First Trimester Bleeding & Ultrasound",
+     "name": "Approach to Common Breast Problems",
      "hasNote": false
     },
     {
      "id": "repro-w5-08",
      "num": "08",
-     "name": "Pathology of 1st Trimester Bleeding",
+     "name": "OB Care Providers",
      "hasNote": false
     },
     {
      "id": "repro-w5-09",
      "num": "09",
-     "name": "Second Trimester Ultrasound",
+     "name": "Pathology of 1st Trimester Bleeding",
      "hasNote": false
     },
     {
      "id": "repro-w5-10",
      "num": "10",
-     "name": "Drugs Used in Gynecology",
+     "name": "Teratogenesis",
      "hasNote": false
     },
     {
      "id": "repro-w5-11",
      "num": "11",
+     "name": "Approach to First Trimester Bleeding & Ultrasound",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-12",
+     "num": "12",
      "name": "Hypertension in Pregnancy",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-13",
+     "num": "13",
+     "name": "Second Trimester Ultrasound",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-14",
+     "num": "14",
+     "name": "Topics of Antenatal Care",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-15",
+     "num": "15",
+     "name": "Care for Pregnancy in the First Trimester",
+     "hasNote": false
+    },
+    {
+     "id": "repro-w5-16",
+     "num": "16",
+     "name": "Approach to Sexual Health",
      "hasNote": false
     }
    ]
@@ -218,31 +442,31 @@
     {
      "id": "repro-w6-03",
      "num": "03",
-     "name": "Approach to Preterm Labor",
+     "name": "Approach to Preterm Labour",
      "hasNote": false
     },
     {
      "id": "repro-w6-04",
      "num": "04",
-     "name": "Process of Labor and Birth",
+     "name": "Process of Labour and Birth",
      "hasNote": false
     },
     {
      "id": "repro-w6-05",
      "num": "05",
-     "name": "Abnormal Labor",
+     "name": "Abnormal Labour",
      "hasNote": false
     },
     {
      "id": "repro-w6-06",
      "num": "06",
-     "name": "Hemorrhagic Schock",
+     "name": "Hemorrhagic Shock",
      "hasNote": false
     },
     {
      "id": "repro-w6-07",
      "num": "07",
-     "name": "Approach to Neonatal Care",
+     "name": "Lactation",
      "hasNote": false
     },
     {
@@ -254,7 +478,7 @@
     {
      "id": "repro-w6-09",
      "num": "09",
-     "name": "Lactation",
+     "name": "Approach to Neonatal Care",
      "hasNote": false
     }
    ]

@@ -5055,12 +5055,6 @@
     {
      "id": "endo-w3-10",
      "num": "10",
-     "name": "Breast Disorders",
-     "hasNote": false
-    },
-    {
-     "id": "endo-w3-10",
-     "num": "10",
      "name": "Polyendocrine Metabolic Ovarian Syndrome (PMOS)",
      "hasNote": true,
      "title": "Polyendocrine Metabolic Ovarian Syndrome (PMOS)",
@@ -5176,12 +5170,6 @@
        "html": "<p><strong>Myths the module asks you to dispel</strong> — <strong>TRUE</strong>: subfertility and early miscarriage · metabolic syndrome correlates · endometrial cancer · mood disorders. <strong>FALSE</strong>: cannot lose weight · constantly hungry · organic or vegan diet helps · <strong>cannot conceive</strong>. Every false one blames the patient; every true one is a real clinical risk. Counsel with <strong>\"no body shaming\"</strong> and <strong>meet patients where they are</strong>.</p>"
       }
      ]
-    },
-    {
-     "id": "endo-w3-11",
-     "num": "11",
-     "name": "Approach to Common Breast Problems",
-     "hasNote": false
     }
    ]
   }
