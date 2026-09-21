@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Encode every figure a chart embeds into assets/figures/, and write the manifest.
+"""Encode every figure a chart embeds into pom2/assets/figures/, and write the manifest.
 
 Purpose: turn the ![[embeds]] in the chart regions into shipped JPEGs.
 Author:  Noor Simsam
 Date:    2026-09-15
 Input:   the vault lecture notes (POM2_VAULT), read-only
-Output:  assets/figures/<hash>.jpg, and data/figures.json mapping vault name -> asset
+Output:  pom2/assets/figures/<hash>.jpg, and pom2/data/figures.json mapping vault name -> asset
 
 Unlike a question picture, a chart figure is NOT inlined as a data: URI. Three
 reasons, all specific to notes:

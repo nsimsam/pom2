@@ -1,0 +1,293 @@
+{
+ "block": "b1",
+ "weeks": [
+  {
+   "n": 1,
+   "label": "Week 1 - Physicianship, Ethics & Population Health",
+   "lectures": [
+    {
+     "id": "b1-w1-01",
+     "num": "01",
+     "name": "Introduction to MCC Clinical Presentations",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-02",
+     "num": "02",
+     "name": "Tasks of a Physician 1 - Patient-Centered Approach",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-03",
+     "num": "03",
+     "name": "Tasks of a Physician 2 - Approach to Diagnostics",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-04",
+     "num": "04",
+     "name": "Tasks of a Physician 3 - Approach to Psychological and Socioeconomic Factors",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-05",
+     "num": "05",
+     "name": "Tasks of a Physician 4 - Rational, Effective, and Evidence-Based Management Plan",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-06",
+     "num": "06",
+     "name": "Introduction to Epidemiology & Population Health",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-07",
+     "num": "07",
+     "name": "Introduction to Ethics",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-08",
+     "num": "08",
+     "name": "Tasks of a Physician - Applying Frameworks",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-09",
+     "num": "09",
+     "name": "History of Medicine",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w1-10",
+     "num": "10",
+     "name": "Cultural Competence in Health Care and the Care of Refugees",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "label": "Week 2 - Cells, Tissues & Homeostasis",
+   "lectures": [
+    {
+     "id": "b1-w2-01",
+     "num": "01",
+     "name": "Biochemistry",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-02",
+     "num": "02",
+     "name": "Osmosis",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-02",
+     "num": "02",
+     "name": "Physiology (Homeostasis)",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-03",
+     "num": "03",
+     "name": "Histology and Tissue Types",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-04",
+     "num": "04",
+     "name": "Epithelial Tissue",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-05",
+     "num": "05",
+     "name": "Muscle Tissue",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-06",
+     "num": "06",
+     "name": "Connective Tissue",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-07",
+     "num": "07",
+     "name": "Nerves",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-08",
+     "num": "08",
+     "name": "Cellular Communication",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-09",
+     "num": "09",
+     "name": "Anatomy",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-10",
+     "num": "10",
+     "name": "Body System Organization",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-11",
+     "num": "11",
+     "name": "Radiologic Images and Ultrasound",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w2-12",
+     "num": "12",
+     "name": "Evidence-Based Medicine",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "label": "Week 3 - Genetics, the Newborn & Nutrition",
+   "lectures": [
+    {
+     "id": "b1-w3-01",
+     "num": "01",
+     "name": "Child Development",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-02",
+     "num": "02",
+     "name": "Genetics",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-03",
+     "num": "03",
+     "name": "Examination of a Well Newborn & Infant",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-04",
+     "num": "04",
+     "name": "Family History and Pedigrees",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-05",
+     "num": "05",
+     "name": "Genetic Screening",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-06",
+     "num": "06",
+     "name": "Chromosomal Anomalies",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-07",
+     "num": "07",
+     "name": "Chromosome Disorder Testing",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-08",
+     "num": "08",
+     "name": "Developmental Milestones",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-09",
+     "num": "09",
+     "name": "Nutrition",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-10",
+     "num": "10",
+     "name": "Infant Nutrition",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w3-11",
+     "num": "11",
+     "name": "Nutritional Deficiencies",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "label": "Week 4 - Child & Adolescent Health, Immunity & Vaccines",
+   "lectures": [
+    {
+     "id": "b1-w4-01",
+     "num": "01",
+     "name": "Common Childhood Behaviors",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-02",
+     "num": "02",
+     "name": "Well Child and Adolescent Health Encounters",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-03",
+     "num": "03",
+     "name": "Social Pediatrics",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-04",
+     "num": "04",
+     "name": "School Age",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-05",
+     "num": "05",
+     "name": "ADHD Primer",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-06",
+     "num": "06",
+     "name": "Adolescent Development",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-07",
+     "num": "07",
+     "name": "The Child with a (Dis)Ability",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-08",
+     "num": "08",
+     "name": "Immune System",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-09",
+     "num": "09",
+     "name": "Introduction to Vaccines",
+     "hasNote": false
+    },
+    {
+     "id": "b1-w4-10",
+     "num": "10",
+     "name": "Vaccine Preventable Diseases in Canada",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}

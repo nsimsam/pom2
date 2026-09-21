@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Turn each chart in data/notes into a OneNote-ready HTML document.
+"""Turn each chart in pom2/data/notes into a OneNote-ready HTML document.
 
 OneNote pages are created by POSTing a *whole* HTML document to the Graph API:
 partial markup or plain text either fails silently or lands malformed. So this
@@ -15,7 +15,7 @@ Two things do not survive the trip and are handled here rather than lost:
     so the graph is flattened into its edges, one arrow per line. Structure is
     kept; the picture is not.
 
-Run after charts_from_vault.py, which is what puts the charts in data/notes.
+Run after charts_from_vault.py, which is what puts the charts in pom2/data/notes.
 """
 
 import io, json, os, re, sys
@@ -160,7 +160,7 @@ def main():
         os.makedirs(OUT)
     written = []
     for slug in BLOCKS:
-        path = "data/notes/%s.json" % slug
+        path = "pom2/data/notes/%s.json" % slug
         if not os.path.exists(path):
             continue
         data = json.load(io.open(path, encoding="utf-8"))

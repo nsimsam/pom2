@@ -1,4 +1,4 @@
-/* Tab strip for a PoM 2 block page.
+/* Tab strip for a course block page.
 
    Notes and questions are two views of the same week, so they share a page.
    The block's question JSON runs to hundreds of kilobytes, so neither half is
@@ -58,7 +58,8 @@
     /* quiz.js used to write this, but it only runs once questions are booted -
        landing on the notes tab would have left the masthead blank */
     byId("m-eyebrow").textContent =
-      "Schulich PoM 2 · Block " + BLOCK.n + " · Weeks " + BLOCK.weeks;
+      "Schulich " + (BLOCK.course || "PoM 2") + " · Block " + BLOCK.n +
+      " · Weeks " + BLOCK.weeks;
 
     Object.keys(TABS).forEach(function (k) {
       byId(TABS[k].tab).addEventListener("click", function () {

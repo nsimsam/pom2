@@ -21,11 +21,20 @@
     box-sizing:border-box;
 }
 
+/* The one type lever for the whole portal. Ninety-four of the ninety-five
+   font sizes in fom.css are in rem, and rem resolves against the ROOT element,
+   not against body - so this is what scales the portal, and setting a size on
+   body would have moved almost nothing. Nudge this and every size, gap and
+   rule that is expressed in rem follows in proportion. */
+html{
+    font-size:17px;
+}
+
 body{
     background:var(--bg);
     color:var(--text);
     font-family:var(--sans);
-    font-size:16px;
+    font-size:1rem;
     line-height:1.7;
     -webkit-font-smoothing:antialiased;
 }

@@ -868,6 +868,21 @@
 
 .block-card:hover{transform:translateY(-2px);border-color:var(--hue);}
 
+/* A course with nothing behind it yet. It is a div rather than a link, so it
+   cannot be clicked into an empty page, and it is dimmed rather than hidden:
+   the hub is meant to show the shape of pre-clerkship, gaps included, the same
+   way the notes tab still lists a lecture nobody has written up. */
+.block-card.is-empty{
+    background:transparent;
+    border-style:dashed;
+    border-top-style:solid;
+    opacity:.62;
+}
+
+.block-card.is-empty:hover{transform:none;border-color:var(--border);}
+
+.block-card.is-empty .tally span{font-style:italic;}
+
 .block-card .bmeta{
     font-size:.72rem;
     font-weight:600;

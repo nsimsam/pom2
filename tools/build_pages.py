@@ -1,73 +1,23 @@
 # -*- coding: utf-8 -*-
-"""Regenerate the five PoM 2 block pages.
+"""Regenerate every course's block pages from one template.
 
-Every page is the same shell, so it is generated rather than hand-copied: the
-block's name, blurb, accent and two counts are the only things that differ.
-Blurbs and accents are read back out of the pages being replaced so nothing
-written by hand is lost.
+Purpose: build one page per block, for every course in the portal, so the four
+         courses cannot drift into four layouts.
+Author:  Noor Sims
+Date:    2026-09-21
+Input:   tools/portal.py (the course roster), each course's data/, and the page
+         being replaced (for its blurb and accent, so hand edits survive)
+Output:  <course>/<block>.html
+
+Run from the repo root. A course with no blocks yet is skipped; its landing page
+still renders from build_index.py, saying it is empty.
 """
 
-import hashlib, io, json, os, re
+import io, json, os, re, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import portal
 
-def ver(name):
-    """<name>?v=<hash of its contents>.
-
-    GitHub Pages serves these with Cache-Control: max-age=600, so for ten
-    minutes after a push a browser will happily keep last deploy's stylesheet
-    and paint the new markup with the old rules. Stamping the content hash into
-    the URL means a changed asset is simply a different URL and lands at once.
-    An unchanged one keeps its hash and stays cached.
-
-    The hash is read off the file on disk, so re-run this after editing any of
-    the hand-maintained css or js, or the pages will keep pointing at the
-    previous hash. Harmless when it happens, since the query string is ignored
-    by the server, but it stops busting the cache.
-    """
-    return "%s?v=%s" % (name, digest(name))
-
-
-def digest(name):
-    """The content hash alone, for a URL this file does not build itself.
-
-    data/questions/<slug>.json and data/notes/<slug>.json are fetched by
-    quiz.js and notes.js at a bare path, so they were the one pair of files
-    the cache-busting above never covered: a browser that had the old copy
-    kept serving it, and a hard refresh on the page did not touch it, because
-    the page is not what went stale. Stamping the hash into window.QUIZ_BLOCK
-    lets those two fetches carry the same treatment as the assets.
-    """
-    return hashlib.md5(io.open(name, "rb").read()).hexdigest()[:8]
-
-BLOCKS = [
-    # slug,  n, name,             weeks
-    ("endo",  1, u"Endocrinology",   u"1–3"),
-    ("repro", 2, u"Reproduction",    u"4–6"),
-    ("msk",   3, u"Musculoskeletal", u"7–11"),
-    ("neuro", 4, u"Neurology",       u"12–16"),
-    ("psych", 5, u"Psychiatry",      u"17–20"),
-]
-
-# the portal ships without analytics; drop your own snippet in here if you want it
-CF = ""
-
-FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-         '<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;'
-         '9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">')
-
-# room for a nav back to whatever site you hang the portal off
-PILLNAV = """<nav class="pill-nav">
-<a href="https://noorsimsam.com/#top">Noor</a>
-<a href="https://noorsimsam.com/writing.html">Writing</a>
-<a href="https://noorsimsam.com/#projects">Projects</a>
-</nav>"""
-
-FOOTER = ("<footer>\nGrown by Noor &#127793; &middot; "
-          "<a href=\"https://github.com/nsimsam/pom2\" target=\"_blank\" rel=\"noopener noreferrer\">"
-          "Source on GitHub</a>\n</footer>")
-
-# said once here, rendered into every block page
 HOWTO = """<details class="howto">
 <summary>You can save your progress</summary>
 <div class="body">
@@ -77,18 +27,47 @@ repository, and nobody else can see it, not even me.</p>
 <p>That also means it does not follow you. A different browser, a different laptop, or
 clearing your site data all start from zero.</p>
 <p><strong>To carry it with you:</strong> press <strong>Download all my progress</strong> in
-the panel on the left and keep the JSON file it writes. One file holds every block, not only
-this one, and it can be pressed from any of them. On the other machine, open any block and
+the panel on the left and keep the JSON file it writes. One file holds every block of this
+course, and it can be pressed from any of them. On the other machine, open any block and
 press <strong>Restore from a file</strong> to put all of it back at once. A restore only ever
 adds and updates, so an out of date file cannot wipe out newer answers. Doing that now and
 then is also the only backup there is.</p>
 </div>
 </details>"""
 
+# Used only when a page does not exist yet. After that the page itself is the
+# source of truth for these three, so anything reworded by hand survives.
+SEED = {
+    ("fom", "b1"): (u"Weeks 1 to 4: what a physician actually does, the ethics and "
+                    u"epidemiology underneath it, then cells and tissues, genetics and the "
+                    u"newborn, and the health of children and adolescents.",
+                    u"Practice questions for weeks 1 to 4 of Foundations of Medicine.",
+                    u"--q-accent:#8a5320;--q-accent-soft:#f6e8d8;--q-accent-ink:#70431a;"),
+    ("fom", "b2"): (u"Weeks 5 to 8: how the body holds its fluids and pressure steady, what "
+                    u"goes wrong when growth stops obeying, how ageing changes the encounter, "
+                    u"and the pharmacology that runs underneath all of it.",
+                    u"Practice questions for weeks 5 to 8 of Foundations of Medicine.",
+                    u"--q-accent:#2f6b4f;--q-accent-soft:#e2efe9;--q-accent-ink:#275844;"),
+    ("fom", "b3"): (u"Weeks 9 to 12: the anemias, then bleeding and clotting, then the white "
+                    u"cells and the malignancies that arise from them, ending in lymphoma and "
+                    u"myeloma.",
+                    u"Practice questions for weeks 9 to 12 of Foundations of Medicine.",
+                    u"--q-accent:#9c2b2b;--q-accent-soft:#f7dedb;--q-accent-ink:#802222;"),
+    ("fom", "b4"): (u"Weeks 13 to 15: fever and the microbes behind it, how infection travels "
+                    u"and what is used against it, and what happens when the immune system is "
+                    u"absent, overreacting, or turned on its owner.",
+                    u"Practice questions for weeks 13 to 15 of Foundations of Medicine.",
+                    u"--q-accent:#3d4f8f;--q-accent-soft:#e5e8f5;--q-accent-ink:#333f75;"),
+}
 
-def existing(slug):
-    """pull the blurb and accent trio out of the page we are about to replace"""
-    p = "%s.html" % slug
+FAVICON = {"fom": ("FM", "1f4e5f"), "pom2": ("P2", "84223b"),
+           "pom1": ("P1", "6b5a2f"), "t2c": ("T2C", "3f4a5a")}
+
+
+def existing(course, slug):
+    p = os.path.join(course["slug"], "%s.html" % slug)
+    if not os.path.exists(p):
+        return SEED[(course["slug"], slug)]
     s = io.open(p, encoding="utf-8").read()
     lead = re.search(r'<p class="lead">\s*(.*?)\s*</p>', s, re.S).group(1)
     desc = re.search(r'<meta name="description" content="(.*?)">', s, re.S).group(1)
@@ -96,17 +75,19 @@ def existing(slug):
     return lead, desc, accent
 
 
-def counts(slug):
-    qs = json.load(io.open("data/questions/%s.json" % slug, encoding="utf-8"))
-    nt = json.load(io.open("data/notes/%s.json" % slug, encoding="utf-8"))
+def block_counts(course, slug):
+    d = course["slug"]
+    qs = json.load(io.open(os.path.join(d, "data", "questions", "%s.json" % slug),
+                           encoding="utf-8"))
+    nt = json.load(io.open(os.path.join(d, "data", "notes", "%s.json" % slug),
+                           encoding="utf-8"))
     lects = [l for w in nt["weeks"] for l in w["lectures"]]
-    written = len([l for l in lects if l.get("hasNote")])
-    return len(qs), written, len(lects)
+    return len(qs), len([l for l in lects if l.get("hasNote")]), len(lects)
 
 
-def blocknav(active):
-    rows = ['<a class="home" href="index.html">All blocks</a>']
-    for slug, n, name, _w in BLOCKS:
+def blocknav(course, active):
+    rows = ['<a class="home" href="../index.html">All courses</a>']
+    for slug, n, name, _w in course["blocks"]:
         cls = ' class="here"' if slug == active else ''
         rows.append('<a href="%s.html"%s>%d &middot; %s</a>' % (slug, cls, n, name))
     return "\n".join(rows)
@@ -117,14 +98,14 @@ PAGE = u"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{name} &middot; PoM 2</title>
+<title>{name} &middot; {course}</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2384223b'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>P2</text></svg>">
+{favicon}
 
 {fonts}
 <link rel="stylesheet" href="{base_css}">
-<link rel="stylesheet" href="{pom2_css}">
+<link rel="stylesheet" href="{portal_css}">
 <style>
 :root{{{accent}}}
 </style>
@@ -265,11 +246,11 @@ saved in one go. Print it, annotate it, keep it.</p>
 </div>
 
 <script>
-window.QUIZ_BLOCK = {{"slug": "{slug}", "n": {n}, "name": "{name}", "weeks": "{weeks}", "qv": "{qv}", "nv": "{nv}"}};
+window.QUIZ_BLOCK = {block_json};
 </script>
 <script src="{quiz_js}"></script>
 <script src="{notes_js}"></script>
-<script src="{pom2_js}"></script>
+<script src="{portal_js}"></script>
 
 {footer}
 
@@ -281,20 +262,32 @@ window.QUIZ_BLOCK = {{"slug": "{slug}", "n": {n}, "name": "{name}", "weeks": "{w
 
 
 def main():
-    for slug, n, name, weeks in BLOCKS:
-        lead, desc, accent = existing(slug)
-        q, written, lectures = counts(slug)
-        html = PAGE.format(base_css=ver('base.css'), pom2_css=ver('pom2.css'),
-                           quiz_js=ver('quiz.js'), notes_js=ver('notes.js'),
-                           pom2_js=ver('pom2.js'), slug=slug, n=n, name=name, weeks=weeks, lead=lead, desc=desc,
-                           qv=digest("data/questions/%s.json" % slug),
-                           nv=digest("data/notes/%s.json" % slug),
-                           accent=accent, fonts=FONTS, cf=CF, footer=FOOTER,
-                           pillnav=PILLNAV, howto=HOWTO,
-                           blocknav=blocknav(slug), questions=q,
-                           written=written, lectures=lectures)
-        io.open("%s.html" % slug, "w", encoding="utf-8", newline="\n").write(html)
-        print("%-6s %2d/%d notes  %3d questions" % (slug, written, lectures, q))
+    for course in portal.COURSES:
+        for slug, n, name, weeks in course["blocks"]:
+            lead, desc, accent = existing(course, slug)
+            q, written, lectures = block_counts(course, slug)
+            d = course["slug"]
+            cfg = {
+                "slug": slug, "n": n, "name": name, "weeks": weeks,
+                "course": course["short"], "store": course["store"],
+                "families": course["families"],
+                "qv": portal.digest(os.path.join(d, "data", "questions", "%s.json" % slug)),
+                "nv": portal.digest(os.path.join(d, "data", "notes", "%s.json" % slug)),
+            }
+            label, fill = FAVICON[d]
+            html = PAGE.format(
+                base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
+                quiz_js=portal.asset("quiz.js"), notes_js=portal.asset("notes.js"),
+                portal_js=portal.asset("portal.js"),
+                name=name, course=course["short"], lead=lead, desc=desc, accent=accent,
+                fonts=portal.FONTS, cf=portal.CF, footer=portal.footer(),
+                pillnav=portal.pillnav(1), howto=HOWTO, favicon=portal.favicon(label, fill),
+                blocknav=blocknav(course, slug), questions=q,
+                written=written, lectures=lectures,
+                block_json=json.dumps(cfg, ensure_ascii=False))
+            io.open(os.path.join(d, "%s.html" % slug), "w",
+                    encoding="utf-8", newline="\n").write(html)
+            print("%-5s %-6s %2d/%d notes  %4d questions" % (d, slug, written, lectures, q))
 
 
 if __name__ == "__main__":

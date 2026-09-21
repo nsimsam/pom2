@@ -1,4 +1,57 @@
-<!DOCTYPE html>
+# -*- coding: utf-8 -*-
+"""Build the portal's front door: one card per course, with real counts.
+
+Purpose: the root landing page of the pre-clerkship portal.
+Author:  Noor Sims
+Date:    2026-09-21
+Input:   tools/portal.py and each course's data/
+Output:  index.html
+
+Run from the repo root, last. A course with nothing in it still gets a card,
+greyed and unlinked, saying so - the portal shows the gap rather than hiding it,
+which is the same reason a lecture with no note still renders on the notes tab.
+"""
+
+import io, os, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import portal
+
+
+def cards():
+    out = []
+    for c in portal.COURSES:
+        q, w, l = portal.counts(c)
+        if not c["blocks"]:
+            out.append(
+                u'<div class="block-card is-empty" style="--hue:%s">\n'
+                u'<p class="bmeta">%s</p>\n'
+                u'<h2>%s</h2>\n<p>%s</p>\n'
+                u'<span class="tally"><span>not built yet</span></span>\n'
+                u'</div>' % (c["accent"], c["year"], c["name"], c["blurb"]))
+            continue
+        notes = (u'<span><b>%d</b> of %d lecture notes</span>' % (w, l)) if l else u''
+        out.append(
+            u'<a class="block-card" href="%s/index.html" style="--hue:%s">\n'
+            u'<p class="bmeta">%s &middot; %d blocks</p>\n'
+            u'<h2>%s</h2>\n<p>%s</p>\n'
+            u'<span class="tally">\n%s\n'
+            u'<span><b>%s</b> practice questions</span>\n'
+            u'</span>\n'
+            u'</a>' % (c["slug"], c["accent"], c["year"], len(c["blocks"]),
+                       c["name"], c["blurb"], notes, "{:,}".format(q)))
+    return "\n".join(out)
+
+
+def totals():
+    q = w = l = 0
+    for c in portal.COURSES:
+        a, b, d = portal.counts(c)
+        q += a; w += b; l += d
+    return q, w, l
+
+
+TEMPLATE = u"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,17 +59,15 @@
 <title>Pre-clerkship</title>
 <meta name="description" content="Notes and practice questions for the pre-clerkship years at Schulich: Foundations of Medicine, Principles of Medicine 1 and 2, and Transition to Clerkship.">
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f4e5f'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>PC</text></svg>">
+{favicon}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="base.css?v=85d1904d">
-<link rel="stylesheet" href="portal.css?v=b3052c63">
+{fonts}
+<link rel="stylesheet" href="{base_css}">
+<link rel="stylesheet" href="{portal_css}">
 <style>
-:root{--q-accent:#1f4e5f;--q-accent-soft:#dfecf0;--q-accent-ink:#193f4d;}
+:root{{--q-accent:#1f4e5f;--q-accent-soft:#dfecf0;--q-accent-ink:#193f4d;}}
 </style>
-
+{cf}
 </head>
 <body>
 
@@ -31,7 +82,7 @@
 <div class="page-hero">
 <h1>Pre-clerkship.</h1>
 <p>
-3,042 practice questions across the pre-clerkship years, filed by week and by where
+{total} practice questions across the pre-clerkship years, filed by week and by where
 they came from, with a <strong>notes</strong> tab per course listing every lecture in it
 so what is written up and what is not are both visible. Progress saves per course, on
 your own device.
@@ -39,36 +90,7 @@ your own device.
 </div>
 
 <div class="block-grid">
-<a class="block-card" href="fom/index.html" style="--hue:#1f4e5f">
-<p class="bmeta">Year 1 &middot; 4 blocks</p>
-<h2>Foundations of Medicine</h2>
-<p>The first fifteen weeks: what a physician does, then the body from cells up, then blood, then infection and immunity.</p>
-<span class="tally">
-<span><b>0</b> of 158 lecture notes</span>
-<span><b>1,979</b> practice questions</span>
-</span>
-</a>
-<div class="block-card is-empty" style="--hue:#6b5a2f">
-<p class="bmeta">Year 1</p>
-<h2>Principles of Medicine 1</h2>
-<p>The second half of first year, system by system.</p>
-<span class="tally"><span>not built yet</span></span>
-</div>
-<a class="block-card" href="pom2/index.html" style="--hue:#84223b">
-<p class="bmeta">Year 2 &middot; 5 blocks</p>
-<h2>Principles of Medicine 2</h2>
-<p>The five blocks of second year, with a written note for every lecture that has one and a coverage map for the rest.</p>
-<span class="tally">
-<span><b>50</b> of 219 lecture notes</span>
-<span><b>1,063</b> practice questions</span>
-</span>
-</a>
-<div class="block-card is-empty" style="--hue:#3f4a5a">
-<p class="bmeta">Year 2</p>
-<h2>Transition to Clerkship</h2>
-<p>The bridge into clerkship at the end of second year.</p>
-<span class="tally"><span>not built yet</span></span>
-</div>
+{cards}
 </div>
 
 <div class="prose">
@@ -131,11 +153,27 @@ progress</strong> and <strong>Restore from a file</strong> to move a JSON file b
 
 </div>
 
-<footer>
-Grown by Noor &#127793;
-</footer>
+{footer}
 
 </div>
 
 </body>
 </html>
+"""
+
+
+def main():
+    q, w, l = totals()
+    html = TEMPLATE.format(
+        favicon=portal.favicon("PC", "1f4e5f"), fonts=portal.FONTS,
+        base_css="base.css?v=" + portal.digest("base.css"),
+        portal_css="portal.css?v=" + portal.digest("portal.css"),
+        cf=portal.CF, total="{:,}".format(q), cards=cards(), footer=portal.footer())
+    io.open("index.html", "w", encoding="utf-8", newline="\n").write(html)
+    print("index.html: %d courses, %d built, %d questions, %d/%d lecture notes"
+          % (len(portal.COURSES),
+             len([c for c in portal.COURSES if c["blocks"]]), q, w, l))
+
+
+if __name__ == "__main__":
+    main()

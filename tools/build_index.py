@@ -1,103 +1,109 @@
 # -*- coding: utf-8 -*-
-"""Regenerate index.html so the block cards always state the real counts."""
+"""Regenerate each course's landing page so its cards state the real counts.
 
-import hashlib, io, json, re
+Purpose: build one landing page per course from the shared shell, keeping the
+         hand-written prose that already sits on the page.
+Author:  Noor Sims
+Date:    2026-09-21
+Input:   tools/portal.py, each course's data/ and block pages, and the landing
+         page being replaced (for its hero blurb and its prose section)
+Output:  <course>/index.html
+
+Run from the repo root, after build_pages.py. The prose under each landing page
+is read back out of the page being replaced rather than held here, for the same
+reason the block pages keep their own blurbs: it is written by hand, it is long,
+and a rebuild must not quietly revert it. A course with no page yet gets the
+seed below, which is deliberately thin - it is a placeholder saying the course
+is not built, not a pretence that it is.
+"""
+
+import io, os, re, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import portal
+
+FAVICON = {"fom": ("FM", "1f4e5f"), "pom2": ("P2", "84223b"),
+           "pom1": ("P1", "6b5a2f"), "t2c": ("T2C", "3f4a5a")}
+
+EMPTY_PROSE = u"""<div class="prose">
+
+<details class="fold" open>
+<summary>Nothing here yet</summary>
+<div class="body">
+
+<p>
+This course has no blocks written up. It is listed so the shape of pre-clerkship
+is visible from the hub rather than only the parts that happen to be done, which
+is the same habit the notes tab keeps: a lecture with no note still appears,
+greyed, so you can see what is missing.
+</p>
+
+</div>
+</details>
+
+</div>"""
 
 
-def ver(name):
-    """<name>?v=<hash of its contents>.
-
-    GitHub Pages serves these with Cache-Control: max-age=600, so for ten
-    minutes after a push a browser will happily keep last deploy's stylesheet
-    and paint the new markup with the old rules. Stamping the content hash into
-    the URL means a changed asset is simply a different URL and lands at once.
-    An unchanged one keeps its hash and stays cached.
-
-    The hash is read off the file on disk, so re-run this after editing any of
-    the hand-maintained css or js, or the pages will keep pointing at the
-    previous hash. Harmless when it happens, since the query string is ignored
-    by the server, but it stops busting the cache.
-    """
-    h = hashlib.md5(io.open(name, "rb").read()).hexdigest()[:8]
-    return "%s?v=%s" % (name, h)
-
-BLOCKS = [
-    ("endo",  1, u"Endocrinology",   u"1–3"),
-    ("repro", 2, u"Reproduction",    u"4–6"),
-    ("msk",   3, u"Musculoskeletal", u"7–11"),
-    ("neuro", 4, u"Neurology",       u"12–16"),
-    ("psych", 5, u"Psychiatry",      u"17–20"),
-]
+def part(page, opener, closer="\n</div>"):
+    i = page.index(opener)
+    j = page.index(closer, i)
+    return page[i:j + len(closer)]
 
 
-def facts(slug):
-    page = io.open("%s.html" % slug, encoding="utf-8").read()
-    blurb = re.search(r'<p class="lead">\s*(.*?)\s*</p>', page, re.S).group(1)
-    hue = re.search(r'--q-accent:(#\w+);', page).group(1)
-    qs = json.load(io.open("data/questions/%s.json" % slug, encoding="utf-8"))
-    nt = json.load(io.open("data/notes/%s.json" % slug, encoding="utf-8"))
-    lects = [l for w in nt["weeks"] for l in w["lectures"]]
-    written = len([l for l in lects if l.get("hasNote")])
-    return blurb, hue, len(qs), written, len(lects)
+def existing(course):
+    """(hero blurb, prose block) from the page being replaced, or the seed."""
+    p = os.path.join(course["slug"], "index.html")
+    if not os.path.exists(p):
+        return course["blurb"], EMPTY_PROSE
+    s = io.open(p, encoding="utf-8").read()
+    hero = re.search(r'<div class="page-hero">\s*<h1>.*?</h1>\s*(.*?)\s*</div>', s, re.S)
+    prose = part(s, '<div class="prose">')
+    return (hero.group(1) if hero else course["blurb"]), prose
 
 
-def cards():
-    """both halves get the same weight on the card - the block is notes AND
-       questions, and leading with the question count made it read as a quiz"""
+def cards(course):
+    """Both halves get the same weight: a block is notes AND questions, and
+       leading with the question count made it read as a quiz."""
     out = []
-    for slug, n, name, weeks in BLOCKS:
-        blurb, hue, q, written, lects = facts(slug)
-        notes = "<b>%d</b> of %d lecture notes" % (written, lects)
+    for slug, n, name, weeks in course["blocks"]:
+        page = io.open(os.path.join(course["slug"], "%s.html" % slug),
+                       encoding="utf-8").read()
+        blurb = re.search(r'<p class="lead">\s*(.*?)\s*</p>', page, re.S).group(1)
+        hue = re.search(r'--q-accent:(#\w+);', page).group(1)
+        import json
+        qs = json.load(io.open(os.path.join(course["slug"], "data", "questions",
+                                            "%s.json" % slug), encoding="utf-8"))
+        nt = json.load(io.open(os.path.join(course["slug"], "data", "notes",
+                                            "%s.json" % slug), encoding="utf-8"))
+        lects = [l for w in nt["weeks"] for l in w["lectures"]]
+        written = len([l for l in lects if l.get("hasNote")])
         out.append(
             u'<a class="block-card" href="%s.html" style="--hue:%s">\n'
             u'<p class="bmeta">Block %d &middot; Weeks %s</p>\n'
             u'<h2>%s</h2>\n<p>%s</p>\n'
             u'<span class="tally">\n'
-            u'<span>%s</span>\n'
+            u'<span><b>%d</b> of %d lecture notes</span>\n'
             u'<span><b>%d</b> practice questions</span>\n'
             u'</span>\n'
-            u'</a>' % (slug, hue, n, weeks, name, blurb, notes, q))
+            u'</a>' % (slug, hue, n, weeks, name, blurb, written, len(lects), len(qs)))
     return "\n".join(out)
 
-
-def totals():
-    tq = tw = tl = 0
-    for slug, _n, _name, _w in BLOCKS:
-        _b, _h, q, w, l = facts(slug)
-        tq += q; tw += w; tl += l
-    return tq, tw, tl
-
-
-# the portal ships without analytics; drop your own snippet in here if you want it
-CF = ""
-
-FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-         '<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;'
-         '9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">')
-
-# room for a nav back to whatever site you hang the portal off
-PILLNAV = """<nav class="pill-nav">
-<a href="https://noorsimsam.com/#top">Noor</a>
-<a href="https://noorsimsam.com/writing.html">Writing</a>
-<a href="https://noorsimsam.com/#projects">Projects</a>
-</nav>"""
 
 TEMPLATE = u"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PoM 2</title>
-<meta name="description" content="Notes and practice questions for the five blocks of Schulich's second Principles of Medicine year.">
+<title>{short}</title>
+<meta name="description" content="{desc}">
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2384223b'/><text x='16' y='23' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23ffffff' text-anchor='middle'>P2</text></svg>">
+{favicon}
 
 {fonts}
 <link rel="stylesheet" href="{base_css}">
-<link rel="stylesheet" href="{pom2_css}">
+<link rel="stylesheet" href="{portal_css}">
 <style>
-:root{{--q-accent:#84223b;--q-accent-soft:#f5cdd2;--q-accent-ink:#6d1b31;}}
+:root{{--q-accent:{accent};--q-accent-soft:#e6e6e6;--q-accent-ink:{accent};}}
 </style>
 {cf}
 </head>
@@ -108,136 +114,17 @@ TEMPLATE = u"""<!DOCTYPE html>
 {pillnav}
 
 <div class="page-hero">
-<h1>PoM 2.</h1>
-<p>
-Each block has <strong>notes</strong> and <strong>practice questions</strong>, week by week.
-Notes save to PDF if you would rather annotate them yourself, and practice question progress can be saved.
-</p>
+<h1>{short}.</h1>
+{hero}
 </div>
 
 <div class="block-grid">
 {cards}
 </div>
 
-<div class="prose">
+{prose}
 
-<details class="fold">
-<summary>Where the notes come from</summary>
-<div class="body">
-
-<p>
-<strong>Lecture slides</strong> + <strong>transcription</strong> +
-<strong>Maggie&rsquo;s notes</strong> = <strong>Nicole&rsquo;s-style notes</strong>.
-</p>
-
-</div>
-</details>
-
-<details class="fold">
-<summary>Where the practice questions come from</summary>
-<div class="body">
-
-<p>
-No AI-generated trivia questions. Every question traces back to a source in our
-curriculum.
-</p>
-
-<ul>
-<li><strong>Course modules.</strong> Elentra knowledge checks, the concept checks in the lecture slides, and the weekly quizzes.</li>
-<li><strong>Pre-Clerkship Workbook.</strong> The 2023 student bank handed down through the Schulich classes of 2015&ndash;2025. Peer-written, so its errors are flagged on the question.</li>
-<li><strong>Meds 2029.</strong> Questions written from the patient cases in the modules, the DSSGs and the in-class sessions.</li>
-<li><strong>Schulich Reviews.</strong> Both the practice questions and the summary content. TBD.</li>
-</ul>
-
-<p>
-What they are written to, from the syllabus:
-</p>
-
-<blockquote>
-<p>
-Most of the questions will involve clinical scenarios which will assess clinical decision
-making around: <strong>localization, differential diagnosis, ordering appropriate
-investigations, or management</strong> of the patient. The questions will not be simple
-recall questions, and the student will need to apply foundational knowledge to clinical
-scenarios.
-</p>
-</blockquote>
-
-<p>
-And on integrating across blocks:
-</p>
-
-<blockquote>
-<p>
-As outlined in the syllabus, approximately <strong>20% of Progress Test #2</strong> will
-consist of <strong>integration questions</strong>. These may require you to draw on
-foundational knowledge from <strong>FOM, P1, and the first half of P2</strong> to reason
-through a <strong>new MCC-style clinical presentation</strong>. The purpose is not to
-re-examine previous blocks, but to assess your ability to <strong>apply previously learned
-knowledge in a new clinical context</strong>.
-</p>
-<p>
-When preparing, think broadly about <strong>clinical presentations</strong> rather than
-focusing only on the body system currently being taught. You should be able to
-<strong>integrate knowledge across systems</strong> and consider appropriate
-<strong>differential diagnoses</strong>. Examples include <strong>abdominal pain</strong>,
-<strong>shortness of breath</strong>, <strong>cardiac rhythm disturbances</strong>,
-<strong>anemia</strong>, <strong>pulmonary embolism</strong>, and <strong>deep vein
-thrombosis</strong>.
-</p>
-</blockquote>
-
-</div>
-</details>
-
-<details class="fold">
-<summary>Open source: customize or improve</summary>
-<div class="body">
-
-<p>
-The portal is open source at
-<a href="https://github.com/nsimsam/pom2" target="_blank" rel="noopener noreferrer">github.com/nsimsam/pom2</a>.
-</p>
-
-<p>
-The beauty of open-source is anyone can access the work, improve it or customize it to their
-needs. It&rsquo;s crowdsourced expertise that creates user-vetted products.
-</p>
-
-<p>
-<strong>To customize it.</strong> Anything here can change, from the blocks it covers and
-the questions in them to the wording, the layout and the tooling around it. Paste this into
-Claude Code:
-</p>
-
-<p class="prompt">Clone https://github.com/nsimsam/pom2 and read the README so you understand how the portal is built. I want to make it mine: [what you want changed, for example: cut it down to the blocks I am on, import my own lecture notes and questions, restyle the pages, or build an Anki deck from only the questions I got wrong]. Work out which files that touches, make the change, and rebuild the pages with the scripts in tools/.</p>
-
-<p>
-You can also just take the material out. The questions and the notes are both plain JSON under
-<code>data/</code>, so you can extract either one into whatever you already study from. Keep in
-mind they are being updated week by week, so what you pull is a snapshot of that week.
-</p>
-
-<p>
-<strong>To improve it.</strong> Suggest a feature, fix an answer you think is wrong, or send
-in questions of your own. You need a GitHub account; Claude Code can do the rest. Paste
-this into it:
-</p>
-
-<p class="prompt">Clone https://github.com/nsimsam/pom2 and read the README so you understand how the portal is built. I want to contribute: [what you are adding, for example: the questions from the week 8 MSK module, a correction to an answer, or a feature]. Match the format the existing files use, rebuild the pages with the scripts in tools/, then create a branch, commit, and open a pull request against nsimsam/pom2 explaining what changed and why.</p>
-
-<p>
-Corrections and questions are the two most useful things to send.
-</p>
-
-</div>
-</details>
-
-</div>
-
-<footer>
-Grown by Noor &#127793; &middot; <a href="https://github.com/nsimsam/pom2" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
-</footer>
+{footer}
 
 </div>
 
@@ -247,10 +134,20 @@ Grown by Noor &#127793; &middot; <a href="https://github.com/nsimsam/pom2" targe
 
 
 def main():
-    tq, tw, tl = totals()
-    html = TEMPLATE.format(base_css=ver('base.css'), pom2_css=ver('pom2.css'), fonts=FONTS, cf=CF, cards=cards(), pillnav=PILLNAV)
-    io.open("index.html", "w", encoding="utf-8", newline="\n").write(html)
-    print("index.html: %d/%d lectures written, %d questions" % (tw, tl, tq))
+    for course in portal.COURSES:
+        hero, prose = existing(course)
+        label, fill = FAVICON[course["slug"]]
+        html = TEMPLATE.format(
+            short=course["short"], desc=course["blurb"],
+            favicon=portal.favicon(label, fill), fonts=portal.FONTS,
+            base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
+            accent=course["accent"], cf=portal.CF, pillnav=portal.pillnav(1),
+            hero=hero, cards=cards(course) or "", prose=prose, footer=portal.footer())
+        io.open(os.path.join(course["slug"], "index.html"), "w",
+                encoding="utf-8", newline="\n").write(html)
+        q, w, l = portal.counts(course)
+        print("%-5s %d blocks  %d/%d lecture notes  %d questions"
+              % (course["slug"], len(course["blocks"]), w, l, q))
 
 
 if __name__ == "__main__":

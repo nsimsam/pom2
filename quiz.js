@@ -1,21 +1,28 @@
-/* The questions half of a PoM 2 block page.
-   Each block page sets window.QUIZ_BLOCK = { slug, n, name, weeks } and calls
-   POM2_QUIZ.boot() when the Questions tab is first opened - the block JSON runs
-   to hundreds of kilobytes, so nothing is fetched until it is asked for.
-   Progress lives in localStorage under nsq.v1.<slug>. */
+/* The questions half of a course block page.
+   Each block page sets window.QUIZ_BLOCK and calls POM2_QUIZ.boot() when the
+   Questions tab is first opened - the block JSON runs to hundreds of kilobytes,
+   so nothing is fetched until it is asked for.
+
+   This file is shared by every course in the portal, so the two things that
+   differ between them arrive in QUIZ_BLOCK rather than being written here:
+
+     store     the localStorage prefix, so one course cannot read or overwrite
+               another's progress even though they are served from one origin
+     families  the question sets shown in the rail, in the order they appear
+
+   Both fall back to the PoM 2 values, which is what the pages carried before
+   the portal held more than one course. */
 
 (function () {
   "use strict";
 
   var BLOCK = window.QUIZ_BLOCK;
-  var STORE_PREFIX = "nsq.v1.";
+  var STORE_PREFIX = BLOCK.store || "nsq.v1.";
   var STORE_KEY = STORE_PREFIX + BLOCK.slug;
 
-  /* the source families are the same in every block, empty ones included:
-     an empty family is a visible gap in coverage, which is the point. Schulich
-     Reviews is listed for that reason - it is coming, and until it does the
-     empty set says so. */
-  var FAMILIES = [
+  /* every family the course has is listed, empty ones included: an empty family
+     is a visible gap in coverage, which is the point. */
+  var FAMILIES = BLOCK.families || [
     {
       key: "module",
       name: "Course modules",
@@ -1123,7 +1130,7 @@
       a.href = url;
       /* dated, because the browser otherwise stacks these up as (1), (2) and
          there is no telling them apart from the outside */
-      a.download = "pom2-progress-" + new Date().toISOString().slice(0, 10) + ".json";
+      a.download = (BLOCK.course || "pom2").toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-progress-" + new Date().toISOString().slice(0, 10) + ".json";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

@@ -1,0 +1,269 @@
+{
+ "block": "b4",
+ "weeks": [
+  {
+   "n": 13,
+   "label": "Week 13 - Fever, Microbes & Innate Immunity",
+   "lectures": [
+    {
+     "id": "b4-w13-01",
+     "num": "01",
+     "name": "Homeostatic Control of Body Temperature",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-02",
+     "num": "02",
+     "name": "Classification of Different Microbes",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-03",
+     "num": "03",
+     "name": "Innate Immunity Refresher",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-04",
+     "num": "04",
+     "name": "Adaptive Immunity",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-05",
+     "num": "05",
+     "name": "Microbiology Lab",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-06",
+     "num": "06",
+     "name": "Interpreting Microbiologic Investigations",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-07",
+     "num": "07",
+     "name": "The Normal Healthy Microbiome",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-08",
+     "num": "08",
+     "name": "Some Important Gram-Positives",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-09",
+     "num": "09",
+     "name": "Approach to a Patient with Fever",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-10",
+     "num": "10",
+     "name": "Approach to the Assessment of a Patient with Fever",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-11",
+     "num": "11",
+     "name": "Some Important Gram-Negatives",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-12",
+     "num": "12",
+     "name": "Approach to Fever in Older Adults",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-13",
+     "num": "13",
+     "name": "Approach to the Assessment of a Pediatric Patient with Fever",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-14",
+     "num": "14",
+     "name": "Pathology of Acute Inflammation",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-15",
+     "num": "15",
+     "name": "Some Important Clostridial Species",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-16",
+     "num": "16",
+     "name": "How Viruses Work",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-in-class-overview",
+     "num": "—",
+     "name": "In Class - Overview",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w13-in-class-fever",
+     "num": "—",
+     "name": "In-Class - Fever",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "label": "Week 14 - Transmission, Antimicrobials & Vaccines",
+   "lectures": [
+    {
+     "id": "b4-w14-01",
+     "num": "01",
+     "name": "Transmission of Infectious Agents",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-02",
+     "num": "02",
+     "name": "Choosing Antibiotics Wisely Lecture 1",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-03",
+     "num": "03",
+     "name": "Choosing Antibiotics Wisely Lecture 2",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-04",
+     "num": "04",
+     "name": "Intro to Infection Control",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-05",
+     "num": "05",
+     "name": "Approach to Public Health and Outbreak Investigation",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-06",
+     "num": "06",
+     "name": "New Vaccine Platforms",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-07",
+     "num": "07",
+     "name": "Vaccine Adverse Effects",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-08",
+     "num": "08",
+     "name": "Vaccine Hesitancy",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-09",
+     "num": "09",
+     "name": "Antivirals",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-10",
+     "num": "10",
+     "name": "Introduction to Sepsis",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-11",
+     "num": "11",
+     "name": "Intro to Antimicrobial Resistance",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w14-in-class-outbreak-management-and-antibiotics",
+     "num": "—",
+     "name": "In-Class - Outbreak Management and Antibiotics",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "label": "Week 15 - Immunocompromise, Allergy & Autoimmunity",
+   "lectures": [
+    {
+     "id": "b4-w15-01",
+     "num": "01",
+     "name": "Approach to the Immunocompromised Host",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-02",
+     "num": "02",
+     "name": "Opportunistic Infections",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-03",
+     "num": "03",
+     "name": "Important Fungal Infections",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-04",
+     "num": "04",
+     "name": "Antifungals",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-05",
+     "num": "05",
+     "name": "Approach to Immunodeficiency",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-06",
+     "num": "06",
+     "name": "Approach to Allergy",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-07",
+     "num": "07",
+     "name": "Understanding Immunology Lab Test Results",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-08",
+     "num": "08",
+     "name": "Pathology of Chronic Inflammation",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-09",
+     "num": "09",
+     "name": "Autoimmunity",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-10",
+     "num": "10",
+     "name": "A Generalist's Approach to Autoimmunity",
+     "hasNote": false
+    },
+    {
+     "id": "b4-w15-11",
+     "num": "11",
+     "name": "Herpes",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}

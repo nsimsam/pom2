@@ -1,0 +1,227 @@
+{
+ "block": "b3",
+ "weeks": [
+  {
+   "n": 9,
+   "label": "Week 9 - Hematopoiesis & the Anemias",
+   "lectures": [
+    {
+     "id": "b3-w9-01",
+     "num": "01",
+     "name": "Hematopoiesis",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w9-02",
+     "num": "02",
+     "name": "CBC and Anemias",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w9-03",
+     "num": "03",
+     "name": "Approach to Microcytic Anemia",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w9-04",
+     "num": "04",
+     "name": "Approach to Normocytic Anemia",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w9-05",
+     "num": "05",
+     "name": "Approach to Macrocytic Anemia",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w9-06",
+     "num": "06",
+     "name": "Approach to Hemolytic Anemia",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w9-07",
+     "num": "07",
+     "name": "Hemoglobinopathies",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w9-08",
+     "num": "08",
+     "name": "Myelodysplastic Syndrome",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w9-10",
+     "num": "10",
+     "name": "Pharmacological Treatment of Anemias",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "label": "Week 10 - Hemostasis, Bleeding & Thrombosis",
+   "lectures": [
+    {
+     "id": "b3-w10-01",
+     "num": "01",
+     "name": "Approach to a Bleeding Patient",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w10-02",
+     "num": "02",
+     "name": "Hemostasis",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w10-03",
+     "num": "03",
+     "name": "Approach to Coagulopathy in Adults",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w10-04",
+     "num": "04",
+     "name": "Coagulopathy in Children",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w10-05",
+     "num": "05",
+     "name": "Approach to Thrombocytopenia",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w10-06",
+     "num": "06",
+     "name": "Thrombosis",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w10-07",
+     "num": "07",
+     "name": "Pharmacology and Reversal of Anticoagulants",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "label": "Week 11 - White Cells & Leukemia",
+   "lectures": [
+    {
+     "id": "b3-w11-01",
+     "num": "01",
+     "name": "Innate Immunity and WBCs",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w11-02",
+     "num": "02",
+     "name": "Approach to Leukocytosis",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w11-03",
+     "num": "03",
+     "name": "Approach to Leukopenia",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w11-04",
+     "num": "04",
+     "name": "Approach to Leukemia",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w11-05",
+     "num": "05",
+     "name": "Approach to Erythrocytosis",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w11-06",
+     "num": "06",
+     "name": "Approach to Thrombocytosis",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w11-07",
+     "num": "07",
+     "name": "Specialized Testing for Hematological Malignancies",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w11-08",
+     "num": "08",
+     "name": "Leukemia in Pediatrics",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w11-10",
+     "num": "10",
+     "name": "In-Class",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "label": "Week 12 - Adaptive Immunity & Lymphoma",
+   "lectures": [
+    {
+     "id": "b3-w12-01",
+     "num": "01",
+     "name": "Adaptive Immunity",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w12-02",
+     "num": "02",
+     "name": "Approach to Lymphadenopathy",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w12-03",
+     "num": "03",
+     "name": "Anatomy of a Mediastinal Mass",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w12-04",
+     "num": "04",
+     "name": "Classification and Testing for Lymphomas",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w12-05",
+     "num": "05",
+     "name": "Approach to Lymphoma",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w12-06",
+     "num": "06",
+     "name": "Multiple Myeloma",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w12-07",
+     "num": "07",
+     "name": "Pharmacology of Hematological Malignancies",
+     "hasNote": false
+    },
+    {
+     "id": "b3-w12-08",
+     "num": "08",
+     "name": "Radiation Oncology",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}

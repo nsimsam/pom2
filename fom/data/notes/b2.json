@@ -1,0 +1,269 @@
+{
+ "block": "b2",
+ "weeks": [
+  {
+   "n": 5,
+   "label": "Week 5 - Body Fluids, Blood Pressure & Screening",
+   "lectures": [
+    {
+     "id": "b2-w5-01",
+     "num": "01",
+     "name": "An Introduction to Body Fluids Regulation",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-02",
+     "num": "02",
+     "name": "Introduction to Blood Pressure Regulation",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-03",
+     "num": "03",
+     "name": "Body Systems Integration",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-04",
+     "num": "04",
+     "name": "Introduction to the Nervous System",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-05",
+     "num": "05",
+     "name": "Cellular Stress & Repair",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-06",
+     "num": "06",
+     "name": "Adult Screening - Diagnostic Pathway",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-07",
+     "num": "07",
+     "name": "Introduction to Laboratory Medicine",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-08",
+     "num": "08",
+     "name": "Choosing Wisely Review",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-09",
+     "num": "09",
+     "name": "Approach to Anxiety and Stress",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-10",
+     "num": "10",
+     "name": "Approach to Abnormal Test Results",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-11",
+     "num": "11",
+     "name": "Social Determinants of Health and Health Equity",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w5-12",
+     "num": "12",
+     "name": "Adult Screening and Preventative Care Principles",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "label": "Week 6 - Lumps, Bumps & Neoplasia",
+   "lectures": [
+    {
+     "id": "b2-w6-01",
+     "num": "01",
+     "name": "Introduction to Lumps and Bumps",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w6-02",
+     "num": "02",
+     "name": "Approach to Neoplasia",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w6-03",
+     "num": "03",
+     "name": "Cancer Genetics",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w6-04",
+     "num": "04",
+     "name": "Diagnostic Pathway for Breast Mass",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w6-05",
+     "num": "05",
+     "name": "Cancer From Macro to Molecular",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w6-06",
+     "num": "06",
+     "name": "Communication of the Pathology Report",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w6-07",
+     "num": "07",
+     "name": "Well Person Care and Screening for Cancer",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "label": "Week 7 - Healthy Aging & Geriatrics",
+   "lectures": [
+    {
+     "id": "b2-w7-01",
+     "num": "01",
+     "name": "Healthy Aging vs. Disease",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-02",
+     "num": "02",
+     "name": "Periodic Health Encounter for Older Adults",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-03",
+     "num": "03",
+     "name": "Mental Health Through Aging (& Depression in Older Adults)",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-04",
+     "num": "04",
+     "name": "Comprehensive Geriatric Assessment",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-05",
+     "num": "05",
+     "name": "Introduction to Cognitive Testing",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-06",
+     "num": "06",
+     "name": "Approach to Cognitive Decline",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-07",
+     "num": "07",
+     "name": "Introduction to Delirium",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-08",
+     "num": "08",
+     "name": "Frailty and Falls",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-09",
+     "num": "09",
+     "name": "Interdisciplinary Teams & Community Resources for Older Adults",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-10",
+     "num": "10",
+     "name": "Introduction to Neurofunction",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w7-11",
+     "num": "11",
+     "name": "Elder Abuse",
+     "hasNote": false
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "label": "Week 8 - Pharmacology & Therapeutics",
+   "lectures": [
+    {
+     "id": "b2-w8-01",
+     "num": "01",
+     "name": "Approach To Prescribing",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-02",
+     "num": "02",
+     "name": "Introduction to Basic and Clinical Pharmacology",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-03",
+     "num": "03",
+     "name": "Pharmacodynamics",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-04",
+     "num": "04",
+     "name": "Introduction to Pharmacokinetics",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-05",
+     "num": "05",
+     "name": "Principles of Clinical Pharmacology",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-06",
+     "num": "06",
+     "name": "Principles of Adverse Drug Events and Patient Safety",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-07",
+     "num": "07",
+     "name": "Individual Variability in Drug Response",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-08",
+     "num": "08",
+     "name": "Therapeutics Across the Lifespan",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-09",
+     "num": "09",
+     "name": "Canada's Healthcare System",
+     "hasNote": false
+    },
+    {
+     "id": "b2-w8-10",
+     "num": "10",
+     "name": "Safety, Effectiveness, and Adherence to Therapy",
+     "hasNote": false
+    }
+   ]
+  }
+ ]
+}
