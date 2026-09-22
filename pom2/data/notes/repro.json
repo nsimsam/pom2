@@ -203,134 +203,424 @@
      "num": "03",
      "name": "Contraception",
      "hasNote": true,
-     "title": "Contraception",
-     "framing": "<p><strong>Counsel from the TYPICAL-use column, never the perfect-use one.</strong> Failure rates are per 1000 women per year, and the order below is the order that matters: the two LARCs and the two permanent methods sit an order of magnitude below everything else.</p>",
-     "keypoints": "<p>⭐ <strong>the CHOICE project splits cleanly at 12 months — LNG-IUS 87.5%, copper IUD 84.0%, implant 83.3%, against DMPA 56.5%, pills 55.1%, ring 54.2%, patch 49.1%.</strong> Continuation, not efficacy, is what separates LARC from everything else. <strong>Combined methods are contraindicated over 35 with > 15 cigarettes/day</strong>, and a <strong>past</strong> DVT/PE only contraindicates when she is <strong>off anticoagulation and at higher recurrence risk</strong>.</p>",
+     "title": "Contraception and drugs used in gynecology",
+     "framing": "<p><strong>Two questions, in this order. First, <em>which axis is this drug on</em> — estrogen, progestin, or androgen — because the indication and the adverse effects both follow from it. Then, for contraception specifically, <em>counsel from the TYPICAL-use column, never the perfect-use one</em>.</strong> Failure rates below are pregnancies per 1000 women per year of typical use.</p>",
+     "keypoints": "<p>⭐ <strong>The progestin-only contraceptive's primary mechanism is LOCAL, not central</strong> — cervical mucus, tubal peristalsis and endometrium, with ovulation suppressed in only ~50% of cycles (the injection excepted), which is exactly why the mini-pill fails at 3 hours late while a combined pill forgives. <strong>Estrogen and progestin oppose each other on the endometrium but are synergic on the breast</strong> — the one risk adding a progestin does not fix. <strong>Combined methods are contraindicated over age 35 at more than 15 cigarettes per day</strong>, and a <strong>past</strong> <span class=\"wl\">deep vein thrombosis</span> or <span class=\"wl\">pulmonary embolism</span> contraindicates them only when she is <strong>off anticoagulation AND at higher risk of recurrence</strong>. <strong><span class=\"wl\">tamoxifen</span> is the SERM that raises endometrial cancer risk; <span class=\"wl\">raloxifene</span> is not</strong> — both raise <span class=\"wl\">VTE</span>. <strong><span class=\"wl\">clomiphene</span> raises gonadotropins by blocking central negative feedback</strong>, which is why an estrogen receptor <em>antagonist</em> induces ovulation.</p>",
      "blocks": [
       {
+       "t": "figure",
+       "src": "assets/figures/aa44b3c3588f.jpg",
+       "alt": "drugs used in gynecology.png",
+       "w": 900,
+       "h": 542,
+       "cap": "The three hormone axes — estrogen, progestin, androgen — and where each drug class sits on them"
+      },
+      {
        "t": "table",
+       "lead": "<p><strong>Contraceptive methods, most to least effective:</strong></p>",
        "cols": [
         "Method",
-        "Failure /1000",
+        "Failure per 1000",
+        "Continued at 1 y",
         "Mechanism",
         "Non-contraceptive benefit",
         "Limits and adverse effects"
        ],
        "rows": [
         [
-         "<u>Permanent</u><br><span class=\"wl\">vasectomy</span>",
+         "<u>Permanent</u><br>Vasectomy",
          "<strong>0.5</strong>",
-         "Occlusion of the vas",
          "—",
-         "Needs <strong>semen analysis at 3 months</strong> showing <strong>< 100,000 non-motile sperm</strong>; <strong>requires partner monogamy</strong> to protect <em>her</em>"
+         "Occlusion of the vas deferens",
+         "—",
+         "Needs <strong>semen analysis at 3 months</strong> showing <strong>fewer than 100,000 non-motile sperm</strong> · <strong>requires monogamy of the female partner</strong> to protect <em>her</em>"
         ],
         [
-         "<span class=\"wl\">etonogestrel implant</span>",
+         "<span class=\"wl\">Etonogestrel implant</span>",
          "<strong>0.5</strong>",
-         "<strong>Inhibits ovulation until the beginning of year 3</strong> · thickens mucus · endometrial change",
+         "<strong>83.3%</strong>",
+         "<strong>Inhibits ovulation only until the beginning of year 3</strong> · thickens cervical mucus · endometrial change",
          "Usable <strong>immediately postpartum or post-abortion</strong>",
-         "Single rod, <strong>68 mg</strong>; <strong>few trained inserters</strong>"
+         "Single rod, <strong>68 mg</strong> · <strong>few trained inserters</strong> in Canada"
         ],
         [
-         "<span class=\"wl\">LNG-IUS</span>",
+         "<span class=\"wl\">Hormonal intrauterine device</span>",
          "<strong>2</strong>",
-         "↑ mucus viscosity · <strong>decidualization, glandular atrophy</strong> · inhibits ovulation in <strong>up to 40%</strong>",
-         "<strong>Treats heavy bleeding</strong>",
-         "Needs a normal cavity"
+         "<strong>87.5%</strong>",
+         "↑ cervical mucus viscosity · <strong>endometrial decidualization and glandular atrophy</strong> · inhibits ovulation in <strong>up to 40%</strong>",
+         "<strong>Treats heavy menstrual bleeding</strong>",
+         "Needs an undistorted uterine cavity"
         ],
         [
-         "<u>Permanent</u><br><span class=\"wl\">tubal interruption</span>",
-         "<strong>< 20 at 10 y</strong>",
-         "Rings, clips, cautery, <span class=\"wl\">salpingectomy</span>, fimbriectomy",
+         "<u>Permanent</u><br>Tubal interruption",
+         "<strong>fewer than 20 at 10 years</strong>",
          "—",
-         "<strong>Regret is the commonest complication; young age is the risk factor</strong> · contraception until 1 week post"
+         "Rings, clips, cautery, removal of the fallopian tubes, removal of the fimbriae",
+         "—",
+         "<strong>Regret is the commonest complication, and young age is the risk factor</strong> · backup contraception until 1 week after"
         ],
         [
-         "<span class=\"wl\">copper IUD</span>",
+         "<span class=\"wl\">Copper intrauterine device</span>",
          "<strong>8</strong>",
-         "<strong>Sterile inflammatory reaction</strong> → ↓ sperm motility and acrosome reaction, ↑ ovum apoptosis",
-         "⭐ <strong>The most effective emergency contraceptive</strong>",
-         "<strong>Does NOT thicken mucus</strong> · ↑ <span class=\"wl\">menorrhagia</span> and <span class=\"wl\">dysmenorrhea</span>"
+         "<strong>84.0%</strong>",
+         "<strong>Sterile inflammatory reaction</strong> → ↓ sperm motility and acrosomal reaction, ↑ apoptosis of the ovum",
+         "<strong>Also the emergency contraceptive</strong> — ranked below",
+         "<strong>Does NOT thicken cervical mucus</strong>, so placement must let copper ions reach the whole cavity · ↑ <span class=\"wl\">menorrhagia</span> and <span class=\"wl\">dysmenorrhea</span>"
         ],
         [
-         "<span class=\"wl\">DMPA</span>",
+         "<span class=\"wl\">Injectable progestin</span>",
          "<strong>60</strong>",
-         "↓ pituitary gonadotropins → <strong>consistent</strong> ovulation suppression",
+         "56.5%",
+         "↓ pituitary <span class=\"wl\">gonadotropins</span> → <strong>consistent</strong> suppression of ovulation",
          "<strong><span class=\"wl\">amenorrhea</span> in 68% at 24 months</strong> · ↓ endometrial cancer · ↓ seizures",
-         "<strong>150 mg/mL IM q12-13 weeks</strong> · ↓ BMD for 2 years then stabilizes — <strong>does NOT cause <span class=\"wl\">osteoporosis</span> or fracture</strong> · <strong>the only contraceptive known to cause weight gain</strong>"
+         "<strong>150 mg/mL intramuscular every 12–13 weeks</strong> · ↓ <span class=\"wl\">bone mineral density</span> for 2 years then stabilizes — <strong>does NOT cause <span class=\"wl\">osteoporosis</span> and does NOT ↑ fracture risk</strong> · <strong>the only contraceptive known to cause weight gain</strong>"
         ],
         [
-         "<span class=\"wl\">progestin-only pill</span>",
+         "<span class=\"wl\">Progestin-only pill</span>",
          "<strong>90</strong>",
-         "<strong>Primarily LOCAL</strong> — mucus, tubal peristalsis, endometrium; ovulation suppressed in <strong>only 50%</strong>",
+         "—",
+         "<strong>Primarily LOCAL</strong> — cervical mucus, tubal cilia, endometrium · ovulation suppressed in <strong>only 50%</strong>",
          "Usable when estrogen is contraindicated",
-         "<strong>Missed by > 3 h = backup needed</strong>"
+         "Progestin is cleared by 24 hours, so <strong>more than 3 hours late = backup needed</strong>"
         ],
         [
-         "<span class=\"wl\">COC</span> · patch · ring",
+         "<u>Combined hormonal</u> — one drug pair, three routes<br><span class=\"wl\">Pill (COC)</span><br><em>daily</em>",
          "<strong>90</strong>",
-         "Suppress gonadotropins → suppress ovulation; <strong>progestin does the contracepting, estrogen controls bleeding</strong>",
-         "↓ <span class=\"wl\">acne</span>, <span class=\"wl\">hirsutism</span> · ↓ <strong>endometrial, ovarian and colorectal cancer</strong> · ↓ functional cysts",
-         "<strong>↑ VTE</strong> · patch <strong>less effective > 90 kg</strong> · ring is <strong>more effective than COC at blocking folliculogenesis</strong>"
+         "55.1%",
+         "Suppress gonadotropins → suppress ovulation · <strong>the progestin does the contracepting, the estrogen controls nuisance bleeding</strong>",
+         "↓ <span class=\"wl\">acne</span>, ↓ <span class=\"wl\">hirsutism</span> · ↓ <strong>endometrial, ovarian and colorectal cancer</strong> · ↓ functional <span class=\"wl\">ovarian cysts</span>",
+         "Ethinyl estradiol <strong>10-35 mcg</strong> + any of many progestins · monophasic · biphasic · triphasic · quadriphasic, to mimic the cycle · <strong>first-pass hepatic metabolism with enterohepatic recirculation, so CYP inducers and gut-flora disruption shorten it</strong> · ↑ <span class=\"wl\">VTE</span> · <strong>needs daily compliance</strong> · <strong>the longest Category ④ list of any method</strong>"
+        ],
+        [
+         "<span class=\"wl\">Patch</span><br><em>weekly × 3, then 1 hormone-free week</em>",
+         "<strong>90</strong>",
+         "<strong>49.1% — the lowest of any method</strong>",
+         "<em>as for the pill</em>",
+         "<em>as for the pill</em>",
+         "<strong>35 mcg ethinyl estradiol + 200 mcg norelgestromin</strong> from a 20 cm² patch — <em>the top of the pill's estrogen range</em> · <strong>first pass BYPASSED → ↑↑ <span class=\"wl\">VTE</span></strong> · <strong>may be less effective at weight > 90 kg</strong> · buttock · upper outer arm · lower abdomen · upper torso · skin irritation from the adhesive · cosmetic"
+        ],
+        [
+         "<span class=\"wl\">Ring</span><br><em>monthly — 3 weeks in, 1 week out</em>",
+         "<strong>90</strong>",
+         "54.2%",
+         "<em>as for the pill</em>",
+         "<em>as for the pill</em>",
+         "<strong>15 mcg ethinyl estradiol + 120 mcg etonogestrel</strong> — <em>the lowest estrogen exposure of the three</em> · <strong>first pass BYPASSED → ↑↑ <span class=\"wl\">VTE</span></strong> · <strong>more effective than the pill at blocking folliculogenesis</strong> (high progestin delivered at the uterus) · <strong>pseudodecidualizes the endometrium</strong> · reaches <strong>peri-rectal <span class=\"wl\">endometriosis</span> lesions</strong> · may be out <strong>≤ 3 h in any 24 h</strong> · insert with a <strong>cardboard, never plastic, applicator</strong> (plastic teeth scrape the slow-release surface) · invasive · vaginal dryness"
         ],
         [
          "Condoms",
          "<strong>180</strong>",
+         "—",
          "Barrier",
-         "<strong>The only method giving STI protection</strong>",
-         "Perfect use 2% vs <strong>typical use 18%</strong> · <strong>N-9-coated condoms ↑ HIV transmission — not recommended</strong>"
+         "<strong>The only method that protects against sexually transmitted infection</strong>",
+         "Perfect use 2% versus <strong>typical use 18%</strong> · <strong>nonoxynol-9-coated condoms ↑ <span class=\"wl\">human immunodeficiency virus</span> transmission and are NOT recommended</strong> · lambskin gives no infection protection"
         ],
         [
          "Natural family planning",
-         "<strong>120-250</strong>",
+         "<strong>120–250</strong>",
+         "—",
          "Fertility awareness",
-         "Acceptable where others are not",
-         "Basal temperature · calendar · mucus · withdrawal · <strong>lactational: < 6 months, fully breastfeeding, no menses</strong>"
+         "<strong>Superior to no method</strong>, and may be the only acceptable option culturally or religiously",
+         "Basal body temperature · calendar · cervical mucus · withdrawal · <strong>lactational amenorrhea needs all three: under 6 months postpartum, fully breastfeeding, no return of menses</strong>"
         ]
        ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The three combined routes share a drug pair and a failure rate, so effectiveness does not choose between them — the route does, and first-pass metabolism is the whole story. The pill has it, and loses potency to CYP inducers and gut-flora disruption; the patch and ring bypass it, and carry the higher venous thromboembolism risk for exactly that reason.</strong> Continuation is the other axis: the column above splits at 80%, and <strong>every method sitting below it depends on the user remembering</strong>.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Every gynecologic drug, sorted by the axis it acts on:</strong></p>",
+       "cols": [
+        "Axis",
+        "Class",
+        "Examples",
+        "Mechanism of Action",
+        "Indications",
+        "Adverse Effects / Contraindications"
+       ],
+       "rows": [
+        [
+         "<u>Estrogen</u>",
+         "<u>Combined hormonal contraceptives (CHC)</u><br><br>estrogen <strong>+</strong> progestin",
+         "Estrogen component: <strong>ethinyl estradiol or mestranol, 10-50 mcg</strong><br><br>Pill · <span class=\"wl\">patch</span> (weekly) · <span class=\"wl\">ring</span> (monthly)",
+         "<strong>Central</strong> — suppress <span class=\"wl\">GnRH</span> → ↓ LH and FSH → no ovulation",
+         "Contraception · <span class=\"wl\">dysmenorrhea</span> · <span class=\"wl\">acne</span> · cycle control",
+         "Estrogen ↑ factors <strong>VII, VIII, IX, X</strong> and ↓ anticoagulant factors — <strong>that is the mechanism behind the VTE risk below</strong><br>Nausea, bloating, breast tenderness, headache<br>Hepatic metabolism → <strong>cytochrome P450 (CYP) interactions</strong> (<span class=\"wl\">antiepileptics</span>, <span class=\"wl\">antibiotics</span>, aprepitant)"
+        ],
+        [
+         "",
+         "<u><span class=\"wl\">Hormone replacement therapy (HRT)</span></u><br><br>estrogen <strong>± progestin</strong>",
+         "Patch · vaginal ring · intramuscular · pill",
+         "Replacement of the estrogen lost at <span class=\"wl\">menopause</span>. <strong>The estrogen dose is LOWER than in a contraceptive</strong>",
+         "Vasomotor (hot flashes) and genitourinary symptoms of <span class=\"wl\">menopause</span> · slows bone loss → ↓ <span class=\"wl\">osteoporosis</span>",
+         "⚠ <strong>Add a progestin if the <span class=\"wl\">uterus</span> is intact</strong> — unopposed estrogen → hyperplasia and <span class=\"wl\">endometrial cancer</span><br>Estrogen-only <strong>and</strong> combined ↑ <span class=\"wl\">DVT</span> and <span class=\"wl\">stroke</span>"
+        ],
+        [
+         "",
+         "<u>Selective estrogen receptor modulators (SERMs)</u>",
+         "<strong><span class=\"wl\">tamoxifen</span></strong><br><strong><span class=\"wl\">raloxifene</span></strong>",
+         "<strong>Agonist in some tissues, antagonist in others</strong> — set by ligand selectivity, receptor conformation, and local co-activators/co-repressors<br>Tamoxifen: breast <strong>–</strong>, endometrium <strong>+</strong>, bone <strong>+</strong><br>Raloxifene: breast <strong>–</strong>, endometrium <strong>–</strong>, bone <strong>++</strong>",
+         "Tamoxifen: <strong>estrogen-dependent tumours</strong><br>Raloxifene: <strong>prevention and treatment of <span class=\"wl\">osteoporosis</span> in postmenopausal women</strong>",
+         "<strong>Both ↑ VTE</strong><br><strong>Tamoxifen alone ↑ <span class=\"wl\">endometrial cancer</span></strong> (endometrial agonist); raloxifene does not<br>Tamoxifen efficacy ↓ by <span class=\"wl\">paroxetine</span>"
+        ],
+        [
+         "",
+         "<u>Clomiphene</u>",
+         "<span class=\"wl\">clomiphene</span>",
+         "<strong>estrogen receptor antagonist at <span class=\"wl\">hypothalamus</span> + <span class=\"wl\">anterior pituitary</span></strong>, partial agonist at the ovary → removes negative feedback → <strong>↑ GnRH and gonadotropins</strong>",
+         "<strong>Ovulation induction in <span class=\"wl\">infertility</span></strong>",
+         "—"
+        ],
+        [
+         "",
+         "<u>Pure estrogen receptor (ER) antagonist</u>",
+         "<span class=\"wl\">fulvestrant</span>",
+         "Full antagonism, no partial agonism",
+         "<strong>Advanced <span class=\"wl\">breast cancer</span></strong>",
+         "—"
+        ],
+        [
+         "",
+         "<u>Aromatase inhibitors</u>",
+         "exemestane, formestane, anastrozole, letrozole",
+         "<strong>Block conversion of androgens → estrogens</strong>",
+         "<span class=\"wl\">breast cancer</span> and other ER-positive tumours",
+         "—"
+        ],
+        [
+         "<u>Progestin</u>",
+         "<u>Progestin-only contraceptives (POC)</u><br><br>progestin alone",
+         "<strong><span class=\"wl\">Norethindrone mini-pill</span></strong> · <strong><span class=\"wl\">levonorgestrel intrauterine system (LNG-IUS)</span></strong> · <strong><span class=\"wl\">depot medroxyprogesterone acetate (DMPA) injection</span></strong> (q3mo) · <strong><span class=\"wl\">etonogestrel implant</span></strong>",
+         "<strong>Local, not central</strong> — thickened cervical mucus, altered tubal peristalsis, non-receptive endometrium",
+         "Contraception where estrogen is contraindicated · heavy bleeding (the intrauterine system)",
+         "Injection <strong>and</strong> implant share: weight gain, <strong>may contribute to bone loss</strong>, irregular bleeding, painful, <span class=\"wl\">acne</span>"
+        ],
+        [
+         "",
+         "<u>Selective progesterone receptor modulators (SPRMs)</u>",
+         "<strong><span class=\"wl\">ulipristal</span></strong> (partial)<br><strong><span class=\"wl\">mifepristone</span></strong> (antagonist)",
+         "Spectrum from agonist to antagonist. Three sites: <strong>fibroids</strong> (↓ size by inhibiting proliferation + inducing apoptosis) · <strong>endometrium</strong> (stops bleeding; <strong>progesterone receptor modulator associated endometrial changes (PAEC)</strong> changes) · <strong>pituitary</strong> (amenorrhea)",
+         "Ulipristal: <strong>emergency contraception</strong>, <span class=\"wl\">endometriosis</span>, <span class=\"wl\">uterine fibroids</span><br>Mifepristone: <strong>termination of pregnancy</strong>, <span class=\"wl\">Cushing syndrome</span> (anti-glucocorticoid)",
+         "—"
+        ],
+        [
+         "<u>Androgen</u>",
+         "<u>Androgen agonists</u>",
+         "<strong>testosterone esters</strong>",
+         "Replacement",
+         "<strong>Male <span class=\"wl\">hypogonadism</span></strong> (Food and Drug Administration, FDA) · female-to-male transition (<strong>non-FDA</strong>)",
+         "<strong>↓ libido, <span class=\"wl\">erectile dysfunction</span></strong>"
+        ],
+        [
+         "",
+         "<u>Androgen receptor antagonists</u>",
+         "<strong>flutamide</strong>, bicalutamide, nilutamide, enzalutamide, <span class=\"wl\">spironolactone</span>",
+         "Block the androgen receptor",
+         "<strong>Metastatic <span class=\"wl\">prostate cancer</span></strong> (FDA) · <span class=\"wl\">hirsutism</span> (<strong>non-FDA</strong>)",
+         "as above"
+        ],
+        [
+         "",
+         "<u>5α-reductase inhibitors</u>",
+         "<strong>finasteride</strong>, dutasteride",
+         "<strong>↓ conversion of testosterone → <span class=\"wl\">dihydrotestosterone (DHT)</span></strong> — does <em>not</em> block the receptor and does <em>not</em> ↓ testosterone",
+         "<strong><span class=\"wl\">benign prostatic hyperplasia (BPH)</span></strong> (FDA) · alopecia (<strong>non-FDA</strong>)",
+         "as above"
+        ],
+        [
+         "<u>All three</u><br>upstream at the <span class=\"wl\">HPG axis</span>",
+         "<u>GnRH agonists</u>",
+         "leuprolide, goserelin, nafarelin, buserelin, triptorelin",
+         "<strong>Pulsatile → stimulates</strong> ovulation.<br><strong>Continuous → initial gonadotropin FLARE, then receptor desensitization → suppression</strong>",
+         "<span class=\"wl\">endometriosis</span> · <span class=\"wl\">uterine fibroids</span> · hormone-responsive cancers · <span class=\"wl\">infertility</span> (pulsatile)",
+         "<strong>Hypoestrogenic state</strong>: bone loss, hot flashes, night sweats, vaginal dryness, mood and sleep change<br>⚠ the <strong>flare</strong> can transiently worsen a hormone-driven tumour"
+        ],
+        [
+         "",
+         "<u>GnRH antagonists</u>",
+         "cetrorelix, ganirelix, degarelix",
+         "<strong>Immediate receptor blockade — faster onset and NO flare</strong>, because no downregulation is required",
+         "Same, plus <strong>controlled ovarian stimulation in assisted reproductive technology (ART)</strong>",
+         "Same hypoestrogenic/hypoandrogenic profile"
+        ],
+        [
+         "<u>Non-hormonal</u>",
+         "<u>NSAIDs</u>",
+         "<strong>diclofenac, ibuprofen, naproxen</strong> (non-selective)",
+         "<strong>↓ prostaglandin synthesis</strong> via non-selective cyclooxygenase (COX) inhibition → ↓ uterine cramping",
+         "<strong><span class=\"wl\">dysmenorrhea</span></strong>, and ↓ heavy bleeding",
+         "gastrointestinal disturbance, renal damage<br>CI: severe <span class=\"wl\">kidney disease</span>, <span class=\"wl\">gastritis</span>/<span class=\"wl\">peptic ulcer</span>, <span class=\"wl\">coagulopathies</span>"
+        ],
+        [
+         "",
+         "<u>Tranexamic acid</u>",
+         "<span class=\"wl\">tranexamic acid (TXA)</span>",
+         "<strong>Antifibrinolytic</strong> — blocks the plasminogen lysine-binding site → no plasmin → clot not degraded. <strong>Symptomatic only</strong>",
+         "<strong><span class=\"wl\">menorrhagia</span></strong>",
+         "Headache, backache, cramps, gastrointestinal distress<br>CI: <strong>history of <span class=\"wl\">VTE</span></strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>The whole hormone story in one line:</strong> estrogen and progestin are <strong>opposing on the endometrium</strong> — estrogen proliferates (↑ endometrial cancer), progestin opposes it (protective), which is the <em>only</em> reason a progestin is added to an estrogen — but they are <strong>synergic on the breast</strong>, both driving proliferation, which is why adding a progestin does not fix the breast-cancer risk.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Combined vs progestin-only — the contrast almost every question turns on</strong></p>",
+       "cols": [
+        "",
+        "Combined (CHC)",
+        "Progestin-only (POC)"
+       ],
+       "rows": [
+        [
+         "Main mechanism",
+         "<strong>central — suppress ovulation</strong>",
+         "<strong>local — mucus, tubal peristalsis, endometrium</strong>"
+        ],
+        [
+         "Ovulation blocked",
+         "reliably",
+         "<strong>~50% of cycles</strong> (DMPA injection excepted)"
+        ],
+        [
+         "Delivery",
+         "<strong>pill · patch · ring</strong>",
+         "<strong>mini-pill · intrauterine system · injection · implant</strong>"
+        ],
+        [
+         "VTE risk",
+         "<strong>↑</strong>",
+         "<strong>not ↑</strong> (except injection; except drospirenone/cyproterone)"
+        ],
+        [
+         "Adherence",
+         "forgiving",
+         "<strong>unforgiving — mini-pill fails at >3 h late</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Emergency contraception — the decision is made on the calendar, not on preference:</strong></p>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Unprotected intercourse\"] --> B{\"Days since?\"}\n    B -->|\"6–7 days\"| C[\"Copper intrauterine device ONLY<br/>MOST effective, and she leaves with ongoing contraception\"]\n    B -->|\"Within 5 days\"| D{\"Copper intrauterine device acceptable and available?\"}\n    D -->|Yes| C\n    D -->|No| E{\"Has the luteinizing hormone rise begun?\"}\n    E -->|\"Not yet, or unsure\"| F[\"Levonorgestrel 1.5 mg<br/>best under 72 h\"]\n    E -->|\"Already rising\"| G[\"Ulipristal 30 mg<br/>still works DURING the rise\"]\n    F --> H[\"Yuzpe regimen only if nothing else is available<br/>LEAST effective\"]"
       },
       {
        "t": "table",
        "cols": [
-        "Emergency contraception",
+        "Emergency option",
         "Window",
         "Mechanism",
-        "Rank"
+        "Rank, and the trap"
        ],
        "rows": [
         [
-         "<strong><span class=\"wl\">copper IUD</span></strong>",
+         "<strong><span class=\"wl\">Copper intrauterine device</span></strong>",
          "<strong>Up to 7 days</strong>",
          "Toxic to sperm and oocytes · ↑ myometrial contractility · inhibits implantation",
-         "<strong>MOST effective</strong>"
+         "<strong>MOST effective</strong> — and she leaves with ongoing contraception · <strong>the only option in the 6th–7th day window</strong>"
         ],
         [
          "<strong><span class=\"wl\">ulipristal</span></strong> 30 mg",
-         "Up to 5 days",
-         "SPRM — inhibits follicular rupture; <strong>effective DURING the LH rise, not after the surge</strong>",
-         "2nd"
+         "<strong>≤ 120 h (5 days)</strong>",
+         "Selective progesterone receptor modulator — suppresses the LH surge <strong>and directly inhibits follicular rupture</strong>",
+         "2nd · <strong>effective DURING the LH rise but NOT after it</strong> · <strong>0.9% vs 2.5%</strong> pregnancy at 0–24 h against levonorgestrel (odds ratio 0.35, <em>p</em> = 0.035) · poorly stocked in pharmacies"
         ],
         [
          "<strong><span class=\"wl\">levonorgestrel</span></strong> 1.5 mg",
-         "Up to 5 days, <strong>best < 72 h</strong>",
-         "Interferes with ovulation; <strong>ineffective once the LH rise begins</strong> · less effective at ↑ BMI",
-         "3rd"
+         "<strong>≤ 72 h</strong>",
+         "Progesterone receptor agonist — suppresses the LH surge only",
+         "3rd · <strong>ineffective once the LH rise begins</strong> · less effective at high <span class=\"wl\">body mass index</span>"
         ],
         [
-         "Yuzpe",
+         "Yuzpe regimen",
          "2 doses 12 h apart",
-         "100 mcg EE + 500 mcg LNG",
-         "<strong>LEAST effective</strong>"
+         "100 mcg ethinyl estradiol + 500 mcg <span class=\"wl\">levonorgestrel</span>",
+         "<strong>LEAST effective</strong> · high-dose estrogen → nausea · developed at Western University"
         ]
        ]
       },
       {
        "t": "note",
-       "html": "<p><strong>Progestin potency, relative to 1 mg norethindrone (progestational / androgenic):</strong> <span class=\"wl\">levonorgestrel</span> 5.3 / <strong>8.3</strong> — the most androgenic · <span class=\"wl\">desogestrel</span> <strong>9.0</strong> / 3.4 · norgestimate 1.3 / 1.9 · norethindrone acetate 1.2 / 1.6 · ethynodiol 1.4 / 0.6 · <strong>drospirenone 1.5 / 0.0</strong> · <strong>cyproterone N/A / 0.0</strong>. That column is why <strong>Yaz and Diane-35 are chosen for acne and <span class=\"wl\">hirsutism</span>, and Alesse avoided</strong>.</p>"
+       "html": "<p><strong>Progestin potency, relative to 1 mg norethindrone (progestational / androgenic):</strong> <span class=\"wl\">levonorgestrel</span> 5.3 / <strong>8.3 — the most androgenic</strong> · desogestrel <strong>9.0 — the most progestational</strong> / 3.4 · norgestimate 1.3 / 1.9 · norethindrone acetate 1.2 / 1.6 · ethynodiol diacetate 1.4 / 0.6 · <strong>drospirenone 1.5 / 0.0</strong> · <strong>cyproterone acetate not applicable / 0.0</strong>. That second column is why <strong>Yaz and Diane-35 are reached for in <span class=\"wl\">acne</span> and <span class=\"wl\">hirsutism</span>, and Alesse is the one to avoid</strong>.</p>"
       },
       {
        "t": "note",
-       "html": "<p><strong>Absolute contraindications to intrauterine contraception — the list is very short:</strong> pregnancy · <strong>current</strong> <span class=\"wl\">PID</span> or <span class=\"wl\">cervicitis</span> · immediately post-septic abortion · known distorted cavity · unevaluated abnormal bleeding · malignant trophoblastic disease · <strong>current progestin-receptor-positive <span class=\"wl\">breast cancer</span> (LNG-IUS only)</strong> · pelvic tuberculosis. ⚠ <strong>Not on it: smoking, age, <span class=\"wl\">HIV</span>, nulliparity, or a PAST PID.</strong></p>"
+       "html": "<p><strong>Benefits of hormonal contraception</strong> — ↓ ovarian cysts · ↓ <strong>ovarian and endometrial cancer</strong> · ↓ pelvic inflammatory disease (PID) · ↓ dysmenorrhea · ↓ endometriosis · lighter, predictable periods · improved acne and premenstrual syndrome. Weigh these against the risks of pregnancy itself, not against zero.</p>"
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Contraindications — graded on the Medical Eligibility Criteria (MEC)</strong>, which is the vocabulary the question stem will use: <strong>①</strong> no restriction · <strong>②</strong> advantages generally outweigh the risks · <strong>③</strong> <strong>risks usually outweigh the advantages — avoid unless other methods have failed or are unacceptable</strong> · <strong>④</strong> <strong>unacceptable health risk — the true absolute contraindication.</strong> Read the table as: <em>almost every entry in the left column is there because of the <strong>estrogen</strong>, which is exactly why the same patient can still have a progestin-only or intrauterine method.</em></p>",
+       "cols": [
+        "Category ④",
+        "Combined — pill · patch · ring",
+        "Progestin-only",
+        "Intrauterine (Cu-IUD / LNG-IUS)"
+       ],
+       "rows": [
+        [
+         "Thrombotic",
+         "acute <span class=\"wl\">DVT</span> / <span class=\"wl\">PE</span> · known <span class=\"wl\">thrombophilia</span> incl. <span class=\"wl\">antiphospholipid syndrome (APS)</span> · major surgery with prolonged immobilization · <strong>past DVT/PE only if she is OFF anticoagulation <em>and</em> at high recurrence risk</strong> (estrogen-, pregnancy-associated or idiopathic · thrombophilia/APS · active cancer except non-melanoma skin · recurrent)",
+         "—",
+         "—"
+        ],
+        [
+         "Vascular / cardiac",
+         "vascular disease · current <strong>or past</strong> ischemic heart disease · history of <span class=\"wl\">stroke</span> · complicated <span class=\"wl\">valvular heart disease</span> (pulmonary hypertension, AFib risk, prior endocarditis) · peripartum <span class=\"wl\">cardiomyopathy</span> (moderate-severe, or normal-mild <strong>< 6 months</strong>) · <strong><span class=\"wl\">hypertension</span> at systolic ≥ 160 <em>or</em> diastolic ≥ 100 mmHg</strong>",
+         "—",
+         "—"
+        ],
+        [
+         "Neurologic",
+         "<strong><span class=\"wl\">migraine</span> with aura</strong>",
+         "—",
+         "—"
+        ],
+        [
+         "Hormone-sensitive cancer",
+         "<strong>current <span class=\"wl\">breast cancer</span></strong>",
+         "<strong>current <span class=\"wl\">breast cancer</span></strong>",
+         "<strong>current progestin-receptor-positive <span class=\"wl\">breast cancer</span> — <span class=\"wl\">LNG-IUS</span> only; the <span class=\"wl\">copper IUD</span> is still fine</strong>"
+        ],
+        [
+         "Hepatic",
+         "severe <strong>decompensated</strong> <span class=\"wl\">cirrhosis</span> · hepatocellular adenoma · malignant hepatoma",
+         "as for combined",
+         "—"
+        ],
+        [
+         "Obstetric / timing",
+         "<strong>< 4 weeks postpartum if breastfeeding, < 21 days if not</strong> · smoker <strong>> 35 years at > 15 cigarettes/day</strong>",
+         "—",
+         "—"
+        ],
+        [
+         "Autoimmune / transplant",
+         "<span class=\"wl\">SLE</span> with <strong>positive or unknown</strong> antiphospholipid antibodies · complicated solid organ transplantation (graft failure, allograft vasculopathy)",
+         "—",
+         "—"
+        ],
+        [
+         "Gynecologic",
+         "undiagnosed abnormal bleeding",
+         "undiagnosed abnormal bleeding",
+         "<span class=\"wl\">pregnancy</span> · <strong>current</strong> <span class=\"wl\">PID</span> or <span class=\"wl\">cervicitis</span> · immediately post-septic abortion · known <strong>distorted uterine cavity</strong> · undiagnosed abnormal bleeding · malignant trophoblastic disease with persistently ↑ βhCG · pelvic tuberculosis"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p>⚠ <strong>Not on the intrauterine list, and each one is a distractor</strong>: smoking · age · nulliparity · <span class=\"wl\">HIV</span> · a <strong>past</strong> PID. ⚠ <strong>The two lectures grade hypertension differently</strong> — the drugs lecture calls it relative, the contraception lecture makes it category ④ at ≥ 160/≥ 100. Both are right: <strong>below that threshold it is relative, at or above it, absolute.</strong></p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Absolute contraindications to intrauterine contraception — the list is very short, which is the point:</strong> pregnancy · <strong>current <span class=\"wl\">pelvic inflammatory disease</span> or <span class=\"wl\">cervicitis</span></strong> · immediately after septic abortion · known distorted uterine cavity · abnormal vaginal bleeding not yet evaluated · malignant trophoblastic disease with persistently raised <span class=\"wl\">beta hCG</span> · <strong>current progestin-receptor-positive <span class=\"wl\">breast cancer</span> — hormonal device only, the copper device is still fine</strong> · pelvic tuberculosis. ⚠ <strong>Not on the list: smoking, age, <span class=\"wl\">human immunodeficiency virus</span>, nulliparity, or a PAST <span class=\"wl\">pelvic inflammatory disease</span>.</strong></p>"
       }
      ]
     },
@@ -674,7 +964,7 @@
      "hasNote": true,
      "title": "Vaginal Discharge",
      "framing": "<p><strong>pH is the first discriminator and it splits the four diagnoses in half.</strong> <span class=\"wl\">estrogen</span> drives discharge containing <strong>glycogen</strong>, which feeds <span class=\"wl\">lactobacilli</span> and holds the pH <strong>acidic</strong> — so a pH above 4.5 means the flora has already changed.</p>",
-     "keypoints": "<p><strong>BV is the #1 infectious vaginitis and is NOT an STI</strong>; yeast is #2 and affects <strong>75% of women in a lifetime</strong>. <strong>The classic trichomonas findings are the rare ones — frothy discharge in < 10%, strawberry cervix in only 2%, and the exam may be entirely normal.</strong> <strong>Trichomonas coexists with BV in 60%.</strong> Physiologic discharge is <strong>stretchy like raw egg white at ovulation</strong> — that is ↑ estrogen, not disease.</p>",
+     "keypoints": "<p><strong>BV is the #1 infectious vaginitis and is NOT an STI.</strong> <strong>A symptomatic patient whose swab reports \"altered vaginal flora\" is treated as BV.</strong> <strong>The classic trichomonas findings are the rare ones — frothy discharge in < 10%, strawberry cervix in only 2%, and the exam may be entirely normal.</strong> <strong>Trichomonas coexists with BV in 60%</strong>, and <strong>20% of women culture positive for Candida while asymptomatic</strong> — which is why candidiasis is treated only when it causes symptoms. Physiologic discharge is <strong>stretchy like raw egg white at ovulation</strong> — that is ↑ estrogen, not disease.</p>",
      "blocks": [
       {
        "t": "figure",
@@ -688,84 +978,88 @@
        "t": "table",
        "cols": [
         "",
-        "<strong><span class=\"wl\">Bacterial vaginosis</span></strong>",
-        "<strong><span class=\"wl\">Candidiasis</span></strong>",
-        "<strong><span class=\"wl\">Trichomoniasis</span></strong>",
+        "<strong><span class=\"wl\">Bacterial vaginosis</span></strong> (#1)",
+        "<strong><span class=\"wl\">Candidiasis</span></strong> (#2)",
+        "<strong><span class=\"wl\">Trichomoniasis</span></strong> (#3)",
         "<strong><span class=\"wl\">Atrophic vaginitis</span></strong>"
        ],
        "rows": [
         [
          "<strong>Cause</strong>",
-         "<strong>Not an STI</strong> — shift to anaerobes: <em>Gardnerella</em>, <em>Mobiluncus</em>, <em><span class=\"wl\">Mycoplasma</span></em>",
-         "<strong><span class=\"wl\">Candida albicans</span> in 90%</strong>; also <em>glabrata</em>, <em>tropicalis</em>",
-         "<strong>STI</strong> — flagellated protozoan; survives <strong>24 h in tap water and hot tubs</strong>; inoculum is semen",
-         "<strong>Low <span class=\"wl\">estrogen</span></strong> — <span class=\"wl\">menopause</span>, breastfeeding"
+         "<strong>Not an STI</strong> — flora shifts to <strong>anaerobe-predominant</strong>: <em>Gardnerella</em>, <em>Mobiluncus</em>, <em><span class=\"wl\">Mycoplasma</span></em>",
+         "<strong><span class=\"wl\">Candida albicans</span> in 90%</strong>; also <em>glabrata</em>, <em>tropicalis</em>. Affects <strong>75% of women in a lifetime</strong>",
+         "<strong>STI</strong> — flagellated protozoan; also <strong>hot tubs</strong>; creates an <strong>anaerobic environment</strong>",
+         "<strong>Low <span class=\"wl\">estrogen</span></strong> — <span class=\"wl\">menopause</span>, breastfeeding. An <strong>inflammatory reaction to atrophy</strong>"
         ],
         [
          "<strong>Risk</strong>",
-         "—",
-         "<strong><span class=\"wl\">diabetes</span></strong>, antibiotics, <strong>↑ estrogen (pregnancy, local estrogen)</strong>, immunosuppression",
+         "<strong>New sexual partner</strong>, <span class=\"wl\">IUD</span>, sexual activity, <strong>douching</strong>, smoking, Black ethnicity",
+         "<strong><span class=\"wl\">diabetes</span></strong>, <strong>pregnancy</strong>, antibiotics, immunosuppression",
          "Sexual contact",
-         "Hypoestrogenic states"
+         "Any hypoestrogenic state"
         ],
         [
          "<strong>Discharge</strong>",
-         "<strong>Grey-white, thin, coats the walls</strong>",
+         "<strong>Grey-white, thin, smoothly coats the walls</strong>",
          "<strong>White, thick, \"cottage cheese\", adherent</strong>",
-         "Copious, thin, <strong>greyish-green, malodorous, \"frothy\" — frothiness is released CO₂</strong>",
+         "<strong>Profuse, purulent, yellow-green, malodorous</strong> — <em>drips down the leg</em>",
          "Scant"
         ],
         [
          "<strong>Symptoms</strong>",
          "<strong>Fishy odour</strong>, little itch",
-         "<strong>Itch</strong>, external <span class=\"wl\">dysuria</span>, vulvar erythema, fissures, <strong>satellite lesions</strong>",
-         "Itch, <span class=\"wl\">dyspareunia</span>, post-coital bleeding",
-         "Painful intercourse, post-coital bleeding, burning"
+         "<strong>Vulvar pruritus</strong>, external <strong>\"splash\" <span class=\"wl\">dysuria</span></strong>, burning, <strong>fissuring</strong>",
+         "Vulvar pruritus, <span class=\"wl\">dyspareunia</span>",
+         "<strong><span class=\"wl\">dyspareunia</span></strong>, <strong>post-coital bleeding</strong>, burning"
         ],
         [
          "<strong>pH</strong>",
          "<strong>> 4.5</strong>",
          "<strong>< 4.5</strong>",
          "<strong>> 4.5</strong>",
-         "↑"
+         "<strong>Can be > 4.5</strong>"
         ],
         [
          "<strong>Exam</strong>",
-         "—",
-         "Vulvar erythema and fissuring",
-         "<strong>\"Strawberry cervix\"</strong> from punctate haemorrhages",
-         "<strong>Loss of rugae, friable mucosa</strong>"
+         "Discharge only",
+         "Vulvar and labial <strong>erythema + oedema</strong>, <strong>satellite pustulopapular lesions</strong>, <strong>normal cervix</strong>",
+         "Patchy erythema with <strong>colpitis macularis = \"strawberry cervix\"</strong>",
+         "<strong>Loss of rugae</strong>, <strong>friable mucosa</strong>, vulvovaginal atrophy"
         ],
         [
          "<strong>Dx</strong>",
-         "<strong>Amsel — any 3 of 4</strong> · gold standard is <strong>Gram stain with Nugent scoring</strong>",
-         "<strong>Clinical</strong>; wet mount; <strong>culture only if resistant</strong>",
-         "<strong>Microscopy + pH > 4.5</strong> · culture on <strong>Diamond's media</strong> · PCR",
-         "<strong>Clinical</strong>; ↑ WBC on smear"
+         "<strong>Amsel — any 3 of 4</strong>; gold standard is <strong>Gram stain with Nugent scoring</strong>. <strong>Culture is NOT required</strong>",
+         "<strong>Clinical</strong>, plus wet mount or Gram stain: <strong>budding yeast, hyphae or pseudohyphae</strong>, <strong>whiff test NEGATIVE</strong>. <strong>Culture only if resistant to therapy</strong>",
+         "a <strong>nucleic acid amplification test (NAAT) is the gold standard</strong>; culture was the pre-molecular standard (<strong>100% specific, 75-96% sensitive</strong>); <strong>wet mount is neither sensitive nor specific</strong>",
+         "<strong>Clinical</strong>, plus smear: <strong>parabasal epithelial cells predominate</strong>, ↑ WBC"
         ],
         [
          "<strong>Tx</strong>",
-         "<strong><span class=\"wl\">metronidazole</span> 500 mg p.o. BID x 7 d</strong> <em>or</em> <span class=\"wl\">clindamycin</span> 300 mg BID x 7 d",
-         "<strong><span class=\"wl\">fluconazole</span> 150 mg p.o. x 1</strong> <em>or</em> topical <span class=\"wl\">miconazole</span>/<span class=\"wl\">clotrimazole</span> x 7 d",
-         "<strong><span class=\"wl\">metronidazole</span> 2 g x 1</strong> <em>or</em> 500 mg BID x 7 d — <strong>treat the partner</strong>",
-         "<strong>Vaginal estrogen</strong> — cream, ring or tablet; moisturizer; regular activity"
+         "<strong><span class=\"wl\">metronidazole</span> 500 mg PO BID x 7 d</strong> <em>or</em> <span class=\"wl\">clindamycin</span> 300 mg BID x 7 d. <strong>Recurrent: 10-14 d</strong>",
+         "<strong><span class=\"wl\">fluconazole</span> 150 mg PO x 1</strong> <em>or</em> topical <span class=\"wl\">miconazole</span>/<span class=\"wl\">clotrimazole</span> x 7 d. <strong>Resistant / non-albicans: <span class=\"wl\">boric acid</span> 600 mg PV daily x 2 wk</strong>",
+         "<strong><span class=\"wl\">metronidazole</span> 2 g PO x 1</strong> <em>or</em> 500 mg BID x 7 d — <strong>treat partners from the last 6 months</strong>. <strong>Never the PV gel — not as effective</strong>",
+         "<strong>Vaginal <span class=\"wl\">estrogen</span></strong> — <span class=\"wl\">Premarin</span>, <span class=\"wl\">Estring</span> (<strong>change q3 months</strong>), <span class=\"wl\">Vagifem</span>. <strong>No progestin needed</strong>"
         ],
         [
          "<strong>In pregnancy</strong>",
-         "Preterm labour, <strong><span class=\"wl\">PPROM</span></strong>, <span class=\"wl\">chorioamnionitis</span>, post-C/S <span class=\"wl\">endometritis</span>",
-         "—",
-         "Preterm labour, PPROM, <strong><span class=\"wl\">SGA</span></strong>",
-         "—"
+         "Preterm labour, <strong><span class=\"wl\">PPROM</span></strong>, <span class=\"wl\">chorioamnionitis</span>, post-C/S <span class=\"wl\">endometritis</span>. <strong>Treatment must be ORAL or the obstetric risk is not reduced</strong> — then <strong>test of cure at 1 month</strong>. No routine screening",
+         "Preterm labour. <strong>Treat only if symptomatic</strong> — topical azole x 7 d, same as non-pregnant. <strong><span class=\"wl\">boric acid</span> is contraindicated</strong>",
+         "<strong>PPROM</strong>, preterm birth, <strong><span class=\"wl\">SGA</span></strong>. <strong>Same regimen as non-pregnant</strong>",
+         "Not applicable"
         ]
        ]
       },
       {
        "t": "note",
-       "html": "<p><strong>Amsel criteria (any 3 of 4):</strong> pH > 4.5 · <strong>> 20% clue cells per HPF</strong> · positive amine (\"whiff\") test · homogeneous milky discharge adherent to the walls. <strong>Nugent score:</strong> 0-3 normal · 4-6 intermediate · <strong>7-10 = BV</strong>.</p>"
+       "html": "<p><strong>Amsel criteria (any 3 of 4):</strong> pH > 4.5 · <strong>> 20% clue cells per HPF</strong> (epithelial cells with adherent bacteria) · positive amine (\"whiff\") test · homogeneous milky discharge adherent to the walls. <strong>Nugent score:</strong> 0-3 normal · 4-6 intermediate · <strong>7-10 = BV</strong>.</p>"
       },
       {
        "t": "note",
-       "html": "<p><strong>Workup skeleton</strong></p><p>- <strong>Hx</strong> — amount, colour, <strong>odour vs odourless</strong>, onset, better/worse, past treatments, itch or rash, full gyn and sexual history</p><p>- <strong>PEx</strong> — ⭐ <strong>look at the vulva and vagina, not just the cervix — they have their own pathology</strong> · hair pattern and removal (<span class=\"wl\">folliculitis</span>) · architecture · speculum</p><p>- <strong>Ix</strong> — swab the <strong>lateral walls</strong>, away from the cervix · <strong>pH strips read 3.5-7 and are read while still WET</strong> (blood has a pH of 7) · <strong>whiff test: 10% KOH alkalizes the amines anaerobes make</strong> · wet mount, saline or KOH, read on <strong>low and high power</strong></p><p>- ⚠ <strong>Do not use vaginal <span class=\"wl\">metronidazole</span> gel for trichomonas</strong> — it is not as effective</p><p>- ⚠ <strong>No alcohol on <span class=\"wl\">metronidazole</span></strong>; <strong><span class=\"wl\">boric acid</span> is toxic if swallowed and contraindicated in pregnancy</strong></p>"
+       "html": "<p><strong>Shared downstream risk:</strong> <strong>post-op cuff infection after <span class=\"wl\">hysterectomy</span></strong> follows <strong>both BV and trichomoniasis</strong>. BV alone also raises <span class=\"wl\">PID</span>, <strong>postabortal PID</strong> and <strong>abnormal <span class=\"wl\">Paps</span></strong>.</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Workup skeleton</strong></p><p>- <strong>Hx</strong> — amount, colour, <strong>odour vs odourless</strong>, onset, better/worse, past treatments, itch or rash, full gyn and sexual history</p><p>- <strong>PEx</strong> — ⭐ <strong>look at the vulva and vagina, not just the cervix — they have their own pathology</strong> · hair pattern and removal (<span class=\"wl\">folliculitis</span>) · architecture · speculum</p><p>- <strong>Ix</strong> — swab the <strong>lateral walls</strong>, away from the cervix · <strong>pH strips read 3.5-7 and are read while still WET</strong> (blood has a pH of 7) · <strong>whiff test: 10% KOH alkalizes the amines anaerobes make</strong> · wet mount, saline or KOH, read on <strong>low and high power</strong></p><p>- ⚠ <strong>Do not use vaginal <span class=\"wl\">metronidazole</span> gel for trichomonas</strong> — it is not as effective</p><p>- ⚠ <strong>No alcohol on <span class=\"wl\">metronidazole</span></strong>; <strong><span class=\"wl\">boric acid</span> is toxic if swallowed and contraindicated in pregnancy</strong>; long-term antifungals cause <strong><span class=\"wl\">hepatotoxicity</span></strong> and cross-react with <strong><span class=\"wl\">CCBs</span>, <span class=\"wl\">warfarin</span>, oral hypoglycemics and <span class=\"wl\">phenytoin</span></strong></p>"
       }
      ]
     },
@@ -1225,7 +1519,7 @@
       },
       {
        "t": "note",
-       "html": "<p><strong>Workup skeleton</strong></p><p>- <strong>Hx/PEx</strong> — the <strong>triad is pain, amenorrhea and vaginal bleeding</strong>; then displaced or enlarged uterus, <strong>orthostatic hypotension</strong>, pelvic mass, bulging fornix, <span class=\"wl\">cervical motion tenderness</span>, <strong>shoulder pain from diaphragmatic irritation</strong></p><p>- <strong>Ix</strong> — <strong>β-hCG doubles every 1.4-2.1 days, and 85% of viable IUPs rise ≥ 66% in 48 h</strong> · CBC, group and screen · <strong>TVUS should see an IUP above a β-hCG of 1500, and 99% by 3150</strong> (transabdominal needs <strong>6500</strong>) · <strong>\"ring of fire\"</strong> · free fluid</p><p>- <strong>Tx</strong> — expectant if <strong>β-hCG declining and < 200, mass < 3.5 cm, no rupture, asymptomatic</strong> · <strong><span class=\"wl\">methotrexate</span> 50 mg/m² IM</strong> ⚠ <strong>not mg/kg</strong> · surgery for instability, rupture, MTX contraindication</p><p>- ⭐ <strong>Any Rh-negative patient with a positive β-hCG and vaginal bleeding needs Rh immunoglobulin</strong> — WinRho or Rhogam — to protect her future pregnancies</p>"
+       "html": "<p><strong>Workup skeleton</strong></p><p>- <strong>Hx/PEx</strong> — the <strong>triad is abdominal pain, vaginal bleeding and a positive <span class=\"wl\">β-hCG</span></strong>; then displaced or enlarged uterus, <strong>orthostatic hypotension</strong>, pelvic mass, bulging fornix, <span class=\"wl\">cervical motion tenderness</span>, <strong>shoulder pain from diaphragmatic irritation</strong></p><p>- <strong>Ix</strong> — <strong>β-hCG doubles every 1.4-2.1 days, and 85% of viable IUPs rise ≥ 66% in 48 h</strong> · CBC, group and screen · <strong>TVUS should see an IUP above a β-hCG of 1500, and 99% by 3150</strong> (transabdominal needs <strong>6500</strong>) · <strong>\"ring of fire\"</strong> · free fluid</p><p>- <strong>Tx</strong> — expectant if <strong>β-hCG declining and < 200, mass < 3.5 cm, no rupture, asymptomatic</strong> · <strong><span class=\"wl\">methotrexate</span> 50 mg/m² IM</strong> ⚠ <strong>not mg/kg</strong> · surgery for instability, rupture, MTX contraindication</p><p>- ⭐ <strong>Any Rh-negative patient with a positive β-hCG and vaginal bleeding needs Rh immunoglobulin</strong> — WinRho or Rhogam — to protect her future pregnancies</p>"
       }
      ]
     },
