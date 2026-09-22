@@ -46,7 +46,10 @@ from embed_image import MAX_WIDTH, compress, resolve
 
 LOG = logging.getLogger("figures")
 
-ASSET_DIR = os.path.join("assets", "figures")
+# The URL is relative to the page that carries it, which lives in pom2/;
+# the directory it is written to is that same path from the repo root.
+ASSET_URL = "assets/figures"
+ASSET_DIR = os.path.join("pom2", *ASSET_URL.split("/"))
 MANIFEST = cfv.FIGURES_PATH
 
 # A figure spans the note's full column, where a question picture sits in a
@@ -104,7 +107,7 @@ def encode_asset(name, max_kb, max_width):
                     name, max_kb, len(raw) / 1024.0, width, quality)
 
     digest = hashlib.md5(raw).hexdigest()[:12]
-    rel = "%s/%s.jpg" % (ASSET_DIR.replace(os.sep, "/"), digest)
+    rel = "%s/%s.jpg" % (ASSET_URL, digest)
     dest = os.path.join(ASSET_DIR, digest + ".jpg")
 
     height = Image.open(io.BytesIO(raw)).height

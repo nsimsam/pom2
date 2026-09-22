@@ -30,7 +30,7 @@ FIG_LINE = re.compile(
     r"^\s*!\[\[\s*([^\]\|]+?\.(?:%s))\s*(?:\|\s*([^\]]*?)\s*)?\]\]\s*$" % IMG_EXT, re.I)
 
 # written by tools/figures.py, which owns Pillow so the rebuild scripts do not
-FIGURES_PATH = "pom2/pom2/data/figures.json"
+FIGURES_PATH = "pom2/data/figures.json"
 FIGURES = {}
 
 

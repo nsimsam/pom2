@@ -341,7 +341,7 @@
      "hasNote": true,
      "title": "Drugs Used in Gynecology",
      "framing": "<p>Every agent here does one of three things: <strong>disrupt the hypothalamic-pituitary-ovarian (HPO) axis</strong>, <strong>block the overgrowth of a sex-hormone-dependent tissue</strong>, or <strong>replace a hormone that is absent</strong>. Work out which, and the indications and adverse effects follow from it.</p>",
-     "keypoints": "<p>⭐ <strong>The progestin-only contraceptive's primary mechanism is local, not central</strong> — that is the single most-tested fact here, and it is what makes adherence matter so much more for the mini-pill. <strong>Hypertension is relative; an active thromboembolic event is absolute, and it is absolute for combined methods only.</strong> <strong>Drospirenone is the anti-androgenic progestin</strong> (spironolactone-derived) — the one to reach for in hormonal acne, and the one that risks <strong>hyperkalemia</strong>; estranes and gonanes are androgenic instead. <strong>Ulipristal beats levonorgestrel at every interval, including inside 72 hours</strong> ⚠ — an Elentra module question keys this the other way, and the lecture's own meta-analysis slide is the one to trust. <strong>GnRH agonists flare before they suppress; antagonists never flare.</strong> <strong>Finasteride lowers DHT, it does not block the androgen receptor</strong> — which is why it shrinks a prostate and thins body hair without touching muscle mass. ⚠ <strong>No emergency contraceptive works once implantation has happened</strong> — only <span class=\"wl\">mifepristone</span> acts on an established pregnancy.</p>",
+     "keypoints": "<p>⭐ <strong>The progestin-only contraceptive's primary mechanism is local, not central</strong> — that is the single most-tested fact here, and it is what makes adherence matter so much more for the mini-pill. <strong>Every contraindication in the combined column is an ESTROGEN contraindication</strong> — which is why the answer to “what can she have instead?” is almost always a progestin-only or intrauterine method. <strong><span class=\"wl\">migraine</span> with aura and an acute thromboembolic event are category ④ for combined methods only</strong>; hypertension crosses from relative to absolute at <strong>≥ 160 systolic or ≥ 100 diastolic</strong>. <strong>The patch and the ring bypass first-pass metabolism, and that — not the dose — is why they carry more VTE risk than the pill.</strong> <strong>Drospirenone is the anti-androgenic progestin</strong> (spironolactone-derived) — the one to reach for in hormonal acne, and the one that risks <strong>hyperkalemia</strong>; estranes and gonanes are androgenic instead. <strong>Ulipristal beats levonorgestrel at every interval, including inside 72 hours</strong> ⚠ — an Elentra module question keys this the other way, and the lecture's own meta-analysis slide is the one to trust. <strong>GnRH agonists flare before they suppress; antagonists never flare.</strong> <strong>Finasteride lowers DHT, it does not block the androgen receptor</strong> — which is why it shrinks a prostate and thins body hair without touching muscle mass. ⚠ <strong>No emergency contraceptive works once implantation has happened</strong> — only <span class=\"wl\">mifepristone</span> acts on an established pregnancy.</p>",
      "blocks": [
       {
        "t": "figure",
@@ -495,14 +495,69 @@
          "<strong>not ↑</strong> (except injection; except drospirenone/cyproterone)"
         ],
         [
-         "Absolute contraindication",
-         "+ <strong>active thromboembolic disease</strong>",
-         "breast cancer · undiagnosed bleeding · severe liver failure"
-        ],
-        [
          "Adherence",
          "forgiving",
          "<strong>unforgiving — mini-pill fails at >3 h late</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "lead": "<p><strong>Pill vs patch vs ring — all three are the same drug pair at the same typical-use failure rate (90 per 1000). What separates them is the route, and the route is what changes the risk.</strong></p>",
+       "cols": [
+        "",
+        "Pill (COC)",
+        "<span class=\"wl\">Patch</span>",
+        "<span class=\"wl\">Ring</span>"
+       ],
+       "rows": [
+        [
+         "Interval",
+         "<strong>daily</strong>",
+         "<strong>weekly × 3, then 1 hormone-free week</strong>",
+         "<strong>monthly — 3 weeks in, 1 week out</strong>"
+        ],
+        [
+         "Delivered daily",
+         "ethinyl estradiol <strong>10-35 mcg</strong> + any of many progestins",
+         "<strong>35 mcg ethinyl estradiol + 200 mcg norelgestromin</strong> from a 20 cm² patch — <em>the top of the pill's estrogen range</em>",
+         "<strong>15 mcg ethinyl estradiol + 120 mcg etonogestrel</strong> — <em>the lowest estrogen exposure of the three</em>"
+        ],
+        [
+         "First-pass metabolism",
+         "<strong>yes</strong> — hepatic, with enterohepatic recirculation, so <strong>CYP inducers and gut-flora disruption shorten it</strong>",
+         "<strong>bypassed</strong>",
+         "<strong>bypassed</strong>"
+        ],
+        [
+         "VTE risk",
+         "↑",
+         "<strong>↑↑ — bypassing first pass is why</strong>",
+         "<strong>↑↑ — same reason</strong>"
+        ],
+        [
+         "Efficacy quirk",
+         "monophasic · biphasic · triphasic · quadriphasic, to mimic the cycle",
+         "⚠ <strong>may be less effective at weight > 90 kg</strong>",
+         "<strong>more effective than the pill at blocking folliculogenesis</strong> (high progestin delivered at the uterus) · <strong>pseudodecidualizes the endometrium</strong> · reaches <strong>peri-rectal <span class=\"wl\">endometriosis</span> lesions</strong>"
+        ],
+        [
+         "Handling",
+         "—",
+         "<strong>buttock · upper outer arm · lower abdomen · upper torso</strong>",
+         "may be out <strong>≤ 3 h in any 24 h</strong> · insert with a <strong>cardboard, never plastic, applicator</strong> (plastic teeth scrape the slow-release surface)"
+        ],
+        [
+         "Drawback",
+         "<strong>needs daily compliance</strong>",
+         "skin irritation from the adhesive · cosmetic · weight",
+         "invasive · vaginal dryness and discomfort"
+        ],
+        [
+         "Continued at 1 y (CHOICE)",
+         "55.1%",
+         "<strong>49.1% — the lowest continuation of any method</strong>",
+         "54.2%"
         ]
        ]
       },
@@ -547,8 +602,68 @@
        "html": "<p><strong>Benefits of hormonal contraception</strong> — ↓ ovarian cysts · ↓ <strong>ovarian and endometrial cancer</strong> · ↓ pelvic inflammatory disease (PID) · ↓ dysmenorrhea · ↓ endometriosis · lighter, predictable periods · improved acne and premenstrual syndrome. Weigh these against the risks of pregnancy itself, not against zero.</p>"
       },
       {
+       "t": "table",
+       "lead": "<p><strong>Contraindications — graded on the Medical Eligibility Criteria (MEC)</strong>, which is the vocabulary the question stem will use: <strong>①</strong> no restriction · <strong>②</strong> advantages generally outweigh the risks · <strong>③</strong> <strong>risks usually outweigh the advantages — avoid unless other methods have failed or are unacceptable</strong> · <strong>④</strong> <strong>unacceptable health risk — the true absolute contraindication.</strong> Read the table as: <em>almost every entry in the left column is there because of the <strong>estrogen</strong>, which is exactly why the same patient can still have a progestin-only or intrauterine method.</em></p>",
+       "cols": [
+        "Category ④",
+        "Combined — pill · patch · ring",
+        "Progestin-only",
+        "Intrauterine (Cu-IUD / LNG-IUS)"
+       ],
+       "rows": [
+        [
+         "Thrombotic",
+         "acute <span class=\"wl\">DVT</span> / <span class=\"wl\">PE</span> · known <span class=\"wl\">thrombophilia</span> incl. <span class=\"wl\">antiphospholipid syndrome (APS)</span> · major surgery with prolonged immobilization · <strong>past DVT/PE only if she is OFF anticoagulation <em>and</em> at high recurrence risk</strong> (estrogen-, pregnancy-associated or idiopathic · thrombophilia/APS · active cancer except non-melanoma skin · recurrent)",
+         "—",
+         "—"
+        ],
+        [
+         "Vascular / cardiac",
+         "vascular disease · current <strong>or past</strong> ischemic heart disease · history of <span class=\"wl\">stroke</span> · complicated <span class=\"wl\">valvular heart disease</span> (pulmonary hypertension, AFib risk, prior endocarditis) · peripartum <span class=\"wl\">cardiomyopathy</span> (moderate-severe, or normal-mild <strong>< 6 months</strong>) · <strong><span class=\"wl\">hypertension</span> at systolic ≥ 160 <em>or</em> diastolic ≥ 100 mmHg</strong>",
+         "—",
+         "—"
+        ],
+        [
+         "Neurologic",
+         "<strong><span class=\"wl\">migraine</span> with aura</strong>",
+         "—",
+         "—"
+        ],
+        [
+         "Hormone-sensitive cancer",
+         "<strong>current <span class=\"wl\">breast cancer</span></strong>",
+         "<strong>current <span class=\"wl\">breast cancer</span></strong>",
+         "<strong>current progestin-receptor-positive <span class=\"wl\">breast cancer</span> — <span class=\"wl\">LNG-IUS</span> only; the <span class=\"wl\">copper IUD</span> is still fine</strong>"
+        ],
+        [
+         "Hepatic",
+         "severe <strong>decompensated</strong> <span class=\"wl\">cirrhosis</span> · hepatocellular adenoma · malignant hepatoma",
+         "as for combined",
+         "—"
+        ],
+        [
+         "Obstetric / timing",
+         "<strong>< 4 weeks postpartum if breastfeeding, < 21 days if not</strong> · smoker <strong>> 35 years at > 15 cigarettes/day</strong>",
+         "—",
+         "—"
+        ],
+        [
+         "Autoimmune / transplant",
+         "<span class=\"wl\">SLE</span> with <strong>positive or unknown</strong> antiphospholipid antibodies · complicated solid organ transplantation (graft failure, allograft vasculopathy)",
+         "—",
+         "—"
+        ],
+        [
+         "Gynecologic",
+         "undiagnosed abnormal bleeding",
+         "undiagnosed abnormal bleeding",
+         "<span class=\"wl\">pregnancy</span> · <strong>current</strong> <span class=\"wl\">PID</span> or <span class=\"wl\">cervicitis</span> · immediately post-septic abortion · known <strong>distorted uterine cavity</strong> · undiagnosed abnormal bleeding · malignant trophoblastic disease with persistently ↑ βhCG · pelvic tuberculosis"
+        ]
+       ]
+      },
+      {
        "t": "note",
-       "html": "<p><strong>Contraindications to hormonal contraception</strong> — breast or reproductive-tract cancer · history of stroke / thromboembolic disease / myocardial infarction / coronary artery disease · severe cirrhosis or liver tumour · <strong>undiagnosed abnormal bleeding</strong> · ⚠ <strong>hypertension is the only RELATIVE one on the list</strong> · caution if smoker <strong>>35 years</strong>.</p>"
+       "html": "<p>⚠ <strong>Not on the intrauterine list, and each one is a distractor</strong>: smoking · age · nulliparity · <span class=\"wl\">HIV</span> · a <strong>past</strong> PID. ⚠ <strong>The two lectures grade hypertension differently</strong> — the drugs lecture calls it relative, the contraception lecture makes it category ④ at ≥ 160/≥ 100. Both are right: <strong>below that threshold it is relative, at or above it, absolute.</strong></p>"
       }
      ]
     },
@@ -1972,7 +2087,113 @@
      "id": "repro-w4-in-class-amenorrhea",
      "num": "—",
      "name": "In-Class - Amenorrhea",
-     "hasNote": false
+     "hasNote": true,
+     "title": "Approach to Amenorrhea",
+     "framing": "<p>Amenorrhea is a <strong>compartment</strong> problem — the block sits in the <strong>outflow tract, the ovary, the pituitary or the hypothalamus</strong> — and <strong>two numbers sort it</strong>: the <strong><span class=\"wl\">beta hCG</span> first, always</strong>, then <span class=\"wl\">FSH</span>, which says whether the pituitary is <strong>shouting at a dead ovary (high FSH)</strong> or <strong>not shouting at all (low FSH)</strong>.</p>",
+     "keypoints": "<p>⭐ <strong>rule out pregnancy first, before any other test and whatever the story sounds like.</strong> <strong>High FSH means the ovary has failed; low FSH means the problem is above it</strong> — that one number splits the differential, and <strong>a normal FSH with normal prolactin and TSH points at anovulation, which is where PCOS lives.</strong> <strong>PCOS is the commonest secondary cause (28%), Turner the commonest primary (27%).</strong> ⚠ <strong>The workbook keys primary amenorrhea as \"no periods by 16\"; the lecture uses 13 without and 15 with secondary sex characteristics</strong> — answer to the source in front of you.</p>",
+     "blocks": [
+      {
+       "t": "figure",
+       "src": "assets/figures/5ddbd287a114.jpg",
+       "alt": "Approach to Amenorrhea.png",
+       "w": 900,
+       "h": 356,
+       "cap": "The full lab-based approach, from the beta hCG down"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong><span class=\"wl\">Primary</span></strong> = no menses ever — <strong>by 13 without</strong> secondary sex characteristics, <strong>by 15 with</strong> them. <strong><span class=\"wl\">Secondary</span></strong> = <strong>≥ 3 months</strong> without menses after regular cycles, or <strong>≤ 9 periods/year</strong>.</p>"
+      },
+      {
+       "t": "pathway",
+       "mermaid": "flowchart TD\n    A[\"Amenorrhea\"] --> B{\"beta-hCG\"}\n    B -->|POSITIVE| C[\"PREGNANCY — exclude first, every time\"]\n    B -->|NEGATIVE| D{\"Uterus present?\"}\n    D -->|\"NO — and pubarche\"| E[\"MRKH, 46,XX\"]\n    D -->|\"NO — no pubarche\"| F[\"Androgen insensitivity, 46,XY\"]\n    D -->|Yes| G{\"Prolactin, TSH\"}\n    G -->|Abnormal| H[\"Prolactinoma or drug · hypothyroidism\"]\n    G -->|Normal| I{\"serum FSH\"}\n    I -->|HIGH| J[\"OVARIAN — karyotype:<br/>abnormal = Turner, normal = POI\"]\n    I -->|LOW| K[\"HYPOTHALAMIC / PITUITARY — functional first,<br/>MRI only if no stressor\"]\n    I -->|NORMAL| L[\"ANOVULATION — androgens:<br/>PCOS, tumour, late-onset CAH\"]"
+      },
+      {
+       "t": "table",
+       "cols": [
+        "",
+        "<u>Outflow tract</u> — anatomic",
+        "<u>Ovarian</u> — <span class=\"wl\">hypergonadotropic</span>",
+        "<u>Pituitary</u>",
+        "<u>Hypothalamic</u> — <span class=\"wl\">hypogonadotropic</span>",
+        "<u>Eugonadotropic</u> — anovulation"
+       ],
+       "rows": [
+        [
+         "<strong><span class=\"wl\">FSH</span> / <span class=\"wl\">LH</span></strong>",
+         "<strong>Normal</strong>",
+         "<strong>HIGH</strong>",
+         "Low or inappropriately normal",
+         "<strong>LOW</strong>",
+         "<strong>Normal</strong>"
+        ],
+        [
+         "<strong><span class=\"wl\">estrogen</span></strong>",
+         "<strong>Normal</strong>",
+         "Low",
+         "Low",
+         "Low",
+         "<strong>Normal or high — and unopposed</strong>"
+        ],
+        [
+         "<strong>The lesion</strong>",
+         "Blood is made but <strong>cannot get out</strong>",
+         "<strong>No follicles left to answer</strong> the gonadotropins",
+         "Gonadotrophs crushed, destroyed or suppressed",
+         "<strong>GnRH pulses stop</strong>",
+         "<strong>No ovulation → no <span class=\"wl\">progesterone</span> → no withdrawal bleed</strong>"
+        ],
+        [
+         "<strong>Primary causes</strong>",
+         "<strong><span class=\"wl\">imperforate hymen</span></strong> — commonest outflow anomaly · <strong><span class=\"wl\">MRKH</span> (15%)</strong> · <span class=\"wl\">transverse vaginal septum</span> · <span class=\"wl\">AIS</span>",
+         "<strong><span class=\"wl\">Turner syndrome</span> (27%)</strong> · <span class=\"wl\">gonadal dysgenesis</span> (<span class=\"wl\">XX</span> or <span class=\"wl\">XY</span>)",
+         "Congenital hypopituitarism · tumour, irradiation",
+         "<strong><span class=\"wl\">Constitutional delay</span> (14%)</strong> · <span class=\"wl\">Kallmann syndrome</span> (<strong>anosmia</strong>)",
+         "<span class=\"wl\">PCOS</span> — uncommon this early"
+        ],
+        [
+         "<strong>Secondary causes</strong>",
+         "<strong><span class=\"wl\">Asherman syndrome</span></strong> — after instrumentation · <span class=\"wl\">cervical stenosis</span>",
+         "<span class=\"wl\">POI</span> <strong>before 40</strong> · chemotherapy, radiation",
+         "<strong><span class=\"wl\">prolactinoma</span> / <span class=\"wl\">pituitary adenoma</span> (10%)</strong> · <strong><span class=\"wl\">Sheehan's syndrome</span></strong>",
+         "<strong><span class=\"wl\">Functional</span> (15%)</strong> — eating disorder, exercise, stress",
+         "<strong><span class=\"wl\">PCOS</span> (28%)</strong> · late-onset <span class=\"wl\">CAH</span> · <span class=\"wl\">thyroid disease</span>"
+        ],
+        [
+         "<strong>Clues</strong>",
+         "<strong>Cyclical pain with no bleeding</strong>; trapped blood → soft enlarged uterus (<span class=\"wl\">hematometra</span>)",
+         "Vasomotor symptoms; <strong>short stature, webbed neck, shield chest</strong>",
+         "<strong><span class=\"wl\">Galactorrhoea</span></strong>, headache, <strong>bitemporal field loss</strong>; <strong>failure to lactate after PPH</strong>",
+         "<strong>Low <span class=\"wl\">BMI</span></strong>, athlete, recent stressor; <strong>anosmia</strong>",
+         "<strong><span class=\"wl\">hirsutism</span>, acne, obesity</strong>; cycles <strong>irregular rather than absent</strong>"
+        ],
+        [
+         "<strong>Next test</strong>",
+         "Ultrasound and bimanual for a uterus; then <strong>pubarche and <span class=\"wl\">testosterone</span> split <span class=\"wl\">MRKH</span> (46,XX, female range, hair present) from <span class=\"wl\">AIS</span> (46,XY, male range, hair absent)</strong>",
+         "<strong>Karyotype</strong>",
+         "<strong><span class=\"wl\">Prolactin</span>, then MRI sella</strong>",
+         "<strong>MRI only once functional causes are excluded</strong>",
+         "<strong><span class=\"wl\">Testosterone</span>, <span class=\"wl\">DHEA-S</span>, <span class=\"wl\">17-OHP</span></strong>"
+        ],
+        [
+         "<strong>Tx</strong>",
+         "Hymenotomy, septum resection, adhesiolysis; <strong>excise the gonads in AIS — malignancy risk</strong>",
+         "<strong>HRT to protect bone</strong>; donor oocyte for fertility",
+         "<strong><span class=\"wl\">Dopamine agonist</span> first line for a prolactinoma, not surgery</strong>; <span class=\"wl\">levothyroxine</span> if hypothyroid",
+         "<strong>Restore energy availability</strong>; HRT if it persists",
+         "<strong><span class=\"wl\">COC</span> or cyclic progestin — oppose the estrogen, protect the endometrium</strong>"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Workup skeleton</strong></p><p>- <strong>Hx</strong> — cycle history · <strong>weight change, exercise load, stressors, eating pattern</strong> · galactorrhoea, headache, visual change, anosmia · hirsutism · <strong>postpartum haemorrhage</strong> · <strong>instrumentation (D&amp;C, ablation)</strong> · ⚠ <span class=\"wl\">antipsychotics</span> and other dopamine antagonists, <span class=\"wl\">contraceptives</span></p><p>- <strong>PEx</strong> — <strong>height and <span class=\"wl\">BMI</span></strong> · Tanner staging, <strong>pubic hair</strong> · <strong>visual fields</strong> · breast and expressed galactorrhoea · <strong>speculum and <span class=\"wl\">bimanual pelvic exam</span> for a cervix, a uterus, a septum or an imperforate hymen</strong></p><p>- <strong>Ix</strong> — ⭐ <strong><span class=\"wl\">beta hCG</span> before anything else</strong> · <span class=\"wl\">serum FSH</span> / <span class=\"wl\">serum LH</span> · <span class=\"wl\">serum prolactin</span> · <span class=\"wl\">serum TSH</span> and <span class=\"wl\">free T4</span> · androgens · pelvic ultrasound · <strong>karyotype when FSH is high</strong> · ⚠ <strong>MRI is not first line</strong></p><p>- <strong>Follow-up</strong> — <strong>estrogen deficiency costs bone whatever the compartment</strong>, so treat it in all four</p>"
+      },
+      {
+       "t": "note",
+       "html": "<p><strong>Why thyroid and prolactin share a branch:</strong> ↓ T4 → <strong>↑ TRH</strong> → ↑ TSH <strong>and ↑ <span class=\"wl\">prolactin</span></strong> → prolactin suppresses GnRH pulses → anovulation. <span class=\"wl\">hyperprolactinemia</span> is present in <strong>10% of amenorrhoeic women and 50% of those with galactorrhoea</strong>, and is <strong>as often a drug as a tumour</strong>.</p>"
+      }
+     ]
     }
    ]
   },
