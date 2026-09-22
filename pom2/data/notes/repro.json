@@ -964,7 +964,7 @@
      "hasNote": true,
      "title": "Vaginal Discharge",
      "framing": "<p><strong>pH is the first discriminator and it splits the four diagnoses in half.</strong> <span class=\"wl\">estrogen</span> drives discharge containing <strong>glycogen</strong>, which feeds <span class=\"wl\">lactobacilli</span> and holds the pH <strong>acidic</strong> — so a pH above 4.5 means the flora has already changed.</p>",
-     "keypoints": "<p><strong>BV is the #1 infectious vaginitis and is NOT an STI.</strong> <strong>A symptomatic patient whose swab reports \"altered vaginal flora\" is treated as BV.</strong> <strong>The classic trichomonas findings are the rare ones — frothy discharge in < 10%, strawberry cervix in only 2%, and the exam may be entirely normal.</strong> <strong>Trichomonas coexists with BV in 60%</strong>, and <strong>20% of women culture positive for Candida while asymptomatic</strong> — which is why candidiasis is treated only when it causes symptoms. Physiologic discharge is <strong>stretchy like raw egg white at ovulation</strong> — that is ↑ estrogen, not disease.</p>",
+     "keypoints": "<p><strong>Know the ranking, the symptoms and the diagnostic test; for treatment know the route, not the dose.</strong> <strong>BV is the #1 infectious vaginitis and is NOT an STI — but it potentiates acquiring one</strong>, which is half the reason to treat it. <strong>A symptomatic swab reporting \"altered vaginal flora\" is treated as BV.</strong> <strong>The classic trichomonas findings are the rare ones — frothy discharge in < 10%, strawberry cervix in only 2%, and the exam may be entirely normal.</strong> <strong>Trichomonas coexists with BV in 60%</strong>; <strong>20% of women culture positive for Candida while asymptomatic</strong>, which is why it is treated only when symptomatic. Physiologic discharge is <strong>stretchy like raw egg white at ovulation</strong> — ↑ estrogen, not disease.</p>",
      "blocks": [
       {
        "t": "figure",
@@ -1035,16 +1035,23 @@
         ],
         [
          "<strong>Tx</strong>",
-         "<strong><span class=\"wl\">metronidazole</span> 500 mg PO BID x 7 d</strong> <em>or</em> <span class=\"wl\">clindamycin</span> 300 mg BID x 7 d. <strong>Recurrent: 10-14 d</strong>",
-         "<strong><span class=\"wl\">fluconazole</span> 150 mg PO x 1</strong> <em>or</em> topical <span class=\"wl\">miconazole</span>/<span class=\"wl\">clotrimazole</span> x 7 d. <strong>Resistant / non-albicans: <span class=\"wl\">boric acid</span> 600 mg PV daily x 2 wk</strong>",
-         "<strong><span class=\"wl\">metronidazole</span> 2 g PO x 1</strong> <em>or</em> 500 mg BID x 7 d — <strong>treat partners from the last 6 months</strong>. <strong>Never the PV gel — not as effective</strong>",
-         "<strong>Vaginal <span class=\"wl\">estrogen</span></strong> — <span class=\"wl\">Premarin</span>, <span class=\"wl\">Estring</span> (<strong>change q3 months</strong>), <span class=\"wl\">Vagifem</span>. <strong>No progestin needed</strong>"
+         "<strong><span class=\"wl\">metronidazole</span>, oral or intravaginal</strong>; <span class=\"wl\">clindamycin</span> either route is the alternative. <strong>Recurrent — longer course, then suppression</strong>",
+         "<strong>All three routes work</strong> — topical or intravaginal azole (<span class=\"wl\">miconazole</span>, <span class=\"wl\">clotrimazole</span>) <em>or</em> <strong>one oral <span class=\"wl\">fluconazole</span> dose</strong>; preference decides. Resistant — <strong><span class=\"wl\">boric acid</span> intravaginally</strong>",
+         "<strong>Oral <span class=\"wl\">metronidazole</span> only</strong> — single dose or a week. <strong>Never the vaginal gel.</strong> <strong>Treat partners from the last 6 months</strong>",
+         "<strong>Local vaginal <span class=\"wl\">estrogen</span></strong> — cream (<span class=\"wl\">Premarin</span>), ring (<span class=\"wl\">Estring</span>) or tablet (<span class=\"wl\">Vagifem</span>). <strong>No progestin needed</strong>; plus moisturizers"
+        ],
+        [
+         "<strong>Why treat</strong>",
+         "Symptoms — <strong>plus BV potentiates acquisition of an <span class=\"wl\">STI</span></strong>, <span class=\"wl\">PID</span> and <strong>postabortal PID</strong>, and abnormal <span class=\"wl\">Paps</span>",
+         "<strong>Symptoms only</strong> — <strong>20% carry Candida asymptomatically and are not treated</strong>",
+         "It <strong>is</strong> an STI — partners must be treated or it simply returns",
+         "Symptoms — plus <strong>post-menopausal bleeding</strong>, which itself demands a workup, and <strong>recurrent <span class=\"wl\">UTI</span></strong>"
         ],
         [
          "<strong>In pregnancy</strong>",
-         "Preterm labour, <strong><span class=\"wl\">PPROM</span></strong>, <span class=\"wl\">chorioamnionitis</span>, post-C/S <span class=\"wl\">endometritis</span>. <strong>Treatment must be ORAL or the obstetric risk is not reduced</strong> — then <strong>test of cure at 1 month</strong>. No routine screening",
-         "Preterm labour. <strong>Treat only if symptomatic</strong> — topical azole x 7 d, same as non-pregnant. <strong><span class=\"wl\">boric acid</span> is contraindicated</strong>",
-         "<strong>PPROM</strong>, preterm birth, <strong><span class=\"wl\">SGA</span></strong>. <strong>Same regimen as non-pregnant</strong>",
+         "Preterm labour, <strong><span class=\"wl\">PPROM</span></strong>, <span class=\"wl\">chorioamnionitis</span>, post-C/S <span class=\"wl\">endometritis</span>. <strong>Treatment must be ORAL</strong> — a topical clears the symptoms without reducing the obstetric risk — then <strong>test of cure at 1 month</strong>. No routine screening",
+         "Preterm labour. <strong>Treat only if symptomatic</strong>; topical azole, as outside pregnancy. <strong><span class=\"wl\">boric acid</span> is contraindicated</strong>",
+         "<strong>PPROM</strong>, preterm birth, <strong><span class=\"wl\">SGA</span></strong>. <strong>Same treatment as outside pregnancy</strong>",
          "Not applicable"
         ]
        ]
@@ -1055,7 +1062,7 @@
       },
       {
        "t": "note",
-       "html": "<p><strong>Shared downstream risk:</strong> <strong>post-op cuff infection after <span class=\"wl\">hysterectomy</span></strong> follows <strong>both BV and trichomoniasis</strong>. BV alone also raises <span class=\"wl\">PID</span>, <strong>postabortal PID</strong> and <strong>abnormal <span class=\"wl\">Paps</span></strong>.</p>"
+       "html": "<p><strong>Shared downstream risk:</strong> <strong>post-operative cuff infection after <span class=\"wl\">hysterectomy</span></strong> follows <strong>both BV and trichomoniasis</strong> — the anaerobic environment is what the two have in common.</p>"
       },
       {
        "t": "note",
