@@ -139,6 +139,35 @@
     align-items:start;
 }
 
+/* A panel with no rail beside it - the Anki tab until its decks are in.
+   One column, so the empty state sits under the tab strip rather than in
+   the 1fr track with a 250px hole where the filters would be. */
+.q-shell.is-solo{
+    grid-template-columns:1fr;
+}
+
+.tab-empty{
+    border:1px dashed var(--border);
+    border-radius:10px;
+    padding:56px 32px;
+    text-align:center;
+    color:var(--muted);
+}
+
+.tab-empty h2{
+    margin:0 0 10px;
+    font-size:1.15rem;
+    font-weight:600;
+    color:var(--text);
+}
+
+.tab-empty p{
+    margin:0 auto;
+    max-width:46ch;
+    font-size:.9rem;
+    line-height:1.7;
+}
+
 /* A grid item is min-width:auto by default, so one long lecture name in the
    index would stretch the whole rail past its 250px track and slide it under
    the stream. Both the rail and the panels inside it have to be allowed to be
@@ -1596,7 +1625,7 @@
 /* a note is a one-pager by design, so printing gives one per sheet and drops
    every control - the gaps go too, they are screen bookkeeping */
 @media print{
-    .pill-nav,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar{display:none !important;}
+    .uplink,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar{display:none !important;}
 
     /* one note, one week, or the lot: whatever was marked survives the print
        and everything else steps out of the way */

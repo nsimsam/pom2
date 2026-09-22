@@ -1,6 +1,6 @@
 /* Tab strip for a course block page.
 
-   Notes and questions are two views of the same week, so they share a page.
+   Notes, Anki and questions are three views of the same week, so they share a page.
    The block's question JSON runs to hundreds of kilobytes, so neither half is
    fetched until its tab is first opened - POM2_QUIZ.boot and POM2_NOTES.boot
    are both no-ops on a second call, which is what makes switching back free.
@@ -19,6 +19,12 @@
       panel: "panel-notes",
       board: "sb-notes",
       boot: function () { if (window.POM2_NOTES) window.POM2_NOTES.boot(); }
+    },
+    anki: {
+      tab: "tab-anki",
+      panel: "panel-anki",
+      board: null,          /* a placeholder has nothing to count yet */
+      boot: function () {}
     },
     questions: {
       tab: "tab-questions",
@@ -49,8 +55,13 @@
       var t = TABS[k], on = k === key;
       byId(t.tab).setAttribute("aria-selected", on ? "true" : "false");
       byId(t.panel).hidden = !on;
-      byId(t.board).hidden = !on;
+      if (t.board) byId(t.board).hidden = !on;
     });
+    if (!TABS[key].board) {
+      Object.keys(TABS).forEach(function (k) {
+        if (TABS[k].board) byId(TABS[k].board).hidden = true;
+      });
+    }
     TABS[key].boot();
   }
 

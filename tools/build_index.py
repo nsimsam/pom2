@@ -99,6 +99,7 @@ TEMPLATE = u"""<!DOCTYPE html>
 <meta name="robots" content="noindex, nofollow">
 {favicon}
 
+{nocache}
 {fonts}
 <link rel="stylesheet" href="{base_css}">
 <link rel="stylesheet" href="{portal_css}">
@@ -111,7 +112,7 @@ TEMPLATE = u"""<!DOCTYPE html>
 
 <div class="pom2-page">
 
-{pillnav}
+{uplink}
 
 <div class="page-hero">
 <h1>{short}.</h1>
@@ -139,9 +140,9 @@ def main():
         label, fill = FAVICON[course["slug"]]
         html = TEMPLATE.format(
             short=course["short"], desc=course["blurb"],
-            favicon=portal.favicon(label, fill), fonts=portal.FONTS,
+            favicon=portal.favicon(label, fill), fonts=portal.FONTS, nocache=portal.NOCACHE,
             base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
-            accent=course["accent"], cf=portal.CF, pillnav=portal.pillnav(1),
+            accent=course["accent"], cf=portal.CF, uplink=portal.uplink(1),
             hero=hero, cards=cards(course) or "", prose=prose, footer=portal.footer())
         io.open(os.path.join(course["slug"], "index.html"), "w",
                 encoding="utf-8", newline="\n").write(html)

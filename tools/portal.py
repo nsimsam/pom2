@@ -36,7 +36,7 @@ COURSES = [
         "blocks": [
             ("b1", 1, u"Principles & Development",      u"1–4"),
             ("b2", 2, u"Regulation, Neoplasia & Aging", u"5–8"),
-            ("b3", 3, u"Blood & Malignancy",            u"9–12"),
+            ("b3", 3, u"Hematology",                    u"9–12"),
             ("b4", 4, u"Infection & Immunity",          u"13–15"),
         ],
         "families": [
@@ -177,18 +177,21 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
          '<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;'
          '9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">')
 
+# The CSS, JS and JSON are all content-hashed, so the browser may cache them
+# forever. The pages that name those hashes must NOT be cached that way, or a
+# rebuild is invisible until someone thinks to hard-refresh - which is exactly
+# what happened. "no-cache" is not "don't store": it stores the page and asks
+# whether it changed, so an unchanged page still costs one 304 and no download.
+NOCACHE = ('<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">\n'
+           '<meta http-equiv="Pragma" content="no-cache">')
+
 # the portal ships without analytics; drop your own snippet in here if you want it
 CF = ""
 
 
-def pillnav(depth):
-    """The nav back to the site the portal hangs off, plus a way up to the hub."""
-    up = "../" * depth
-    return ("""<nav class="pill-nav">
-<a href="https://noorsimsam.com/#top">Noor</a>
-<a href="https://noorsimsam.com/writing.html">Writing</a>
-<a href="%sindex.html">All courses</a>
-</nav>""" % up)
+def uplink(depth):
+    """The one way back up to the hub, for pages that have no block nav."""
+    return '<a class="uplink" href="%sindex.html">&larr; All courses</a>' % ("../" * depth)
 
 
 def footer():

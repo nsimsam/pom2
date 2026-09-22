@@ -61,6 +61,7 @@ TEMPLATE = u"""<!DOCTYPE html>
 <meta name="robots" content="noindex, nofollow">
 {favicon}
 
+{nocache}
 {fonts}
 <link rel="stylesheet" href="{base_css}">
 <link rel="stylesheet" href="{portal_css}">
@@ -72,12 +73,6 @@ TEMPLATE = u"""<!DOCTYPE html>
 <body>
 
 <div class="pom2-page">
-
-<nav class="pill-nav">
-<a href="https://noorsimsam.com/#top">Noor</a>
-<a href="https://noorsimsam.com/writing.html">Writing</a>
-<a href="https://noorsimsam.com/#projects">Projects</a>
-</nav>
 
 <div class="page-hero">
 <h1>Pre-clerkship.</h1>
@@ -165,7 +160,7 @@ progress</strong> and <strong>Restore from a file</strong> to move a JSON file b
 def main():
     q, w, l = totals()
     html = TEMPLATE.format(
-        favicon=portal.favicon("PC", "1f4e5f"), fonts=portal.FONTS,
+        favicon=portal.favicon("PC", "1f4e5f"), fonts=portal.FONTS, nocache=portal.NOCACHE,
         base_css="base.css?v=" + portal.digest("base.css"),
         portal_css="portal.css?v=" + portal.digest("portal.css"),
         cf=portal.CF, total="{:,}".format(q), cards=cards(), footer=portal.footer())

@@ -201,3 +201,27 @@ Two things it will not decide on its own:
 
 Both are reported on stdout at the end of a run, with the qid range the fragment
 claims.
+
+**`tools/onenote_local.py`** reads OneNote pages off this laptop, with no Graph
+API and no login — the ms365 route has been refused since 2026-09-07 with
+`AADSTS50158`, a Duo challenge on a stale token. It drives the installed OneNote
+desktop app over COM, which is already signed in and holds the same notebooks.
+
+```bash
+python tools/onenote_local.py list "Principles of Medicine 2"
+python tools/onenote_local.py page --find "hypothyroidism" --slides
+```
+
+`list` prints `path :: title :: id` for every page; `page` takes an id, or
+`--find <title fragment>` and resolves it. It prints her typed notes first,
+which are what a vault note is actually built from, and adds the slide printouts
+under `--slides`. Those slides come through as **text**: OneNote has already run
+OCR over every image, so the words on the slides need no download and no image
+read, which is the one thing the Graph route made expensive.
+
+Two notes on where it runs. It needs `powershell.exe` and Office 16, so it is a
+laptop tool, not a server one. And if COM is ever unavailable, OneNote's own
+automatic backups under
+`%LOCALAPPDATA%/Microsoft/OneNote/16.0/Backup` hold the same text —
+`strings -el` on a `.one` section file reaches it without any app at all, but
+flattens the page, losing the split between her notes and the lecturer's slides.

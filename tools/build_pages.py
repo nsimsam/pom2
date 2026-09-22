@@ -103,6 +103,7 @@ PAGE = u"""<!DOCTYPE html>
 <meta name="robots" content="noindex, nofollow">
 {favicon}
 
+{nocache}
 {fonts}
 <link rel="stylesheet" href="{base_css}">
 <link rel="stylesheet" href="{portal_css}">
@@ -115,7 +116,6 @@ PAGE = u"""<!DOCTYPE html>
 
 <div class="pom2-page">
 
-{pillnav}
 <nav class="blocknav">
 {blocknav}
 </nav>
@@ -138,9 +138,18 @@ PAGE = u"""<!DOCTYPE html>
 </div>
 </header>
 
-<div class="tabs" role="tablist" aria-label="Notes or questions">
+<div class="tabs" role="tablist" aria-label="Notes, Anki or questions">
 <button type="button" id="tab-notes" role="tab" aria-selected="true" aria-controls="panel-notes">Notes <span class="tc" id="tc-notes">{written}/{lectures}</span></button>
+<button type="button" id="tab-anki" role="tab" aria-selected="false" aria-controls="panel-anki">Anki</button>
 <button type="button" id="tab-questions" role="tab" aria-selected="false" aria-controls="panel-questions">Practice questions <span class="tc">{questions}</span></button>
+</div>
+
+<div class="q-shell is-solo" id="panel-anki" role="tabpanel" aria-labelledby="tab-anki" hidden>
+<div class="tab-empty">
+<h2>The decks are not up yet.</h2>
+<p>This is where the {course} Anki cards for weeks {weeks} will live, filed by week and
+lecture the way the notes are. Nothing has been uploaded into it yet.</p>
+</div>
 </div>
 
 <div class="q-shell" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes">
@@ -279,9 +288,8 @@ def main():
                 base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
                 quiz_js=portal.asset("quiz.js"), notes_js=portal.asset("notes.js"),
                 portal_js=portal.asset("portal.js"),
-                name=name, course=course["short"], lead=lead, desc=desc, accent=accent,
-                fonts=portal.FONTS, cf=portal.CF, footer=portal.footer(),
-                pillnav=portal.pillnav(1), howto=HOWTO, favicon=portal.favicon(label, fill),
+                name=name, course=course["short"], weeks=weeks, lead=lead, desc=desc, accent=accent,
+                fonts=portal.FONTS, nocache=portal.NOCACHE, cf=portal.CF, footer=portal.footer(), howto=HOWTO, favicon=portal.favicon(label, fill),
                 blocknav=blocknav(course, slug), questions=q,
                 written=written, lectures=lectures,
                 block_json=json.dumps(cfg, ensure_ascii=False))
