@@ -99,7 +99,8 @@ TEMPLATE = u"""<!DOCTYPE html>
 
 <div class="movebar">
 <p>
-<strong class="lead">Starting October&nbsp;1, 2026 this site will move to
+<strong class="lead">Starting September&nbsp;23, 2026 this site will no longer be
+updated and will move to
 <a href="https://schulichmedfriend.github.io/preclerkship/">schulichmedfriend.github.io/preclerkship/</a>.</strong>
 The goal: a centralized, dynamic, up-to-date resource for all Schulich med students.
 </p>
