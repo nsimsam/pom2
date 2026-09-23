@@ -8,7 +8,10 @@ questions**, a quiz runner that keeps score.
 No build step, no framework, no server. HTML, three JS files, two stylesheets and
 a folder of JSON per course. Serve the folder and it works.
 
-Live at **<https://noorsimsam.com/pre-clerkship/>**.
+By the **Open-Source Medicine Club** and the **AI in Medicine Club**.
+
+Live at **<https://schulichmedfriend.github.io/preclerkship/>**.
+Questions, corrections and contributions: <schulichmedfriends@gmail.com>.
 
 ## The four courses
 
@@ -24,6 +27,29 @@ deliberate, and it is the same habit the rest of the portal keeps: a lecture wit
 no note still renders on the notes tab, a question set with nothing in it still
 renders in the filter rail. Showing the shape of the whole thing, gaps included,
 is more useful than showing only the parts that happen to be done.
+
+## How a week gets built
+
+Every week of a course is assembled by the same run, and the pipeline below is
+what it does. One reservoir of content, three exposures to it, one repo out the
+front.
+
+![How a week of the course is built: a weekly run keeps a content reservoir
+current - the Obsidian vault of inherited upper-year notes, this year's slides
+pulled through the OneNote MCP server, and review slides. From that reservoir
+come three exposures to the same material - charts to understand, Anki to
+remember, and a question bank to apply - and all three feed this repo, which in
+turn feeds class workshops and the public site.](docs/pipeline.svg)
+
+The run itself is a Claude Code skill, [`skills/pom2-week/`](skills/pom2-week/),
+which is published here rather than kept local because it is the recipe, not
+just the output: its `SKILL.md` is the stage-by-stage order, and
+[`pipeline.html`](skills/pom2-week/pipeline.html) is the same diagram with
+screenshots of each stage.
+
+Read it as one group's working recipe rather than something that runs anywhere
+as-is. It names absolute paths on the machine it was written on, and it assumes
+an Obsidian vault laid out a particular way.
 
 ## Layout
 

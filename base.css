@@ -66,6 +66,17 @@ a{
     margin-bottom:56px;
 }
 
+/* who the portal belongs to, above the title. Small and letter-spaced so it
+   reads as a standing line rather than a subtitle competing with the headline. */
+.page-hero .eyebrow{
+    font-size:.8rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:16px;
+}
+
 .page-hero h1{
     font-family:var(--serif);
     font-size:clamp(3rem,8vw,4.5rem);

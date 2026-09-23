@@ -4,6 +4,9 @@ __pycache__/
 *.pyc
 build/
 
-# Claude Code skills. Kept local: they carry vault paths, OneNote ids and an
-# upper year's name, none of which belong in a public repo.
-skills/
+# Claude Code skills. pom2-week is published on purpose - it is the weekly
+# pipeline the clubs run, and the diagram in the README comes out of it. It
+# still carries machine-specific vault paths, so read it as one lab's recipe
+# rather than something that runs anywhere as-is.
+skills/*
+!skills/pom2-week/
