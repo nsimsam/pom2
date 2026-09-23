@@ -204,8 +204,7 @@ CONTACT = "schulichmedfriends@gmail.com"
 
 
 def footer():
-    return ('<footer>\nGrown by Noor &#127793; &middot; '
-            '<a href="mailto:%s">%s</a>\n</footer>' % (CONTACT, CONTACT))
+    return ('<footer>\n<a href="mailto:%s">%s</a>\n</footer>' % (CONTACT, CONTACT))
 
 
 def favicon(label="PC", fill="1f4e5f"):
