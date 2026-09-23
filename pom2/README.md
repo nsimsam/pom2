@@ -173,10 +173,11 @@ embedding the same picture share one file.
 - **Search engines.** Every page ships with `<meta name="robots"
   content="noindex, nofollow">`, because the original is meant to be unlisted.
   Delete that line if you want yours found.
-- **Analytics and a parent nav.** `CF` and `PILLNAV` in `build_pages.py` and
-  `build_index.py` sit in the right spot in the template. `CF` is empty.
-  `PILLNAV` holds the nav bar of the site this copy hangs off, styled by
-  `.pill-nav` in `base.css`; blank it and the pages lose the bar cleanly.
+- **Analytics and the link out.** `CF` in `tools/portal.py` sits in the right
+  spot in the template and ships empty; drop your own snippet in if you want it.
+  There is no longer a nav bar out to a parent site. A block page has its block
+  nav, and a course index page carries one plain link back to the hub, built by
+  `portal.uplink()` and styled by `.uplink` in `base.css`.
 
 ## Licence and content
 
