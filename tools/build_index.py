@@ -99,18 +99,15 @@ TEMPLATE = u"""<!DOCTYPE html>
 
 <div class="movebar">
 <p>
-<strong class="lead">Starting October&nbsp;1, 2026 this site moves to
+<strong class="lead">Starting October&nbsp;1, 2026 this site will move to
 <a href="https://schulichmedfriend.github.io/preclerkship/">schulichmedfriend.github.io/preclerkship/</a>.</strong>
-It is the same portal with the other pre-clerkship years alongside this one, run by the
-Open-Source Medicine and AI in Medicine clubs. This address stops being updated then.
+The goal: a centralized, dynamic, up-to-date resource for all Schulich med students.
 </p>
 <p>
-<strong class="lead">Your progress can come with you.</strong> It is saved in this browser,
-and the new site cannot read it from here, so carry it across: open any block, go to
+<strong class="lead">Your progress can come with you.</strong> To restore it, go to
 <strong>Practice questions</strong>, and press <strong>Download all my progress</strong> to
 save the JSON file. On the new site press <strong>Restore from a file</strong> and pick it.
-One file holds every block, and a restore only adds and updates, so nothing you have already
-answered is lost.
+Nothing you have already answered is lost.
 </p>
 </div>
 
