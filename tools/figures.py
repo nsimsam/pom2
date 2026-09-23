@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Encode every figure a chart embeds into pom2/assets/figures/, and write the manifest.
+"""Encode every figure a chart embeds into assets/figures/, and write the manifest.
 
 Purpose: turn the ![[embeds]] in the chart regions into shipped JPEGs.
 Author:  Noor Simsam
 Date:    2026-09-15
 Input:   the vault lecture notes (POM2_VAULT), read-only
-Output:  pom2/assets/figures/<hash>.jpg, and pom2/data/figures.json mapping vault name -> asset
+Output:  assets/figures/<hash>.jpg, and data/figures.json mapping vault name -> asset
 
 Unlike a question picture, a chart figure is NOT inlined as a data: URI. Three
 reasons, all specific to notes:
@@ -46,10 +46,10 @@ from embed_image import MAX_WIDTH, compress, resolve
 
 LOG = logging.getLogger("figures")
 
-# The URL is relative to the page that carries it, which lives in pom2/;
-# the directory it is written to is that same path from the repo root.
+# The URL is relative to the page that carries it, and the pages sit at the
+# repo root, so the URL and the directory written to are the same path.
 ASSET_URL = "assets/figures"
-ASSET_DIR = os.path.join("pom2", *ASSET_URL.split("/"))
+ASSET_DIR = os.path.join(*ASSET_URL.split("/"))
 MANIFEST = cfv.FIGURES_PATH
 
 # A figure spans the note's full column, where a question picture sits in a

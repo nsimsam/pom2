@@ -37,35 +37,13 @@ then is also the only backup there is.</p>
 
 # Used only when a page does not exist yet. After that the page itself is the
 # source of truth for these three, so anything reworded by hand survives.
-SEED = {
-    ("fom", "b1"): (u"Weeks 1 to 4: what a physician actually does, the ethics and "
-                    u"epidemiology underneath it, then cells and tissues, genetics and the "
-                    u"newborn, and the health of children and adolescents.",
-                    u"Practice questions for weeks 1 to 4 of Foundations of Medicine.",
-                    u"--q-accent:#8a5320;--q-accent-soft:#f6e8d8;--q-accent-ink:#70431a;"),
-    ("fom", "b2"): (u"Weeks 5 to 8: how the body holds its fluids and pressure steady, what "
-                    u"goes wrong when growth stops obeying, how ageing changes the encounter, "
-                    u"and the pharmacology that runs underneath all of it.",
-                    u"Practice questions for weeks 5 to 8 of Foundations of Medicine.",
-                    u"--q-accent:#2f6b4f;--q-accent-soft:#e2efe9;--q-accent-ink:#275844;"),
-    ("fom", "b3"): (u"Weeks 9 to 12: the anemias, then bleeding and clotting, then the white "
-                    u"cells and the malignancies that arise from them, ending in lymphoma and "
-                    u"myeloma.",
-                    u"Practice questions for weeks 9 to 12 of Foundations of Medicine.",
-                    u"--q-accent:#9c2b2b;--q-accent-soft:#f7dedb;--q-accent-ink:#802222;"),
-    ("fom", "b4"): (u"Weeks 13 to 15: fever and the microbes behind it, how infection travels "
-                    u"and what is used against it, and what happens when the immune system is "
-                    u"absent, overreacting, or turned on its owner.",
-                    u"Practice questions for weeks 13 to 15 of Foundations of Medicine.",
-                    u"--q-accent:#3d4f8f;--q-accent-soft:#e5e8f5;--q-accent-ink:#333f75;"),
-}
+SEED = {}
 
-FAVICON = {"fom": ("FM", "1f4e5f"), "pom2": ("P2", "84223b"),
-           "pom1": ("P1", "6b5a2f"), "t2c": ("T2C", "3f4a5a")}
+FAVICON = {"pom2": ("P2", "84223b")}
 
 
 def existing(course, slug):
-    p = os.path.join(course["slug"], "%s.html" % slug)
+    p = os.path.join(portal.cdir(course), "%s.html" % slug)
     if not os.path.exists(p):
         return SEED[(course["slug"], slug)]
     s = io.open(p, encoding="utf-8").read()
@@ -76,7 +54,7 @@ def existing(course, slug):
 
 
 def block_counts(course, slug):
-    d = course["slug"]
+    d = portal.cdir(course)
     qs = json.load(io.open(os.path.join(d, "data", "questions", "%s.json" % slug),
                            encoding="utf-8"))
     nt = json.load(io.open(os.path.join(d, "data", "notes", "%s.json" % slug),
@@ -275,7 +253,7 @@ def main():
         for slug, n, name, weeks in course["blocks"]:
             lead, desc, accent = existing(course, slug)
             q, written, lectures = block_counts(course, slug)
-            d = course["slug"]
+            d = portal.cdir(course)
             cfg = {
                 "slug": slug, "n": n, "name": name, "weeks": weeks,
                 "course": course["short"], "store": course["store"],
@@ -283,7 +261,7 @@ def main():
                 "qv": portal.digest(os.path.join(d, "data", "questions", "%s.json" % slug)),
                 "nv": portal.digest(os.path.join(d, "data", "notes", "%s.json" % slug)),
             }
-            label, fill = FAVICON[d]
+            label, fill = FAVICON[course["slug"]]
             html = PAGE.format(
                 base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
                 quiz_js=portal.asset("quiz.js"), notes_js=portal.asset("notes.js"),
@@ -295,7 +273,8 @@ def main():
                 block_json=json.dumps(cfg, ensure_ascii=False))
             io.open(os.path.join(d, "%s.html" % slug), "w",
                     encoding="utf-8", newline="\n").write(html)
-            print("%-5s %-6s %2d/%d notes  %4d questions" % (d, slug, written, lectures, q))
+            print("%-5s %-6s %2d/%d notes  %4d questions"
+                  % (course["slug"], slug, written, lectures, q))
 
 
 if __name__ == "__main__":

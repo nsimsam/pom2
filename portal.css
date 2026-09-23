@@ -877,6 +877,30 @@
 
 .q-loading{padding:60px 20px;text-align:center;color:var(--muted);font-size:.9rem;}
 
+/* The move notice on the landing page. This site is being retired on
+   2026-10-01 and the portal continues at schulichmedfriend.github.io, so the
+   notice sits above everything: red, because progress that does not get
+   carried across is lost, and a date nobody reads is how that happens.
+   It goes when the site does. */
+.movebar{
+    margin-bottom:40px;
+    padding:18px 20px;
+    background:var(--q-bad-soft);
+    border:1px solid var(--q-bad);
+    border-left:4px solid var(--q-bad);
+    border-radius:8px;
+    font-size:.92rem;
+    line-height:1.6;
+}
+
+.movebar p{margin-bottom:10px;}
+.movebar p:last-child{margin-bottom:0;}
+/* only the two lead-ins are red; the button names quoted inside the sentence
+   are the interface speaking, and colouring those too made it speckle */
+.movebar strong{color:var(--text);font-weight:600;}
+.movebar strong.lead{color:var(--q-bad);}
+.movebar a{color:var(--q-bad);font-weight:600;text-decoration:underline;text-underline-offset:2px;}
+
 /* the block index */
 .block-grid{
     display:grid;
@@ -1625,7 +1649,7 @@
 /* a note is a one-pager by design, so printing gives one per sheet and drops
    every control - the gaps go too, they are screen bookkeeping */
 @media print{
-    .uplink,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar{display:none !important;}
+    .uplink,.blocknav,.tabs,.rail,.scoreboard,.storenote,footer,.pdf-btn,.pw-open,.fig-open,.posbar,.movebar{display:none !important;}
 
     /* one note, one week, or the lot: whatever was marked survives the print
        and everything else steps out of the way */

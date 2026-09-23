@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Lift the Nicole-format chart out of the top of each PoM 2 lecture note and
-fold it into pom2/data/notes/<slug>.json.
+fold it into data/notes/<slug>.json.
 The vault calls them charts; the site calls them notes.
 
 The chart region is everything between the note's frontmatter and the first
@@ -30,7 +30,7 @@ FIG_LINE = re.compile(
     r"^\s*!\[\[\s*([^\]\|]+?\.(?:%s))\s*(?:\|\s*([^\]]*?)\s*)?\]\]\s*$" % IMG_EXT, re.I)
 
 # written by tools/figures.py, which owns Pillow so the rebuild scripts do not
-FIGURES_PATH = "pom2/data/figures.json"
+FIGURES_PATH = "data/figures.json"
 FIGURES = {}
 
 
@@ -314,7 +314,7 @@ def load_figures():
 def main(slugs):
     FIGURES.update(load_figures())
     for slug in slugs:
-        p = "pom2/data/notes/%s.json" % slug
+        p = "data/notes/%s.json" % slug
         doc = json.load(io.open(p, encoding="utf-8"))
         folder = os.path.join(VAULT, BLOCK_FOLDER[slug])
         found = 0

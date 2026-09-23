@@ -22,8 +22,7 @@ import io, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import portal
 
-FAVICON = {"fom": ("FM", "1f4e5f"), "pom2": ("P2", "84223b"),
-           "pom1": ("P1", "6b5a2f"), "t2c": ("T2C", "3f4a5a")}
+FAVICON = {"pom2": ("P2", "84223b")}
 
 EMPTY_PROSE = u"""<div class="prose">
 
@@ -38,7 +37,7 @@ def part(page, opener, closer="\n</div>"):
 
 def existing(course):
     """(hero blurb, prose block) from the page being replaced, or the seed."""
-    p = os.path.join(course["slug"], "index.html")
+    p = os.path.join(portal.cdir(course), "index.html")
     if not os.path.exists(p):
         return course["blurb"], EMPTY_PROSE
     s = io.open(p, encoding="utf-8").read()
@@ -52,14 +51,14 @@ def cards(course):
        leading with the question count made it read as a quiz."""
     out = []
     for slug, n, name, weeks in course["blocks"]:
-        page = io.open(os.path.join(course["slug"], "%s.html" % slug),
+        page = io.open(os.path.join(portal.cdir(course), "%s.html" % slug),
                        encoding="utf-8").read()
         blurb = re.search(r'<p class="lead">\s*(.*?)\s*</p>', page, re.S).group(1)
         hue = re.search(r'--q-accent:(#\w+);', page).group(1)
         import json
-        qs = json.load(io.open(os.path.join(course["slug"], "data", "questions",
+        qs = json.load(io.open(os.path.join(portal.cdir(course), "data", "questions",
                                             "%s.json" % slug), encoding="utf-8"))
-        nt = json.load(io.open(os.path.join(course["slug"], "data", "notes",
+        nt = json.load(io.open(os.path.join(portal.cdir(course), "data", "notes",
                                             "%s.json" % slug), encoding="utf-8"))
         lects = [l for w in nt["weeks"] for l in w["lectures"]]
         written = len([l for l in lects if l.get("hasNote")])
@@ -98,6 +97,23 @@ TEMPLATE = u"""<!DOCTYPE html>
 
 <div class="pom2-page">
 
+<div class="movebar">
+<p>
+<strong class="lead">Starting October&nbsp;1, 2026 this site moves to
+<a href="https://schulichmedfriend.github.io/preclerkship/">schulichmedfriend.github.io/preclerkship/</a>.</strong>
+It is the same portal with the other pre-clerkship years alongside this one, run by the
+Open-Source Medicine and AI in Medicine clubs. This address stops being updated then.
+</p>
+<p>
+<strong class="lead">Your progress can come with you.</strong> It is saved in this browser,
+and the new site cannot read it from here, so carry it across: open any block, go to
+<strong>Practice questions</strong>, and press <strong>Download all my progress</strong> to
+save the JSON file. On the new site press <strong>Restore from a file</strong> and pick it.
+One file holds every block, and a restore only adds and updates, so nothing you have already
+answered is lost.
+</p>
+</div>
+
 {uplink}
 
 <div class="page-hero">
@@ -130,7 +146,7 @@ def main():
             base_css=portal.asset("base.css"), portal_css=portal.asset("portal.css"),
             accent=course["accent"], cf=portal.CF, uplink=portal.uplink(1),
             hero=hero, cards=cards(course) or "", prose=prose, footer=portal.footer())
-        io.open(os.path.join(course["slug"], "index.html"), "w",
+        io.open(os.path.join(portal.cdir(course), "index.html"), "w",
                 encoding="utf-8", newline="\n").write(html)
         q, w, l = portal.counts(course)
         print("%-5s %d blocks  %d/%d lecture notes  %d questions"

@@ -1,169 +1,215 @@
-# Pre-clerkship portal
+# Principles of Medicine 2
 
-A static study portal for the pre-clerkship years at Schulich. One directory per
-course, one page per block, two tabs per page: **notes**, a coverage map of every
-lecture in the block whether or not it has been written up, and **practice
-questions**, a quiz runner that keeps score.
+> **This site moves on 1 October 2026.** It continues, with the other
+> pre-clerkship years alongside it, at
+> <https://schulichmedfriend.github.io/preclerkship/> — repo
+> [schulichmedfriend/preclerkship](https://github.com/schulichmedfriend/preclerkship).
+> This one keeps serving PoM 2 until then and stops being updated after.
+>
+> **Carry your progress across.** It lives in your browser and the new site
+> cannot read it from here. Open any block, go to **Practice questions**, press
+> **Download all my progress**, then press **Restore from a file** on the new
+> site. One file holds every block.
 
-No build step, no framework, no server. HTML, three JS files, two stylesheets and
-a folder of JSON per course. Serve the folder and it works.
+A static study portal for a medical school course, built around one page per
+block. Each page has two tabs: **notes**, a coverage map of every lecture in the
+block whether or not it has been written up, and **practice questions**, a quiz
+runner that keeps score.
 
-By the **Open-Source Medicine Club** and the **AI in Medicine Club**.
+No build step, no framework, no server. Six HTML files, three JS files, two
+stylesheets and a folder of JSON. Open `index.html` and it works.
 
-Live at **<https://schulichmedfriend.github.io/preclerkship/>**.
-Questions, corrections and contributions: <schulichmedfriends@gmail.com>.
+It was written for the five blocks of the second Principles of Medicine year at
+Schulich (endocrinology, reproduction, MSK, neurology, psychiatry), but nothing
+about the code knows that. Swap the JSON and it is your course.
 
-## The four courses
+Live at **<https://noorsimsam.com/pom2/>** until the move.
 
-| Course | Year | State |
-| --- | --- | --- |
-| [Foundations of Medicine](fom/) | 1 | 4 blocks, weeks 1–15, 1,979 questions |
-| [Principles of Medicine 1](pom1/) | 1 | not built yet |
-| [Principles of Medicine 2](pom2/) | 2 | 5 blocks, weeks 1–20, 1,063 questions |
-| [Transition to Clerkship](t2c/) | 2 | not built yet |
+## Open source
 
-The two empty ones still have a card on the hub, greyed and unlinked. That is
-deliberate, and it is the same habit the rest of the portal keeps: a lecture with
-no note still renders on the notes tab, a question set with nothing in it still
-renders in the filter rail. Showing the shape of the whole thing, gaps included,
-is more useful than showing only the parts that happen to be done.
+The portal is open source at <https://github.com/nsimsam/pom2>.
 
-## How a week gets built
+The beauty of open source is that anyone can access the work, improve it or
+customize it to their needs. It is crowdsourced expertise that creates
+user-vetted products.
 
-Every week of a course is assembled by the same run, and the pipeline below is
-what it does. One reservoir of content, three exposures to it, one repo out the
-front.
+### To customize it
 
-![How a week of the course is built: a weekly run keeps a content reservoir
-current - the Obsidian vault of inherited upper-year notes, this year's slides
-pulled through the OneNote MCP server, and review slides. From that reservoir
-come three exposures to the same material - charts to understand, Anki to
-remember, and a question bank to apply - and all three feed this repo, which in
-turn feeds class workshops and the public site.](docs/pipeline.svg)
-
-The run itself is a Claude Code skill, [`skills/pom2-week/`](skills/pom2-week/),
-which is published here rather than kept local because it is the recipe, not
-just the output: its `SKILL.md` is the stage-by-stage order, and
-[`pipeline.html`](skills/pom2-week/pipeline.html) is the same diagram with
-screenshots of each stage.
-
-Read it as one group's working recipe rather than something that runs anywhere
-as-is. It names absolute paths on the machine it was written on, and it assumes
-an Obsidian vault laid out a particular way.
-
-## Layout
+Anything here can change, from the blocks it covers and the questions in them to
+the wording, the layout and the tooling around it. Paste this into Claude Code:
 
 ```
-index.html         the hub, one card per course
-base.css           design tokens, the reset, the page frame   ) the engine,
-portal.css         everything the portal draws                ) shared by
-portal.js          tab switching, shared helpers              ) every
-notes.js           the notes tab, including the PDF printing  ) course
-quiz.js            the question runner and the progress store )
-
-fom/               one course: its pages, its data, its README
-pom2/              the same
-pom1/  t2c/        placeholders, a landing page and nothing behind it
-
-tools/portal.py       the course roster: blocks, families, accents, store keys
-tools/build_pages.py  every course's block pages, from one template
-tools/build_index.py  every course's landing page
-tools/build_hub.py    the front door
-tools/                PoM 2's extractors (an Obsidian vault in)
-tools/fom/            FoM's extractors (the question-bank PDFs in)
+Clone https://github.com/nsimsam/pom2 and read the README so you understand how
+the portal is built. I want to make it mine: [what you want changed, for example:
+cut it down to the blocks I am on, import my own lecture notes and questions,
+restyle the pages, or build an Anki deck from only the questions I got wrong].
+Work out which files that touches, make the change, and rebuild the pages with
+the scripts in tools/.
 ```
 
-### What makes a course a course
+You can also just take the material out. The questions and the notes are both
+plain JSON under `data/`, so you can extract either one into whatever you already
+study from. Keep in mind they are being updated week by week, so what you pull is
+a snapshot of that week.
 
-Only three things, and all of them are data in
-[`tools/portal.py`](tools/portal.py): its **block list**, its **question-set
-families**, and the **localStorage prefix** its progress is kept under. The
-engine reads all three off `window.QUIZ_BLOCK`, which the builders write into
-each page. Adding a fifth course is a dictionary, a directory and some JSON.
+### To improve it
 
-That matters because the alternative was a copy of `quiz.js` per course, and
-those copies diverge. When Foundations was first built as its own site, its copy
-of the engine had already drifted in three places within a day.
+Send it to the repo that is still being updated,
+[schulichmedfriend/preclerkship](https://github.com/schulichmedfriend/preclerkship),
+rather than to this one — a fix landed here now goes offline with the site in
+October. Suggest a feature, fix an answer you think is wrong, or send in
+questions of your own. You need a GitHub account; Claude Code can do the rest.
+Paste this into it:
 
-## Run it
+```
+Clone https://github.com/schulichmedfriend/preclerkship and read the README so you
+understand how the portal is built. I want to contribute: [what you are adding, for example: the
+questions from the week 8 MSK module, a correction to an answer, or a feature].
+Match the format the existing files use, rebuild the pages with the scripts in
+tools/, then create a branch, commit, and open a pull request against
+schulichmedfriend/preclerkship explaining what changed and why.
+```
+
+Corrections and questions are the two most useful things to send.
+
+## Run it yourself
 
 ```bash
+git clone https://github.com/nsimsam/pom2
+cd pom2
 python -m http.server 8000
 ```
 
 Then open <http://localhost:8000>. A plain `file://` open works too, except that
 browsers block `fetch` of local JSON, so the tabs come up empty. Use the server.
 
-## Rebuilding
+## What is in here
 
-Always from the repo root. The three builders read only what is already in the
-repo, so they run anywhere; each course's extractors read sources outside it and
-take their paths from the environment.
+```
+index.html                    the landing page, five block cards
+endo|repro|msk|neuro|psych.html   one page per block
+data/notes/*.json             lecture rosters, with a written note folded in where one exists
+data/questions/*.json         the question bank
+assets/figures/               the pictures the notes embed
 
-```bash
-python tools/fom/parse_qbank.py         # the question-bank PDFs -> fom/data/questions/
-python tools/fom/rosters_from_vault.py  # the vault              -> fom/data/notes/
-python tools/rosters_from_vault.py      # the vault              -> pom2/data/notes/
-python tools/charts_from_vault.py       # folds written notes on top
-
-python tools/build_pages.py             # every course's block pages
-python tools/build_index.py             # every course's landing page
-python tools/build_hub.py               # the hub and its totals
+base.css      design tokens, the reset, the page frame
+portal.css    everything the portal draws
+portal.js     tab switching, shared helpers
+notes.js      the notes tab, including the PDF printing
+quiz.js       the question runner and the progress store
+tools/        the scripts that regenerate all of the above
 ```
 
-Run the last three after editing any CSS or JS as well, because they stamp each
-asset's content hash into its URL and the stamp goes stale otherwise.
-
-Each course's README covers its own sources and its own quirks:
-[fom/README.md](fom/README.md), [pom2/README.md](pom2/README.md).
+`tools/` is only needed if you keep your source material in an Obsidian vault and
+want it extracted automatically. See [tools/README.md](tools/README.md). If you
+are hand-writing the JSON, ignore the whole folder.
 
 ## Progress stays on the device
 
 Answers, stars and per-lecture accuracy are written to the browser's
-`localStorage`, under a **separate prefix per course**, so the four never read or
-overwrite each other even though they share an origin. Nothing is sent anywhere
-and there is no backend.
+`localStorage`. Nothing is sent anywhere, there is no backend, and nobody running
+a copy of this can see anyone else's progress. The flip side is that it does not
+follow you between browsers or machines, so the questions tab has **Download all my
+progress** and **Restore from a file** buttons that move a JSON file by hand. One file holds
+every block and can be written or read from any of them, and a restore only adds and updates,
+so an out of date file cannot overwrite newer answers.
 
-The flip side is that it does not follow you, so each course's questions tab has
-**Download all my progress** and **Restore from a file**, which move a JSON file
-by hand. One file holds every block of that course, and a restore only adds and
-updates, so an out of date file cannot overwrite newer answers.
+## Bringing your own content
 
-## Open source
+### Questions
 
-The beauty of open source is that anyone can access the work, improve it or
-customize it to their needs. It is crowdsourced expertise that creates
-user-vetted products.
+`data/questions/<block>.json` is a flat list of question objects. Every question
+carries the same fields:
 
-**To customize it.** Anything here can change, from the courses it covers to the
-wording and the layout. Paste this into Claude Code:
+| field | what it holds |
+| --- | --- |
+| `qid` | unique id, and the key progress is stored against |
+| `num`, `week`, `weekLabel` | position in the course, used for grouping |
+| `lecture`, `lectureMeta` | which lecture it hangs off, and a note about the source |
+| `tags` | optional labels that cut across the other filters, shown as **Topic** |
+| `source`, `sourceLabel`, `family` | which bank it came from, shown as a filter |
+| `stem`, `preamble` | the question itself as HTML, and any shared setup above it |
+| `kind` | `mcq`, `short`, `matching`, or `broken` |
+| `options` | `[{"letter": "A", "html": "..."}]` |
+| `correct`, `multi` | the answer letters, and whether more than one is expected |
+| `answer`, `answerTitle` | the explanation shown after answering |
+| `keyed`, `free`, `unscorable`, `retired` | whether it has a real key, is ungraded, cannot be scored, or is hidden |
+| `flags` | `[{"type": "warning", "title": "...", "html": "..."}]`, printed on the question |
 
-```
-Clone this repo and read the README so you understand how the portal is built. I want to
-make it mine: [what you want changed, for example: cut it down to the course I am on,
-import my own lecture notes and questions, restyle the pages, or build an Anki deck from
-only the questions I got wrong]. Work out which files that touches, make the change, and
-rebuild with the scripts in tools/.
-```
+`keyed: false` and `unscorable: true` matter. Question banks handed down between
+years are often missing an answer key or contain a question with no defensible
+answer. Rather than inventing a letter, the portal says so on the question's face
+and leaves it out of the score.
 
-You can also just take the material out. The questions and the notes are plain
-JSON under each course's `data/`, so you can extract either into whatever you
-already study from. They are updated week by week, so what you pull is a snapshot.
+`tags` is the one filter that cuts across the others. The anatomy, histology and
+embryology lectures are a strand of their own, but their questions arrive as
+Elentra modules, as module cases and as workbook chapters, and they sit in more
+than one week, so neither the question-set rows nor the week chips can gather
+them. Tagging those questions `["anatomy"]` puts a **Topic** group in the rail
+that does. A block with nothing tagged shows no group at all, so the four blocks
+that have no anatomy questions yet are unchanged. The tag is a list, so a
+question can carry more than one, and the counts under Topic are the only ones in
+the rail that do not add up to the total, because a question is counted under
+each tag it carries.
 
-**To improve it.** Suggest a feature, fix an answer you think is wrong, or send in
-questions of your own. Corrections and questions are the two most useful things
-to send.
+### Notes
+
+`data/notes/<block>.json` is one object per block, holding `weeks`, holding
+`lectures`. A lecture with `hasNote: false` still renders, greyed, so the tab
+reads as a coverage map rather than a list of what happens to be done. A lecture
+with a note adds `title`, `framing`, `keypoints` and `blocks`, where `blocks` is
+an ordered list of
+`{"t": "table" | "note" | "callout" | "list" | "pathway" | "figure"}` parts.
+Order is preserved on purpose, since the sentence above a table is usually the
+reason the table is there.
+
+A `figure` block carries `src`, `alt`, the intrinsic `w`/`h`, and an optional
+`cap`. Unlike a question's picture, which is inlined as a `data:` URI, a figure
+points at a real file under `assets/figures/` named after the hash of its own
+bytes. The notes JSON is fetched whole when the tab opens and is regenerated on
+every rebuild, so inlining it there would cost every reader on every load and
+defeat git's delta compression besides; hashing the name means two lectures
+embedding the same picture share one file.
+
+## Making it yours
+
+- **Colours.** The palette is nine custom properties at the top of `base.css`.
+  Each block page then sets its own `--q-accent`, `--q-accent-soft` and
+  `--q-accent-ink` in an inline `:root`, which is also what the landing page card
+  reads for its `--hue`.
+- **Blocks.** The block list lives in `BLOCKS` at the top of each script in
+  `tools/`. Five is not special.
+- **Fonts.** Fraunces and Inter, pulled from Google Fonts in each page head. Both
+  have local fallbacks in `base.css`.
+- **Search engines.** Every page ships with `<meta name="robots"
+  content="noindex, nofollow">`, because the original is meant to be unlisted.
+  Delete that line if you want yours found.
+- **Analytics and the link out.** `CF` in `tools/portal.py` sits in the right
+  spot in the template and ships empty; drop your own snippet in if you want it.
+  There is no longer a nav bar out to a parent site. A block page has its block
+  nav, and a course index page carries one plain link back to the hub, built by
+  `portal.uplink()` and styled by `.uplink` in `base.css`.
 
 ## Licence and content
 
 The code is MIT, see [LICENSE](LICENSE).
 
-The study content under each course's `data/` came out of shared course material
-that students already pass between years: class question banks, the
-Pre-Clerkship Workbook, Elentra module knowledge checks, weekly quizzes, slide
-concept checks and questions written from the case and small-group sessions.
+The study content under `data/` has its own history. The 700 practice questions
+came out of shared course material: a student-written workbook handed down through
+the Schulich classes of 2015 to 2025, Elentra module knowledge checks, weekly
+quizzes, slide concept checks and questions written from the case and small-group
+sessions.
 
-**They are here on purpose.** Putting them somewhere public is the reason this
-repository exists, not an accident of packaging. Where a question came out of a
-peer-written bank, its errors and gaps are flagged on the question itself rather
-than quietly patched, so you can see what you are trusting before you trust it.
+**They are here on purpose.** These are resources students already pass between
+years, and putting them somewhere public is the reason this
+repository exists, not an accident of packaging. Use them, fork them, correct them,
+add to them. Where a question came out of a peer-written bank its errors are flagged
+on the question itself rather than quietly patched, so you can see what you are
+trusting before you trust it.
+
+A handful of questions carry a picture, embedded in the question itself. Those come
+from the teaching material the question came from: course illustrations, radiology
+and endoscopy stills, gross pathology specimens and clinical photographs of the kind
+that circulate in every medical curriculum. Cadaveric images from the anatomy modules
+are covered by a separate protocol and are **not** included, so a question that
+needed one says on its face that its picture is missing.

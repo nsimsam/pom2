@@ -92,7 +92,7 @@ inside `build_pages.py` and `build_index.py`. The next run overwrites the HTML. 
 two exceptions are the per-block blurb (`<p class="lead">`) and the accent trio in
 each page's inline `:root`, which are read back out before the page is rewritten.
 
-`base.css`, `pom2.css`, `quiz.js`, `notes.js` and `pom2.js` are hand-maintained and
+`base.css`, `portal.css`, `quiz.js`, `notes.js` and `portal.js` are hand-maintained and
 never generated. **After editing one of them, re-run `build_pages.py` and
 `build_index.py` anyway.** The pages link these assets as `base.css?v=<hash of its
 contents>`, and the hash is read off the file at build time. GitHub Pages serves

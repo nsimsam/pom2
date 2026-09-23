@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Rebuild pom2/data/notes/<slug>.json as a bare lecture roster.
+"""Rebuild data/notes/<slug>.json as a bare lecture roster.
 
 Every lecture in the block's vault folders lands here whether or not it has a
 note, so the notes tab reads as a coverage map. charts_from_vault.py then folds
@@ -23,7 +23,7 @@ BLOCKS = [
 def week_labels(slug):
     """reuse the week headings the questions tab already shows, so both tabs
        name the same week the same way"""
-    p = "pom2/data/questions/%s.json" % slug
+    p = "data/questions/%s.json" % slug
     labels = {}
     if os.path.exists(p):
         for q in json.load(io.open(p, encoding="utf-8")):
@@ -63,7 +63,7 @@ def main():
                 })
             out["weeks"].append({"n": n, "label": labels.get(n, "Week %d" % n),
                                  "lectures": lects})
-        p = "pom2/data/notes/%s.json" % slug
+        p = "data/notes/%s.json" % slug
         io.open(p, "w", encoding="utf-8", newline="\n").write(
             json.dumps(out, indent=1, ensure_ascii=False))
         total = sum(len(w["lectures"]) for w in out["weeks"])
