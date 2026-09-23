@@ -224,6 +224,13 @@ this into it:
 Corrections and questions are the two most useful things to send.
 </p>
 
+<p>
+<strong>Or just email.</strong> You do not need GitHub, or any of the above, to get in
+touch. Anything at all &mdash; a correction, a question, a request, a course you want
+added &mdash; goes to
+<a href="mailto:schulichmedfriends@gmail.com">schulichmedfriends@gmail.com</a>.
+</p>
+
 </div>
 </details>
 

@@ -200,8 +200,12 @@ def uplink(depth=None):
     return '<a class="uplink" href="%s">&larr; All courses</a>' % HUB_URL
 
 
+CONTACT = "schulichmedfriends@gmail.com"
+
+
 def footer():
-    return "<footer>\nGrown by Noor &#127793;\n</footer>"
+    return ('<footer>\nGrown by Noor &#127793; &middot; '
+            '<a href="mailto:%s">%s</a>\n</footer>' % (CONTACT, CONTACT))
 
 
 def favicon(label="PC", fill="1f4e5f"):
