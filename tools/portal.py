@@ -189,9 +189,15 @@ NOCACHE = ('<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"
 CF = ""
 
 
-def uplink(depth):
+# Where "All courses" points. Absolute, not relative: the portal is served from
+# more than one place, and the hub every page should return to is this one
+# wherever the copy being read happens to live.
+HUB_URL = "https://schulichmedfriend.github.io/preclerkship/"
+
+
+def uplink(depth=None):
     """The one way back up to the hub, for pages that have no block nav."""
-    return '<a class="uplink" href="%sindex.html">&larr; All courses</a>' % ("../" * depth)
+    return '<a class="uplink" href="%s">&larr; All courses</a>' % HUB_URL
 
 
 def footer():

@@ -27,20 +27,6 @@ FAVICON = {"fom": ("FM", "1f4e5f"), "pom2": ("P2", "84223b"),
 
 EMPTY_PROSE = u"""<div class="prose">
 
-<details class="fold" open>
-<summary>Nothing here yet</summary>
-<div class="body">
-
-<p>
-This course has no blocks written up. It is listed so the shape of pre-clerkship
-is visible from the hub rather than only the parts that happen to be done, which
-is the same habit the notes tab keeps: a lecture with no note still appears,
-greyed, so you can see what is missing.
-</p>
-
-</div>
-</details>
-
 </div>"""
 
 

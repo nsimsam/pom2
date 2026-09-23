@@ -86,7 +86,7 @@ def block_counts(course, slug):
 
 
 def blocknav(course, active):
-    rows = ['<a class="home" href="../index.html">All courses</a>']
+    rows = ['<a class="home" href="%s">All courses</a>' % portal.HUB_URL]
     for slug, n, name, _w in course["blocks"]:
         cls = ' class="here"' if slug == active else ''
         rows.append('<a href="%s.html"%s>%d &middot; %s</a>' % (slug, cls, n, name))
