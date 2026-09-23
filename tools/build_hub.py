@@ -75,7 +75,6 @@ TEMPLATE = u"""<!DOCTYPE html>
 <div class="pom2-page">
 
 <div class="page-hero">
-<p class="eyebrow">A collaborative effort by the Open-Source Medicine &amp; AI in Medicine Clubs</p>
 <h1>Pre-clerkship.</h1>
 <p>
 {total} practice questions across the pre-clerkship years, filed by week and by where
