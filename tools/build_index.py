@@ -101,7 +101,7 @@ TEMPLATE = u"""<!DOCTYPE html>
 <p>
 <strong class="lead">Starting September&nbsp;23, 2026 this site will no longer be
 updated and will move to
-<a href="https://schulichmedfriend.github.io/preclerkship/">schulichmedfriend.github.io/preclerkship/</a>.</strong>
+<a href="https://schulichmed.github.io/preclerkship/">schulichmed.github.io/preclerkship/</a>.</strong>
 The goal: a centralized, dynamic, up-to-date resource for all Schulich med students in
 pre-clerkship.
 </p>

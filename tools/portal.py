@@ -11,7 +11,7 @@ being retired on 2026-10-01. It carries one course and that course sits at the
 repo root, so `dir` is "." and the pages name the engine without a prefix.
 
 The four-course pre-clerkship hub this grew into lives on in its own repo
-(schulichmedfriend/preclerkship), where a course is a directory one level down
+(schulichmed/preclerkship), where a course is a directory one level down
 and build_hub.py builds the front door over the top. Both layouts ran off this
 file; what is left here is the single-course half of it.
 """
@@ -133,7 +133,7 @@ CF = ""
 # Where "All courses" points. Absolute, not relative: the portal is served from
 # more than one place, and the hub every page should return to is this one
 # wherever the copy being read happens to live.
-HUB_URL = "https://schulichmedfriend.github.io/preclerkship/"
+HUB_URL = "https://schulichmed.github.io/preclerkship/"
 
 
 def uplink(depth=None):

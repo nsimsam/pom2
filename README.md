@@ -2,8 +2,8 @@
 
 > **This site moves on 1 October 2026.** It continues, with the other
 > pre-clerkship years alongside it, at
-> <https://schulichmedfriend.github.io/preclerkship/> — repo
-> [schulichmedfriend/preclerkship](https://github.com/schulichmedfriend/preclerkship).
+> <https://schulichmed.github.io/preclerkship/> — repo
+> [schulichmed/preclerkship](https://github.com/schulichmed/preclerkship).
 > This one keeps serving PoM 2 until then and stops being updated after.
 >
 > **Carry your progress across.** It lives in your browser and the new site
@@ -55,19 +55,19 @@ a snapshot of that week.
 ### To improve it
 
 Send it to the repo that is still being updated,
-[schulichmedfriend/preclerkship](https://github.com/schulichmedfriend/preclerkship),
+[schulichmed/preclerkship](https://github.com/schulichmed/preclerkship),
 rather than to this one — a fix landed here now goes offline with the site in
 October. Suggest a feature, fix an answer you think is wrong, or send in
 questions of your own. You need a GitHub account; Claude Code can do the rest.
 Paste this into it:
 
 ```
-Clone https://github.com/schulichmedfriend/preclerkship and read the README so you
+Clone https://github.com/schulichmed/preclerkship and read the README so you
 understand how the portal is built. I want to contribute: [what you are adding, for example: the
 questions from the week 8 MSK module, a correction to an answer, or a feature].
 Match the format the existing files use, rebuild the pages with the scripts in
 tools/, then create a branch, commit, and open a pull request against
-schulichmedfriend/preclerkship explaining what changed and why.
+schulichmed/preclerkship explaining what changed and why.
 ```
 
 Corrections and questions are the two most useful things to send.
